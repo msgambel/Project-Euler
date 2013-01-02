@@ -23,6 +23,8 @@
 		4E04C7DE16917B0200DC881F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E04C7DB16917B0200DC881F /* Default-568h@2x.png */; };
 		4E04C7DF16917B0200DC881F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E04C7DC16917B0200DC881F /* Default@2x.png */; };
 		4E04C8171693965500DC881F /* Question1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8061693965500DC881F /* Question1.m */; };
+		4E04C82A1693F3FA00DC881F /* Question2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8231693F3FA00DC881F /* Question2.m */; };
+		4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8371694D8ED00DC881F /* CustomNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,10 @@
 		4E04C7DC16917B0200DC881F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4E04C8051693965500DC881F /* Question1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question1.h; sourceTree = "<group>"; };
 		4E04C8061693965500DC881F /* Question1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question1.m; sourceTree = "<group>"; };
+		4E04C8221693F3FA00DC881F /* Question2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question2.h; sourceTree = "<group>"; };
+		4E04C8231693F3FA00DC881F /* Question2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question2.m; sourceTree = "<group>"; };
+		4E04C8361694D8ED00DC881F /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		4E04C8371694D8ED00DC881F /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		4E04C736168985EE00DC881F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4E04C8351694D8A400DC881F /* Custom UIKit */,
 				4E04C737168985EE00DC881F /* Global */,
 				4E04C73A168985EE00DC881F /* Objects */,
 				4E04C7CE168C372100DC881F /* UITableViewCells */,
@@ -1054,6 +1061,8 @@
 			children = (
 				4E04C8051693965500DC881F /* Question1.h */,
 				4E04C8061693965500DC881F /* Question1.m */,
+				4E04C8221693F3FA00DC881F /* Question2.h */,
+				4E04C8231693F3FA00DC881F /* Question2.m */,
 			);
 			path = "Questions 1-5";
 			sourceTree = "<group>";
@@ -1084,6 +1093,15 @@
 			children = (
 			);
 			path = "Questions 6-10";
+			sourceTree = "<group>";
+		};
+		4E04C8351694D8A400DC881F /* Custom UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4E04C8361694D8ED00DC881F /* CustomNavigationController.h */,
+				4E04C8371694D8ED00DC881F /* CustomNavigationController.m */,
+			);
+			path = "Custom UIKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1160,6 +1178,8 @@
 				4E04C7CD168C33E800DC881F /* DetailViewController.m in Sources */,
 				4E04C7D1168C373A00DC881F /* QuestionCell.m in Sources */,
 				4E04C8171693965500DC881F /* Question1.m in Sources */,
+				4E04C82A1693F3FA00DC881F /* Question2.m in Sources */,
+				4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
