@@ -163,6 +163,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6aw-yl-RRc"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="_tableView" destination="ZQS-O5-p6c" id="vbd-4z-ziV"/>
                         <segue destination="VVC-1k-ZUf" kind="push" identifier="DetailViewControllerSegue" id="Bnb-Du-2ks"/>
@@ -387,6 +388,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Klt-xO-k0h"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="_activityIndicatorView" destination="DHb-ba-bDJ" id="aIc-R0-SCn"/>
                         <outlet property="_backButton" destination="07R-jS-Hnr" id="fPH-Hu-CuK"/>
@@ -406,11 +408,12 @@
             </objects>
             <point key="canvasLocation" x="1271" y="101"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="cAM-h7-WdO">
             <objects>
-                <navigationController navigationBarHidden="YES" id="amN-FU-ZeV" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="amN-FU-ZeV" customClass="CustomNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xcr-KX-41G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -426,6 +429,9 @@
         </scene>
     </scenes>
     <classes>
+        <class className="CustomNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomNavigationController.h"/>
+        </class>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
