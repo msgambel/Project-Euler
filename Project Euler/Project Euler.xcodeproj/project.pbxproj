@@ -25,6 +25,7 @@
 		4E04C8171693965500DC881F /* Question1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8061693965500DC881F /* Question1.m */; };
 		4E04C82A1693F3FA00DC881F /* Question2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8231693F3FA00DC881F /* Question2.m */; };
 		4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8371694D8ED00DC881F /* CustomNavigationController.m */; };
+		4E04C83F1694E8DA00DC881F /* Question3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C83A1694E8D900DC881F /* Question3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		4E04C8231693F3FA00DC881F /* Question2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question2.m; sourceTree = "<group>"; };
 		4E04C8361694D8ED00DC881F /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
 		4E04C8371694D8ED00DC881F /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		4E04C8391694E8D900DC881F /* Question3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question3.h; sourceTree = "<group>"; };
+		4E04C83A1694E8D900DC881F /* Question3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1063,6 +1066,8 @@
 				4E04C8061693965500DC881F /* Question1.m */,
 				4E04C8221693F3FA00DC881F /* Question2.h */,
 				4E04C8231693F3FA00DC881F /* Question2.m */,
+				4E04C8391694E8D900DC881F /* Question3.h */,
+				4E04C83A1694E8D900DC881F /* Question3.m */,
 			);
 			path = "Questions 1-5";
 			sourceTree = "<group>";
@@ -1180,6 +1185,7 @@
 				4E04C8171693965500DC881F /* Question1.m in Sources */,
 				4E04C82A1693F3FA00DC881F /* Question2.m in Sources */,
 				4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */,
+				4E04C83F1694E8DA00DC881F /* Question3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
