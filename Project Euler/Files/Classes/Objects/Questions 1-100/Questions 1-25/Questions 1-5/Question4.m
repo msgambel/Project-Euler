@@ -36,8 +36,8 @@
   
   // This is a fairly simple task. We loop through all the positive three digit
   // integers and compute their product. We have a helper method to check if the
-  // product (passed in NSString form) is a Palindrome. If it is, we simple check
-  // to see if it is the largest one found.
+  // product (passed in int form) is a Palindrome. If it is, we simple check to
+  // see if it is the largest one found.
   // 
   // We do make some optimizations from brute force method. We only multiply
   // three digit positive integers where the left number in the product is
