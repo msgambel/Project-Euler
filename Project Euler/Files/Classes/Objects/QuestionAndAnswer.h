@@ -36,4 +36,12 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
+// These helper methods are added so that any Question object can easily compute
+// the primes up to a given limit or size. They have been added to the super
+// class, as it seems there are a bunch of questions that rely on the primes. It
+// also makes it much easier to change/improve later.
+
+- (NSMutableArray *)arrayOfPrimeNumbersOfSize:(long long int)aSize;
+- (NSMutableArray *)arrayOfPrimeNumbersLessThan:(long long int)aLimit;
+
 @end
