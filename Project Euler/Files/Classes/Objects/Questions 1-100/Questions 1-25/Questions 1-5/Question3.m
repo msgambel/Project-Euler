@@ -17,8 +17,8 @@
   self.title = @"Largest prime factor";
   self.answer = @"6857";
   self.number = @"Problem 3";
-  self.estimatedComputationTime = @"7.15e-04";
-  self.estimatedBruteForceComputationTime = @"1.95e-02";
+  self.estimatedComputationTime = @"5.34e-04";
+  self.estimatedBruteForceComputationTime = @"1.89e-02";
 }
 
 #pragma mark - Methods
@@ -58,8 +58,10 @@
   // Variable to hold the square root of the current number, used to minimize computations.
   long long int sqrtOfCurrentNumber = 0;
   
-  // Loop through all the numbers up to the largest number to check.
-  for(int currentNumber = 3; currentNumber < largestNumberToCheck; currentNumber++){
+  // Loop through all the prime numbers already found. No need to check the even
+  // numbers, as they are always divisible by 2, and are therefore no prime. Since
+  // we start at 3, incrementing by 2 will mean that currentNumber is always odd.
+  for(int currentNumber = 3; currentNumber < largestNumberToCheck; currentNumber += 2){
     // Reset the marker to see if the current number is prime.
     isPrime = YES;
     
@@ -146,8 +148,10 @@
   // Variable to hold the largest prime factor.
   long long int largestPrimeFactor = 0;
   
-  // Loop through all the prime numbers already found.
-  for(int currentNumber = 3; currentNumber < largestNumberToCheck; currentNumber++){
+  // Loop through all the prime numbers already found. No need to check the even
+  // numbers, as they are always divisible by 2, and are therefore no prime. Since
+  // we start at 3, incrementing by 2 will mean that currentNumber is always odd.
+  for(int currentNumber = 3; currentNumber < largestNumberToCheck; currentNumber += 2){
     // Reset the marker to see if the current number is prime.
     isPrime = YES;
     
