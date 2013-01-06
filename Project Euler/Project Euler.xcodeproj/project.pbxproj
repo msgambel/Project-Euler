@@ -28,6 +28,7 @@
 		4E04C83F1694E8DA00DC881F /* Question3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C83A1694E8D900DC881F /* Question3.m */; };
 		4E04C85A1697767A00DC881F /* Question4.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8591697767A00DC881F /* Question4.m */; };
 		4E04C85D1697D0C800DC881F /* Question5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C85C1697D0C800DC881F /* Question5.m */; };
+		4E04C86F169936DE00DC881F /* Question6.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C86E169936DE00DC881F /* Question6.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		4E04C8591697767A00DC881F /* Question4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question4.m; sourceTree = "<group>"; };
 		4E04C85B1697D0C700DC881F /* Question5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question5.h; sourceTree = "<group>"; };
 		4E04C85C1697D0C800DC881F /* Question5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question5.m; sourceTree = "<group>"; };
+		4E04C86D169936DE00DC881F /* Question6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question6.h; sourceTree = "<group>"; };
+		4E04C86E169936DE00DC881F /* Question6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question6.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1106,6 +1109,8 @@
 		4E04C8121693965500DC881F /* Questions 6-10 */ = {
 			isa = PBXGroup;
 			children = (
+				4E04C86D169936DE00DC881F /* Question6.h */,
+				4E04C86E169936DE00DC881F /* Question6.m */,
 			);
 			path = "Questions 6-10";
 			sourceTree = "<group>";
@@ -1198,6 +1203,7 @@
 				4E04C83F1694E8DA00DC881F /* Question3.m in Sources */,
 				4E04C85A1697767A00DC881F /* Question4.m in Sources */,
 				4E04C85D1697D0C800DC881F /* Question5.m in Sources */,
+				4E04C86F169936DE00DC881F /* Question6.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
