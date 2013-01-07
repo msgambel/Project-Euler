@@ -74,7 +74,7 @@
       currentPrimeNumber = [number longLongValue];
       
       // If the current prime number is less than the square root of the current number,
-      if(currentPrimeNumber < sqrtOfCurrentNumber){
+      if(currentPrimeNumber <= sqrtOfCurrentNumber){
         // If the current prime number divides our current number,
         if((currentNumber % currentPrimeNumber) == 0){
           // The current number is not prime, so exit the loop.
