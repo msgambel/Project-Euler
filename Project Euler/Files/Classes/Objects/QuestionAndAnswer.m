@@ -73,12 +73,12 @@
   //
   // n * ln(n) - n * ln(ln(n)) + O(n * ln(ln(ln(n))))
   //
-  // Therefore, if we add a fairly large constant factor of 1.1 to the first term,
+  // Therefore, if we add a fairly large constant factor of 1.2 to the first term,
   // we should be able to get a fairly accurate upper limit of it's size.
   
   // Compute the limit based on the end size of the array (i.e.: The number of
   // primes in the array).
-  long long int limit = (long long int)(1.1 * aSize * log(aSize));
+  long long int limit = (long long int)(1.2 * aSize * log(aSize));
   
   // Return the array of prime numbers based on the computed limit, and the size.
   return [self arrayOfPrimeNumberUpTo:limit count:aSize];
@@ -164,10 +164,10 @@
     // If it is a prime number,
     if(sieve[n]){
       // Grab the square of the prime number.
-      int x = n * n;
+      long long int x = n * n;
       
       // For all the multiples of the square number,
-      for(int i = x; i <= aLimit; i += x){
+      for(long long int i = x; i <= aLimit; i += x){
         // Set that this multiple is not a prime.
         sieve[i] = NO;
       }
@@ -183,11 +183,11 @@
     for(int i = 0; i <= aLimit; i++){
       // If the number is a prime number,
       if(sieve[i]){
-        // Increase the current count or primes by 1.
-        currentCount++;
-        
         // Add the prime number to the array.
         [primesArray addObject:[NSNumber numberWithInt:i]];
+        
+        // Increase the current count of the primes by 1.
+        currentCount++;
         
         // If the current count equals the requested number of primes,
         if(currentCount == aCount){
