@@ -31,6 +31,7 @@
 		4E04C86F169936DE00DC881F /* Question6.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C86E169936DE00DC881F /* Question6.m */; };
 		4E04C875169A14BD00DC881F /* Question7.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C874169A14BD00DC881F /* Question7.m */; };
 		4E04C88E169B70A900DC881F /* Question8.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C88D169B70A900DC881F /* Question8.m */; };
+		4E8CEC30169CA473007CE6F0 /* Question9.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CEC2F169CA473007CE6F0 /* Question9.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		4E04C874169A14BD00DC881F /* Question7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question7.m; sourceTree = "<group>"; };
 		4E04C88C169B70A900DC881F /* Question8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question8.h; sourceTree = "<group>"; };
 		4E04C88D169B70A900DC881F /* Question8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question8.m; sourceTree = "<group>"; };
+		4E8CEC2E169CA473007CE6F0 /* Question9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question9.h; sourceTree = "<group>"; };
+		4E8CEC2F169CA473007CE6F0 /* Question9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question9.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1121,6 +1124,8 @@
 				4E04C874169A14BD00DC881F /* Question7.m */,
 				4E04C88C169B70A900DC881F /* Question8.h */,
 				4E04C88D169B70A900DC881F /* Question8.m */,
+				4E8CEC2E169CA473007CE6F0 /* Question9.h */,
+				4E8CEC2F169CA473007CE6F0 /* Question9.m */,
 			);
 			path = "Questions 6-10";
 			sourceTree = "<group>";
@@ -1216,6 +1221,7 @@
 				4E04C86F169936DE00DC881F /* Question6.m in Sources */,
 				4E04C875169A14BD00DC881F /* Question7.m in Sources */,
 				4E04C88E169B70A900DC881F /* Question8.m in Sources */,
+				4E8CEC30169CA473007CE6F0 /* Question9.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

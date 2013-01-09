@@ -7,7 +7,7 @@
 #define IBOutletCollection(ClassName)
 #endif
 
-#define TotalNumberSolved 8
+#define TotalNumberSolved 9
 #define NumberOfButtonsInQuestionCell 5
 
 #endif
