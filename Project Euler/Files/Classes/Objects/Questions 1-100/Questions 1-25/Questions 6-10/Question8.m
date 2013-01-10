@@ -30,6 +30,9 @@
 #pragma mark - Methods
 
 - (void)computeAnswer; {
+  // Set that we have started the computation.
+  _isComputing = YES;
+  
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
@@ -109,9 +112,15 @@
   
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
+  
+  // Set that we have finished the computation.
+  _isComputing = NO;
 }
 
 - (void)computeAnswerByBruteForce; {
+  // Set that we have started the computation.
+  _isComputing = YES;
+  
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
@@ -164,6 +173,9 @@
   
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
+  
+  // Set that we have finished the computation.
+  _isComputing = NO;
 }
 
 @end
