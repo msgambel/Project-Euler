@@ -1,10 +1,12 @@
 //  QuestionAndAnswer.m
 
 #import "QuestionAndAnswer.h"
+#import "Global.h"
 
 @interface QuestionAndAnswer (Private)
 
-- (NSMutableArray *)arrayOfPrimeNumberUpTo:(long long int)aLimit count:(long long int)aCount;
+- (NSMutableArray *)arrayOfPrimeNumbersUpTo:(uint)aLimit count:(uint)aCount;
+- (NSMutableArray *)slowArrayOfPrimeNumbersUpTo:(uint)aLimit count:(uint)aCount;
 
 @end
 
@@ -64,7 +66,7 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
-- (NSMutableArray *)arrayOfPrimeNumbersOfSize:(long long int)aSize; {
+- (NSMutableArray *)arrayOfPrimeNumbersOfSize:(uint)aSize; {
   // By expanding out the Taylor Series of the result of the Prime Number Theorem,
   //
   // TT (n) ~ n / ln(n),
@@ -78,16 +80,41 @@
   
   // Compute the limit based on the end size of the array (i.e.: The number of
   // primes in the array).
-  long long int limit = (long long int)(1.2 * aSize * log(aSize));
+  uint limit = (uint)(1.2 * aSize * log(aSize));
   
-  // Return the array of prime numbers based on the computed limit, and the size.
-  return [self arrayOfPrimeNumberUpTo:limit count:aSize];
+  if(limit <= MaxSizeOfSieveOfAtkinson){
+    // Return the array of prime numbers based on the computed limit, and the size,
+    // computed using the Sieve of Atkinson.
+    return [self arrayOfPrimeNumbersUpTo:limit count:aSize];
+  }
+  else if(limit <= MaxSizeOfSieveOfEratosthenes){
+    // Return the array of prime numbers based on the computed limit, and the size,
+    // computed using the Sieve of Eratosthenes.
+    return [self slowArrayOfPrimeNumbersUpTo:limit count:aSize];
+  }
+  else{
+    NSLog(@"The size: %d is too big!!! Less than %d please!", limit, MaxSizeOfSieveOfEratosthenes);
+    return nil;
+  }
 }
 
-- (NSMutableArray *)arrayOfPrimeNumbersLessThan:(long long int)aLimit; {
-  // Return the array of prime numbers based on the limit. A size of 0 means that
-  // the method doesn't care about the number of primes in the array.
-  return [self arrayOfPrimeNumberUpTo:aLimit count:0];
+- (NSMutableArray *)arrayOfPrimeNumbersLessThan:(uint)aLimit; {
+  if(aLimit <= MaxSizeOfSieveOfAtkinson){
+    // Return the array of prime numbers based on the limit. A size of 0 means that
+    // the method doesn't care about the number of primes in the array. Compute
+    // using the Sieve of Atkinson.
+    return [self arrayOfPrimeNumbersUpTo:aLimit count:0];
+  }
+  else if(aLimit <= MaxSizeOfSieveOfEratosthenes){
+    // Return the array of prime numbers based on the limit. A size of 0 means that
+    // the method doesn't care about the number of primes in the array. Compute
+    // using the Sieve of Eratosthenes.
+    return [self slowArrayOfPrimeNumbersUpTo:aLimit count:0];
+  }
+  else{
+    NSLog(@"The size: %d is too big!!! Less than %d please!", aLimit, MaxSizeOfSieveOfEratosthenes);
+    return nil;
+  }
 }
 
 @end
@@ -96,7 +123,7 @@
 
 @implementation QuestionAndAnswer (Private)
 
-- (NSMutableArray *)arrayOfPrimeNumberUpTo:(long long int)aLimit count:(long long int)aCount; {
+- (NSMutableArray *)arrayOfPrimeNumbersUpTo:(uint)aLimit count:(uint)aCount; {
   // There may be more efficient data structure arrangements than this (there are!),
   // but this is the algorithm from Wikipedia. http://en.wikipedia.org/wiki/Sieve_of_Atkin
   //
@@ -116,7 +143,7 @@
     sieve[i] = NO;
   }
   // Precompute the square root of the limit.
-  long long int limitSquareRoot = (long long int)sqrt((double)aLimit);
+  uint limitSquareRoot = (uint)sqrt((double)aLimit);
   
   // The sieve works only for integers > 3, so set the trivial values.
   sieve[0] = NO;
@@ -177,7 +204,7 @@
   // the primes array.
   if(aCount > 0){
     // Variable to hold the current number of primes added.
-    long long int currentCount = 0;
+    uint currentCount = 0;
     
     // Add in all the primes to the primes array.
     for(int i = 0; i <= aLimit; i++){
@@ -210,6 +237,121 @@
   }
   // Return the primes array.
   return primesArray;
+}
+
+- (NSMutableArray *)slowArrayOfPrimeNumbersUpTo:(uint)aLimit count:(uint)aCount; {
+  // Array to hold all the prime numbers found.
+  NSMutableArray * primeNumbersArray = [[NSMutableArray alloc] init];
+  
+  // Add in the first prime, 2, to the prime array.
+  [primeNumbersArray addObject:[NSNumber numberWithInt:2]];
+  
+  // BOOL variable to mark if a current number is prime.
+  BOOL isPrime = NO;
+  
+  // Variable to hold the current prime number, used to minimize computations.
+  uint currentPrimeNumber = 0;
+  
+  // Variable to hold the square root of the current number, used to minimize computations.
+  uint sqrtOfCurrentNumber = 0;
+  
+  // If the count is greater than 0, we want an exact count. This saves us from
+  // making the check count repeatedly if we don't actually care about the number
+  // of primes returned.
+  if(aCount > 0){
+    // Loop through all the prime numbers already found. No need to check the even
+    // numbers, as they are always divisible by 2, and are therefore no prime. Since
+    // we start at 3, incrementing by 2 will mean that currentNumber is always odd.
+    for(int currentNumber = 3; currentNumber < aLimit; currentNumber += 2){
+      // Reset the marker to see if the current number is prime.
+      isPrime = YES;
+      
+      // Compute the square root of the current number.
+      sqrtOfCurrentNumber = (int)sqrtf(currentNumber);
+      
+      // Loop through all the prime numbers already found.
+      for(NSNumber * number in primeNumbersArray){
+        // Grab the current prime number.
+        currentPrimeNumber = [number intValue];
+        
+        // If the current prime number is less than the square root of the current number,
+        if(currentPrimeNumber <= sqrtOfCurrentNumber){
+          // If the current prime number divides our current number,
+          if((currentNumber % currentPrimeNumber) == 0){
+            // The current number is not prime, so exit the loop.
+            isPrime = NO;
+            break;
+          }
+        }
+        else{
+          // Since the number is bigger than the square root of the current number,
+          // exit the loop.
+          break;
+        }
+      }
+      // If the current number was marked as a prime number,
+      if(isPrime){
+        // If we are no longer computing,
+        if(!_isComputing){
+          // Break out of the loop.
+          break;
+        }
+        // Add the number to the array of prime numbers.
+        [primeNumbersArray addObject:[NSNumber numberWithInt:currentNumber]];
+        
+        // If the current count equals the requested number of primes,
+        if([primeNumbersArray count] == aCount){
+          // Break out of the loop.
+          break;
+        }
+      }
+    }
+  }
+  // If the count is NOT greater than 0, we don't care about the count.
+  else{
+    // Loop through all the prime numbers already found. No need to check the even
+    // numbers, as they are always divisible by 2, and are therefore no prime. Since
+    // we start at 3, incrementing by 2 will mean that currentNumber is always odd.
+    for(int currentNumber = 3; currentNumber < aLimit; currentNumber += 2){
+      // Reset the marker to see if the current number is prime.
+      isPrime = YES;
+      
+      // Compute the square root of the current number.
+      sqrtOfCurrentNumber = (int)sqrtf(currentNumber);
+      
+      // Loop through all the prime numbers already found.
+      for(NSNumber * number in primeNumbersArray){
+        // Grab the current prime number.
+        currentPrimeNumber = [number intValue];
+        
+        // If the current prime number is less than the square root of the current number,
+        if(currentPrimeNumber <= sqrtOfCurrentNumber){
+          // If the current prime number divides our current number,
+          if((currentNumber % currentPrimeNumber) == 0){
+            // The current number is not prime, so exit the loop.
+            isPrime = NO;
+            break;
+          }
+        }
+        else{
+          // Since the number is bigger than the square root of the current number,
+          // exit the loop.
+          break;
+        }
+      }
+      // If the current number was marked as a prime number,
+      if(isPrime){
+        // If we are no longer computing,
+        if(!_isComputing){
+          // Break out of the loop.
+          break;
+        }
+        // Add the number to the array of prime numbers.
+        [primeNumbersArray addObject:[NSNumber numberWithInt:currentNumber]];
+      }
+    }
+  }
+  return primeNumbersArray;
 }
 
 @end

@@ -41,7 +41,7 @@
 // class, as it seems there are a bunch of questions that rely on the primes. It
 // also makes it much easier to change/improve later.
 
-- (NSMutableArray *)arrayOfPrimeNumbersOfSize:(long long int)aSize;
-- (NSMutableArray *)arrayOfPrimeNumbersLessThan:(long long int)aLimit;
+- (NSMutableArray *)arrayOfPrimeNumbersOfSize:(uint)aSize;
+- (NSMutableArray *)arrayOfPrimeNumbersLessThan:(uint)aLimit;
 
 @end

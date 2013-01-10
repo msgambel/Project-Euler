@@ -142,8 +142,8 @@
     // Tell the NSOperationQueue to cancel all the operations.
     [_operationQueue cancelAllOperations];
     
-    // Update all the controls to their defaults.
-    [self updateTheControls];
+    // Tell the question to no longer compute the answer.
+    _questionAndAnswer.isComputing = NO;
     
     // Set the NSOperationQueue to nil as we are done with it.
     _operationQueue = nil;
