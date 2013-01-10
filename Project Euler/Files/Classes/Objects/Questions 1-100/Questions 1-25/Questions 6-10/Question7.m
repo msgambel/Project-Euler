@@ -18,14 +18,18 @@
   self.answer = @"104743";
   self.number = @"Problem 7";
   self.estimatedComputationTime = @"7.35e-03";
-  self.estimatedBruteForceComputationTime = @"4.76e-02";
+  self.estimatedBruteForceComputationTime = @"4.03e-02";
 }
 
 #pragma mark - Methods
 
 - (void)computeAnswer; {
+  // Set that we have started the computation.
+  _isComputing = YES;
+  
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
   // Variable to hold the desired count of the primes array.
   uint primesArrayCount = 10001;
   
@@ -44,9 +48,15 @@
   
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
+  
+  // Set that we have finished the computation.
+  _isComputing = NO;
 }
 
 - (void)computeAnswerByBruteForce; {
+  // Set that we have started the computation.
+  _isComputing = YES;
+  
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
@@ -63,7 +73,7 @@
   BOOL isPrime = NO;
   
   // Variable to hold the current number of primes added. We already added in 2!
-  long long int currentCount = 1;
+  uint currentCount = 1;
   
   // Variable to hold the desired count of the primes array.
   uint primesArrayCount = 10001;
@@ -81,13 +91,13 @@
   
   // Compute the limit based on the end size of the array (i.e.: The number of
   // primes in the array).
-  long long int maxNumber = (long long int)(1.2 * primesArrayCount * log(primesArrayCount));
+  uint maxNumber = (uint)(1.2 * primesArrayCount * log(primesArrayCount));
   
   // Variable to hold the current prime number, used to minimize computations.
-  long long int currentPrimeNumber = 0;
+  uint currentPrimeNumber = 0;
   
   // Variable to hold the square root of the current number, used to minimize computations.
-  long long int sqrtOfCurrentNumber = 0;
+  uint sqrtOfCurrentNumber = 0;
   
   // Loop through all the prime numbers already found. No need to check the even
   // numbers, as they are always divisible by 2, and are therefore no prime. Since
@@ -97,12 +107,12 @@
     isPrime = YES;
     
     // Compute the square root of the current number.
-    sqrtOfCurrentNumber = (long long int)sqrtf(currentNumber);
+    sqrtOfCurrentNumber = (int)sqrtf(currentNumber);
     
     // Loop through all the prime numbers already found.
     for(NSNumber * number in primeNumbersArray){
       // Grab the current prime number.
-      currentPrimeNumber = [number longLongValue];
+      currentPrimeNumber = [number intValue];
       
       // If the current prime number is less than the square root of the current number,
       if(currentPrimeNumber <= sqrtOfCurrentNumber){
@@ -146,6 +156,9 @@
   
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
+  
+  // Set that we have finished the computation.
+  _isComputing = NO;
 }
 
 @end
