@@ -1,10 +1,11 @@
 //  Question8.m
 
 #import "Question8.h"
+#import "Structures.h"
 
 @interface Question8 (Private)
 
-- (MovingProduct)string:(NSString *)aString index:(uint)aIndex;
+- (MovingProduct5)string:(NSString *)aString index:(uint)aIndex;
 
 @end
 
@@ -49,14 +50,18 @@
   uint largestProduct = 0;
   
   // Variable to hold the moving product. Set it by default to the first valid
-  // MovingProduct returned by the helper method.
-  MovingProduct movingProduct = [self string:searchNumberAsAString index:0];
+  // MovingProduct5 returned by the helper method.
+  MovingProduct5 movingProduct = [self string:searchNumberAsAString index:0];
   
   // If the product returned by the helper method is non-zero, a valid product
   // has been found, so keep going!
   if(movingProduct.product != 0){
-    
-    // While there are enough digits remaining to compute the MovingProduct,
+    // If the current product is larger than the last largest product,
+    if(movingProduct.product > largestProduct){
+      // Set the largest product to be the current product.
+      largestProduct = movingProduct.product;
+    }
+    // While there are enough digits remaining to compute the MovingProduct5,
     while(movingProduct.index < [searchNumberAsAString length]){
       // Compute the new current range.
       subStringRange = NSMakeRange(movingProduct.index, 1);
@@ -66,7 +71,7 @@
       
       // If the "digit" value is 0,
       if(digitValue == 0){
-        // Grab the next valid MovingProduct.
+        // Grab the next valid MovingProduct5.
         movingProduct = [self string:searchNumberAsAString index:movingProduct.index];
         
         // If the product returned by the helper method is zero.
@@ -84,11 +89,11 @@
         movingProduct.product *= digitValue;
         
         // Move the numbers in the product to the left.
-        movingProduct = MovingProductShiftLeft(movingProduct);
+        movingProduct = MovingProduct5ShiftLeft(movingProduct);
         
         // Set the new value of the right most "digit" in the product to the
         // current "digit" value.
-        movingProduct.numbersInProduct[(NumberOfDigitsInProduct - 1)] = digitValue;
+        movingProduct.numbersInProduct[4] = digitValue;
       }
       // If the current product is larger than the last largest product,
       if(movingProduct.product > largestProduct){
@@ -134,28 +139,28 @@
   NSInteger characterIndex = 0;
   
   // Variable to hold the current product.
-  uint product = 1;
+  uint currentProduct = 1;
   
   // Variable to hold the largest product found.
   uint largestProduct = 1;
   
   // While there are enough digits remaining to compute the product,
-  while(characterIndex < ([searchNumberAsAString length] - NumberOfDigitsInProduct)){
+  while(characterIndex < ([searchNumberAsAString length] - 5)){
     // Start the default of the product to the unit 1.
-    product = 1;
+    currentProduct = 1;
     
     // For all the numbers from the starting index to the end index,
-    for(int i = 0; i < NumberOfDigitsInProduct; i++){
+    for(int i = 0; i < 5; i++){
       // Compute the new current range.
       subStringRange = NSMakeRange(characterIndex + i, 1);
       
-      // Multiply the product by the current "digit" value.
-      product *= [[searchNumberAsAString substringWithRange:subStringRange] intValue];
+      // Multiply the current product by the current "digit" value.
+      currentProduct *= [[searchNumberAsAString substringWithRange:subStringRange] intValue];
     }
     // If the current product is larger than the last largest product,
-    if(product > largestProduct){
+    if(currentProduct > largestProduct){
       // Set the largest product to be the current product.
-      largestProduct = product;
+      largestProduct = currentProduct;
     }
     // Increase the currentIndex by 1, which is equivalent to looking at the
     // next digit to the right.
@@ -184,20 +189,20 @@
 
 @implementation Question8 (Private)
 
-- (MovingProduct)string:(NSString *)aString index:(uint)aIndex; {
+- (MovingProduct5)string:(NSString *)aString index:(uint)aIndex; {
   // This helper method finds the next product of the numbers given the starting
   // index. If the product ever becomes 0 (i.e.: the current digit is 0), then
   // it recursively calls itself to find the next product. There is a check to
   // make sure that the there is enough digits remaining in the string to actually
-  // compute the product. If there isn't, this method returns a MovingProduct that
+  // compute the product. If there isn't, this method returns a MovingProduct5 that
   // is filled with 0's.
   
-  // Variable to hold the newly computed MovingProduct based on the index. It is
-  // defaulted to a MovingProduct that is filled with 0's.
-  MovingProduct movingProduct = MovingProductZeros;
+  // Variable to hold the newly computed MovingProduct5 based on the index. It is
+  // defaulted to a MovingProduct5 that is filled with 0's.
+  MovingProduct5 movingProduct = MovingProduct5Zeros;
   
-  // If there are enough digits remaining to compute the MovingProduct,
-  if([aString length] > (aIndex + NumberOfDigitsInProduct)){
+  // If there are enough digits remaining to compute the MovingProduct5,
+  if([aString length] > (aIndex + 5)){
     
     // Start the default of the product to the unit 1.
     movingProduct.product = 1;
@@ -208,15 +213,15 @@
     // Variable to hold the integer value of the current "digit".
     uint digitValue = 0;
     
-    // Set the index of the MovingProduct to new index after the multiplication
+    // Set the index of the MovingProduct5 to new index after the multiplication
     // is complete. We do this now as if a 0 appears in the product, we recursively
     // call this method, which will overwrite this value. If we do it after the
-    // following loop, this will overwrite the value of the returned MovingProduct,
+    // following loop, this will overwrite the value of the returned MovingProduct5,
     // which will give the wrong starting index.
-    movingProduct.index = (aIndex + NumberOfDigitsInProduct);
+    movingProduct.index = (aIndex + 5);
     
     // For all the numbers from the starting index to the end index,
-    for(int i = 0; i < NumberOfDigitsInProduct; i++){
+    for(int i = 0; i < 5; i++){
       // Compute the new current range.
       subStringRange = NSMakeRange(aIndex + i, 1);
       
@@ -225,7 +230,7 @@
       
       // If the "digit" value is 0,
       if(digitValue == 0){
-        // Set the MovingProduct to the returned value of this method based on
+        // Set the MovingProduct5 to the returned value of this method based on
         // the current index + 1 (i.e.: the "digit" to the right of the current
         // one).
         movingProduct = [self string:aString index:(subStringRange.location + 1)];
@@ -244,7 +249,7 @@
       }
     }
   }
-  // Return the MovingProduct.
+  // Return the MovingProduct5.
   return movingProduct;
 }
 
