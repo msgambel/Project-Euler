@@ -34,7 +34,21 @@
   // Set that we have started the computation.
   _isComputing = YES;
   
-  // Explain overall technique.
+  // The optimal method is to use a 1-dimensional array to store the data instead
+  // of a 2-dimensional array. This is because there is less backend memory
+  // management going on, as the only address needed is the start address.
+  //
+  // It is worth noting that in order to move in a specific direction, it is still
+  // beneficial to think of the array as a 2 dimensional array, where moving
+  // left and right is +/- 1, up and down is +/- numberOfRowsAndColumns, and in
+  // order to move diagonally, +/- (numberOfRowsAndColumns +/- 1).
+  //
+  // We have a helper method similay to Question 8 which uses a moving product.
+  // That way, we can eliminate the uneccessary multiplications, as well as
+  // ignore the 0's.
+  //
+  // Also Note that we could make the helper method a strict C function instead
+  // in order to speed up the computation.
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
@@ -88,11 +102,18 @@
   // direction we iterate over.
   int positionIncrementAmount[Direction_End] = {1, 1, 1, -1};
   
-  // Explain Method.
+  // Here, we iterate over all 4 directions. The above arrays allow us to compact
+  // the code, eliminate potential errors, and make understanding a bit easier.
+  //
+  // We essentially find the start and end locations of the lines we are iterating
+  // over, and allow the moving product to continually check for the largest
+  // potential product.
   
   // For all the directions we iterate over,
   for(Direction direction = Direction_LeftToRight; direction < Direction_End; direction++){
-    // For all the different lines based on the direction,
+    // For all the different lines based on the direction (Note that the condition
+    // to check is based on the direction. This could be simplified to 1 check
+    // with a bit of clever reordering),
     for(int position = startPosition[direction]; ((direction == Direction_TopLeftToBottomRight) && (position >= endPosition[direction]))
                                               || ((direction != Direction_TopLeftToBottomRight) && (position < endPosition[direction]));
                                                  position += positionIncrementAmount[direction]){
@@ -118,30 +139,54 @@
           endIndex = startIndex + (numberOfRowsAndColumns * (numberOfRowsAndColumns - 1)) + 1;
           break;
         case Direction_BottomLeftToTopRight:
+          // Since we are finding the diagonals, there is an inflection point at
+          // the 0 index. Therefore, we have to split the cases in order to get
+          // the correct start and end points.
+          
+          // If the start position is the first column on the left,
           if(position < numberOfRowsAndColumns){
-            // Set the row to the value of the diagonal.
+            // The start position is just the start position of each row.
             startIndex = position * numberOfRowsAndColumns;
             
+            // The end position is in the first row, so setting the index to 0
+            // makes it so that the array can't go to a negative index.
             endIndex = 0;
           }
-          // If the diagonal is LARGER than a valid row,
+          // If the start position is the last row on the bottom,
           else{
+            // The start position is in the last row at the diagonal we are
+            // iterating over.
             startIndex = numberOfRowsAndColumns * (numberOfRowsAndColumns - 1) + (position - numberOfRowsAndColumns) + 1;
             
+            // The end position is in the right most column, so figure out the
+            // row index and subtract 1.
             endIndex = (position - numberOfRowsAndColumns + 1) * numberOfRowsAndColumns + (numberOfRowsAndColumns - 1);
           }
           break;
         case Direction_TopLeftToBottomRight:
+          // Since we are finding the diagonals, there is an inflection point at
+          // the 0 index. Therefore, we have to split the cases in order to get
+          // the correct start and end points.
+          
+          // If the start position is the first column on the left,
           if(position < 0){
-            // Set the row to the value of the diagonal.
+            // The start position is just the start position of each row (The
+            // negative is just an indexing issue with the position. This can be
+            // removed with a bit of clever reordering).
             startIndex = -position * numberOfRowsAndColumns;
             
+            // The end position is in the last row at the diagonal we are iterating
+            // over.
             endIndex = (numberOfRowsAndColumns * numberOfRowsAndColumns) + position - 1;
           }
-          // If the diagonal is LARGER than a valid row,
+          // If the start position is the first row on the top,
           else{
+            // To find the start position, we just take the start position, as they
+            // are all in the first row.
             startIndex = position;
             
+            // The end position is in the right most column, so figure out the
+            // row index and subtract 1.
             endIndex = (numberOfRowsAndColumns - position) * numberOfRowsAndColumns - 1;
           }
           break;
@@ -160,6 +205,10 @@
         // Set the largest product to be the current product.
         largestProduct = movingProduct.product;
       }
+      
+      // For all the points from the start index to the end index (Note that we
+      // need to have the check condition based on the direction we are iterating
+      // over. This could be simplified to 1 check with a bit of clever reordering),
       for(int index = startIndex; ((direction == Direction_LeftToRight) && (index < endIndex))
                                || ((direction == Direction_TopToBottom) && (index < endIndex))
                                || ((direction == Direction_BottomLeftToTopRight) && (index >= endIndex))
