@@ -138,6 +138,7 @@
 }
 
 - (IBAction)cancelButtonPressed:(UIButton *)aButton; {
+  // If we are computing,
   if(_isComputing){
     // Tell the NSOperationQueue to cancel all the operations.
     [_operationQueue cancelAllOperations];

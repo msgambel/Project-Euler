@@ -263,6 +263,7 @@
       break;
     }
   }
+  // If the user has not cancelled the computation at this point,
   if(_isComputing){
     // Set the answer string to the value of the triangle number with the desired number of factors.
     self.answer = [NSString stringWithFormat:@"%d", triangleNumberWithLargeFactors];
