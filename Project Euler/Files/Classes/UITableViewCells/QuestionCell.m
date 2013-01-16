@@ -33,9 +33,15 @@
     // Grab the buttons number.
     buttonNumber = [[button titleForState:UIControlStateNormal] intValue];
     
-    // Mod the number by 10 so we are only left with the units digit.
-    buttonNumber %= 10;
+    // Mod the number by the number of buttons in a Question cell so that we are
+    // only left with the index of the button.
+    buttonNumber %= NumberOfButtonsInQuestionCell;
     
+    // If the button number is 0 (i.e.: the last button),
+    if(buttonNumber == 0){
+      // Set the button number to 5, the last button.
+      buttonNumber = NumberOfButtonsInQuestionCell;
+    }
     // Add the incremental value to the number.
     buttonNumber += addValue;
     
