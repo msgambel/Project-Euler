@@ -115,8 +115,8 @@
   // Get the amount of time that has passed while the computation was happening.
   NSTimeInterval computationTile = [[NSDate date] timeIntervalSinceDate:startTime];
   
-  // Set the estimated computation time to the calculated value. We use scientific
-  // notation here, as the run time should be very short.
+  // Set the estimated brute force computation time to the calculated value. We
+  // use scientific notation here, as the run time should be very short.
   self.estimatedBruteForceComputationTime = [NSString stringWithFormat:@"%.03g", computationTile];
   
   // Tell the delegate we have finished the computation.
