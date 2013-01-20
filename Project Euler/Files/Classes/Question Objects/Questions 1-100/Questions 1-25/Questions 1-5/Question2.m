@@ -33,7 +33,7 @@
   // Set the max size for the Fibonacci numbers.
   uint maxSize = 4000000;
   
-  // Set the sum to 0 before we start iterating over all the numbers.
+  // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
   
   // Notice that the third Fibonacci number after an even Fibonacci number is
@@ -100,7 +100,7 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Set the sum to 0 before we start iterating over all the numbers.
+  // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
   
   // Set the max size for the Fibonacci numbers.

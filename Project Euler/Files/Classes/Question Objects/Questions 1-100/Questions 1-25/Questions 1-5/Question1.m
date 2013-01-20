@@ -74,7 +74,7 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Set the sum to 0 before we start iterating over all the numbers.
+  // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
   
   // For all the integers from 1 to 999,

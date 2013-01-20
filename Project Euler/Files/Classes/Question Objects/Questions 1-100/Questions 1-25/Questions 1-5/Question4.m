@@ -274,7 +274,7 @@
   // While the character index is greater than 0,
   while(characterIndex > 0){
     // Decrease the characterIndex by 1, which is equivalent to looking at the
-    // next "digit" to the right.
+    // next "digit" to the left.
     characterIndex--;
     
     // Compute the range of the next "digit".
