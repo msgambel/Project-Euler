@@ -66,6 +66,38 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
+- (uint)digitSumOfNumber:(NSString *)aNumber; {
+  // Variable to hold the current digit.
+  uint currentDigit = 0;
+  
+  // Variable to hold the current index of the string.
+  int currentIndex = [aNumber length];
+  
+  // Variable to hold the digit sum.
+  uint digitSum = 0;
+  
+  // Variable to hold the index and length of the current "digit".
+  NSRange subStringRange = NSMakeRange(0, 0);
+  
+  // While the current index is greater than or equal to the midPoint,
+  while(currentIndex > 0){
+    // Decrease the currentIndex by 1, which is equivalent to looking at the
+    // next digit to the right.
+    currentIndex--;
+    
+    // Compute the range of the next "digit".
+    subStringRange = NSMakeRange(currentIndex, 1);
+    
+    // Compute the current digit given the by current index.
+    currentDigit = [[aNumber substringWithRange:subStringRange] intValue];
+    
+    // Increase the digit sum by the value of the digit.
+    digitSum += currentDigit;
+  }
+  // Return the digit sum.
+  return digitSum;
+}
+
 - (NSMutableArray *)arrayOfPrimeNumbersOfSize:(uint)aSize; {
   // By expanding out the Taylor Series of the result of the Prime Number Theorem,
   //

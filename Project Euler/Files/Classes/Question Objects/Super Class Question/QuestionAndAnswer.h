@@ -36,6 +36,10 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
+// This helper method will take in a number as a string and return the sum of
+// its digits.
+- (uint)digitSumOfNumber:(NSString *)aNumber;
+
 // These helper methods are added so that any Question object can easily compute
 // the primes up to a given limit or size. They have been added to the super
 // class, as it seems there are a bunch of questions that rely on the primes. It
