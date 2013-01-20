@@ -45,6 +45,7 @@
 		4E93B98216A9C9DA00D9EADB /* Question9.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B90D16A9C9D900D9EADB /* Question9.m */; };
 		4E93B98616A9CA5700D9EADB /* QuestionAndAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B98516A9CA5700D9EADB /* QuestionAndAnswer.m */; };
 		4E93B99416A9D82800D9EADB /* Question19.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B99116A9D82700D9EADB /* Question19.m */; };
+		4E93B99B16AB271600D9EADB /* Question20.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B99A16AB271600D9EADB /* Question20.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,8 @@
 		4E93B98516A9CA5700D9EADB /* QuestionAndAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAndAnswer.m; sourceTree = "<group>"; };
 		4E93B99016A9D82700D9EADB /* Question19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question19.h; sourceTree = "<group>"; };
 		4E93B99116A9D82700D9EADB /* Question19.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question19.m; sourceTree = "<group>"; };
+		4E93B99916AB271600D9EADB /* Question20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question20.h; sourceTree = "<group>"; };
+		4E93B99A16AB271600D9EADB /* Question20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question20.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +449,8 @@
 				4E93B90116A9C9D900D9EADB /* Question18.m */,
 				4E93B99016A9D82700D9EADB /* Question19.h */,
 				4E93B99116A9D82700D9EADB /* Question19.m */,
+				4E93B99916AB271600D9EADB /* Question20.h */,
+				4E93B99A16AB271600D9EADB /* Question20.m */,
 			);
 			path = "Questions 16-20";
 			sourceTree = "<group>";
@@ -1348,6 +1353,7 @@
 				4E93B98216A9C9DA00D9EADB /* Question9.m in Sources */,
 				4E93B98616A9CA5700D9EADB /* QuestionAndAnswer.m in Sources */,
 				4E93B99416A9D82800D9EADB /* Question19.m in Sources */,
+				4E93B99B16AB271600D9EADB /* Question20.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
