@@ -75,7 +75,7 @@
     numbersArray[i] = [[parsedArray objectAtIndex:i] intValue];
   }
   // Variable to hold the product of 4 adjacent numbers as we move in a direction.
-  MovingProduct4 movingProduct = MovingProduct4Ones;
+  MovingProduct4 movingProduct = MovingProduct4One;
   
   // Variable to hold the integer value of the current digit.
   uint digitValue = 0;
@@ -562,7 +562,7 @@
 - (MovingProduct4)array:(int *)aArray startIndex:(int)aStartIndex endIndex:(int)aEndIndex incrementAmount:(int)aIncrementAmount; {
   // Variable to hold the newly computed MovingProduct4 based on the index. It is
   // defaulted to a MovingProduct4 that is filled with 0's.
-  MovingProduct4 movingProduct = MovingProduct4Zeros;
+  MovingProduct4 movingProduct = MovingProduct4Zero;
   
   // If the increment amount is not 0,
   if(aIncrementAmount != 0){

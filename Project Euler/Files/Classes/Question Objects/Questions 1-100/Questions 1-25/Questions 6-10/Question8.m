@@ -199,7 +199,7 @@
   
   // Variable to hold the newly computed MovingProduct5 based on the index. It is
   // defaulted to a MovingProduct5 that is filled with 0's.
-  MovingProduct5 movingProduct = MovingProduct5Zeros;
+  MovingProduct5 movingProduct = MovingProduct5Zero;
   
   // If there are enough digits remaining to compute the MovingProduct5,
   if([aString length] > (aIndex + 5)){

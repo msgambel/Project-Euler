@@ -3,35 +3,55 @@
 #ifndef Project_Euler_Structures_h
 #define Project_Euler_Structures_h
 
+#pragma mark - Structures.
+
+// Structure to hold a prime power.
+typedef struct {
+  uint power;
+  uint primeNumber;
+}PrimePower;
+
 // Here, we make a structure which will allow us to keep track of the moving
 // product. If we hold the numbers of the product, the product itself, and the
 // left most location of the product in the overall number.
 
-// Structures to hold the product, the number in the product, and the index.
-
+// Structures to hold the product, the 4 numbers in the product, and the index.
 typedef struct {
   uint index;
   uint product;
   uint numbersInProduct[4];
 } MovingProduct4;
 
+// Structures to hold the product, the 5 numbers in the product, and the in
 typedef struct {
   uint index;
   uint product;
   uint numbersInProduct[5];
 } MovingProduct5;
 
+#pragma mark - Constants
+
+// Return a PrimePower structure populated with 0's.
+static const PrimePower PrimePowerZero = {0, 0};
+
 // Return a MovingProduct4 structure populated with 0's.
-static const MovingProduct4 MovingProduct4Zeros = {0, 0, {0, 0, 0, 0}};
+static const MovingProduct4 MovingProduct4Zero = {0, 0, {0, 0, 0, 0}};
 
 // Return a MovingProduct5 structure populated with 0's.
-static const MovingProduct5 MovingProduct5Zeros = {0, 0, {0, 0, 0, 0, 0}};
+static const MovingProduct5 MovingProduct5Zero = {0, 0, {0, 0, 0, 0, 0}};
 
 // Return a MovingProduct4 structure populated with 1's.
-static const MovingProduct4 MovingProduct4Ones = {1, 1, {1, 1, 1, 1}};
+static const MovingProduct4 MovingProduct4One = {1, 1, {1, 1, 1, 1}};
 
 // Return a MovingProduct5 structure populated with 1's.
-static const MovingProduct5 MovingProduct5Ones = {1, 1, {1, 1, 1, 1, 1}};
+static const MovingProduct5 MovingProduct5One = {1, 1, {1, 1, 1, 1, 1}};
+
+#pragma mark - Inline Functions
+
+// Return a PrimePower struct.
+static inline PrimePower PrimePowerMake(uint primeNumber, uint power) {
+  return (PrimePower){power, primeNumber};
+}
 
 // Returns if two MovingProduct4's are equal.
 static inline BOOL MovingProduct4AreEqual(MovingProduct4 x, MovingProduct4 y) {
