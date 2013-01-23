@@ -100,7 +100,7 @@
   //
   // (2^10)^100 = 2^1000
   
-  // While looping 100 time,
+  // While looping 100 times,
   for(int i = 0; i < 100; i++){
     // Store the multiplication of the base number 2^10 and the result number in
     // a temporary variable.
