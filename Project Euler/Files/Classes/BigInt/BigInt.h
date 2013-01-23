@@ -73,7 +73,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define MAX_LENGTH 70
+#define MAX_LENGTH 150
 
 typedef unsigned long long ulong;
 
