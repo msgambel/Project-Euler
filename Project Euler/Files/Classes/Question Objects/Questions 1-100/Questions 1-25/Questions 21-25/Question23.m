@@ -37,6 +37,13 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
+  // Here, we just find all the abundent numbers up to the max size, then add all
+  // possible combinations together, and in a BOOL array, set index (the sum) to
+  // be that the number IS the sum of two digit numbers.
+  //
+  // We use the prime factorization method (described in Question 21) to determine
+  // if the number is abundent of not.
+  
   // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
   
@@ -268,6 +275,13 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we just find all the abundent numbers up to the max size, then add all
+  // possible combinations together, and in a BOOL array, set index (the sum) to
+  // be that the number IS the sum of two digit numbers.
+  //
+  // We brute force the sum of the divisors by checking all the numbers less than
+  // half the number to see if they are a divisor or not.
   
   // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
