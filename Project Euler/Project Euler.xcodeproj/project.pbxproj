@@ -24,6 +24,7 @@
 		4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8371694D8ED00DC881F /* CustomNavigationController.m */; };
 		4E13503916A27D0F00B7CE92 /* BigInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E13503816A27D0F00B7CE92 /* BigInt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4E68BF6F16AFC4F00027BC71 /* Question23.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E68BF6C16AFC4F00027BC71 /* Question23.m */; };
+		4E68BF7616B069A20027BC71 /* Question24.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E68BF7316B0699F0027BC71 /* Question24.m */; };
 		4E93B8D616A90DB900D9EADB /* triangleQuestion18.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E93B8D516A90DB900D9EADB /* triangleQuestion18.txt */; };
 		4E93B96F16A9C9DA00D9EADB /* BinaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B8DF16A9C9D900D9EADB /* BinaryObject.m */; };
 		4E93B97116A9C9DA00D9EADB /* Question1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B8E716A9C9D900D9EADB /* Question1.m */; };
@@ -82,6 +83,8 @@
 		4E13503816A27D0F00B7CE92 /* BigInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigInt.m; sourceTree = "<group>"; };
 		4E68BF6B16AFC4F00027BC71 /* Question23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question23.h; sourceTree = "<group>"; };
 		4E68BF6C16AFC4F00027BC71 /* Question23.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question23.m; sourceTree = "<group>"; };
+		4E68BF7216B0699F0027BC71 /* Question24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question24.h; sourceTree = "<group>"; };
+		4E68BF7316B0699F0027BC71 /* Question24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question24.m; sourceTree = "<group>"; };
 		4E93B8D516A90DB900D9EADB /* triangleQuestion18.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = triangleQuestion18.txt; sourceTree = "<group>"; };
 		4E93B8DE16A9C9D900D9EADB /* BinaryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryObject.h; sourceTree = "<group>"; };
 		4E93B8DF16A9C9D900D9EADB /* BinaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryObject.m; sourceTree = "<group>"; };
@@ -476,6 +479,8 @@
 				4E93B9E416ADCCEF00D9EADB /* Question22.m */,
 				4E68BF6B16AFC4F00027BC71 /* Question23.h */,
 				4E68BF6C16AFC4F00027BC71 /* Question23.m */,
+				4E68BF7216B0699F0027BC71 /* Question24.h */,
+				4E68BF7316B0699F0027BC71 /* Question24.m */,
 			);
 			path = "Questions 21-25";
 			sourceTree = "<group>";
@@ -1384,6 +1389,7 @@
 				4E93B9B516AC74A400D9EADB /* Question21.m in Sources */,
 				4E93B9E516ADCCEF00D9EADB /* Question22.m in Sources */,
 				4E68BF6F16AFC4F00027BC71 /* Question23.m in Sources */,
+				4E68BF7616B069A20027BC71 /* Question24.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
