@@ -49,12 +49,17 @@ static const MovingProduct5 MovingProduct5One = {1, 1, {1, 1, 1, 1, 1}};
 #pragma mark - Inline Functions
 
 // Return a PrimePower struct.
-static inline PrimePower PrimePowerMake(uint primeNumber, uint power) {
+static inline PrimePower PrimePowerMake(uint primeNumber, uint power){
   return (PrimePower){power, primeNumber};
 }
 
+// Returns is two PrimePower's are equal.
+static inline BOOL PrimePowersAreEqual(PrimePower x, PrimePower y){
+  return ((x.primeNumber == y.primeNumber) && (x.power == y.power));
+}
+
 // Returns if two MovingProduct4's are equal.
-static inline BOOL MovingProduct4AreEqual(MovingProduct4 x, MovingProduct4 y) {
+static inline BOOL MovingProduct4sAreEqual(MovingProduct4 x, MovingProduct4 y){
   // Set the default value of the return value.
   BOOL returnValue = YES;
   
@@ -70,7 +75,7 @@ static inline BOOL MovingProduct4AreEqual(MovingProduct4 x, MovingProduct4 y) {
 }
 
 // Returns if two MovingProduct5's are equal.
-static inline BOOL MovingProduct5AreEqual(MovingProduct5 x, MovingProduct5 y) {
+static inline BOOL MovingProduct5sAreEqual(MovingProduct5 x, MovingProduct5 y){
   // Set the default value of the return value.
   BOOL returnValue = YES;
   
@@ -86,7 +91,7 @@ static inline BOOL MovingProduct5AreEqual(MovingProduct5 x, MovingProduct5 y) {
 }
 
 // Returns a MovingProduct4 with the numbers shifted left.
-static inline MovingProduct4 MovingProduct4ShiftLeft(MovingProduct4 x) {
+static inline MovingProduct4 MovingProduct4ShiftLeft(MovingProduct4 x){
   // Variable to hold the new MovginProduct.
   MovingProduct4 y;
   
@@ -109,7 +114,7 @@ static inline MovingProduct4 MovingProduct4ShiftLeft(MovingProduct4 x) {
 }
 
 // Returns a MovingProduct5 with the numbers shifted left.
-static inline MovingProduct5 MovingProduct5ShiftLeft(MovingProduct5 x) {
+static inline MovingProduct5 MovingProduct5ShiftLeft(MovingProduct5 x){
   // Variable to hold the new MovginProduct.
   MovingProduct5 y;
   
