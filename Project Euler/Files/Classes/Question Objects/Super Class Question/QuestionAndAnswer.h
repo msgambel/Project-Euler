@@ -36,6 +36,9 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
+// This helper method returns if a number is 9-lexographic.
+- (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero;
+
 // This helper method will take in a number as a string and return the sum of
 // its digits.
 - (uint)digitSumOfNumber:(NSString *)aNumber;

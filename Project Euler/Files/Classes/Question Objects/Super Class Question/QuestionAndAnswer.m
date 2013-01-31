@@ -66,6 +66,65 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
+- (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero; {
+  // Variable to hold the number of digits there are for the input number.
+  int numberOfDigits = (int)(log10(aNumber));
+  
+  // If the number of digits is NOT 8 or 9,
+  if((numberOfDigits > 9) || (numberOfDigits < 8)){
+    // Return that the number is NOT 9-Lexographic.
+    return NO;
+  }
+  // Variable to hold if the number is lexographic or not.
+  BOOL numberIsLexographic = YES;
+  
+  // Variable to hold the digit we are looking at.
+  uint digit = 0;
+  
+  // Variable to hold the power of 10 for the current digit.
+  uint powerOf10 = 1;
+  
+  // Variable array to hold if the digit in the number has been used or not.
+  BOOL isDigitUsed[10];
+  
+  // For all the digits from 0 to 9,
+  for(int digit = 0; digit < 10; digit++){
+    // Default that the digit has not been used or not.
+    isDigitUsed[digit] = NO;
+  }
+  // If the number is in the 100 millions, or does NOT count the 0,
+  if(numberOfDigits == 8 || !doesCountZero){
+    // Set that the 0 digit is already used (it's the left-most digit).
+    isDigitUsed[0] = YES;
+  }
+  // While the number of digits is positive,
+  while(numberOfDigits >= 0){
+    // Grab the current digit from the input number.
+    digit = (((long long int)(aNumber / powerOf10)) % 10);
+    
+    // If the digit has already been used,
+    if(isDigitUsed[digit]){
+      // Set that the number is NOT a 9-lexographic number.
+      numberIsLexographic = NO;
+      
+      // Break out of the loop.
+      break;
+    }
+    // If the digit has NOT already been used,
+    else{
+      // Set that the digit has been used.
+      isDigitUsed[digit] = YES;
+    }
+    // Multiply the power of 10 by 10 for the next index.
+    powerOf10 *= 10;
+    
+    // Decrease the number of digits by 1.
+    numberOfDigits--;
+  }
+  // Return if the number is lexographic or not.
+  return numberIsLexographic;
+}
+
 - (uint)digitSumOfNumber:(NSString *)aNumber; {
   // Variable to hold the current digit.
   uint currentDigit = 0;
