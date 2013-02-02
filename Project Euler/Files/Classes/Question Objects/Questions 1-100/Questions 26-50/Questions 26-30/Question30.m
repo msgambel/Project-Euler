@@ -19,7 +19,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"08 November 2002";
-  self.text = @"Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:\n\n1634 = 14 + 64 + 34 + 44\n8208 = 84 + 24 + 04 + 84\n9474 = 94 + 44 + 74 + 44\n\nAs 1 = 14 is not a sum it is not included.\n\nThe sum of these numbers is 1634 + 8208 + 9474 = 19316.\n\nFind the sum of all the numbers that can be written as the sum of fifth powers of their digits.";
+  self.text = @"Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:\n\n1634 = 1^4 + 6^4 + 3^4 + 4^4\n8208 = 8^4 + 2^4 + 0^4 + 8^4\n9474 = 9^4 + 4^4 + 7^4 + 4^4\n\nAs 1 = 1^4 is not a sum it is not included.\n\nThe sum of these numbers is 1634 + 8208 + 9474 = 19316.\n\nFind the sum of all the numbers that can be written as the sum of fifth powers of their digits.";
   self.title = @"Digit fifth powers";
   self.answer = @"443839";
   self.number = @"Problem 30";
