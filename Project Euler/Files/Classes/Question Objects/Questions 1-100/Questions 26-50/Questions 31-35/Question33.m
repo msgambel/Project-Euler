@@ -29,82 +29,20 @@
 
 #pragma mark - Methods
 
-- (uint)gcdOfA:(uint)aA b:(uint)aB; {
-  // Variable to hold the greatest common divisor of the 2 input numbers.
-  uint gcd = 1;
-  
-  // Variable to hold the maximum number of the 2 input numbers.
-  uint currentMax = MAX(aA, aB);
-  
-  // Variable to hold the minimum number of the 2 input numbers.
-  uint currentMin = MIN(aA, aB);
-  
-  // Variable to hold the current prime number form the prime numbers array.
-  uint primeNumber = 0;
-  
-  // Variable to hold the square root of the current number, used to minimize computations.
-  uint sqrtOfCurrentNumber = ((uint)sqrt(currentMin));
-  
-  // Array to hold all the prime numbers found.
-  NSMutableArray * primeNumbersArray = [self arrayOfPrimeNumbersLessThan:sqrtOfCurrentNumber];
-  
-  // For all the prime numbers in the prime numbers array,
-  for(int currentPrimeNumber = 0; currentPrimeNumber < [primeNumbersArray count]; currentPrimeNumber++){
-    // Grab the current prime number from the prime numbers array.
-    primeNumber = [[primeNumbersArray objectAtIndex:currentPrimeNumber] intValue];
-    
-    // If the current prime number is less than or equal to the square root of
-    // the current minimum number,
-    if(primeNumber <= sqrtOfCurrentNumber){
-      // If the current prime number divides the current minimum number,
-      if((currentMin % primeNumber) == 0){
-        // While the current prime number divides the current minimum number,
-        while((currentMin % primeNumber) == 0){
-          // If the current prime number divides the current maximum number,
-          if((currentMax % primeNumber) == 0){
-            // Divide out the prime number from the maximum number.
-            currentMax /= primeNumber;
-            
-            // Multiply the greatest common divisor by the prime number, since
-            // it divides both the maximum and minimum numbers.
-            gcd *= primeNumber;
-          }
-          // Divide out the prime number from the minimum number.
-          currentMin /= primeNumber;
-        }
-        // Recompute the square root of the current minimum number, in order to
-        // speed up the computation.
-        sqrtOfCurrentNumber = ((uint)sqrt(currentMin));
-      }
-    }
-    // If the current prime number is greater than or equal to the square root
-    // of the current prime number,
-    else{
-      // Break out of the loop.
-      break;
-    }
-  }
-  // If the current minimum number is NOT equal to 1 after the above factoring,
-  // it must be a prime number itself,
-  if(currentMin > 1){
-    // If the current prime number (which is the current minimum number) divides
-    // the current maximum number,
-    if((currentMax % currentMin) == 0){
-      // Multiply the greatest common divisor by the prime number, since
-      // it divides both the maximum and minimum numbers.
-      gcd *= currentMin;
-    }
-  }
-  // Return the greatest common divisor of the 2 input numbers.
-  return gcd;
-}
-
 - (void)computeAnswer; {
   // Set that we have started the computation.
   _isComputing = YES;
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we just use a helper method to figure out if the numerator and
+  // denominator have the digit cancelling property, and if they do, we compute
+  // the gcd of the numerator and denominator, divide the numerator and
+  // denominator by the gcd, and then multply them all together to find the
+  // required denominator. We take the gcd one last time after looping through
+  // double digit variables, just in case there was 2 separate fractions that
+  // had common factors.
   
   // Variable to hold the greatest common divisor of the numerator and denominator.
   uint gcd = 0;
@@ -132,8 +70,6 @@
         // Multiply the product of the denominators by the denominator divided
         // by the gcd.
         productDenominator *= (denominator / gcd);
-        
-        NSLog(@"num: %d, den: %d, gcd: %d", numerator, denominator, gcd);
       }
     }
   }
@@ -167,6 +103,12 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we just use a helper method to figure out if the numerator and
+  // denominator have the digit cancelling property, and if they do, we multply
+  // them all together to find the required denominator. We take the gcd one
+  // last time after looping through double digit variables, just in case there
+  // was 2 separate fractions that had common factors.
   
   // Variable to hold the greatest common divisor of the numerator and denominator.
   uint gcd = 0;
