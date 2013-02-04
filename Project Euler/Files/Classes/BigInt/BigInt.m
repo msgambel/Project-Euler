@@ -663,6 +663,31 @@ static int primesBelow2000[] = {
 	return ([self greaterThan:bi2] || [self equals:bi2]);
 }
 
+- (uint)numberOfDigitsWithRadix:(uint)aRadix; {
+  if(aRadix < 2){
+    @throw [NSException exceptionWithName:@"ArgumentException" reason:@"Radix must be >= 2" userInfo:nil];
+  }
+  NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+  
+  uint numberOfDigits = 1;
+  
+  BigInt * bigIntRadix = [BigInt createFromLong:aRadix];
+  
+  BigInt * originalNumber = [BigInt createFromBigInt:self];
+  
+  BigInt * quotient = [BigInt create];
+  
+	BigInt * remainder = [BigInt create];
+  
+  while(originalNumber.dataLength > 1 || (originalNumber.dataLength == 1 && [originalNumber getDataAtIndex:0] != 0)){
+    [BigInt singleByteDivide:originalNumber bi2:bigIntRadix outQuotient:quotient outRemainder:remainder];
+    originalNumber = quotient;
+    numberOfDigits++;
+  }
+  [pool release];
+  return numberOfDigits;
+}
+
 //***********************************************************************
 // Returns the absolute value
 //***********************************************************************

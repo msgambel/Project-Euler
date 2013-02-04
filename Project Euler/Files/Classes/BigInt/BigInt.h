@@ -123,6 +123,8 @@ typedef unsigned long long ulong;
 -(BOOL)lessThanOrEqualTo:(BigInt *)bi2;
 -(BOOL)greaterThanOrEqualTo:(BigInt *)bi2;
 
+- (uint)numberOfDigitsWithRadix:(uint)aRadix;
+
 //***********************************************************************
 // Returns the lowest 4 bytes of the BigInteger as an int.
 //***********************************************************************
