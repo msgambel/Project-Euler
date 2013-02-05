@@ -36,6 +36,9 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
+// This helper method returns if a string is a palindrome or not.
+- (BOOL)isStringAPalindrome:(NSString *)aString;
+
 // This helper method returns if a number is 9-lexographic.
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero;
 
@@ -45,6 +48,12 @@
 // This helper method will take in a number as a string and return the sum of
 // its digits.
 - (uint)digitSumOfNumber:(NSString *)aNumber;
+
+// This helper method calculates the log of a number in any base.
+- (double)log:(double)x withBase:(double)aBase;
+
+// This helper method calculates the floored log of a number in any base.
+- (double)flooredLog:(double)x withBase:(double)aBase;
 
 // This helper method rotates a string's characters to the left by 1 character.
 - (NSString *)rotateStringLeftByOne:(NSString *)aString;

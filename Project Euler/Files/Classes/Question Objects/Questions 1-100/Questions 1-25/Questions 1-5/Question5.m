@@ -2,13 +2,6 @@
 
 #import "Question5.h"
 
-@interface Question5 (Private)
-
-- (double)log:(double)x withBase:(double)aBase;
-- (double)flooredLog:(double)x withBase:(double)aBase;
-
-@end
-
 @implementation Question5
 
 #pragma mark - Setup
@@ -143,22 +136,6 @@
   
   // Set that we have finished the computation.
   _isComputing = NO;
-}
-
-@end
-
-#pragma mark - Private Methods
-
-@implementation Question5 (Private)
-
-- (double)log:(double)x withBase:(double)aBase; {
-  // This helper method computes the log of a value with a given base.
-  return (log(x) / log(aBase));
-}
-
-- (double)flooredLog:(double)x withBase:(double)aBase; {
-  // This helper method computes the rounded log of a value with a given base.
-  return ((double)((uint)[self log:x withBase:aBase]));
 }
 
 @end

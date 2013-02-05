@@ -5,7 +5,6 @@
 @interface Question4 (Private)
 
 - (BOOL)isNumberAPalindrome:(uint)aNumber;
-- (BOOL)isStringAPalindrome:(NSString *)aString;
 
 @end
 
@@ -249,42 +248,6 @@
   }
   // Return if the number is a Palindrome or not.
   return isPalindrome;
-}
-
-- (BOOL)isStringAPalindrome:(NSString *)aString; {
-  // This method takes in a string and sees if the string is a Palindrome or not.
-  // It is much more versatile, because the "digits" can be anything, not just
-  // numbers. It is however slower.
-  //
-  // Note: While we could improve the runtime by modifying the code to check
-  //       the right and left "digits" (just as in the above method), for ease
-  //       and clarity, I just reverse the string and compare if the new string
-  //       is equal to the old one. It is very straight-forward to merge these
-  //       two methods together.
-  
-  // Variable to hold the current index range for the reversed string.
-  NSRange subStringRange = NSMakeRange(0, 0);
-  
-  // Variable to hold the current index of the string.
-  NSInteger characterIndex = [aString length];
-  
-  // Variable to hold the reversed string.
-  NSMutableString * reversedString = [NSMutableString string];
-  
-  // While the character index is greater than 0,
-  while(characterIndex > 0){
-    // Decrease the characterIndex by 1, which is equivalent to looking at the
-    // next "digit" to the left.
-    characterIndex--;
-    
-    // Compute the range of the next "digit".
-    subStringRange = NSMakeRange(characterIndex, 1);
-    
-    // Add the "digit" to the reversedString.
-    [reversedString appendString:[aString substringWithRange:subStringRange]];
-  }
-  // Check and return is the string and reversedString are equal.
-  return [aString isEqualToString:reversedString];
 }
 
 @end
