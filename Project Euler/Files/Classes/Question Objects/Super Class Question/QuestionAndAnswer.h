@@ -46,6 +46,9 @@
 // its digits.
 - (uint)digitSumOfNumber:(NSString *)aNumber;
 
+// This helper method rotates a string's characters to the left by 1 character.
+- (NSString *)rotateStringLeftByOne:(NSString *)aString;
+
 // These helper methods are added so that any Question object can easily compute
 // the primes up to a given limit or size. They have been added to the super
 // class, as it seems there are a bunch of questions that rely on the primes. It

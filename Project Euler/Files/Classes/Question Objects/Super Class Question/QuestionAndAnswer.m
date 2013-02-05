@@ -227,6 +227,20 @@
   return digitSum;
 }
 
+- (NSString *)rotateStringLeftByOne:(NSString *)aString; {
+  // If the string's length is greater than 1,
+  if([aString length] > 1){
+    // Grab the first character of the string, and add it to the end of the last
+    // remaining characters of the string, and return the reordered string.
+    return [NSString stringWithFormat:@"%@%@", [aString substringWithRange:NSMakeRange(1, ([aString length] - 1))], [aString substringWithRange:NSMakeRange(0, 1)]];
+  }
+  // If the string's length is less than or equal to 1,
+  else{
+    // Return the string.
+    return aString;
+  }
+}
+
 - (NSMutableArray *)arrayOfPrimeNumbersOfSize:(uint)aSize; {
   // By expanding out the Taylor Series of the result of the Prime Number Theorem,
   //
