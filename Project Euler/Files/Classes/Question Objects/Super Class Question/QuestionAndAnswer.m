@@ -32,7 +32,7 @@
     // Set that we are not computing by default.
     _isComputing = NO;
     
-    // Note: We can set the _isComputing flag to NO as it is a propery. This
+    // Note: We can set the _isComputing flag to NO as it is a propetry. This
     //       allows us to cancel the computation if the user deems it is taking
     //       too long. This is all done with NSOperations. If the question is
     //       solved faster than the user can respond, we ignore using this flag.
