@@ -2,12 +2,6 @@
 
 #import "Question9.h"
 
-@interface Question9 (Private)
-
-- (BOOL)isNumberAPerfectSquare:(uint)aNumber;
-
-@end
-
 @implementation Question9
 
 #pragma mark - Setup
@@ -233,28 +227,6 @@
   
   // Set that we have finished the computation.
   _isComputing = NO;
-}
-
-@end
-
-#pragma mark - Private Methods
-
-@implementation Question9 (Private)
-
-- (BOOL)isNumberAPerfectSquare:(uint)aNumber; {
-  // This helper method returns is a number is a perfect square of not. Note:
-  // that this method only works for small numbers (less than 2,147,483,647). In
-  // order to extend this to larger numbers, use techniques like Newtons method
-  // (which should converge quickly), or a binary search.
-  
-  // Variable to hold the floored square root of the number.
-  uint squareRoot = (uint)sqrt((double)aNumber);
-  
-  // Square the floored square root of the number.
-  squareRoot *= squareRoot;
-  
-  // Return if the squared floored square root of the number is equal to the number.
-  return (aNumber == squareRoot);
 }
 
 @end

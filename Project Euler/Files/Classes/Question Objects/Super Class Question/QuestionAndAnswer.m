@@ -66,6 +66,22 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
+- (BOOL)isNumberAPerfectSquare:(uint)aNumber; {
+  // This helper method returns is a number is a perfect square of not. Note:
+  // that this method only works for small numbers (less than 2,147,483,647). In
+  // order to extend this to larger numbers, use techniques like Newtons method
+  // (which should converge quickly), or a binary search.
+  
+  // Variable to hold the floored square root of the number.
+  uint squareRoot = (uint)sqrt((double)aNumber);
+  
+  // Square the floored square root of the number.
+  squareRoot *= squareRoot;
+  
+  // Return if the squared floored square root of the number is equal to the number.
+  return (aNumber == squareRoot);
+}
+
 - (BOOL)isStringAPalindrome:(NSString *)aString; {
   // This method takes in a string and sees if the string is a Palindrome or not.
   // It is much more versatile, because the "digits" can be anything, not just

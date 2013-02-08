@@ -36,6 +36,9 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
+// This number returns if it is a perfect square or not.
+- (BOOL)isNumberAPerfectSquare:(uint)aNumber;
+
 // This helper method returns if a string is a palindrome or not.
 - (BOOL)isStringAPalindrome:(NSString *)aString;
 
