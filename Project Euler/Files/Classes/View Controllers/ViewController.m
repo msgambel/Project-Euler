@@ -88,9 +88,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section; {
   // We want the number of solved questions divided by the number of question
-  // buttons in each tableView cell floored (rounded down). We add 1 to the result
-  // so that we always render the row with the last question solved.
-  return (((int)(TotalNumberSolved / NumberOfButtonsInQuestionCell)) + 1);
+  // buttons in each tableView cell floored (rounded down). We add 1 to the
+  // result if it is not a multiple of the number of buttons in each cell so
+  // that we always render the row with the last question solved.
+  
+  if((TotalNumberSolved % NumberOfButtonsInQuestionCell) == 0){
+    return ((int)(TotalNumberSolved / NumberOfButtonsInQuestionCell));
+  }
+  else{
+    return (((int)(TotalNumberSolved / NumberOfButtonsInQuestionCell)) + 1);
+  }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; {
