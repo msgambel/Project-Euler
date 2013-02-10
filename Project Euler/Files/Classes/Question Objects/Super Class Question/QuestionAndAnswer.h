@@ -37,13 +37,15 @@
 - (void)computeAnswerByBruteForce;
 
 // This number returns if it is a perfect square or not.
-- (BOOL)isNumberAPerfectSquare:(uint)aNumber;
+- (BOOL)isNumberAPerfectSquare:(long long int)aNumber;
 
 // This helper method returns if a string is a palindrome or not.
 - (BOOL)isStringAPalindrome:(NSString *)aString;
 
 // This helper method returns if a number is 9-lexographic.
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero;
+
+- (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero maxDigit:(uint)aMaxDigit;
 
 // This helper method returns the gcd of 2 numbers.
 - (uint)gcdOfA:(uint)aA b:(uint)aB;

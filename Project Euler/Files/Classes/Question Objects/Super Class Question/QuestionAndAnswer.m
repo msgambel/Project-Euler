@@ -66,14 +66,14 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
-- (BOOL)isNumberAPerfectSquare:(uint)aNumber; {
+- (BOOL)isNumberAPerfectSquare:(long long int)aNumber; {
   // This helper method returns is a number is a perfect square of not. Note:
   // that this method only works for small numbers (less than 2,147,483,647). In
   // order to extend this to larger numbers, use techniques like Newtons method
   // (which should converge quickly), or a binary search.
   
   // Variable to hold the floored square root of the number.
-  uint squareRoot = (uint)sqrt((double)aNumber);
+  long long int squareRoot = (uint)sqrt((double)aNumber);
   
   // Square the floored square root of the number.
   squareRoot *= squareRoot;
@@ -146,6 +146,82 @@
   }
   // If the number is in the 100 millions, or does NOT count the 0,
   if(numberOfDigits == 8 || !doesCountZero){
+    // Set that the 0 digit is already used (it's the left-most digit).
+    isDigitUsed[0] = YES;
+  }
+  // While the number of digits is positive,
+  while(numberOfDigits >= 0){
+    // Grab the current digit from the input number.
+    digit = (((long long int)(aNumber / powerOf10)) % 10);
+    
+    // If the digit has already been used,
+    if(isDigitUsed[digit]){
+      // Set that the number is NOT a 9-lexographic number.
+      numberIsLexographic = NO;
+      
+      // Break out of the loop.
+      break;
+    }
+    // If the digit has NOT already been used,
+    else{
+      // Set that the digit has been used.
+      isDigitUsed[digit] = YES;
+    }
+    // Multiply the power of 10 by 10 for the next index.
+    powerOf10 *= 10;
+    
+    // Decrease the number of digits by 1.
+    numberOfDigits--;
+  }
+  // Return if the number is lexographic or not.
+  return numberIsLexographic;
+}
+
+- (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero maxDigit:(uint)aMaxDigit; {
+  if((aMaxDigit > 9) || (aMaxDigit == 0)){
+    // Return that the number is NOT lexographic.
+    return NO;
+  }
+  // Variable to hold the number of digits there are for the input number.
+  int numberOfDigits = (int)(log10(aNumber));
+  
+  // Variable to hold the maximum number of digits the inputted number can have.
+  int maximumNumberOfDigits = aMaxDigit;
+  
+  // If we do count 0 as a valid digit,
+  if(doesCountZero){
+    // Increment the maximum number of digits the inputted number can have by 1.
+    maximumNumberOfDigits++;
+  }
+  // If the number of digits is greater than or equal to the max number of digits,
+  if(numberOfDigits >= maximumNumberOfDigits){
+    // Return that the number is NOT lexographic.
+    return NO;
+  }
+  // Variable to hold if the number is lexographic or not.
+  BOOL numberIsLexographic = YES;
+  
+  // Variable to hold the digit we are looking at.
+  uint digit = 0;
+  
+  // Variable to hold the power of 10 for the current digit.
+  uint powerOf10 = 1;
+  
+  // Variable array to hold if the digit in the number has been used or not.
+  BOOL isDigitUsed[10];
+  
+  // For all the digits from 0 to the maximum digit,
+  for(int digit = 0; digit <= aMaxDigit; digit++){
+    // Default that the digit has not been used or not.
+    isDigitUsed[digit] = NO;
+  }
+  // For all the digits from 0 to the maximum digit,
+  for(int digit = (aMaxDigit + 1); digit <= 9; digit++){
+    // Default that the digit has not been used or not.
+    isDigitUsed[digit] = YES;
+  }
+  // If we do NOT count the 0,
+  if(!doesCountZero){
     // Set that the 0 digit is already used (it's the left-most digit).
     isDigitUsed[0] = YES;
   }
