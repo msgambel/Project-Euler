@@ -17,7 +17,7 @@
   self.title = @"Special Pythagorean triplet";
   self.answer = @"31875000";
   self.number = @"Problem 9";
-  self.estimatedComputationTime = @"";
+  self.estimatedComputationTime = @"3.2e-05";
   self.estimatedBruteForceComputationTime = @"1.29e-04";
 }
 
