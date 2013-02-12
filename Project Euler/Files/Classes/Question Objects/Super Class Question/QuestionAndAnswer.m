@@ -355,6 +355,36 @@
   return digitSum;
 }
 
+- (uint)nameScoreForString:(NSString *)aString; {
+  // Variable to hold the names score.
+  uint nameScore = 0;
+  
+  // Variable to hold the current index range for the reversed string.
+  NSRange subStringRange = NSMakeRange(0, 0);
+  
+  // Variable to hold the current index of the string.
+  NSInteger characterIndex = [aString length];
+  
+  // Constant array to hold the letters of the alphabet.
+  const NSArray * lettersArray = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+  
+  // While the character index is greater than 0,
+  while(characterIndex > 0){
+    // Decrease the characterIndex by 1, which is equivalent to looking at the
+    // next letter to the left.
+    characterIndex--;
+    
+    // Compute the range of the next letter
+    subStringRange = NSMakeRange(characterIndex, 1);
+    
+    // Add the letters position in the letter array to the name score. Add 1 as
+    // well, as the array is 0 indexed.
+    nameScore += ([lettersArray indexOfObject:[aString substringWithRange:subStringRange]] + 1);
+  }
+  // Return the name score.
+  return nameScore;
+}
+
 - (double)log:(double)x withBase:(double)aBase; {
   // This helper method computes the log of a value with a given base.
   return (log(x) / log(aBase));

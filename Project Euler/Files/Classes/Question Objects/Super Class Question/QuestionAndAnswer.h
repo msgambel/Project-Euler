@@ -54,6 +54,9 @@
 // its digits.
 - (uint)digitSumOfNumber:(NSString *)aNumber;
 
+// This helper method returns a name score for the 26 letters of the alphabet.
+- (uint)nameScoreForString:(NSString *)aString;
+
 // This helper method calculates the log of a number in any base.
 - (double)log:(double)x withBase:(double)aBase;
 
