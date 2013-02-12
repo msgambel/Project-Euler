@@ -52,7 +52,7 @@
   // Variable to mark if a current number is prime or not.
   BOOL isPrime = YES;
   
-  // Set the max size for the prime numbers.
+  // Set the maximum size for the prime numbers.
   uint maxSize = 1000000;
   
   // Variable to hold the number of circular primes found.
@@ -160,7 +160,7 @@
   // Variable to mark if a current number is prime or not.
   BOOL isPrime = YES;
   
-  // Set the max size for the prime numbers.
+  // Set the maximum size for the prime numbers.
   uint maxSize = 1000000;
   
   // Variable to hold the number of circular primes found.
