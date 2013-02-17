@@ -53,11 +53,11 @@
   self.answer = [NSString stringWithFormat:@"%llu", easilyDivisibleNumber];
   
   // Get the amount of time that has passed while the computation was happening.
-  NSTimeInterval computationTile = [[NSDate date] timeIntervalSinceDate:startTime];
+  NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
   
   // Set the estimated computation time to the calculated value. We use scientific
   // notation here, as the run time should be very short.
-  self.estimatedComputationTime = [NSString stringWithFormat:@"%.03g", computationTile];
+  self.estimatedComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
   
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
@@ -125,11 +125,11 @@
   self.answer = [NSString stringWithFormat:@"%llu", easilyDivisibleNumber];
   
   // Get the amount of time that has passed while the computation was happening.
-  NSTimeInterval computationTile = [[NSDate date] timeIntervalSinceDate:startTime];
+  NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
   
   // Set the estimated brute force computation time to the calculated value. We
   // use scientific notation here, as the run time should be very short.
-  self.estimatedBruteForceComputationTime = [NSString stringWithFormat:@"%.03g", computationTile];
+  self.estimatedBruteForceComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
   
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
