@@ -38,7 +38,7 @@
   NSArray * parsedArray = [stringOfNumbers componentsSeparatedByString:@","];
   
   // Variable to hold the index and length of the current "digit".
-  NSRange subStringRange = NSMakeRange(0, 0);
+  NSRange subStringRange;
   
   // Set the sum to 0 before we start iterating over all the numbers.
   long long int sum = 0;

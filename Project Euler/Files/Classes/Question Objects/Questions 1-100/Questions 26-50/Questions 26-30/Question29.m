@@ -233,7 +233,7 @@
   
   // Variable to hold the result number of the multiplication. Start at the
   // default value of 1.
-  BigInt * resultNumber = [BigInt createFromInt:1];
+  BigInt * resultNumber = nil;
   
   // Temporary variable to hold the result of the multiplication.
   BigInt * temporaryNumber = nil;

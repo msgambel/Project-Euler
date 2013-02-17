@@ -289,7 +289,7 @@
   
   // Variable to hold the number of rows and columns in the array. We know that
   // it is a square array, so just take the sqaure root of the count.
-  uint numberOfRowsAndColumns = (uint)(sqrt((double)[parsedArray count]));
+  const uint numberOfRowsAndColumns = (uint)(sqrt((double)[parsedArray count]));
   
   // Variable array to hold the numbers in a 2-dimensional array.
   uint numbersArray[numberOfRowsAndColumns][numberOfRowsAndColumns];
@@ -376,10 +376,10 @@
   int columnIncrease = 1;
   
   // Variable to hold the current row index when computing the product.
-  int currentRow = row;
+  int currentRow = 0;
   
   // Variable to hold the current colum index when computing the product.
-  int currentColumn = column;
+  int currentColumn = 0;
   
   // We will be doing each diagonal line form start to finish in order. We are
   // starting at row: 3, column:0, and ending at row: 19, column: 16

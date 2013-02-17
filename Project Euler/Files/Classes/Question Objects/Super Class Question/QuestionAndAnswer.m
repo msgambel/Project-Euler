@@ -94,7 +94,7 @@
   //       merge these two methods together.
   
   // Variable to hold the current index range for the reversed string.
-  NSRange subStringRange = NSMakeRange(0, 0);
+  NSRange subStringRange;
   
   // Variable to hold the current index of the string.
   NSInteger characterIndex = [aString length];
@@ -334,7 +334,7 @@
   uint digitSum = 0;
   
   // Variable to hold the index and length of the current "digit".
-  NSRange subStringRange = NSMakeRange(0, 0);
+  NSRange subStringRange;
   
   // While the current index is greater than or equal to the midPoint,
   while(currentIndex > 0){
@@ -360,7 +360,7 @@
   uint nameScore = 0;
   
   // Variable to hold the current index range for the reversed string.
-  NSRange subStringRange = NSMakeRange(0, 0);
+  NSRange subStringRange;
   
   // Variable to hold the current index of the string.
   NSInteger characterIndex = [aString length];

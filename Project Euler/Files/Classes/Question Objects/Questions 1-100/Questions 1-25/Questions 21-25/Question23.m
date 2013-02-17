@@ -80,7 +80,7 @@
   
   // Variable to hold the maximum number of prime factors a number less than the
   // max size can have.
-  uint maxNumberOfPrimeFactors = 0;
+  uint maxNumberOfPrimeFactors = 1;
   
   // Variable to hold the number of abundent numbers.
   uint numberOfAbundentNumbers = 0;

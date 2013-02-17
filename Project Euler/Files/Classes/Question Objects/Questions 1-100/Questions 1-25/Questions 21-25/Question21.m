@@ -85,7 +85,7 @@
   
   // Variable to hold the maximum number of prime factors a number less than the
   // max size can have.
-  uint maxNumberOfPrimeFactors = 0;
+  uint maxNumberOfPrimeFactors = 1;
   
   // Variable used to compute the maximum number of prime factors a number less
   // than the max size can have.

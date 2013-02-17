@@ -38,19 +38,21 @@ static int primesBelow2000[] = {
 
 @synthesize dataLength;
 
--(id)init {
-	if(self = [super init]) {
+#pragma mark - Init
+
+- (id)init; {
+	if((self = [super init])){
 		dataLength = 1;
 	}
 	return self;
 }
 
--(id)initWithInt:(int)value {
-	return [[[BigInt alloc] initWithLong:(long)value] autorelease];
+- (id)initWithInt:(int)value; {
+	return [self initWithLong:value];
 }
 
--(id)initWithLong:(long)value {
-	if(self= [super init]) {
+- (id)initWithLong:(long)value; {
+	if((self = [super init])){
 		
 		bzero(data, sizeof(data));
 		
@@ -85,7 +87,7 @@ static int primesBelow2000[] = {
 	return self;
 }
 
--(id)initWithULong:(ulong)value {
+- (id)initWithULong:(ulong)value; {
 	if(self = [super init]) {
 		
 		bzero(data, sizeof(data));
@@ -289,7 +291,7 @@ static int primesBelow2000[] = {
 	NSLog(@"subtract");
 #endif
 	
-	BigInt *result = [[BigInt alloc] init];
+	BigInt *result = [[[BigInt alloc] init] autorelease];
 	
 	result.dataLength = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
@@ -324,7 +326,7 @@ static int primesBelow2000[] = {
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Overflow" userInfo:nil];
 	}
 	
-	return [result autorelease];
+	return result;
 }
 
 -(BigInt *)multiply:(BigInt *)bi2 {
@@ -746,7 +748,7 @@ static int primesBelow2000[] = {
 	
 	[result retain];
 	[pool release];
-	return result;	
+	return [result autorelease];
 }
 
 -(BigInt *)gcd:(BigInt *)bi {
@@ -780,7 +782,7 @@ static int primesBelow2000[] = {
 	[g retain];
 	[pool release];
 	
-	return g;	
+	return [g autorelease];
 }
 
 //***********************************************************************
@@ -1173,7 +1175,7 @@ static int primesBelow2000[] = {
 	[remainder retain];
 	[pool release];
 	
-	return remainder;
+	return [remainder autorelease];
 }
 
 //***********************************************************************
@@ -1731,7 +1733,7 @@ static int primesBelow2000[] = {
 	[constant toStringWithRadix:10],
 	s);
 #endif
-	
+	NSMutableArray * aRet = nil;
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	BigInt *result[3];
@@ -1834,11 +1836,10 @@ static int primesBelow2000[] = {
 	result[1] = v;
 	result[2] = Q_k;
 	
-	NSMutableArray *aRet = [[NSMutableArray alloc] init];
+	aRet = [[NSMutableArray alloc] init];
 	[aRet addObject:result[0]];
 	[aRet addObject:result[1]];
 	[aRet addObject:result[2]];
-	[aRet retain];
 	
 	[pool release];
 	
@@ -1944,8 +1945,11 @@ static int primesBelow2000[] = {
 	
 	NSMutableArray *aLucus = [BigInt lucasSequence:[BigInt createFromLong:1] andQ:[BigInt createFromLong:Q] andk:t andn:thisVal andConstant:constant ands:0];
 	BigInt *lucas[3];
-
-	for(int j = 0; j < [aLucus count] && j < 3; j++) 
+  
+  for(int j = 0; j < 3; j++){
+    lucas[j] = nil;
+  }
+	for(int j = 0; j < [aLucus count] && j < 3; j++)
 		lucas[j] = [aLucus objectAtIndex:j];
 	
 	bool isPrime = false;

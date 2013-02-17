@@ -32,10 +32,9 @@
   
   // Here, we simply compute the top right hand corner number of each box,
   // starting from the box with side length 3, and add each of the corners values
-  // to the sum. We set the inner top right hand corner at the end of the loop
-  // to save a multiplication, as well as a subtraction of the side length by 1
-  // to figure out the edge length to save a division. Otherwise, this is the same
-  // algorithm as the brute force method.
+  // to the sum. We simply compute the top right hand corner's value, and subtract
+  // off the edge length's in order to compute the values in the other three
+  // corners. Otherwise, this is the same algorithm as the brute force method.
   
   // Variable to hold sum of all the values along the diagonals in the box. Set
   // the sum to 1 (the centre) before we start iterating over all the numbers.
@@ -50,19 +49,10 @@
   // Variable to hold the top right corner number in the box.
   uint topRightCornerNumber = 0;
   
-  // Variable to hold the first inner top right corner number in the box.
-  uint innerTopRightCornerNumber = 1;
-  
-  // Variable to hold the total number of numbers on the perimeter of the box.
-  uint totalCountOfNumbersOnEdges = 0;
-  
   // For all the odd side lengths up to the maximum side length,
   for(uint sideLength = 3; sideLength <= maxSideLength; sideLength += 2){
     // Compute the top right corner numbers value. It's the square of the side length!
     topRightCornerNumber = sideLength * sideLength;
-    
-    // Compute the total number of numbers on the perimter of the box.
-    totalCountOfNumbersOnEdges = topRightCornerNumber - innerTopRightCornerNumber;
     
     // Compute the edge length of the box.
     edgeLength = sideLength - 1;
@@ -78,10 +68,6 @@
     
     // Add to the sum the bottom right hand corner number.
     sum += (topRightCornerNumber - (3 * edgeLength));
-    
-    // Set the next inner top right corner number to the current top right
-    // corner number.
-    innerTopRightCornerNumber = topRightCornerNumber;
   }
   // Set the answer string to the sum.
   self.answer = [NSString stringWithFormat:@"%llu", sum];

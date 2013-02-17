@@ -171,7 +171,7 @@
   uint requiredNumbers[6] = {10, 100, 1000, 10000, 100000, 1000000};
   
   // Variable to hold the index and length of the current "digit".
-  NSRange subStringRange = NSMakeRange(0, 0);
+  NSRange subStringRange;
   
   // Variable to hold the current number as a string.
   NSString * currentNumberAsString = nil;
