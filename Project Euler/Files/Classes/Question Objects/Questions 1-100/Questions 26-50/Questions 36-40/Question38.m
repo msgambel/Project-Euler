@@ -88,7 +88,7 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Note: This is the basically the same algorithm as the optimal one. The only
+  // Note: This is basically the same algorithm as the optimal one. The only
   //       difference is computing the pandigital number with string composition.
   
   // Here, we simply check the 4 digit numbers starting with 9, and work our way

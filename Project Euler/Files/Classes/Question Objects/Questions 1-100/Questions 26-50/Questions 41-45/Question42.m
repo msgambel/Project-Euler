@@ -142,9 +142,8 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Note: This is the basically the same algorithm as the optimal one. The
-  //       optimal algorithm just uses better tricks for avoiding computation.
-  //       I can't think of a more brute force way to do this!
+  // Note: This is basically the same algorithm as the optimal one. The optimal
+  //       algorithm just uses better tricks for avoiding computation.
   
   // We simply use a helper method to compute the value of each word, and then
   // compare it against all the possible triangle numbers. We figure out the
