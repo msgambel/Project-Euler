@@ -45,6 +45,11 @@
 // This helper method returns if a number is 9-lexographic.
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero;
 
+// This helper method checks if a number is a permutation of another number.
+- (BOOL)number:(long long int)aNumber isAPermutationOfNumber:(long long int)aSecondNumber;
+
+// This helper method returns if a number is lexographic, and only up to a
+// maximum digit.
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero maxDigit:(uint)aMaxDigit;
 
 // This helper method returns the gcd of 2 numbers.
@@ -62,6 +67,9 @@
 
 // This helper method calculates the floored log of a number in any base.
 - (double)flooredLog:(double)x withBase:(double)aBase;
+
+// This helper method returns the inputted string reversed.
+- (NSString *)reversedString:(NSString *)aString;
 
 // This helper method rotates a string's characters to the left by 1 character.
 - (NSString *)rotateStringLeftByOne:(NSString *)aString;

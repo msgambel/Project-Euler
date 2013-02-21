@@ -85,37 +85,19 @@
 - (BOOL)isStringAPalindrome:(NSString *)aString; {
   // This method takes in a string and sees if the string is a Palindrome or not.
   // It is much more versatile, because the "digits" can be anything, not just
-  // numbers. It is however slower.
+  // numbers. It is, however, slower.
   //
   // Note: While we could improve the runtime by modifying the code to check
   //       the right and left "digits" (just as in the Question 4 Private method),
   //       for ease and clarity, we just reverse the string and compare if the
   //       new string is equal to the old one. It is very straight-forward to
   //       merge these two methods together.
-  
-  // Variable to hold the current index range for the reversed string.
-  NSRange subStringRange;
-  
-  // Variable to hold the current index of the string.
-  NSInteger characterIndex = [aString length];
-  
-  // Variable to hold the reversed string.
-  NSMutableString * reversedString = [NSMutableString string];
-  
-  // While the character index is greater than 0,
-  while(characterIndex > 0){
-    // Decrease the characterIndex by 1, which is equivalent to looking at the
-    // next "digit" to the left.
-    characterIndex--;
-    
-    // Compute the range of the next "digit".
-    subStringRange = NSMakeRange(characterIndex, 1);
-    
-    // Add the "digit" to the reversedString.
-    [reversedString appendString:[aString substringWithRange:subStringRange]];
-  }
+  //
+  // Note 2: We now use the helper method below to reverse the string, though
+  //         it is exactly the same method as was used here before.
+  //
   // Check and return is the string and reversedString are equal.
-  return [aString isEqualToString:reversedString];
+  return [aString isEqualToString:[self reversedString:aString]];
 }
 
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero; {
@@ -175,6 +157,81 @@
   }
   // Return if the number is lexographic or not.
   return numberIsLexographic;
+}
+
+- (BOOL)number:(long long int)aNumber isAPermutationOfNumber:(long long int)aSecondNumber; {
+  // Variable to hold the number of digits there are for the input number.
+  int numberOfDigitsInFirstNumber = (int)(log10(aNumber));
+  
+  // Variable to hold the number of digits there are for the input number.
+  int numberOfDigitsInSecondNumber = (int)(log10(aSecondNumber));
+  
+  // If the two inputted numbers do not have the same number of digits,
+  if(numberOfDigitsInFirstNumber != numberOfDigitsInSecondNumber){
+    // They cannot be permutations of each other, so return NO.
+    return NO;
+  }
+  // Variable to hold if the numbers are permutations of each other or not.
+  BOOL isAPermutation = YES;
+  
+  // Variable array to hold the number of each digits in the first number.
+  uint digitsUsedInFirstNumber[10];
+  
+  // Variable array to hold the number of each digits in the second number.
+  uint digitsUsedInSecondNumber[10];
+  
+  // For all the base-10 digits,
+  for(int digit = 0; digit <= 9; digit++){
+    // Set the default number of digits used to 0 for the current digit in the
+    // first number.
+    digitsUsedInFirstNumber[digit] = 0;
+    
+    // Set the default number of digits used to 0 for the current digit in the
+    // second number.
+    digitsUsedInSecondNumber[digit] = 0;
+  }
+  // Variable to hold the digit we are looking at.
+  uint digit = 0;
+  
+  // Variable to hold the power of 10 for the current digit.
+  uint powerOf10 = 1;
+  
+  // While the number of digits is positive,
+  while(numberOfDigitsInFirstNumber >= 0){
+    // Grab the current digit from the first number.
+    digit = (((long long int)(aNumber / powerOf10)) % 10);
+    
+    // Increment the number of digits used in the first number for the current
+    // digit by 1.
+    digitsUsedInFirstNumber[digit]++;
+    
+    // Grab the current digit from the second number.
+    digit = (((long long int)(aSecondNumber / powerOf10)) % 10);
+    
+    // Increment the number of digits used in the second number for the current
+    // digit by 1.
+    digitsUsedInSecondNumber[digit]++;
+    
+    // Multiply the power of 10 by 10 for the next index.
+    powerOf10 *= 10;
+    
+    // Decrease the number of digits by 1.
+    numberOfDigitsInFirstNumber--;
+  }
+  // For all the base-10 digits,
+  for(int digit = 0; digit <= 9; digit++){
+    // If the number of digits used in the first number and the second number
+    // are not equal,
+    if(digitsUsedInFirstNumber[digit] != digitsUsedInSecondNumber[digit]){
+      // They cannot be permutations of each other, so set the return value to NO.
+      isAPermutation = NO;
+      
+      // Break out of the loop.
+      break;
+    }
+  }
+  // Return if the number is a permutation or not.
+  return isAPermutation;
 }
 
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero maxDigit:(uint)aMaxDigit; {
@@ -393,6 +450,32 @@
 - (double)flooredLog:(double)x withBase:(double)aBase; {
   // This helper method computes the rounded log of a value with a given base.
   return ((double)((uint)[self log:x withBase:aBase]));
+}
+
+- (NSString *)reversedString:(NSString *)aString; {
+  // Variable to hold the current index range for the reversed string.
+  NSRange subStringRange;
+  
+  // Variable to hold the current index of the string.
+  NSInteger characterIndex = [aString length];
+  
+  // Variable to hold the reversed string.
+  NSMutableString * reversedString = [NSMutableString string];
+  
+  // While the character index is greater than 0,
+  while(characterIndex > 0){
+    // Decrease the characterIndex by 1, which is equivalent to looking at the
+    // next character to the left.
+    characterIndex--;
+    
+    // Compute the range of the next character.
+    subStringRange = NSMakeRange(characterIndex, 1);
+    
+    // Add the character to the reversedString.
+    [reversedString appendString:[aString substringWithRange:subStringRange]];
+  }
+  // Return the reversed string.
+  return reversedString;
 }
 
 - (NSString *)rotateStringLeftByOne:(NSString *)aString; {
