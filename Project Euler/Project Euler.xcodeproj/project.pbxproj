@@ -30,6 +30,9 @@
 		4E277EA316D3E8420033157C /* Question51.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277E9E16D3E8420033157C /* Question51.m */; };
 		4E277EB716D57ADE0033157C /* Question52.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277EA816D57ADA0033157C /* Question52.m */; };
 		4E277EDC16D6A69F0033157C /* Question53.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277EDB16D6A69E0033157C /* Question53.m */; };
+		4E277EF616D7C4280033157C /* Question54.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277EF516D7C4280033157C /* Question54.m */; };
+		4E277EFB16D7C4360033157C /* PokerHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277EFA16D7C4360033157C /* PokerHand.m */; };
+		4E277EFE16D7C44F0033157C /* pokerQuestion54.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E277EFD16D7C44F0033157C /* pokerQuestion54.txt */; };
 		4E33E33116BFB8F80067FE8D /* Question35.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E33E33016BFB8F80067FE8D /* Question35.m */; };
 		4E33E33416C0AE240067FE8D /* Question36.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E33E33316C0AE240067FE8D /* Question36.m */; };
 		4E33E34416C1A7C10067FE8D /* Question37.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E33E34316C1A7C10067FE8D /* Question37.m */; };
@@ -125,6 +128,11 @@
 		4E277EA816D57ADA0033157C /* Question52.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question52.m; sourceTree = "<group>"; };
 		4E277EDA16D6A69E0033157C /* Question53.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question53.h; sourceTree = "<group>"; };
 		4E277EDB16D6A69E0033157C /* Question53.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question53.m; sourceTree = "<group>"; };
+		4E277EF416D7C4280033157C /* Question54.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question54.h; sourceTree = "<group>"; };
+		4E277EF516D7C4280033157C /* Question54.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question54.m; sourceTree = "<group>"; };
+		4E277EF916D7C4360033157C /* PokerHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokerHand.h; sourceTree = "<group>"; };
+		4E277EFA16D7C4360033157C /* PokerHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokerHand.m; sourceTree = "<group>"; };
+		4E277EFD16D7C44F0033157C /* pokerQuestion54.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokerQuestion54.txt; sourceTree = "<group>"; };
 		4E33E32F16BFB8F80067FE8D /* Question35.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question35.h; sourceTree = "<group>"; };
 		4E33E33016BFB8F80067FE8D /* Question35.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question35.m; sourceTree = "<group>"; };
 		4E33E33216C0AE240067FE8D /* Question36.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question36.h; sourceTree = "<group>"; };
@@ -438,6 +446,23 @@
 			path = BigInt;
 			sourceTree = "<group>";
 		};
+		4E277EF816D7C4360033157C /* Poker Hand */ = {
+			isa = PBXGroup;
+			children = (
+				4E277EF916D7C4360033157C /* PokerHand.h */,
+				4E277EFA16D7C4360033157C /* PokerHand.m */,
+			);
+			path = "Poker Hand";
+			sourceTree = "<group>";
+		};
+		4E277EFC16D7C44F0033157C /* Question 54 */ = {
+			isa = PBXGroup;
+			children = (
+				4E277EFD16D7C44F0033157C /* pokerQuestion54.txt */,
+			);
+			path = "Question 54";
+			sourceTree = "<group>";
+		};
 		4E72A99C16C8310C006DB097 /* Question 42 */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +477,7 @@
 				4E93B8D416A90DB900D9EADB /* Question 18 */,
 				4E93B9E716ADCD0200D9EADB /* Question 22 */,
 				4E72A99C16C8310C006DB097 /* Question 42 */,
+				4E277EFC16D7C44F0033157C /* Question 54 */,
 			);
 			path = "Files To Load";
 			sourceTree = "<group>";
@@ -468,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				4E93B8DD16A9C9D900D9EADB /* Binary Object */,
+				4E277EF816D7C4360033157C /* Poker Hand */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -720,6 +747,8 @@
 				4E277EA816D57ADA0033157C /* Question52.m */,
 				4E277EDA16D6A69E0033157C /* Question53.h */,
 				4E277EDB16D6A69E0033157C /* Question53.m */,
+				4E277EF416D7C4280033157C /* Question54.h */,
+				4E277EF516D7C4280033157C /* Question54.m */,
 			);
 			path = "Questions 51-55";
 			sourceTree = "<group>";
@@ -1504,6 +1533,7 @@
 				4E93B8D616A90DB900D9EADB /* triangleQuestion18.txt in Resources */,
 				4E93B9E916ADCD0200D9EADB /* namesQuestion22.txt in Resources */,
 				4E72A99E16C8310C006DB097 /* wordsQuestion42.txt in Resources */,
+				4E277EFE16D7C44F0033157C /* pokerQuestion54.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1576,6 +1606,8 @@
 				4E277EA316D3E8420033157C /* Question51.m in Sources */,
 				4E277EB716D57ADE0033157C /* Question52.m in Sources */,
 				4E277EDC16D6A69F0033157C /* Question53.m in Sources */,
+				4E277EF616D7C4280033157C /* Question54.m in Sources */,
+				4E277EFB16D7C4360033157C /* PokerHand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
