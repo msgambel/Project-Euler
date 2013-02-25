@@ -37,6 +37,7 @@
 		4E33E33416C0AE240067FE8D /* Question36.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E33E33316C0AE240067FE8D /* Question36.m */; };
 		4E33E34416C1A7C10067FE8D /* Question37.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E33E34316C1A7C10067FE8D /* Question37.m */; };
 		4E44143B16CACF0400C173A3 /* Question44.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44143A16CACF0400C173A3 /* Question44.m */; };
+		4E5C636616DAB0D5001E9456 /* Question56.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C636516DAB0D5001E9456 /* Question56.m */; };
 		4E68BF6F16AFC4F00027BC71 /* Question23.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E68BF6C16AFC4F00027BC71 /* Question23.m */; };
 		4E68BF7616B069A20027BC71 /* Question24.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E68BF7316B0699F0027BC71 /* Question24.m */; };
 		4E68BFE216B1D69A0027BC71 /* Question25.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E68BFE116B1D69A0027BC71 /* Question25.m */; };
@@ -142,6 +143,8 @@
 		4E33E34316C1A7C10067FE8D /* Question37.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question37.m; sourceTree = "<group>"; };
 		4E44143916CACF0400C173A3 /* Question44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question44.h; sourceTree = "<group>"; };
 		4E44143A16CACF0400C173A3 /* Question44.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question44.m; sourceTree = "<group>"; };
+		4E5C636416DAB0D5001E9456 /* Question56.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question56.h; sourceTree = "<group>"; };
+		4E5C636516DAB0D5001E9456 /* Question56.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question56.m; sourceTree = "<group>"; };
 		4E68BF6B16AFC4F00027BC71 /* Question23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question23.h; sourceTree = "<group>"; };
 		4E68BF6C16AFC4F00027BC71 /* Question23.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question23.m; sourceTree = "<group>"; };
 		4E68BF7216B0699F0027BC71 /* Question24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question24.h; sourceTree = "<group>"; };
@@ -761,6 +764,8 @@
 		4E93B91616A9C9D900D9EADB /* Questions 56-60 */ = {
 			isa = PBXGroup;
 			children = (
+				4E5C636416DAB0D5001E9456 /* Question56.h */,
+				4E5C636516DAB0D5001E9456 /* Question56.m */,
 			);
 			path = "Questions 56-60";
 			sourceTree = "<group>";
@@ -1614,6 +1619,7 @@
 				4E277EF616D7C4280033157C /* Question54.m in Sources */,
 				4E277EFB16D7C4360033157C /* PokerHand.m in Sources */,
 				4EAED11316D9619500424AEA /* Question55.m in Sources */,
+				4E5C636616DAB0D5001E9456 /* Question56.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
