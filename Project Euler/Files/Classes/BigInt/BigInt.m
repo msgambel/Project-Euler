@@ -211,33 +211,28 @@ static int primesBelow2000[] = {
 	return self;
 }
 
--(void)dealloc {
-	
-	[super dealloc];
-}
-
 +(BigInt *)create {
 	return [BigInt createFromLong:0];
 }
 
 +(BigInt *)createFromInt:(int)value {
-	return [[[BigInt alloc] initWithLong:(long)value] autorelease];
+	return [[BigInt alloc] initWithLong:(long)value];
 }
 
 +(BigInt *)createFromLong:(long)value {
-	return [[[BigInt alloc] initWithLong:value] autorelease];
+	return [[BigInt alloc] initWithLong:value];
 }
 
 +(BigInt *)createFromULong:(ulong)value {
-	return [[[BigInt alloc] initWithULong:value] autorelease];
+	return [[BigInt alloc] initWithULong:value];
 }
 
 +(BigInt *)createFromBigInt:(BigInt *)value {
-	return [[[BigInt alloc] initWithBigInt:value] autorelease];
+	return [[BigInt alloc] initWithBigInt:value];
 }
 
 +(BigInt *)createFromString:(NSString *)value andRadix:(int)radix {
-	return [[[BigInt alloc] initWithString:value andRadix:radix] autorelease];	
+	return [[BigInt alloc] initWithString:value andRadix:radix];
 }
 
 -(uint *)getData {
@@ -291,7 +286,7 @@ static int primesBelow2000[] = {
 	NSLog(@"subtract");
 #endif
 	
-	BigInt *result = [[[BigInt alloc] init] autorelease];
+	BigInt *result = [[BigInt alloc] init];
 	
 	result.dataLength = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
@@ -334,9 +329,7 @@ static int primesBelow2000[] = {
 	NSLog(@"multiply");
 #endif
 	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
-	BigInt *result = [BigInt create];
+	BigInt * result = [BigInt create];
 	int lastPos = MAX_LENGTH - 1;
 	bool bi1Neg = false, bi2Neg = false;
 	BigInt *bi1 = [BigInt createFromBigInt:self];
@@ -411,10 +404,9 @@ static int primesBelow2000[] = {
 			// a max negative number in 2's complement.
 			
 			if (result.dataLength == 1) {
-				[result retain];
-				[pool release];
-				return [result autorelease];
-			} else {
+				return result;
+			}
+      else {
 				bool isMaxNeg = true;
 				for (int i = 0; i < result.dataLength - 1 && isMaxNeg; i++) {
 					if ([result getDataAtIndex:i] != 0)
@@ -422,9 +414,7 @@ static int primesBelow2000[] = {
 				}
 				
 				if (isMaxNeg) {
-					[result retain];
-					[pool release];
-					return [result autorelease];
+					return result;
 				}
 			}
 		}
@@ -436,10 +426,7 @@ static int primesBelow2000[] = {
 	if (bi1Neg != bi2Neg)
 		result = [result negate];
 	
-	[result retain];
-	[pool release];
-	
-	return [result autorelease];	
+	return result;
 }
 
 -(BigInt *)negate {
@@ -449,9 +436,7 @@ static int primesBelow2000[] = {
 	
 	if (self.dataLength == 1 && [self getDataAtIndex:0] == 0)
 		return [BigInt create];
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
+  
 	BigInt *result = [BigInt createFromBigInt:self];
 	
 	// 1's complement
@@ -480,19 +465,13 @@ static int primesBelow2000[] = {
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
-	[result retain];
-	
-	[pool release];
-	
-	return [result autorelease];
+	return result;
 }
 
 -(BigInt *)divide:(BigInt *)bi2 {
 #if _BI_DEBUG_
 	NSLog(@"divide");
 #endif
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	BigInt *quotient = [BigInt createFromLong:0];
 	BigInt *remainder = [BigInt createFromLong:0];
@@ -523,12 +502,29 @@ static int primesBelow2000[] = {
 		if (dividendNeg != divisorNeg)
 			quotient = [quotient negate];
 	}	
-	
-	[quotient retain];
-	
-	[pool release];
-	
-	return [quotient autorelease];
+	return quotient;
+}
+
++ (BigInt *)factorial:(uint)aNumber; {
+  if(aNumber <= 1){
+    return [BigInt createFromInt:1];
+  }
+  else if(aNumber > 500){
+    NSLog(@"%d is too large to compute the factorial!", aNumber);
+    return nil;
+  }
+  else{
+    BigInt * number = [BigInt createFromInt:aNumber];
+    return [number multiply:[self factorial:(aNumber - 1)]];
+  }
+}
+
++ (BigInt *)n:(uint)aN chooseR:(uint)aR; {
+  BigInt * numerator = [BigInt factorial:aN];
+  BigInt * denominator1 = [BigInt factorial:aR];
+  BigInt * denominator2 = [BigInt factorial:(aN - aR)];
+  BigInt * denominator = [denominator1 multiply:denominator2];
+  return [numerator divide:denominator];
 }
 
 -(BigInt *)not {
@@ -546,7 +542,7 @@ static int primesBelow2000[] = {
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
-	return [result autorelease];	
+	return result;
 }
 
 
@@ -574,7 +570,7 @@ static int primesBelow2000[] = {
 	}
 	 */
 	
-	return [result autorelease];
+	return result;
 }
 
 
@@ -583,9 +579,9 @@ static int primesBelow2000[] = {
 	NSLog(@"shiftRight");
 #endif
 	
-	BigInt *result = [[BigInt alloc] initWithBigInt:self];
+	BigInt * result = [[BigInt alloc] initWithBigInt:self];
 	result.dataLength = [BigInt shiftRight:[result getData] withSizeOf:result.dataLength bits:shiftVal];
-	return [result autorelease];
+	return result;
 }
 
 -(BOOL)equals:(BigInt *)bi {
@@ -669,8 +665,6 @@ static int primesBelow2000[] = {
   if(aRadix < 2){
     @throw [NSException exceptionWithName:@"ArgumentException" reason:@"Radix must be >= 2" userInfo:nil];
   }
-  NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-  
   uint numberOfDigits = 1;
   
   BigInt * bigIntRadix = [BigInt createFromLong:aRadix];
@@ -686,7 +680,6 @@ static int primesBelow2000[] = {
     originalNumber = quotient;
     numberOfDigits++;
   }
-  [pool release];
   return numberOfDigits;
 }
 
@@ -708,9 +701,6 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_
 	NSLog(@"sqrt");
 #endif
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
 	uint numBits = (uint)[self bitCount];
 	
 	if ((numBits & 0x1) != 0)        // odd number of bits
@@ -745,19 +735,14 @@ static int primesBelow2000[] = {
 		}
 		mask = 0x80000000;
 	}
-	
-	[result retain];
-	[pool release];
-	return [result autorelease];
+	return result;
 }
 
 -(BigInt *)gcd:(BigInt *)bi {
 #if _BI_DEBUG_
 	NSLog(@"gcd");
 #endif
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
+  
 	BigInt *x;
 	BigInt *y;
 	
@@ -778,11 +763,7 @@ static int primesBelow2000[] = {
 		x = [y mod: x];
 		y = g;
 	}
-	
-	[g retain];
-	[pool release];
-	
-	return [g autorelease];
+	return g;
 }
 
 //***********************************************************************
@@ -802,8 +783,6 @@ static int primesBelow2000[] = {
 	
 	if (radix < 2 || radix > 36)
 		@throw [NSException exceptionWithName:@"ArgumentException" reason:@"Radix must be >= 2 and <= 36" userInfo:nil];
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	NSString *charSet = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	NSMutableString *result = [[NSMutableString alloc] init];
@@ -841,14 +820,8 @@ static int primesBelow2000[] = {
 		if (negative)
 			[result insertString:@"-" atIndex:0];
 	}
-	
-	NSString *sOut = [result copy];
-	[result release];
-	
-	[sOut retain];
-	[pool release];
-	
-	return [sOut autorelease];	
+	NSString * sOut = [result copy];
+	return sOut;
 }
 
 +(int)shiftLeft:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal {
@@ -989,9 +962,6 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_	
 	NSLog(@"multiByteDivide");
 #endif
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
 	uint result[MAX_LENGTH];
 	bzero(result, sizeof(result));
 	
@@ -1099,8 +1069,6 @@ static int primesBelow2000[] = {
 		
 		pos--;
 		j--;
-		
-		[kk release];
 	}
 	
 	outQuotient.dataLength = resultPos;
@@ -1131,8 +1099,6 @@ static int primesBelow2000[] = {
 	for (; y < MAX_LENGTH; y++) {
 		[outRemainder setData:0 atIndex:y];
 	}
-	
-	[pool release];
 }
 
 //***********************************************************************
@@ -1143,8 +1109,6 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_
 	NSLog(@"mod");
 #endif
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	BigInt *quotient = [BigInt create];
 	BigInt *remainder =	[BigInt createFromBigInt:self];
@@ -1171,11 +1135,7 @@ static int primesBelow2000[] = {
 		if (dividendNeg)
 			remainder = [remainder negate];
 	}	
-	
-	[remainder retain];
-	[pool release];
-	
-	return [remainder autorelease];
+	return remainder;
 }
 
 //***********************************************************************
@@ -1294,8 +1254,6 @@ static int primesBelow2000[] = {
 	if (([exp getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Positive exponents only." userInfo:nil];
 	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
 	BigInt *resultNum = [BigInt createFromLong:1];
 	BigInt *tempNum;
 	bool thisNegative = false;
@@ -1343,9 +1301,7 @@ static int primesBelow2000[] = {
 				if (thisNegative && ([exp getDataAtIndex:0] & 0x1) != 0)  {   //odd exp
 					resultNum = [resultNum negate];
 				}
-				[resultNum retain];
-				[pool release];
-				return [resultNum autorelease];
+				return resultNum;
 			}
 			count++;
 			if (count == totalBits)
@@ -1356,10 +1312,7 @@ static int primesBelow2000[] = {
 	if (thisNegative && ([exp getDataAtIndex:0] & 0x1) != 0)    //odd exp
 		resultNum = [resultNum negate];
 	
-	[resultNum retain];
-	[pool release];
-	
-	return [resultNum autorelease];
+	return resultNum;
 }
 
 
@@ -1374,9 +1327,7 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_
 	NSLog(@"barrettReduction: x:%@ n:%@ c:%@", [x toStringWithRadix:10], [n toStringWithRadix:10], [constant toStringWithRadix:10]);
 #endif
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
+  
 	int k = n.dataLength;
 	int kPlusOne = k + 1;
 	int kMinusOne = k - 1;
@@ -1469,10 +1420,7 @@ static int primesBelow2000[] = {
 			tmp = [tmp add:[BigInt createFromInt:1]];
 		r1 = [r1 subtract:[n multiply:tmp]];*/
 	}
-	
-	[r1 retain];
-	[pool release];
-	return [r1 autorelease];
+	return r1;
 }
 
 //***********************************************************************
@@ -1535,8 +1483,6 @@ static int primesBelow2000[] = {
 	NSLog(@"isProbablePrimeWithConfidence");
 #endif
 	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
 	BigInt *thisVal;
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
 		thisVal = [self negate];
@@ -1556,7 +1502,6 @@ static int primesBelow2000[] = {
 		
 		BigInt *resultNum = [thisVal mod: divisor];
 		if ([resultNum intValue] == 0) {
-			[pool release];
 			return false;
 		}
 	}
@@ -1568,9 +1513,6 @@ static int primesBelow2000[] = {
 	} else {
 		result = false;
 	}
-	
-	[pool release];
-	
 	return result;
 }
 
@@ -1690,13 +1632,10 @@ static int primesBelow2000[] = {
 	NSLog(@"generatePseudoPrimeWithBits");
 #endif
 	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	BigInt *result = [BigInt create];
+	BigInt * result = [BigInt create];
 	bool done = false;
 	
 	while (!done) {
-		NSAutoreleasePool *whilePool = [[NSAutoreleasePool alloc] init];
-		
 		[result getRandomBits: bits];
 		[result setData:([result getDataAtIndex:0] | 0x01) atIndex:0];		// make it odd
 		
@@ -1706,13 +1645,8 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_
 		NSLog(@"Is Prime: %s (%s)", [[result toStringWithRadix:16] UTF8String], [done ? @"Yes" : @"No" UTF8String]);
 #endif
-		
-		[whilePool release];
 	}
-	
-	[result retain];
-	[pool release];
-	return [result autorelease];	
+	return result;
 }
 
 
@@ -1734,9 +1668,8 @@ static int primesBelow2000[] = {
 	s);
 #endif
 	NSMutableArray * aRet = nil;
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
-	BigInt *result[3];
+	BigInt * result[3];
 	
 	result[0] = [BigInt create];
 	result[1] = [BigInt create];
@@ -1840,10 +1773,8 @@ static int primesBelow2000[] = {
 	[aRet addObject:result[0]];
 	[aRet addObject:result[1]];
 	[aRet addObject:result[2]];
-	
-	[pool release];
-	
-	return [aRet autorelease];
+  
+	return aRet;
 }
 
 
@@ -1870,8 +1801,6 @@ static int primesBelow2000[] = {
 	// Let D be the first element of the sequence
 	// 5, -7, 9, -11, 13, ... for which J(D,n) = -1
 	// Let P = 1, Q = (1-D) / 4
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	if (([thisVal getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
 		thisVal = [thisVal negate];
@@ -1995,9 +1924,6 @@ static int primesBelow2000[] = {
 				isPrime = false;
 		}
 	}
-	
-	[pool release];
-	
 	return isPrime;
 }
 
@@ -2081,9 +2007,7 @@ static int primesBelow2000[] = {
 	NSLog(@"rabinMillerTestWithConfidence");
 #endif
 	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
-	BigInt *thisVal;
+	BigInt * thisVal;
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
 		thisVal = [self negate];
 	else
@@ -2092,16 +2016,13 @@ static int primesBelow2000[] = {
 	if (thisVal.dataLength == 1) {
 		// test small numbers
 		if ([thisVal getDataAtIndex:0] == 0 || [thisVal getDataAtIndex:0] == 1) {
-			[pool release];
 			return false;
 		} else if ([thisVal getDataAtIndex:0] == 2 || [thisVal getDataAtIndex:0] == 3) {
-			[pool release];
 			return true;
 		}
 	}
 	
 	if (([thisVal getDataAtIndex:0] & 0x1) == 0) {    // even numbers
-		[pool release];
 		return false;
 	}
 	
@@ -2160,7 +2081,6 @@ static int primesBelow2000[] = {
 		// check whether a factor exists (fix for version 1.03)
 		BigInt *gcdTest = [a gcd:thisVal];
 		if (gcdTest.dataLength == 1 && [gcdTest getDataAtIndex:0] != 1) {
-			[pool release];
 			return false;
 		}
 		
@@ -2182,11 +2102,9 @@ static int primesBelow2000[] = {
 		}
 		
 		if (result == false) {
-			[pool release];
 			return false;
 		}
 	}
-	[pool release];
 	return true;
 }
 
