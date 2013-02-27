@@ -36,7 +36,10 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
-// This number returns if it is a perfect square or not.
+// This helper method returns if a number os prime or not.
+- (BOOL)isPrime:(int)aNumber;
+
+// This helper method returns if it is a perfect square or not.
 - (BOOL)isNumberAPerfectSquare:(long long int)aNumber;
 
 // This helper method returns if a string is a palindrome or not.
@@ -54,6 +57,9 @@
 
 // This helper method returns the gcd of 2 numbers.
 - (uint)gcdOfA:(uint)aA b:(uint)aB;
+
+// This helper method returns the smallest factor of a number.
+- (uint)leastFactorOf:(uint)aNumber;
 
 // This helper method will take in a number as a string and return the sum of
 // its digits.

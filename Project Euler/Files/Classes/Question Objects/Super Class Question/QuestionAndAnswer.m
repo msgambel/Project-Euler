@@ -66,6 +66,11 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
+- (BOOL)isPrime:(int)aNumber; {
+  // Return is the smallest factor of the number is the number itself!
+  return ([self leastFactorOf:aNumber] == aNumber);
+}
+
 - (BOOL)isNumberAPerfectSquare:(long long int)aNumber; {
   // This helper method returns is a number is a perfect square of not. Note:
   // that this method only works for small numbers (less than 2,147,483,647). In
@@ -378,6 +383,88 @@
   }
   // Return the greatest common divisor of the 2 input numbers.
   return gcd;
+}
+
+- (uint)leastFactorOf:(uint)aNumber; {
+  // Here, we use the arithmetic progression trick 30k + 7 to check all the
+  // possible factors a number can have. Notice that 2 * 3 * 5 = 30. Using this
+  // fact, we can just check all the numbers coprime to 2, 3, and 5 in the range
+  // of (30k + 7, 30(k+1) + 7) for all integers k.
+  //
+  // This process is very similar to the Sieve of Eratosthenes, though we don't
+  // store the prime values we find, nor do we check if the factor we are
+  // testingis prime.
+  
+  // If the number is 0 or 1,
+  if(aNumber <= 1){
+    // Return 1 as the least factor of the number.
+    return 1;
+  }
+  // If the number is divisible by 2,
+  if((aNumber % 2) == 0){
+    // Return 2 as the least factor of the number.
+    return 2;
+  }
+  // If the number is divisible by 3,
+  if((aNumber % 3) == 0){
+    // Return 3 as the least factor of the number.
+    return 3;
+  }
+  // If the number is divisible by 5,
+  if((aNumber % 5) == 0){
+    // Return 5 as the least factor of the number.
+    return 5;
+  }
+  // Compute the square root of the number.
+  uint squareRoot = (uint)sqrt(aNumber);
+  
+  // For all the values in the arithmetic progression 30k + 7, up to the square
+  // root of the inputted number,
+  for(uint i = 7; i <= squareRoot; i += 30){
+    // If the number is divisible by i,
+    if((aNumber % i) == 0){
+      // Return i as the least factor of the number.
+      return i;
+    }
+    // If the number is divisible by (i + 4),
+    if((aNumber % (i + 4)) == 0){
+      // Return (i + 4) as the least factor of the number.
+      return i + 4;
+    }
+    // If the number is divisible by (i + 6),
+    if((aNumber % (i + 6)) == 0){
+      // Return (i + 6) as the least factor of the number.
+      return i + 6;
+    }
+    // If the number is divisible by (i + 10),
+    if((aNumber % (i + 10)) == 0){
+      // Return (i + 10) as the least factor of the number.
+      return i + 10;
+    }
+    // If the number is divisible by (i + 12),
+    if((aNumber % (i + 12)) == 0){
+      // Return (i + 12) as the least factor of the number.
+      return i + 12;
+    }
+    // If the number is divisible by (i + 16),
+    if((aNumber % (i + 16)) == 0){
+      // Return (i + 16) as the least factor of the number.
+      return i + 16;
+    }
+    // If the number is divisible by (i + 22),
+    if((aNumber % (i + 22)) == 0){
+      // Return (i + 22) as the least factor of the number.
+      return i + 22;
+    }
+    // If the number is divisible by (i + 24),
+    if((aNumber % (i + 24)) == 0){
+      // Return (i + 24) as the least factor of the number.
+      return i + 24;
+    }
+  }
+  // Return the number itself as the least factor of the number, as the number
+  // must be prime.
+  return aNumber;
 }
 
 - (uint)digitSumOfNumber:(NSString *)aNumber; {
