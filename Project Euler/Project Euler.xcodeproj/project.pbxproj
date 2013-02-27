@@ -22,7 +22,7 @@
 		4E04C7DE16917B0200DC881F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E04C7DB16917B0200DC881F /* Default-568h@2x.png */; };
 		4E04C7DF16917B0200DC881F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E04C7DC16917B0200DC881F /* Default@2x.png */; };
 		4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04C8371694D8ED00DC881F /* CustomNavigationController.m */; };
-		4E13503916A27D0F00B7CE92 /* BigInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E13503816A27D0F00B7CE92 /* BigInt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4E13503916A27D0F00B7CE92 /* BigInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E13503816A27D0F00B7CE92 /* BigInt.m */; };
 		4E26635516C384CE0012F6E8 /* Question38.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26635416C384CE0012F6E8 /* Question38.m */; };
 		4E277E4016D0B4700033157C /* Question48.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277E3F16D0B4700033157C /* Question48.m */; };
 		4E277E5016D158720033157C /* Question49.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277E4D16D158720033157C /* Question49.m */; };
@@ -84,6 +84,7 @@
 		4EAD224F16CED91100923F86 /* Question47.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD224C16CED91100923F86 /* Question47.m */; };
 		4EAED11316D9619500424AEA /* Question55.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAED11216D9619500424AEA /* Question55.m */; };
 		4EC6E5C416DC11F000DD22E7 /* Question57.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6E5C116DC11F000DD22E7 /* Question57.m */; };
+		4EC6E5C916DD252500DD22E7 /* Question58.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6E5C816DD252500DD22E7 /* Question58.m */; };
 		4EF7863116CC198F00F95AD7 /* Question45.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7863016CC198F00F95AD7 /* Question45.m */; };
 		4EFE9F2F16C9873400E8C8AC /* Question43.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE9F2C16C9873400E8C8AC /* Question43.m */; };
 		4EFFD8F716C417FE0080148B /* Question39.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFD8F616C417FE0080148B /* Question39.m */; };
@@ -235,6 +236,8 @@
 		4EAED11216D9619500424AEA /* Question55.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question55.m; sourceTree = "<group>"; };
 		4EC6E5C016DC11EF00DD22E7 /* Question57.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question57.h; sourceTree = "<group>"; };
 		4EC6E5C116DC11F000DD22E7 /* Question57.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question57.m; sourceTree = "<group>"; };
+		4EC6E5C716DD252500DD22E7 /* Question58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question58.h; sourceTree = "<group>"; };
+		4EC6E5C816DD252500DD22E7 /* Question58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question58.m; sourceTree = "<group>"; };
 		4EF7862F16CC198F00F95AD7 /* Question45.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question45.h; sourceTree = "<group>"; };
 		4EF7863016CC198F00F95AD7 /* Question45.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question45.m; sourceTree = "<group>"; };
 		4EFE9F2B16C9873400E8C8AC /* Question43.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question43.h; sourceTree = "<group>"; };
@@ -771,6 +774,8 @@
 				4E5C636516DAB0D5001E9456 /* Question56.m */,
 				4EC6E5C016DC11EF00DD22E7 /* Question57.h */,
 				4EC6E5C116DC11F000DD22E7 /* Question57.m */,
+				4EC6E5C716DD252500DD22E7 /* Question58.h */,
+				4EC6E5C816DD252500DD22E7 /* Question58.m */,
 			);
 			path = "Questions 56-60";
 			sourceTree = "<group>";
@@ -1626,6 +1631,7 @@
 				4EAED11316D9619500424AEA /* Question55.m in Sources */,
 				4E5C636616DAB0D5001E9456 /* Question56.m in Sources */,
 				4EC6E5C416DC11F000DD22E7 /* Question57.m in Sources */,
+				4EC6E5C916DD252500DD22E7 /* Question58.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1687,6 +1693,7 @@
 		4E04C72B16897EF700DC881F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Files/Res/Supporting Files/Project Euler-Prefix.pch";
 				INFOPLIST_FILE = "Files/Res/Supporting Files/Project Euler-Info.plist";
@@ -1699,6 +1706,7 @@
 		4E04C72C16897EF700DC881F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Files/Res/Supporting Files/Project Euler-Prefix.pch";
 				INFOPLIST_FILE = "Files/Res/Supporting Files/Project Euler-Info.plist";
