@@ -154,6 +154,8 @@
 - (IBAction)computeButtonPressed:(UIButton *)aButton; {
   // Tell the QuestionAndAnswer object to compute the optimized answer.
   
+  // Start the progress indicator, show the cancel button, and hide the compute
+  // buttons.
   [self startComputationProgressIndicator];
   
   // Create a new NSOperationQueue to run the process on another Thread so that
@@ -171,6 +173,8 @@
 - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton; {
   // Tell the QuestionAndAnswer object to compute the brute force answer.
   
+  // Start the progress indicator, show the cancel button, and hide the compute
+  // buttons.
   [self startComputationProgressIndicator];
   
   // Create a new NSOperationQueue to run the process on another Thread so that
