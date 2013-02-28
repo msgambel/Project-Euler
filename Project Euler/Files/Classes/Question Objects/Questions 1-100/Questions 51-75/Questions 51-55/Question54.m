@@ -46,7 +46,7 @@
   // Variable to hold the data from the above file as a string.
   NSString * listOfPokerHands = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
   
-  // Variable array to the list of words contained in the above string.
+  // Variable array to the list of poker hands contained in the above string.
   NSArray * handsArray = [listOfPokerHands componentsSeparatedByString:@"\n"];
   
   // Variable to hold the cards for both hands to compare in each line.

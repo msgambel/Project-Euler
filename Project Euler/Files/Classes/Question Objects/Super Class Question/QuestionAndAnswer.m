@@ -240,6 +240,7 @@
 }
 
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero maxDigit:(uint)aMaxDigit; {
+  // If the maximum digit is NOT a valid base 10 digit,
   if((aMaxDigit > 9) || (aMaxDigit == 0)){
     // Return that the number is NOT lexographic.
     return NO;

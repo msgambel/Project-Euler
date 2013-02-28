@@ -43,7 +43,7 @@
   // Variable to hold the names as a string for parsing.
   NSString * namesString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
   
-  // Variable array to hold each name as a string.
+  // Variable array to hold each name in the above string as a string.
   NSArray * namesArray = [namesString componentsSeparatedByString:@","];
   
   // Variable array that holds the sorted names of the array.
@@ -95,7 +95,7 @@
   // Variable to hold the names as a string for parsing.
   NSString * namesString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
   
-  // Variable array to hold each name as a string.
+  // Variable array to hold each name in the above string as a string.
   NSArray * namesArray = [namesString componentsSeparatedByString:@","];
   
   // Variable array that holds the sorted names of the array.

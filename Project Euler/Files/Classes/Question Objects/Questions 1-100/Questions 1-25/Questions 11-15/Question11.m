@@ -59,7 +59,7 @@
   // Variable to hold the largest product of 4 numbers in the 2-dimensional array.
   uint largestProduct = 0;
   
-  // Variable to hold each number as a string in an array.
+  // Variable array to hold each number as a string in an array.
   NSArray * parsedArray = [gridOfNumbers componentsSeparatedByString:@" "];
   
   // Variable to hold the number of rows and columns in the array. We know that
