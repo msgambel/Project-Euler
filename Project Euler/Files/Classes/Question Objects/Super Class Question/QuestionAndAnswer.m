@@ -199,7 +199,7 @@
   uint digit = 0;
   
   // Variable to hold the power of 10 for the current digit.
-  uint powerOf10 = 1;
+  long long int powerOf10 = 1;
   
   // While the number of digits is positive,
   while(numberOfDigitsInFirstNumber >= 0){
@@ -466,6 +466,31 @@
   // Return the number itself as the least factor of the number, as the number
   // must be prime.
   return aNumber;
+}
+
+- (uint)sumOfDigits:(long long int)aNumber; {
+  // Variable to hold the number of digits there are for the input number.
+  int numberOfDigits = (int)(log10(aNumber));
+  
+  // Variable to hold the sum of the digits of the inputted number.
+  uint digitSum = 0;
+  
+  // Variable to hold the power of 10 for the current digit.
+  long long int powerOf10 = 1;
+  
+  // While the number of digits is positive,
+  while(numberOfDigits >= 0){
+    // Grab and sum the current digit from the input number.
+    digitSum += (((long long int)(aNumber / powerOf10)) % 10);
+    
+    // Multiply the power of 10 by 10 for the next index.
+    powerOf10 *= 10;
+    
+    // Decrease the number of digits by 1.
+    numberOfDigits--;
+  }
+  // Return the sum of the digits.
+  return digitSum;
 }
 
 - (uint)digitSumOfNumber:(NSString *)aNumber; {
