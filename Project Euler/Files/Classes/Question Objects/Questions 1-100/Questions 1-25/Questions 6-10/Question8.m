@@ -1,7 +1,7 @@
 //  Question8.m
 
 #import "Question8.h"
-#import "Structures.h"
+#import "Global.h"
 
 @interface Question8 (Private)
 

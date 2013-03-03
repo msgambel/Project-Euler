@@ -1,7 +1,7 @@
 //  QuestionCell.m
 
 #import "QuestionCell.h"
-#import "Global.h"
+#import "Defines.h"
 
 @implementation QuestionCell
 

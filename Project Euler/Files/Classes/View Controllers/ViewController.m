@@ -1,7 +1,7 @@
 //  ViewController.m
 
 #import "ViewController.h"
-#import "Global.h"
+#import "Defines.h"
 #import "DetailViewController.h"
 
 @implementation ViewController

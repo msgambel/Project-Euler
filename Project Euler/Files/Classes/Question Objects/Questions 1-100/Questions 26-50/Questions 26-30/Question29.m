@@ -2,7 +2,7 @@
 
 #import "Question29.h"
 #import "BigInt.h"
-#import "Structures.h"
+#import "Global.h"
 
 @implementation Question29
 
