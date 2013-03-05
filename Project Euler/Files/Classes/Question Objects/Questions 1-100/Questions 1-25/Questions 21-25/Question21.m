@@ -24,7 +24,7 @@
   self.title = @"Amicable numbers";
   self.answer = @"31626";
   self.number = @"Problem 21";
-  self.estimatedComputationTime = @"1.92e-02";
+  self.estimatedComputationTime = @"1.71e-02";
   self.estimatedBruteForceComputationTime = @"9.36e-02";
 }
 
@@ -33,6 +33,9 @@
 - (void)computeAnswer; {
   // Set that we have started the computation.
   _isComputing = YES;
+  
+  // Grab the time before the computation starts.
+  NSDate * startTime = [NSDate date];
   
   // Here, we note an interesting fact about the sum of the divisors of a number:
   //
@@ -53,9 +56,6 @@
   //       the combinations of the prime powers in order to generate every
   //       number less than the maximum size. This saves extra multiplications
   //       of the prime powers.
-  
-  // Grab the time before the computation starts.
-  NSDate * startTime = [NSDate date];
   
   // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
@@ -201,13 +201,11 @@
     sumOfDivisors[number] = 1;
     
     // For all the prime factors of this number,
-    for(int i = 0; i < maxNumberOfPrimeFactors; i++){
-      // If the current prime power is actually a factor,
-      if(currentPrimePowers[i].primeNumber > 0){
-        // Multiply the sum of the divisors by the sum of the powers for the
-        // current prime power.
-        sumOfDivisors[number] *= [self sumOfPowersForPrimePower:currentPrimePowers[i]];
-      }
+    for(int i = 0; i < primePowerIndex; i++){
+      // Multiply the sum of the divisors by the sum of the powers for the
+      // current prime power.
+      sumOfDivisors[number] *= [self sumOfPowersForPrimePower:currentPrimePowers[i]];
+      
       // Reset the current prime power to zero.
       currentPrimePowers[i] = PrimePowerZero;
     }
