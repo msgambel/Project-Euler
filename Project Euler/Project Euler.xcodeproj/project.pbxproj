@@ -90,6 +90,8 @@
 		4EC6E5C416DC11F000DD22E7 /* Question57.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6E5C116DC11F000DD22E7 /* Question57.m */; };
 		4EC6E5C916DD252500DD22E7 /* Question58.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6E5C816DD252500DD22E7 /* Question58.m */; };
 		4EEBFABE16E51D7B005FD7F1 /* Question64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEBFAB516E51D7B005FD7F1 /* Question64.m */; };
+		4EEE01A316E9123F00F73B33 /* Question67.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE01A216E9123F00F73B33 /* Question67.m */; };
+		4EEE01A716E9124F00F73B33 /* triangleQuestion67.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EEE01A616E9124F00F73B33 /* triangleQuestion67.txt */; };
 		4EF239F816DFE23F008CCC56 /* Question60.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF239F316DFE23F008CCC56 /* Question60.m */; };
 		4EF23BA216E1A3F0008CCC56 /* Question61.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF23B9F16E1A3F0008CCC56 /* Question61.m */; };
 		4EF23BB316E308D0008CCC56 /* Question62.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF23BB216E308D0008CCC56 /* Question62.m */; };
@@ -256,6 +258,9 @@
 		4EC6E5C816DD252500DD22E7 /* Question58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question58.m; sourceTree = "<group>"; };
 		4EEBFAB416E51D7B005FD7F1 /* Question64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question64.h; sourceTree = "<group>"; };
 		4EEBFAB516E51D7B005FD7F1 /* Question64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question64.m; sourceTree = "<group>"; };
+		4EEE01A116E9123F00F73B33 /* Question67.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question67.h; sourceTree = "<group>"; };
+		4EEE01A216E9123F00F73B33 /* Question67.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question67.m; sourceTree = "<group>"; };
+		4EEE01A616E9124F00F73B33 /* triangleQuestion67.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = triangleQuestion67.txt; sourceTree = "<group>"; };
 		4EF239F216DFE23F008CCC56 /* Question60.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question60.h; sourceTree = "<group>"; };
 		4EF239F316DFE23F008CCC56 /* Question60.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question60.m; sourceTree = "<group>"; };
 		4EF23B9E16E1A3F0008CCC56 /* Question61.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question61.h; sourceTree = "<group>"; };
@@ -527,6 +532,7 @@
 				4E72A99C16C8310C006DB097 /* Question 42 */,
 				4E277EFC16D7C44F0033157C /* Question 54 */,
 				4E967F8016DE6232006B215D /* Question 59 */,
+				4EEE01A516E9124F00F73B33 /* Question 67 */,
 			);
 			path = "Files To Load";
 			sourceTree = "<group>";
@@ -843,6 +849,8 @@
 			children = (
 				4EA8772316E7E9E4007E508B /* Question66.h */,
 				4EA8772416E7E9E4007E508B /* Question66.m */,
+				4EEE01A116E9123F00F73B33 /* Question67.h */,
+				4EEE01A216E9123F00F73B33 /* Question67.m */,
 			);
 			path = "Questions 66-70";
 			sourceTree = "<group>";
@@ -1554,6 +1562,14 @@
 			path = "Question 59";
 			sourceTree = "<group>";
 		};
+		4EEE01A516E9124F00F73B33 /* Question 67 */ = {
+			isa = PBXGroup;
+			children = (
+				4EEE01A616E9124F00F73B33 /* triangleQuestion67.txt */,
+			);
+			path = "Question 67";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1616,6 +1632,7 @@
 				4E72A99E16C8310C006DB097 /* wordsQuestion42.txt in Resources */,
 				4E277EFE16D7C44F0033157C /* pokerQuestion54.txt in Resources */,
 				4E967F8216DE6232006B215D /* cipher1Question59.txt in Resources */,
+				4EEE01A716E9124F00F73B33 /* triangleQuestion67.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1702,6 +1719,7 @@
 				4EEBFABE16E51D7B005FD7F1 /* Question64.m in Sources */,
 				4EB6D46E16E6598B005BF906 /* Question65.m in Sources */,
 				4EA8772516E7E9E4007E508B /* Question66.m in Sources */,
+				4EEE01A316E9123F00F73B33 /* Question67.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
