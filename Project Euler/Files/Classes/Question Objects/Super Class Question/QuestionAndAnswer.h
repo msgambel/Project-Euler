@@ -48,6 +48,9 @@
 // This helper method returns if a number is 9-lexographic.
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero;
 
+// This helper method checks if an int is a permutation of another int.
+- (BOOL)anInt:(uint)aNumber isAPermutationOfInt:(int)aSecondNumber;
+
 // This helper method checks if a number is a permutation of another number.
 - (BOOL)number:(long long int)aNumber isAPermutationOfNumber:(long long int)aSecondNumber;
 
