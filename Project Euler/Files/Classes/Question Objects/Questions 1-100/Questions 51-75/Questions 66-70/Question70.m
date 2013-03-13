@@ -159,7 +159,7 @@
   // and store the minimum value. For more information about the Euler Totient
   // Function, visit:
   //
-  //http://en.wikipedia.org/wiki/Euler's_totient_function#Euler.27s_product_formula
+  // http://en.wikipedia.org/wiki/Euler's_totient_function#Euler.27s_product_formula
   
   // Set the max size for the numbers.
   uint maxSize = 10000000;
@@ -210,12 +210,6 @@
     
     // Increment the maximum number of prime factors by 1.
     maxNumberOfPrimeFactors++;
-    
-    // If the current max size is greater than the max size,
-    if(currentMaxSize > maxSize){
-      // Break out of the loop.
-      break;
-    }
   }
   // Variable to hold the current prime power struct when factoring the current
   // number.
