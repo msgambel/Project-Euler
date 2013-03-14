@@ -71,7 +71,7 @@
   // max size can have.
   uint maxNumberOfPrimeFactors = 1;
   
-  // Variable to hold the
+  // Variable to hold the total number of reduced proper fractions.
   long long int totalReducedProperFractions = 0;
   
   // Array that holds the primes numbers. The method is defined in the super class.
