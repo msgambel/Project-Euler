@@ -188,17 +188,24 @@
       // Add φ(n) = (p-1) to the total number of reduced proper fractions.
       totalReducedProperFractions += ((long long int)(number - 1));
     }
+    // If we are no longer computing,
+    if(!_isComputing){
+      // Break out of the loop.
+      break;
+    }
   }
-  // Set the answer string to the total number of reduced proper fractions.
-  self.answer = [NSString stringWithFormat:@"%llu", totalReducedProperFractions];
-  
-  // Get the amount of time that has passed while the computation was happening.
-  NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
-  
-  // Set the estimated computation time to the calculated value. We use scientific
-  // notation here, as the run time should be very short.
-  self.estimatedComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
-  
+  // If the user has not cancelled the computation at this point,
+  if(_isComputing){
+    // Set the answer string to the total number of reduced proper fractions.
+    self.answer = [NSString stringWithFormat:@"%llu", totalReducedProperFractions];
+    
+    // Get the amount of time that has passed while the computation was happening.
+    NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
+    
+    // Set the estimated computation time to the calculated value. We use scientific
+    // notation here, as the run time should be very short.
+    self.estimatedComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
+  }
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
   
@@ -373,17 +380,24 @@
       // Add φ(n) = (p-1) to the total number of reduced proper fractions.
       totalReducedProperFractions += ((long long int)(number - 1));
     }
+    // If we are no longer computing,
+    if(!_isComputing){
+      // Break out of the loop.
+      break;
+    }
   }
-  // Set the answer string to the total number of reduced proper fractions.
-  self.answer = [NSString stringWithFormat:@"%llu", totalReducedProperFractions];
-  
-  // Get the amount of time that has passed while the computation was happening.
-  NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
-  
-  // Set the estimated computation time to the calculated value. We use scientific
-  // notation here, as the run time should be very short.
-  self.estimatedBruteForceComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
-  
+  // If the user has not cancelled the computation at this point,
+  if(_isComputing){
+    // Set the answer string to the total number of reduced proper fractions.
+    self.answer = [NSString stringWithFormat:@"%llu", totalReducedProperFractions];
+    
+    // Get the amount of time that has passed while the computation was happening.
+    NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
+    
+    // Set the estimated computation time to the calculated value. We use scientific
+    // notation here, as the run time should be very short.
+    self.estimatedBruteForceComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
+  }
   // Tell the delegate we have finished the computation.
   [self.delegate finishedComputing];
   
