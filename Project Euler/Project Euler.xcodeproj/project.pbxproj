@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E04509516F3998C0052877B /* Question75.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04509416F3998C0052877B /* Question75.m */; };
 		4E04C70816897EF700DC881F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E04C70716897EF700DC881F /* UIKit.framework */; };
 		4E04C70A16897EF700DC881F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E04C70916897EF700DC881F /* Foundation.framework */; };
 		4E04C70C16897EF700DC881F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E04C70B16897EF700DC881F /* CoreGraphics.framework */; };
@@ -109,6 +110,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E04509316F3998C0052877B /* Question75.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question75.h; sourceTree = "<group>"; };
+		4E04509416F3998C0052877B /* Question75.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question75.m; sourceTree = "<group>"; };
 		4E04C70316897EF700DC881F /* Project Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Euler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E04C70716897EF700DC881F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4E04C70916897EF700DC881F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -893,6 +896,8 @@
 				4E8F6D7B16F0E6400019E7B7 /* Question73.m */,
 				4E8F6D8716F248FA0019E7B7 /* Question74.h */,
 				4E8F6D8816F248FA0019E7B7 /* Question74.m */,
+				4E04509316F3998C0052877B /* Question75.h */,
+				4E04509416F3998C0052877B /* Question75.m */,
 			);
 			path = "Questions 71-75";
 			sourceTree = "<group>";
@@ -1762,6 +1767,7 @@
 				4E62DD0716EFB03B00D60CB6 /* Question72.m in Sources */,
 				4E8F6D7C16F0E6400019E7B7 /* Question73.m in Sources */,
 				4E8F6D8916F248FA0019E7B7 /* Question74.m in Sources */,
+				4E04509516F3998C0052877B /* Question75.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

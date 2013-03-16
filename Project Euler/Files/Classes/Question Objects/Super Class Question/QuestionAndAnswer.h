@@ -74,6 +74,10 @@
 // This helper method returns a name score for the 26 letters of the alphabet.
 - (uint)nameScoreForString:(NSString *)aString;
 
+// This helper method returns the gcd of 2 numbers using an inputted prime numbers
+// array.
+- (uint)gcdOfA:(uint)aA b:(uint)aB primeNumbersArray:(NSArray *)aPrimeNumbersArray;
+
 // This helper method calculates the log of a number in any base.
 - (double)log:(double)x withBase:(double)aBase;
 
