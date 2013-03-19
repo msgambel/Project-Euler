@@ -18,7 +18,7 @@
   // described below. There is even the estimated computation time for both
   // the brute force method and the optimized way to solve the problem.
   
-  self.date = @"24 February 2004";
+  self.date = @"13 August 2004";
   self.text = @"It is possible to write five as a sum in exactly six different ways:\n\n4 + 1\n3 + 2\n3 + 1 + 1\n2 + 2 + 1\n2 + 1 + 1 + 1\n1 + 1 + 1 + 1 + 1\n\nHow many different ways can one hundred be written as a sum of at least two positive integers?";
   self.title = @"Counting summations";
   self.answer = @"190569291";
