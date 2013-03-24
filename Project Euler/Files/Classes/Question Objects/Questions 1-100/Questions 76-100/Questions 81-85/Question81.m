@@ -231,7 +231,7 @@
       }
     }
   }
-  // Set the answer string to the maximum pandigital number.
+  // Set the answer string to the shortest path distance.
   self.answer = [NSString stringWithFormat:@"%d", (matrix[0][0].h + matrix[0][0].moveCost)];
   
   // Get the amount of time that has passed while the computation was happening.
@@ -458,7 +458,7 @@
       }
     }
   }
-  // Set the answer string to the maximum pandigital number.
+  // Set the answer string to the shortest path distance.
   self.answer = [NSString stringWithFormat:@"%d", (matrix[0][0].h + matrix[0][0].moveCost)];
   
   // Get the amount of time that has passed while the computation was happening.
