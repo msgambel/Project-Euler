@@ -72,6 +72,8 @@
 		4E8C3E8816FE375A00E0158D /* matrixQuestion82.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C3E8516FE375A00E0158D /* matrixQuestion82.txt */; };
 		4E8C3E8C16FEB14500E0158D /* Question83.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C3E8B16FEB14300E0158D /* Question83.m */; };
 		4E8C3E8F16FEB17200E0158D /* matrixQuestion83.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C3E8E16FEB17200E0158D /* matrixQuestion83.txt */; };
+		4E8C3E9C1700084000E0158D /* Question84.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C3E991700083F00E0158D /* Question84.m */; };
+		4E8C3EA51700E43B00E0158D /* MonopolyProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C3EA41700E43B00E0158D /* MonopolyProperty.m */; };
 		4E8F6D7C16F0E6400019E7B7 /* Question73.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F6D7B16F0E6400019E7B7 /* Question73.m */; };
 		4E8F6D8916F248FA0019E7B7 /* Question74.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F6D8816F248FA0019E7B7 /* Question74.m */; };
 		4E93B8D616A90DB900D9EADB /* triangleQuestion18.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E93B8D516A90DB900D9EADB /* triangleQuestion18.txt */; };
@@ -242,6 +244,10 @@
 		4E8C3E8A16FEB14300E0158D /* Question83.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question83.h; sourceTree = "<group>"; };
 		4E8C3E8B16FEB14300E0158D /* Question83.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question83.m; sourceTree = "<group>"; };
 		4E8C3E8E16FEB17200E0158D /* matrixQuestion83.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrixQuestion83.txt; sourceTree = "<group>"; };
+		4E8C3E981700083F00E0158D /* Question84.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question84.h; sourceTree = "<group>"; };
+		4E8C3E991700083F00E0158D /* Question84.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question84.m; sourceTree = "<group>"; };
+		4E8C3EA31700E43B00E0158D /* MonopolyProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonopolyProperty.h; sourceTree = "<group>"; };
+		4E8C3EA41700E43B00E0158D /* MonopolyProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonopolyProperty.m; sourceTree = "<group>"; };
 		4E8F6D7A16F0E6400019E7B7 /* Question73.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question73.h; sourceTree = "<group>"; };
 		4E8F6D7B16F0E6400019E7B7 /* Question73.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question73.m; sourceTree = "<group>"; };
 		4E8F6D8716F248FA0019E7B7 /* Question74.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question74.h; sourceTree = "<group>"; };
@@ -624,6 +630,15 @@
 			path = "Question 83";
 			sourceTree = "<group>";
 		};
+		4E8C3EA21700E42900E0158D /* Monopoly Property */ = {
+			isa = PBXGroup;
+			children = (
+				4E8C3EA31700E43B00E0158D /* MonopolyProperty.h */,
+				4E8C3EA41700E43B00E0158D /* MonopolyProperty.m */,
+			);
+			path = "Monopoly Property";
+			sourceTree = "<group>";
+		};
 		4E93B8D316A90DB900D9EADB /* Files To Load */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,6 +669,7 @@
 			children = (
 				4E8C3E5C16FCCC3F00E0158D /* A* Nodes */,
 				4E93B8DD16A9C9D900D9EADB /* Binary Object */,
+				4E8C3EA21700E42900E0158D /* Monopoly Property */,
 				4E277EF816D7C4360033157C /* Poker Hand */,
 			);
 			path = Objects;
@@ -1021,6 +1037,8 @@
 				4E8C3E7F16FE372F00E0158D /* Question82.m */,
 				4E8C3E8A16FEB14300E0158D /* Question83.h */,
 				4E8C3E8B16FEB14300E0158D /* Question83.m */,
+				4E8C3E981700083F00E0158D /* Question84.h */,
+				4E8C3E991700083F00E0158D /* Question84.m */,
 			);
 			path = "Questions 81-85";
 			sourceTree = "<group>";
@@ -1878,6 +1896,8 @@
 				4E8C3E6816FCCC7100E0158D /* Question81.m in Sources */,
 				4E8C3E8016FE372F00E0158D /* Question82.m in Sources */,
 				4E8C3E8C16FEB14500E0158D /* Question83.m in Sources */,
+				4E8C3E9C1700084000E0158D /* Question84.m in Sources */,
+				4E8C3EA51700E43B00E0158D /* MonopolyProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
