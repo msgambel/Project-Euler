@@ -38,13 +38,19 @@
 #pragma mark - Methods
 
 - (NSComparisonResult)compareNodes:(AStarNode *)aAStarNode; {
+  // If this A* Node has a greater distance than the inputted A* Node,
   if(self.f > aAStarNode.f){
+    // Return that this A* Node has a higher value than the inputted A* Node.
     return NSOrderedAscending;
   }
+  // If this A* Node has a shorter distance than the inputted A* Node,
   else if(self.f < aAStarNode.f){
+    // Return that this A* Node has a lower value than the inputted A* Node.
     return NSOrderedDescending;
   }
+  // If this A* Node has the same distance as the inputted A* Node,
   else{
+    // Return that this A* Node has the same value than the inputted A* Node.
     return NSOrderedSame;
   }
 }
