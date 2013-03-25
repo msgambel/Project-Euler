@@ -7,7 +7,7 @@
 #define IBOutletCollection(ClassName)
 #endif
 
-#define TotalNumberSolved 82
+#define TotalNumberSolved 83
 #define NumberOfButtonsInQuestionCell 5
 
 #define MaxSizeOfSieveOfAtkinson 500000
