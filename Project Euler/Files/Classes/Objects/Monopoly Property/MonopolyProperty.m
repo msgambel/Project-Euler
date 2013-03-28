@@ -1,14 +1,12 @@
 //  MonopolyProperty.m
 
 #import "MonopolyProperty.h"
+#import "Defines.h"
 
 @implementation MonopolyProperty
 
 @synthesize name = _name;
 @synthesize numberOfTimesLandedOn = _numberOfTimesLandedOn;
-
-// Define to hold the number of cards in the Chance and Community Chest piles.
-#define NumberOfChanceOrCommunityChestCardsToChooseFrom 16
 
 #pragma mark - Init
 
