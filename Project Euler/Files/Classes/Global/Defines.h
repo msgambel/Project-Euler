@@ -8,7 +8,7 @@
 #endif
 
 // Defines for UI Layout.
-#define TotalNumberSolved 87
+#define TotalNumberSolved 89
 #define NumberOfButtonsInQuestionCell 5
 
 // Defines for Sieve's.
