@@ -173,6 +173,10 @@
       //       k factors to arrive at n. If p_1 * ... * p_k = n, then n is the
       //       minimal product sum for (p_1 + ... + p_k) + (p_1 * ... * p_k),
       //       where (p_1 + ... + p_k) = 1 + ... + 1.
+      
+      // TODO: Store all the combinations of factors for each number in an array
+      //       and use those combinations when factoring larger numbers to get
+      //       the total sums. Potentially use an NSMutableArray?
     }
   }
   
