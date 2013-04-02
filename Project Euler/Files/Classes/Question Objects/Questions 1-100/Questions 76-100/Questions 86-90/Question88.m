@@ -177,6 +177,8 @@
       // TODO: Store all the combinations of factors for each number in an array
       //       and use those combinations when factoring larger numbers to get
       //       the total sums. Potentially use an NSMutableArray?
+      
+      // TODO: Don't think we need the prime factorization actually...
     }
   }
   
