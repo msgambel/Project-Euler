@@ -28,6 +28,7 @@
 		4E13503916A27D0F00B7CE92 /* BigInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E13503816A27D0F00B7CE92 /* BigInt.m */; };
 		4E2418A91707E2C400873452 /* Question92.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2418A81707E2C400873452 /* Question92.m */; };
 		4E2418AC17092DC800873452 /* Question94.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2418AB17092DC800873452 /* Question94.m */; };
+		4E2418AF17096BEA00873452 /* Question95.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2418AE17096BEA00873452 /* Question95.m */; };
 		4E26635516C384CE0012F6E8 /* Question38.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26635416C384CE0012F6E8 /* Question38.m */; };
 		4E277E4016D0B4700033157C /* Question48.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277E3F16D0B4700033157C /* Question48.m */; };
 		4E277E5016D158720033157C /* Question49.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E277E4D16D158720033157C /* Question49.m */; };
@@ -170,6 +171,8 @@
 		4E2418A81707E2C400873452 /* Question92.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question92.m; sourceTree = "<group>"; };
 		4E2418AA17092DC800873452 /* Question94.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question94.h; sourceTree = "<group>"; };
 		4E2418AB17092DC800873452 /* Question94.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question94.m; sourceTree = "<group>"; };
+		4E2418AD17096BEA00873452 /* Question95.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question95.h; sourceTree = "<group>"; };
+		4E2418AE17096BEA00873452 /* Question95.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question95.m; sourceTree = "<group>"; };
 		4E26635316C384CE0012F6E8 /* Question38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question38.h; sourceTree = "<group>"; };
 		4E26635416C384CE0012F6E8 /* Question38.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question38.m; sourceTree = "<group>"; };
 		4E277E3E16D0B4700033157C /* Question48.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question48.h; sourceTree = "<group>"; };
@@ -1091,6 +1094,8 @@
 				4E2418A81707E2C400873452 /* Question92.m */,
 				4E2418AA17092DC800873452 /* Question94.h */,
 				4E2418AB17092DC800873452 /* Question94.m */,
+				4E2418AD17096BEA00873452 /* Question95.h */,
+				4E2418AE17096BEA00873452 /* Question95.m */,
 			);
 			path = "Questions 91-95";
 			sourceTree = "<group>";
@@ -1952,6 +1957,7 @@
 				4EF665771706949800A3173A /* Question89.m in Sources */,
 				4E2418A91707E2C400873452 /* Question92.m in Sources */,
 				4E2418AC17092DC800873452 /* Question94.m in Sources */,
+				4E2418AF17096BEA00873452 /* Question95.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
