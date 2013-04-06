@@ -1,0 +1,245 @@
+//  Question93.m
+
+#import "Question93.h"
+
+@interface Question93 (Private)
+
+- (double)reversePolishNotation:(NSString *)aEquation;
+
+@end
+
+@implementation Question93
+
+#pragma mark - Setup
+
+- (void)initialize; {
+  // Setup all the information needed for the Question and Answer. The Answer is
+  // precomputed, however, the methods to compute the Answer are available and
+  // described below. There is even the estimated computation time for both
+  // the brute force method and the optimized way to solve the problem.
+  
+  self.date = @"15 April 2005";
+  self.text = @"By using each of the digits from the set, {1, 2, 3, 4}, exactly once, and making use of the four arithmetic operations (+, -, *, /) and brackets/parentheses, it is possible to form different positive integer targets.\n\nFor example,\n\n8 = (4 * (1 + 3)) / 2\n14 = 4 * (3 + 1 / 2)\n19 = 4 * (2 + 3) - 1\n36 = 3 * 4 * (2 + 1)\n\nNote that concatenations of the digits, like 12 + 34, are not allowed.\n\nUsing the set, {1, 2, 3, 4}, it is possible to obtain thirty-one different target numbers of which 36 is the maximum, and each of the numbers 1 to 28 can be obtained before encountering the first non-expressible number.\n\nFind the set of four distinct digits, a < b < c < d, for which the longest set of consecutive positive integers, 1 to n, can be obtained, giving your answer as a string: abcd.";
+  self.title = @"Arithmetic expressions";
+  self.answer = @"1258";
+  self.number = @"Problem 93";
+  self.estimatedComputationTime = @"2.16";
+  self.estimatedBruteForceComputationTime = @"2.16";
+}
+
+#pragma mark - Methods
+
+- (void)computeAnswer; {
+  // Set that we have started the computation.
+  _isComputing = YES;
+  
+  // Grab the time before the computation starts.
+  NSDate * startTime = [NSDate date];
+  
+  // Here, we simply
+  
+  uint largestConsecutiveNumber = 0;
+  
+  double result = 0.0;
+  
+  NSArray * sortedResults = nil;
+  
+  NSNumber * currentNumber = nil;
+  
+  NSString * concatenatedDigits = nil;
+  
+  NSMutableArray * results = nil;
+  
+  // Constant array to hold all the operators.
+  const NSArray * operators = [NSArray arrayWithObjects:@"+", @"-", @"*", @"/", nil];
+  
+  NSSortDescriptor * lowestToHighest = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
+  
+  NSString * equation = nil;
+  
+  for(int a = 0; a < 10; a++){
+    for(int b = (a + 1); b < 10; b++){
+      for(int c = (b + 1); c < 10; c++){
+        for(int d = (c + 1); d < 10; d++){
+          results = [[NSMutableArray alloc] init];
+          
+          for(NSString * operator1 in operators){
+            for(NSString * operator2 in operators){
+              for(NSString * operator3 in operators){
+                equation = [NSString stringWithFormat:@"%d%d%d%d%@%@%@", a, b, c, d, operator1, operator2, operator3];
+                result = [self reversePolishNotation:equation];
+                
+                if((result != 0.5) && (result > 0.0)){
+                  [results addObject:[NSNumber numberWithInt:((uint)result)]];
+                }
+                equation = [NSString stringWithFormat:@"%d%d%d%@%d%@%@", a, b, c, operator1, d, operator2, operator3];
+                result = [self reversePolishNotation:equation];
+                
+                if((result != 0.5) && (result > 0.0)){
+                  [results addObject:[NSNumber numberWithInt:((uint)result)]];
+                }
+                equation = [NSString stringWithFormat:@"%d%d%@%d%d%@%@", a, b, operator1, c, d, operator2, operator3];
+                result = [self reversePolishNotation:equation];
+                
+                if((result != 0.5) && (result > 0.0)){
+                  [results addObject:[NSNumber numberWithInt:((uint)result)]];
+                }
+                equation = [NSString stringWithFormat:@"%d%d%@%d%@%d%@", a, b, operator1, c, operator2, d, operator3];
+                result = [self reversePolishNotation:equation];
+                
+                if((result != 0.5) && (result > 0.0)){
+                  [results addObject:[NSNumber numberWithInt:((uint)result)]];
+                }
+              }
+            }
+          }
+          sortedResults = [[NSSet setWithArray:results] allObjects];
+          
+          results = [[NSMutableArray alloc] initWithArray:sortedResults];
+          
+          [results sortUsingDescriptors:[NSArray arrayWithObject:lowestToHighest]];
+          
+          for(int number = 0; number < [results count]; number++){
+            currentNumber = [results objectAtIndex:number];
+            
+            if([currentNumber intValue] != (number + 1)){
+              if(largestConsecutiveNumber < (number + 1)){
+                largestConsecutiveNumber = (number + 1);
+                NSLog(@"max: %d", largestConsecutiveNumber);
+                concatenatedDigits = [NSString stringWithFormat:@"%d%d%d%d", a, b, c, d];
+              }
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Set the answer string to the
+  self.answer = concatenatedDigits;
+  
+  // Get the amount of time that has passed while the computation was happening.
+  NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
+  
+  // Set the estimated computation time to the calculated value. We use scientific
+  // notation here, as the run time should be very short.
+  self.estimatedComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
+  
+  // Tell the delegate we have finished the computation.
+  [self.delegate finishedComputing];
+  
+  // Set that we have finished the computation.
+  _isComputing = NO;
+}
+
+- (void)computeAnswerByBruteForce; {
+  // Set that we have started the computation.
+  _isComputing = YES;
+  
+  // Grab the time before the computation starts.
+  NSDate * startTime = [NSDate date];
+  
+  // Note: This is the same algorithm as the optimal one. I can't think of a more
+  //       brute force way to do this!
+  
+  
+  
+  // Get the amount of time that has passed while the computation was happening.
+  NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
+  
+  // Set the estimated computation time to the calculated value. We use scientific
+  // notation here, as the run time should be very short.
+  self.estimatedBruteForceComputationTime = [NSString stringWithFormat:@"%.03g", computationTime];
+  
+  // Tell the delegate we have finished the computation.
+  [self.delegate finishedComputing];
+  
+  // Set that we have finished the computation.
+  _isComputing = NO;
+}
+
+@end
+
+#pragma mark - Private Methods
+
+@implementation Question93 (Private)
+
+- (double)reversePolishNotation:(NSString *)aEquation; {
+  // Constant array to hold all the operators.
+  const NSArray * operators = [NSArray arrayWithObjects:@"+", @"-", @"*", @"/", nil];
+  
+  BOOL dividedByZero = NO;
+  
+  uint operatorIndex = 0;
+  
+  double result = 0.0f;
+  
+  uint stringIndex = 0;
+  
+  // Variable to hold the index and length of the current character.
+  NSRange subStringRange;
+  
+  NSString * element = nil;
+  
+  NSMutableArray * stack = [[NSMutableArray alloc] init];
+  
+  while(stringIndex < aEquation.length){
+    // Compute the range of the next character.
+    subStringRange = NSMakeRange(stringIndex, 1);
+    
+    element = [aEquation substringWithRange:subStringRange];
+    
+    operatorIndex = [operators indexOfObject:element];
+    
+    if(operatorIndex != NSNotFound){
+      NSString * lhs = [stack lastObject];
+      [stack removeLastObject];
+      NSString * rhs = [stack lastObject];
+      [stack removeLastObject];
+      
+      switch(operatorIndex){
+        case 0:
+          result = [lhs doubleValue] + [rhs doubleValue];
+          break;
+        case 1:
+          result = [lhs doubleValue] - [rhs doubleValue];
+          break;
+        case 2:
+          result = [lhs doubleValue] * [rhs doubleValue];
+          break;
+        case 3:
+          if([rhs doubleValue] == 0.0){
+            dividedByZero = YES;
+          }
+          else{
+            result = [lhs doubleValue] / [rhs doubleValue];
+          }
+          break;
+        default:
+          break;
+      }
+      if(dividedByZero){
+        break;
+      }
+      [stack addObject:[NSString stringWithFormat:@"%f", result]];
+    }
+    else{
+      [stack addObject:element];
+    }
+    stringIndex++;
+  }
+  if(dividedByZero){
+    return 0.5;
+  }
+  result = [[stack lastObject] doubleValue];
+  
+  if(result != ((double)((uint)result))){
+    return 0.5;
+  }
+  else{
+    return result;
+  }
+}
+
+@end
