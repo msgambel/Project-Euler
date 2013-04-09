@@ -53,6 +53,8 @@
 		4E57E7A5171121450048A293 /* Question97.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E57E7A4171121450048A293 /* Question97.m */; };
 		4E57E7B317126EAB0048A293 /* Question99.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E57E7B217126EAB0048A293 /* Question99.m */; };
 		4E57E7B617126EC40048A293 /* base_expQuestion99.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E57E7B517126EC40048A293 /* base_expQuestion99.txt */; };
+		4E57E7C317137DB50048A293 /* Question98.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E57E7C217137DB50048A293 /* Question98.m */; };
+		4E57E7C617137DC90048A293 /* wordsQuestion98.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E57E7C517137DC90048A293 /* wordsQuestion98.txt */; };
 		4E5C636616DAB0D5001E9456 /* Question56.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C636516DAB0D5001E9456 /* Question56.m */; };
 		4E62DC4416ED910C00D60CB6 /* Question70.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62DC4216ED910C00D60CB6 /* Question70.m */; };
 		4E62DCEB16EECA3D00D60CB6 /* Question71.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62DCEA16EECA3D00D60CB6 /* Question71.m */; };
@@ -224,6 +226,9 @@
 		4E57E7B117126EAA0048A293 /* Question99.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question99.h; sourceTree = "<group>"; };
 		4E57E7B217126EAB0048A293 /* Question99.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question99.m; sourceTree = "<group>"; };
 		4E57E7B517126EC40048A293 /* base_expQuestion99.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base_expQuestion99.txt; sourceTree = "<group>"; };
+		4E57E7C117137DB50048A293 /* Question98.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question98.h; sourceTree = "<group>"; };
+		4E57E7C217137DB50048A293 /* Question98.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question98.m; sourceTree = "<group>"; };
+		4E57E7C517137DC90048A293 /* wordsQuestion98.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsQuestion98.txt; sourceTree = "<group>"; };
 		4E5C636416DAB0D5001E9456 /* Question56.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question56.h; sourceTree = "<group>"; };
 		4E5C636516DAB0D5001E9456 /* Question56.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question56.m; sourceTree = "<group>"; };
 		4E62DC4116ED910C00D60CB6 /* Question70.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question70.h; sourceTree = "<group>"; };
@@ -640,6 +645,14 @@
 			path = "Question 99";
 			sourceTree = "<group>";
 		};
+		4E57E7C417137DC90048A293 /* Question 98 */ = {
+			isa = PBXGroup;
+			children = (
+				4E57E7C517137DC90048A293 /* wordsQuestion98.txt */,
+			);
+			path = "Question 98";
+			sourceTree = "<group>";
+		};
 		4E72A99C16C8310C006DB097 /* Question 42 */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,6 +717,7 @@
 				4E8C3E8416FE375A00E0158D /* Question 82 */,
 				4E8C3E8D16FEB17200E0158D /* Question 83 */,
 				4EF66578170694B400A3173A /* Question 89 */,
+				4E57E7C417137DC90048A293 /* Question 98 */,
 				4E57E7B417126EC40048A293 /* Question 99 */,
 			);
 			path = "Files To Load";
@@ -1137,6 +1151,8 @@
 			children = (
 				4E57E7A3171121450048A293 /* Question97.h */,
 				4E57E7A4171121450048A293 /* Question97.m */,
+				4E57E7C117137DB50048A293 /* Question98.h */,
+				4E57E7C217137DB50048A293 /* Question98.m */,
 				4E57E7B117126EAA0048A293 /* Question99.h */,
 				4E57E7B217126EAB0048A293 /* Question99.m */,
 			);
@@ -1881,6 +1897,7 @@
 				4E8C3E8F16FEB17200E0158D /* matrixQuestion83.txt in Resources */,
 				4EF6657A170694B400A3173A /* romanQuestion89.txt in Resources */,
 				4E57E7B617126EC40048A293 /* base_expQuestion99.txt in Resources */,
+				4E57E7C617137DC90048A293 /* wordsQuestion98.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2000,6 +2017,7 @@
 				4E57E791170E8E290048A293 /* Question93.m in Sources */,
 				4E57E7A5171121450048A293 /* Question97.m in Sources */,
 				4E57E7B317126EAB0048A293 /* Question99.m in Sources */,
+				4E57E7C317137DB50048A293 /* Question98.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
