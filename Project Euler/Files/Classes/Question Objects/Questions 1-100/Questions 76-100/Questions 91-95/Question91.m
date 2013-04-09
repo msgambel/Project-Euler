@@ -17,8 +17,8 @@
   self.title = @"Right triangles with integer coordinates";
   self.answer = @"14234";
   self.number = @"Problem 91";
-  self.estimatedComputationTime = @"0.146";
-  self.estimatedBruteForceComputationTime = @"0.146";
+  self.estimatedComputationTime = @"0.105";
+  self.estimatedBruteForceComputationTime = @"0.105";
 }
 
 #pragma mark - Methods
@@ -32,41 +32,30 @@
   
   // Here, we simply
   
+  // Variable to hold the sidelength of the grid we are looking at.
   uint sideLength = 50;
   
-  uint totalRightTriangles = 0;
+  // Variable to hold the total number of right triangles.
+  uint totalRightTriangles = 3 * sideLength * sideLength;
   
   float slope1 = 0;
   
-  float slope2 = 0;
+  float slope2Inverse = 0;
   
-  float slope3 = 0;
-  
-  for(int x1 = 1; x1 <= sideLength; x1++){
+  for(int x1 = 0; x1 <= sideLength; x1++){
     for(int y1 = 0; y1 <= sideLength; y1++){
       for(int x2 = 0; x2 <= sideLength; x2++){
         for(int y2 = 0; y2 <= sideLength; y2++){
-          if((x1 == x2) && (y1 == y2)){
-            
-          }
-          else{
-            if(x1 == 0){
+          // Make sure the points don't lie on the same line.
+          if((x1 * y2 - x2 * y1) != 0){
+            // Make sure there's no division by 0 errors.
+            if((x1 != 0) && (y1 != 0)){
+              slope1 = (((float)(y2 - y1)) / ((float)(x1)));
               
-            }
-            else if(x2 == 0){
+              slope2Inverse = (((float)(x2 - x1)) / ((float)y1));
               
-            }
-            else if(x1 == x2){
-              
-            }
-            else{
-              slope1 = ((float)(y1)) / ((float)(x1));
-              
-              slope2 = ((float)(y2 - y1)) / ((float)(x2 - x1));
-              
-              slope3 = ((float)(y2)) / ((float)(x2));
-              
-              if(((slope1 * slope2) == -1.0f) || ((slope1 * slope3) == -1.0f) || ((slope2 * slope3) == -1.0f)){
+              if(((slope1 + slope2Inverse) == 0.0f)){
+                // Increment the total number of right angle triangles by 1.
                 totalRightTriangles++;
               }
             }
@@ -75,11 +64,7 @@
       }
     }
   }
-  totalRightTriangles += 3 * sideLength;
-  
-  totalRightTriangles += ((sideLength * sideLength) / 2);
-  
-  // Set the answer string to the maximum pandigital number.
+  // Set the answer string to the total number of right triangles.
   self.answer = [NSString stringWithFormat:@"%d", totalRightTriangles];
   
   // Get the amount of time that has passed while the computation was happening.
@@ -106,10 +91,40 @@
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
   
-  // Note: This is basically the same algorithm as the optimal one. The optimal
-  //       algorithm just uses better tricks for avoiding computation.
+  // Variable to hold the sidelength of the grid we are looking at.
+  uint sideLength = 50;
   
-  // 2² + 2³ + 2⁴
+  // Variable to hold the total number of right triangles.
+  uint totalRightTriangles = 3 * sideLength * sideLength;
+  
+  float slope1 = 0;
+  
+  float slope2Inverse = 0;
+  
+  for(int x1 = 0; x1 <= sideLength; x1++){
+    for(int y1 = 0; y1 <= sideLength; y1++){
+      for(int x2 = 0; x2 <= sideLength; x2++){
+        for(int y2 = 0; y2 <= sideLength; y2++){
+          // Make sure the points don't lie on the same line.
+          if((x1 * y2 - x2 * y1) != 0){
+            // Make sure there's no division by 0 errors.
+            if((x1 != 0) && (y1 != 0)){
+              slope1 = (((float)(y2 - y1)) / ((float)(x1)));
+              
+              slope2Inverse = (((float)(x2 - x1)) / ((float)y1));
+              
+              if(((slope1 + slope2Inverse) == 0.0f)){
+                // Increment the total number of right angle triangles by 1.
+                totalRightTriangles++;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Set the answer string to the total number of right triangles.
+  self.answer = [NSString stringWithFormat:@"%d", totalRightTriangles];
   
   // Get the amount of time that has passed while the computation was happening.
   NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
