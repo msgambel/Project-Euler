@@ -581,7 +581,7 @@
   // Variable to hold the index and length of the current "digit".
   NSRange subStringRange;
   
-  // While the current index is greater than or equal to the midPoint,
+  // While the current index is greater than 0,
   while(currentIndex > 0){
     // Decrease the currentIndex by 1, which is equivalent to looking at the
     // next digit to the right.
