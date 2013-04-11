@@ -1,7 +1,7 @@
 //  QuestionCell.m
 
 #import "QuestionCell.h"
-#import "Defines.h"
+#import "QuestionAndAnswer.h"
 
 @implementation QuestionCell
 
@@ -9,60 +9,51 @@
 
 #pragma mark - Getters
 
-- (uint)row; {
-  return _row;
+- (NSMutableArray *)questionObjectsArray; {
+  // Return the question objects array.
+  return _questionObjectsArray;
 }
 
 #pragma mark - Setters
 
-- (void)setRow:(uint)row; {
-  // Set the row to the new value.
-  _row = row;
+- (void)setQuestionObjectsArray:(NSMutableArray *)questionObjectsArray; {
+  // Set the question objects array.
+  _questionObjectsArray = questionObjectsArray;
   
-  // Set the variable that holds the current buttons question number.
-  int buttonNumber = 0;
-  
-  // Set the variable that holds the number of buttons.
-  int numberOfButtons = [_buttons count];
-  
-  // Set the variable that holds the incremental value for each button.
-  int addValue = numberOfButtons * _row;
+  // Variable to hold the solved question object for a given button.
+  QuestionAndAnswer * questionAndAnswer = nil;
   
   // For all the UIButtons in the _buttons array,
   for(UIButton * button in _buttons){
-    // Grab the buttons number.
-    buttonNumber = [[button titleForState:UIControlStateNormal] intValue];
-    
-    // Mod the number by the number of buttons in a Question cell so that we are
-    // only left with the index of the button.
-    buttonNumber %= NumberOfButtonsInQuestionCell;
-    
-    // If the button number is 0 (i.e.: the last button),
-    if(buttonNumber == 0){
-      // Set the button number to 5, the last button.
-      buttonNumber = NumberOfButtonsInQuestionCell;
+    // If the buttons tag is greater than or equal to the number of solved
+    // question objects in the array,
+    if(button.tag >= [_questionObjectsArray count]){
+      // Set the button to be hidden if there is no solved question attached to
+      // it.
+      button.hidden = YES;
     }
-    // Add the incremental value to the number.
-    buttonNumber += addValue;
-    
-    // Update the buttons title to hold the new number.
-    [button setTitle:[NSString stringWithFormat:@"%d", buttonNumber] forState:UIControlStateNormal];
-  }
-  // For all the UIButtons in the _buttons array,
-  for(UIButton * button in _buttons){
-    // Grab the buttons number.
-    buttonNumber = [[button titleForState:UIControlStateNormal] intValue];
-    
-    // The button is hidden if it has not been solved yet.
-    button.hidden = (buttonNumber > TotalNumberSolved);
+    // If the buttons tag is less than the number of solved question objects in
+    // the array,
+    else{
+      // Set the button to be unhidden if there is solved question attached to
+      // it.
+      button.hidden = NO;
+      
+      // Grab the solved question object for the button.
+      questionAndAnswer = [_questionObjectsArray objectAtIndex:button.tag];
+      
+      // Update the buttons title to hold the solved questions number.
+      [button setTitle:questionAndAnswer.number forState:UIControlStateNormal];
+    }
   }
 }
 
 #pragma mark - Methods
 
 - (IBAction)questionButtonPressed:(UIButton *)aButton; {
-  // Tell the delegate that a question button has been pressed with a given number.
-  [_delegate selectQuestionNumber:[[aButton titleForState:UIControlStateNormal] intValue]];
+  // Tell the delegate that a question button has been pressed with a given
+  // solved question object.
+  [_delegate selectedQuestion:[_questionObjectsArray objectAtIndex:aButton.tag]];
 }
 
 @end

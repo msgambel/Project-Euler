@@ -7,7 +7,6 @@
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, QuestionAndAnswerDelegate> {
   BOOL                               _isComputing;
-  uint                               _questionNumber;
   NSOperationQueue                 * _operationQueue;
   UIPopoverController              * _uiPopoverController;
   ViewController                   * __weak _viewController;
@@ -27,8 +26,8 @@
   IBOutlet UIActivityIndicatorView * _activityIndicatorView;
 }
 
-@property (nonatomic, assign) uint             questionNumber;
-@property (nonatomic, weak)   ViewController * viewController;
+@property (nonatomic, weak)   ViewController    * viewController;
+@property (nonatomic, strong) QuestionAndAnswer * questionAndAnswer;
 
 - (IBAction)backButtonPressed:(UIButton *)aButton;
 - (IBAction)cancelButtonPressed:(UIButton *)aButton;

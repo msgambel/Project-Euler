@@ -8,8 +8,8 @@
 #endif
 
 // Defines for UI Layout.
-#define TotalNumberSolved 100
 #define NumberOfButtonsInQuestionCell 5
+#define TotalNumberOfPossibleQuestions 1000
 
 // Defines for Sieve's.
 #define MaxSizeOfSieveOfAtkinson 500000

@@ -18,21 +18,16 @@
 
 #pragma mark - Getters
 
-- (uint)questionNumber; {
-  return _questionNumber;
+- (QuestionAndAnswer *)questionAndAnswer; {
+  // Return the question and answer object.
+  return _questionAndAnswer;
 }
 
 #pragma mark - Setters
 
-- (void)setQuestionNumber:(uint)questionNumber; {
-  // Set the question number to the new value.
-  _questionNumber = questionNumber;
-  
-  // Grab the Class name from the question number.
-  Class c = NSClassFromString([NSString stringWithFormat:@"Question%d", _questionNumber]);
-  
-  // Instantiate the question object.
-  _questionAndAnswer = [[c alloc] init];
+- (void)setQuestionAndAnswer:(QuestionAndAnswer *)questionAndAnswer; {
+  // Set the question object.
+  _questionAndAnswer = questionAndAnswer;
   
   // Set the delegate property to be this view controller.
   _questionAndAnswer.delegate = self;
@@ -241,7 +236,7 @@
   _questionDateLabel.text = _questionAndAnswer.date;
   _questionTitleLabel.text = _questionAndAnswer.title;
   _questionAnswerLabel.text = _questionAndAnswer.answer;
-  _questionNumberLabel.text = _questionAndAnswer.number;
+  _questionNumberLabel.text = [NSString stringWithFormat:@"Problem %@", _questionAndAnswer.number];
   _computationTimeLabel.text = _questionAndAnswer.estimatedComputationTime;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
   _questionTextView.text = _questionAndAnswer.text;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amN-FU-ZeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amN-FU-ZeV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -34,7 +34,7 @@
                                                         <constraint firstAttribute="height" constant="50" id="FL1-nB-SL5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="1">
+                                                    <state key="normal" title="0">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -45,12 +45,12 @@
                                                         <action selector="questionButtonPressed:" destination="dQ3-ra-rq4" eventType="touchUpInside" id="mGg-s8-lIe"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riG-yB-fzw">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riG-yB-fzw">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="BWT-TL-wvm"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="2">
+                                                    <state key="normal" title="1">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -61,12 +61,12 @@
                                                         <action selector="questionButtonPressed:" destination="dQ3-ra-rq4" eventType="touchUpInside" id="j32-iJ-n2a"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgi-bH-fZx">
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgi-bH-fZx">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="2Xc-qq-mOL"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="3">
+                                                    <state key="normal" title="2">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -77,12 +77,12 @@
                                                         <action selector="questionButtonPressed:" destination="dQ3-ra-rq4" eventType="touchUpInside" id="p1c-Q5-E5w"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cer-dI-y01">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cer-dI-y01">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="jpA-BD-OxC"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="4">
+                                                    <state key="normal" title="3">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -93,12 +93,12 @@
                                                         <action selector="questionButtonPressed:" destination="dQ3-ra-rq4" eventType="touchUpInside" id="hbZ-aN-aab"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcC-Tq-eBI">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcC-Tq-eBI">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="3cr-Ub-VZX"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="5">
+                                                    <state key="normal" title="4">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -428,6 +428,50 @@
             <point key="canvasLocation" x="256" y="101"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CustomNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomNavigationController.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="cancelButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="computeBruteForceButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="computeButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="showQuestionsTableViewButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_activityIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="_backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_bruteForceComputationTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_cancelButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_computationTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_computeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_computeByBruteForceButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_questionAnswerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_questionDateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_questionNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_questionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="_questionTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_showQuestionsTableViewButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QuestionCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionCell.h"/>
+            <relationships>
+                <relationship kind="action" name="questionButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outletCollection" name="_buttons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="_tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

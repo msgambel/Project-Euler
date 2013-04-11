@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2qa-jw-fUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2qa-jw-fUF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Detail View Controller-->
@@ -263,7 +263,7 @@
                                                         <constraint firstAttribute="width" constant="50" id="wgw-zi-kby"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="1">
+                                                    <state key="normal" title="0">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -274,12 +274,12 @@
                                                         <action selector="questionButtonPressed:" destination="7Xi-kq-3E6" eventType="touchUpInside" id="Q4R-j7-kDy"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK3-t7-4px">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK3-t7-4px">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="Ajc-Sr-CMr"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="2">
+                                                    <state key="normal" title="1">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -290,12 +290,12 @@
                                                         <action selector="questionButtonPressed:" destination="7Xi-kq-3E6" eventType="touchUpInside" id="BV2-VY-C1b"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9H-g9-nrf">
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9H-g9-nrf">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="2og-65-1LQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="3">
+                                                    <state key="normal" title="2">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -306,12 +306,12 @@
                                                         <action selector="questionButtonPressed:" destination="7Xi-kq-3E6" eventType="touchUpInside" id="hat-QH-MR3"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6e-m0-nuN">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6e-m0-nuN">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="ZrL-yr-op8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="4">
+                                                    <state key="normal" title="3">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -322,12 +322,12 @@
                                                         <action selector="questionButtonPressed:" destination="7Xi-kq-3E6" eventType="touchUpInside" id="Rwg-oy-aDW"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3Q-vw-Usl">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3Q-vw-Usl">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="sH5-me-swJ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="5">
+                                                    <state key="normal" title="4">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -426,6 +426,7 @@
                 <relationship kind="action" name="computeButtonPressed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="showQuestionsTableViewButtonPressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="_activityIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="_backButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="_bruteForceComputationTimeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="_cancelButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="_computationTimeLabel" candidateClass="UILabel"/>

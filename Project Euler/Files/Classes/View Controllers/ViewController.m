@@ -2,7 +2,14 @@
 
 #import "ViewController.h"
 #import "Defines.h"
+#import "QuestionAndAnswer.h"
 #import "DetailViewController.h"
+
+@interface ViewController (Private)
+
+- (void)setupTheSolvedQuestionsArray;
+
+@end
 
 @implementation ViewController
 
@@ -13,13 +20,16 @@
 - (void)viewDidLoad; {
   [super viewDidLoad];
   
-  // Set the default selected question number to 1.
-  _selectedQuestionNumber = 1;
+  // Setup the solved questions array.
+  [self setupTheSolvedQuestionsArray];
+  
+  // Set the selected question to be Question 1.
+  _selectedQuestion = [[_questionObjectsArray objectAtIndex:0] objectAtIndex:0];
   
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
     // Update the detail view controller to have the same default question number.
-    _detailViewController.questionNumber = _selectedQuestionNumber;
+    _detailViewController.questionAndAnswer = _selectedQuestion;
   }
 }
 
@@ -68,8 +78,8 @@
     // Grab the destination view controller, which will be a DetailViewController.
     DetailViewController * detailViewController = (DetailViewController *)[segue destinationViewController];
     
-    // Update the question number for the DetailViewController.
-    detailViewController.questionNumber = _selectedQuestionNumber;
+    // Update the question for the DetailViewController.
+    detailViewController.questionAndAnswer = _selectedQuestion;
   }
 }
 
@@ -87,25 +97,17 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section; {
-  // We want the number of solved questions divided by the number of question
-  // buttons in each tableView cell floored (rounded down). We add 1 to the
-  // result if it is not a multiple of the number of buttons in each cell so
-  // that we always render the row with the last question solved.
-  
-  if((TotalNumberSolved % NumberOfButtonsInQuestionCell) == 0){
-    return ((int)(TotalNumberSolved / NumberOfButtonsInQuestionCell));
-  }
-  else{
-    return (((int)(TotalNumberSolved / NumberOfButtonsInQuestionCell)) + 1);
-  }
+  // Return the number of rows of solved questions.
+  return [_questionObjectsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; {
   // Grab the reuseable cell from the tableView
   QuestionCell * cell = [tableView dequeueReusableCellWithIdentifier:@"QuestionCell"];
   
-  // Set the cells row to be the current row.
-  cell.row = indexPath.row;
+  // Set the cells question objects array to be the question objects array for
+  // the corresponding row.
+  cell.questionObjectsArray = [_questionObjectsArray objectAtIndex:indexPath.row];
   
   // Set the cells delegate to be this view controller.
   cell.delegate = self;
@@ -116,19 +118,76 @@
 
 #pragma mark - QuestionCellDelegate Methods
 
-- (void)selectQuestionNumber:(uint)aNumber; {
-  // Set the selected question number returned by a cell.
-  _selectedQuestionNumber = aNumber;
+- (void)selectedQuestion:(QuestionAndAnswer *)aQuestionAndAnswer; {
+  // Set the selected question returned by a cell.
+  _selectedQuestion = aQuestionAndAnswer;
   
    // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-    // Set the DetailViewControllers question number to be the selected number.
-    _detailViewController.questionNumber = _selectedQuestionNumber;
+    // Set the DetailViewControllers question to be the selected question.
+    _detailViewController.questionAndAnswer = _selectedQuestion;
   }
-  else{ // If the user is NOT using an iPad,
-    
+  // If the user is NOT using an iPad,
+  else{
     // Tell the storyBoard to move the the DetailViewController.
     [self performSegueWithIdentifier:@"DetailViewControllerSegue" sender:self];
+  }
+}
+
+@end
+
+#pragma mark - Private Methods
+
+@implementation ViewController (Private)
+
+- (void)setupTheSolvedQuestionsArray; {
+  // Array to hold all of the solved question objects in groups for each
+  // question cell.
+  _questionObjectsArray = [[NSMutableArray alloc] init];
+  
+  // Variable to hold the number of questions solved for each question cell.
+  uint numberOfSolvedQuestions = 0;
+  
+  // Variable array to hold the question objects for each question cell.
+  NSMutableArray * solvedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:5];
+  
+  // Variable to hold the current solved question object.
+  QuestionAndAnswer * questionAndAnswer = nil;
+  
+  // For all the possible question that could be solved,
+  for(uint questionNumber = 1; questionNumber < TotalNumberOfPossibleQuestions; questionNumber++){
+    // Grab the Class name from the question number.
+    Class class = NSClassFromString([NSString stringWithFormat:@"Question%d", questionNumber]);
+    
+    // If the class responds to the initialize method,
+    if([class instancesRespondToSelector:@selector(initialize)]){
+      // Increment the number of solved questions by 1.
+      numberOfSolvedQuestions++;
+      
+      // Instantiate the question object.
+      questionAndAnswer = [[class alloc] init];
+      
+      // Add the question object to the question cells solved questions array.
+      [solvedQuestionObjects addObject:questionAndAnswer];
+      
+      // If the number of solved questions is equal to the number of buttons in
+      // each question cell,
+      if(numberOfSolvedQuestions == NumberOfButtonsInQuestionCell){
+        // Reset the number of solved questions to 0.
+        numberOfSolvedQuestions = 0;
+        
+        // Add the group of solved questions to the questions objects array.
+        [_questionObjectsArray addObject:solvedQuestionObjects];
+        
+        // Reset the solved questions array for a new cell.
+        solvedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:5];
+      }
+    }
+  }
+  // If the number of solved questions remaining is greater than 0,
+  if([solvedQuestionObjects count] > 0){
+    // Add the group of solved questions to the questions objects array.
+    [_questionObjectsArray addObject:solvedQuestionObjects];
   }
 }
 
