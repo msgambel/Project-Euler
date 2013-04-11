@@ -17,7 +17,7 @@
   self.text = @"By counting carefully it can be seen that a rectangular grid measuring 3 by 2 contains eighteen rectangles:\n\nImages Missing!\n\nAlthough there exists no rectangular grid that contains exactly two million rectangles, find the area of the grid with the nearest solution.";
   self.title = @"Counting rectangles";
   self.answer = @"2772";
-  self.number = @"Problem 85";
+  self.number = @"85";
   self.estimatedComputationTime = @"2.13e-04";
   self.estimatedBruteForceComputationTime = @"2.13e-04";
 }

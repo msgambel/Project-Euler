@@ -16,7 +16,7 @@
   self.text = @"All square roots are periodic when written as continued fractions and can be written in the form:\n\n(Please visit site, as UITextView's cannot render any of the required font!)\n\nIt can be seen that the sequence is repeating. For conciseness, we use the notation 23 = [4;(1,3,1,8)], to indicate that the block (1,3,1,8) repeats indefinitely.\n\nThe first ten continued fraction representations of (irrational) square roots are:\n\n2=[1;(2)], period=1\n3=[1;(1,2)], period=2\n5=[2;(4)], period=1\n6=[2;(2,4)], period=2\n7=[2;(1,1,1,4)], period=4\n8=[2;(1,4)], period=2\n10=[3;(6)], period=1\n11=[3;(3,6)], period=2\n12= [3;(2,6)], period=2\n13=[3;(1,1,1,1,6)], period=5\n\nExactly four continued fractions, for N <= 13, have an odd period.\n\nHow many continued fractions for N <= 10000 have an odd period?";
   self.title = @"Odd period square roots";
   self.answer = @"1322";
-  self.number = @"Problem 64";
+  self.number = @"64";
   self.estimatedComputationTime = @"1.61e-02";
   self.estimatedBruteForceComputationTime = @"1.61e-02";
 }

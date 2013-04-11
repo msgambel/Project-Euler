@@ -18,7 +18,7 @@
   self.text = @"n! means n x (n  1) x ... x 3 x 2 x 1\n\nFor example, 10! = 10 x 9 x ... x 3 x 2 x 1 = 3628800, and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.\n\nFind the sum of the digits in the number 100!";
   self.title = @"Factorial digit sum";
   self.answer = @"648";
-  self.number = @"Problem 20";
+  self.number = @"20";
   self.estimatedComputationTime = @"1.66e-03";
   self.estimatedBruteForceComputationTime = @"1.82e-03";
 }

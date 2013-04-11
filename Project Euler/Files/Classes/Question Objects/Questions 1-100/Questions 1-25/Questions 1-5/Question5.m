@@ -16,7 +16,7 @@
   self.text = @"2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.\n\nWhat is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?";
   self.title = @"Smallest multiple";
   self.answer = @"232792560";
-  self.number = @"Problem 5";
+  self.number = @"5";
   self.estimatedComputationTime = @"3.9e-05";
   self.estimatedBruteForceComputationTime = @"5.81e-05";
 }

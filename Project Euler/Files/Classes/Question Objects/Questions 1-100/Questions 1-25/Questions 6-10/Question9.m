@@ -16,7 +16,7 @@
   self.text = @"A Pythagorean triplet is a set of three natural numbers, a  b  c, for which,\n\n                         a² + b² = c²\n\nFor example, 3² + 4² = 9 + 16 = 25 = 5².\n\nThere exists exactly one Pythagorean triplet for which a + b + c = 1000.\n\nFind the product abc.";
   self.title = @"Special Pythagorean triplet";
   self.answer = @"31875000";
-  self.number = @"Problem 9";
+  self.number = @"9";
   self.estimatedComputationTime = @"3.2e-05";
   self.estimatedBruteForceComputationTime = @"1.29e-04";
 }

@@ -16,7 +16,7 @@
   self.text = @"Consider quadratic Diophantine equations of the form:\n\nx² – Dy² = 1\n\nFor example, when D=13, the minimal solution in x is 649² – 131*80² = 1.\n\nIt can be assumed that there are no solutions in positive integers when D is square.\n\nBy finding minimal solutions in x for D = {2, 3, 5, 6, 7}, we obtain the following:\n\n3² – 2*2² = 1\n2² – 3*1² = 1\n9² – 5*4² = 1\n5² – 6*2² = 1\n8² – 7*3² = 1\n\nHence, by considering minimal solutions in x for D <= 7, the largest x is obtained when D=5.\n\nFind the value of D <= 1000 in minimal solutions of x for which the largest value of x is obtained.";
   self.title = @"Diophantine equation";
   self.answer = @"661";
-  self.number = @"Problem 66";
+  self.number = @"66";
   self.estimatedComputationTime = @"6.31e-04";
   self.estimatedBruteForceComputationTime = @"6.31e-04";
 }

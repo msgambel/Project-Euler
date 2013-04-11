@@ -22,7 +22,7 @@
   self.text = @"A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 99.\n\nFind the largest palindrome made from the product of two 3-digit numbers.";
   self.title = @"Largest palindrome product";
   self.answer = @"906609";
-  self.number = @"Problem 4";
+  self.number = @"4";
   self.estimatedComputationTime = @"7.97e-04";
   self.estimatedBruteForceComputationTime = @"4.8e-02";
 }

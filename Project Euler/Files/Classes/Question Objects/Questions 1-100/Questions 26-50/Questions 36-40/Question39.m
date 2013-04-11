@@ -16,7 +16,7 @@
   self.text = @"If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.\n\n{20,48,52}, {24,45,51}, {30,40,50}\n\nFor which value of p <= 1000, is the number of solutions maximised?";
   self.title = @"Integer right triangles";
   self.answer = @"840";
-  self.number = @"Problem 39";
+  self.number = @"39";
   self.estimatedComputationTime = @"2.43e-03";
   self.estimatedBruteForceComputationTime = @"2.43e-03";
 }

@@ -16,7 +16,7 @@
   self.text = @"A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:\n\n1/2	= 	0.5\n1/3	= 	0.(3)\n1/4	= 	0.25\n1/5	= 	0.2\n1/6	= 	0.1(6)\n1/7	= 	0.(142857)\n1/8	= 	0.125\n1/9	= 	0.(1)\n1/10	= 	0.1\n\nWhere 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be seen that 1/7 has a 6-digit recurring cycle.\n\nFind the value of d  1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.";
   self.title = @"Reciprocal cycles";
   self.answer = @"983";
-  self.number = @"Problem 26";
+  self.number = @"26";
   self.estimatedComputationTime = @"1.38e-02";
   self.estimatedBruteForceComputationTime = @"4.36e-02";
 }

@@ -16,7 +16,7 @@
   self.text = @"An irrational decimal fraction is created by concatenating the positive integers:\n\n0.123456789101112131415161718192021...\n\nIt can be seen that the 12th digit of the fractional part is 1.\n\nIf dn represents the nth digit of the fractional part, find the value of the following expression.\n\nd1 x d10 x d100 x d1000 x d10000 x d100000 x d1000000";
   self.title = @"Champernowne's constant";
   self.answer = @"210";
-  self.number = @"Problem 40";
+  self.number = @"40";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"0.386";
 }

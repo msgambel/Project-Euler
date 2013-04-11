@@ -16,7 +16,7 @@
   self.text = @"The prime factors of 13195 are 5, 7, 13 and 29.\n\nWhat is the largest prime factor of the number 600851475143 ?";
   self.title = @"Largest prime factor";
   self.answer = @"6857";
-  self.number = @"Problem 3";
+  self.number = @"3";
   self.estimatedComputationTime = @"5.34e-04";
   self.estimatedBruteForceComputationTime = @"1.89e-02";
 }

@@ -17,7 +17,7 @@
   self.text = @"NOTE: This problem is a significantly more challenging version of Problem 81.\n\nIn the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to 2297.\n\n131	673	234	103	18\n201	96	342	965	150\n630	803	746	422	111\n537	699	497	121	956\n805	732	524	37	331\n\nFind the minimal path sum, in matrix.txt (right click and 'Save Link/Target As...'), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by moving left, right, up, and down.";
   self.title = @"Path sum: four ways";
   self.answer = @"425185";
-  self.number = @"Problem 83";
+  self.number = @"83";
   self.estimatedComputationTime = @"3.66";
   self.estimatedBruteForceComputationTime = @"";
 }

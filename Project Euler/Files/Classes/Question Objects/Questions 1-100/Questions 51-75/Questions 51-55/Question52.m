@@ -16,7 +16,7 @@
   self.text = @"It can be seen that the number, 125874, and its double, 251748, contain exactly the same digits, but in a different order.\n\nFind the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.";
   self.title = @"Permuted multiples";
   self.answer = @"142857";
-  self.number = @"Problem 52";
+  self.number = @"52";
   self.estimatedComputationTime = @"3.11e-02";
   self.estimatedBruteForceComputationTime = @"5.63e-02";
 }

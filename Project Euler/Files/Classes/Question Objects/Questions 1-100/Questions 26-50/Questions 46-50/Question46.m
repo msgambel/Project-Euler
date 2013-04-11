@@ -16,7 +16,7 @@
   self.text = @"It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.\n\n9 = 7 + 2x1²\n15 = 7 + 2x2²\n21 = 3 + 2x3²\n25 = 7 + 2x3²\n27 = 19 + 2x2²\n33 = 31 + 2x1²\n\nIt turns out that the conjecture was false.\n\nWhat is the smallest odd composite that cannot be written as the sum of a prime and twice a square?";
   self.title = @"Goldbach's other conjecture";
   self.answer = @"5777";
-  self.number = @"Problem 46";
+  self.number = @"46";
   self.estimatedComputationTime = @"2.27e-02";
   self.estimatedBruteForceComputationTime = @"2.27e-02";
 }

@@ -16,7 +16,7 @@
   self.text = @"The following iterative sequence is defined for the set of positive integers:\n\nn  n/2 (n is even)\nn  3n + 1 (n is odd)\n\nUsing the rule above and starting with 13, we generate the following sequence:\n\n13  40  20  10  5  16  8  4  2  1\n\nIt can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.\n\nWhich starting number, under one million, produces the longest chain?\n\nNOTE: Once the chain starts the terms are allowed to go above one million.";
   self.title = @"Longest Collatz sequence";
   self.answer = @"837799";
-  self.number = @"Problem 14";
+  self.number = @"14";
   self.estimatedComputationTime = @"0.541";
   self.estimatedBruteForceComputationTime = @"1.41";
 }

@@ -16,7 +16,7 @@
   self.text = @"By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\n\nWhat is the 10 001st prime number?";
   self.title = @"10001st prime";
   self.answer = @"104743";
-  self.number = @"Problem 7";
+  self.number = @"7";
   self.estimatedComputationTime = @"7.35e-03";
   self.estimatedBruteForceComputationTime = @"4.03e-02";
 }

@@ -16,7 +16,7 @@
   self.text = @"It is possible to write ten as the sum of primes in exactly five different ways:\n\n7 + 3\n5 + 5\n5 + 3 + 2\n3 + 3 + 2 + 2\n2 + 2 + 2 + 2 + 2\n\nWhat is the first value which can be written as the sum of primes in over five thousand different ways?";
   self.title = @"Prime summations";
   self.answer = @"71";
-  self.number = @"Problem 77";
+  self.number = @"77";
   self.estimatedComputationTime = @"4.84e-04";
   self.estimatedBruteForceComputationTime = @"4.84e-04";
 }

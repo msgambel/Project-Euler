@@ -16,7 +16,7 @@
   self.text = @"The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is 28. In fact, there are exactly four numbers below fifty that can be expressed in such a way:\n\n28 = 2² + 2³ + 2⁴\n33 = 3² + 2³ + 2⁴\n49 = 5² + 2³ + 2⁴\n47 = 2² + 3³ + 2⁴\n\nHow many numbers below fifty million can be expressed as the sum of a prime square, prime cube, and prime fourth power?";
   self.title = @"Prime power triples";
   self.answer = @"1097343";
-  self.number = @"Problem 87";
+  self.number = @"87";
   self.estimatedComputationTime = @"1.49";
   self.estimatedBruteForceComputationTime = @"1.49";
 }

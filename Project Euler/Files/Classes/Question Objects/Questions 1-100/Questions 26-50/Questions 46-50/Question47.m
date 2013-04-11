@@ -16,7 +16,7 @@
   self.text = @"The first two consecutive numbers to have two distinct prime factors are:\n\n14 = 2 x 7\n15 = 3 x 5\n\nThe first three consecutive numbers to have three distinct prime factors are:\n\n644 = 2² x 7 x 23\n645 = 3 x 5 x 43\n646 = 2 x 17 x 19.\n\nFind the first four consecutive integers to have four distinct primes factors. What is the first of these numbers?";
   self.title = @"Distinct primes factors";
   self.answer = @"134043";
-  self.number = @"Problem 47";
+  self.number = @"47";
   self.estimatedComputationTime = @"0.133";
   self.estimatedBruteForceComputationTime = @"0.133";
 }

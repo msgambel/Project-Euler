@@ -16,7 +16,7 @@
   self.text = @"Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:\n\n21 22 23 24 25\n20  7  8  9 10\n19  6  1  2 11\n18  5  4  3 12\n17 16 15 14 13\n\nIt can be verified that the sum of the numbers on the diagonals is 101.\n\nWhat is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?";
   self.title = @"Number spiral diagonals";
   self.answer = @"669171001";
-  self.number = @"Problem 28";
+  self.number = @"28";
   self.estimatedComputationTime = @"2.9e-05";
   self.estimatedBruteForceComputationTime = @"3.1e-05";
 }

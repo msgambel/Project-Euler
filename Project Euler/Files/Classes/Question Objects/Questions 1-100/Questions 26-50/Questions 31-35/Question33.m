@@ -22,7 +22,7 @@
   self.text = @"The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is correct, is obtained by cancelling the 9s.\n\nWe shall consider fractions like, 30/50 = 3/5, to be trivial examples.\n\nThere are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.\n\nIf the product of these four fractions is given in its lowest common terms, find the value of the denominator.";
   self.title = @"Digit canceling fractions";
   self.answer = @"100";
-  self.number = @"Problem 33";
+  self.number = @"33";
   self.estimatedComputationTime = @"1.51e-04";
   self.estimatedBruteForceComputationTime = @"2.84e-04";
 }

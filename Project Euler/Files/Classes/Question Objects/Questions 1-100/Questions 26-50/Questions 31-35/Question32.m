@@ -16,7 +16,7 @@
   self.text = @"We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.\n\nThe product 7254 is unusual, as the identity, 39 x 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.\n\nFind the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital.\n\nHINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.";
   self.title = @"Pandigital products";
   self.answer = @"45228";
-  self.number = @"Problem 32";
+  self.number = @"32";
   self.estimatedComputationTime = @"7.15e-03";
   self.estimatedBruteForceComputationTime = @"7.55e-02";
 }

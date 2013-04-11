@@ -16,7 +16,7 @@
   self.text = @"The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\n\nFind the sum of all the primes below two million.";
   self.title = @"Summation of primes";
   self.answer = @"142913828922";
-  self.number = @"Problem 10";
+  self.number = @"10";
   self.estimatedComputationTime = @"1.4";
   self.estimatedBruteForceComputationTime = @"1.4";
 }

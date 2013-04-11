@@ -25,7 +25,7 @@
   self.text = @"The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.\n\nFind the sum of the only eleven primes that are both truncatable from left to right and right to left.\n\nNOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.";
   self.title = @"Truncatable primes";
   self.answer = @"748317";
-  self.number = @"Problem 34";
+  self.number = @"34";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.14";
 }

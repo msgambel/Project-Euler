@@ -23,7 +23,7 @@
   self.text = @"Starting in the top left corner of a 2x2 grid, there are 6 routes (without backtracking) to the bottom right corner.\n\nImages missing!\n\nHow many routes are there through a 20x20 grid?";
   self.title = @"Lattice paths";
   self.answer = @"137846528820";
-  self.number = @"Problem 15";
+  self.number = @"15";
   self.estimatedComputationTime = @"5.4e-05";
   self.estimatedBruteForceComputationTime = @"2.65e+04";
 }

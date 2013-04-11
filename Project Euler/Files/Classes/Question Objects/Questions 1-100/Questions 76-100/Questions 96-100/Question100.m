@@ -16,7 +16,7 @@
   self.text = @"If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, P(BB) = (15/21)(14/20) = 1/2.\n\nThe next such arrangement, for which there is exactly 50% chance of taking two blue discs at random, is a box containing eighty-five blue discs and thirty-five red discs.\n\nBy finding the first arrangement to contain over 10^12 = 1,000,000,000,000 discs in total, determine the number of blue discs that the box would contain.";
   self.title = @"Arranged probability";
   self.answer = @"756872327473";
-  self.number = @"Problem 100";
+  self.number = @"100";
   self.estimatedComputationTime = @"2.4e-05";
   self.estimatedBruteForceComputationTime = @"2.4e-05";
 }
