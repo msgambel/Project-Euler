@@ -32,17 +32,17 @@
   
   // Here, we simply note the following:
   //
-  // 1) (a+1)^n = na + 1 mod a^2.
+  // 1) (a+1)^n = na + 1 mod a².
   //
-  // 2) (a-1)^n = na - 1 mod a^2 if n is odd.
+  // 2) (a-1)^n = na - 1 mod a² if n is odd.
   //
-  // 3) (a-1)^n = 1 - na mod a^2 if n is even.
+  // 3) (a-1)^n = 1 - na mod a² if n is even.
   //
   // Therefore, using 1) and 2), and 1) and 3), the sums are:
   //
-  // 4) (a+1)^n + (a-1)^n = na + 1 + na - 1 mod a^2 = 2na mod a^2 if n is odd.
+  // 4) (a+1)^n + (a-1)^n = na + 1 + na - 1 mod a² = 2na mod a² if n is odd.
   //
-  // 5) (a+1)^n + (a-1)^n = na + 1 + 1 - na mod a^2 = 2 mod a^2 if n is even.
+  // 5) (a+1)^n + (a-1)^n = na + 1 + 1 - na mod a² = 2 mod a² if n is even.
   //
   // Therefore, rmax will only occur if n is odd. Finally, using 4), we have:
   //
@@ -106,17 +106,17 @@
   
   // Here, we simply note the following:
   //
-  // 1) (a+1)^n = na + 1 mod a^2.
+  // 1) (a+1)^n = na + 1 mod a².
   //
-  // 2) (a-1)^n = na - 1 mod a^2 if n is odd.
+  // 2) (a-1)^n = na - 1 mod a² if n is odd.
   //
-  // 3) (a-1)^n = 1 - na mod a^2 if n is even.
+  // 3) (a-1)^n = 1 - na mod a² if n is even.
   //
   // Therefore, using 1) and 2), and 1) and 3), the sums are:
   //
-  // 4) (a+1)^n + (a-1)^n = na + 1 + na - 1 mod a^2 = 2na mod a^2 if n is odd.
+  // 4) (a+1)^n + (a-1)^n = na + 1 + na - 1 mod a² = 2na mod a² if n is odd.
   //
-  // 5) (a+1)^n + (a-1)^n = na + 1 + 1 - na mod a^2 = 2 mod a^2 if n is even.
+  // 5) (a+1)^n + (a-1)^n = na + 1 + 1 - na mod a² = 2 mod a² if n is even.
   //
   // Therefore, rmax will only occur if n is odd. Finally, using 4), we have:
   //
