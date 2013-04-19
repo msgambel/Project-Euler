@@ -30,30 +30,57 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Here, we simply
+  // Here, we simply use the fact that the inner product of two orthogonal
+  // vectors is 0. We iterate over all possbile points that form a triangle,
+  // making sure that the points don't all lie on the same line. Wehn then
+  // compute the inner product of the two lines to see if they are orthogonal,
+  // and if they are, we increment the total number of right triangles by 1.
+  //
+  // The trivial cases are triangles of the form:
+  //               ___
+  //    /|        |  /        |\
+  //   / |        | /         | \
+  //  /__|        |/          |__\
+  //
+  // Since the point (0,0) must always be a point of the triangle. For a
+  // sidelength of n, since there are n choices for the x coordinate, and n
+  // choices for the y coordinate, and 3 possible configurations, there are
+  // 3n² trivial cases.
   
   // Variable to hold the sidelength of the grid we are looking at.
   uint sideLength = 50;
   
-  // Variable to hold the total number of right triangles.
+  // Variable to hold the total number of right triangles. We add on the trivial
+  // cases for ease of computation.
   uint totalRightTriangles = 3 * sideLength * sideLength;
   
+  // Variable to compute the slope of the line from (x1,y1) to (x2,y2).
   float slope1 = 0;
   
+  // Variable to compute the inverse of the slope of the line from (x1,y1) to
+  // (x2,y2).
   float slope2Inverse = 0;
   
+  // For all the x1's from 0 to the side length,
   for(int x1 = 0; x1 <= sideLength; x1++){
+    // For all the y1's from 0 to the side length,
     for(int y1 = 0; y1 <= sideLength; y1++){
+      // For all the x2's from 0 to the side length,
       for(int x2 = 0; x2 <= sideLength; x2++){
+        // For all the y2's from 0 to the side length,
         for(int y2 = 0; y2 <= sideLength; y2++){
           // Make sure the points don't lie on the same line.
           if((x1 * y2 - x2 * y1) != 0){
             // Make sure there's no division by 0 errors.
             if((x1 != 0) && (y1 != 0)){
+              // Compute the slope of the line from (x1,y1) to (x2,y2).
               slope1 = (((float)(y2 - y1)) / ((float)(x1)));
               
+              // Compute the inverse of the slope of the line from (x1,y1) to
+              // (x2,y2).
               slope2Inverse = (((float)(x2 - x1)) / ((float)y1));
               
+              // If the inner product is equal to 0,
               if(((slope1 + slope2Inverse) == 0.0f)){
                 // Increment the total number of right angle triangles by 1.
                 totalRightTriangles++;
@@ -91,28 +118,57 @@
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
   
+  // Here, we simply use the fact that the inner product of two orthogonal
+  // vectors is 0. We iterate over all possbile points that form a triangle,
+  // making sure that the points don't all lie on the same line. Wehn then
+  // compute the inner product of the two lines to see if they are orthogonal,
+  // and if they are, we increment the total number of right triangles by 1.
+  //
+  // The trivial cases are triangles of the form:
+  //               ___
+  //    /|        |  /        |\
+  //   / |        | /         | \
+  //  /__|        |/          |__\
+  //
+  // Since the point (0,0) must always be a point of the triangle. For a
+  // sidelength of n, since there are n choices for the x coordinate, and n
+  // choices for the y coordinate, and 3 possible configurations, there are
+  // 3n² trivial cases.
+  
   // Variable to hold the sidelength of the grid we are looking at.
   uint sideLength = 50;
   
-  // Variable to hold the total number of right triangles.
+  // Variable to hold the total number of right triangles. We add on the trivial
+  // cases for ease of computation.
   uint totalRightTriangles = 3 * sideLength * sideLength;
   
+  // Variable to compute the slope of the line from (x1,y1) to (x2,y2).
   float slope1 = 0;
   
+  // Variable to compute the inverse of the slope of the line from (x1,y1) to
+  // (x2,y2).
   float slope2Inverse = 0;
   
+  // For all the x1's from 0 to the side length,
   for(int x1 = 0; x1 <= sideLength; x1++){
+    // For all the y1's from 0 to the side length,
     for(int y1 = 0; y1 <= sideLength; y1++){
+      // For all the x2's from 0 to the side length,
       for(int x2 = 0; x2 <= sideLength; x2++){
+        // For all the y2's from 0 to the side length,
         for(int y2 = 0; y2 <= sideLength; y2++){
           // Make sure the points don't lie on the same line.
           if((x1 * y2 - x2 * y1) != 0){
             // Make sure there's no division by 0 errors.
             if((x1 != 0) && (y1 != 0)){
+              // Compute the slope of the line from (x1,y1) to (x2,y2).
               slope1 = (((float)(y2 - y1)) / ((float)(x1)));
               
+              // Compute the inverse of the slope of the line from (x1,y1) to
+              // (x2,y2).
               slope2Inverse = (((float)(x2 - x1)) / ((float)y1));
               
+              // If the inner product is equal to 0,
               if(((slope1 + slope2Inverse) == 0.0f)){
                 // Increment the total number of right angle triangles by 1.
                 totalRightTriangles++;
