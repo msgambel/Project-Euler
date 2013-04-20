@@ -5,7 +5,6 @@
 @interface Question93 (Private)
 
 - (void)nextPermutation:(int *)aPermutation size:(uint)aSize;
-- (void)swapIndex1:(uint)aIndex1 withIndex2:(uint)aIndex2 inArray:(int *)aArray;
 - (double)reversePolishNotation:(NSString *)aEquation;
 
 @end
@@ -223,12 +222,6 @@
     index1++;
     index2--;
   }
-}
-
-- (void)swapIndex1:(uint)aIndex1 withIndex2:(uint)aIndex2 inArray:(int *)aArray; {
-  aArray[aIndex1] += aArray[aIndex2];
-  aArray[aIndex2] = aArray[aIndex1] - aArray[aIndex2];
-  aArray[aIndex1] -= aArray[aIndex2];
 }
 
 - (double)reversePolishNotation:(NSString *)aEquation; {

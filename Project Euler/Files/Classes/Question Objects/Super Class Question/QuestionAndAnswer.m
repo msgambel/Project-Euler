@@ -66,6 +66,28 @@
   // - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;
 }
 
+- (void)swapIndex1:(uint)aIndex1 withIndex2:(uint)aIndex2 inArray:(int *)aArray; {
+  // This is the cleaver way of swapping values. Instead of making a temporary
+  // variable, we simply use a bit of math. To swap values a and b, use:
+  //
+  //                        a's value              b's value
+  // 1) a = a + b            (a + b)                   b
+  // 2) b = a - b            (a + b)            (a + b) - b = a
+  // 3) a = a - b        (a + b) - a = b               a
+  //
+  // Note: This only works for signed values!
+  
+  // Add the second array value to the first array value as in 1).
+  aArray[aIndex1] += aArray[aIndex2];
+  
+  // Set the second array value to the first array value minus the second array
+  // value as in 2).
+  aArray[aIndex2] = aArray[aIndex1] - aArray[aIndex2];
+  
+  // Subtract the second array value to the first array value as in 3).
+  aArray[aIndex1] -= aArray[aIndex2];
+}
+
 - (BOOL)isPrime:(int)aNumber; {
   // Return is the smallest factor of the number is the number itself!
   return ([self leastFactorOf:aNumber] == aNumber);

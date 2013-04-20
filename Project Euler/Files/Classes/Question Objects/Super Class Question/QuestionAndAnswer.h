@@ -36,6 +36,9 @@
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
 
+// This method swaps two indices in an int array.
+- (void)swapIndex1:(uint)aIndex1 withIndex2:(uint)aIndex2 inArray:(int *)aArray;
+
 // This helper method returns if a number os prime or not.
 - (BOOL)isPrime:(int)aNumber;
 
