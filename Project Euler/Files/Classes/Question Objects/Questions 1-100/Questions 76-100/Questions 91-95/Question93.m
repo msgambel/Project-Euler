@@ -404,38 +404,68 @@
 @implementation Question93 (Private)
 
 - (void)nextPermutation:(int *)aPermutation size:(uint)aSize; {
+  // Variable to mark if there is a larger permuation.
   BOOL nextPermutationExists = NO;
   
+  // Variable to mark the index of the first number to swap.
   int index1 = aSize - 1;
   
+  // Variable to mark the index of the second number to swap.
   int index2 = aSize;
   
+  // For all the indices up to the second last index,
   for(int index = 0; index < (aSize - 1); index++){
+    // If the number at the current index is smaller then the number in the next
+    // index,
     if(aPermutation[index] < aPermutation[index + 1]){
+      // Mark that there is a larger permutation.
       nextPermutationExists = YES;
       
+      // Break out of the loop.
       break;
     }
   }
+  // If a larger permuation does NOT exist,
   if(nextPermutationExists == NO){
+    // Set the number in the first index to 0 to mark that we have iterated
+    // through all of the possible permutations.
     aPermutation[0] = 0;
     
+    // Return our of the method.
     return;
   }
+  // While the number at the current index is smaller than the number at the
+  // previous index,
   while(aPermutation[index1 - 1] >= aPermutation[index1]){
+    // Decrement the first index by 1.
     index1--;
   }
+  // While the number at the current second index is smaller than the number at
+  // index to the left of the first index,
   while(aPermutation[index2 - 1] <= aPermutation[index1 - 1]){
+    // Decrement the second index by 1.
     index2--;
   }
+  // Swap the index to the left of the first index with the index to the left of
+  // the second index.
   [self swapIndex1:(index1 - 1) withIndex2:(index2 - 1) inArray:aPermutation];
   
+  // Increment the first index by 1.
   index1++;
+  
+  // Reset the second index to the index to the right of the last index.
   index2 = aSize;
   
+  // While the first index is less than the second index,,
   while(index1 < index2){
+    // Swap the index to the left of the first index with the index to the left of
+    // the second index.
     [self swapIndex1:(index1 - 1) withIndex2:(index2 - 1) inArray:aPermutation];
+    
+    // Increment the first index by 1.
     index1++;
+    
+    // Decrement the second index by 1.
     index2--;
   }
 }
