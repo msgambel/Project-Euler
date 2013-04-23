@@ -1,6 +1,7 @@
 //  Question93.m
 
 #import "Question93.h"
+#import "Enumerations.h"
 
 @interface Question93 (Private)
 
@@ -471,81 +472,141 @@
 }
 
 - (double)reversePolishNotation:(NSString *)aEquation; {
+  // This method compute a Reverse Polish Notation Equation. If a valid integer
+  // is computed, it is returned. Otherwise, a default value of 0.5 is returned,
+  // signifiying that the result is NOT an integer.
+  
   // Constant array to hold all the operators.
   const NSArray * operators = [NSArray arrayWithObjects:@"+", @"-", @"*", @"/", nil];
   
+  // Variable to mark if the equation resulted in a division by 0 or not.
   BOOL dividedByZero = NO;
   
+  // Variable to mark the index of the operator in the operators array when
+  // parsing through an equation.
   uint operatorIndex = 0;
   
+  // Variable to hold the result of the Reverse Polish Notation Equation.
   double result = 0.0f;
   
-  uint stringIndex = 0;
+  // Variable to hold the character index in the equation.
+  uint characterIndex = 0;
   
   // Variable to hold the index and length of the current character.
   NSRange subStringRange;
   
+  // Variable to hold the current element of the equation.
   NSString * element = nil;
   
+  // Variable to hold the left hand side of the current pass of the equation.
   NSString * leftHandSide = nil;
   
+  // Variable to hold the right hand side of the current pass of the equation.
   NSString * rightHandSide = nil;
   
+  // Variable array to hold the elements of the equation for computing later.
   NSMutableArray * stack = [[NSMutableArray alloc] init];
   
-  while(stringIndex < aEquation.length){
+  // While the character index is less than the length of the equation,
+  while(characterIndex < aEquation.length){
     // Compute the range of the next character.
-    subStringRange = NSMakeRange(stringIndex, 1);
+    subStringRange = NSMakeRange(characterIndex, 1);
     
+    // Grab the element of the equation at the current index.
     element = [aEquation substringWithRange:subStringRange];
     
+    // Grab the index in the operators array of the element.
     operatorIndex = [operators indexOfObject:element];
     
+    // If the index is valid,
     if(operatorIndex != NSNotFound){
+      // Grab the left hand side of the current pass of the equation.
       leftHandSide = [stack lastObject];
+      
+      // Remove the left hand side from the equation.
       [stack removeLastObject];
+      
+      // Grab the left hand side of the current pass of the equation.
       rightHandSide = [stack lastObject];
+      
+      // Remove the right hand side from the equation.
       [stack removeLastObject];
+      
+      // Depending on the operator,
       switch(operatorIndex){
-        case 0:
+          // If the operator is Addition,
+        case OperatorType_Addition:
+          // Add the left hand side and right hand side of the equation.
           result = [leftHandSide doubleValue] + [rightHandSide doubleValue];
+          
+          // Break out of the switch statement.
           break;
-        case 1:
+          // If the operator is Subtraction,
+        case OperatorType_Subtraction:
+          // Subtract the left hand side and right hand side of the equation.
           result = [leftHandSide doubleValue] - [rightHandSide doubleValue];
+          
+          // Break out of the switch statement.
           break;
-        case 2:
+          // If the operator is Multiplication,
+        case OperatorType_Multiplication:
+          // Multiply the left hand side and right hand side of the equation.
           result = [leftHandSide doubleValue] * [rightHandSide doubleValue];
+          
+          // Break out of the switch statement.
           break;
-        case 3:
+          // If the operator is Division,
+        case OperatorType_Division:
+          // If the right hand side of the equation is 0,
           if([rightHandSide doubleValue] == 0.0){
+            // Mark that the equation tried to divide by 0.
             dividedByZero = YES;
           }
+          // If the right hand side of the equation is NOT 0,
           else{
+            // Divide the left hand side and right hand side of the equation.
             result = [leftHandSide doubleValue] / [rightHandSide doubleValue];
           }
+          // Break out of the switch statement.
           break;
+          // If the operator is NOT valid,
         default:
+          // Break out of the switch statement.
           break;
       }
+      // If the equation tried to divide by 0,
       if(dividedByZero){
+        // Break out of the loop.
         break;
       }
+      // Add the result of the left hand side and the right hand side to the
+      // equation.
       [stack addObject:[NSString stringWithFormat:@"%f", result]];
     }
+    // If the index is NOT valid,
     else{
+      // Add the value to the equation.
       [stack addObject:element];
     }
-    stringIndex++;
+    // Increment the character index by 1.
+    characterIndex++;
   }
+  // If the equation tried to divide by 0,
   if(dividedByZero){
+    // Return the default value of 0.5 to signify the equation was not valid.
     return 0.5;
   }
+  // Grab the result of the equation.
   result = [[stack lastObject] doubleValue];
   
+  // If the equation is NOT an integer,
   if(result != ((double)((uint)result))){
+    // Return the default value of 0.5 to signify the equation was not valid.
     return 0.5;
   }
+  // If the equation is an integer,
   else{
+    // Return the valid result of the equation.
     return result;
   }
 }

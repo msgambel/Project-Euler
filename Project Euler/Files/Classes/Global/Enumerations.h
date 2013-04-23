@@ -38,4 +38,12 @@ typedef enum {
   CardRank_RoyalFlush
 }CardRank;
 
+// Enumeration to hold the types of operators for reducing a string of equations.
+typedef enum {
+  OperatorType_Addition,
+  OperatorType_Subtraction,
+  OperatorType_Multiplication,
+  OperatorType_Division
+}OperatorType;
+
 #endif
