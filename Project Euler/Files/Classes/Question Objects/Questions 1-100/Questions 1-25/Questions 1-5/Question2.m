@@ -17,6 +17,7 @@
   self.title = @"Even Fibonacci numbers";
   self.answer = @"4613732";
   self.number = @"2";
+  self.keywords = @"fibonacci";
   self.estimatedComputationTime = @"2.1e-05";
   self.estimatedBruteForceComputationTime = @"4.7e-05";
 }

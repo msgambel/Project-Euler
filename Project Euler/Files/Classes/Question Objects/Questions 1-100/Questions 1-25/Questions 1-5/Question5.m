@@ -17,6 +17,7 @@
   self.title = @"Smallest multiple";
   self.answer = @"232792560";
   self.number = @"5";
+  self.keywords = @"divisible,factorial";
   self.estimatedComputationTime = @"3.9e-05";
   self.estimatedBruteForceComputationTime = @"5.81e-05";
 }

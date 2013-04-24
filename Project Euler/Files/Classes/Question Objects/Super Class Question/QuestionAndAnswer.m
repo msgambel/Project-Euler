@@ -18,6 +18,7 @@
 @synthesize answer = _answer;
 @synthesize number = _number;
 @synthesize delegate = _delegate;
+@synthesize keywords = _keywords;
 @synthesize isComputing = _isComputing;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;
