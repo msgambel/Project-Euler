@@ -17,6 +17,7 @@
   self.title = @"Summation of primes";
   self.answer = @"142913828922";
   self.number = @"10";
+  self.keywords = @"primes";
   self.estimatedComputationTime = @"1.4";
   self.estimatedBruteForceComputationTime = @"1.4";
 }

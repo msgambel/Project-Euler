@@ -24,6 +24,7 @@
   self.title = @"Largest product in a series";
   self.answer = @"40824";
   self.number = @"8";
+  self.keywords = @"product";
   self.estimatedComputationTime = @"6.34e-04";
   self.estimatedBruteForceComputationTime = @"2.72e-03";
 }
