@@ -24,6 +24,7 @@
   self.title = @"Lattice paths";
   self.answer = @"137846528820";
   self.number = @"15";
+  self.keywords = @"routes,grid,lattice,paths";
   self.estimatedComputationTime = @"5.4e-05";
   self.estimatedBruteForceComputationTime = @"2.65e+04";
 }

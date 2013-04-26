@@ -24,6 +24,7 @@
   self.title = @"Largest product in a grid";
   self.answer = @"70600674";
   self.number = @"11";
+  self.keywords = @"product,direction";
   self.estimatedComputationTime = @"4.85e-04";
   self.estimatedBruteForceComputationTime = @"4.92e-04";
 }

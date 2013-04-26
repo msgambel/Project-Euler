@@ -18,6 +18,7 @@
   self.title = @"Large sum";
   self.answer = @"5537376230";
   self.number = @"13";
+  self.keywords = @"sum,bigint";
   self.estimatedComputationTime = @"2.86e-03";
   self.estimatedBruteForceComputationTime = @"3.28e-02";
 }
