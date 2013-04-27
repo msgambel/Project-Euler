@@ -1,35 +1,9 @@
 //  Question19.m
 
 #import "Question19.h"
+#import "Enumerations.h"
 
 @implementation Question19
-
-// Enum for the days of the week.
-typedef enum {
-  Day_Monday,
-  Day_Tuesday,
-  Day_Wednesday,
-  Day_Thursday,
-  Day_Friday,
-  Day_Saturday,
-  Day_Sunday
-}Day;
-
-// Enum for the months of the year.
-typedef enum {
-  Month_January,
-  Month_February,
-  Month_March,
-  Month_April,
-  Month_May,
-  Month_June,
-  Month_July,
-  Month_August,
-  Month_September,
-  Month_October,
-  Month_November,
-  Month_December
-}Month;
 
 #pragma mark - Setup
 
@@ -44,6 +18,7 @@ typedef enum {
   self.title = @"Counting Sundays";
   self.answer = @"171";
   self.number = @"19";
+  self.keywords = @"week,month,day,count";
   self.estimatedComputationTime = @"1.86e-04";
   self.estimatedBruteForceComputationTime = @"1.86e-04";
 }

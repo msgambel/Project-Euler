@@ -3,6 +3,33 @@
 #ifndef Project_Euler_Enumerations_h
 #define Project_Euler_Enumerations_h
 
+// Enum for the days of the week.
+typedef enum {
+  Day_Monday,
+  Day_Tuesday,
+  Day_Wednesday,
+  Day_Thursday,
+  Day_Friday,
+  Day_Saturday,
+  Day_Sunday
+}Day;
+
+// Enum for the months of the year.
+typedef enum {
+  Month_January,
+  Month_February,
+  Month_March,
+  Month_April,
+  Month_May,
+  Month_June,
+  Month_July,
+  Month_August,
+  Month_September,
+  Month_October,
+  Month_November,
+  Month_December
+}Month;
+
 // Enumeration to hold the possible types of a polygonal number.
 typedef enum {
   PolygonalNumberType_Triangle,

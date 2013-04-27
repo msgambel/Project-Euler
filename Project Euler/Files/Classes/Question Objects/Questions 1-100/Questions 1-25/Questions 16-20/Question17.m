@@ -25,6 +25,7 @@
   self.title = @"Number letter counts";
   self.answer = @"21124";
   self.number = @"17";
+  self.keywords = @"letter,sum,word";
   self.estimatedComputationTime = @"2.5e-05";
   self.estimatedBruteForceComputationTime = @"5.2e-05";
 }
