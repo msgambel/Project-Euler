@@ -24,6 +24,7 @@
   self.title = @"Amicable numbers";
   self.answer = @"31626";
   self.number = @"21";
+  self.keywords = @"divisors,proper,amicable";
   self.estimatedComputationTime = @"1.71e-02";
   self.estimatedBruteForceComputationTime = @"9.36e-02";
 }

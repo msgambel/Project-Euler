@@ -24,6 +24,7 @@
   self.title = @"Non-abundant sums";
   self.answer = @"4179871";
   self.number = @"23";
+  self.keywords = @"factorization,divisors,primes";
   self.estimatedComputationTime = @"0.138";
   self.estimatedBruteForceComputationTime = @"0.734";
 }

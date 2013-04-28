@@ -17,6 +17,7 @@
   self.title = @"Names scores";
   self.answer = @"871198282";
   self.number = @"22";
+  self.keywords = @"alphabetical,order";
   self.estimatedComputationTime = @"7.15e-02";
   self.estimatedBruteForceComputationTime = @"7.15e-02";
 }
