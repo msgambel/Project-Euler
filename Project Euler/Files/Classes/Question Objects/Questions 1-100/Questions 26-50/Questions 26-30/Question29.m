@@ -19,6 +19,7 @@
   self.title = @"Distinct powers";
   self.answer = @"9183";
   self.number = @"29";
+  self.keywords = @"base,power,unique";
   self.estimatedComputationTime = @"7.52e-03";
   self.estimatedBruteForceComputationTime = @"8.77";
 }
