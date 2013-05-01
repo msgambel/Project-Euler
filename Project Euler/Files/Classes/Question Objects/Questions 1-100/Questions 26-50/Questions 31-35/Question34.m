@@ -23,6 +23,7 @@
   self.title = @"Digit factorials";
   self.answer = @"40730";
   self.number = @"34";
+  self.keywords = @"digit,sum,factorials";
   self.estimatedComputationTime = @"7.71e-03";
   self.estimatedBruteForceComputationTime = @"7.71e-03";
 }

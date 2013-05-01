@@ -23,6 +23,7 @@
   self.title = @"Digit canceling fractions";
   self.answer = @"100";
   self.number = @"33";
+  self.keywords = @"division,fractions";
   self.estimatedComputationTime = @"1.51e-04";
   self.estimatedBruteForceComputationTime = @"2.84e-04";
 }

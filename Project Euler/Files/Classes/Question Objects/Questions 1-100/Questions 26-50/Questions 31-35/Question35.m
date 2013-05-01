@@ -24,6 +24,7 @@
   self.title = @"Circular primes";
   self.answer = @"55";
   self.number = @"35";
+  self.keywords = @"primes,rotation,circular";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.42";
 }
