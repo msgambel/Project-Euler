@@ -23,6 +23,7 @@
   self.title = @"Double-base palindromes";
   self.answer = @"872187";
   self.number = @"36";
+  self.keywords = @"base,palindromes,2,10";
   self.estimatedComputationTime = @"7.61e-02";
   self.estimatedBruteForceComputationTime = @"6.11";
 }

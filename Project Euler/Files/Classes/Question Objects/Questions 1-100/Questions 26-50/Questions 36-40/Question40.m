@@ -17,6 +17,7 @@
   self.title = @"Champernowne's constant";
   self.answer = @"210";
   self.number = @"40";
+  self.keywords = @"concatenate,digit,constant,champernowne";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"0.386";
 }
