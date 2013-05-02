@@ -23,6 +23,7 @@
   self.title = @"Sub-string divisibility";
   self.answer = @"16695334890";
   self.number = @"43";
+  self.keywords = @"string,divisible,pandigital";
   self.estimatedComputationTime = @"8.54e-02";
   self.estimatedBruteForceComputationTime = @"354";
 }

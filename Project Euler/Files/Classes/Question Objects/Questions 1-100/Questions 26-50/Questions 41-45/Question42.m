@@ -14,10 +14,11 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"25 April 2003";
-  self.text = @"The nth term of the sequence of triangle numbers is given by, tn = ½n(n+1); so the first ten triangle numbers are:\n\n1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...\n\nBy converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is 19 + 11 + 25 = 55 = t10. If the word value is a triangle number then we shall call the word a triangle word.\n\nUsing words.txt (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, how many are triangle words?";
+  self.text = @"The nth term of the sequence of triangle numbers is given by, t(n) = ½n(n+1); so the first ten triangle numbers are:\n\n1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...\n\nBy converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is 19 + 11 + 25 = 55 = t10. If the word value is a triangle number then we shall call the word a triangle word.\n\nUsing words.txt (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, how many are triangle words?";
   self.title = @"Coded triangle numbers";
   self.answer = @"162";
   self.number = @"42";
+  self.keywords = @"sum,triangle,numbers,words,import";
   self.estimatedComputationTime = @"1.59e-02";
   self.estimatedBruteForceComputationTime = @"1.63e-02";
 }

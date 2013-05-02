@@ -18,6 +18,7 @@
   self.title = @"Pandigital prime";
   self.answer = @"7652413";
   self.number = @"41";
+  self.keywords = @"pandigital,prime,largest";
   self.estimatedComputationTime = @"9.08e-03";
   self.estimatedBruteForceComputationTime = @"6.53";
 }
