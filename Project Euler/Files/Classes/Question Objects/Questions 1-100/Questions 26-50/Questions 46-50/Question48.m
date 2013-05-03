@@ -18,6 +18,7 @@
   self.title = @"Self powers";
   self.answer = @"9110846700";
   self.number = @"48";
+  self.keywords = @"sum,powers,series";
   self.estimatedComputationTime = @"0.191";
   self.estimatedBruteForceComputationTime = @"0.191";
 }

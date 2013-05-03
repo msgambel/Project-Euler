@@ -17,6 +17,7 @@
   self.title = @"Prime permutations";
   self.answer = @"296962999629";
   self.number = @"49";
+  self.keywords = @"arithmetic,sequence,prime,permutations,increasing,four,4";
   self.estimatedComputationTime = @"0.127";
   self.estimatedBruteForceComputationTime = @"0.127";
 }

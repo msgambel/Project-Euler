@@ -17,6 +17,7 @@
   self.title = @"Consecutive prime sum";
   self.answer = @"997651";
   self.number = @"50";
+  self.keywords = @"sum,consecutive,primes";
   self.estimatedComputationTime = @"1.21";
   self.estimatedBruteForceComputationTime = @"7.2";
 }
