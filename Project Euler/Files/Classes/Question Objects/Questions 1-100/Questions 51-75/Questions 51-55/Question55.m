@@ -18,6 +18,7 @@
   self.title = @"Lychrel numbers";
   self.answer = @"249";
   self.number = @"55";
+  self.keywords = @"lychrel,numbers,palindrome,sum,add,reverse";
   self.estimatedComputationTime = @"1.67";
   self.estimatedBruteForceComputationTime = @"12.5";
 }

@@ -18,6 +18,7 @@
   self.title = @"Combinatoric selections";
   self.answer = @"4075";
   self.number = @"53";
+  self.keywords = @"choose,sum";
   self.estimatedComputationTime = @"";
   self.estimatedBruteForceComputationTime = @"3.93";
 }

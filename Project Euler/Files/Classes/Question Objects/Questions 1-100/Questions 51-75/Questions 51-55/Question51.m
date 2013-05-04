@@ -17,6 +17,7 @@
   self.title = @"Prime digit replacements";
   self.answer = @"121313";
   self.number = @"51";
+  self.keywords = @"prime,family,digit,replacement";
   self.estimatedComputationTime = @"0.794";
   self.estimatedBruteForceComputationTime = @"0.794";
 }
