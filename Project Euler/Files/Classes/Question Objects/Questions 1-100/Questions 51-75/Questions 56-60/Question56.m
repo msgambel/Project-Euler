@@ -18,6 +18,7 @@
   self.title = @"Powerful digit sum";
   self.answer = @"972";
   self.number = @"56";
+  self.keywords = @"powers,digit,sum,maximum";
   self.estimatedComputationTime = @"0.858";
   self.estimatedBruteForceComputationTime = @"9.41";
 }

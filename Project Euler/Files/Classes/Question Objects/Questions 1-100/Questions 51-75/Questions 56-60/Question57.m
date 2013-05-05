@@ -18,6 +18,7 @@
   self.title = @"Square root convergents";
   self.answer = @"153";
   self.number = @"57";
+  self.keywords = @"square,root,continued,fractions,infinite,expansions";
   self.estimatedComputationTime = @"3.14e-04";
   self.estimatedBruteForceComputationTime = @"4.97";
 }

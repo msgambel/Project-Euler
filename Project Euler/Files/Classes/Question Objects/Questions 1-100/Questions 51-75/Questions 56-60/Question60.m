@@ -26,6 +26,7 @@
   self.title = @"Prime pair sets";
   self.answer = @"26033";
   self.number = @"60";
+  self.keywords = @"prime,concatenate,set,five,5";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"1.09";
 }
