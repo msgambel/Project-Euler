@@ -18,6 +18,7 @@
   self.title = @"Convergents of e";
   self.answer = @"272";
   self.number = @"65";
+  self.keywords = @"convergent,e,infinite,continued,fractions,digits,sum";
   self.estimatedComputationTime = @"1.27e-03";
   self.estimatedBruteForceComputationTime = @"1.27e-03";
 }

@@ -17,6 +17,7 @@
   self.title = @"Cubic permutations";
   self.answer = @"127035954683";
   self.number = @"62";
+  self.keywords = @"cube,permutations,digits";
   self.estimatedComputationTime = @"0.731";
   self.estimatedBruteForceComputationTime = @"0.831";
 }
