@@ -17,6 +17,7 @@
   self.title = @"Totient maximum";
   self.answer = @"510510";
   self.number = @"69";
+  self.keywords = @"totient,maximum,phi,euler";
   self.estimatedComputationTime = @"2.8e-05";
   self.estimatedBruteForceComputationTime = @"2.8e-05";
 }

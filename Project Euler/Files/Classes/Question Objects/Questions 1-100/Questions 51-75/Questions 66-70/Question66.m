@@ -17,6 +17,7 @@
   self.title = @"Diophantine equation";
   self.answer = @"661";
   self.number = @"66";
+  self.keywords = @"doiphantine,equations,continued,fractions,pells,period";
   self.estimatedComputationTime = @"6.31e-04";
   self.estimatedBruteForceComputationTime = @"6.31e-04";
 }

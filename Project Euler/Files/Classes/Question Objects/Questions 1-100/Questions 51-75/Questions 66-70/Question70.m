@@ -18,6 +18,7 @@
   self.title = @"Totient permutation";
   self.answer = @"8319823";
   self.number = @"70";
+  self.keywords = @"totient,maximum,phi,euler,product,permutation,relatively,prime";
   self.estimatedComputationTime = @"1.83e-02";
   self.estimatedBruteForceComputationTime = @"50.3";
 }
