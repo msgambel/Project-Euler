@@ -17,6 +17,7 @@
   self.title = @"Singular integer right trangles";
   self.answer = @"161667";
   self.number = @"75";
+  self.keywords = @"singular,integer,right,triangles,generation,primitives,pythagorean,triples";
   self.estimatedComputationTime = @"6.5";
   self.estimatedBruteForceComputationTime = @"6.5";
 }

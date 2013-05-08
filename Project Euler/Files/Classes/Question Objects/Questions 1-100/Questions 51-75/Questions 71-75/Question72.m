@@ -18,6 +18,7 @@
   self.title = @"Counting fractions";
   self.answer = @"303963552391";
   self.number = @"72";
+  self.keywords = @"counting,reduced,proper,fractions,ascending,order";
   self.estimatedComputationTime = @"4.77";
   self.estimatedBruteForceComputationTime = @"4.77";
 }
