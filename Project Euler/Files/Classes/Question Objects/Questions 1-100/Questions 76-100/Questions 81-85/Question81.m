@@ -18,6 +18,7 @@
   self.title = @"Path sum: two ways";
   self.answer = @"427337";
   self.number = @"81";
+  self.keywords = @"matrix,a*,a,star,minimal,path,sum,import";
   self.estimatedComputationTime = @"2.73e-02";
   self.estimatedBruteForceComputationTime = @"2.73e-02";
 }

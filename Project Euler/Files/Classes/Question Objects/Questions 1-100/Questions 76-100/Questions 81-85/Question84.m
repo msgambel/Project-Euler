@@ -18,6 +18,7 @@
   self.title = @"Monopoly odds";
   self.answer = @"101524";
   self.number = @"84";
+  self.keywords = @"monopoly,4,four,dice,roll,ev";
   self.estimatedComputationTime = @"0.397";
   self.estimatedBruteForceComputationTime = @"0.397";
 }

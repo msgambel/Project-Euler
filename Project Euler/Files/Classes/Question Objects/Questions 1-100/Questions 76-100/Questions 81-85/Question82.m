@@ -17,6 +17,7 @@
   self.title = @"Path sum: three ways";
   self.answer = @"260324";
   self.number = @"82";
+  self.keywords = @"matrix,column,minimal,path,sum,import";
   self.estimatedComputationTime = @"7.9e-03";
   self.estimatedBruteForceComputationTime = @"7.9e-03";
 }
