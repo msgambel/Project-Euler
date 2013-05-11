@@ -17,6 +17,7 @@
   self.title = @"Prime power triples";
   self.answer = @"1097343";
   self.number = @"87";
+  self.keywords = @"prime,square,cube,fourth,power,sum,count";
   self.estimatedComputationTime = @"1.49";
   self.estimatedBruteForceComputationTime = @"1.49";
 }

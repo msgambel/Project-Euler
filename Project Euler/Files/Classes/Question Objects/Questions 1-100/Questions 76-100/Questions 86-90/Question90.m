@@ -23,6 +23,7 @@
   self.title = @"Cube digit pairs";
   self.answer = @"1217";
   self.number = @"90";
+  self.keywords = @"cube,digit,pairs,distinct,formations";
   self.estimatedComputationTime = @"0.173";
   self.estimatedBruteForceComputationTime = @"0.173";
 }

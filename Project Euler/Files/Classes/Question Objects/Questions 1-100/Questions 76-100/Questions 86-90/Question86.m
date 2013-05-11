@@ -18,6 +18,7 @@
   self.title = @"Cuboid route";
   self.answer = @"1818";
   self.number = @"86";
+  self.keywords = @"spider,cuboid,shortest,route,path,pythagoras";
   self.estimatedComputationTime = @"0.129";
   self.estimatedBruteForceComputationTime = @"0.129";
 }
@@ -31,27 +32,31 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Here, we simply notice that the shortest path traveld along the surface
+  // Here, we simply notice that the shortest path traveled along the surface
   // area of the cuboid is:
   //
   //
   //                  (c)
   //        --------------------x
-  //        |                   |
-  //        |                   |(a)
+  //        |                /  |
+  //     (a)|            /      |(a)
   // -----------------------------------
-  // |      |                   |      |
-  // |      |                   |(b)    |
+  // |      |       /           |      |
+  // |   (b)|   /               |(b)   |
   // -------x---------------------------
-  //        |                   |
+  //        |         (c)       |
   //        |                   |
   //        ---------------------
   //        |                   |
   //        |                   |
   //        ---------------------
   //
+  // Notice the (poorly drawn) line from x to x. It forms a right angle triangle
+  // that we can use pythagoras on. Therefore, we have:
+  //
   // (a + b)^2 + c^2 = (shortest path length)^2.
-  
+  //
+  // Easy as pie!
   
   // Variable to hold the maximum side length of the cuboid.
   uint maximumSideLength = 1;
@@ -98,7 +103,7 @@
       }
     }
   }
-  // Set the answer string to the maximum side length.
+  // Set the answer string to the shortest path length.
   self.answer = [NSString stringWithFormat:@"%d", maximumSideLength];
   
   // Get the amount of time that has passed while the computation was happening.
@@ -125,7 +130,79 @@
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
   
+  // Here, we simply notice that the shortest path traveled along the surface
+  // area of the cuboid is:
+  //
+  //
+  //                  (c)
+  //        --------------------x
+  //        |                /  |
+  //     (a)|            /      |(a)
+  // -----------------------------------
+  // |      |       /           |      |
+  // |   (b)|   /               |(b)   |
+  // -------x---------------------------
+  //        |         (c)       |
+  //        |                   |
+  //        ---------------------
+  //        |                   |
+  //        |                   |
+  //        ---------------------
+  //
+  // Notice the (poorly drawn) line from x to x. It forms a right angle triangle
+  // that we can use pythagoras on. Therefore, we have:
+  //
+  // (a + b)^2 + c^2 = (shortest path length)^2.
+  //
+  // Easy as pie!
   
+  // Variable to hold the maximum side length of the cuboid.
+  uint maximumSideLength = 1;
+  
+  // Variable to hold the maximum side length of the cuboid squared to save on
+  // computation time.
+  uint maximumSideLengthSquared = 0;
+  
+  // Variable to hold the number of integer solutions of the shortest path along
+  // a cuboid of a given size.
+  uint numberOfIntegerSolutions = 0;
+  
+  // Variable to hold the target number of integer solutions of the shortest
+  // path along a cuboid of a given size.
+  uint targetNumberOfIntegerSolutions = 1000000;
+  
+  // While the number of solutions of the shortest path along a cuboid of a
+  // given size is less than the target number,
+  while(numberOfIntegerSolutions < targetNumberOfIntegerSolutions){
+    // Increment the maximum side length by 1.
+    maximumSideLength++;
+    
+    // Compute the maximum side length squared.
+    maximumSideLengthSquared = maximumSideLength * maximumSideLength;
+    
+    // For the sum of the two side lengths up to 2 times the maximum size,
+    for(int sumSideLength = 2; sumSideLength < (2 * maximumSideLength); sumSideLength++){
+      // If the shortest path is a perfect square,
+      if([self isNumberAPerfectSquare:((sumSideLength * sumSideLength) + maximumSideLengthSquared)]){
+        // If the sum of the two side lengths is greater than the maximum side
+        // length,
+        if(sumSideLength > maximumSideLength){
+          // Add the number of ways we can add up the 2 side lengths together to
+          // arrive at the same sum.
+          numberOfIntegerSolutions += ((maximumSideLength - ((sumSideLength + 1) / 2)) + 1);
+        }
+        // If the sum of the two side lengths is less than or equal to the
+        // maximum side length,
+        else{
+          // Add the number of ways we can add up the 2 side lengths together to
+          // arrive at the same sum.
+          numberOfIntegerSolutions += (sumSideLength / 2);
+        }
+      }
+    }
+  }
+  // Set the answer string to the shortest path length.
+  self.answer = [NSString stringWithFormat:@"%d", maximumSideLength];
   
   // Get the amount of time that has passed while the computation was happening.
   NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];
