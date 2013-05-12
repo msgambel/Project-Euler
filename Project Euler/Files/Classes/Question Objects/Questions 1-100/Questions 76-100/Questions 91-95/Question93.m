@@ -25,6 +25,7 @@
   self.title = @"Arithmetic expressions";
   self.answer = @"1258";
   self.number = @"93";
+  self.keywords = @"arithmetic,expressions,reverse,polish,notation";
   self.estimatedComputationTime = @"7.38";
   self.estimatedBruteForceComputationTime = @"7.38";
 }

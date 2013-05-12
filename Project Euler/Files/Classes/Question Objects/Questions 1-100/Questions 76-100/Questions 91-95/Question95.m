@@ -18,6 +18,7 @@
   self.title = @"Amicable chains";
   self.answer = @"14316";
   self.number = @"95";
+  self.keywords = @"amicable,chains,proper,divisors,sum,longest";
   self.estimatedComputationTime = @"10.1";
   self.estimatedBruteForceComputationTime = @"";
 }
