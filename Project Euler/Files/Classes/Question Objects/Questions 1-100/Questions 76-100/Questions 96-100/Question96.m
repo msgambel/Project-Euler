@@ -25,6 +25,7 @@
   self.title = @"Su Doku";
   self.answer = @"24702";
   self.number = @"96";
+  self.keywords = @"sudoku,recursive,import";
   self.estimatedComputationTime = @"0.338";
   self.estimatedBruteForceComputationTime = @"0.338";
 }
@@ -281,6 +282,7 @@
             hasCheckedForPairs = YES;
           }
           else{
+            // http://stackoverflow.com/questions/5766264/how-to-copy-a-nsmutablearray
             NSLog(@"Something went wrong!");
             NSLog(@" ");
             for(SudokuGroup * sudokuGroup in sudokuGroups){
