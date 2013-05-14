@@ -17,6 +17,7 @@
   self.title = @"Square remainders";
   self.answer = @"333082500";
   self.number = @"120";
+  self.keywords = @"square,remainders,modulo,polynomial,expansion";
   self.estimatedComputationTime = @"2.9e-05";
   self.estimatedBruteForceComputationTime = @"2.9e-05";
 }
