@@ -17,6 +17,7 @@
   self.title = @"Concealed Square";
   self.answer = @"1389019170";
   self.number = @"206";
+  self.keywords = @"concealed,square,perfect";
   self.estimatedComputationTime = @"4.53";
   self.estimatedBruteForceComputationTime = @"4.53";
 }
