@@ -17,6 +17,7 @@
   self.title = @"Resilience";
   self.answer = @"892371480";
   self.number = @"243";
+  self.keywords = @"resilience,totient,function,unique,prime,factors";
   self.estimatedComputationTime = @"4.5e-05";
   self.estimatedBruteForceComputationTime = @">1000";
 }
