@@ -17,9 +17,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZQS-O5-p6c">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="420" type="user" id="vmm-h5-rby"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" rowHeight="60" id="dQ3-ra-rq4" customClass="QuestionCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="60"/>
@@ -142,24 +139,22 @@
                                     <outlet property="delegate" destination="2" id="aNI-Ir-nhc"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select Your Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-y7-Us9">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="NuE-3Y-fWw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0MO-QS-V6d">
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="U3G-gZ-FzI"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GQq-y7-Us9" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Grr-zG-5tI"/>
+                            <constraint firstItem="0MO-QS-V6d" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="2lz-Sg-FXS"/>
+                            <constraint firstItem="0MO-QS-V6d" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="CZU-qE-ImY"/>
+                            <constraint firstItem="ZQS-O5-p6c" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="RBt-Ab-p9m"/>
                             <constraint firstItem="ZQS-O5-p6c" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="S96-al-Auy"/>
-                            <constraint firstItem="ZQS-O5-p6c" firstAttribute="top" secondItem="3" secondAttribute="top" constant="40" type="user" id="SCo-db-1Q9"/>
-                            <constraint firstAttribute="trailing" secondItem="GQq-y7-Us9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="YzL-Fg-sYO"/>
-                            <constraint firstItem="ZQS-O5-p6c" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="hre-pT-Xfc"/>
+                            <constraint firstItem="ZQS-O5-p6c" firstAttribute="top" secondItem="0MO-QS-V6d" secondAttribute="bottom" type="default" id="mIR-MZ-IJy"/>
+                            <constraint firstItem="0MO-QS-V6d" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="vtn-zn-4f4"/>
                             <constraint firstItem="ZQS-O5-p6c" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="yOo-zw-4OB"/>
-                            <constraint firstItem="GQq-y7-Us9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" id="zn7-Rc-25p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6aw-yl-RRc"/>

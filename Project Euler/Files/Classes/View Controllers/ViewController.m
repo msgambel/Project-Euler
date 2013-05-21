@@ -116,6 +116,8 @@
   return cell;
 }
 
+#pragma mark - UISearchBarDelegate Methods
+
 #pragma mark - QuestionCellDelegate Methods
 
 - (void)selectedQuestion:(QuestionAndAnswer *)aQuestionAndAnswer; {

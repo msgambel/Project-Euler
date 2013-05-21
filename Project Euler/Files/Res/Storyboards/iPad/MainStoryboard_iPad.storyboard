@@ -247,7 +247,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="420" type="user" id="Ygb-bt-DVV"/>
-                                    <constraint firstAttribute="height" constant="715" id="cri-Rd-AtX"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" rowHeight="60" id="7Xi-kq-3E6" customClass="QuestionCell">
@@ -371,23 +370,22 @@
                                     <outlet property="delegate" destination="L2z-Fu-m31" id="9nA-h4-aRt"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select Your Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d9-In-D1q">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="3kS-j4-hmB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-hs-xME">
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="L2z-Fu-m31" id="dUy-Ug-lqd"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mwJ-vs-uf7" firstAttribute="bottom" secondItem="thg-b0-zjR" secondAttribute="bottom" type="default" id="88O-1n-FrM"/>
+                            <constraint firstItem="y3e-hs-xME" firstAttribute="bottom" secondItem="mwJ-vs-uf7" secondAttribute="top" type="default" id="17V-NY-sOw"/>
                             <constraint firstItem="mwJ-vs-uf7" firstAttribute="leading" secondItem="thg-b0-zjR" secondAttribute="leading" type="default" id="AWd-gf-krp"/>
-                            <constraint firstItem="4d9-In-D1q" firstAttribute="leading" secondItem="thg-b0-zjR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Zdf-Ah-6ZW"/>
+                            <constraint firstItem="y3e-hs-xME" firstAttribute="leading" secondItem="thg-b0-zjR" secondAttribute="leading" type="default" id="CAc-XL-Z03"/>
+                            <constraint firstItem="mwJ-vs-uf7" firstAttribute="bottom" secondItem="thg-b0-zjR" secondAttribute="bottom" type="default" id="Hzg-sF-URp"/>
+                            <constraint firstItem="y3e-hs-xME" firstAttribute="trailing" secondItem="thg-b0-zjR" secondAttribute="trailing" type="default" id="Ldc-WA-G9b"/>
                             <constraint firstItem="mwJ-vs-uf7" firstAttribute="trailing" secondItem="thg-b0-zjR" secondAttribute="trailing" type="default" id="dwQ-k0-Jao"/>
-                            <constraint firstItem="mwJ-vs-uf7" firstAttribute="top" secondItem="4d9-In-D1q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gfN-Wl-fGR"/>
-                            <constraint firstAttribute="trailing" secondItem="4d9-In-D1q" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="y4r-b4-jMJ"/>
+                            <constraint firstItem="y3e-hs-xME" firstAttribute="top" secondItem="thg-b0-zjR" secondAttribute="top" type="default" id="nY0-K6-VyN"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>

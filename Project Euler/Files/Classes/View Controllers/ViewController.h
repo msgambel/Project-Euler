@@ -6,7 +6,7 @@
 @class QuestionAndAnswer;
 @class DetailViewController;
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, QuestionCellDelegate> {
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, QuestionCellDelegate> {
   NSMutableArray       * _questionObjectsArray;
   QuestionAndAnswer    * _selectedQuestion;
   DetailViewController * __weak _detailViewController;
