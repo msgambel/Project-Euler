@@ -3,6 +3,13 @@
 #ifndef Project_Euler_Enumerations_h
 #define Project_Euler_Enumerations_h
 
+// Enum of the 3 types of Sudoku Groups.
+typedef enum {
+  SudokuGroupType_Row,
+  SudokuGroupType_Column,
+  SudokuGroupType_Square
+}SudokuGroupType;
+
 // Enum for the days of the week.
 typedef enum {
   Day_Monday,

@@ -2,12 +2,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SudokuCoordinate.h"
-
-typedef enum {
-  SudokuGroupType_Row,
-  SudokuGroupType_Column,
-  SudokuGroupType_Square
-}SudokuGroupType;
+#import "Enumerations.h"
 
 @interface SudokuGroup : NSObject <NSCopying> {
   BOOL             _isComplete;
