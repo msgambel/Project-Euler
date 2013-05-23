@@ -1,8 +1,7 @@
 //  SudokuCoordinate.h
 
 #import <Foundation/Foundation.h>
-
-#define PotentialNumbers 10
+#import "Defines.h"
 
 @interface SudokuCoordinate : NSObject <NSCopying> {
   uint _row;
