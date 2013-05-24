@@ -3,6 +3,7 @@
 #ifndef Project_Euler_Defines_h
 #define Project_Euler_Defines_h
 
+// Defines an IBOutletCollection, in case it is not already defined.
 #ifndef IBOutletCollection
 #define IBOutletCollection(ClassName)
 #endif
