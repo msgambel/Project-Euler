@@ -2,12 +2,6 @@
 
 #import "Question74.h"
 
-@interface Question74 (Private)
-
-- (uint)sumOfDigitsFactorials:(uint)aNumber;
-
-@end
-
 @implementation Question74
 
 #pragma mark - Setup
@@ -245,49 +239,6 @@
   
   // Set that we have finished the computation.
   _isComputing = NO;
-}
-
-@end
-
-#pragma mark - Private Methods
-
-@implementation Question74 (Private)
-
-// TODO: Refactor question 34's private method.
-
-- (uint)sumOfDigitsFactorials:(uint)aNumber; {
-  // Constant array to hold the value of the factorials from 0 to 9.
-  const uint factorialValues[10] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
-  
-  // Variable to hold the number of digits there are for the input number.
-  int numberOfDigits = (int)(log10(aNumber));
-  
-  // Variable to hold the digit we are looking at.
-  uint digit = 0;
-  
-  // Variable to hold the sum of the factorial of the digits of the inputted
-  // number.
-  uint digitFactorialSum = 0;
-  
-  // Variable to hold the power of 10 for the current digit.
-  uint powerOf10 = 1;
-  
-  // While the number of digits is positive,
-  while(numberOfDigits >= 0){
-    // Grab the current digit from the input number.
-    digit = (((uint)(aNumber / powerOf10)) % 10);
-    
-    // Add the factorial of the digit to the digit factorial sum.
-    digitFactorialSum += factorialValues[digit];
-    
-    // Multiply the power of 10 by 10 for the next index.
-    powerOf10 *= 10;
-    
-    // Decrease the number of digits by 1.
-    numberOfDigits--;
-  }
-  // Return the sum of the factorial of the digits.
-  return digitFactorialSum;
 }
 
 @end

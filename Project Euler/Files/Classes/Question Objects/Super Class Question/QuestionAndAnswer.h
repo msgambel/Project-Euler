@@ -72,6 +72,9 @@
 // This helper method will take in a number and return the sum of its digits.
 - (uint)sumOfDigits:(long long int)aNumber;
 
+// This helper method sums the factorials of the digits of a number.
+- (uint)sumOfDigitsFactorials:(uint)aNumber;
+
 // This helper method will take in a number as a string and return the sum of
 // its digits.
 - (uint)digitSumOfNumber:(NSString *)aNumber;

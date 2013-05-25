@@ -2,12 +2,6 @@
 
 #import "Question34.h"
 
-@interface Question34 (Private)
-
-- (BOOL)isNumberEqualToItsDigitFactorials:(uint)aNumber;
-
-@end
-
 @implementation Question34
 
 #pragma mark - Setup
@@ -58,7 +52,7 @@
   // For all the numbers that can possibly be equal to their digit factorials,
   for(int number = 11; number < 50000; number++){
     // If the number is equal to its digit factorials,
-    if([self isNumberEqualToItsDigitFactorials:number]){
+    if([self sumOfDigitsFactorials:number] == number){
       // Add the number to the sum of all the numbers equal to their digit factorials.
       sum += number;
     }
@@ -111,7 +105,7 @@
   // For all the numbers that can possibly be equal to their digit factorials,
   for(int number = 10; number < 50000; number++){
     // If the number is equal to its digit factorials,
-    if([self isNumberEqualToItsDigitFactorials:number]){
+    if([self sumOfDigitsFactorials:number] == number){
       // Add the number to the sum of all the numbers equal to their digit factorials.
       sum += number;
     }
@@ -131,46 +125,6 @@
   
   // Set that we have finished the computation.
   _isComputing = NO;
-}
-
-@end
-
-#pragma mark - Private Methods
-
-@implementation Question34 (Private)
-
-- (BOOL)isNumberEqualToItsDigitFactorials:(uint)aNumber; {
-  // Constant array to hold the value of the factorials from 0 to 9.
-  const uint factorialValues[10] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
-  
-  // Variable to hold the number of digits there are for the input number.
-  int numberOfDigits = (int)(log10(aNumber));
-  
-  // Variable to hold the digit we are looking at.
-  uint digit = 0;
-  
-  // Variable to hold the power of 10 for the current digit.
-  uint powerOf10 = 1;
-  
-  // Variable to hold the sum of the factorials of the digits.
-  uint digitFactorialSum = 0;
-  
-  // While the number of digits is positive,
-  while(numberOfDigits >= 0){
-    // Grab the current digit from the input number.
-    digit = (((long long int)(aNumber / powerOf10)) % 10);
-    
-    // Add the factorial of the current digit to the sum.
-    digitFactorialSum += factorialValues[digit];
-    
-    // Multiply the power of 10 by 10 for the next index.
-    powerOf10 *= 10;
-    
-    // Decrease the number of digits by 1.
-    numberOfDigits--;
-  }
-  // Return if the number is equal to its digit factorial sum of not.
-  return (aNumber == digitFactorialSum);
 }
 
 @end
