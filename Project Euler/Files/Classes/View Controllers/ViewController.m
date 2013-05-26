@@ -118,6 +118,10 @@
 
 #pragma mark - UISearchBarDelegate Methods
 
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText; {
+  
+}
+
 #pragma mark - QuestionCellDelegate Methods
 
 - (void)selectedQuestion:(QuestionAndAnswer *)aQuestionAndAnswer; {
