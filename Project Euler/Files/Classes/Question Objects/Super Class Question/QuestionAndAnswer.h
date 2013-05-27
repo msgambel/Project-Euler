@@ -1,6 +1,7 @@
 //  QuestionAndAnswer.h
 
 #import <Foundation/Foundation.h>
+#import "Structures.h"
 
 @protocol QuestionAndAnswerDelegate <NSObject>
 
@@ -81,6 +82,9 @@
 
 // This helper method returns a name score for the 26 letters of the alphabet.
 - (uint)nameScoreForString:(NSString *)aString;
+
+// This helper method sums all the prime powers of a given prime power.
+- (uint)sumOfPowersForPrimePower:(PrimePower)aPrimePower;
 
 // This helper method returns the gcd of 2 numbers using an inputted prime numbers
 // array.

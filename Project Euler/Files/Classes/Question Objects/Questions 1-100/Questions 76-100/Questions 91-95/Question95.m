@@ -27,18 +27,6 @@
 // TODO: Move to Super class, and re-write Questions 21 and 23.
 // TODO: Question 23 Brute force method needs explanation.
 // TODO: Clean-up.
-- (uint)sumOfPowersForPrimePower:(PrimePower)aPrimePower; {
-  // Variable to hold the sum. Default the sum to 0.
-  uint sum = 0;
-  
-  // For all the powers from 0 to the prime powers power,
-  for(int i = 0; i <= aPrimePower.power; i++){
-    // Add the prime power to the sum.
-    sum += ((uint)pow(((double)aPrimePower.primeNumber), ((double)i)));
-  }
-  // Return the sum.
-  return sum;
-}
 
 - (void)computeAnswer; {
   // Set that we have started the computation.

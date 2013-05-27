@@ -688,6 +688,19 @@
   return nameScore;
 }
 
+- (uint)sumOfPowersForPrimePower:(PrimePower)aPrimePower; {
+  // Variable to hold the sum. Default the sum to 0.
+  uint sum = 0;
+  
+  // For all the powers from 0 to the prime powers power,
+  for(int i = 0; i <= aPrimePower.power; i++){
+    // Add the prime power to the sum.
+    sum += ((uint)pow(((double)aPrimePower.primeNumber), ((double)i)));
+  }
+  // Return the sum.
+  return sum;
+}
+
 - (uint)gcdOfA:(uint)aA b:(uint)aB primeNumbersArray:(NSArray *)aPrimeNumbersArray; {
   // Variable to hold the greatest common divisor of the 2 input numbers.
   uint gcd = 1;
