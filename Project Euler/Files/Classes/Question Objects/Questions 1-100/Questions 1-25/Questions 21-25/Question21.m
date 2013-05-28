@@ -3,12 +3,6 @@
 #import "Question21.h"
 #import "Global.h"
 
-@interface Question21 (Private)
-
-- (uint)sumOfPowersForPrimePower:(PrimePower)aPrimePower;
-
-@end
-
 @implementation Question21
 
 #pragma mark - Setup
@@ -340,25 +334,6 @@
   
   // Set that we have finished the computation.
   _isComputing = NO;
-}
-
-@end
-
-#pragma mark - Private Methods
-
-@implementation Question21 (Private)
-
-- (uint)sumOfPowersForPrimePower:(PrimePower)aPrimePower; {
-  // Variable to hold the sum. Default the sum to 0.
-  uint sum = 0;
-  
-  // For all the powers from 0 to the prime powers power,
-  for(int i = 0; i <= aPrimePower.power; i++){
-    // Add the prime power to the sum.
-    sum += ((uint)pow(((double)aPrimePower.primeNumber), ((double)i)));
-  }
-  // Return the sum.
-  return sum;
 }
 
 @end
