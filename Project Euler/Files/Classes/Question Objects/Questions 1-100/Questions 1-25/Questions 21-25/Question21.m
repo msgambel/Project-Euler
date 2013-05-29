@@ -253,6 +253,11 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
+  // Here, we simply try to find all of the proper divisors of the numbers up to
+  // the maximum size, and then sum them up. We then check each number to see if
+  // the sum of the proper divisors is equal to the number itself, and if it is,
+  // the number is amicable, and we sum that number to the total sum.
+  
   // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
   
