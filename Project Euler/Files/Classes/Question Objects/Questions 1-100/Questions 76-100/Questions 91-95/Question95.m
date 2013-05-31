@@ -24,8 +24,6 @@
 }
 
 #pragma mark - Methods
-// TODO: Move to Super class, and re-write Questions 21 and 23.
-// TODO: Question 23 Brute force method needs explanation.
 // TODO: Clean-up.
 
 - (void)computeAnswer; {
@@ -206,9 +204,12 @@
   uint longestChainLength = 0;
   
   uint firstIndexOfChain = 0;
-    
+  
+  // Variable array to hold all the numbers in the chain of amicable numbers.
   NSMutableArray * numbersInChain = nil;
   
+  // Sort Descriptor to order the number in the chain of amicable numbers in
+  // ascending order.
   NSSortDescriptor * lowestToHighest = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
   
   // For all the numbers from 4 to the max size,
@@ -223,9 +224,6 @@
       numbersInChain = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:number], nil];
       
       while([numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]] == NSNotFound){
-        if(number == 14316){
-          NSLog(@"%d: %d", currentChainLength, currentElementInChain);
-        }
         if((currentElementInChain < 0) || (currentElementInChain > maxSize)){
           // Mark that a valid cycle was NOT found.
           cycleFound = NO;
