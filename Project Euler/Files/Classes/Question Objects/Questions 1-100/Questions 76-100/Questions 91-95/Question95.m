@@ -231,31 +231,50 @@
           // Break out of the loop.
           break;
         }
+        // Increment the current chain's length by 1.
         currentChainLength++;
         
+        // Add the current number in the chain to the chain.
         [numbersInChain addObject:[NSNumber numberWithInt:currentElementInChain]];
         
+        // Grab the next element in the chain.
         currentElementInChain = sumOfFactorsForNumbers[currentElementInChain];
       }
+      // If we have found a cycle,
       if(cycleFound){
+        // Grab the first index of the number that repeats in the chain, as it
+        // may NOT be the first number in the array.
         firstIndexOfChain = [numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]];
         
+        // Decrease the current length of the chain by the index of the first
+        // number that repeats in the chain.
         currentChainLength -= firstIndexOfChain;
         
+        // If the current chain's length is greater than the longest chain length
+        // previously found,
         if(currentChainLength > longestChainLength){
+          // For all of the numbers in the chain until it repeats,
           for(int i = 0; i < firstIndexOfChain; i++){
+            // Remove the first number leading up to the chain.
             [numbersInChain removeObjectAtIndex:0];
           }
+          // For the remaining numbers in the chain, sort them from lowest to
+          // highest.
           [numbersInChain sortUsingDescriptors:[NSArray arrayWithObject:lowestToHighest]];
           
+          // Set the current chain's length to be the longest chain's length.
           longestChainLength = currentChainLength;
           
+          // Store the smallest element in the current (and longest) chain.
           smallestElementInLongestChain = [[numbersInChain objectAtIndex:0] intValue];
         }
       }
     }
+    // For all the numbers in the current chain,
     for(int i = 0; i < currentChainLength; i++){
+      // If the sum of the factors of the current number in the chain is positive,
       if(sumOfFactorsForNumbers[[[numbersInChain objectAtIndex:i] intValue]] > 0){
+        // Make the sum of the factors for the current numberin the chain negative.
         sumOfFactorsForNumbers[[[numbersInChain objectAtIndex:i] intValue]] *= -1;
       }
     }
