@@ -214,16 +214,25 @@
   
   // For all the numbers from 4 to the max size,
   for(int number = 4; number < maxSize; number++){
+    // Grab the next element in the chain (the sum of the proper divisors of the
+    // current number).
     currentElementInChain = sumOfFactorsForNumbers[number];
     
+    // Reset the chain length to 0.
     currentChainLength = 0;
     
+    // If the next element in the chain in positive,
     if(currentElementInChain > 0){
+      // Mark that we have found a cycle.
       cycleFound = YES;
       
+      // Create an array that will contain all of the numbers in the amicable chain.
       numbersInChain = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:number], nil];
       
+      // While the chain does not contain a cycle,
       while([numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]] == NSNotFound){
+        // If the current element in the chain is negative, or outside of the
+        // range of numbers we need to examine,
         if((currentElementInChain < 0) || (currentElementInChain > maxSize)){
           // Mark that a valid cycle was NOT found.
           cycleFound = NO;
