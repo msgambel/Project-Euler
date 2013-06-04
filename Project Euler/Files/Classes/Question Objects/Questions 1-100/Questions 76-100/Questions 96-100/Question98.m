@@ -56,6 +56,12 @@
   // Variable to hold the path to the file that holds the words data.
   NSString * path = [[NSBundle mainBundle] pathForResource:@"wordsQuestion98" ofType:@"txt"];
   
+  // Variable to hold the first word while iterating.
+  NSString * firstWord = nil;
+  
+  // Variable to hold the second word while iterating.
+  NSString * secondWord = nil;
+  
   // Variable to hold the words list as a string for parsing.
   NSString * wordsList = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
   
@@ -100,12 +106,6 @@
         [currentWordSizeArray addObject:word];
       }
     }
-    // Variable to hold the first word while iterating.
-    NSString * firstWord = nil;
-    
-    // Variable to hold the second word while iterating.
-    NSString * secondWord = nil;
-    
     // For all the word sizes, starting with the largest size,
     for(int currentWordSize = ([wordsBySizesArray count] - 1); currentWordSize >= 0; currentWordSize--){
       // Grab the array that holds all the words with the current length.
