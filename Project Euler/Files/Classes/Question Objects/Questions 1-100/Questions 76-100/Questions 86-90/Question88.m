@@ -33,6 +33,8 @@
   
   // Here, we simply
   
+  // Variable to mark the maximum size of the minimal product-sum numbers to
+  // examine.
   const uint maxSize = 12000;
   
   BOOL shouldAddNumber = NO;
