@@ -37,6 +37,8 @@
   // examine.
   const uint maxSize = 12000;
   
+  // Variable to mark if we should add the number to the total of the minimum
+  // product sums or NOT.
   BOOL shouldAddNumber = NO;
   
   uint k = 0;
