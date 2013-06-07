@@ -41,6 +41,7 @@
   // product sums or NOT.
   BOOL shouldAddNumber = NO;
   
+  // Variable to hold the minimal product-sum number, as defined in the question.
   uint k = 0;
   
   uint sumOfFactors = 0;
