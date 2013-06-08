@@ -44,24 +44,37 @@
   // Variable to hold the minimal product-sum number, as defined in the question.
   uint k = 0;
   
+  // Variable to hold the sum of the factors of the current product-sum number.
   uint sumOfFactors = 0;
   
+  // Variable to hold the current number we are looking at.
   uint currentNumber = 0;
   
+  // Variable to hold the square root of the current number we are looking at.
   uint currentSquareRoot = 0;
   
+  // Variable to hold the total sum of the minimal product-sum numbers up to
+  // the maximum size. We start at 4, as the minimal product-sum for 2 is 4.
   uint totalMinimalProductSum = 4;
   
+  // Variable to hold the minimal product sums for all the numbers up to the
+  // maximum size.
   uint minimalProductSums[(maxSize + 1)] = {0};
   
-  minimalProductSums[2] = 4;
-  
+  // Variable array to hold the minimal product-sums for each of the factors
+  // of the current number.
   NSMutableArray * sumOfFactorsArray = [[NSMutableArray alloc] initWithCapacity:maxSize];
   
+  // Variable array to hold the factors of the current number.
   NSMutableArray * factorsForNumber = nil;
   
+  // Variable to hold the 
   NSMutableArray * currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0], nil];
   
+  // Set the minimal product-sum for 2 as 4.
+  minimalProductSums[2] = 4;
+  
+  // 
   [sumOfFactorsArray addObject:currentFactorsForNumber];
   
   for(int i = 0; i < 3; i++){
