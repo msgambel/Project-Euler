@@ -74,21 +74,32 @@
   // Set the minimal product-sum for 2 as 4.
   minimalProductSums[2] = 4;
   
-  // 
+  // Add the array with 0 to the sum of factors array, as 0 minimal product-sum
+  // is 0.
   [sumOfFactorsArray addObject:currentFactorsForNumber];
   
-  for(int i = 0; i < 3; i++){
-    currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:i], nil];
+  // For all the numbers from 0 to 2 (which represent the numbers 1-3,
+  for(int n = 0; n < 3; n++){
+    // Create an array with the current number.
+    currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:n], nil];
+    
+    // Add the array with the current number to the sum of factors array.
     [sumOfFactorsArray addObject:currentFactorsForNumber];
   }
+  // Create an array with the numbers 2 and 3 in it.
   currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:3], nil];
   
+  // Add the with the numbers 2 and 3 to the sum of factors array.
   [sumOfFactorsArray addObject:currentFactorsForNumber];
   
+  // For all the numbers from 5 up to 10% larger than the maximum size,
   for(int n = 5; n <= (1.1 * maxSize); n++){
+    // If the number is prime,
     if([self isPrime:n]){
+      // Create an array with the prime number minus 1 in it.
       currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:(n-1)], nil];
     }
+    // If the number is NOT a prime,
     else{
       shouldAddNumber = NO;
       currentNumber = n;
