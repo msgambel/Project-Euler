@@ -101,17 +101,32 @@
     }
     // If the number is NOT a prime,
     else{
+      // Mark that we should NOT add a number by default.
       shouldAddNumber = NO;
+      
+      // Set the current number we are looking at.
       currentNumber = n;
+      
+      // Compute the floored square root of the current number.
       currentSquareRoot = ((uint)sqrt((double)n));
+      
+      // Initialize a new array to store all the possible factors for the current
+      // numbers.
       currentFactorsForNumber = [[NSMutableArray alloc] init];
       
+      // For all the factors that the current number could possible have,
       for(int factor = 2; factor <= currentSquareRoot; factor++){
+        // If the current factor is actually a factor of the current number,
         if((n % factor) == 0){
+          // Set the current number to be the current number divided by the
+          // current factor.
           currentNumber = n / factor;
           
+          // Grab the other sums of factors for the other factor of the current
+          // number.
           factorsForNumber = [sumOfFactorsArray objectAtIndex:currentNumber];
           
+          // For all the sums of factors in the factors array,
           for(NSNumber * number in factorsForNumber){
             sumOfFactors = [number intValue] + (factor - 1);
             
