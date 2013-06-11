@@ -128,28 +128,46 @@
           
           // For all the sums of factors in the factors array,
           for(NSNumber * number in factorsForNumber){
+            // Compute the sum of the factors for the current number.
             sumOfFactors = [number intValue] + (factor - 1);
             
+            // If the sum of the factors is less than the current number,
             if(n > sumOfFactors){
+              // Compute k, the minimal product-sum.
               k = n - sumOfFactors;
               
+              // If k is less than the maximum size we are examining,
               if(k <= maxSize){
+                // If we have not already added a minimal product-sum for this
+                // value of k,
                 if(minimalProductSums[k] == 0){
+                  // Set the current number to be the minimal product-sum for
+                  // this value of k.
                   minimalProductSums[k] = n;
+                  
+                  // Mark that we should add the minimal product-sum to the total
+                  // minimal product-sums.
                   shouldAddNumber = YES;
                 }
-                
               }
+              // For the current number, add the sum of the factors to the array
+              // of possible factorizations.
               [currentFactorsForNumber addObject:[NSNumber numberWithInt:sumOfFactors]];
             }
           }
         }
       }
+      // If we should add the minimal product-sum to the total minimal product-sums,
       if(shouldAddNumber){
+        // Add the current number to the total minimal product-sums.
         totalMinimalProductSum += n;
       }
+      // Add the current number minus one to the sums of the factors array, as
+      // 1 * n = (n-1) + 1.
       [currentFactorsForNumber addObject:[NSNumber numberWithInt:(n-1)]];
     }
+    // Add all the possible combinations of factors for the current number to
+    // the array of all the posible combinations of factors for every number.
     [sumOfFactorsArray addObject:currentFactorsForNumber];
   }
   // Set the answer string to the.
