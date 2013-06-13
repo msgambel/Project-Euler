@@ -31,15 +31,22 @@
     // Update the detail view controller to have the same default question number.
     _detailViewController.questionAndAnswer = _selectedQuestion;
   }
+  // Since we are NOT searching by default, set the current Question Objects
+  // array to the array with all the solved Question Objects.
+  _currentQuestionObjectsArray = _questionObjectsArray;
 }
 
 #pragma mark - iOS 5.1 and under Rotation Methods
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation; {
+  // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+    // Return that we only accept Potrait orientations.
     return UIInterfaceOrientationIsPortrait(interfaceOrientation);
   }
+  // If the current device is an iPad,
   else{
+    // Return that we accept all orientations.
     return YES;
   }
 }
@@ -47,23 +54,33 @@
 #pragma mark - iOS 6.0 and up Rotation Methods
 
 - (BOOL)shouldAutorotate; {
+  // Return that the ViewController should auto-rotate.
   return YES;
 }
 
 - (NSUInteger)supportedInterfaceOrientations; {
+  // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+    // Return that we only accept Potrait orientations.
     return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
   }
+  // If the current device is an iPad,
   else{
+    // Return that we accept all orientations.
     return UIInterfaceOrientationMaskAll;
   }
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation; {
+  // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+    // Return that the preferred orientation is Portrait.
     return UIInterfaceOrientationPortrait;
   }
+  // If the current device is an iPad,
   else{
+    // Return that the preferred orientation is Landscape, with the Home Button
+    // on the left.
     return UIInterfaceOrientationLandscapeLeft;
   }
 }
@@ -97,17 +114,18 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section; {
-  // Return the number of rows of solved questions.
-  return [_questionObjectsArray count];
+  // Return the number of rows of solved questions in the current question
+  // objects array.
+  return [_currentQuestionObjectsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; {
   // Grab the reuseable cell from the tableView
   QuestionCell * cell = [tableView dequeueReusableCellWithIdentifier:@"QuestionCell"];
   
-  // Set the cells question objects array to be the question objects array for
-  // the corresponding row.
-  cell.questionObjectsArray = [_questionObjectsArray objectAtIndex:indexPath.row];
+  // Set the cells question objects array to be the current question objects
+  // array for the corresponding row.
+  cell.questionObjectsArray = [_currentQuestionObjectsArray objectAtIndex:indexPath.row];
   
   // Set the cells delegate to be this view controller.
   cell.delegate = self;
@@ -118,8 +136,103 @@
 
 #pragma mark - UISearchBarDelegate Methods
 
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText; {
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar; {
+  // Make sure that this UISearchBar no longer shows the "Cancel" button.
+  searchBar.showsCancelButton = NO;
   
+  // Tell the UISearchBar to resign as first responder, which dismissed the
+  // keyboard.
+  [searchBar resignFirstResponder];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar; {
+  _currentQuestionObjectsArray = _questionObjectsArray;
+  
+  // Tell the TableView to reload based on the latest data.
+  [_tableView reloadData];
+  
+  // Reset the UISearchBar's text to the empty string.
+  searchBar.text = @"";
+  
+  // Make sure that this UISearchBar no longer shows the "Cancel" button.
+  searchBar.showsCancelButton = NO;
+  
+  // Tell the UISearchBar to resign as first responder, which dismissed the
+  // keyboard.
+  [searchBar resignFirstResponder];
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText; {
+  // If the text in the UISearchBar has at least 1 character,
+  if(searchBar.text.length > 0){
+    // Set the current question objects array to be the array of question objects
+    // that are relavent to the search text.
+    _currentQuestionObjectsArray = _searchingQuestionObjectsArray;
+  }
+  // If the text in the UISearchBar has 0 characters,
+  else{
+    // Set the current question objects array to be the array of all of the
+    // question objects.
+    _currentQuestionObjectsArray = _questionObjectsArray;
+  }
+  // Variable to hold the number of questions relavent to the search text for
+  // each question cell.
+  uint numberOfSearchedQuestions = 0;
+  
+  // Variable array to hold all of the keywords for a given question.
+  NSArray * keywords = nil;
+  
+  // Variable array to hold the searched question objects for each question cell.
+  NSMutableArray * searchedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:NumberOfButtonsInQuestionCell];
+  
+  // Remove all of the objects already in the searching quetion objects array.
+  [_searchingQuestionObjectsArray removeAllObjects];
+  
+  // For all of the arrays of 5 question objects in the array or all of the
+  // question objects,
+  for(NSMutableArray * arrayOf5Questions in _questionObjectsArray){
+    // For all of the question objects in the array of 5 question objects,
+    for(QuestionAndAnswer * question in arrayOf5Questions){
+      // Grab the keywords for the specific question object.
+      keywords = [question.keywords componentsSeparatedByString:@","];
+      
+      // For all the individual keywords for the current question object,
+      for(NSString * keyword in keywords){
+        // If the keyword contains the search text,
+        if([keyword rangeOfString:searchText].location != NSNotFound){
+          // Increment the number of relavent searched questions by 1.
+          numberOfSearchedQuestions++;
+          
+          // Add the question object to the question cells searched questions
+          // array.
+          [searchedQuestionObjects addObject:question];
+          
+          // If the number of solved questions is equal to the number of buttons in
+          // each question cell,
+          if(numberOfSearchedQuestions == NumberOfButtonsInQuestionCell){
+            // Reset the number of searched questions to 0.
+            numberOfSearchedQuestions = 0;
+            
+            // Add the group of searched questions to the questions objects array.
+            [_searchingQuestionObjectsArray addObject:searchedQuestionObjects];
+            
+            // Reset the searched questions array for a new cell.
+            searchedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:NumberOfButtonsInQuestionCell];
+          }
+        }
+      }
+    }
+  }
+  // Tell the TableView to reload based on the latest data.
+  [_tableView reloadData];
+}
+
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar; {
+  // Make sure that this UISearchBar shows the "Cancel" button.
+  searchBar.showsCancelButton = YES;
+  
+  // Return that the UISearchBar should begin editing.
+  return YES;
 }
 
 #pragma mark - QuestionCellDelegate Methods
@@ -151,11 +264,14 @@
   // question cell.
   _questionObjectsArray = [[NSMutableArray alloc] init];
   
+  // Array to hold all of the questions relavent to the given search.
+  _searchingQuestionObjectsArray = [[NSMutableArray alloc] init];
+  
   // Variable to hold the number of questions solved for each question cell.
   uint numberOfSolvedQuestions = 0;
   
   // Variable array to hold the question objects for each question cell.
-  NSMutableArray * solvedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:5];
+  NSMutableArray * solvedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:NumberOfButtonsInQuestionCell];
   
   // Variable to hold the current solved question object.
   QuestionAndAnswer * questionAndAnswer = nil;
@@ -186,7 +302,7 @@
         [_questionObjectsArray addObject:solvedQuestionObjects];
         
         // Reset the solved questions array for a new cell.
-        solvedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:5];
+        solvedQuestionObjects = [[NSMutableArray alloc] initWithCapacity:NumberOfButtonsInQuestionCell];
       }
     }
   }

@@ -90,10 +90,14 @@
 #pragma mark - iOS 5.1 and under Rotation Methods
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation; {
+  // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+    // Return that we only accept Potrait orientations.
     return UIInterfaceOrientationIsPortrait(interfaceOrientation);
   }
+  // If the current device is an iPad,
   else{
+    // Return that we accept all orientations.
     return YES;
   }
 }
@@ -101,23 +105,33 @@
 #pragma mark - iOS 6.0 and up Rotation Methods
 
 - (BOOL)shouldAutorotate; {
+  // Return that the ViewController should auto-rotate.
   return YES;
 }
 
 - (NSUInteger)supportedInterfaceOrientations; {
+  // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+    // Return that we only accept Potrait orientations.
     return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
   }
+  // If the current device is an iPad,
   else{
+    // Return that we accept all orientations.
     return UIInterfaceOrientationMaskAll;
   }
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation; {
+  // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+    // Return that the preferred orientation is Portrait.
     return UIInterfaceOrientationPortrait;
   }
+  // If the current device is an iPad,
   else{
+    // Return that the preferred orientation is Landscape, with the Home Button
+    // on the left.
     return UIInterfaceOrientationLandscapeLeft;
   }
 }

@@ -8,6 +8,8 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, QuestionCellDelegate> {
   NSMutableArray       * _questionObjectsArray;
+  NSMutableArray       * _currentQuestionObjectsArray;
+  NSMutableArray       * _searchingQuestionObjectsArray;
   QuestionAndAnswer    * _selectedQuestion;
   DetailViewController * __weak _detailViewController;
   IBOutlet UITableView * _tableView;
