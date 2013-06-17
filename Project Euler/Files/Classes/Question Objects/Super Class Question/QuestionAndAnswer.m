@@ -864,7 +864,10 @@
     return [self slowArrayOfPrimeNumbersUpTo:aLimit count:0];
   }
   else{
+    // Print out in the console that the requested size of the array is too large.
     NSLog(@"The size: %d is too big!!! Less than %d please!", aLimit, MaxSizeOfSieveOfEratosthenes);
+    
+    // Return nil, as we cannot create a list of primes as large as requested.
     return nil;
   }
 }
