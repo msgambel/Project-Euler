@@ -987,7 +987,7 @@
       }
     }
   }
-  // Return the primes array.
+  // Return the prime numbers array.
   return primesArray;
 }
 
@@ -1103,6 +1103,7 @@
       }
     }
   }
+  // Return the prime numbers array.
   return primeNumbersArray;
 }
 
