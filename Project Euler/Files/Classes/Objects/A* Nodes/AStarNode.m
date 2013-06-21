@@ -23,16 +23,33 @@
 #pragma mark - Init
 
 - (id)initWithRow:(uint)aRow column:(uint)aColumn value:(uint)aValue; {
+  // Initialize the A* Node.
   if((self = [super init])){
+    // Set the default distance to the next A* Node to 0.
     _g = 0;
+    
+    // Set the default hueristic distance to the next A* Node to 0.
     _h = 0;
+    
+    // Set the row of the node.
     _row = aRow;
+    
+    // Set the column of the node.
     _column = aColumn;
+    
+    // Set the move cost of moving to this A* Node to the inputted value.
     _moveCost = aValue;
+    
+    // Set that this A* Node is NOT the end A* Node by default.
     _isEnd = NO;
+    
+    // Set that this A* Node is NOT the start A* Node by default.
     _isStart = NO;
+    
+    // Set the parent A* Node of this A* Node to be nil (or non-existent).
     _parent = nil;
   }
+  // Return the A* Node instance.
   return self;
 }
 
