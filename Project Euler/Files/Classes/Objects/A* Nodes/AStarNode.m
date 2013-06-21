@@ -16,6 +16,7 @@
 #pragma mark - Getters
 
 - (uint)f; {
+  // Return the sum of the distance to the next node, and the heuristic distance.
   return _g + _h;
 }
 
