@@ -202,6 +202,12 @@
   // Variable to hold if the numbers are permutations of each other or not.
   BOOL isAPermutation = YES;
   
+  // Variable to hold the digit we are looking at.
+  uint digit = 0;
+  
+  // Variable to hold the power of 10 for the current digit.
+  int powerOf10 = 1;
+  
   // Variable array to hold the number of each digits in the first number.
   uint digitsUsedInFirstNumber[10];
   
@@ -218,12 +224,6 @@
     // second number.
     digitsUsedInSecondNumber[digit] = 0;
   }
-  // Variable to hold the digit we are looking at.
-  uint digit = 0;
-  
-  // Variable to hold the power of 10 for the current digit.
-  int powerOf10 = 1;
-  
   // While the number of digits is positive,
   while(numberOfDigitsInFirstNumber >= 0){
     // Grab the current digit from the first number.
@@ -601,12 +601,12 @@
   // Variable to hold the digit we are looking at.
   uint digit = 0;
   
+  // Variable to hold the power of 10 for the current digit.
+  uint powerOf10 = 1;
+  
   // Variable to hold the sum of the factorial of the digits of the inputted
   // number.
   uint digitFactorialSum = 0;
-  
-  // Variable to hold the power of 10 for the current digit.
-  uint powerOf10 = 1;
   
   // While the number of digits is positive,
   while(numberOfDigits >= 0){

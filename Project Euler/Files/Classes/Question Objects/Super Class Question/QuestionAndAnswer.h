@@ -35,6 +35,7 @@
 @property (nonatomic, strong) NSString * estimatedComputationTime;
 @property (nonatomic, strong) NSString * estimatedBruteForceComputationTime;
 
+// Super methods for setup.
 - (void)initialize;
 - (void)computeAnswer;
 - (void)computeAnswerByBruteForce;
