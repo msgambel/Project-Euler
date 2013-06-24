@@ -48,13 +48,12 @@
 #pragma mark - Dealloc
 
 - (void)dealloc; {
-  // This application is ARC compliant, so no need to call [super dealloc];
-  
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
     // Remove the observer for the orientation detection.
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
   }
+  // This application is ARC compliant, so no need to call [super dealloc];
 }
 
 #pragma mark - View LifeStyle
