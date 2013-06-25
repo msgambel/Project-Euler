@@ -5,7 +5,7 @@
 //
 // This is a port of C# code originally written by Chew Keong TAN
 // See http://www.codeproject.com/csharp/biginteger.asp for more details.
-// 
+//
 // Objective-C Big Integer Library
 
 #import "BigInt.h"
@@ -13,26 +13,26 @@
 #define _BI_DEBUG_ 0
 
 static int primesBelow2000[] = {
-2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
-101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199,
-211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293,
-307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397,
-401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499,
-503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599,
-601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691,
-701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797,
-809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887,
-907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997,
-1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 1069, 1087, 1091, 1093, 1097,
-1103, 1109, 1117, 1123, 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193,
-1201, 1213, 1217, 1223, 1229, 1231, 1237, 1249, 1259, 1277, 1279, 1283, 1289, 1291, 1297,
-1301, 1303, 1307, 1319, 1321, 1327, 1361, 1367, 1373, 1381, 1399,
-1409, 1423, 1427, 1429, 1433, 1439, 1447, 1451, 1453, 1459, 1471, 1481, 1483, 1487, 1489, 1493, 1499,
-1511, 1523, 1531, 1543, 1549, 1553, 1559, 1567, 1571, 1579, 1583, 1597,
-1601, 1607, 1609, 1613, 1619, 1621, 1627, 1637, 1657, 1663, 1667, 1669, 1693, 1697, 1699,
-1709, 1721, 1723, 1733, 1741, 1747, 1753, 1759, 1777, 1783, 1787, 1789,
-1801, 1811, 1823, 1831, 1847, 1861, 1867, 1871, 1873, 1877, 1879, 1889,
-1901, 1907, 1913, 1931, 1933, 1949, 1951, 1973, 1979, 1987, 1993, 1997, 1999 };
+  2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
+  101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199,
+  211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293,
+  307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397,
+  401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499,
+  503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599,
+  601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691,
+  701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797,
+  809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887,
+  907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997,
+  1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 1069, 1087, 1091, 1093, 1097,
+  1103, 1109, 1117, 1123, 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193,
+  1201, 1213, 1217, 1223, 1229, 1231, 1237, 1249, 1259, 1277, 1279, 1283, 1289, 1291, 1297,
+  1301, 1303, 1307, 1319, 1321, 1327, 1361, 1367, 1373, 1381, 1399,
+  1409, 1423, 1427, 1429, 1433, 1439, 1447, 1451, 1453, 1459, 1471, 1481, 1483, 1487, 1489, 1493, 1499,
+  1511, 1523, 1531, 1543, 1549, 1553, 1559, 1567, 1571, 1579, 1583, 1597,
+  1601, 1607, 1609, 1613, 1619, 1621, 1627, 1637, 1657, 1663, 1667, 1669, 1693, 1697, 1699,
+  1709, 1721, 1723, 1733, 1741, 1747, 1753, 1759, 1777, 1783, 1787, 1789,
+  1801, 1811, 1823, 1831, 1847, 1861, 1867, 1871, 1873, 1877, 1879, 1889,
+  1901, 1907, 1913, 1931, 1933, 1949, 1951, 1973, 1979, 1987, 1993, 1997, 1999 };
 
 @implementation BigInt
 
@@ -53,7 +53,6 @@ static int primesBelow2000[] = {
 
 - (id)initWithLong:(long)value; {
 	if((self = [super init])){
-		
 		bzero(data, sizeof(data));
 		
 		long long tempVal = (long long)value;
@@ -63,12 +62,12 @@ static int primesBelow2000[] = {
 		// the length of the long datatype
 		
 		dataLength = 0;
+    
 		while (tmp2 != 0 && dataLength < MAX_LENGTH) {
 			data[dataLength] = (uint)(tmp2 & 0xFFFFFFFF);
 			tmp2 >>= 32;
 			dataLength++;
 		}
-		
 		if (tempVal > 0)         // overflow check for +ve value
 		{
 			if (tmp2 != 0 || (data[MAX_LENGTH - 1] & 0x80000000) != 0)
@@ -80,7 +79,6 @@ static int primesBelow2000[] = {
 				@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Negative underflow in constructor." userInfo:nil];
 			
 		}
-		
 		if (dataLength == 0)
 			dataLength = 1;
 	}
@@ -89,7 +87,6 @@ static int primesBelow2000[] = {
 
 - (id)initWithULong:(ulong)value; {
 	if(self = [super init]) {
-		
 		bzero(data, sizeof(data));
 		
 		ulong tempVal = (ulong)value;
@@ -112,33 +109,32 @@ static int primesBelow2000[] = {
 				@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Positive overflow in constructor." userInfo:nil];
 		}
     // Since ulong can never be -ve, this case is commented out.
-//		else if (tempVal < 0)    // underflow check for -ve value
-//		{
-//			if (tmp2 != -1 || (data[MAX_LENGTH - 1] & 0x80000000) == 0)
-//				@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Negative underflow in constructor." userInfo:nil];
-//		}
-//		
+    //		else if (tempVal < 0)    // underflow check for -ve value
+    //		{
+    //			if (tmp2 != -1 || (data[MAX_LENGTH - 1] & 0x80000000) == 0)
+    //				@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Negative underflow in constructor." userInfo:nil];
+    //		}
+    //
 		if (dataLength == 0)
 			dataLength = 1;
 	}
 	return self;
 }
 
--(id)initWithBigInt:(BigInt *)value {
+- (id)initWithBigInt:(BigInt *)value; {
 	if(self = [super init]) {
 		bzero(data, sizeof(data));
 		
-		dataLength = value.dataLength;		
+		dataLength = value.dataLength;
 		for (int i = 0; i < dataLength; i++)
 			data[i] = [value getDataAtIndex:i];
 	}
 	return self;
 }
 
--(id)initWithUIntArray:(uint *)value withSize:(int)size{
+- (id)initWithUIntArray:(uint *)value withSize:(int)size; {
 	if(self = [super init]) {
 		bzero(data, sizeof(data));
-		
 		dataLength = size;
 		
 		if (dataLength > MAX_LENGTH)
@@ -147,7 +143,6 @@ static int primesBelow2000[] = {
 		for (int i = dataLength - 1, j = 0; i >= 0; i--, j++) {
 			data[j] = (uint)(value[i]);
 		}
-		
 		while (dataLength > 1 && data[dataLength - 1] == 0)
 			dataLength--;
 		
@@ -155,7 +150,7 @@ static int primesBelow2000[] = {
 	return self;
 }
 
--(id)initWithString:(NSString *)value andRadix:(int)radix {
+- (id)initWithString:(NSString *)value andRadix:(int)radix; {
 	if(self = [super init]) {
 		bzero(data, sizeof(data));
 		
@@ -191,7 +186,6 @@ static int primesBelow2000[] = {
 					multiplier = [multiplier multiply:[BigInt createFromInt:radix]];
 			}
 		}
-		
 		if ([value characterAtIndex:0] == '-')     // negative values
 		{
 			if (([result getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) == 0)
@@ -202,92 +196,86 @@ static int primesBelow2000[] = {
 			if (([result getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)
 				@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Positive overflow in constructor." userInfo:nil];
 		}
-		
 		for (int i = 0; i < result.dataLength; i++)
 			[self setData:[result getDataAtIndex:i] atIndex:i];
 		
-		dataLength = result.dataLength;	
+		dataLength = result.dataLength;
 	}
 	return self;
 }
 
-+(BigInt *)create {
++ (BigInt *)create; {
 	return [BigInt createFromLong:0];
 }
 
-+(BigInt *)createFromInt:(int)value {
++ (BigInt *)createFromInt:(int)value; {
 	return [[BigInt alloc] initWithLong:(long)value];
 }
 
-+(BigInt *)createFromLong:(long)value {
++ (BigInt *)createFromLong:(long)value; {
 	return [[BigInt alloc] initWithLong:value];
 }
 
-+(BigInt *)createFromULong:(ulong)value {
++ (BigInt *)createFromULong:(ulong)value; {
 	return [[BigInt alloc] initWithULong:value];
 }
 
-+(BigInt *)createFromBigInt:(BigInt *)value {
++ (BigInt *)createFromBigInt:(BigInt *)value; {
 	return [[BigInt alloc] initWithBigInt:value];
 }
 
-+(BigInt *)createFromString:(NSString *)value andRadix:(int)radix {
++ (BigInt *)createFromString:(NSString *)value andRadix:(int)radix; {
 	return [[BigInt alloc] initWithString:value andRadix:radix];
 }
 
--(uint *)getData {
+- (uint *)getData; {
 	return data;
 }
 
--(uint)getDataAtIndex:(int)index {
+- (uint)getDataAtIndex:(int)index; {
 	return data[index];
 }
 
--(void)setData:(uint)value atIndex:(int)index {
+- (void)setData:(uint)value atIndex:(int)index; {
 	data[index] = value;
 }
 
--(BigInt *)add:(BigInt *)bi2 {
+- (BigInt *)add:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"add");
 #endif
 	
-	BigInt *result = [BigInt create];
-	
+	BigInt * result = [BigInt create];
 	result.dataLength = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
-	
 	ulong carry = 0;
+  
 	for (int i = 0; i < result.dataLength; i++) {
 		ulong sum = (ulong)[self getDataAtIndex:i] + (ulong)[bi2 getDataAtIndex:i] + carry;
 		carry = sum >> 32;
 		[result setData:(uint)(sum & 0xFFFFFFFF) atIndex:i];
 	}
-	
 	if (carry != 0 && result.dataLength < MAX_LENGTH) {
 		[result setData:(uint)carry atIndex:result.dataLength];
 		result.dataLength++;
 	}
-	
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
 	// overflow check
 	int lastPos = MAX_LENGTH - 1;
 	if (([self getDataAtIndex:lastPos] & 0x80000000) == ([bi2 getDataAtIndex:lastPos] & 0x80000000) &&
-		([result getDataAtIndex:lastPos] & 0x80000000) != ([self getDataAtIndex:lastPos] & 0x80000000)) {
+      ([result getDataAtIndex:lastPos] & 0x80000000) != ([self getDataAtIndex:lastPos] & 0x80000000)) {
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Overflow" userInfo:nil];
 	}
-	
 	return result;
 }
 
--(BigInt *)subtract:(BigInt *)bi2 {
+- (BigInt *)subtract:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"subtract");
 #endif
 	
-	BigInt *result = [[BigInt alloc] init];
-	
+	BigInt * result = [[BigInt alloc] init];
 	result.dataLength = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
 	long carryIn = 0;
@@ -300,7 +288,6 @@ static int primesBelow2000[] = {
 		else
 			carryIn = 0;
 	}
-	
 	// roll over to negative
 	if (carryIn != 0) {
 		for (int i = result.dataLength; i < MAX_LENGTH; i++) {
@@ -308,24 +295,22 @@ static int primesBelow2000[] = {
 		}
 		result.dataLength = MAX_LENGTH;
 	}
-	
 	// fixed in v1.03 to give correct datalength for a - (-b)
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
 	// overflow check
-	
 	int lastPos = MAX_LENGTH - 1;
+  
 	if (([self getDataAtIndex:lastPos] & 0x80000000) != ([bi2 getDataAtIndex:lastPos] & 0x80000000) &&
-		([result getDataAtIndex:lastPos] & 0x80000000) != ([self getDataAtIndex:lastPos] & 0x80000000)) {
+      ([result getDataAtIndex:lastPos] & 0x80000000) != ([self getDataAtIndex:lastPos] & 0x80000000)) {
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Overflow" userInfo:nil];
 	}
-	
 	return result;
 }
 
--(BigInt *)multiply:(BigInt *)bi2 {
-#if _BI_DEBUG_	
+- (BigInt *)multiply:(BigInt *)bi2; {
+#if _BI_DEBUG_
 	NSLog(@"multiply");
 #endif
 	
@@ -363,7 +348,6 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_
 				NSLog(@"bi1_val = %qi", bi1_val);
 #endif
-				
 				ulong val = (bi1_val * bi2_val) + res_val + mcarry;
 				//ulong val = ((ulong)([bi1 getDataAtIndex:i] * [bi2 getDataAtIndex:j]) + (ulong)[result getDataAtIndex:k] + mcarry);
 				
@@ -373,7 +357,6 @@ static int primesBelow2000[] = {
 				NSLog(@"mcarry=%qi", mcarry);
 #endif
 			}
-			
 			if (mcarry != 0) {
 				[result setData:(uint)mcarry atIndex:(i + bi2.dataLength)];
 				
@@ -386,16 +369,14 @@ static int primesBelow2000[] = {
 	@catch (NSException *ex) {
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Multiplication overflow." userInfo:nil];
 	}
-	
 	result.dataLength = self.dataLength + bi2.dataLength;
+  
 	if (result.dataLength > MAX_LENGTH) {
 		result.dataLength = MAX_LENGTH;
 	}
-	
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0) {
 		result.dataLength--;
 	}
-	
 	// overflow check (result is -ve)
 	if (([result getDataAtIndex:lastPos] & 0x80000000) != 0) {
 		if (bi1Neg != bi2Neg && [result getDataAtIndex:lastPos] == 0x80000000)    // different sign
@@ -418,10 +399,8 @@ static int primesBelow2000[] = {
 				}
 			}
 		}
-		
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"overflow." userInfo:nil];
 	}
-	
 	// if input has different signs, then result is -ve
 	if (bi1Neg != bi2Neg)
 		result = [result negate];
@@ -429,7 +408,7 @@ static int primesBelow2000[] = {
 	return result;
 }
 
--(BigInt *)negate {
+- (BigInt *)negate; {
 #if _BI_DEBUG_
 	NSLog(@"negagte");
 #endif
@@ -437,7 +416,7 @@ static int primesBelow2000[] = {
 	if (self.dataLength == 1 && [self getDataAtIndex:0] == 0)
 		return [BigInt create];
   
-	BigInt *result = [BigInt createFromBigInt:self];
+	BigInt * result = [BigInt createFromBigInt:self];
 	
 	// 1's complement
 	for (int i = 0; i < MAX_LENGTH; i++)
@@ -456,7 +435,6 @@ static int primesBelow2000[] = {
 		
 		index++;
 	}
-	
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) == ([result getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000))
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Overflow in negation." userInfo:nil];
 	
@@ -468,7 +446,7 @@ static int primesBelow2000[] = {
 	return result;
 }
 
--(BigInt *)divide:(BigInt *)bi2 {
+- (BigInt *)divide:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"divide");
 #endif
@@ -490,7 +468,6 @@ static int primesBelow2000[] = {
 		bi2 = [bi2 negate];
 		divisorNeg = true;
 	}
-	
 	if ([bi1 lessThan: bi2]) {
 		//return quotient;
 	} else {
@@ -501,7 +478,7 @@ static int primesBelow2000[] = {
 		
 		if (dividendNeg != divisorNeg)
 			quotient = [quotient negate];
-	}	
+	}
 	return quotient;
 }
 
@@ -527,12 +504,12 @@ static int primesBelow2000[] = {
   return [numerator divide:denominator];
 }
 
--(BigInt *)not {
+- (BigInt *)not; {
 #if _BI_DEBUG_
 	NSLog(@"not");
-#endif	
+#endif
 	
-	BigInt *result = [[BigInt alloc] initWithBigInt:self];
+	BigInt * result = [[BigInt alloc] initWithBigInt:self];
 	
 	for (int i = 0; i < MAX_LENGTH; i++)
 		[result setData:(uint)(~([self getDataAtIndex:i])) atIndex:i];
@@ -545,36 +522,32 @@ static int primesBelow2000[] = {
 	return result;
 }
 
-
--(BigInt *)shiftLeft:(int)shiftVal {
+- (BigInt *)shiftLeft:(int)shiftVal; {
 #if _BI_DEBUG_
 	NSLog(@"shiftLeft");
 #endif
 	
-	BigInt *result = [[BigInt alloc] initWithBigInt:self];
-	
+	BigInt * result = [[BigInt alloc] initWithBigInt:self];
 	/*
-	uint tmp[MAX_LENGTH];
-	bzero(tmp, sizeof(tmp));
-	
-	for(int i = 0; i < result.dataLength; i++) {
-		tmp[i] = [result getDataAtIndex:i];
-	}
+   uint tmp[MAX_LENGTH];
+   bzero(tmp, sizeof(tmp));
+   
+   for(int i = 0; i < result.dataLength; i++) {
+   tmp[i] = [result getDataAtIndex:i];
+   }
 	 */
 	
 	result.dataLength = [BigInt shiftLeft:[result getData] withSizeOf:result.dataLength bits:shiftVal];
 	
 	/*
-	for(int i = 0; i < result.dataLength; i++) {
-		[result setData: tmp[i] atIndex: i];
-	}
+   for(int i = 0; i < result.dataLength; i++) {
+   [result setData: tmp[i] atIndex: i];
+   }
 	 */
-	
 	return result;
 }
 
-
--(BigInt *)shiftRight:(int)shiftVal {
+- (BigInt *)shiftRight:(int)shiftVal; {
 #if _BI_DEBUG_
 	NSLog(@"shiftRight");
 #endif
@@ -584,7 +557,7 @@ static int primesBelow2000[] = {
 	return result;
 }
 
--(BOOL)equals:(BigInt *)bi {
+- (BOOL)equals:(BigInt *)bi; {
 #if _BI_DEBUG_
 	NSLog(@"equals");
 #endif
@@ -596,10 +569,10 @@ static int primesBelow2000[] = {
 		if ([self getDataAtIndex:i] != [bi getDataAtIndex:i])
 			return false;
 	}
-	return true;	
+	return true;
 }
 
--(BOOL)greaterThan:(BigInt *)bi2 {
+- (BOOL)greaterThan:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"greaterThan");
 #endif
@@ -626,7 +599,7 @@ static int primesBelow2000[] = {
 	return false;
 }
 
--(BOOL)lessThan:(BigInt *)bi2 {
+- (BOOL)lessThan:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"lessThan");
 #endif
@@ -653,11 +626,11 @@ static int primesBelow2000[] = {
 	return false;
 }
 
--(BOOL)lessThanOrEqualTo:(BigInt *)bi2 {
+- (BOOL)lessThanOrEqualTo:(BigInt *)bi2; {
 	return ([self lessThan:bi2] || [self equals:bi2]);
 }
 
--(BOOL)greaterThanOrEqualTo:(BigInt *)bi2 {
+- (BOOL)greaterThanOrEqualTo:(BigInt *)bi2; {
 	return ([self greaterThan:bi2] || [self equals:bi2]);
 }
 
@@ -668,11 +641,8 @@ static int primesBelow2000[] = {
   uint numberOfDigits = 1;
   
   BigInt * bigIntRadix = [BigInt createFromLong:aRadix];
-  
   BigInt * originalNumber = [BigInt createFromBigInt:self];
-  
   BigInt * quotient = [BigInt create];
-  
 	BigInt * remainder = [BigInt create];
   
   while(originalNumber.dataLength > 1 || (originalNumber.dataLength == 1 && [originalNumber getDataAtIndex:0] != 0)){
@@ -686,7 +656,8 @@ static int primesBelow2000[] = {
 //***********************************************************************
 // Returns the absolute value
 //***********************************************************************
--(BigInt *)abs {
+
+- (BigInt *)abs; {
 #if _BI_DEBUG_
 	NSLog(@"abs");
 #endif
@@ -697,7 +668,7 @@ static int primesBelow2000[] = {
 		return [BigInt createFromBigInt:self];
 }
 
--(BigInt *)sqrt {
+- (BigInt *)sqrt; {
 #if _BI_DEBUG_
 	NSLog(@"sqrt");
 #endif
@@ -710,10 +681,9 @@ static int primesBelow2000[] = {
 	
 	uint bytePos = numBits >> 5;
 	int bitPos = (int)(numBits & 0x1F);
-	
-	uint mask;
-	
-	BigInt *result = [BigInt create];
+	uint mask = 0;
+	BigInt * result = [BigInt create];
+  
 	if (bitPos == 0)
 		mask = 0x80000000;
 	else {
@@ -738,13 +708,13 @@ static int primesBelow2000[] = {
 	return result;
 }
 
--(BigInt *)gcd:(BigInt *)bi {
+- (BigInt *)gcd:(BigInt *)bi; {
 #if _BI_DEBUG_
 	NSLog(@"gcd");
 #endif
   
-	BigInt *x;
-	BigInt *y;
+	BigInt * x;
+	BigInt * y;
 	
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)     // negative
 		x = [self negate];
@@ -756,7 +726,7 @@ static int primesBelow2000[] = {
 	else
 		y = [BigInt createFromBigInt:bi];
 	
-	BigInt *g = y;
+	BigInt * g = y;
 	
 	while (x.dataLength > 1 || (x.dataLength == 1 && [x getDataAtIndex:0] != 0)) {
 		g = x;
@@ -776,7 +746,8 @@ static int primesBelow2000[] = {
 // [self toStringWithRadix:16] returns "-FF"
 //
 //***********************************************************************
--(NSString *)toStringWithRadix:(int)radix {
+
+- (NSString *)toStringWithRadix:(int)radix; {
 #if _BI_DEBUG_
 	NSLog(@"toStringWithRadix");
 #endif
@@ -784,12 +755,11 @@ static int primesBelow2000[] = {
 	if (radix < 2 || radix > 36)
 		@throw [NSException exceptionWithName:@"ArgumentException" reason:@"Radix must be >= 2 and <= 36" userInfo:nil];
 	
-	NSString *charSet = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	NSString * charSet = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	NSMutableString *result = [[NSMutableString alloc] init];
-	
-	BigInt *a = self;
-	
+	BigInt * a = self;
 	bool negative = false;
+  
 	if (([a getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0) {
 		negative = true;
 		@try {
@@ -797,7 +767,6 @@ static int primesBelow2000[] = {
 		}
 		@catch (NSException *ex) { }
 	}
-	
 	BigInt *quotient = [BigInt create];
 	BigInt *remainder = [BigInt create];
 	BigInt *biRadix = [BigInt createFromLong:radix];
@@ -824,11 +793,10 @@ static int primesBelow2000[] = {
 	return sOut;
 }
 
-+(int)shiftLeft:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal {
++ (int)shiftLeft:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal; {
 #if _BI_DEBUG_
 	NSLog(@"shiftLeft");
-
-	
+  
 	for(int i = 0; i < bufferSize; i++)
 		NSLog(@"buffer[%d] = %ld", i, buffer[i]);
 #endif
@@ -853,7 +821,6 @@ static int primesBelow2000[] = {
 			buffer[i] = (uint)(val & 0xFFFFFFFF);
 			carry = val >> 32;
 		}
-		
 		if (carry != 0) {
 			if (bufLen + 1 <= bufferSize) {
 				buffer[bufLen] = (uint)carry;
@@ -862,10 +829,10 @@ static int primesBelow2000[] = {
 		}
 		count -= shiftAmount;
 	}
-	return bufLen;	
+	return bufLen;
 }
 
-+(int)shiftRight:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal {
++ (int)shiftRight:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal; {
 #if _BI_DEBUG_
 	NSLog(@"shiftRight");
 #endif
@@ -882,7 +849,6 @@ static int primesBelow2000[] = {
 			shiftAmount = count;
 			invShift = 32 - shiftAmount;
 		}
-		
 		ulong carry = 0;
 		for (int i = bufLen - 1; i >= 0; i--) {
 			ulong val = ((ulong)buffer[i]) >> shiftAmount;
@@ -891,17 +857,15 @@ static int primesBelow2000[] = {
 			carry = ((ulong)buffer[i]) << invShift;
 			buffer[i] = (uint)(val);
 		}
-		
 		count -= shiftAmount;
 	}
-	
 	while (bufLen > 1 && buffer[bufLen - 1] == 0)
 		bufLen--;
 	
 	return bufLen;
 }
 
-+(void)singleByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder {
++ (void)singleByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder; {
 #if _BI_DEBUG_
 	NSLog(@"singleByteDivide");
 #endif
@@ -926,7 +890,6 @@ static int primesBelow2000[] = {
 	if (dividend >= divisor) {
 		ulong quotient = dividend / divisor;
 		result[resultPos++] = (uint)quotient;
-		
 		[outRemainder setData:(uint)(dividend % divisor) atIndex:pos];
 	}
 	pos--;
@@ -939,7 +902,6 @@ static int primesBelow2000[] = {
 		[outRemainder setData:0 atIndex:pos + 1];
 		[outRemainder setData:(uint)(dividend % divisor) atIndex:pos--];
 	}
-	
 	(*outQuotient).dataLength = resultPos;
 	int j = 0;
 	for (int i =(*outQuotient).dataLength - 1; i >= 0; i--, j++)
@@ -958,8 +920,8 @@ static int primesBelow2000[] = {
 		(outRemainder).dataLength--;
 }
 
-+(void)multiByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder {
-#if _BI_DEBUG_	
++ (void)multiByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder; {
+#if _BI_DEBUG_
 	NSLog(@"multiByteDivide");
 #endif
 	uint result[MAX_LENGTH];
@@ -976,7 +938,6 @@ static int primesBelow2000[] = {
 	while (mask != 0 && (val & mask) == 0) {
 		shift++; mask >>= 1;
 	}
-	
 	for (int i = 0; i < bi1.dataLength; i++)
 		remainder[i] = [bi1 getDataAtIndex:i];
 	
@@ -1001,7 +962,7 @@ static int primesBelow2000[] = {
 	ulong secondDivisorByte = [bi2 getDataAtIndex:(bi2.dataLength - 2)];
 	
 	int divisorLen = bi2.dataLength + 1;
-	uint dividendPart[divisorLen];	
+	uint dividendPart[divisorLen];
 	bzero(dividendPart, sizeof(dividendPart));
 	
 	while (j > 0) {
@@ -1015,7 +976,7 @@ static int primesBelow2000[] = {
 			done = true;
 			
 			if (q_hat == 0x10000000 ||
-				(q_hat * secondDivisorByte) > ((r_hat << 32) + (ulong)remainder[pos - 2])) {
+          (q_hat * secondDivisorByte) > ((r_hat << 32) + (ulong)remainder[pos - 2])) {
 				q_hat--;
 				r_hat += firstDivisorByte;
 				
@@ -1023,12 +984,10 @@ static int primesBelow2000[] = {
 					done = false;
 			}
 		}
-		
 		for (int h = 0; h < divisorLen; h++) {
 #if _BI_DEBUG_
 			NSLog(@"dividendPart[%d] = %u", h, remainder[pos - h]);
 #endif
-			
 			dividendPart[h] = remainder[pos - h];
 		}
 		
@@ -1036,66 +995,56 @@ static int primesBelow2000[] = {
 		NSLog(@"q_hat = %qi", q_hat);
 #endif
 		
-		BigInt *kk = [[BigInt alloc] initWithUIntArray:dividendPart withSize:divisorLen];
-		BigInt *ss = [bi2 multiply:[BigInt createFromULong:(ulong)q_hat]];
+		BigInt * kk = [[BigInt alloc] initWithUIntArray:dividendPart withSize:divisorLen];
+		BigInt * ss = [bi2 multiply:[BigInt createFromULong:(ulong)q_hat]];
 		
 		while ([ss greaterThan: kk]) {
 			q_hat--;
 			
 			/*
-			BigInt *tmp = [ss divide: bi2];
-			if([tmp getDataAtIndex:0] == 0) {
-				tmp = [tmp add:[BigInt createFromInt:1]];
-			}
-			
-			ss = [ss subtract:[bi2 multiply:tmp]];
-			*/
+       BigInt *tmp = [ss divide: bi2];
+       if([tmp getDataAtIndex:0] == 0) {
+       tmp = [tmp add:[BigInt createFromInt:1]];
+       }
+       
+       ss = [ss subtract:[bi2 multiply:tmp]];
+       */
 			ss = [ss subtract:bi2];
 		}
-		BigInt *yy = [kk subtract:ss];
+		BigInt * yy = [kk subtract:ss];
 		
 		for (int h = 0; h < divisorLen; h++) {
 			remainder[pos - h] = [yy getDataAtIndex:(bi2.dataLength - h)];
 		}
-		
 #if _BI_DEBUG_
 		for(int i = 0; i < remainderLen; i++) {
 			NSLog(@"remainder[%d] = %u", i, remainder[i]);
 		}
 #endif
-		
-		
 		result[resultPos++] = (uint)q_hat;
-		
 		pos--;
 		j--;
 	}
-	
 	outQuotient.dataLength = resultPos;
 	int y = 0;
 	
 	for (int x = outQuotient.dataLength - 1; x >= 0; x--, y++) {
 		[outQuotient setData:result[x] atIndex:y];
 	}
-	
 	for (; y < MAX_LENGTH; y++) {
 		[outQuotient setData:0 atIndex:y];
 	}
-	
 	while (outQuotient.dataLength > 1 && [outQuotient getDataAtIndex:(outQuotient.dataLength - 1)] == 0) {
 		outQuotient.dataLength--;
 	}
-	
 	if (outQuotient.dataLength == 0) {
 		outQuotient.dataLength = 1;
 	}
-	
 	outRemainder.dataLength = [BigInt shiftRight:remainder withSizeOf:remainderLen bits:shift];
 	
 	for (y = 0; y < outRemainder.dataLength; y++) {
 		[outRemainder setData:remainder[y] atIndex:y];
 	}
-	
 	for (; y < MAX_LENGTH; y++) {
 		[outRemainder setData:0 atIndex:y];
 	}
@@ -1104,15 +1053,15 @@ static int primesBelow2000[] = {
 //***********************************************************************
 // Modulo
 //***********************************************************************
--(BigInt *)mod:(BigInt *)bi2 {
-	
+
+- (BigInt *)mod:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"mod");
 #endif
 	
-	BigInt *quotient = [BigInt create];
-	BigInt *remainder =	[BigInt createFromBigInt:self];
-	BigInt *bi1 = [BigInt createFromBigInt:self];
+	BigInt * quotient = [BigInt create];
+	BigInt * remainder =	[BigInt createFromBigInt:self];
+	BigInt * bi1 = [BigInt createFromBigInt:self];
 	
 	int lastPos = MAX_LENGTH - 1;
 	bool dividendNeg = false;
@@ -1127,90 +1076,88 @@ static int primesBelow2000[] = {
 	
 	if ([bi1 lessThan: bi2]) {
 		//return remainder;
-	} else {
+	}
+  else {
 		if (bi2.dataLength == 1)
 			[BigInt singleByteDivide:bi1 bi2:bi2 outQuotient:quotient outRemainder:remainder];
 		else
 			[BigInt multiByteDivide:bi1 bi2:bi2 outQuotient:quotient outRemainder:remainder];
 		if (dividendNeg)
 			remainder = [remainder negate];
-	}	
+	}
 	return remainder;
 }
 
 //***********************************************************************
 // bitwise AND
 //***********************************************************************
--(BigInt *)and:(BigInt *)bi2 {
+
+- (BigInt *)and:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"and");
 #endif
 	
-	BigInt *result = [BigInt createFromLong:0];
-	
+	BigInt * result = [BigInt createFromLong:0];
 	int len = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
 	for (int i = 0; i < len; i++) {
 		uint sum = (uint)([self getDataAtIndex:i] & [bi2 getDataAtIndex:i]);
 		[result setData:sum atIndex:i];
 	}
-	
 	result.dataLength = MAX_LENGTH;
 	
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
-	return result;	
+	return result;
 }
 
 //***********************************************************************
 // bitwise OR
 //***********************************************************************
--(BigInt *)or:(BigInt *)bi2 {
+
+- (BigInt *)or:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"or");
 #endif
 	
-	BigInt *result = [BigInt createFromLong:0];
-	
+	BigInt * result = [BigInt createFromLong:0];
 	int len = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
 	for (int i = 0; i < len; i++) {
 		uint sum = (uint)([self getDataAtIndex:i] | [bi2 getDataAtIndex:i]);
 		[result setData:sum atIndex:i];
 	}
-	
 	result.dataLength = MAX_LENGTH;
 	
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
-	return result;	
+	return result;
 }
 
 //***********************************************************************
 // bitwise XOR
 //***********************************************************************
--(BigInt *)xOr:(BigInt *)bi2 {
+
+- (BigInt *)xOr:(BigInt *)bi2; {
 #if _BI_DEBUG_
 	NSLog(@"xOr");
 #endif
 	
-	BigInt *result = [BigInt createFromLong:0];
-	
+	BigInt * result = [BigInt createFromLong:0];
 	int len = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
 	for (int i = 0; i < len; i++) {
 		uint sum = (uint)([self getDataAtIndex:i] ^ [bi2 getDataAtIndex:i]);
 		[result setData:sum atIndex:i];
 	}
-	
 	result.dataLength = MAX_LENGTH;
 	
 	while (result.dataLength > 1 && [result getDataAtIndex:(result.dataLength - 1)] == 0)
 		result.dataLength--;
 	
-	return result;	
+	return result;
 }
 
 //***********************************************************************
@@ -1222,7 +1169,8 @@ static int primesBelow2000[] = {
 //      The result is 2, if the value of BigInt is 0...0000 0011
 //
 //***********************************************************************
--(int)bitCount {
+
+- (int)bitCount; {
 #if _BI_DEBUG_
 	NSLog(@"bitCount");
 #endif
@@ -1239,14 +1187,14 @@ static int primesBelow2000[] = {
 		mask >>= 1;
 	}
 	bits += ((self.dataLength - 1) << 5);
-	
 	return bits;
 }
 
 //***********************************************************************
 // Modulo Exponentiation
 //***********************************************************************
--(BigInt *)modPow:(BigInt *)exp withMod:(BigInt *)mod {
+
+- (BigInt *)modPow:(BigInt *)exp withMod:(BigInt *)mod; {
 #if _BI_DEBUG_
 	NSLog(@"modPow");
 #endif
@@ -1254,8 +1202,8 @@ static int primesBelow2000[] = {
 	if (([exp getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Positive exponents only." userInfo:nil];
 	
-	BigInt *resultNum = [BigInt createFromLong:1];
-	BigInt *tempNum;
+	BigInt * resultNum = [BigInt createFromLong:1];
+	BigInt * tempNum;
 	bool thisNegative = false;
 	
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)   // negative this
@@ -1270,7 +1218,7 @@ static int primesBelow2000[] = {
 		mod = [mod negate];
 	
 	// calculate constant = b^(2k) / m
-	BigInt *constant = [BigInt create];
+	BigInt * constant = [BigInt create];
 	
 	int i = mod.dataLength << 1;
 	[constant setData:0x00000001 atIndex:i];
@@ -1283,7 +1231,6 @@ static int primesBelow2000[] = {
 	// perform squaring and multiply exponentiation
 	for (int pos = 0; pos < exp.dataLength; pos++) {
 		uint mask = 0x01;
-		
 		//NSLog(@"Pos = %d of %d", pos, exp.dataLength);
 		
 		for (int index = 0; index < 32; index++) {
@@ -1294,7 +1241,6 @@ static int primesBelow2000[] = {
 				resultNum = [BigInt barrettReduction:[resultNum multiply: tempNum] andN:mod andConstant:constant];
 			
 			mask <<= 1;
-			
 			tempNum = [BigInt barrettReduction:[tempNum multiply:tempNum] andN:mod andConstant:constant];
 			
 			if (tempNum.dataLength == 1 && [tempNum getDataAtIndex:0] == 1) {
@@ -1308,13 +1254,11 @@ static int primesBelow2000[] = {
 				break;
 		}
 	}
-	
 	if (thisNegative && ([exp getDataAtIndex:0] & 0x1) != 0)    //odd exp
 		resultNum = [resultNum negate];
 	
 	return resultNum;
 }
-
 
 //***********************************************************************
 // Fast calculation of modular reduction using Barrett's reduction.
@@ -1323,7 +1267,8 @@ static int primesBelow2000[] = {
 //
 // Reference [4]
 //***********************************************************************
-+(BigInt *)barrettReduction:(BigInt *)x andN:(BigInt *)n andConstant:(BigInt *)constant {
+
++ (BigInt *)barrettReduction:(BigInt *)x andN:(BigInt *)n andConstant:(BigInt *)constant; {
 #if _BI_DEBUG_
 	NSLog(@"barrettReduction: x:%@ n:%@ c:%@", [x toStringWithRadix:10], [n toStringWithRadix:10], [constant toStringWithRadix:10]);
 #endif
@@ -1331,36 +1276,34 @@ static int primesBelow2000[] = {
 	int k = n.dataLength;
 	int kPlusOne = k + 1;
 	int kMinusOne = k - 1;
-	
-	BigInt *q1 = [BigInt create];	
+	BigInt * q1 = [BigInt create];
 	
 	// q1 = x / b^(k-1)
 	for (int i = kMinusOne, j = 0; i < x.dataLength; i++, j++) {
 		[q1 setData:[x getDataAtIndex:i] atIndex:j];
 	}
-	
 	q1.dataLength = x.dataLength - kMinusOne;
+  
 	if (q1.dataLength <= 0) {
 		q1.dataLength = 1;
 	}
-	
-	BigInt *q2 = [q1 multiply: constant];
-	BigInt *q3 = [BigInt create];
+	BigInt * q2 = [q1 multiply: constant];
+	BigInt * q3 = [BigInt create];
 	
 	// q3 = q2 / b^(k+1)
 	for (int i = kPlusOne, j = 0; i < q2.dataLength; i++, j++) {
 		[q3 setData:[q2 getDataAtIndex:i] atIndex:j];
 	}
-	
 	q3.dataLength = q2.dataLength - kPlusOne;
+  
 	if (q3.dataLength <= 0) {
 		q3.dataLength = 1;
 	}
-	
 	// r1 = x mod b^(k+1)
 	// i.e. keep the lowest (k+1) words
-	BigInt *r1 = [BigInt create];
+	BigInt * r1 = [BigInt create];
 	int lengthToCopy = (x.dataLength > kPlusOne) ? kPlusOne : x.dataLength;
+  
 	for (int i = 0; i < lengthToCopy; i++)
 		[r1 setData:[x getDataAtIndex:i] atIndex:i];
 	
@@ -1369,7 +1312,8 @@ static int primesBelow2000[] = {
 	// r2 = (q3 * n) mod b^(k+1)
 	// partial multiplication of q3 and n
 	
-	BigInt *r2 = [BigInt create];
+	BigInt * r2 = [BigInt create];
+  
 	for (int i = 0; i < q3.dataLength; i++) {
 		if ([q3 getDataAtIndex:i] == 0) continue;
 		
@@ -1382,17 +1326,15 @@ static int primesBelow2000[] = {
 			[r2 setData:(uint)(val & 0xFFFFFFFF) atIndex:t];
 			mcarry = (val >> 32);
 		}
-		
 		if (t < kPlusOne) {
 			[r2 setData:(uint)mcarry atIndex:t];
 		}
 	}
-	
 	r2.dataLength = kPlusOne;
+  
 	while (r2.dataLength > 1 && [r2 getDataAtIndex:(r2.dataLength - 1)] == 0) {
 		r2.dataLength--;
 	}
-	
 	r1 = [r1 subtract:r2];
 	
 	if (([r1 getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
@@ -1403,7 +1345,7 @@ static int primesBelow2000[] = {
 		r1 = [r1 add: val];
 	}
 	
-#if _BI_DEBUG_	
+#if _BI_DEBUG_
 	long cnt = 0;
 	
 	NSLog(@"r1=%@; n=%@", [r1 toStringWithRadix:10], [n toStringWithRadix:10]);
@@ -1414,11 +1356,10 @@ static int primesBelow2000[] = {
 		NSLog(@"loop count %ld", ++cnt);
 #endif
 		r1 = [r1 subtract:n];
-		
 		/*BigInt *tmp = [r1 divide:n];
-		if([tmp getDataAtIndex:0] == 0)
-			tmp = [tmp add:[BigInt createFromInt:1]];
-		r1 = [r1 subtract:[n multiply:tmp]];*/
+     if([tmp getDataAtIndex:0] == 0)
+     tmp = [tmp add:[BigInt createFromInt:1]];
+     r1 = [r1 subtract:[n multiply:tmp]];*/
 	}
 	return r1;
 }
@@ -1426,7 +1367,8 @@ static int primesBelow2000[] = {
 //***********************************************************************
 // Populates "this" with the specified amount of random bits
 //***********************************************************************
--(void)getRandomBits:(int)bits {
+
+- (void)getRandomBits:(int)bits; {
 #if _BI_DEBUG_
 	NSLog(@"getRandomBits");
 #endif
@@ -1444,7 +1386,6 @@ static int primesBelow2000[] = {
 		double d1 = ((double)(1 + arc4random())) / (double)10000000000;
 		data[i] = (uint)((long long)(d1 * 0x100000000) & 0xFFFFFFFF);
 	}
-	
 	for (int i = dwords; i < MAX_LENGTH; i++)
 		data[i] = 0;
 	
@@ -1467,7 +1408,8 @@ static int primesBelow2000[] = {
 //***********************************************************************
 // Returns the lowest 4 bytes of the BigInt as an int.
 //***********************************************************************
--(int)intValue {
+
+- (int)intValue; {
 	return (int)data[0];
 }
 
@@ -1478,12 +1420,14 @@ static int primesBelow2000[] = {
 //
 // Returns true if number is probably prime.
 //***********************************************************************
--(BOOL)isProbablePrimeWithConfidence:(int)confidence {
+
+- (BOOL)isProbablePrimeWithConfidence:(int)confidence; {
 #if _BI_DEBUG_
 	NSLog(@"isProbablePrimeWithConfidence");
 #endif
 	
-	BigInt *thisVal;
+	BigInt * thisVal;
+  
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
 		thisVal = [self negate];
 	else
@@ -1505,12 +1449,12 @@ static int primesBelow2000[] = {
 			return false;
 		}
 	}
-	
 	BOOL result = FALSE;
 	
 	if ([thisVal rabinMillerTestWithConfidence:confidence]) {
 		result = true;
-	} else {
+	}
+  else {
 		result = false;
 	}
 	return result;
@@ -1537,12 +1481,14 @@ static int primesBelow2000[] = {
 // For a detailed discussion of this primality test, see [6].
 //
 //***********************************************************************
--(BOOL)isProbablePrime {
+
+- (BOOL)isProbablePrime; {
 #if _BI_DEBUG_
 	NSLog(@"isProbablePrime");
 #endif
 	
-	BigInt *thisVal;
+	BigInt * thisVal;
+  
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
 		thisVal = [self negate];
 	else
@@ -1555,30 +1501,28 @@ static int primesBelow2000[] = {
 		else if ([thisVal getDataAtIndex:0] == 2 || [thisVal getDataAtIndex:0] == 3)
 			return true;
 	}
-	
 	if (([thisVal getDataAtIndex:0] & 0x1) == 0)     // even numbers
 		return false;
 	
 	// test for divisibility by primes < 2000
 	for (int p = 0; p < (sizeof(primesBelow2000)/sizeof(int)); p++) {
-		BigInt *divisor = [BigInt createFromLong:primesBelow2000[p]];
+		BigInt * divisor = [BigInt createFromLong:primesBelow2000[p]];
 		
 		if ([divisor greaterThanOrEqualTo: thisVal])
 			break;
 		
-		BigInt *resultNum = [thisVal  mod: divisor];
+		BigInt * resultNum = [thisVal  mod: divisor];
+    
 		if ([resultNum intValue] == 0) {
 			//Console.WriteLine("Not prime!  Divisible by {0}\n",
 			//                  primesBelow2000[p]);
-			
 			return false;
 		}
 	}
-	
 	// Perform BASE 2 Rabin-Miller Test
 	
 	// calculate values of s and t
-	BigInt *p_sub1 = [thisVal subtract:[BigInt createFromLong:1]];
+	BigInt * p_sub1 = [thisVal subtract:[BigInt createFromLong:1]];
 	int s = 0;
 	
 	for (int index = 0; index < p_sub1.dataLength; index++) {
@@ -1593,14 +1537,13 @@ static int primesBelow2000[] = {
 			s++;
 		}
 	}
-	
-	BigInt *t = [p_sub1 shiftRight: s];
+	BigInt * t = [p_sub1 shiftRight:s];
 	
 	//int bits = [thisVal bitCount];
-	BigInt *a = [BigInt createFromLong: 2];
+	BigInt *a = [BigInt createFromLong:2];
 	
 	// b = a^t mod p
-	BigInt *b = [a modPow:t withMod:thisVal];
+	BigInt * b = [a modPow:t withMod:thisVal];
 	bool result = false;
 	
 	if (b.dataLength == 1 && [b getDataAtIndex:0] == 1)         // a^t mod p = 1
@@ -1615,19 +1558,18 @@ static int primesBelow2000[] = {
 		
 		b = [[b multiply: b] mod: thisVal];
 	}
-	
 	// if number is strong pseudoprime to base 2, then do a strong lucas test
 	if (result)
 		result = [BigInt lucasStrongTest:thisVal];
 	
-	return result;	
+	return result;
 }
 
 //***********************************************************************
 // Generates a positive BigInt that is probably prime.
 //***********************************************************************
-+(BigInt *)generatePseudoPrimeWithBits:(int)bits andConfidence:(int)confidence {
-	
+
++ (BigInt *)generatePseudoPrimeWithBits:(int)bits andConfidence:(int)confidence; {
 #if _BI_DEBUG_
 	NSLog(@"generatePseudoPrimeWithBits");
 #endif
@@ -1649,23 +1591,23 @@ static int primesBelow2000[] = {
 	return result;
 }
 
-
 //***********************************************************************
 // Performs the calculation of the kth term in the Lucas Sequence.
 // For details of the algorithm, see reference [9].
 //
 // k must be odd.  i.e LSB == 1
 //***********************************************************************
-+(NSMutableArray *)lucasSequence:(BigInt *)P andQ:(BigInt *)Q andk:(BigInt *)k andn:(BigInt *)n andConstant:(BigInt *)constant ands:(int)s {
+
++ (NSMutableArray *)lucasSequence:(BigInt *)P andQ:(BigInt *)Q andk:(BigInt *)k andn:(BigInt *)n andConstant:(BigInt *)constant ands:(int)s; {
 	
-#if _BI_DEBUG_	
+#if _BI_DEBUG_
 	NSLog(@"lucasSequence: P:%@ Q:%@ k:%@ n:%@ constant:%@ s:%d",
-	[P toStringWithRadix:10],
-	[Q toStringWithRadix:10],
-	[k toStringWithRadix:10],
-	[n toStringWithRadix:10],
-	[constant toStringWithRadix:10],
-	s);
+        [P toStringWithRadix:10],
+        [Q toStringWithRadix:10],
+        [k toStringWithRadix:10],
+        [n toStringWithRadix:10],
+        [constant toStringWithRadix:10],
+        s);
 #endif
 	NSMutableArray * aRet = nil;
 	
@@ -1685,7 +1627,7 @@ static int primesBelow2000[] = {
 	
 	BigInt *v = [[BigInt createFromLong:2] mod: n];
 	BigInt *Q_k = [[BigInt createFromLong:1] mod: n];
-	BigInt *v1 = [P mod: n]; 
+	BigInt *v1 = [P mod: n];
 	BigInt *u1 = [BigInt createFromBigInt:Q_k];
 	
 	bool flag = true;
@@ -1704,7 +1646,7 @@ static int primesBelow2000[] = {
 				u1 = [[u1 multiply: v1] mod: n];
 				
 				v = [[[v multiply: v1] subtract: [P multiply: Q_k]] mod: n];
-
+        
 				v1 = [BigInt barrettReduction:[v1 multiply:v1] andN:n andConstant:constant];
 				//v1 = [n barrettReduction: [v1 multiply: v1] , n, constant);
 				
@@ -1733,7 +1675,6 @@ static int primesBelow2000[] = {
 				else
 					Q_k = [BigInt barrettReduction:[Q_k multiply: Q_k] andN: n andConstant: constant];
 			}
-			
 			mask >>= 1;
 		}
 		mask = 0x80000000;
@@ -1764,7 +1705,6 @@ static int primesBelow2000[] = {
 		else
 			Q_k = [BigInt barrettReduction:[Q_k multiply: Q_k] andN: n andConstant: constant];
 	}
-	
 	result[0] = u1;
 	result[1] = v;
 	result[2] = Q_k;
@@ -1776,7 +1716,6 @@ static int primesBelow2000[] = {
   
 	return aRet;
 }
-
 
 //***********************************************************************
 // Implementation of the Lucas Strong Pseudo Prime test.
@@ -1791,8 +1730,8 @@ static int primesBelow2000[] = {
 // Returns True if number is a strong Lucus pseudo prime.
 // Otherwise, returns False indicating that number is composite.
 //***********************************************************************
-+(BOOL)lucasStrongTest:(BigInt *) thisVal {
-	
+
++ (BOOL)lucasStrongTest:(BigInt *)thisVal; {
 #if _BI_DEBUG_
 	NSLog(@"lucasStrongTest");
 #endif
@@ -1812,7 +1751,6 @@ static int primesBelow2000[] = {
 		else if ([thisVal getDataAtIndex:0] == 2 || [thisVal getDataAtIndex:0] == 3)
 			return true;
 	}
-	
 	if (([thisVal getDataAtIndex:0] & 0x1) == 0)     // even numbers
 		return false;
 	
@@ -1834,17 +1772,14 @@ static int primesBelow2000[] = {
 				if ([[root multiply: root] equals: thisVal])
 					return false;
 			}
-			
 			//Console.WriteLine(D);
 			D = ((long)abs(D) + 2) * sign;
 			sign = -sign;
 		}
 		dCount++;
 	}
-	
 	long Q = (1 - D) >> 2;
-	
-	BigInt *p_add1 = [thisVal add:[BigInt createFromLong: 1]];
+	BigInt * p_add1 = [thisVal add:[BigInt createFromLong: 1]];
 	int s = 0;
 	
 	for (int index = 0; index < p_add1.dataLength; index++) {
@@ -1859,21 +1794,19 @@ static int primesBelow2000[] = {
 			s++;
 		}
 	}
-	
-	BigInt *t = [p_add1 shiftRight: s];
+	BigInt * t = [p_add1 shiftRight: s];
 	
 	// calculate constant = b^(2k) / m
 	// for Barrett Reduction
-	BigInt *constant = [BigInt create];
+	BigInt * constant = [BigInt create];
 	
 	int nLen = thisVal.dataLength << 1;
 	[constant setData:0x00000001 atIndex:nLen];
 	constant.dataLength = nLen + 1;
-	
 	constant = [constant divide: thisVal];
 	
 	NSMutableArray *aLucus = [BigInt lucasSequence:[BigInt createFromLong:1] andQ:[BigInt createFromLong:Q] andk:t andn:thisVal andConstant:constant ands:0];
-	BigInt *lucas[3];
+	BigInt * lucas[3];
   
   for(int j = 0; j < 3; j++){
     lucas[j] = nil;
@@ -1884,11 +1817,10 @@ static int primesBelow2000[] = {
 	bool isPrime = false;
 	
 	if ((lucas[0].dataLength == 1 && [lucas[0] getDataAtIndex:0] == 0) ||
-		(lucas[1].dataLength == 1 && [lucas[1] getDataAtIndex:0] == 0)) {
+      (lucas[1].dataLength == 1 && [lucas[1] getDataAtIndex:0] == 0)) {
 		// u(t) = 0 or V(t) = 0
 		isPrime = true;
 	}
-	
 	for (int i = 1; i < s; i++) {
 		if (!isPrime) {
 			// doubling of index
@@ -1900,11 +1832,9 @@ static int primesBelow2000[] = {
 			if ((lucas[1].dataLength == 1 && [lucas[1] getDataAtIndex:0] == 0))
 				isPrime = true;
 		}
-	
+    
 		lucas[2] = [BigInt barrettReduction:[lucas[2] multiply: lucas[2]] andN: thisVal andConstant: constant];     //Q^k
 	}
-	
-	
 	if (isPrime)     // additional checks for composite numbers
 	{
 		// If n is prime and gcd(n, Q) == 1, then
@@ -1931,8 +1861,8 @@ static int primesBelow2000[] = {
 // Computes the Jacobi Symbol for a and b.
 // Algorithm adapted from [3] and [4] with some optimizations
 //***********************************************************************
-+(int)jacobi:(BigInt *)a andB:(BigInt *)b {
-	
+
++ (int)jacobi:(BigInt *)a andB:(BigInt *)b; {
 #if _BI_DEBUG_
 	NSLog(@"jacobi");
 #endif
@@ -1951,7 +1881,6 @@ static int primesBelow2000[] = {
 		else
 			return -[BigInt jacobi:[a negate] andB:b];
 	}
-	
 	int e = 0;
 	for (int index = 0; index < a.dataLength; index++) {
 		uint mask = 0x01;
@@ -1965,8 +1894,7 @@ static int primesBelow2000[] = {
 			e++;
 		}
 	}
-	
-	BigInt *a1 = [a shiftRight: e];
+	BigInt * a1 = [a shiftRight: e];
 	
 	int s = 1;
 	if ((e & 0x1) != 0 && (([b getDataAtIndex:0] & 0x7) == 3 || ([b getDataAtIndex:0] & 0x7) == 5))
@@ -2001,13 +1929,14 @@ static int primesBelow2000[] = {
 // False if "this" is definitely NOT prime.
 //
 //***********************************************************************
--(BOOL)rabinMillerTestWithConfidence:(int)confidence {
-	
+
+- (BOOL)rabinMillerTestWithConfidence:(int)confidence; {
 #if _BI_DEBUG_
 	NSLog(@"rabinMillerTestWithConfidence");
 #endif
 	
 	BigInt * thisVal;
+  
 	if (([self getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)        // negative
 		thisVal = [self negate];
 	else
@@ -2017,18 +1946,16 @@ static int primesBelow2000[] = {
 		// test small numbers
 		if ([thisVal getDataAtIndex:0] == 0 || [thisVal getDataAtIndex:0] == 1) {
 			return false;
-		} else if ([thisVal getDataAtIndex:0] == 2 || [thisVal getDataAtIndex:0] == 3) {
+		}
+    else if ([thisVal getDataAtIndex:0] == 2 || [thisVal getDataAtIndex:0] == 3) {
 			return true;
 		}
 	}
-	
 	if (([thisVal getDataAtIndex:0] & 0x1) == 0) {    // even numbers
 		return false;
 	}
-	
-	
 	// calculate values of s and t
-	BigInt *p_sub1 = [thisVal subtract: [BigInt createFromLong: 1]];
+	BigInt * p_sub1 = [thisVal subtract: [BigInt createFromLong: 1]];
 	int s = 0;
 	
 	for (int index = 0; index < p_sub1.dataLength; index++) {
@@ -2043,11 +1970,9 @@ static int primesBelow2000[] = {
 			s++;
 		}
 	}
-	
-	BigInt *t = [p_sub1 shiftRight: s];
-	
+	BigInt * t = [p_sub1 shiftRight: s];
 	int bits = [thisVal bitCount];
-	BigInt *a = [BigInt create];
+	BigInt * a = [BigInt create];
 	
 	for (int round = 0; round < confidence; round++) {
 		bool done = false;
@@ -2063,7 +1988,6 @@ static int primesBelow2000[] = {
 				testBits = (int)(((ulong)(d1 * bits)) & 0xFFFF);
 				//testBits = (int)(((1 + arc4random()) * bits) & MAX_LENGTH);
 			}
-			
 			[a getRandomBits:testBits];
 			//a.genRandomBits(testBits, rand);
 			
@@ -2073,19 +1997,17 @@ static int primesBelow2000[] = {
 			if (byteLen > 1 || (byteLen == 1 && [a getDataAtIndex:0] != 1))
 				done = true;
 			
-#if _BI_DEBUG_			
+#if _BI_DEBUG_
 			NSLog(@"Rabin Miller Test: TestBits: %d; ByteLen: %d", testBits, byteLen);
 #endif
 		}
-		
 		// check whether a factor exists (fix for version 1.03)
-		BigInt *gcdTest = [a gcd:thisVal];
+		BigInt * gcdTest = [a gcd:thisVal];
+    
 		if (gcdTest.dataLength == 1 && [gcdTest getDataAtIndex:0] != 1) {
 			return false;
 		}
-		
-		BigInt *b = [a modPow:t withMod:thisVal];
-			
+		BigInt * b = [a modPow:t withMod:thisVal];
 		bool result = false;
 		
 		if (b.dataLength == 1 && [b getDataAtIndex:0] == 1)         // a^t mod p = 1
@@ -2100,7 +2022,6 @@ static int primesBelow2000[] = {
 			
 			b = [[b multiply: b] mod: thisVal];
 		}
-		
 		if (result == false) {
 			return false;
 		}

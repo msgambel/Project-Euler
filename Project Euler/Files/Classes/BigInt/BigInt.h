@@ -70,7 +70,6 @@
 //             (byte)0x97, (byte)0xB1, (byte)0x31, (byte)0xB3,
 //       };
 
-
 #import <Foundation/Foundation.h>
 
 #define MAX_LENGTH 150
@@ -78,71 +77,69 @@
 typedef unsigned long long ulong;
 
 @interface BigInt : NSObject {
-	
 	@public 
 	int dataLength;
 	uint data[MAX_LENGTH]; // stores bytes from the Big Integer
-	
 }
 
-@property (nonatomic) int dataLength;
+@property (nonatomic, assign) int dataLength;
 
--(id)init;
--(id)initWithInt:(int)value;
--(id)initWithLong:(long)value;
--(id)initWithULong:(ulong)value;
--(id)initWithBigInt:(BigInt *)value;
--(id)initWithUIntArray:(uint *)value withSize:(int)size;
--(id)initWithString:(NSString *)value andRadix:(int)radix;
+- (id)init;
+- (id)initWithInt:(int)value;
+- (id)initWithLong:(long)value;
+- (id)initWithULong:(ulong)value;
+- (id)initWithBigInt:(BigInt *)value;
+- (id)initWithUIntArray:(uint *)value withSize:(int)size;
+- (id)initWithString:(NSString *)value andRadix:(int)radix;
 
-+(BigInt *)create;
-+(BigInt *)createFromInt:(int)value;
-+(BigInt *)createFromLong:(long)value;
-+(BigInt *)createFromULong:(ulong)value;
-+(BigInt *)createFromBigInt:(BigInt *)value;
-+(BigInt *)createFromString:(NSString *)value andRadix:(int)radix;
++ (BigInt *)create;
++ (BigInt *)createFromInt:(int)value;
++ (BigInt *)createFromLong:(long)value;
++ (BigInt *)createFromULong:(ulong)value;
++ (BigInt *)createFromBigInt:(BigInt *)value;
++ (BigInt *)createFromString:(NSString *)value andRadix:(int)radix;
 
 + (BigInt *)factorial:(uint)aNumber;
 + (BigInt *)n:(uint)aN chooseR:(uint)aR;
 
--(BigInt *)add:(BigInt *)bi2;
--(BigInt *)subtract:(BigInt *)bi2;
--(BigInt *)multiply:(BigInt *)bi2;
--(BigInt *)divide:(BigInt *)bi2;
+- (BigInt *)add:(BigInt *)bi2;
+- (BigInt *)subtract:(BigInt *)bi2;
+- (BigInt *)multiply:(BigInt *)bi2;
+- (BigInt *)divide:(BigInt *)bi2;
 
--(BigInt *)negate;
--(BigInt *)not;
--(BigInt *)shiftLeft:(int)shiftVal;
--(BigInt *)shiftRight:(int)shiftVal;
--(BigInt *)mod:(BigInt *)bi2;
--(BigInt *)and:(BigInt *)bi2;
--(BigInt *)or:(BigInt *)bi2;
--(BigInt *)xOr:(BigInt *)bi2;
+- (BigInt *)negate;
+- (BigInt *)not;
+- (BigInt *)shiftLeft:(int)shiftVal;
+- (BigInt *)shiftRight:(int)shiftVal;
+- (BigInt *)mod:(BigInt *)bi2;
+- (BigInt *)and:(BigInt *)bi2;
+- (BigInt *)or:(BigInt *)bi2;
+- (BigInt *)xOr:(BigInt *)bi2;
 
--(BOOL)equals:(BigInt *)bi;
--(BOOL)greaterThan:(BigInt *)bi2;
--(BOOL)lessThan:(BigInt *)bi2;
--(BOOL)lessThanOrEqualTo:(BigInt *)bi2;
--(BOOL)greaterThanOrEqualTo:(BigInt *)bi2;
+- (BOOL)equals:(BigInt *)bi;
+- (BOOL)greaterThan:(BigInt *)bi2;
+- (BOOL)lessThan:(BigInt *)bi2;
+- (BOOL)lessThanOrEqualTo:(BigInt *)bi2;
+- (BOOL)greaterThanOrEqualTo:(BigInt *)bi2;
 
 - (uint)numberOfDigitsWithRadix:(uint)aRadix;
 
 //***********************************************************************
 // Returns the lowest 4 bytes of the BigInteger as an int.
 //***********************************************************************
--(int)intValue;
+- (int)intValue;
 
 //***********************************************************************
 // Returns the absolute value
 //***********************************************************************
--(BigInt *)abs;
+- (BigInt *)abs;
 
--(BigInt *)sqrt;
--(BigInt *)gcd:(BigInt *)bi;
+- (BigInt *)sqrt;
+- (BigInt *)gcd:(BigInt *)bi;
 
--(uint *)getData;
--(uint)getDataAtIndex:(int)index;
--(void)setData:(uint)value atIndex:(int)index;
+- (uint *)getData;
+- (uint)getDataAtIndex:(int)index;
+- (void)setData:(uint)value atIndex:(int)index;
 
 //***********************************************************************
 // Returns the position of the most significant bit in the BigInteger.
@@ -153,7 +150,7 @@ typedef unsigned long long ulong;
 //      The result is 2, if the value of BigInteger is 0...0000 0011
 //
 //***********************************************************************
--(int)bitCount;
+- (int)bitCount;
 
 //***********************************************************************
 // Returns a string representing the BigInteger in sign-and-magnitude
@@ -165,22 +162,22 @@ typedef unsigned long long ulong;
 // [self toStringWithRadix:16] returns "-FF"
 //
 //***********************************************************************
--(NSString *)toStringWithRadix:(int)radix;
+- (NSString *)toStringWithRadix:(int)radix;
 
 //***********************************************************************
 // Modulo Exponentiation
 //***********************************************************************
--(BigInt *)modPow:(BigInt *)exp withMod:(BigInt *)mod;
+- (BigInt *)modPow:(BigInt *)exp withMod:(BigInt *)mod;
 
 //***********************************************************************
 // Populates "this" with the specified amount of random bits
 //***********************************************************************
--(void)getRandomBits:(int)bits;
+- (void)getRandomBits:(int)bits;
 
 //***********************************************************************
 // Generates a positive BigInteger that is probably prime.
 //***********************************************************************
-+(BigInt *)generatePseudoPrimeWithBits:(int)bits andConfidence:(int)confidence;
++ (BigInt *)generatePseudoPrimeWithBits:(int)bits andConfidence:(int)confidence;
 
 
 //***********************************************************************
@@ -204,7 +201,7 @@ typedef unsigned long long ulong;
 // For a detailed discussion of this primality test, see [6].
 //
 //***********************************************************************
--(BOOL)isProbablePrime;
+- (BOOL)isProbablePrime;
 
 //***********************************************************************
 // Determines whether a number is probably prime, using the Rabin-Miller's
@@ -213,7 +210,7 @@ typedef unsigned long long ulong;
 //
 // Returns true if number is probably prime.
 //***********************************************************************
--(BOOL)isProbablePrimeWithConfidence:(int)confidence;
+- (BOOL)isProbablePrimeWithConfidence:(int)confidence;
 
 //***********************************************************************
 // Performs the calculation of the kth term in the Lucas Sequence.
@@ -221,7 +218,7 @@ typedef unsigned long long ulong;
 //
 // k must be odd.  i.e LSB == 1
 //***********************************************************************
-+(NSMutableArray *)lucasSequence:(BigInt *)P andQ:(BigInt *)Q andk:(BigInt *)k andn:(BigInt *)n andConstant:(BigInt *)constant ands:(int)s;
++ (NSMutableArray *)lucasSequence:(BigInt *)P andQ:(BigInt *)Q andk:(BigInt *)k andn:(BigInt *)n andConstant:(BigInt *)constant ands:(int)s;
 
 //***********************************************************************
 // Probabilistic prime test based on Rabin-Miller's
@@ -243,7 +240,7 @@ typedef unsigned long long ulong;
 // False if "this" is definitely NOT prime.
 //
 //***********************************************************************
--(BOOL)rabinMillerTestWithConfidence:(int)confidence;
+- (BOOL)rabinMillerTestWithConfidence:(int)confidence;
 
 //***********************************************************************
 // Fast calculation of modular reduction using Barrett's reduction.
@@ -252,14 +249,15 @@ typedef unsigned long long ulong;
 //
 // Reference [4]
 //***********************************************************************
-+(BigInt *)barrettReduction:(BigInt *)x andN:(BigInt *)n andConstant:(BigInt *)constant;
++ (BigInt *)barrettReduction:(BigInt *)x andN:(BigInt *)n andConstant:(BigInt *)constant;
 
-+(void)singleByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder;
-+(void)multiByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder;
++ (void)singleByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder;
++ (void)multiByteDivide:(BigInt *)bi1 bi2:(BigInt *)bi2 outQuotient:(BigInt *)outQuotient outRemainder:(BigInt *)outRemainder;
 
-+(int)shiftLeft:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal;
-+(int)shiftRight:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal;
++ (int)shiftLeft:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal;
++ (int)shiftRight:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal;
 
-+(BOOL)lucasStrongTest:(BigInt *)thisVal;
-+(int)jacobi:(BigInt *)a andB:(BigInt *)b;
++ (BOOL)lucasStrongTest:(BigInt *)thisVal;
++ (int)jacobi:(BigInt *)a andB:(BigInt *)b;
+
 @end
