@@ -265,6 +265,7 @@ static int primesBelow2000[] = {
 	
 	// overflow check
 	int lastPos = MAX_LENGTH - 1;
+  
 	if (([self getDataAtIndex:lastPos] & 0x80000000) == ([bi2 getDataAtIndex:lastPos] & 0x80000000) &&
       ([result getDataAtIndex:lastPos] & 0x80000000) != ([self getDataAtIndex:lastPos] & 0x80000000)) {
 		@throw [NSException exceptionWithName:@"ArithmeticException" reason:@"Overflow" userInfo:nil];
@@ -281,6 +282,7 @@ static int primesBelow2000[] = {
 	result.dataLength = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
 	
 	long carryIn = 0;
+  
 	for (int i = 0; i < result.dataLength; i++) {
 		long long diff = (((long long)[self getDataAtIndex:i] - (long long)[bi2 getDataAtIndex:i]) - carryIn);
 		[result setData:(uint)(diff & 0xFFFFFFFF) atIndex:i];
@@ -319,7 +321,7 @@ static int primesBelow2000[] = {
 	BigInt * result = [BigInt create];
 	int lastPos = MAX_LENGTH - 1;
 	bool bi1Neg = false, bi2Neg = false;
-	BigInt *bi1 = [BigInt createFromBigInt:self];
+	BigInt * bi1 = [BigInt createFromBigInt:self];
 	
 	// take the absolute value of the inputs
 	@try {
@@ -332,14 +334,15 @@ static int primesBelow2000[] = {
 			bi2Neg = true; bi2 = [bi2 negate];
 		}
 	}
-	@catch (NSException *ex) { }
+	@catch (NSException * ex) { }
 	
 	// multiply the absolute values
 	@try {
 		for (int i = 0; i < bi1.dataLength; i++) {
 			if ([bi1 getDataAtIndex:i] == 0) continue;
-			
+      
 			ulong mcarry = 0;
+      
 			for (int j = 0, k = i; j < bi2.dataLength; j++, k++) {
 				// k = i + j
 				
@@ -391,11 +394,11 @@ static int primesBelow2000[] = {
 			}
       else {
 				bool isMaxNeg = true;
+        
 				for (int i = 0; i < result.dataLength - 1 && isMaxNeg; i++) {
 					if ([result getDataAtIndex:i] != 0)
 						isMaxNeg = false;
 				}
-				
 				if (isMaxNeg) {
 					return result;
 				}
@@ -453,9 +456,9 @@ static int primesBelow2000[] = {
 	NSLog(@"divide");
 #endif
 	
-	BigInt *quotient = [BigInt createFromLong:0];
-	BigInt *remainder = [BigInt createFromLong:0];
-	BigInt *bi1 = [BigInt createFromBigInt:self];
+	BigInt * quotient = [BigInt createFromLong:0];
+	BigInt * remainder = [BigInt createFromLong:0];
+	BigInt * bi1 = [BigInt createFromBigInt:self];
 	
 	int lastPos = MAX_LENGTH - 1;
 	bool divisorNeg = false, dividendNeg = false;
@@ -472,7 +475,8 @@ static int primesBelow2000[] = {
 	}
 	if ([bi1 lessThan: bi2]) {
 		//return quotient;
-	} else {
+	}
+  else {
 		if (bi2.dataLength == 1)
 			[BigInt singleByteDivide:bi1 bi2:bi2 outQuotient:quotient outRemainder:remainder];
 		else
@@ -538,9 +542,7 @@ static int primesBelow2000[] = {
    tmp[i] = [result getDataAtIndex:i];
    }
 	 */
-	
 	result.dataLength = [BigInt shiftLeft:[result getData] withSizeOf:result.dataLength bits:shiftVal];
-	
 	/*
    for(int i = 0; i < result.dataLength; i++) {
    [result setData: tmp[i] atIndex: i];
@@ -584,7 +586,6 @@ static int primesBelow2000[] = {
 	// bi1 is negative, bi2 is positive
 	if (([self getDataAtIndex:pos] & 0x80000000) != 0 && ([bi2 getDataAtIndex:pos] & 0x80000000) == 0)
 		return false;
-	
 	// bi1 is positive, bi2 is negative
 	else if (([self getDataAtIndex:pos] & 0x80000000) == 0 && ([bi2 getDataAtIndex:pos] & 0x80000000) != 0)
 		return true;
@@ -618,6 +619,7 @@ static int primesBelow2000[] = {
 	
 	// same sign
 	int len = (self.dataLength > bi2.dataLength) ? self.dataLength : bi2.dataLength;
+  
 	for (pos = len - 1; pos >= 0 && [self getDataAtIndex:pos] == [bi2 getDataAtIndex:pos]; pos--) ;
 	
 	if (pos >= 0) {
@@ -769,9 +771,9 @@ static int primesBelow2000[] = {
 		}
 		@catch (NSException *ex) { }
 	}
-	BigInt *quotient = [BigInt create];
-	BigInt *remainder = [BigInt create];
-	BigInt *biRadix = [BigInt createFromLong:radix];
+	BigInt * quotient = [BigInt create];
+	BigInt * remainder = [BigInt create];
+	BigInt * biRadix = [BigInt createFromLong:radix];
 	
 	if (a.dataLength == 1 && [a getDataAtIndex:0] == 0)
 		[result appendString:@"0"];
@@ -781,18 +783,17 @@ static int primesBelow2000[] = {
 			
 			if ([remainder getDataAtIndex:0] < 10) {
 				[result insertString:[NSString stringWithFormat:@"%d", [remainder getDataAtIndex:0]] atIndex:0];
-			} else {
+			}
+      else {
 				//NSLog(@"Value = %d", ([remainder getDataAtIndex:0] - 10));
 				[result insertString:[NSString stringWithFormat:@"%c", [charSet characterAtIndex:([remainder getDataAtIndex:0] - 10)]] atIndex:0];
 			}
-			
 			a = quotient;
 		}
 		if (negative)
 			[result insertString:@"-" atIndex:0];
 	}
-	NSString * sOut = [result copy];
-	return sOut;
+	return [result copy];
 }
 
 + (int)shiftLeft:(uint *)buffer withSizeOf:(int)bufferSize bits:(int)shiftVal; {
@@ -816,10 +817,10 @@ static int primesBelow2000[] = {
 		//Console.WriteLine("shiftAmount = {0}", shiftAmount);
 		
 		ulong carry = 0;
+    
 		for (int i = 0; i < bufLen; i++) {
 			ulong val = ((ulong)buffer[i]) << shiftAmount;
 			val |= carry;
-			
 			buffer[i] = (uint)(val & 0xFFFFFFFF);
 			carry = val >> 32;
 		}
@@ -852,6 +853,7 @@ static int primesBelow2000[] = {
 			invShift = 32 - shiftAmount;
 		}
 		ulong carry = 0;
+    
 		for (int i = bufLen - 1; i >= 0; i--) {
 			ulong val = ((ulong)buffer[i]) >> shiftAmount;
 			val |= carry;
@@ -878,6 +880,7 @@ static int primesBelow2000[] = {
 	// copy dividend to reminder
 	for (int i = 0; i < MAX_LENGTH; i++)
 		[outRemainder setData:[bi1 getDataAtIndex:i] atIndex: i];
+  
 	(outRemainder).dataLength = bi1.dataLength;
 	
 	while ((outRemainder).dataLength > 1 && [outRemainder getDataAtIndex:((outRemainder).dataLength - 1)] == 0)
@@ -906,6 +909,7 @@ static int primesBelow2000[] = {
 	}
 	(*outQuotient).dataLength = resultPos;
 	int j = 0;
+  
 	for (int i =(*outQuotient).dataLength - 1; i >= 0; i--, j++)
 		[outQuotient setData:result[i] atIndex:j];
 	
@@ -926,6 +930,7 @@ static int primesBelow2000[] = {
 #if _BI_DEBUG_
 	NSLog(@"multiByteDivide");
 #endif
+  
 	uint result[MAX_LENGTH];
 	bzero(result, sizeof(result));
 	
@@ -974,6 +979,7 @@ static int primesBelow2000[] = {
 		ulong r_hat = dividend % firstDivisorByte;
 		
 		bool done = false;
+    
 		while (!done) {
 			done = true;
 			
@@ -992,7 +998,6 @@ static int primesBelow2000[] = {
 #endif
 			dividendPart[h] = remainder[pos - h];
 		}
-		
 #if _BI_DEBUG_
 		NSLog(@"q_hat = %qi", q_hat);
 #endif
@@ -1002,7 +1007,6 @@ static int primesBelow2000[] = {
 		
 		while ([ss greaterThan: kk]) {
 			q_hat--;
-			
 			/*
        BigInt *tmp = [ss divide: bi2];
        if([tmp getDataAtIndex:0] == 0) {
