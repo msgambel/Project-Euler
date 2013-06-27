@@ -97,12 +97,12 @@ static int primesBelow2000[] = {
 #endif
 		
 		dataLength = 0;
-		while (tmp2 != 0 && dataLength < MAX_LENGTH) {
+		
+    while (tmp2 != 0 && dataLength < MAX_LENGTH) {
 			data[dataLength] = (uint)(tmp2 & 0xFFFFFFFF);
 			tmp2 >>= 32;
 			dataLength++;
 		}
-		
 		if (tempVal > 0)         // overflow check for +ve value
 		{
 			if (tmp2 != 0 || (data[MAX_LENGTH - 1] & 0x80000000) != 0)
@@ -126,6 +126,7 @@ static int primesBelow2000[] = {
 		bzero(data, sizeof(data));
 		
 		dataLength = value.dataLength;
+    
 		for (int i = 0; i < dataLength; i++)
 			data[i] = [value getDataAtIndex:i];
 	}
@@ -145,7 +146,6 @@ static int primesBelow2000[] = {
 		}
 		while (dataLength > 1 && data[dataLength - 1] == 0)
 			dataLength--;
-		
 	}
 	return self;
 }
@@ -179,7 +179,7 @@ static int primesBelow2000[] = {
 				if ([value characterAtIndex:0] == '-')
 					posVal = -posVal;
 				
-				BigInt *mult = [multiplier multiply:[BigInt createFromInt:posVal]];
+				BigInt * mult = [multiplier multiply:[BigInt createFromInt:posVal]];
 				result = [result add:mult];
 				
 				if ((i - 1) >= limit)
@@ -227,6 +227,8 @@ static int primesBelow2000[] = {
 + (BigInt *)createFromString:(NSString *)value andRadix:(int)radix; {
 	return [[BigInt alloc] initWithString:value andRadix:radix];
 }
+
+#pragma mark - Methods
 
 - (uint *)getData; {
 	return data;
