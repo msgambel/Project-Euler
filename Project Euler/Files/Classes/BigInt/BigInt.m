@@ -1240,7 +1240,6 @@ static int primesBelow2000[] = {
 		//NSLog(@"Pos = %d of %d", pos, exp.dataLength);
 		
 		for (int index = 0; index < 32; index++) {
-			
 			//NSLog(@"Pos = %d; Index = %d", pos, index);
 			
 			if (([exp getDataAtIndex:pos] & mask) != 0)
@@ -1325,6 +1324,7 @@ static int primesBelow2000[] = {
 		
 		ulong mcarry = 0;
 		int t = i;
+    
 		for (int j = 0; j < n.dataLength && t < kPlusOne; j++, t++) {
 			// t = i + j
 			ulong val = ((ulong)[q3 getDataAtIndex:i] * (ulong)[n getDataAtIndex:j]) + (ulong)[r2 getDataAtIndex:t] + mcarry;
@@ -1350,7 +1350,6 @@ static int primesBelow2000[] = {
 		val.dataLength = kPlusOne + 1;
 		r1 = [r1 add: val];
 	}
-	
 #if _BI_DEBUG_
 	long cnt = 0;
 	
@@ -1450,7 +1449,8 @@ static int primesBelow2000[] = {
 		if ([divisor greaterThanOrEqualTo: thisVal])
 			break;
 		
-		BigInt *resultNum = [thisVal mod: divisor];
+		BigInt * resultNum = [thisVal mod: divisor];
+    
 		if ([resultNum intValue] == 0) {
 			return false;
 		}
@@ -1605,7 +1605,6 @@ static int primesBelow2000[] = {
 //***********************************************************************
 
 + (NSMutableArray *)lucasSequence:(BigInt *)P andQ:(BigInt *)Q andk:(BigInt *)k andn:(BigInt *)n andConstant:(BigInt *)constant ands:(int)s; {
-	
 #if _BI_DEBUG_
 	NSLog(@"lucasSequence: P:%@ Q:%@ k:%@ n:%@ constant:%@ s:%d",
         [P toStringWithRadix:10],
@@ -1685,7 +1684,6 @@ static int primesBelow2000[] = {
 		}
 		mask = 0x80000000;
 	}
-	
 	// at this point u1 = u(n+1) and v = v(n)
 	// since the last bit always 1, we need to transform u1 to u(2n+1) and v to v(2n+1)
 	
@@ -1846,13 +1844,15 @@ static int primesBelow2000[] = {
 		// If n is prime and gcd(n, Q) == 1, then
 		// Q^((n+1)/2) = Q * Q^((n-1)/2) is congruent to (Q * J(Q, n)) mod n
 		
-		BigInt *g = [thisVal gcd:[BigInt createFromLong:Q]];
+		BigInt * g = [thisVal gcd:[BigInt createFromLong:Q]];
+    
 		if (g.dataLength == 1 && [g getDataAtIndex:0] == 1)         // gcd(this, Q) == 1
 		{
 			if (([lucas[2] getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)
 				lucas[2] = [lucas[2] add: thisVal];
 			
-			BigInt *temp = [[[BigInt createFromLong: Q] multiply: [BigInt createFromLong: [BigInt jacobi:[BigInt createFromLong:Q] andB:thisVal]]] mod: thisVal];
+			BigInt * temp = [[[BigInt createFromLong: Q] multiply: [BigInt createFromLong: [BigInt jacobi:[BigInt createFromLong:Q] andB:thisVal]]] mod: thisVal];
+      
 			if (([temp getDataAtIndex:(MAX_LENGTH - 1)] & 0x80000000) != 0)
 				temp = [temp add:thisVal];
 			
@@ -1888,6 +1888,7 @@ static int primesBelow2000[] = {
 			return -[BigInt jacobi:[a negate] andB:b];
 	}
 	int e = 0;
+  
 	for (int index = 0; index < a.dataLength; index++) {
 		uint mask = 0x01;
 		
@@ -1901,8 +1902,8 @@ static int primesBelow2000[] = {
 		}
 	}
 	BigInt * a1 = [a shiftRight: e];
-	
 	int s = 1;
+  
 	if ((e & 0x1) != 0 && (([b getDataAtIndex:0] & 0x7) == 3 || ([b getDataAtIndex:0] & 0x7) == 5))
 		s = -1;
 	
