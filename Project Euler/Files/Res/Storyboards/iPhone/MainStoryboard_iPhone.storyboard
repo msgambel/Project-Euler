@@ -139,7 +139,7 @@
                                     <outlet property="delegate" destination="2" id="aNI-Ir-nhc"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0MO-QS-V6d">
+                            <searchBar contentMode="redraw" placeholder="Search Solved Problems" translatesAutoresizingMaskIntoConstraints="NO" id="0MO-QS-V6d">
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="U3G-gZ-FzI"/>

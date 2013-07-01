@@ -370,7 +370,7 @@
                                     <outlet property="delegate" destination="L2z-Fu-m31" id="9nA-h4-aRt"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-hs-xME">
+                            <searchBar contentMode="redraw" placeholder="Search Solved Problems" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-hs-xME">
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="L2z-Fu-m31" id="dUy-Ug-lqd"/>
