@@ -154,6 +154,7 @@
 		4EF749011780C3AD00E8596D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF748F61780C3AD00E8596D /* Default-568h@2x.png */; };
 		4EF749021780C3AD00E8596D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF748F71780C3AD00E8596D /* Default@2x.png */; };
 		4EF749031780C3AD00E8596D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF748F81780C3AD00E8596D /* Icon@2x.png */; };
+		4EF749101783997C00E8596D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF7490F1783997C00E8596D /* QuartzCore.framework */; };
 		4EF7863116CC198F00F95AD7 /* Question45.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7863016CC198F00F95AD7 /* Question45.m */; };
 		4EF8A05916F4F0F600EA17C1 /* Question76.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8A05016F4F0F600EA17C1 /* Question76.m */; };
 		4EFE9F2F16C9873400E8C8AC /* Question43.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE9F2C16C9873400E8C8AC /* Question43.m */; };
@@ -434,6 +435,7 @@
 		4EF748F61780C3AD00E8596D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4EF748F71780C3AD00E8596D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4EF748F81780C3AD00E8596D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		4EF7490F1783997C00E8596D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EF7862F16CC198F00F95AD7 /* Question45.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question45.h; sourceTree = "<group>"; };
 		4EF7863016CC198F00F95AD7 /* Question45.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question45.m; sourceTree = "<group>"; };
 		4EF8A04F16F4F0F600EA17C1 /* Question76.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question76.h; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF749101783997C00E8596D /* QuartzCore.framework in Frameworks */,
 				4E04C70816897EF700DC881F /* UIKit.framework in Frameworks */,
 				4E04C70A16897EF700DC881F /* Foundation.framework in Frameworks */,
 				4E04C70C16897EF700DC881F /* CoreGraphics.framework in Frameworks */,
@@ -479,9 +482,10 @@
 		4E04C70616897EF700DC881F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E04C70716897EF700DC881F /* UIKit.framework */,
-				4E04C70916897EF700DC881F /* Foundation.framework */,
 				4E04C70B16897EF700DC881F /* CoreGraphics.framework */,
+				4E04C70916897EF700DC881F /* Foundation.framework */,
+				4EF7490F1783997C00E8596D /* QuartzCore.framework */,
+				4E04C70716897EF700DC881F /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
