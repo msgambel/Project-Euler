@@ -18,7 +18,7 @@
   self.title = @"Cuboid route";
   self.answer = @"1818";
   self.number = @"86";
-  self.keywords = @"spider,cuboid,shortest,route,path,pythagoras";
+  self.keywords = @"spider,cuboid,shortest,route,path,pythagoras,side,length";
   self.estimatedComputationTime = @"0.129";
   self.estimatedBruteForceComputationTime = @"0.129";
 }
