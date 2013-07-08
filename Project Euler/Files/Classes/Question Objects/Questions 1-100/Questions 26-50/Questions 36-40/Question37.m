@@ -26,7 +26,7 @@
   self.title = @"Truncatable primes";
   self.answer = @"748317";
   self.number = @"34";
-  self.keywords = @"primes,left,right,truncatable";
+  self.keywords = @"primes,left,right,truncatable,continuously,remove,digits";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.14";
 }
