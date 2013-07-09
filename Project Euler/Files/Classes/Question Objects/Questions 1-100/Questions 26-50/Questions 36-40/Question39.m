@@ -17,7 +17,7 @@
   self.title = @"Integer right triangles";
   self.answer = @"840";
   self.number = @"39";
-  self.keywords = @"pythagorean,triple,perimeter";
+  self.keywords = @"pythagorean,triple,perimeter,right,angle,length,sides,maximised,integral";
   self.estimatedComputationTime = @"2.43e-03";
   self.estimatedBruteForceComputationTime = @"2.43e-03";
 }
