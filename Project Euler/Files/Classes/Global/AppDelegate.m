@@ -29,6 +29,7 @@
     // Set the splitViewControllers delegate to be the DetailViewController.
     splitViewController.delegate = _detailViewController;
   }
+  // Return that the application did finish launching.
   return YES;
 }
 
