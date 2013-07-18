@@ -18,7 +18,7 @@
   self.title = @"1000-digit Fibonacci number";
   self.answer = @"4782";
   self.number = @"25";
-  self.keywords = @"fibonacci,closed,form";
+  self.keywords = @"fibonacci,closed,form,recurrance,terms,sequence,digits";
   self.estimatedComputationTime = @"4.6e-05";
   self.estimatedBruteForceComputationTime = @"3.25e-02";
 }
