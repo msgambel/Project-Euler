@@ -18,7 +18,7 @@
   self.title = @"Counting Sundays";
   self.answer = @"171";
   self.number = @"19";
-  self.keywords = @"week,month,day,count";
+  self.keywords = @"week,month,day,count,leap,year,century,sunday,first";
   self.estimatedComputationTime = @"1.86e-04";
   self.estimatedBruteForceComputationTime = @"1.86e-04";
 }
