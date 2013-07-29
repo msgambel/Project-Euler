@@ -17,7 +17,7 @@
   self.title = @"Longest Collatz sequence";
   self.answer = @"837799";
   self.number = @"14";
-  self.keywords = @"chain,collatz";
+  self.keywords = @"chain,collatz,longest,sequence,iterative,positive,integers";
   self.estimatedComputationTime = @"0.541";
   self.estimatedBruteForceComputationTime = @"1.41";
 }
