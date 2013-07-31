@@ -17,7 +17,7 @@
   self.title = @"Highly divisible triangular number";
   self.answer = @"76576500";
   self.number = @"12";
-  self.keywords = @"divisors";
+  self.keywords = @"divisors,highly,divisible,triangular,number,sequence,adding";
   self.estimatedComputationTime = @"1.09e-02";
   self.estimatedBruteForceComputationTime = @"565";
 }
