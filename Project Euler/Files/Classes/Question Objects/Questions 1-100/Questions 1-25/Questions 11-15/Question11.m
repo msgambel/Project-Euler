@@ -24,7 +24,7 @@
   self.title = @"Largest product in a grid";
   self.answer = @"70600674";
   self.number = @"11";
-  self.keywords = @"product,direction";
+  self.keywords = @"product,direction,largest,grid,up,down,left,right,diagonal,four,4,adjacent,numbers";
   self.estimatedComputationTime = @"4.85e-04";
   self.estimatedBruteForceComputationTime = @"4.92e-04";
 }
