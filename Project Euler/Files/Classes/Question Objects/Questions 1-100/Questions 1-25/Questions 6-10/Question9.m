@@ -17,7 +17,7 @@
   self.title = @"Special Pythagorean triplet";
   self.answer = @"31875000";
   self.number = @"9";
-  self.keywords = @"pythagorean,product";
+  self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand";
   self.estimatedComputationTime = @"3.2e-05";
   self.estimatedBruteForceComputationTime = @"1.29e-04";
 }
