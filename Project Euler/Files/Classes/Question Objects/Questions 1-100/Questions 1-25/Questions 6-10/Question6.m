@@ -13,11 +13,11 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"14 December 2001";
-  self.text = @"The sum of the squares of the first ten natural numbers is,\n\n12 + 22 + ... + 102 = 385\n\nThe square of the sum of the first ten natural numbers is,\n\n(1 + 2 + ... + 10)2 = 552 = 3025\n\nHence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025  385 = 2640.\n\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.";
+  self.text = @"The sum of the squares of the first ten natural numbers is,\n\n1² + 2² + ... + 10² = 385\n\nThe square of the sum of the first ten natural numbers is,\n\n(1 + 2 + ... + 10)² = 55² = 3025\n\nHence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.\n\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.";
   self.title = @"Sum square difference";
   self.answer = @"25164150";
   self.number = @"6";
-  self.keywords = @"square,sum";
+  self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"2.4e-05";
 }
@@ -33,13 +33,13 @@
   
   // We need to compute:
   //
-  // (\sum_{i=1}^{n}i)^{2} - \sum_{i=1}^{n}(i^{2})
+  // (\sum_{i=1}^{n}i)² - \sum_{i=1}^{n}(i²)
   //
   // We note that there is a closed form solution for each of these 2 sums:
   //
   // (1) \sum_{i=1}^{n}i = (n * (n+1) / 2).
   //
-  // (2) \sum_{i=1}^{n}(i^{2}) = ((n * (n+1) * (2n+1)) / 6).
+  // (2) \sum_{i=1}^{n}(i²) = ((n * (n+1) * (2n+1)) / 6).
   
   // Set the sum to 0 before we start iterating over all the numbers.
   long long int sum = 0;
@@ -80,7 +80,7 @@
   
   // We need to compute:
   //
-  // (\sum_{i=1}^{n}i)^{2} - \sum_{i=1}^{n}(i^{2})
+  // (\sum_{i=1}^{n}i)² - \sum_{i=1}^{n}(i²)
   
   // Set the sum to 0 before we start iterating over all the numbers.
   long long int sum = 0;
