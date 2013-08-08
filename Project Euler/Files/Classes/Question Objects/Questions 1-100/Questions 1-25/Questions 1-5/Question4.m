@@ -19,11 +19,11 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"16 November 2001";
-  self.text = @"A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 99.\n\nFind the largest palindrome made from the product of two 3-digit numbers.";
+  self.text = @"A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91x99.\n\nFind the largest palindrome made from the product of two 3-digit numbers.";
   self.title = @"Largest palindrome product";
   self.answer = @"906609";
   self.number = @"4";
-  self.keywords = @"palindrome";
+  self.keywords = @"palindrome,largest,product,3,three,digit,numbers";
   self.estimatedComputationTime = @"7.97e-04";
   self.estimatedBruteForceComputationTime = @"4.8e-02";
 }
