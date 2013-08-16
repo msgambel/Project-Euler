@@ -17,7 +17,7 @@
   self.title = @"Almost equilateral triangles";
   self.answer = @"518408346";
   self.number = @"94";
-  self.keywords = @"almost,equilateral,triangles,alternating,perimeter";
+  self.keywords = @"almost,equilateral,triangles,alternating,perimeter,sides,square,units,1000000000,one,billion";
   self.estimatedComputationTime = @"0.819";
   self.estimatedBruteForceComputationTime = @"15.3";
 }
