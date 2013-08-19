@@ -24,7 +24,7 @@
   self.title = @"Anagramic squares";
   self.answer = @"18769";
   self.number = @"98";
-  self.keywords = @"anagrams,squares,pairs,words,import";
+  self.keywords = @"anagrams,squares,pairs,words,import,same,number";
   self.estimatedComputationTime = @"4.87";
   self.estimatedBruteForceComputationTime = @"6.83";
 }
