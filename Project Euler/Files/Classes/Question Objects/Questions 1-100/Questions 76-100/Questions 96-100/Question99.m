@@ -13,11 +13,11 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"01 July 2005";
-  self.text = @"Comparing two numbers written in index form like 2^11 and 3^7 is not difficult, as any calculator would confirm that 2^11 = 2048  3^7 = 2187.\n\nHowever, confirming that 632382^518061 > 519432^525806 would be much more difficult, as both numbers contain over three million digits.\n\nUsing base_exp.txt (right click and 'Save Link/Target As...'), a 22K text file containing one thousand lines with a base/exponent pair on each line, determine which line number has the greatest numerical value.\n\nNOTE: The first two lines in the file represent the numbers in the example given above.";
+  self.text = @"Comparing two numbers written in index form like 2^11 and 3^7 is not difficult, as any calculator would confirm that 2^11 = 2048 < 3^7 = 2187.\n\nHowever, confirming that 632382^518061 > 519432^525806 would be much more difficult, as both numbers contain over three million digits.\n\nUsing base_exp.txt (right click and 'Save Link/Target As...'), a 22K text file containing one thousand lines with a base/exponent pair on each line, determine which line number has the greatest numerical value.\n\nNOTE: The first two lines in the file represent the numbers in the example given above.";
   self.title = @"Largest exponential";
   self.answer = @"709";
   self.number = @"99";
-  self.keywords = @"largest,exponential,compare,ordering,import";
+  self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum";
   self.estimatedComputationTime = @"4.44e-03";
   self.estimatedBruteForceComputationTime = @"4.44e-03";
 }
