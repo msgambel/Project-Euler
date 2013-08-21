@@ -17,7 +17,7 @@
   self.title = @"Arranged probability";
   self.answer = @"756872327473";
   self.number = @"100";
-  self.keywords = @"arranged,probabily,blue,red,disks,50,fifty";
+  self.keywords = @"arranged,probability,blue,red,disks,50,fifty,random,percent";
   self.estimatedComputationTime = @"2.4e-05";
   self.estimatedBruteForceComputationTime = @"2.4e-05";
 }
