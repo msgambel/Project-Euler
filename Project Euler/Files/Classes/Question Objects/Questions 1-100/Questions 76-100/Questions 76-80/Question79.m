@@ -23,7 +23,7 @@
   self.title = @"Passcode derivation";
   self.answer = @"73162890";
   self.number = @"79";
-  self.keywords = @"passcode,derivation,login,secret,shortest,import";
+  self.keywords = @"passcode,derivation,login,secret,shortest,import,security";
   self.estimatedComputationTime = @"3.23e-04";
   self.estimatedBruteForceComputationTime = @"93.9";
 }
