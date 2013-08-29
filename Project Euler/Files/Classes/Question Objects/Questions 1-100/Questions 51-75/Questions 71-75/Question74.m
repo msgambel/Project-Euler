@@ -17,7 +17,7 @@
   self.title = @"Digit factorial chains";
   self.answer = @"402";
   self.number = @"74";
-  self.keywords = @"digit,factorial,chains,length,loop,sixty,60,unique";
+  self.keywords = @"digit,factorial,chains,length,loop,sixty,60,unique,property";
   self.estimatedComputationTime = @"4.81";
   self.estimatedBruteForceComputationTime = @"4.81";
 }
