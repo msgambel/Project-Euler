@@ -17,7 +17,7 @@
   self.title = @"Ordered fractions";
   self.answer = @"428570";
   self.number = @"71";
-  self.keywords = @"ordered,fractions,ascending,size,reduced,proper";
+  self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers";
   self.estimatedComputationTime = @"1.87e-04";
   self.estimatedBruteForceComputationTime = @"127";
 }
