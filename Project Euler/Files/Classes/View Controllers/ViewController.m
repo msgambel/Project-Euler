@@ -146,6 +146,8 @@
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar; {
+  // Set the current question objects array to be the array of all of the
+  // question objects.
   _currentQuestionObjectsArray = _questionObjectsArray;
   
   // Tell the TableView to reload based on the latest data.
