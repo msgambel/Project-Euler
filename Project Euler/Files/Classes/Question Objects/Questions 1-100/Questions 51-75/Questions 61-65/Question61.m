@@ -24,7 +24,7 @@
   self.title = @"Cyclical figurate numbers";
   self.answer = @"28684";
   self.number = @"61";
-  self.keywords = @"triangle,square,pentagonal,hexagonal,heptagonal,octagonal,cyclic,set,numbers,polygonal";
+  self.keywords = @"triangle,square,pentagonal,hexagonal,heptagonal,octagonal,cyclic,set,numbers,polygonal,different,number,formulae";
   self.estimatedComputationTime = @"0.033";
   self.estimatedBruteForceComputationTime = @"0.033";
 }
