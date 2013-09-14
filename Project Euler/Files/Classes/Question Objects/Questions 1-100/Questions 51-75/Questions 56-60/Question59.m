@@ -17,7 +17,7 @@
   self.title = @"XOR decryption";
   self.answer = @"107359";
   self.number = @"59";
-  self.keywords = @"xor,decryption,god,key,ascii,encryption,password,import";
+  self.keywords = @"xor,decryption,god,key,ascii,values,encryption,password,import,unique,code,character,bytes,preferred,message,english,words";
   self.estimatedComputationTime = @"0.139e-02";
   self.estimatedBruteForceComputationTime = @"0.127";
   
