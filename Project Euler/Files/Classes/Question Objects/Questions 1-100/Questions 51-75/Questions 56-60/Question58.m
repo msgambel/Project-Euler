@@ -17,7 +17,7 @@
   self.title = @"Spiral primes";
   self.answer = @"26241";
   self.number = @"58";
-  self.keywords = @"spiral,prime,diagonal,anticlockwise,square";
+  self.keywords = @"spiral,primes,diagonals,anticlockwise,square,square,side,length,layer,wrapped,10,ten,percent";
   self.estimatedComputationTime = @"0.915e-02";
   self.estimatedBruteForceComputationTime = @"0.921e-02";
 }
