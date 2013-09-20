@@ -18,8 +18,8 @@
   self.title = @"Combinatoric selections";
   self.answer = @"4075";
   self.number = @"53";
-  self.keywords = @"choose,sum";
-  self.estimatedComputationTime = @"";
+  self.keywords = @"choose,sum,combinatoric,selections,not,distinct,one,million,1000000";
+  self.estimatedComputationTime = @"3.7e-05";
   self.estimatedBruteForceComputationTime = @"3.93";
 }
 
