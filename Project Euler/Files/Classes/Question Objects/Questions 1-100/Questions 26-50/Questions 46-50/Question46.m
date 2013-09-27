@@ -17,7 +17,7 @@
   self.title = @"Goldbach's other conjecture";
   self.answer = @"5777";
   self.number = @"46";
-  self.keywords = @"goldbach,prime,square";
+  self.keywords = @"goldbach's,other,conjecture,prime,square,sum,twice,odd,composite";
   self.estimatedComputationTime = @"2.27e-02";
   self.estimatedBruteForceComputationTime = @"2.27e-02";
 }
