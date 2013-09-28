@@ -17,7 +17,7 @@
   self.title = @"Pandigital mutiples";
   self.answer = @"1533776805";
   self.number = @"45";
-  self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal";
+  self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number";
   self.estimatedComputationTime = @"8.31e-04";
   self.estimatedBruteForceComputationTime = @"8.31e-04";
 }
