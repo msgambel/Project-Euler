@@ -17,7 +17,7 @@
   self.title = @"Pentagon numbers";
   self.answer = @"5482660";
   self.number = @"44";
-  self.keywords = @"pair,pentagon,number,sum,difference";
+  self.keywords = @"pair,pentagon,number,sum,difference,generated,formula,recursion,difference";
   self.estimatedComputationTime = @"7.91e-02";
   self.estimatedBruteForceComputationTime = @"7.91e-02";
 }
