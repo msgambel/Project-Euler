@@ -17,7 +17,7 @@
   self.title = @"Pandigital mutiples";
   self.answer = @"932718654";
   self.number = @"38";
-  self.keywords = @"pandigital,multiples,digit";
+  self.keywords = @"pandigital,multiples,digit,concatenated,product,integer,formed";
   self.estimatedComputationTime = @"1.91e-04";
   self.estimatedBruteForceComputationTime = @"1.76e-03";
 }
