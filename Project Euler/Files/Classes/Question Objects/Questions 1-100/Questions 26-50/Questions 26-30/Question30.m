@@ -23,7 +23,7 @@
   self.title = @"Digit fifth powers";
   self.answer = @"443839";
   self.number = @"30";
-  self.keywords = @"sum,powers,digits,fourth,fifth";
+  self.keywords = @"sum,powers,digits,fourth,fifth,written,total";
   self.estimatedComputationTime = @"5.17e-02";
   self.estimatedBruteForceComputationTime = @"5.17e-02";
 }
