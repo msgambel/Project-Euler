@@ -17,7 +17,7 @@
   self.title = @"Reciprocal cycles";
   self.answer = @"983";
   self.number = @"26";
-  self.keywords = @"division,fraction,unit,decimal,representation,recurring,cycle";
+  self.keywords = @"division,fractional,part,unit,decimal,representation,recurring,cycle,longest";
   self.estimatedComputationTime = @"1.38e-02";
   self.estimatedBruteForceComputationTime = @"4.36e-02";
 }
