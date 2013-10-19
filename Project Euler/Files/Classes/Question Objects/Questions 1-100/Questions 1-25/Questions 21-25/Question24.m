@@ -17,7 +17,7 @@
   self.title = @"Lexicographic permutations";
   self.answer = @"2783915460";
   self.number = @"24";
-  self.keywords = @"lexicographic,permutation,choose,ordered,arrangement,digits,millionth";
+  self.keywords = @"lexicographic,permutation,choose,ordered,arrangement,digits,1000000,one,millionth";
   self.estimatedComputationTime = @"4.6e-05";
   self.estimatedBruteForceComputationTime = @"978";
 }
