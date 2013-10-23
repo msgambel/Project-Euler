@@ -19,7 +19,7 @@
   self.title = @"Factorial digit sum";
   self.answer = @"648";
   self.number = @"20";
-  self.keywords = @"factorial,digits,sum,number,100";
+  self.keywords = @"factorial,digits,sum,number,100,one,hundred";
   self.estimatedComputationTime = @"1.66e-03";
   self.estimatedBruteForceComputationTime = @"1.82e-03";
 }
