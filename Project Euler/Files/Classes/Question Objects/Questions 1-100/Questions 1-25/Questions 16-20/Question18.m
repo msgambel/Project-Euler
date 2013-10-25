@@ -18,7 +18,7 @@
   self.title = @"Maximum path sum I";
   self.answer = @"1074";
   self.number = @"18";
-  self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem";
+  self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,15,fifteen,rows,simple";
   self.estimatedComputationTime = @"5.25e-04";
   self.estimatedBruteForceComputationTime = @"5.25e-04";
 }
