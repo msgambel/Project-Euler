@@ -18,7 +18,7 @@
   self.title = @"Power digit sum";
   self.answer = @"1366";
   self.number = @"16";
-  self.keywords = @"sum,power,digits,big,int";
+  self.keywords = @"sum,power,digits,big,int,2,two,1000,one,thousand,to,the,of";
   self.estimatedComputationTime = @"3.05e-03";
   self.estimatedBruteForceComputationTime = @"3.05e-03";
 }
