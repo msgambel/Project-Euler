@@ -18,7 +18,7 @@
   self.title = @"Large sum";
   self.answer = @"5537376230";
   self.number = @"13";
-  self.keywords = @"sum,big,int,large,ten,digits,10";
+  self.keywords = @"sum,big,int,large,first,digits,10,ten,150,one,hundred,and,fifty";
   self.estimatedComputationTime = @"2.86e-03";
   self.estimatedBruteForceComputationTime = @"3.28e-02";
 }
