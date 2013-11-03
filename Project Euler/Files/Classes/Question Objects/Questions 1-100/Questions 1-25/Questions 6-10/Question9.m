@@ -17,7 +17,7 @@
   self.title = @"Special Pythagorean triplet";
   self.answer = @"31875000";
   self.number = @"9";
-  self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand";
+  self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers";
   self.estimatedComputationTime = @"3.2e-05";
   self.estimatedBruteForceComputationTime = @"1.29e-04";
 }
@@ -179,7 +179,7 @@
   // Variable to hold the common factor of a, b, and c.
   uint commonFactor = 0;
   
-  // For all values 1 to the max size a the first triple number a,
+  // For all values 1 to the max size of the first triple number a,
   for(uint a = 1; a < maxSizeOfTripleNumber; a++){
     
     // If the product of a, b, and c has NOT been found,
@@ -192,8 +192,10 @@
         
         // If the c is a perfect square,
         if([self isNumberAPerfectSquare:c]){
+          // Compute the square root of the perfect square c, and store it in c.
           c = (uint)(sqrt((double)c));
           
+          // If the sum is divisble by the the sum of a, b, and c,
           if((sum % (a + b + c)) == 0){
             // Compute the common factor.
             commonFactor = sum / (a + b + c);
@@ -208,6 +210,7 @@
         }
       }
     }
+    // If the product of a, b, and c has been found,
     else{
       // We have found the product, so exit the loop.
       break;
