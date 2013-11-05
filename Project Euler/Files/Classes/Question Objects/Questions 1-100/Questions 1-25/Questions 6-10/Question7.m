@@ -17,7 +17,7 @@
   self.title = @"10001st prime";
   self.answer = @"104743";
   self.number = @"7";
-  self.keywords = @"prime,listing,10001";
+  self.keywords = @"prime,listing,10001st,one,thousand,and,find";
   self.estimatedComputationTime = @"7.35e-03";
   self.estimatedBruteForceComputationTime = @"4.03e-02";
 }
