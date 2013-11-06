@@ -17,7 +17,7 @@
   self.title = @"Sum square difference";
   self.answer = @"25164150";
   self.number = @"6";
-  self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive";
+  self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"2.4e-05";
 }
@@ -49,6 +49,8 @@
   
   // Use equation (1) for the first part of the sum.
   sum = ((maxSize * (maxSize + 1)) / 2);
+  
+  // Square equation (1).
   sum *= sum;
   
   // Use equation (2) for the second part of the sum.
@@ -81,6 +83,8 @@
   // We need to compute:
   //
   // (\sum_{i=1}^{n}i)² - \sum_{i=1}^{n}(i²)
+  //
+  // Therefore, we will simply compute each value, and sum them together.
   
   // Set the sum to 0 before we start iterating over all the numbers.
   long long int sum = 0;
