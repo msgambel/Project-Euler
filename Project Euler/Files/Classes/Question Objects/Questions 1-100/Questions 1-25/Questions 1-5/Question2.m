@@ -17,7 +17,7 @@
   self.title = @"Even Fibonacci numbers";
   self.answer = @"4613732";
   self.number = @"2";
-  self.keywords = @"fibonacci,sequence,numbers,sum,even,terms,four,million,4000000";
+  self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000";
   self.estimatedComputationTime = @"2.1e-05";
   self.estimatedBruteForceComputationTime = @"4.7e-05";
 }
