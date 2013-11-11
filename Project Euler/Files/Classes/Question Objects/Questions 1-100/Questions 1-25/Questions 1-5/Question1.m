@@ -23,7 +23,7 @@
   self.title = @"Multiples of 3 and 5";
   self.answer = @"233168";
   self.number = @"1";
-  self.keywords = @"sums,triangle,numbers,multiples,3,5,1000,one,thousand";
+  self.keywords = @"sums,triangle,numbers,multiples,3,three,5,five,1000,one,thousand";
   self.estimatedComputationTime = @"2.1e-05";
   self.estimatedBruteForceComputationTime = @"2.7e-05";
 }
