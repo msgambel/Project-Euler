@@ -17,7 +17,7 @@
   self.title = @"Largest exponential";
   self.answer = @"709";
   self.number = @"99";
-  self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum";
+  self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum,line,number";
   self.estimatedComputationTime = @"4.44e-03";
   self.estimatedBruteForceComputationTime = @"4.44e-03";
 }
