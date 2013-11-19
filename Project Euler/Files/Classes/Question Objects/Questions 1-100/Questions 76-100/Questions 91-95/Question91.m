@@ -17,7 +17,7 @@
   self.title = @"Right triangles with integer coordinates";
   self.answer = @"14234";
   self.number = @"91";
-  self.keywords = @"right,triangles,integer,coordinates,vectors,inner,product,orthogonal";
+  self.keywords = @"right,triangles,integer,coordinates,vectors,inner,product,orthogonal,points";
   self.estimatedComputationTime = @"0.105";
   self.estimatedBruteForceComputationTime = @"0.105";
 }
