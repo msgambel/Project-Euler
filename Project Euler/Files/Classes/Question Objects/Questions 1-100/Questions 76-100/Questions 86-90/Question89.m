@@ -26,7 +26,7 @@
   self.title = @"Roman numerals";
   self.answer = @"743";
   self.number = @"89";
-  self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand";
+  self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand,minimal,form";
   self.estimatedComputationTime = @"1.75e-02";
   self.estimatedBruteForceComputationTime = @"2.67e-02";
 }
