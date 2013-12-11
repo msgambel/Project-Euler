@@ -17,7 +17,7 @@
   self.title = @"Diophantine equation";
   self.answer = @"661";
   self.number = @"66";
-  self.keywords = @"diophantine,equations,continued,fractions,pells,period,minimal,solution,largest";
+  self.keywords = @"diophantine,equations,continued,fractions,pells,period,minimal,solution,largest,value,quadratic";
   self.estimatedComputationTime = @"6.31e-04";
   self.estimatedBruteForceComputationTime = @"6.31e-04";
 }
