@@ -18,7 +18,7 @@
   self.title = @"Poker hands";
   self.answer = @"376";
   self.number = @"54";
-  self.keywords = @"poker,hands,two,player,import,rank,compare,5,five";
+  self.keywords = @"poker,hands,two,player,import,rank,compare,5,five,clear,winner";
   self.estimatedComputationTime = @"3.43e-02";
   self.estimatedBruteForceComputationTime = @"3.43e-02";
 }
