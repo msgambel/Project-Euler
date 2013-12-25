@@ -17,7 +17,7 @@
   self.title = @"Permuted multiples";
   self.answer = @"142857";
   self.number = @"52";
-  self.keywords = @"multiples,permutation,digits,exactly,same,numbers,2,3,4,5,6";
+  self.keywords = @"multiples,permutation,digits,exactly,same,numbers,order,2,two,3,three,4,four,5,five,6,six";
   self.estimatedComputationTime = @"3.11e-02";
   self.estimatedBruteForceComputationTime = @"5.63e-02";
 }
