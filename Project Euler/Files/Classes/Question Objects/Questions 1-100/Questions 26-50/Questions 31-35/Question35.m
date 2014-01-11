@@ -24,7 +24,7 @@
   self.title = @"Circular primes";
   self.answer = @"55";
   self.number = @"35";
-  self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less";
+  self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.42";
 }
