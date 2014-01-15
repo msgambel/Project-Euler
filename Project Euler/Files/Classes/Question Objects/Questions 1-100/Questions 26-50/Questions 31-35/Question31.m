@@ -25,7 +25,7 @@
   self.title = @"Coin sums";
   self.answer = @"73682";
   self.number = @"31";
-  self.keywords = @"pound,coins,currency,different,unique,ways,two,2,number,combinations,England";
+  self.keywords = @"pound,coins,currency,different,unique,ways,two,2,number,combinations,England,pence,circulation";
   self.estimatedComputationTime = @"1.54e-04";
   self.estimatedBruteForceComputationTime = @"1.54e-04";
 }
