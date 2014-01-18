@@ -17,7 +17,7 @@
   self.title = @"Number spiral diagonals";
   self.answer = @"669171001";
   self.number = @"28";
-  self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum";
+  self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum,numbers,formed";
   self.estimatedComputationTime = @"2.9e-05";
   self.estimatedBruteForceComputationTime = @"3.1e-05";
 }
