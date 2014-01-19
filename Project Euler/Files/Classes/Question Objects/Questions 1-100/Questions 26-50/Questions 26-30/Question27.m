@@ -24,7 +24,7 @@
   self.title = @"Quadratic primes";
   self.answer = @"-59231";
   self.number = @"27";
-  self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value";
+  self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value,produces,number";
   self.estimatedComputationTime = @"0.23";
   self.estimatedBruteForceComputationTime = @"1.44";
 }
