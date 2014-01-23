@@ -18,7 +18,7 @@
   self.title = @"Non-abundant sums";
   self.answer = @"4179871";
   self.number = @"23";
-  self.keywords = @"factorization,divisors,primes,perfect,number,non,abundant,sums,positive,integer,proper,less,limit";
+  self.keywords = @"factorization,divisors,primes,perfect,number,non,abundant,sums,positive,integers,proper,less,than,limit,non-abundant";
   self.estimatedComputationTime = @"0.138";
   self.estimatedBruteForceComputationTime = @"0.734";
 }
