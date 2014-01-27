@@ -18,7 +18,7 @@
   self.title = @"Counting Sundays";
   self.answer = @"171";
   self.number = @"19";
-  self.keywords = @"week,month,day,counting,leap,year,century,sundays,first,sum,total";
+  self.keywords = @"week,month,day,counting,leap,year,century,sundays,first,sum,total,research,divisible";
   self.estimatedComputationTime = @"1.86e-04";
   self.estimatedBruteForceComputationTime = @"1.86e-04";
 }
@@ -31,6 +31,10 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we simply use the given information about the number of days in each
+  // month for a given year, and loop through all the months in the given
+  // interval. Simple!
   
   // Variable to hold the current day number.
   uint currentDayNumber = 1;
@@ -126,6 +130,10 @@
   
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
+  
+  // Here, we simply use the given information about the number of days in each
+  // month for a given year, and loop through all the months in the given
+  // interval. Simple!
   
   // Variable to hold the current day number.
   uint currentDayNumber = 1;
