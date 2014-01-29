@@ -25,7 +25,7 @@
   self.title = @"Number letter counts";
   self.answer = @"21124";
   self.number = @"17";
-  self.keywords = @"letters,sum,words,numbers,counts,british,written,one,thousand,1000,contains";
+  self.keywords = @"letters,sum,words,numbers,counts,british,written,one,thousand,1000,contains,spaces,hyphens";
   self.estimatedComputationTime = @"2.5e-05";
   self.estimatedBruteForceComputationTime = @"5.2e-05";
 }
@@ -38,6 +38,10 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we have a convience method that stores the number of letters in each
+  // digit of the units, teens, tens, and hudreds numbers. Then, we simply loop
+  // through all of the numbers up to 1,000, and add up the count.
   
   // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
@@ -96,6 +100,14 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  
+  // Note: This is the same algorithm as the optimal one. I can't think of a more
+  //       brute force way to do this!
+  
+  // Here, we have a convience method that stores the number of letters in each
+  // digit of the units, teens, tens, and hudreds numbers. Then, we simply loop
+  // through all of the numbers up to 1,000, and add up the count.
   
   // Variable to hold the sum. Default the sum to 0.
   uint sum = 0;
