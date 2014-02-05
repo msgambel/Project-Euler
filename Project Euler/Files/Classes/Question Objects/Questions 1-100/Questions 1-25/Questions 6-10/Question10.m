@@ -17,7 +17,7 @@
   self.title = @"Summation of primes";
   self.answer = @"142913828922";
   self.number = @"10";
-  self.keywords = @"primes,summation,below,less,than,two,million,2000000,find";
+  self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array";
   self.estimatedComputationTime = @"1.4";
   self.estimatedBruteForceComputationTime = @"1.4";
 }
@@ -30,6 +30,9 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we simply use a helper method to grab the array of prime numbers less
+  // than 2,000,000, and sum them!
   
   // Set the sum to 0 before we start iterating over all the prime numbers.
   long long int sum = 0;
@@ -77,6 +80,9 @@
   NSDate * startTime = [NSDate date];
   
   // This algorithm is the same as the above! First quesiton this has happened!
+  
+  // Here, we simply use a helper method to grab the array of prime numbers less
+  // than 2,000,000, and sum them!
   
   // Set the sum to 0 before we start iterating over all the prime numbers.
   long long int sum = 0;
