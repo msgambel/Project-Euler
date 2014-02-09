@@ -17,7 +17,7 @@
   self.title = @"10001st prime";
   self.answer = @"104743";
   self.number = @"7";
-  self.keywords = @"prime,listing,10001st,one,thousand,and,find";
+  self.keywords = @"prime,listing,10001st,one,thousand,and,find,number,first";
   self.estimatedComputationTime = @"7.35e-03";
   self.estimatedBruteForceComputationTime = @"4.03e-02";
 }
@@ -30,6 +30,9 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Here, we simply use a helper method to find the first 10,001 prime numbers,
+  // and then grab the last value. Simple.
   
   // Variable to hold the desired count of the primes array.
   uint primesArrayCount = 10001;
