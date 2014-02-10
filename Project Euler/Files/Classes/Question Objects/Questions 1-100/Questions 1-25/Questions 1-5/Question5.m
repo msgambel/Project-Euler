@@ -17,7 +17,7 @@
   self.title = @"Smallest multiple";
   self.answer = @"232792560";
   self.number = @"5";
-  self.keywords = @"divisible,factorial,evenly,smallest,positive,number,20,twenty,remainder";
+  self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum";
   self.estimatedComputationTime = @"3.9e-05";
   self.estimatedBruteForceComputationTime = @"5.81e-05";
 }
