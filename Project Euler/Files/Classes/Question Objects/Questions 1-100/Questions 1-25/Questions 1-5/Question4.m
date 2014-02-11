@@ -23,7 +23,7 @@
   self.title = @"Largest palindrome product";
   self.answer = @"906609";
   self.number = @"4";
-  self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two";
+  self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two,read,positive";
   self.estimatedComputationTime = @"7.97e-04";
   self.estimatedBruteForceComputationTime = @"4.8e-02";
 }
