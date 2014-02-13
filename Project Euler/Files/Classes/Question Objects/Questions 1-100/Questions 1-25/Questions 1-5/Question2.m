@@ -17,7 +17,7 @@
   self.title = @"Even Fibonacci numbers";
   self.answer = @"4613732";
   self.number = @"2";
-  self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000";
+  self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000,odd,positive";
   self.estimatedComputationTime = @"2.1e-05";
   self.estimatedBruteForceComputationTime = @"4.7e-05";
 }
@@ -30,12 +30,6 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
-  
-  // Set the max size for the Fibonacci numbers.
-  uint maxSize = 4000000;
-  
-  // Variable to hold the sum. Default the sum to 0.
-  uint sum = 0;
   
   // Notice that the third Fibonacci number after an even Fibonacci number is
   // also even. The sequence goes:
@@ -61,6 +55,12 @@
   // f_i_plus_2 = f_i_plus_1 + f_i, where (f_1 = 1, f_2 = 2).
   //
   // Since we know f_1 = 1 is odd, we can just start our even cycle on f_2 = 2.
+  
+  // Set the max size for the Fibonacci numbers.
+  uint maxSize = 4000000;
+  
+  // Variable to hold the sum. Default the sum to 0.
+  uint sum = 0;
   
   // Set the variables for the Even, Odd1, Odd2 Fibonacci sequence, and seed them.
   uint fEven = 2;
