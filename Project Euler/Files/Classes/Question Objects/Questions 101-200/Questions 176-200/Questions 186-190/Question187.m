@@ -17,7 +17,7 @@
   self.title = @"Semiprimes";
   self.answer = @"17427258";
   self.number = @"187";
-  self.keywords = @"semiprimes,two,2,prime,factors,composite";
+  self.keywords = @"semiprimes,two,2,prime,factors,composites,distinct";
   self.estimatedComputationTime = @"91.5";
   self.estimatedBruteForceComputationTime = @"91.5";
 }
