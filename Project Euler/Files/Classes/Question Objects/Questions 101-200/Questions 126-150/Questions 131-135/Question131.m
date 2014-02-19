@@ -17,7 +17,7 @@
   self.title = @"Prime cube partnership";
   self.answer = @"173";
   self.number = @"131";
-  self.keywords = @"primes,cube,partnership,factoring,positive,integer,property,difference,of,cubes,one,million,1000000";
+  self.keywords = @"primes,cube,partnership,factoring,positive,integer,property,difference,of,cubes,one,million,1000000,value,unique";
   self.estimatedComputationTime = @"1.77e-04";
   self.estimatedBruteForceComputationTime = @"1.77e-04";
 }
