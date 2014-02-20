@@ -17,7 +17,7 @@
   self.title = @"Prime square remainders";
   self.answer = @"21035";
   self.number = @"123";
-  self.keywords = @"prime,square,remainders,modulo,polynomial,expansion";
+  self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
   self.estimatedComputationTime = @"1.59e-02";
   self.estimatedBruteForceComputationTime = @"1.59e-02";
 }
