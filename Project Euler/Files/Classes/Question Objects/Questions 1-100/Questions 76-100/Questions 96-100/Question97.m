@@ -18,7 +18,7 @@
   self.title = @"Large non-Mersenne prime";
   self.answer = @"8739992577";
   self.number = @"97";
-  self.keywords = @"large,prime,non,mersenne,last,digits,big,int,one,million,1000000,ten,10";
+  self.keywords = @"large,prime,non,mersenne,last,digits,big,int,one,million,1000000,ten,10,mod,radix";
   self.estimatedComputationTime = @"1.45e-03";
   self.estimatedBruteForceComputationTime = @"1.45e-03";
 }
