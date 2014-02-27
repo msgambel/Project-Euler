@@ -25,7 +25,7 @@
   self.title = @"Su Doku";
   self.answer = @"24702";
   self.number = @"96";
-  self.keywords = @"sudoku,recursive,import";
+  self.keywords = @"sudoku,recursive,import,japanese,grid";
   self.estimatedComputationTime = @"0.338";
   self.estimatedBruteForceComputationTime = @"0.338";
 }
