@@ -18,7 +18,7 @@
   self.title = @"Amicable chains";
   self.answer = @"14316";
   self.number = @"95";
-  self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000";
+  self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000,element,exceeding";
   self.estimatedComputationTime = @"10.1";
   self.estimatedBruteForceComputationTime = @"10.1";
 }
