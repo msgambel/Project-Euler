@@ -18,7 +18,7 @@
   self.title = @"Square root digital expansion";
   self.answer = @"40886";
   self.number = @"80";
-  self.keywords = @"irrational,square,root,digital,expansion,sum,natural,number,infinite";
+  self.keywords = @"irrational,square,root,digital,expansion,sums,natural,number,infinite,total,digits";
   self.estimatedComputationTime = @"0.5";
   self.estimatedBruteForceComputationTime = @"0.5";
 }
