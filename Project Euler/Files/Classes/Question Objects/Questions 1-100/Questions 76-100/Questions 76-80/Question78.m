@@ -18,7 +18,7 @@
   self.title = @"Coin partitions";
   self.answer = @"55374";
   self.number = @"78";
-  self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million";
+  self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million,least,value";
   self.estimatedComputationTime = @"0.261";
   self.estimatedBruteForceComputationTime = @"0.261";
 }
