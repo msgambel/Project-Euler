@@ -18,7 +18,7 @@
   self.title = @"Totient permutation";
   self.answer = @"8319823";
   self.number = @"70";
-  self.keywords = @"totient,function,maximum,phi,euler's,product,permutation,relatively,prime,positive,numbers,ratio,minimum";
+  self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
   self.estimatedComputationTime = @"1.83e-02";
   self.estimatedBruteForceComputationTime = @"50.3";
 }
