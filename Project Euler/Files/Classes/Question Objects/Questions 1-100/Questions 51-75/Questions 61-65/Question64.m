@@ -17,7 +17,7 @@
   self.title = @"Odd period square roots";
   self.answer = @"1322";
   self.number = @"64";
-  self.keywords = @"square,roots,continued,fractions,representations,period,odd,ten,thousand,10000,count,notation,blocks";
+  self.keywords = @"square,roots,continued,fractions,representations,periodic,odd,ten,thousand,10000,count,notation,blocks,repeats,indefinitely";
   self.estimatedComputationTime = @"1.61e-02";
   self.estimatedBruteForceComputationTime = @"1.61e-02";
 }
