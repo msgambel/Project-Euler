@@ -26,7 +26,7 @@
   self.title = @"Prime pair sets";
   self.answer = @"26033";
   self.number = @"60";
-  self.keywords = @"primes,concatenate,set,five,5,lowest,sum,produce,two,2,order,pairs,property";
+  self.keywords = @"primes,concatenate,set,five,5,lowest,sum,produce,two,2,order,pairs,property,another,result";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"1.09";
 }
