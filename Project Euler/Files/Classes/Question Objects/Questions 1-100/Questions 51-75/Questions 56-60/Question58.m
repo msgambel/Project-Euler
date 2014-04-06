@@ -17,7 +17,7 @@
   self.title = @"Spiral primes";
   self.answer = @"26241";
   self.number = @"58";
-  self.keywords = @"spiral,ratio,primes,diagonals,anticlockwise,square,side,length,layer,wrapped,falls,below,10,ten,percent";
+  self.keywords = @"spiralling,ratio,primes,both,diagonals,anticlockwise,square,side,length,formed,layer,wrapped,falls,below,10,ten,percent";
   self.estimatedComputationTime = @"0.915e-02";
   self.estimatedBruteForceComputationTime = @"0.921e-02";
 }
