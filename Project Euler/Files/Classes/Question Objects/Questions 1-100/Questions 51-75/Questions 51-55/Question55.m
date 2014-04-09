@@ -18,7 +18,7 @@
   self.title = @"Lychrel numbers";
   self.answer = @"249";
   self.number = @"55";
-  self.keywords = @"lychrel,numbers,palindrome,sum,add,reverse,iterations,10000,ten,thousand,50,fifty,palindromic,theoretical,nature";
+  self.keywords = @"lychrel,numbers,palindrome,sum,add,reverse,iterations,below,10000,ten,thousand,50,fifty,palindromic,theoretical,nature,producing";
   self.estimatedComputationTime = @"1.67";
   self.estimatedBruteForceComputationTime = @"12.5";
 }
