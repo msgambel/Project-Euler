@@ -17,7 +17,7 @@
   self.title = @"Distinct primes factors";
   self.answer = @"134043";
   self.number = @"47";
-  self.keywords = @"consecutive,four,4,distinct,prime,factors,numbers,first,integers";
+  self.keywords = @"consecutive,four,4,distinct,prime,factors,numbers,first,integers,maximum,size";
   self.estimatedComputationTime = @"0.133";
   self.estimatedBruteForceComputationTime = @"0.133";
 }
