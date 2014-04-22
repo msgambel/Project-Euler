@@ -18,7 +18,7 @@
   self.title = @"Coded triangle numbers";
   self.answer = @"162";
   self.number = @"42";
-  self.keywords = @"sum,triangle,numbers,english,words,import,coded,sequence,2000,two,thousand,common,alphabetical,maximum,compute";
+  self.keywords = @"sum,triangle,numbers,english,words,import,coded,sequence,2000,two,thousand,common,alphabetical,maximum,compute,value,many";
   self.estimatedComputationTime = @"1.59e-02";
   self.estimatedBruteForceComputationTime = @"1.63e-02";
 }
