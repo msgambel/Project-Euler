@@ -23,7 +23,7 @@
   self.title = @"Double-base palindromes";
   self.answer = @"872187";
   self.number = @"36";
-  self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less";
+  self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less,leading,zeros";
   self.estimatedComputationTime = @"7.61e-02";
   self.estimatedBruteForceComputationTime = @"6.11";
 }
