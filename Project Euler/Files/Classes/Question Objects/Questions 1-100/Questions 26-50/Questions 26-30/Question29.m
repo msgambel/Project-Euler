@@ -19,7 +19,7 @@
   self.title = @"Distinct powers";
   self.answer = @"9183";
   self.number = @"29";
-  self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated";
+  self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated,pairs,one,hundred,100";
   self.estimatedComputationTime = @"7.52e-03";
   self.estimatedBruteForceComputationTime = @"8.77";
 }
