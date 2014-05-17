@@ -25,7 +25,7 @@
   self.title = @"Number letter counts";
   self.answer = @"21124";
   self.number = @"17";
-  self.keywords = @"letters,sum,words,numbers,counts,british,written,one,thousand,1000,contains,spaces,hyphens";
+  self.keywords = @"letters,sum,words,numbers,counts,british,usage,written,one,thousand,1000,contains,spaces,hyphens,compliance";
   self.estimatedComputationTime = @"2.5e-05";
   self.estimatedBruteForceComputationTime = @"5.2e-05";
 }
