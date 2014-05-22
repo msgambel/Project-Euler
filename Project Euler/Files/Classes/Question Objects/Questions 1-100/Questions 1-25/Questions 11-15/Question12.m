@@ -17,7 +17,7 @@
   self.title = @"Highly divisible triangular number";
   self.answer = @"76576500";
   self.number = @"12";
-  self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated";
+  self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated,prime,factors";
   self.estimatedComputationTime = @"1.09e-02";
   self.estimatedBruteForceComputationTime = @"565";
 }
