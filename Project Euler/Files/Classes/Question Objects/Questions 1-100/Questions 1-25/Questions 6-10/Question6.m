@@ -17,7 +17,7 @@
   self.title = @"Sum square difference";
   self.answer = @"25164150";
   self.number = @"6";
-  self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed";
+  self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"2.4e-05";
 }
