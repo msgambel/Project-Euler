@@ -17,7 +17,7 @@
   self.title = @"Largest prime factor";
   self.answer = @"6857";
   self.number = @"3";
-  self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum";
+  self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum,square,root";
   self.estimatedComputationTime = @"5.34e-04";
   self.estimatedBruteForceComputationTime = @"1.89e-02";
 }
@@ -54,7 +54,7 @@
   long long int numberToFactor = 600851475143;
   
   // We need only check the prime numbers up to the square root of the number.
-  long long int largestNumberToCheck =  (long long int)sqrt((double)numberToFactor);
+  long long int largestNumberToCheck = (long long int)sqrt((double)numberToFactor);
   
   // Variable to hold the current prime number, used to minimize computations.
   long long int currentPrimeNumber = 0;
@@ -153,7 +153,7 @@
   long long int numberToFactor = 600851475143;
   
   // We need only check the prime numbers up to the square root of the number.
-  long long int largestNumberToCheck =  (long long int)sqrt((double)numberToFactor);
+  long long int largestNumberToCheck = (long long int)sqrt((double)numberToFactor);
   
   // Variable to hold the largest prime factor.
   long long int largestPrimeFactor = 0;
