@@ -28,4 +28,8 @@
 // 0 represents the unknown square).
 #define PotentialNumbers 10
 
+// Define for checking the version number of iOS currently being used.
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] \
+compare:v options:NSNumericSearch] == NSOrderedAscending)
+
 #endif

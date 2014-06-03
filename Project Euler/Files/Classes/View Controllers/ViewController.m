@@ -34,6 +34,13 @@
   // Since we are NOT searching by default, set the current Question Objects
   // array to the array with all the solved Question Objects.
   _currentQuestionObjectsArray = _questionObjectsArray;
+  
+  // If the device is using iOS 7.0 or above,
+  if(SYSTEM_VERSION_LESS_THAN(@"7.0") == NO){
+    // Make sure that the view does not automatically adjust scroll view insets
+    // because of the new way the status bar is handled.
+    self.automaticallyAdjustsScrollViewInsets = false;
+  }
 }
 
 #pragma mark - iOS 5.1 and under Rotation Methods
