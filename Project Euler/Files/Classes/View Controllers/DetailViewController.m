@@ -1,6 +1,7 @@
 //  DetailViewController.m
 
 #import "DetailViewController.h"
+#import "Defines.h"
 #import "ViewController.h"
 
 @interface DetailViewController (Private)
@@ -272,8 +273,19 @@
 }
 
 - (void)updateTheTextViewScrolling; {
+  // Grab the content height of the text in the question textView.
+  float contentHeight = _questionTextView.contentSize.height;
+  
+  // If the device is using iOS 7.0 or above,
+  if(SYSTEM_VERSION_LESS_THAN(@"7.0") == NO){
+    // Compute the size required for the text in the question textView.
+    CGSize textViewSize = [_questionTextView sizeThatFits:CGSizeMake(_questionTextView.frame.size.width, FLT_MAX)];
+    
+    // Grab the new content height of the text in the question textView.
+    contentHeight = textViewSize.height;
+  }
   // Scrolling is only enabled if the content height is greater than the frame height.
-  _questionTextView.scrollEnabled = (_questionTextView.contentSize.height > _questionTextView.frame.size.height);
+  _questionTextView.scrollEnabled = (contentHeight > _questionTextView.frame.size.height);
 }
 
 - (void)startComputationProgressIndicator; {
