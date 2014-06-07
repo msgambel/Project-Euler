@@ -13,6 +13,7 @@
 @implementation QuestionAndAnswer
 
 @synthesize date = _date;
+@synthesize hint = _hint;
 @synthesize text = _text;
 @synthesize title = _title;
 @synthesize answer = _answer;

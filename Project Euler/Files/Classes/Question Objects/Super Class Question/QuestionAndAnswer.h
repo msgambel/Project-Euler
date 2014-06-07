@@ -14,6 +14,7 @@
   
   BOOL       _isComputing;
   NSString * _date;
+  NSString * _hint;
   NSString * _text;
   NSString * _title;
   NSString * _answer;
@@ -27,6 +28,7 @@
 
 @property (nonatomic, assign) BOOL       isComputing;
 @property (nonatomic, strong) NSString * date;
+@property (nonatomic, strong) NSString * hint;
 @property (nonatomic, strong) NSString * text;
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * answer;
