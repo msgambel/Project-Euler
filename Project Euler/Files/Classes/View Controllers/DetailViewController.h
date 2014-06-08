@@ -30,6 +30,7 @@
 @property (nonatomic, strong) QuestionAndAnswer * questionAndAnswer;
 
 - (IBAction)backButtonPressed:(UIButton *)aButton;
+- (IBAction)hintButtonPressed:(UIButton *)aButton;
 - (IBAction)cancelButtonPressed:(UIButton *)aButton;
 - (IBAction)computeButtonPressed:(UIButton *)aButton;
 - (IBAction)computeBruteForceButtonPressed:(UIButton *)aButton;

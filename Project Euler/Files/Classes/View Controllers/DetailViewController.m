@@ -146,6 +146,15 @@
   }
 }
 
+- (IBAction)hintButtonPressed:(UIButton *)aButton; {
+  // Create an UIAlertView that displays a hint on how the current question was
+  // solved.
+  UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Hint" message:_questionAndAnswer.hint delegate:nil cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
+  
+  // Show the UIAlertView.
+  [alertView show];
+}
+
 - (IBAction)cancelButtonPressed:(UIButton *)aButton; {
   // If we are computing,
   if(_isComputing){
