@@ -139,6 +139,18 @@
                                     <action selector="backButtonPressed:" destination="VVC-1k-ZUf" eventType="touchUpInside" id="En5-Pd-1M0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xYY-sv-Ilg">
+                                <rect key="frame" x="275" y="25" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                                <state key="normal" title="Hint">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hintButtonPressed:" destination="VVC-1k-ZUf" eventType="touchUpInside" id="I22-kK-nwl"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Question Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FE8-Kb-SuB">
                                 <rect key="frame" x="50" y="30" width="220" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
