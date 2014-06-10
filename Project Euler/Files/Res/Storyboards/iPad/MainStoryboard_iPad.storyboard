@@ -88,6 +88,16 @@
                                     <action selector="computeButtonPressed:" destination="vZB-Dy-Sig" eventType="touchUpInside" id="PCY-if-Dry"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2xy-iA-0NH">
+                                <rect key="frame" x="613" y="21" width="80" height="40"/>
+                                <state key="normal" title="Hint">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hintButtonPressed:" destination="vZB-Dy-Sig" eventType="touchUpInside" id="evP-GB-Prc"/>
+                                </connections>
+                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XlA-DZ-dl4">
                                 <rect key="frame" x="292" y="167" width="120" height="35"/>
                                 <state key="normal" title="Cancel">
@@ -111,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ID1-uO-78i">
-                                <rect key="frame" x="5" y="11" width="80" height="40"/>
+                                <rect key="frame" x="5" y="21" width="80" height="40"/>
                                 <state key="normal" title="Questions">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
