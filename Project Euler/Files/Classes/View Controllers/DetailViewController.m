@@ -147,9 +147,17 @@
 }
 
 - (IBAction)hintButtonPressed:(UIButton *)aButton; {
+  // Grab the hint text.
+  NSString * hint = _questionAndAnswer.hint;
+  
+  // If there is no hint added yet,
+  if(hint.length == 0){
+    // Put in filler text saying the hint is coming soon!
+    hint = @"Hint soon to come...";
+  }
   // Create an UIAlertView that displays a hint on how the current question was
   // solved.
-  UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Hint" message:_questionAndAnswer.hint delegate:nil cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
+  UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Hint" message:hint delegate:nil cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
   
   // Show the UIAlertView.
   [alertView show];
