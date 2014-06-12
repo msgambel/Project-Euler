@@ -5,7 +5,7 @@
 
 @class ViewController;
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, QuestionAndAnswerDelegate> {
+@interface DetailViewController : UIViewController <UIAlertViewDelegate, UISplitViewControllerDelegate, QuestionAndAnswerDelegate> {
   BOOL                               _isComputing;
   NSOperationQueue                 * _operationQueue;
   UIPopoverController              * _uiPopoverController;

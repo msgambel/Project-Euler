@@ -157,7 +157,7 @@
   }
   // Create an UIAlertView that displays a hint on how the current question was
   // solved.
-  UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Hint" message:hint delegate:nil cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
+  UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Hint" message:hint delegate:self cancelButtonTitle:@"Got it!" otherButtonTitles:@"Still lost...", nil];
   
   // Show the UIAlertView.
   [alertView show];
@@ -221,6 +221,23 @@
     // Show the view controller that holds the questions tableView inside the
     // popover controller.
     [_uiPopoverController presentPopoverFromRect:_showQuestionsTableViewButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+  }
+}
+
+#pragma mark - UIAlertViewDelegate Methods
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex; {
+  // If the user pressed the "Got it!" button oft he UIAlertView,
+  if(buttonIndex == alertView.cancelButtonIndex){
+    // Log to the console that the user understood the hint for the current
+    // Question.
+    NSLog(@"Understood the hint for Question %@!", _questionAndAnswer.number);
+  }
+  // If the user pressed the "Still lost..." button oft he UIAlertView,
+  else{
+    // Log to the console that the user did NOT understand the hint for the
+    // current Question.
+    NSLog(@"Did not understand the hint for Question %@...", _questionAndAnswer.number);
   }
 }
 
