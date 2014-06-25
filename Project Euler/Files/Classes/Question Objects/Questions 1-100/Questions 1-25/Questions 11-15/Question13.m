@@ -20,6 +20,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"22 March 2002";
+  self.hint = @"When adding a bunch of single digit numbers, if you don't care about the units digit in the result, what number could you divide the sum by to eliminate the units digit?";
   self.text = [NSString stringWithFormat:@"Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.\n\n%@", [self arrayOfNumbers]];
   self.title = @"Large sum";
   self.answer = @"5537376230";
