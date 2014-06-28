@@ -14,6 +14,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"03 May 2002";
+  self.hint = @"Implement a BitInt class to hold the multiplication, then sum the digits.";
   self.text = @"2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.\n\nWhat is the sum of the digits of the number 2^1000?";
   self.title = @"Power digit sum";
   self.answer = @"1366";
@@ -82,6 +83,9 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
+  
+  // Note: This is the same algorithm as the optimal one. I can't think of a more
+  //       brute force way to do this!
   
   // Here, we just use a BigInt data model to handle the multiplication. Then we
   // return the result as a string, and use a helper method to add up the digits.
