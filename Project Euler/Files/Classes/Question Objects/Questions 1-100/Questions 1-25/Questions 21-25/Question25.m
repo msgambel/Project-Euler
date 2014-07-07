@@ -14,6 +14,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"30 August 2002";
+  self.hint = @"There's a closed form expression for Fibonacci numbers.";
   self.text = @"The Fibonacci sequence is defined by the recurrence relation:\n\nFn = Fn1 + Fn2, where F1 = 1 and F2 = 1.\n\nHence the first 12 terms will be:\n\nF1 = 1\nF2 = 1\nF3 = 2\nF4 = 3\nF5 = 5\nF6 = 8\nF7 = 13\nF8 = 21\nF9 = 34\nF10 = 55\nF11 = 89\nF12 = 144\nThe 12th term, F12, is the first term to contain three digits.\n\n\nWhat is the first term in the Fibonacci sequence to contain 1000 digits?";
   self.title = @"1000-digit Fibonacci number";
   self.answer = @"4782";
