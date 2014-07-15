@@ -19,6 +19,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"20 December 2002";
+  self.hint = @"Remove all the trivial cases. Then, break the fraction into 2 fractions (tens digits in the first, ones digits in the second), and use some algebra to check for equality.";
   self.text = @"The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is correct, is obtained by cancelling the 9s.\n\nWe shall consider fractions like, 30/50 = 3/5, to be trivial examples.\n\nThere are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.\n\nIf the product of these four fractions is given in its lowest common terms, find the value of the denominator.";
   self.title = @"Digit canceling fractions";
   self.answer = @"100";
@@ -168,12 +169,12 @@
   // The fraction has to be less than 1. So if the denominator is less than or
   // equal to the numerator,
   if(aDenominator <= aNumerator){
-    // It is NOT a digit cancelling question, so return NO.
+    // It is NOT a digit cancelling fraction, so return NO.
     return NO;
   }
   // If the numerator is NOT a double digit number,
   if((aNumerator <= 10) || (aNumerator >= 100)){
-    // It is NOT a digit cancelling question, so return NO.
+    // It is NOT a digit cancelling fraction, so return NO.
     return NO;
   }
   // If the denominator is NOT a double digit number,
@@ -183,12 +184,12 @@
   }
   // If the numerator has a 0 in the units digit,
   if((aNumerator % 10) == 0){
-    // It is NOT a digit cancelling question, so return NO.
+    // It is NOT a digit cancelling fraction, so return NO.
     return NO;
   }
   // If the denominator has a 0 in the units digit,
   if((aDenominator % 10) == 0){
-    // It is NOT a digit cancelling question, so return NO.
+    // It is NOT a digit cancelling fraction, so return NO.
     return NO;
   }
   // Variable to hold the tens digit of the numerator.
@@ -214,7 +215,7 @@
     // If the opposite digits are equal (the units digit of the numerator, and
     // the units digit of the denominator),
     if(numeratorsUnitsDigit == denominatorsUnitsDigit){
-      // It is a digit cancelling question, so return YES.
+      // It is a digit cancelling fraction, so return YES.
       return YES;
     }
   }
@@ -224,7 +225,7 @@
     // If the opposite digits are equal (the units digit of the numerator, and
     // the tens digit of the denominator),
     if(numeratorsUnitsDigit == denominatorsTensDigit){
-      // It is a digit cancelling question, so return YES.
+      // It is a digit cancelling fraction, so return YES.
       return YES;
     }
   }
@@ -234,7 +235,7 @@
     // If the opposite digits are equal (the tens digit of the numerator, and
     // the units digit of the denominator),
     if(numeratorsTensDigit == denominatorsUnitsDigit){
-      // It is a digit cancelling question, so return YES.
+      // It is a digit cancelling fraction, so return YES.
       return YES;
     }
   }
@@ -244,11 +245,11 @@
     // If the opposite digits are equal (the tens digit of the numerator, and
     // the tens digit of the denominator),
     if(numeratorsTensDigit == denominatorsTensDigit){
-      // It is a digit cancelling question, so return YES.
+      // It is a digit cancelling fraction, so return YES.
       return YES;
     }
   }
-  // It is NOT a digit cancelling question, so return NO.
+  // It is NOT a digit cancelling fraction, so return NO.
   return NO;
 }
 
