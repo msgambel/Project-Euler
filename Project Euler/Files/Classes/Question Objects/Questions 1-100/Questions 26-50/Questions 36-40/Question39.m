@@ -13,6 +13,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"14 March 2003";
+  self.hint = @"Without loss of generality, a < b < c.";
   self.text = @"If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.\n\n{20,48,52}, {24,45,51}, {30,40,50}\n\nFor which value of p <= 1000, is the number of solutions maximised?";
   self.title = @"Integer right triangles";
   self.answer = @"840";
@@ -52,7 +53,7 @@
   uint maximumAToCheck = ((uint)(maxPerimeter / 3));
   
   // Variable to hold the max size of the b's to check. Since the perimeter is
-  // equal to a + b + c, and a < b < c, then the largest a can be is a half
+  // equal to a + b + c, and a < b < c, then the largest b can be is a half
   // (1/2) of the perimeter, as a can be small.
   uint maximumBToCheck = ((uint)(maxPerimeter / 2));
   
