@@ -13,6 +13,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"28 March 2003";
+  self.hint = @"There are 9x10^(n-1) n-digit numbers.";
   self.text = @"An irrational decimal fraction is created by concatenating the positive integers:\n\n0.123456789101112131415161718192021...\n\nIt can be seen that the 12th digit of the fractional part is 1.\n\nIf dn represents the nth digit of the fractional part, find the value of the following expression.\n\nd1 x d10 x d100 x d1000 x d10000 x d100000 x d1000000";
   self.title = @"Champernowne's constant";
   self.answer = @"210";
