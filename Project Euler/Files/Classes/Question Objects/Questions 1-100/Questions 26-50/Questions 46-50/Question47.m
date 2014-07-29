@@ -13,6 +13,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"04 July 2003";
+  self.hint = @"Choose 150,000 as your maximum size, and the factor the numbers downwards.";
   self.text = @"The first two consecutive numbers to have two distinct prime factors are:\n\n14 = 2 x 7\n15 = 3 x 5\n\nThe first three consecutive numbers to have three distinct prime factors are:\n\n644 = 2² x 7 x 23\n645 = 3 x 5 x 43\n646 = 2 x 17 x 19.\n\nFind the first four consecutive integers to have four distinct primes factors. What is the first of these numbers?";
   self.title = @"Distinct primes factors";
   self.answer = @"134043";
@@ -31,7 +32,7 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Here, we simply iterate all the number to a maximum size, and compute its
+  // Here, we simply iterate all the numbers to a maximum size, and compute its
   // prime factorization. If we find a number that has 4 unique prime factors,
   // we start a count to see if the next 3 successive number also have 4 unique
   // prime factors, resetting the count to 0 until the next number with 4 unique
@@ -40,6 +41,7 @@
   // Set the maximum size for the prime numbers.
   uint maxSize = 150000;
   
+  // Variable to hold the current number we are factoring.
   uint currentNumber = 0;
   
   // Variable to hold the current prime number, used to minimize computations.
@@ -158,7 +160,7 @@
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
   
-  // Here, we simply iterate all the number to a maximum size, and compute its
+  // Here, we simply iterate all the numbers to a maximum size, and compute its
   // prime factorization. If we find a number that has 4 unique prime factors,
   // we start a count to see if the next 3 successive number also have 4 unique
   // prime factors, resetting the count to 0 until the next number with 4 unique
@@ -167,6 +169,7 @@
   // Set the maximum size for the prime numbers.
   uint maxSize = 150000;
   
+  // Variable to hold the current number we are factoring.
   uint currentNumber = 0;
   
   // Variable to hold the current prime number, used to minimize computations.
