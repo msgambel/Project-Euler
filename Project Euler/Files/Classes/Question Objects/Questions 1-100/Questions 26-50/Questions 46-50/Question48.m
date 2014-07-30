@@ -14,6 +14,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"18 July 2003";
+  self.hint = @"Use Modular Exponentiation.";
   self.text = @"The series, 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317.\n\nFind the last ten digits of the series, 1^1 + 2^2 + 3^3 + ... + 1000^1000.";
   self.title = @"Self powers";
   self.answer = @"9110846700";
