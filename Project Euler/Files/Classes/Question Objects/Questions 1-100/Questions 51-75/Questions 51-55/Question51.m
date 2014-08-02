@@ -13,6 +13,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"29 August 2003";
+  self.hint = @"It's a 6 digit prime.";
   self.text = @"By replacing the 1st digit of *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.\n\nBy replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.\n\nFind the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.";
   self.title = @"Prime digit replacements";
   self.answer = @"121313";
@@ -32,8 +33,8 @@
   NSDate * startTime = [NSDate date];
   
   // Here, we simply construct the all the possible 6 digit numbers to see if
-  // belong to an 8 prime family with repeating digits. We know that it must
-  // be a 6 digit prime because of the following:
+  // they belong to an 8 prime family with repeating digits. We know that it
+  // must be a 6 digit prime because of the following:
   //
   // 1) Let n be the number of repeating digits of an integer x. If x belongs
   //    to an 8 prime family of repeating digits, then 3|n.
@@ -282,8 +283,8 @@
   //       brute force way to do this!
   
   // Here, we simply construct the all the possible 6 digit numbers to see if
-  // belong to an 8 prime family with repeating digits. We know that it must
-  // be a 6 digit prime because of the following:
+  // they belong to an 8 prime family with repeating digits. We know that it
+  // must be a 6 digit prime because of the following:
   //
   // 1) Let n be the number of repeating digits of an integer x. If x belongs
   //    to an 8 prime family of repeating digits, then 3|n.
