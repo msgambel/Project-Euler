@@ -14,6 +14,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"26 September 2003";
+  self.hint = @"(n choose r) = (n choose (n-r)).";
   self.text = @"There are exactly ten ways of selecting three from five, 12345:\n\n123, 124, 125, 134, 135, 145, 234, 235, 245, and 345\n\nIn combinatorics, we use the notation, 5C3 = 10.\n\nIn general,\n\nnCr = n! / r!(nr)!,\n\nwhere r <= n, n! = nx(n-1)...3x2x1, and 0! = 1.\n\nIt is not until n = 23, that a value exceeds one-million: 23C10 = 1144066.\n\nHow many, not necessarily distinct, values of  nCr, for 1 <= n <= 100, are greater than one-million?";
   self.title = @"Combinatoric selections";
   self.answer = @"4075";
