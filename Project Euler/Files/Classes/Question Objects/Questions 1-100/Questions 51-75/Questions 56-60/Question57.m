@@ -14,6 +14,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"21 November 2003";
+  self.hint = @"Expand d_{i+1} and n_{i+1} in terms of d_i and n_i.";
   self.text = @"It is possible to show that the square root of two can be expressed as an infinite continued fraction.\n\n2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...\n\nBy expanding this for the first four iterations, we get:\n\n1 + 1/2 = 3/2 = 1.5\n1 + 1/(2 + 1/2) = 7/5 = 1.4\n1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666...\n1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379...\n\nThe next three expansions are 99/70, 239/169, and 577/408, but the eighth expansion, 1393/985, is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.\n\nIn the first one-thousand expansions, how many fractions contain a numerator with more digits than denominator?";
   self.title = @"Square root convergents";
   self.answer = @"153";
