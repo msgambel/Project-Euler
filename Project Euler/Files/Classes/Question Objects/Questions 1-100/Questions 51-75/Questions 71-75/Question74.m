@@ -13,6 +13,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"16 July 2004";
+  self.hint = @"Store the chain length of the first 100 numbers in an array.";
   self.text = @"The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145:\n\n1! + 4! + 5! = 1 + 24 + 120 = 145\n\nPerhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it turns out that there are only three such loops that exist:\n\n169 -> 363601 -> 1454 -> 169\n871 -> 45361 -> 871\n872 -> 45362 -> 872\n\nIt is not difficult to prove that EVERY starting number will eventually get stuck in a loop. For example,\n\n69 -> 363600 -> 1454 -> 169 -> 363601 (-> 1454)\n78 -> 45360 -> 871 -> 45361 (-> 871)\n540 -> 145 (-> 145)\n\nStarting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.\n\nHow many chains, with a starting number below one million, contain exactly sixty non-repeating terms?";
   self.title = @"Digit factorial chains";
   self.answer = @"402";
@@ -56,7 +57,7 @@
   // required length.
   uint numbersWithRequiredChainLength = 0;
   
-  // Variablet array to hold the current chains values.
+  // Variable array to hold the current chains values.
   uint chain[100] = {0};
   
   // For all the numbers from 1 up to the maximum size,
@@ -167,7 +168,7 @@
   // required length.
   uint numbersWithRequiredChainLength = 0;
   
-  // Variablet array to hold the current chains values.
+  // Variable array to hold the current chains values.
   uint chain[100] = {0};
   
   // For all the numbers from 1 up to the maximum size,
