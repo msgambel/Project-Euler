@@ -14,6 +14,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"10 September 2004";
+  self.hint = @"Use the Pentagonal number theorem.";
   self.text = @"Let p(n) represent the number of different ways in which n coins can be separated into piles. For example, five coins can separated into piles in exactly seven different ways, so p(5)=7.\n\nOOOOO\nOOOO   O\nOOO   OO\nOOO   O   O\nOO   OO   O\nOO   O   O   O\nO   O   O   O   O\n\nFind the least value of n for which p(n) is divisible by one million.";
   self.title = @"Coin partitions";
   self.answer = @"55374";
