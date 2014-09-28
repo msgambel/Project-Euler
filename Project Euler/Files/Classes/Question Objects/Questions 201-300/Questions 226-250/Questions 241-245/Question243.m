@@ -13,6 +13,7 @@
   // the brute force method and the optimized way to solve the problem.
   
   self.date = @"02 May 2009";
+  self.hint = @"Only unique prime factors matter.";
   self.text = @"A positive fraction whose numerator is less than its denominator is called a proper fraction.\n\nFor any denominator, d, there will be d1 proper fractions; for example, with d = 12:\n\n1/12 , 2/12 , 3/12 , 4/12 , 5/12 , 6/12 , 7/12 , 8/12 , 9/12 , 10/12 , 11/12.\n\nWe shall call a fraction that cannot be cancelled down a resilient fraction.\n\nFurthermore we shall define the resilience of a denominator, R(d), to be the ratio of its proper fractions that are resilient; for example, R(12) = 4/11.\n\nIn fact, d = 12 is the smallest denominator having a resilience R(d) < 4/10.\n\nFind the smallest denominator d, having a resilience R(d) < 15499/94744.";
   self.title = @"Resilience";
   self.answer = @"892371480";
@@ -34,7 +35,7 @@
   // Here, we simply notice that when computing the totient function of a number,
   // the only thing that matters is the unique prime factors. Therefore, extra
   // copies of a prime number do NOT increase the total fraction of reduced
-  // proper fractions of a number. The onyl exception to this is 2. Since the
+  // proper fractions of a number. The only exception to this is 2. Since the
   // number of fractions for a number n is (n-1) and not n, adding an extra
   // factor of 2 on a number can decrease the number of reduced proper fractions
   // more than multiplying by another unique prime factor. Here, we use this
