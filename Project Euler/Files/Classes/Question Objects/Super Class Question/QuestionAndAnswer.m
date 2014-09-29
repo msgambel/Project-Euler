@@ -18,6 +18,7 @@
 @synthesize title = _title;
 @synthesize answer = _answer;
 @synthesize number = _number;
+@synthesize rating = _rating;
 @synthesize delegate = _delegate;
 @synthesize keywords = _keywords;
 @synthesize isComputing = _isComputing;
