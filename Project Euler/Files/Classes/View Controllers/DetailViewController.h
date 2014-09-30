@@ -15,6 +15,7 @@
   IBOutlet UILabel                 * _questionTitleLabel;
   IBOutlet UILabel                 * _questionAnswerLabel;
   IBOutlet UILabel                 * _questionNumberLabel;
+  IBOutlet UILabel                 * _questionRatingLabel;
   IBOutlet UILabel                 * _computationTimeLabel;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
   IBOutlet UIButton                * _backButton;

@@ -285,6 +285,7 @@
   _questionTitleLabel.text = _questionAndAnswer.title;
   _questionAnswerLabel.text = _questionAndAnswer.answer;
   _questionNumberLabel.text = [NSString stringWithFormat:@"Problem %@", _questionAndAnswer.number];
+  _questionRatingLabel.text = [NSString stringWithFormat:@"%@ / 5", _questionAndAnswer.rating];
   _computationTimeLabel.text = _questionAndAnswer.estimatedComputationTime;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
   _questionTextView.text = _questionAndAnswer.text;
