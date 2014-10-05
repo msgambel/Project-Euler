@@ -18,6 +18,7 @@
   self.title = @"Largest prime factor";
   self.answer = @"6857";
   self.number = @"3";
+  self.rating = @"4";
   self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum,square,root";
   self.estimatedComputationTime = @"5.34e-04";
   self.estimatedBruteForceComputationTime = @"1.89e-02";
