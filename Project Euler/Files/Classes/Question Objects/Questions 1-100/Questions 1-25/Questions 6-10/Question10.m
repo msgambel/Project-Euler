@@ -18,6 +18,7 @@
   self.title = @"Summation of primes";
   self.answer = @"142913828922";
   self.number = @"10";
+  self.rating = @"3";
   self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array,long,int";
   self.estimatedComputationTime = @"1.4";
   self.estimatedBruteForceComputationTime = @"1.4";
