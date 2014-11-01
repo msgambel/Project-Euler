@@ -24,6 +24,7 @@
   self.title = @"Digit fifth powers";
   self.answer = @"443839";
   self.number = @"30";
+  self.rating = @"3";
   self.keywords = @"sum,powers,digits,fourth,fifth,written,total,200000,two,hundred,thousand,5,five";
   self.estimatedComputationTime = @"5.17e-02";
   self.estimatedBruteForceComputationTime = @"5.17e-02";
