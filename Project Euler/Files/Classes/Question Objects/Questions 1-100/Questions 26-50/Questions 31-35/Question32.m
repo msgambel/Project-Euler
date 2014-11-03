@@ -18,6 +18,7 @@
   self.title = @"Pandigital products";
   self.answer = @"45228";
   self.number = @"32";
+  self.rating = @"4";
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
   self.estimatedComputationTime = @"7.15e-03";
   self.estimatedBruteForceComputationTime = @"7.55e-02";
