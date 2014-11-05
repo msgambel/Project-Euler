@@ -24,6 +24,7 @@
   self.title = @"Digit canceling fractions";
   self.answer = @"100";
   self.number = @"33";
+  self.rating = @"4";
   self.keywords = @"division,fractions,curious,numerator,denominator,digit,cancelling,lowest,common,terms,product";
   self.estimatedComputationTime = @"1.51e-04";
   self.estimatedBruteForceComputationTime = @"2.84e-04";
