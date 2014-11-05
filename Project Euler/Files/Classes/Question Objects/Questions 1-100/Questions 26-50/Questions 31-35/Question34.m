@@ -18,6 +18,7 @@
   self.title = @"Digit factorials";
   self.answer = @"40730";
   self.number = @"34";
+  self.rating = @"5";
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
   self.estimatedComputationTime = @"7.71e-03";
   self.estimatedBruteForceComputationTime = @"7.71e-03";
