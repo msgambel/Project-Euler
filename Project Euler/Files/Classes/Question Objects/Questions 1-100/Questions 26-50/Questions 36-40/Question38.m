@@ -18,6 +18,7 @@
   self.title = @"Pandigital multiples";
   self.answer = @"932718654";
   self.number = @"38";
+  self.rating = @"5";
   self.keywords = @"pandigital,multiples,digit,concatenated,product,integer,formed,largest,multiply,lexographic,number";
   self.estimatedComputationTime = @"1.91e-04";
   self.estimatedBruteForceComputationTime = @"1.76e-03";
