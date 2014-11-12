@@ -19,6 +19,7 @@
   self.title = @"Pandigital prime";
   self.answer = @"7652413";
   self.number = @"41";
+  self.rating = @"4";
   self.keywords = @"pandigital,prime,largest,digit,number,exists,exactly,primality,test";
   self.estimatedComputationTime = @"9.08e-03";
   self.estimatedBruteForceComputationTime = @"6.53";
