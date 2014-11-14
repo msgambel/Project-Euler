@@ -24,6 +24,7 @@
   self.title = @"Sub-string divisibility";
   self.answer = @"16695334890";
   self.number = @"43";
+  self.rating = @"5";
   self.keywords = @"string,divisible,pandigital,sub,divisibility,sum,property,digit,numbers,hueristic,order";
   self.estimatedComputationTime = @"8.54e-02";
   self.estimatedBruteForceComputationTime = @"354";
