@@ -18,6 +18,7 @@
   self.title = @"Goldbach's other conjecture";
   self.answer = @"5777";
   self.number = @"46";
+  self.rating = @"5";
   self.keywords = @"christian,goldbach's,other,conjecture,prime,square,sum,twice,odd,composite,number,false,smallest";
   self.estimatedComputationTime = @"2.27e-02";
   self.estimatedBruteForceComputationTime = @"2.27e-02";
