@@ -19,6 +19,7 @@
   self.title = @"Self powers";
   self.answer = @"9110846700";
   self.number = @"48";
+  self.rating = @"4";
   self.keywords = @"sum,powers,series,ten,10,last,digits,self,modular,exponentiation,bigint,radix,find,modulo,1000";
   self.estimatedComputationTime = @"0.191";
   self.estimatedBruteForceComputationTime = @"0.191";
