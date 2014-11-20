@@ -18,6 +18,7 @@
   self.title = @"Prime permutations";
   self.answer = @"296962999629";
   self.number = @"49";
+  self.rating = @"5";
   self.keywords = @"arithmetic,sequence,prime,permutations,increasing,four,4,twelve,12,digit,number,concatenating,form,unusual,10000";
   self.estimatedComputationTime = @"0.127";
   self.estimatedBruteForceComputationTime = @"0.127";
