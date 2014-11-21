@@ -18,6 +18,7 @@
   self.title = @"Consecutive prime sum";
   self.answer = @"997651";
   self.number = @"50";
+  self.rating = @"5";
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
   self.estimatedComputationTime = @"1.21";
   self.estimatedBruteForceComputationTime = @"7.2";
