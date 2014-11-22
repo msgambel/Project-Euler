@@ -18,6 +18,7 @@
   self.title = @"Prime digit replacements";
   self.answer = @"121313";
   self.number = @"51";
+  self.rating = @"5";
   self.keywords = @"prime,value,family,digit,replacements,number,eight,8,*,smallest,property";
   self.estimatedComputationTime = @"0.794";
   self.estimatedBruteForceComputationTime = @"0.794";
