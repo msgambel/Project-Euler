@@ -19,6 +19,7 @@
   self.title = @"Powerful digit sum";
   self.answer = @"972";
   self.number = @"56";
+  self.rating = @"3";
   self.keywords = @"powers,powerful,digital,sum,maximum,massive,natural,numbers,googol,considering,form";
   self.estimatedComputationTime = @"0.858";
   self.estimatedBruteForceComputationTime = @"9.41";
