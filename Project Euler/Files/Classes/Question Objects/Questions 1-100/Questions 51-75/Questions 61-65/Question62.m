@@ -18,6 +18,7 @@
   self.title = @"Cubic permutations";
   self.answer = @"127035954683";
   self.number = @"62";
+  self.rating = @"4";
   self.keywords = @"cube,cubic,permutations,digits,exactly,5,five,smallest,unique,minimum,number";
   self.estimatedComputationTime = @"0.731";
   self.estimatedBruteForceComputationTime = @"0.831";
