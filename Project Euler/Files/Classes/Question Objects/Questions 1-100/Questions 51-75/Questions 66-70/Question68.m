@@ -18,6 +18,7 @@
   self.title = @"Magic 5-gon ring";
   self.answer = @"6531031914842725";
   self.number = @"68";
+  self.rating = @"5";
   self.keywords = @"n-gon,digit,maximum,magic,ring,external,node,adding,line,16,sixteen,5-gon,five-gon,arrangements,strings";
   self.estimatedComputationTime = @"2.97e-06";
   self.estimatedBruteForceComputationTime = @"2.97e-06";
