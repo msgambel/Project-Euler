@@ -18,6 +18,7 @@
   self.title = @"Totient maximum";
   self.answer = @"510510";
   self.number = @"69";
+  self.rating = @"3";
   self.keywords = @"totient,maximum,phi,euler,function,relatively,primes,one,million,1000000,less,than,numbers,produces,value,smallest,below";
   self.estimatedComputationTime = @"2.8e-05";
   self.estimatedBruteForceComputationTime = @"2.8e-05";
