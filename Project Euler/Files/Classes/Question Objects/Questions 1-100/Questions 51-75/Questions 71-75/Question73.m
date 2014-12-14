@@ -19,6 +19,7 @@
   self.title = @"Counting fractions in a range";
   self.answer = @"7295372";
   self.number = @"73";
+  self.rating = @"3";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,HCF,sorted,euler,totient";
   self.estimatedComputationTime = @"1.67e-02";
   self.estimatedBruteForceComputationTime = @"1.67e-02";
