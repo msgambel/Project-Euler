@@ -18,6 +18,7 @@
   self.title = @"Prime summations";
   self.answer = @"71";
   self.number = @"77";
+  self.rating = @"5";
   self.keywords = @"primes,summations,five,thousand,5000,positive,different,permutations,ways,written,as,sum,possible";
   self.estimatedComputationTime = @"4.84e-04";
   self.estimatedBruteForceComputationTime = @"4.84e-04";
