@@ -19,6 +19,7 @@
   self.title = @"Path sum: four ways";
   self.answer = @"425185";
   self.number = @"83";
+  self.rating = @"3";
   self.keywords = @"matrix,a*,a,star,minimal,path,sum,import,moving,up,down";
   self.estimatedComputationTime = @"3.66";
   self.estimatedBruteForceComputationTime = @"";
