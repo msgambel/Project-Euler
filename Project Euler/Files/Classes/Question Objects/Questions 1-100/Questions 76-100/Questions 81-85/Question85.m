@@ -19,6 +19,7 @@
   self.title = @"Counting rectangles";
   self.answer = @"2772";
   self.number = @"85";
+  self.rating = @"5";
   self.keywords = @"rectangles,grid,size,counting,triangle,numbers,2000000,two,million,nearest,solution,area,sub";
   self.estimatedComputationTime = @"2.13e-04";
   self.estimatedBruteForceComputationTime = @"2.13e-04";
