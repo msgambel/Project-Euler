@@ -18,6 +18,7 @@
   self.title = @"Product-sum numbers";
   self.answer = @"7587457";
   self.number = @"88";
+  self.rating = @"5";
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
   self.estimatedComputationTime = @"0.881";
   self.estimatedBruteForceComputationTime = @"0.881";
