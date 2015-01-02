@@ -24,6 +24,7 @@
   self.title = @"Square digit chains";
   self.answer = @"8581146";
   self.number = @"92";
+  self.rating = @"5";
   self.keywords = @"square,digit,chains,one,1,eighty,nine,89,count,starting,numbers,continuously,sequence";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"5.1";
