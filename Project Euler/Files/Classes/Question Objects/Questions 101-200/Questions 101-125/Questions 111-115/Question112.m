@@ -26,6 +26,7 @@
   self.title = @"Bouncy numbers";
   self.answer = @"1587000";
   self.number = @"112";
+  self.rating = @"4";
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"0.289";
