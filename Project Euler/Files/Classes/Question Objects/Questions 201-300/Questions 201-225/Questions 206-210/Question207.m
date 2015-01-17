@@ -18,6 +18,7 @@
   self.title = @"Integer partition equations";
   self.answer = @"44043947822";
   self.number = @"207";
+  self.rating = @"5";
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
   self.estimatedComputationTime = @"1.19e-02";
   self.estimatedBruteForceComputationTime = @"1.19e-02";
