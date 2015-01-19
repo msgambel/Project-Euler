@@ -21,6 +21,7 @@
 @synthesize rating = _rating;
 @synthesize delegate = _delegate;
 @synthesize keywords = _keywords;
+@synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;
