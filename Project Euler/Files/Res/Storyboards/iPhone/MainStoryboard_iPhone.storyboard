@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="amN-FU-ZeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="amN-FU-ZeV">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -224,13 +224,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Ag-AW-pPG">
-                                <rect key="frame" x="101" y="538" width="200" height="20"/>
+                                <rect key="frame" x="75" y="538" width="170" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tcn-bB-kkU">
-                                <rect key="frame" x="19" y="538" width="75" height="20"/>
+                                <rect key="frame" x="5" y="538" width="65" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -286,6 +286,12 @@
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Diff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RrT-Qg-qjT">
+                                <rect key="frame" x="250" y="538" width="65" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -301,6 +307,7 @@
                         <outlet property="_computeByBruteForceButton" destination="zte-W2-whe" id="81a-aW-GMw"/>
                         <outlet property="_questionAnswerLabel" destination="5Ag-AW-pPG" id="HFJ-EC-jEk"/>
                         <outlet property="_questionDateLabel" destination="7FS-fN-XOd" id="V4m-ZK-o1T"/>
+                        <outlet property="_questionDifficultyLabel" destination="RrT-Qg-qjT" id="nXW-oN-GgS"/>
                         <outlet property="_questionNumberLabel" destination="RPU-6n-VPf" id="6Fl-d2-OZH"/>
                         <outlet property="_questionRatingLabel" destination="S9G-2W-gdc" id="FmI-0l-WjL"/>
                         <outlet property="_questionTextView" destination="68A-Dj-xoW" id="A2e-TC-hlY"/>
