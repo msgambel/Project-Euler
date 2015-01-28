@@ -20,6 +20,7 @@
   self.number = @"6";
   self.rating = @"4";
   self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
+  self.difficulty = @"Meh";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"2.4e-05";
 }
