@@ -20,6 +20,7 @@
   self.number = @"7";
   self.rating = @"5";
   self.keywords = @"prime,listing,10001st,one,thousand,and,find,number,first,helper,method";
+  self.difficulty = @"Meh";
   self.estimatedComputationTime = @"7.35e-03";
   self.estimatedBruteForceComputationTime = @"4.03e-02";
 }
