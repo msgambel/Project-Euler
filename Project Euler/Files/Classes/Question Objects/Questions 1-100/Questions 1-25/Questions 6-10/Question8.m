@@ -27,6 +27,7 @@
   self.number = @"8";
   self.rating = @"4";
   self.keywords = @"largest,product,in,a,series,five,5,consecutive,digits,1000,one,thousand,greatest,sub,string,number,search";
+  self.difficulty = @"Meh";
   self.estimatedComputationTime = @"6.34e-04";
   self.estimatedBruteForceComputationTime = @"2.72e-03";
 }
