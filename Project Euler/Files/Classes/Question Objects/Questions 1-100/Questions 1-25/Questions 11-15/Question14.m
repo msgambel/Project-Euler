@@ -20,6 +20,7 @@
   self.number = @"14";
   self.rating = @"4";
   self.keywords = @"chain,collatz,longest,sequence,iterative,positive,integers,one,million,1000000,starting,number,terms,proved,problem,allowed,above";
+  self.difficulty = @"Meh";
   self.estimatedComputationTime = @"0.541";
   self.estimatedBruteForceComputationTime = @"1.41";
 }
