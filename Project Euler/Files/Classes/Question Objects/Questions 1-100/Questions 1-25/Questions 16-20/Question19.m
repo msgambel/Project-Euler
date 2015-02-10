@@ -21,6 +21,7 @@
   self.number = @"19";
   self.rating = @"4";
   self.keywords = @"week,month,day,counting,leap,year,twentieth,century,sundays,first,sum,total,research,divisible,fell";
+  self.difficulty = @"Meh";
   self.estimatedComputationTime = @"1.86e-04";
   self.estimatedBruteForceComputationTime = @"1.86e-04";
 }
