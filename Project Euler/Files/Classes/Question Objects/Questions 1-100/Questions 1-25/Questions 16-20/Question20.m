@@ -22,6 +22,7 @@
   self.number = @"20";
   self.rating = @"3";
   self.keywords = @"factorial,digits,sum,number,100,one,hundred,!,total,bigint,radix";
+  self.difficulty = @"Meh";
   self.estimatedComputationTime = @"1.66e-03";
   self.estimatedBruteForceComputationTime = @"1.82e-03";
 }
