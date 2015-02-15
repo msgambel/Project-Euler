@@ -20,6 +20,7 @@
   self.number = @"24";
   self.rating = @"3";
   self.keywords = @"lexicographic,permutations,choose,ordered,arrangement,digits,1000000,one,millionth,objects,possible,combinatorics,subtract";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.6e-05";
   self.estimatedBruteForceComputationTime = @"978";
 }
