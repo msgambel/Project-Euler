@@ -21,6 +21,7 @@
   self.number = @"25";
   self.rating = @"4";
   self.keywords = @"fibonacci,closed,form,recurrance,terms,sequence,digits,contains,1000,one,thousand,first,number,expression,logarithm";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.6e-05";
   self.estimatedBruteForceComputationTime = @"3.25e-02";
 }
