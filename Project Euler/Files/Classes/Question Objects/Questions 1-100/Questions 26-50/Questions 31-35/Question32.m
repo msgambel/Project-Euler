@@ -20,6 +20,7 @@
   self.number = @"32";
   self.rating = @"4";
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"7.15e-03";
   self.estimatedBruteForceComputationTime = @"7.55e-02";
 }
