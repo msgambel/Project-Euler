@@ -20,6 +20,7 @@
   self.number = @"34";
   self.rating = @"5";
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"7.71e-03";
   self.estimatedBruteForceComputationTime = @"7.71e-03";
 }
