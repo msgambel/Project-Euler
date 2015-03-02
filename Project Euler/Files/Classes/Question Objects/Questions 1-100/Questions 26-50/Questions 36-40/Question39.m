@@ -20,6 +20,7 @@
   self.number = @"39";
   self.rating = @"4";
   self.keywords = @"pythagorean,triple,perimeter,right,angle,length,sides,maximized,integral,1000,one,thousand,solutions,integer,triangles,pair,maximum";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"2.43e-03";
   self.estimatedBruteForceComputationTime = @"2.43e-03";
 }
