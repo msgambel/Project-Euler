@@ -26,6 +26,7 @@
   self.number = @"43";
   self.rating = @"5";
   self.keywords = @"string,divisible,pandigital,sub,divisibility,sum,property,digit,numbers,hueristic,order";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"8.54e-02";
   self.estimatedBruteForceComputationTime = @"354";
 }
