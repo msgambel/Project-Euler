@@ -20,6 +20,7 @@
   self.number = @"44";
   self.rating = @"5";
   self.keywords = @"pair,pentagonal,numbers,sum,difference,generated,formula,recursion,difference,quadratic,equations,factoring,radicals";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"7.91e-02";
   self.estimatedBruteForceComputationTime = @"7.91e-02";
 }
