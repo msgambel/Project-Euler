@@ -20,6 +20,7 @@
   self.number = @"45";
   self.rating = @"4";
   self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number,formed,integer,odd,largest";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"8.31e-04";
   self.estimatedBruteForceComputationTime = @"8.31e-04";
 }
