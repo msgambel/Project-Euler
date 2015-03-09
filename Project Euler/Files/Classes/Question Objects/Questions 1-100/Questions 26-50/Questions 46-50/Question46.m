@@ -20,6 +20,7 @@
   self.number = @"46";
   self.rating = @"5";
   self.keywords = @"christian,goldbach's,other,conjecture,prime,square,sum,twice,odd,composite,number,false,smallest";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"2.27e-02";
   self.estimatedBruteForceComputationTime = @"2.27e-02";
 }
