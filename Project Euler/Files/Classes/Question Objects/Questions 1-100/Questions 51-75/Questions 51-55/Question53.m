@@ -21,6 +21,7 @@
   self.number = @"53";
   self.rating = @"5";
   self.keywords = @"choose,sum,combinatoric,selections,not,greater,distinct,exceeds,one,million,1000000,value,selecting";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"3.7e-05";
   self.estimatedBruteForceComputationTime = @"3.93";
 }
