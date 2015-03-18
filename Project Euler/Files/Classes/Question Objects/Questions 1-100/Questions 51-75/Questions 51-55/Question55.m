@@ -21,6 +21,7 @@
   self.number = @"55";
   self.rating = @"5";
   self.keywords = @"lychrel,numbers,palindrome,sum,add,reverse,iterations,below,10000,ten,thousand,50,fifty,palindromic,theoretical,nature,producing";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"1.67";
   self.estimatedBruteForceComputationTime = @"12.5";
 }
