@@ -29,6 +29,7 @@
   self.number = @"60";
   self.rating = @"5";
   self.keywords = @"primes,concatenate,set,five,5,lowest,sum,produce,two,2,order,pairs,property,another,result";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"1.09";
 }
