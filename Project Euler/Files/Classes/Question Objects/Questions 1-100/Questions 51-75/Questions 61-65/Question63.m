@@ -20,6 +20,7 @@
   self.number = @"63";
   self.rating = @"4";
   self.keywords = @"powers,digits,count,fifth,nine,9,exist,positive,integers,number,nth,bases,exponents";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"2.8e-05";
   self.estimatedBruteForceComputationTime = @"2.8e-05";
 }
