@@ -21,6 +21,7 @@
   self.number = @"65";
   self.rating = @"3";
   self.keywords = @"convergents,e,infinite,continued,fractions,digits,sum,numerator,100,one,hundred,rational,approximations,sequence,partial";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"1.27e-03";
   self.estimatedBruteForceComputationTime = @"1.27e-03";
 }
