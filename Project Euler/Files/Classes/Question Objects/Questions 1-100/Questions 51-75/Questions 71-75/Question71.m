@@ -20,6 +20,7 @@
   self.number = @"71";
   self.rating = @"4";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,numerator,left,set,listing";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"1.87e-04";
   self.estimatedBruteForceComputationTime = @"127";
 }
