@@ -21,6 +21,7 @@
   self.number = @"72";
   self.rating = @"3";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,list,set,elements,contained";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"4.77";
   self.estimatedBruteForceComputationTime = @"4.77";
 }
