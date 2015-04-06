@@ -20,6 +20,7 @@
   self.number = @"74";
   self.rating = @"4";
   self.keywords = @"digit,factorial,chains,length,loop,sixty,60,unique,property,non-repeating,terms,contain,exactly";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.81";
   self.estimatedBruteForceComputationTime = @"4.81";
 }
