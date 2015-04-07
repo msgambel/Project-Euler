@@ -20,6 +20,7 @@
   self.number = @"75";
   self.rating = @"5";
   self.keywords = @"singular,integer,right,triangles,generation,primitives,pythagorean,triples,cm,smallest,length,sided,angle";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"6.5";
   self.estimatedBruteForceComputationTime = @"6.5";
 }
