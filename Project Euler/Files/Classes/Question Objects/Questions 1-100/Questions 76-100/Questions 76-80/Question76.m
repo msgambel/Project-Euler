@@ -26,6 +26,7 @@
   self.number = @"76";
   self.rating = @"4";
   self.keywords = @"counting,summations,one,hundred,100,two,2,positive,integers,different,ways,at,least,write,exactly";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.71e-04";
   self.estimatedBruteForceComputationTime = @"4.71e-04";
 }
