@@ -21,6 +21,7 @@
   self.number = @"83";
   self.rating = @"3";
   self.keywords = @"matrix,a*,a,star,minimal,path,sum,import,moving,up,down";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"3.66";
   self.estimatedBruteForceComputationTime = @"";
 }
