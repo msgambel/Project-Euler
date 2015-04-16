@@ -21,6 +21,7 @@
   self.number = @"84";
   self.rating = @"5";
   self.keywords = @"monopoly,4,four,dice,roll,ev,2,two,6,six,most,popular,squares,modal,string,standard,board,sided,listed";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"0.397";
   self.estimatedBruteForceComputationTime = @"0.397";
 }
