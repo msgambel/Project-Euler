@@ -20,6 +20,7 @@
   self.number = @"88";
   self.rating = @"5";
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"0.881";
   self.estimatedBruteForceComputationTime = @"0.881";
 }
