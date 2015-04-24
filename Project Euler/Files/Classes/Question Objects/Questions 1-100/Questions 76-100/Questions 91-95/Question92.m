@@ -26,6 +26,7 @@
   self.number = @"92";
   self.rating = @"5";
   self.keywords = @"square,digit,chains,one,1,eighty,nine,89,count,starting,numbers,continuously,sequence";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"5.1";
 }
