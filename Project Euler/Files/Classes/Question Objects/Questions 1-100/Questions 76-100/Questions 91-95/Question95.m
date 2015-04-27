@@ -21,6 +21,7 @@
   self.number = @"95";
   self.rating = @"4";
   self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000,element,exceeding";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"10.1";
   self.estimatedBruteForceComputationTime = @"10.1";
 }
