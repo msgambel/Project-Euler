@@ -28,6 +28,7 @@
   self.number = @"96";
   self.rating = @"5";
   self.keywords = @"sudoku,recursive,import,japanese,grid";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"0.338";
   self.estimatedBruteForceComputationTime = @"0.338";
 }
