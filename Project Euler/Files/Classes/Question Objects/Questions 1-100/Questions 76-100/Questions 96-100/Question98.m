@@ -27,6 +27,7 @@
   self.number = @"98";
   self.rating = @"4";
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.87";
   self.estimatedBruteForceComputationTime = @"6.83";
 }
