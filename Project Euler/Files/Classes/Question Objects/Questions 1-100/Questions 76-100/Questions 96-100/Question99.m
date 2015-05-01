@@ -20,6 +20,7 @@
   self.number = @"99";
   self.rating = @"4";
   self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum,line,number,file,greatest";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.44e-03";
   self.estimatedBruteForceComputationTime = @"4.44e-03";
 }
