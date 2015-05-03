@@ -28,6 +28,7 @@
   self.number = @"112";
   self.rating = @"4";
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
+  self.difficulty = @"Medium";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"0.289";
 }
