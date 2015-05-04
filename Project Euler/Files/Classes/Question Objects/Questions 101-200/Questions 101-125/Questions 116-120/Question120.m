@@ -20,6 +20,7 @@
   self.number = @"120";
   self.rating = @"5";
   self.keywords = @"square,remainders,modulo,polynomial,expansion,rmax,sum";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"2.9e-05";
   self.estimatedBruteForceComputationTime = @"2.9e-05";
 }
