@@ -20,6 +20,7 @@
   self.number = @"131";
   self.rating = @"5";
   self.keywords = @"primes,cube,partnership,factoring,positive,integer,property,difference,of,cubes,one,million,1000000,value,unique";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"1.77e-04";
   self.estimatedBruteForceComputationTime = @"1.77e-04";
 }
