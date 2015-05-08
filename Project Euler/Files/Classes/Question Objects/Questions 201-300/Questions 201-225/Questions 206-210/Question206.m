@@ -20,6 +20,7 @@
   self.number = @"206";
   self.rating = @"5";
   self.keywords = @"concealed,square,perfect,positive,integer";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"4.53";
   self.estimatedBruteForceComputationTime = @"4.53";
 }
