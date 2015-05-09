@@ -20,6 +20,7 @@
   self.number = @"207";
   self.rating = @"5";
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
+  self.difficulty = @"Easy";
   self.estimatedComputationTime = @"1.19e-02";
   self.estimatedBruteForceComputationTime = @"1.19e-02";
 }
