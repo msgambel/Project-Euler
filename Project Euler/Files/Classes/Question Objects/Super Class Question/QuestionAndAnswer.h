@@ -12,6 +12,7 @@
 @interface QuestionAndAnswer : NSObject {
   id <QuestionAndAnswerDelegate> __weak _delegate;
   
+  BOOL       _isFun;
   BOOL       _isComputing;
   NSString * _date;
   NSString * _hint;
@@ -28,6 +29,7 @@
 
 @property (nonatomic, weak)   id <QuestionAndAnswerDelegate> delegate;
 
+@property (nonatomic, assign) BOOL       isFun;
 @property (nonatomic, assign) BOOL       isComputing;
 @property (nonatomic, strong) NSString * date;
 @property (nonatomic, strong) NSString * hint;

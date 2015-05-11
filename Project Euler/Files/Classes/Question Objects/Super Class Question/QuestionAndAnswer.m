@@ -15,6 +15,7 @@
 @synthesize date = _date;
 @synthesize hint = _hint;
 @synthesize text = _text;
+@synthesize isFun = _isFun;
 @synthesize title = _title;
 @synthesize answer = _answer;
 @synthesize number = _number;
@@ -32,6 +33,9 @@
   if((self = [super init])){
     // Always call initialize when the object is created.
     [self initialize];
+    
+    // All Project Euler questions start out fun!
+    _isFun = YES;
     
     // Set that we are not computing by default.
     _isComputing = NO;
