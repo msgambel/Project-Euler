@@ -25,6 +25,7 @@
   IBOutlet UIButton                * _computeByBruteForceButton;
   IBOutlet UIButton                * _showQuestionsTableViewButton;
   IBOutlet UITextView              * _questionTextView;
+  IBOutlet UIImageView             * _questionIsFunImageView;
   IBOutlet UIActivityIndicatorView * _activityIndicatorView;
 }
 

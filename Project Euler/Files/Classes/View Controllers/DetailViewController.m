@@ -287,6 +287,7 @@
   _questionNumberLabel.text = [NSString stringWithFormat:@"Problem %@", _questionAndAnswer.number];
   _questionRatingLabel.text = [NSString stringWithFormat:@"%@ / 5", _questionAndAnswer.rating];
   _computationTimeLabel.text = _questionAndAnswer.estimatedComputationTime;
+  _questionIsFunImageView.hidden = (_questionAndAnswer.isFun == NO);
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
   _questionTextView.text = _questionAndAnswer.text;
