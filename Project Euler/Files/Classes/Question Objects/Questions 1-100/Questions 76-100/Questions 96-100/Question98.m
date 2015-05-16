@@ -76,7 +76,7 @@
     // If the largest words length is less than the current words length,
     if(largestWordsLength < word.length){
       // Set the largest words length to be the current words length.
-      largestWordsLength = word.length;
+      largestWordsLength = (uint)word.length;
     }
   }
   // If the largest words length is greater than 1 (as we must have at least a
@@ -110,7 +110,7 @@
       }
     }
     // For all the word sizes, starting with the largest size,
-    for(int currentWordSize = ([wordsBySizesArray count] - 1); currentWordSize >= 0; currentWordSize--){
+    for(int currentWordSize = ((uint)[wordsBySizesArray count] - 1); currentWordSize >= 0; currentWordSize--){
       // Grab the array that holds all the words with the current length.
       currentWordSizeArray = [wordsBySizesArray objectAtIndex:currentWordSize];
       
@@ -125,7 +125,7 @@
           secondWord = [currentWordSizeArray objectAtIndex:secondWordIndex];
           
           // Grab the potential largest square found from the two words.
-          potentialLargestSquare = [self largestSquareFromString:firstWord andAnagramOfString:secondWord];
+          potentialLargestSquare = (uint)[self largestSquareFromString:firstWord andAnagramOfString:secondWord];
           
           // If the potential largest square is largest than the previous largest
           // square found,
@@ -225,7 +225,7 @@
       secondWord = [wordsArray objectAtIndex:secondWordIndex];
       
       // Grab the potential largest square found from the two words.
-      potentialLargestSquare = [self largestSquareFromString:firstWord andAnagramOfString:secondWord];
+      potentialLargestSquare = (uint)[self largestSquareFromString:firstWord andAnagramOfString:secondWord];
       
       // If the potential largest square is largest than the previous largest
       // square found,
@@ -286,7 +286,7 @@
   }
   // Variable to hold the length of the first string, and by default, the second
   // strings length as well.
-  uint stringLength = aFirstString.length;
+  uint stringLength = (uint)aFirstString.length;
   
   // If the string's have a length less than 1,
   if(stringLength < 1){

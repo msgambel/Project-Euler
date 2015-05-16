@@ -134,7 +134,7 @@
   if(_isComputing){
     // Create an NSSet to get rid of all the copies in the array, and store the
     // count of the resulting NSSet.
-    numberExpressedAsSumOfPowers = [[NSSet setWithArray:sumOfPrimePowersNumbers] count];
+    numberExpressedAsSumOfPowers = (uint)[[NSSet setWithArray:sumOfPrimePowersNumbers] count];
     
     // Set the answer string to the maximum pandigital number.
     self.answer = [NSString stringWithFormat:@"%d", numberExpressedAsSumOfPowers];
@@ -263,7 +263,7 @@
   if(_isComputing){
     // Create an NSSet to get rid of all the copies in the array, and store the
     // count of the resulting NSSet.
-    numberExpressedAsSumOfPowers = [[NSSet setWithArray:sumOfPrimePowersNumbers] count];
+    numberExpressedAsSumOfPowers = (uint)[[NSSet setWithArray:sumOfPrimePowersNumbers] count];
     
     // Set the answer string to the maximum pandigital number.
     self.answer = [NSString stringWithFormat:@"%d", numberExpressedAsSumOfPowers];

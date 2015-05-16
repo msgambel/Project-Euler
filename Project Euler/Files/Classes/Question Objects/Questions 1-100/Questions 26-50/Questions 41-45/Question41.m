@@ -119,7 +119,7 @@
   NSMutableArray * primeNumbersArray = [self arrayOfPrimeNumbersLessThan:maxSize];
   
   // For all the potential prime numbers,
-  for(int index = ([primeNumbersArray count] - 1); index >= 0; index--){
+  for(int index = ((int)[primeNumbersArray count] - 1); index >= 0; index--){
     // Grab the current prime number.
     currentPrimeNumber = [[primeNumbersArray objectAtIndex:index] intValue];
     

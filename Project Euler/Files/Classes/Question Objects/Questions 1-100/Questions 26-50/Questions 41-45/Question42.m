@@ -78,7 +78,7 @@
     // If the word's length is greater than the maximum length already found,
     if(word.length > maximumWordLength){
       // Set the maximum word length to be
-      maximumWordLength = word.length;
+      maximumWordLength = (uint)word.length;
     }
   }
   // Compute the largests triangle number required, using the largest possible
@@ -185,7 +185,7 @@
     // If the word's length is greater than the maximum length already found,
     if(word.length > maximumWordLength){
       // Set the maximum word length to be
-      maximumWordLength = word.length;
+      maximumWordLength = (uint)word.length;
     }
   }
   // Compute the largests triangle number required, using the largest possible

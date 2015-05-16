@@ -247,7 +247,7 @@
         // Set the MovingProduct5 to the returned value of this method based on
         // the current index + 1 (i.e.: the "digit" to the right of the current
         // one).
-        movingProduct = [self string:aString index:(subStringRange.location + 1)];
+        movingProduct = [self string:aString index:((uint)subStringRange.location + 1)];
         
         // Exit the loop.
         break;

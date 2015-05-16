@@ -488,7 +488,7 @@
   
   // Variable to mark the index of the operator in the operators array when
   // parsing through an equation.
-  uint operatorIndex = 0;
+  long long int operatorIndex = 0;
   
   // Variable to hold the result of the Reverse Polish Notation Equation.
   double result = 0.0f;
@@ -520,7 +520,7 @@
     element = [aEquation substringWithRange:subStringRange];
     
     // Grab the index in the operators array of the element.
-    operatorIndex = [operators indexOfObject:element];
+    operatorIndex = (uint)[operators indexOfObject:element];
     
     // If the index is valid,
     if(operatorIndex != NSNotFound){

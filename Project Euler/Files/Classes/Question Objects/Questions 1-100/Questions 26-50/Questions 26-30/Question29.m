@@ -283,7 +283,7 @@
   // If the user has not cancelled the computation at this point,
   if(_isComputing){
     // Set the answer string to the number of unique NSStrings in the array of BigInts.
-    self.answer = [NSString stringWithFormat:@"%d", [[NSSet setWithArray:allBigInts] count]];
+    self.answer = [NSString stringWithFormat:@"%lu", (unsigned long)[[NSSet setWithArray:allBigInts] count]];
     
     // Get the amount of time that has passed while the computation was happening.
     NSTimeInterval computationTime = [[NSDate date] timeIntervalSinceDate:startTime];

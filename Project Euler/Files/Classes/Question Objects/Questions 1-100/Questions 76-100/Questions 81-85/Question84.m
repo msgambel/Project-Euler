@@ -111,7 +111,7 @@
         consecutiveDoubleRolled = 0;
         
         // Move to JAIL.
-        currentPosition = [propertyNames indexOfObject:@"JAIL"];
+        currentPosition = (uint)[propertyNames indexOfObject:@"JAIL"];
       }
       // If we have NOT rolled doubles too many times,
       else{
@@ -160,7 +160,7 @@
         // If we have to move to another property,
         if(propertyLandedOn != nil){
           // Move to the property we have to.
-          currentPosition = [propertyNames indexOfObject:propertyLandedOn];
+          currentPosition = (uint)[propertyNames indexOfObject:propertyLandedOn];
           
           // Grab the current Monopoly property from the board.
           currentProperty = [properties objectAtIndex:currentPosition];
@@ -173,7 +173,7 @@
       // If we do NOT have to move back 3 spaces,
       else{
         // Move to the property we have to.
-        currentPosition = [propertyNames indexOfObject:propertyLandedOn];
+        currentPosition = (uint)[propertyNames indexOfObject:propertyLandedOn];
         
         // Grab the current Monopoly property from the board.
         currentProperty = [properties objectAtIndex:currentPosition];
@@ -194,7 +194,7 @@
     
     // Grab the position of the property on the board based on the name of the
     // Monopoly property.
-    currentPosition = [propertyNames indexOfObject:currentProperty.name];
+    currentPosition = (uint)[propertyNames indexOfObject:currentProperty.name];
     
     // If the position of the Monopoly property is less than ten,
     if(currentPosition < 10){
@@ -311,7 +311,7 @@
         consecutiveDoubleRolled = 0;
         
         // Move to JAIL.
-        currentPosition = [propertyNames indexOfObject:@"JAIL"];
+        currentPosition = (uint)[propertyNames indexOfObject:@"JAIL"];
       }
       // If we have NOT rolled doubles too many times,
       else{
@@ -360,7 +360,7 @@
         // If we have to move to another property,
         if(propertyLandedOn != nil){
           // Move to the property we have to.
-          currentPosition = [propertyNames indexOfObject:propertyLandedOn];
+          currentPosition = (uint)[propertyNames indexOfObject:propertyLandedOn];
           
           // Grab the current Monopoly property from the board.
           currentProperty = [properties objectAtIndex:currentPosition];
@@ -373,7 +373,7 @@
       // If we do NOT have to move back 3 spaces,
       else{
         // Move to the property we have to.
-        currentPosition = [propertyNames indexOfObject:propertyLandedOn];
+        currentPosition = (uint)[propertyNames indexOfObject:propertyLandedOn];
         
         // Grab the current Monopoly property from the board.
         currentProperty = [properties objectAtIndex:currentPosition];
@@ -394,7 +394,7 @@
     
     // Grab the position of the property on the board based on the name of the
     // Monopoly property.
-    currentPosition = [propertyNames indexOfObject:currentProperty.name];
+    currentPosition = (uint)[propertyNames indexOfObject:currentProperty.name];
     
     // If the position of the Monopoly property is less than ten,
     if(currentPosition < 10){

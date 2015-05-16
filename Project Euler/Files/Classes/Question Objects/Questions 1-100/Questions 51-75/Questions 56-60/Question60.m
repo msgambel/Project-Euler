@@ -355,7 +355,7 @@
 
 - (BOOL)isPairPrime:(uint)aFirstPrime secondPrime:(uint)aSecondPrime; {
   // Grab the first concatenated number number.
-  uint concatenatedNumber = [self concatenateLeftNumber:aFirstPrime toRightNumber:aSecondPrime];
+  uint concatenatedNumber = (uint)[self concatenateLeftNumber:aFirstPrime toRightNumber:aSecondPrime];
   
   // If it is NOT prime,
   if(![self isPrime:concatenatedNumber]){
@@ -363,7 +363,7 @@
     return NO;
   }
   // Grab the second concatenated number number.
-  concatenatedNumber = [self concatenateLeftNumber:aSecondPrime toRightNumber:aFirstPrime];
+  concatenatedNumber = (uint)[self concatenateLeftNumber:aSecondPrime toRightNumber:aFirstPrime];
   
   // If it is NOT prime,
   if(![self isPrime:concatenatedNumber]){

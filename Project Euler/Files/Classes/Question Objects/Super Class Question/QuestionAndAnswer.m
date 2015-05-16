@@ -31,11 +31,11 @@
 
 - (id)init; {
   if((self = [super init])){
-    // Always call initialize when the object is created.
-    [self initialize];
-    
     // All Project Euler questions start out fun!
     _isFun = YES;
+    
+    // Always call initialize when the object is created.
+    [self initialize];
     
     // Set that we are not computing by default.
     _isComputing = NO;
@@ -638,7 +638,7 @@
   uint currentDigit = 0;
   
   // Variable to hold the current index of the string.
-  int currentIndex = [aNumber length];
+  int currentIndex = (int)[aNumber length];
   
   // Variable to hold the digit sum.
   uint digitSum = 0;

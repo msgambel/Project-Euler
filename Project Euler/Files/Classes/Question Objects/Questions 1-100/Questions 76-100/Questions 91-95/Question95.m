@@ -285,7 +285,7 @@
       if(cycleFound){
         // Grab the first index of the number that repeats in the chain, as it
         // may NOT be the first number in the array.
-        firstIndexOfChain = [numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]];
+        firstIndexOfChain = (uint)[numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]];
         
         // Decrease the current length of the chain by the index of the first
         // number that repeats in the chain.
@@ -607,7 +607,7 @@
       if(cycleFound){
         // Grab the first index of the number that repeats in the chain, as it
         // may NOT be the first number in the array.
-        firstIndexOfChain = [numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]];
+        firstIndexOfChain = (uint)[numbersInChain indexOfObject:[NSNumber numberWithInt:currentElementInChain]];
         
         // Decrease the current length of the chain by the index of the first
         // number that repeats in the chain.

@@ -127,7 +127,7 @@
   }
   // For all the rows of binary objects array, except for the last row, starting
   // with the second last row (i.e.: the first parent row),
-  for(int i = ([rowsOfBinaryObjectsArray count] - 1); i >= 0; i--){
+  for(int i = ((int)[rowsOfBinaryObjectsArray count] - 1); i >= 0; i--){
     // Grab the parent row.
     rowOfBinaryObjectsArray = [rowsOfBinaryObjectsArray objectAtIndex:i];
     
@@ -262,7 +262,7 @@
   }
   // For all the rows of binary objects array, except for the last row, starting
   // with the second last row (i.e.: the first parent row),
-  for(int i = ([rowsOfBinaryObjectsArray count] - 1); i >= 0; i--){
+  for(int i = ((int)[rowsOfBinaryObjectsArray count] - 1); i >= 0; i--){
     // Grab the parent row.
     rowOfBinaryObjectsArray = [rowsOfBinaryObjectsArray objectAtIndex:i];
     

@@ -73,7 +73,7 @@
   long long int currentRemainder = minRemainder;
   
   // Array to hold the list of primes up to the last primes index.
-  NSArray * primes = [self arrayOfPrimeNumbersOfSize:lastPrimeIndex];
+  NSArray * primes = [self arrayOfPrimeNumbersOfSize:(uint)lastPrimeIndex];
   
   // Variable to hold the prime at the current index.
   NSNumber * currentPrime = nil;
@@ -166,7 +166,7 @@
   long long int currentRemainder = minRemainder;
   
   // Array to hold the list of primes up to the last primes index.
-  NSArray * primes = [self arrayOfPrimeNumbersOfSize:lastPrimeIndex];
+  NSArray * primes = [self arrayOfPrimeNumbersOfSize:(uint)lastPrimeIndex];
   
   // Variable to hold the prime at the current index.
   NSNumber * currentPrime = nil;

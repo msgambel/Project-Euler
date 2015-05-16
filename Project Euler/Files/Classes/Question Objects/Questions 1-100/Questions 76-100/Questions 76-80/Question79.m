@@ -272,7 +272,7 @@
   
   // Variable to hold the current digit index of the characters needed to be
   // accepted.
-  int currentDigitIndex = aCharacters.length - 1;
+  int currentDigitIndex = (int)aCharacters.length - 1;
   
   // Variable to hold the digit in the passcode we are looking at.
   uint digit = 0;

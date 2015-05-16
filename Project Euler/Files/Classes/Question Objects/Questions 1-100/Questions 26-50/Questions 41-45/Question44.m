@@ -128,7 +128,7 @@
             // numerator, where the denominator is 6),
             if((currentRoot % 6) == 0){
               // Set the difference to be the current pentagonal number P_k.
-              difference = currentPentagonalNumber;
+              difference = (uint)currentPentagonalNumber;
               
               // Break out of the loop.
               break;
@@ -264,7 +264,7 @@
             // numerator, where the denominator is 6),
             if((currentRoot % 6) == 0){
               // Set the difference to be the current pentagonal number P_k.
-              difference = currentPentagonalNumber;
+              difference = (uint)currentPentagonalNumber;
               
               // Break out of the loop.
               break;
