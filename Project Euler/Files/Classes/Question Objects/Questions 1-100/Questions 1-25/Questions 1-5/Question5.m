@@ -15,6 +15,7 @@
   self.date = @"30 November 2001";
   self.hint = @"Factorials include all the numbers from 1 to n. They also include all the primes from 1 to n. So what do the maximum prime powers give us?";
   self.text = @"2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.\n\nWhat is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?";
+  self.isFun = YES;
   self.title = @"Smallest multiple";
   self.answer = @"232792560";
   self.number = @"5";
