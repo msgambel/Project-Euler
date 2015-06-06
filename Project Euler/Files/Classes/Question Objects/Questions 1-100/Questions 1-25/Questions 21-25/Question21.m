@@ -16,6 +16,7 @@
   self.date = @"05 July 2002";
   self.hint = @"There's a formula that uses the prime powers to calculate d(n).";
   self.text = @"Let d(n) be defined as the sum of proper divisors of n (numbers less than n which divide evenly into n).\n\nIf d(a) = b and d(b) = a, where a  b, then a and b are an amicable pair and each of a and b are called amicable numbers.\n\nFor example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110; therefore d(220) = 284. The proper divisors of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.\n\nEvaluate the sum of all the amicable numbers under 10000.";
+  self.isFun = YES;
   self.title = @"Amicable numbers";
   self.answer = @"31626";
   self.number = @"21";
