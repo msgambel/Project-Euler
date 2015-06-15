@@ -21,6 +21,7 @@
   self.date = @"08 November 2002";
   self.hint = @"Only look up to 200,000, as 8^5 * 6 = 196608 != 888,888.";
   self.text = @"Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:\n\n1634 = 1^4 + 6^4 + 3^4 + 4^4\n8208 = 8^4 + 2^4 + 0^4 + 8^4\n9474 = 9^4 + 4^4 + 7^4 + 4^4\n\nAs 1 = 1^4 is not a sum it is not included.\n\nThe sum of these numbers is 1634 + 8208 + 9474 = 19316.\n\nFind the sum of all the numbers that can be written as the sum of fifth powers of their digits.";
+  self.isFun = YES;
   self.title = @"Digit fifth powers";
   self.answer = @"443839";
   self.number = @"30";
