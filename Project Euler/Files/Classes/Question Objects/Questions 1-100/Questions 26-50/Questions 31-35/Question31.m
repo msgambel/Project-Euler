@@ -23,6 +23,7 @@
   self.date = @"22 November 2002";
   self.hint = @"Use a recursive method to figure out the number of combinations of coins for a given currency value.";
   self.text = @"In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:\n\n1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).\n\nIt is possible to make £2 in the following way:\n\n1£1 + 150p + 220p + 15p + 12p + 31p\n\nHow many different ways can £2 be made using any number of coins?";
+  self.isFun = NO;
   self.title = @"Coin sums";
   self.answer = @"73682";
   self.number = @"31";
