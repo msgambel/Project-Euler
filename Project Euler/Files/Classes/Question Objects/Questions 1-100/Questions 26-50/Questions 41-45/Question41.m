@@ -16,6 +16,7 @@
   self.date = @"11 April 2003";
   self.hint = @"Only check all the prime numbers from 7,654,321 and down.";
   self.text = @"We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital and is also prime.\n\nWhat is the largest n-digit pandigital prime that exists?";
+  self.isFun = YES;
   self.title = @"Pandigital prime";
   self.answer = @"7652413";
   self.number = @"41";
