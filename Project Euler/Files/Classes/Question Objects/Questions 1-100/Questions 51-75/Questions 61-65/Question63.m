@@ -15,6 +15,7 @@
   self.date = @"13 February 2004";
   self.hint = @"The log function is your friend!";
   self.text = @"The 5-digit number, 16807=7^5, is also a fifth power. Similarly, the 9-digit number, 134217728=8^9, is a ninth power.\n\nHow many n-digit positive integers exist which are also an nth power?";
+  self.isFun = NO;
   self.title = @"Powerful digit counts";
   self.answer = @"49";
   self.number = @"63";
