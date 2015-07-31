@@ -21,6 +21,7 @@
   self.date = @"13 August 2004";
   self.hint = @"A recursive function would do well here.";
   self.text = @"It is possible to write five as a sum in exactly six different ways:\n\n4 + 1\n3 + 2\n3 + 1 + 1\n2 + 2 + 1\n2 + 1 + 1 + 1\n1 + 1 + 1 + 1 + 1\n\nHow many different ways can one hundred be written as a sum of at least two positive integers?";
+  self.isFun = YES;
   self.title = @"Counting summations";
   self.answer = @"190569291";
   self.number = @"76";
