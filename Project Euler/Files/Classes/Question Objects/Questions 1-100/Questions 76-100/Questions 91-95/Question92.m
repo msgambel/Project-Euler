@@ -21,6 +21,7 @@
   self.date = @"01 April 2005";
   self.hint = @"The largest digit square sum is 567.";
   self.text = @"A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.\n\nFor example,\n\n44 -> 32 -> 13 -> 10 -> 1 -> 1\n85 -> 89 -> 145 -> 42 -> 20 -> 4 -> 16 -> 37 -> 58 -> 89\n\nTherefore any chain that arrives at 1 or 89 will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at 1 or 89.\n\nHow many starting numbers below ten million will arrive at 89?";
+  self.isFun = YES;
   self.title = @"Square digit chains";
   self.answer = @"8581146";
   self.number = @"92";
