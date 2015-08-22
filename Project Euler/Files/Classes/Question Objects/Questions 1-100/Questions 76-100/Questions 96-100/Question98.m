@@ -22,6 +22,7 @@
   self.date = @"17 June 2005";
   self.hint = @"Check if a pair is an anagram, and then check if the characters can be replaced to form 2 square numbers.";
   self.text = @"By replacing each of the letters in the word CARE with 1, 2, 9, and 6 respectively, we form a square number: 1296 = 36². What is remarkable is that, by using the same digital substitutions, the anagram, RACE, also forms a square number: 9216 = 96². We shall call CARE (and RACE) a square anagram word pair and specify further that leading zeroes are not permitted, neither may a different letter have the same digital value as another letter.\n\nUsing words.txt (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, find all the square anagram word pairs (a palindromic word is NOT considered to be an anagram of itself).\n\nWhat is the largest square number formed by any member of such a pair?\n\nNOTE: All anagrams formed must be contained in the given text file.";
+  self.isFun = YES;
   self.title = @"Anagramic squares";
   self.answer = @"18769";
   self.number = @"98";
