@@ -15,6 +15,7 @@
   self.date = @"16 June 2006";
   self.hint = @"Just use modular arithmetic!";
   self.text = @"Let p_n be the nth prime: 2, 3, 5, 7, 11, ..., and let r be the remainder when (p_n-1)^n + (p_n+1)^n is divided by p_n².\n\nFor example, when n = 3, p_3 = 5, and 4^3 + 6^3 = 280 = 5 mod 25.\n\nThe least value of n for which the remainder first exceeds 10^9 is 7037.\n\nFind the least value of n for which the remainder first exceeds 10^10.";
+  self.isFun = YES;
   self.title = @"Prime square remainders";
   self.answer = @"21035";
   self.number = @"123";
