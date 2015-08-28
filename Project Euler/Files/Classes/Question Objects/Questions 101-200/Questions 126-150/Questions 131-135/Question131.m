@@ -15,6 +15,7 @@
   self.date = @"10 November 2006";
   self.hint = @"Difference of cubes will solve this problem!";
   self.text = @"There are some prime values, p, for which there exists a positive integer, n, such that the expression n³ + n²p is a perfect cube.\n\nFor example, when p = 19, 8³ + 8²x19 = 12³.\n\nWhat is perhaps most surprising is that for each prime with this property the value of n is unique, and there are only four such primes below one-hundred.\n\nHow many primes below one million have this remarkable property?";
+  self.isFun = YES;
   self.title = @"Prime cube partnership";
   self.answer = @"173";
   self.number = @"131";
