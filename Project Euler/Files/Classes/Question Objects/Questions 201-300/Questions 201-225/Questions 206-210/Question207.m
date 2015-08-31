@@ -15,6 +15,7 @@
   self.date = @"06 September 2008";
   self.hint = @"Use the quadratic equation, and a clever substitution.";
   self.text = @"For some positive integers k, there exists an integer partition of the form\n\n4^t = 2^t + k,\n\nwhere 4^t, 2^t, and k are all positive integers and t is a real number.\n\nThe first two such partitions are 4^1 = 2^1 + 2 and 4^1.5849625... = 2^1.5849625... + 6.\n\nPartitions where t is also an integer are called perfect.\n\nFor any m >= 1 let P(m) be the proportion of such partitions that are perfect with k <= m. Thus P(6) = 1/2.\n\nIn the following table are listed some values of P(m)\n\nP(5) = 1/1\nP(10) = 1/2\nP(15) = 2/3\nP(20) = 1/2\nP(25) = 1/2\nP(30) = 2/5\n...\nP(180) = 1/4\nP(185) = 3/13\n\nFind the smallest m for which P(m) < 1/12345";
+  self.isFun = YES;
   self.title = @"Integer partition equations";
   self.answer = @"44043947822";
   self.number = @"207";
