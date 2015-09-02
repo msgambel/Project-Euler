@@ -24,6 +24,7 @@
 @synthesize keywords = _keywords;
 @synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
+@synthesize solutionLineCount = _solutionLineCount;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;
 
@@ -39,6 +40,9 @@
     
     // Set that we are not computing by default.
     _isComputing = NO;
+    
+    // Problems need at least 0 lines of code to be solved!
+    _solutionLineCount = @"0";
     
     // Note: We can set the _isComputing flag to NO as it is a propetry. This
     //       allows us to cancel the computation if the user deems it is taking
