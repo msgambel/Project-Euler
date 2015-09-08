@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum,square,root";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"5.34e-04";
   self.estimatedBruteForceComputationTime = @"1.89e-02";
 }
