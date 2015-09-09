@@ -28,6 +28,7 @@
   self.rating = @"3";
   self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two,read,positive,made,from";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"7.97e-04";
   self.estimatedBruteForceComputationTime = @"4.8e-02";
 }
