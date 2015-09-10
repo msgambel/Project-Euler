@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"3.9e-05";
   self.estimatedBruteForceComputationTime = @"5.81e-05";
 }
