@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers,integers,exists,divisible,identity";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"3.2e-05";
   self.estimatedBruteForceComputationTime = @"1.29e-04";
 }
