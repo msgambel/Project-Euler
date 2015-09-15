@@ -22,6 +22,7 @@
   self.rating = @"3";
   self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array,long,int";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"31";
   self.estimatedComputationTime = @"1.4";
   self.estimatedBruteForceComputationTime = @"1.4";
 }
