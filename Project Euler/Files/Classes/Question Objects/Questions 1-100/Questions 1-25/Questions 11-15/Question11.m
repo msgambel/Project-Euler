@@ -29,6 +29,7 @@
   self.rating = @"3";
   self.keywords = @"product,direction,largest,grid,up,down,left,right,diagonal,four,4,adjacent,numbers,20,twenty,dimensional,array,greatest,in";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"63";
   self.estimatedComputationTime = @"4.85e-04";
   self.estimatedBruteForceComputationTime = @"4.92e-04";
 }
