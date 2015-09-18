@@ -29,6 +29,7 @@
   self.rating = @"4";
   self.keywords = @"sum,big,int,large,first,digits,10,ten,150,one,hundred,and,fifty,numbers,list,work,out";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"2.86e-03";
   self.estimatedBruteForceComputationTime = @"3.28e-02";
 }
