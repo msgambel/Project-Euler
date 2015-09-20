@@ -29,6 +29,7 @@
   self.rating = @"4";
   self.keywords = @"routes,grid,lattice,paths,20,twenty,corner,bottom,right,recursive,method";
   self.difficulty = @"Meh";
+  self.solutionLineCount = @"21";
   self.estimatedComputationTime = @"5.4e-05";
   self.estimatedBruteForceComputationTime = @"2.65e+04";
 }
