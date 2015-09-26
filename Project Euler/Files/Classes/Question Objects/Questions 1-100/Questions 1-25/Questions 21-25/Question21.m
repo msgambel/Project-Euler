@@ -23,6 +23,7 @@
   self.rating = @"5";
   self.keywords = @"divisors,proper,amicable,pair,numbers,sum,10000,ten,thousand,evalute,under,prime,factorization";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"57";
   self.estimatedComputationTime = @"1.71e-02";
   self.estimatedBruteForceComputationTime = @"9.36e-02";
 }
