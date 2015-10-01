@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"division,fractional,part,unit,decimal,representation,recurring,cycles,longest,reciprocal,denominators,contains,1000";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"33";
   self.estimatedComputationTime = @"1.38e-02";
   self.estimatedBruteForceComputationTime = @"4.36e-02";
 }
