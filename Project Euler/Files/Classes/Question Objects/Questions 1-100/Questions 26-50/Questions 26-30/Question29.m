@@ -24,6 +24,7 @@
   self.rating = @"3";
   self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated,pairs,one,hundred,100";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"45";
   self.estimatedComputationTime = @"7.52e-03";
   self.estimatedBruteForceComputationTime = @"8.77";
 }
