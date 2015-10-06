@@ -30,6 +30,7 @@
   self.rating = @"4";
   self.keywords = @"pounds,coins,sums,currency,different,unique,ways,two,2,number,combinations,England,pence,general,circulation";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"1.54e-04";
   self.estimatedBruteForceComputationTime = @"1.54e-04";
 }
