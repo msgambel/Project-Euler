@@ -28,6 +28,7 @@
   self.rating = @"4";
   self.keywords = @"division,fractions,curious,numerator,denominator,digit,cancelling,lowest,common,terms,product";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"61";
   self.estimatedComputationTime = @"1.51e-04";
   self.estimatedBruteForceComputationTime = @"2.84e-04";
 }
