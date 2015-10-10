@@ -29,6 +29,7 @@
   self.rating = @"5";
   self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd,hash,table";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"81";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.42";
 }
