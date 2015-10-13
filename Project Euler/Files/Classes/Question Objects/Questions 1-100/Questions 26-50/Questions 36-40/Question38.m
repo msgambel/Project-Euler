@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"pandigital,multiples,digit,concatenated,product,integer,formed,largest,multiply,lexographic,number";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"27";
   self.estimatedComputationTime = @"1.91e-04";
   self.estimatedBruteForceComputationTime = @"1.76e-03";
 }
