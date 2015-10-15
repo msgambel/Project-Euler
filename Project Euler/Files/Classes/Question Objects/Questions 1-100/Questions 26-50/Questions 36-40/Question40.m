@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"concatenate,digits,constant,champernowne's,positive,integers,expression,fractional,part,number,value";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"2.3e-05";
   self.estimatedBruteForceComputationTime = @"0.386";
 }
