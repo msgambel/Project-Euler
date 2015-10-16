@@ -23,6 +23,7 @@
   self.rating = @"4";
   self.keywords = @"pandigital,prime,largest,digit,number,exists,exactly,primality,test";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"37";
   self.estimatedComputationTime = @"9.08e-03";
   self.estimatedBruteForceComputationTime = @"6.53";
 }
