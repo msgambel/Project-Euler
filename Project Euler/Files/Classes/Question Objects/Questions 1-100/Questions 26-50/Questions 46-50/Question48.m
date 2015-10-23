@@ -23,6 +23,7 @@
   self.rating = @"4";
   self.keywords = @"sum,powers,series,ten,10,last,digits,self,modular,exponentiation,bigint,radix,find,modulo,1000";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"0.191";
   self.estimatedBruteForceComputationTime = @"0.191";
 }
