@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"71";
   self.estimatedComputationTime = @"1.21";
   self.estimatedBruteForceComputationTime = @"7.2";
 }
