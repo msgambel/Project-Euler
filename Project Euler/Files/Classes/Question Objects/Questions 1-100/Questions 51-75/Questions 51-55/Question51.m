@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"prime,value,family,digit,replacements,number,eight,8,*,smallest,property";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"75";
   self.estimatedComputationTime = @"0.794";
   self.estimatedBruteForceComputationTime = @"0.794";
 }
