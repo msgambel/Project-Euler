@@ -23,6 +23,7 @@
   self.rating = @"3";
   self.keywords = @"powers,powerful,digital,sum,maximum,massive,natural,numbers,googol,considering,form";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"0.858";
   self.estimatedBruteForceComputationTime = @"9.41";
 }
