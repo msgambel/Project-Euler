@@ -23,6 +23,7 @@
   self.rating = @"4";
   self.keywords = @"square,root,continued,fractions,infinite,expansions,numerator,denominator,one,thousand,1000,more,digits,how,many";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"3.14e-04";
   self.estimatedBruteForceComputationTime = @"4.97";
 }
