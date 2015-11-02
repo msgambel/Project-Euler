@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"spiralling,ratio,primes,both,diagonals,anticlockwise,square,side,length,formed,layer,wrapped,falls,below,10,ten,percent";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"0.915e-02";
   self.estimatedBruteForceComputationTime = @"0.921e-02";
 }
