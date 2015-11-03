@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"xor,decryption,god,key,ascii,values,encryption,password,import,unique,code,character,bytes,preferred,message,common,english,words,text,containing,cyclically";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"43";
   self.estimatedComputationTime = @"0.139e-02";
   self.estimatedBruteForceComputationTime = @"0.127";
   
