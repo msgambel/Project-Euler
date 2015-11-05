@@ -29,6 +29,7 @@
   self.rating = @"5";
   self.keywords = @"triangle,square,pentagonal,hexagonal,heptagonal,octagonal,cyclic,set,numbers,polygonal,different,number,formulae,represented,set,figurate,generated";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"87";
   self.estimatedComputationTime = @"0.033";
   self.estimatedBruteForceComputationTime = @"0.033";
 }
