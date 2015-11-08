@@ -22,6 +22,7 @@
   self.rating = @"3";
   self.keywords = @"square,roots,continued,fractions,representations,periodic,odd,ten,thousand,10000,count,notation,blocks,repeats,indefinitely";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"43";
   self.estimatedComputationTime = @"1.61e-02";
   self.estimatedBruteForceComputationTime = @"1.61e-02";
 }
