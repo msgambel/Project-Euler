@@ -22,6 +22,7 @@
   self.rating = @"3";
   self.keywords = @"diophantine,equations,continued,fractions,expansions,pells,periods,minimal,solutions,largest,value,quadratic,length";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"6.31e-04";
   self.estimatedBruteForceComputationTime = @"6.31e-04";
 }
