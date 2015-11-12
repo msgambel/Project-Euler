@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"n-gon,digit,maximum,magic,ring,external,node,adding,line,16,sixteen,5-gon,five-gon,arrangements,strings";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"1";
   self.estimatedComputationTime = @"2.97e-06";
   self.estimatedBruteForceComputationTime = @"2.97e-06";
 }
