@@ -23,6 +23,7 @@
   self.rating = @"2";
   self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"91";
   self.estimatedComputationTime = @"1.83e-02";
   self.estimatedBruteForceComputationTime = @"50.3";
 }
