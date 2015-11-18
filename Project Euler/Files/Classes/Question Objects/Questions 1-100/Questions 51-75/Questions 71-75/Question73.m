@@ -23,6 +23,7 @@
   self.rating = @"3";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,HCF,sorted,euler,totient";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"119";
   self.estimatedComputationTime = @"1.67e-02";
   self.estimatedBruteForceComputationTime = @"1.67e-02";
 }
