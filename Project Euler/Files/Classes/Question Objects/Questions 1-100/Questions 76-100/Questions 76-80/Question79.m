@@ -28,6 +28,7 @@
   self.rating = @"5";
   self.keywords = @"passcode,derivation,login,secret,shortest,import,security,common,method,analyse,files";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"3.23e-04";
   self.estimatedBruteForceComputationTime = @"93.9";
 }
