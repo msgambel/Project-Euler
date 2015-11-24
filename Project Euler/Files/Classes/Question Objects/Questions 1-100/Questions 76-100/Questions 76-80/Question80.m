@@ -23,6 +23,7 @@
   self.rating = @"4";
   self.keywords = @"irrational,square,root,digital,expansion,sums,natural,number,infinite,total,digits";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"0.5";
   self.estimatedBruteForceComputationTime = @"0.5";
 }
