@@ -22,6 +22,7 @@
   self.rating = @"3";
   self.keywords = @"matrix,column,minimal,path,sum,import,file,right,left";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"23";
   self.estimatedComputationTime = @"7.9e-03";
   self.estimatedBruteForceComputationTime = @"7.9e-03";
 }
