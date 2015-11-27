@@ -23,6 +23,7 @@
   self.rating = @"3";
   self.keywords = @"matrix,a*,a,star,minimal,path,sum,import,moving,up,down";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"51";
   self.estimatedComputationTime = @"3.66";
   self.estimatedBruteForceComputationTime = @"";
 }
