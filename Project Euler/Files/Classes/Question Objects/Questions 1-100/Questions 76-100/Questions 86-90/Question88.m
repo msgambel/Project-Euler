@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"73";
   self.estimatedComputationTime = @"0.881";
   self.estimatedBruteForceComputationTime = @"0.881";
 }
