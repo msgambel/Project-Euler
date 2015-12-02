@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"prime,square,cube,fourth,power,sum,count,triples,count,50000000,fifty,million,below,expressed,numbers";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"67";
   self.estimatedComputationTime = @"1.49";
   self.estimatedBruteForceComputationTime = @"1.49";
 }
