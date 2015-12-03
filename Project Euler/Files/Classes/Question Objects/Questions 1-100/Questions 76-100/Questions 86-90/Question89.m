@@ -31,6 +31,7 @@
   self.rating = @"5";
   self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand,minimal,form,consecutive,identical";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"23";
   self.estimatedComputationTime = @"1.75e-02";
   self.estimatedBruteForceComputationTime = @"2.67e-02";
 }
