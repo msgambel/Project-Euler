@@ -28,6 +28,7 @@
   self.rating = @"4";
   self.keywords = @"cube,digit,pairs,distinct,formations,arrangements,square,numbers,different,positions,side,6,six,2,two,displayed,forming";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"31";
   self.estimatedComputationTime = @"0.173";
   self.estimatedBruteForceComputationTime = @"0.173";
 }
