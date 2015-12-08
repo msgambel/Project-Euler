@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"almost,equilateral,triangles,alternating,perimeters,sides,square,units,1000000000,one,billion,lengths,exceed,integral,area";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"0.819";
   self.estimatedBruteForceComputationTime = @"15.3";
 }
