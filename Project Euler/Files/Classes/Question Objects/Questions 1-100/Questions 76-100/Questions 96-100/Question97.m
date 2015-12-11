@@ -23,6 +23,7 @@
   self.rating = @"5";
   self.keywords = @"large,prime,non,mersenne,last,digits,big,int,one,million,1000000,ten,10,mod,radix";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"1.45e-03";
   self.estimatedBruteForceComputationTime = @"1.45e-03";
 }
