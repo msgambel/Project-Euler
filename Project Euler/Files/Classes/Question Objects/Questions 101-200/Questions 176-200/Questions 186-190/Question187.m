@@ -22,6 +22,7 @@
   self.rating = @"4";
   self.keywords = @"semiprimes,two,2,prime,factors,composites,distinct";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"65";
   self.estimatedComputationTime = @"91.5";
   self.estimatedBruteForceComputationTime = @"91.5";
 }
