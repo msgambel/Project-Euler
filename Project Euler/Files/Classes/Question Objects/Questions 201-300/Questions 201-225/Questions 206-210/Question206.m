@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"concealed,square,perfect,positive,integer";
   self.difficulty = @"Easy";
+  self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"4.53";
   self.estimatedBruteForceComputationTime = @"4.53";
 }
