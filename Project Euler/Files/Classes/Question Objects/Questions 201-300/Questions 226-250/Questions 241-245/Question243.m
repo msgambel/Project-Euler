@@ -22,6 +22,7 @@
   self.rating = @"5";
   self.keywords = @"resilience,totient,function,unique,prime,factors,smallest";
   self.difficulty = @"Medium";
+  self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"4.5e-05";
   self.estimatedBruteForceComputationTime = @">1000";
 }
