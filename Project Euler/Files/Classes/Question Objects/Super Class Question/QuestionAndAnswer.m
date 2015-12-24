@@ -22,6 +22,7 @@
 @synthesize rating = _rating;
 @synthesize delegate = _delegate;
 @synthesize keywords = _keywords;
+@synthesize solveTime = _solveTime;
 @synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
 @synthesize solutionLineCount = _solutionLineCount;
@@ -35,14 +36,17 @@
     // All Project Euler questions start out fun!
     _isFun = YES;
     
-    // Always call initialize when the object is created.
-    [self initialize];
+    // Set the default solve time to be N/A.
+    _solveTime = @"N/A";
     
     // Set that we are not computing by default.
     _isComputing = NO;
     
     // Problems need at least 0 lines of code to be solved!
     _solutionLineCount = @"0";
+    
+    // Always call initialize when the object is created.
+    [self initialize];
     
     // Note: We can set the _isComputing flag to NO as it is a propetry. This
     //       allows us to cancel the computation if the user deems it is taking
