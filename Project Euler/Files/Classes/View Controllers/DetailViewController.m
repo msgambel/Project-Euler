@@ -288,6 +288,7 @@
   _questionRatingLabel.text = [NSString stringWithFormat:@"%@ / 5", _questionAndAnswer.rating];
   _computationTimeLabel.text = _questionAndAnswer.estimatedComputationTime;
   _questionIsFunImageView.hidden = (_questionAndAnswer.isFun == NO);
+  _questionSolveTimeLabel.text = [NSString stringWithFormat:@"Solve Time (s): %@", _questionAndAnswer.solveTime];
   _solutionLineCountLabel.text = [NSString stringWithFormat:@"Solution Line Count: %@", _questionAndAnswer.solutionLineCount];
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;

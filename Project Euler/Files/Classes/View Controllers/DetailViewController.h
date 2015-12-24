@@ -17,6 +17,7 @@
   IBOutlet UILabel                 * _questionNumberLabel;
   IBOutlet UILabel                 * _questionRatingLabel;
   IBOutlet UILabel                 * _computationTimeLabel;
+  IBOutlet UILabel                 * _questionSolveTimeLabel;
   IBOutlet UILabel                 * _solutionLineCountLabel;
   IBOutlet UILabel                 * _questionDifficultyLabel;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
