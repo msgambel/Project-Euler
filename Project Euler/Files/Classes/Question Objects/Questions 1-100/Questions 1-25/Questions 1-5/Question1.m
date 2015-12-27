@@ -27,6 +27,7 @@
   self.number = @"1";
   self.rating = @"5";
   self.keywords = @"sums,triangle,numbers,multiples,3,three,5,five,1000,one,thousand,first,problem,question,list";
+  self.solveTime = @"10";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"2.1e-05";
