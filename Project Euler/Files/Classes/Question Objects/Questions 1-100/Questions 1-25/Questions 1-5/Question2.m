@@ -21,6 +21,7 @@
   self.number = @"2";
   self.rating = @"4";
   self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000,odd,positive,generated,previous";
+  self.solveTime = @"60";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"2.1e-05";
