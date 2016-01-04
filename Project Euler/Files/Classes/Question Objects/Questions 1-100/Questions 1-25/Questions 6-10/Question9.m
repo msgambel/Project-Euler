@@ -21,6 +21,7 @@
   self.number = @"9";
   self.rating = @"4";
   self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers,integers,exists,divisible,identity";
+  self.solveTime = @"30";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"3.2e-05";
