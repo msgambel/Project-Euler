@@ -21,6 +21,7 @@
   self.number = @"12";
   self.rating = @"4";
   self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated,prime,factors";
+  self.solveTime = @"60";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"73";
   self.estimatedComputationTime = @"1.09e-02";
