@@ -21,6 +21,7 @@
   self.number = @"14";
   self.rating = @"4";
   self.keywords = @"chain,collatz,longest,sequence,iterative,positive,integers,one,million,1000000,starting,number,terms,proved,problem,allowed,above";
+  self.solveTime = @"90";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"37";
   self.estimatedComputationTime = @"0.541";
