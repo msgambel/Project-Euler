@@ -29,6 +29,7 @@
   self.number = @"17";
   self.rating = @"4";
   self.keywords = @"letters,sum,words,numbers,counts,british,usage,written,one,thousand,1000,contains,spaces,hyphens,compliance";
+  self.solveTime = @"90";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"2.5e-05";
