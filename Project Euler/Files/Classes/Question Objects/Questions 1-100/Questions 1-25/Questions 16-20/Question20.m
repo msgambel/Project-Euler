@@ -23,6 +23,7 @@
   self.number = @"20";
   self.rating = @"3";
   self.keywords = @"factorial,digits,sum,number,100,one,hundred,!,total,bigint,radix";
+  self.solveTime = @"90";
   self.difficulty = @"Meh";
   self.solutionLineCount = @"71";
   self.estimatedComputationTime = @"1.66e-03";
