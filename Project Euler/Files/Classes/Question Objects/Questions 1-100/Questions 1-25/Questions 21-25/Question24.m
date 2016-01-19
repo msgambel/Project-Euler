@@ -21,6 +21,7 @@
   self.number = @"24";
   self.rating = @"3";
   self.keywords = @"lexicographic,permutations,choose,ordered,arrangement,digits,1000000,one,millionth,objects,possible,combinatorics,subtract";
+  self.solveTime = @"90";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"4.6e-05";
