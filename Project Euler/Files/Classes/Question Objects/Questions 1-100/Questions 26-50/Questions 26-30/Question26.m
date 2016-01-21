@@ -21,6 +21,7 @@
   self.number = @"26";
   self.rating = @"4";
   self.keywords = @"division,fractional,part,unit,decimal,representation,recurring,cycles,longest,reciprocal,denominators,contains,1000";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"33";
   self.estimatedComputationTime = @"1.38e-02";
