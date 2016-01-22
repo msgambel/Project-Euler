@@ -28,6 +28,7 @@
   self.number = @"27";
   self.rating = @"5";
   self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value,produces,number,helper,methods";
+  self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"0.23";
