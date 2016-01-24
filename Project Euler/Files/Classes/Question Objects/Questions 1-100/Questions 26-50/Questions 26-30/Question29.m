@@ -23,6 +23,7 @@
   self.number = @"29";
   self.rating = @"3";
   self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated,pairs,one,hundred,100";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"45";
   self.estimatedComputationTime = @"7.52e-03";
