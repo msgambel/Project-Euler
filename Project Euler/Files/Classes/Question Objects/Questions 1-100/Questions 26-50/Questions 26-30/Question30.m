@@ -27,6 +27,7 @@
   self.number = @"30";
   self.rating = @"3";
   self.keywords = @"sum,powers,digits,fourth,fifth,written,total,200000,two,hundred,thousand,5,five";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"5.17e-02";
