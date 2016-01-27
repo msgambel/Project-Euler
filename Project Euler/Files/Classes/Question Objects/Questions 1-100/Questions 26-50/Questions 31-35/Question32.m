@@ -21,6 +21,7 @@
   self.number = @"32";
   self.rating = @"4";
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"37";
   self.estimatedComputationTime = @"7.15e-03";
