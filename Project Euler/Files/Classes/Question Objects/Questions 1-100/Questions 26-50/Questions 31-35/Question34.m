@@ -21,6 +21,7 @@
   self.number = @"34";
   self.rating = @"5";
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
+  self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"7.71e-03";
