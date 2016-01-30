@@ -28,6 +28,7 @@
   self.number = @"35";
   self.rating = @"5";
   self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd,hash,table";
+  self.solveTime = @"150";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"81";
   self.estimatedComputationTime = @"0.99";
