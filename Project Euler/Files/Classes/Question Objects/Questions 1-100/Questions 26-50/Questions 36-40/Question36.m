@@ -27,6 +27,7 @@
   self.number = @"36";
   self.rating = @"5";
   self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less,leading,zeros";
+  self.solveTime = @"150";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"53";
   self.estimatedComputationTime = @"7.61e-02";
