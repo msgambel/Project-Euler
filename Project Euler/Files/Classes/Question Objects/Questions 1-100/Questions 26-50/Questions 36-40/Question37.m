@@ -30,6 +30,7 @@
   self.number = @"37";
   self.rating = @"5";
   self.keywords = @"primes,left,right,truncatable,continuously,remove,digits,7,seven,sum,only,hash,table";
+  self.solveTime = @"180";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"81";
   self.estimatedComputationTime = @"0.99";
