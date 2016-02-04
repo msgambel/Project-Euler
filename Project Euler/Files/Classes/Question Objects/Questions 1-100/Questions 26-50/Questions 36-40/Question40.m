@@ -21,6 +21,7 @@
   self.number = @"40";
   self.rating = @"4";
   self.keywords = @"concatenate,digits,constant,champernowne's,positive,integers,expression,fractional,part,number,value";
+  self.solveTime = @"300";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"2.3e-05";
