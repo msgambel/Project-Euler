@@ -27,6 +27,7 @@
   self.number = @"43";
   self.rating = @"5";
   self.keywords = @"string,divisible,pandigital,sub,divisibility,sum,property,digit,numbers,hueristic,order";
+  self.solveTime = @"900";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"93";
   self.estimatedComputationTime = @"8.54e-02";
