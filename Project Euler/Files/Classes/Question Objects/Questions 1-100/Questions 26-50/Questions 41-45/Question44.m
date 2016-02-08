@@ -21,6 +21,7 @@
   self.number = @"44";
   self.rating = @"5";
   self.keywords = @"pair,pentagonal,numbers,sum,difference,generated,formula,recursion,difference,quadratic,equations,factoring,radicals";
+  self.solveTime = @"120";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"29";
   self.estimatedComputationTime = @"7.91e-02";
