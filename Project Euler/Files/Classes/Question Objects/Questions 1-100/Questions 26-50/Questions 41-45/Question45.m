@@ -21,6 +21,7 @@
   self.number = @"45";
   self.rating = @"4";
   self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number,formed,integer,odd,largest";
+  self.solveTime = @"300";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"8.31e-04";
