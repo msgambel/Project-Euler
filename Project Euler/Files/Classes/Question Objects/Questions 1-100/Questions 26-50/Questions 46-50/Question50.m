@@ -21,6 +21,7 @@
   self.number = @"50";
   self.rating = @"5";
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
+  self.solveTime = @"300";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"71";
   self.estimatedComputationTime = @"1.21";
