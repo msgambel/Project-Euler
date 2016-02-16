@@ -21,6 +21,7 @@
   self.number = @"52";
   self.rating = @"5";
   self.keywords = @"multiples,permutation,digits,exactly,same,numbers,order,2,two,3,three,4,four,5,five,6,six,different,smallest";
+  self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"3.11e-02";
