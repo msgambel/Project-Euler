@@ -22,6 +22,7 @@
   self.number = @"53";
   self.rating = @"5";
   self.keywords = @"choose,sum,combinatoric,selections,not,greater,distinct,exceeds,one,million,1000000,value,selecting";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"3.7e-05";
