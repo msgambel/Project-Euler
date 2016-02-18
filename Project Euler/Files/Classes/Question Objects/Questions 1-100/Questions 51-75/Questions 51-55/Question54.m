@@ -22,6 +22,7 @@
   self.number = @"54";
   self.rating = @"5";
   self.keywords = @"poker,hands,two,player,import,rank,compare,5,five,clear,winner,specific,order";
+  self.solveTime = @"300";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"51";
   self.estimatedComputationTime = @"3.43e-02";
