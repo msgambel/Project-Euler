@@ -22,6 +22,7 @@
   self.number = @"56";
   self.rating = @"3";
   self.keywords = @"powers,powerful,digital,sum,maximum,massive,natural,numbers,googol,considering,form";
+  self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"0.858";
