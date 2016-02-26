@@ -21,6 +21,7 @@
   self.number = @"62";
   self.rating = @"4";
   self.keywords = @"cube,cubic,permutations,digits,exactly,5,five,smallest,unique,minimum,number";
+  self.solveTime = @"180";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"45";
   self.estimatedComputationTime = @"0.731";
