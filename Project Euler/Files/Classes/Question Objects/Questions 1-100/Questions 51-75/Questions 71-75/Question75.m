@@ -21,6 +21,7 @@
   self.number = @"75";
   self.rating = @"5";
   self.keywords = @"singular,integer,right,triangles,generation,primitives,pythagorean,triples,cm,smallest,length,sided,angle";
+  self.solveTime = @"120";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"99";
   self.estimatedComputationTime = @"6.5";
