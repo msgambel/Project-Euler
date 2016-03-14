@@ -27,6 +27,7 @@
   self.number = @"79";
   self.rating = @"5";
   self.keywords = @"passcode,derivation,login,secret,shortest,import,security,common,method,analyse,files";
+  self.solveTime = @"300";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"3.23e-04";
