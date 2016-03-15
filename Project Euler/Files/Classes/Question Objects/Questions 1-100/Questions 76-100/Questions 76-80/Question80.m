@@ -22,6 +22,7 @@
   self.number = @"80";
   self.rating = @"4";
   self.keywords = @"irrational,square,root,digital,expansion,sums,natural,number,infinite,total,digits";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"0.5";
