@@ -22,6 +22,7 @@
   self.number = @"85";
   self.rating = @"5";
   self.keywords = @"rectangles,grid,size,counting,triangle,numbers,2000000,two,million,nearest,solution,area,sub";
+  self.solveTime = @"300";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"2.13e-04";
