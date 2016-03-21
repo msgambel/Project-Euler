@@ -22,6 +22,7 @@
   self.number = @"86";
   self.rating = @"4";
   self.keywords = @"spider,cuboid,shortest,route,path,pythagoras,side,length,one,million,1000000,surface,area,solutions,exceeds";
+  self.solveTime = @"90";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"0.129";
