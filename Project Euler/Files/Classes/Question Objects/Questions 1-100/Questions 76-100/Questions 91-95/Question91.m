@@ -21,6 +21,7 @@
   self.number = @"91";
   self.rating = @"4";
   self.keywords = @"right,triangles,with,integer,coordinates,vectors,inner,product,orthogonal,points,formed";
+  self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"0.105";
