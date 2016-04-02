@@ -28,6 +28,7 @@
   self.number = @"98";
   self.rating = @"4";
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
+  self.solveTime = @"300";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"109";
   self.estimatedComputationTime = @"4.87";
