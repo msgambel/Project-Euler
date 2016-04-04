@@ -21,6 +21,7 @@
   self.number = @"100";
   self.rating = @"5";
   self.keywords = @"arranged,probability,blue,red,disks,50,fifty,random,percent,half,1/2,box,contain";
+  self.solveTime = @"60";
   self.difficulty = @"Medium";
   self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"2.4e-05";
