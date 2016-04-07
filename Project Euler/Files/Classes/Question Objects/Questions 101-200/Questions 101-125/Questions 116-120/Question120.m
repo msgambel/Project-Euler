@@ -21,6 +21,7 @@
   self.number = @"120";
   self.rating = @"5";
   self.keywords = @"square,remainders,modulo,polynomial,expansion,rmax,sum";
+  self.solveTime = @"60";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"9";
   self.estimatedComputationTime = @"2.9e-05";
