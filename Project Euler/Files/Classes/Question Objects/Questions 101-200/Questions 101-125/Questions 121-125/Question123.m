@@ -21,6 +21,7 @@
   self.number = @"123";
   self.rating = @"5";
   self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
+  self.solveTime = @"90";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"45";
   self.estimatedComputationTime = @"1.59e-02";
