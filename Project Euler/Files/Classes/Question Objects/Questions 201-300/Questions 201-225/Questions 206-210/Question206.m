@@ -21,6 +21,7 @@
   self.number = @"206";
   self.rating = @"5";
   self.keywords = @"concealed,square,perfect,positive,integer";
+  self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"4.53";
