@@ -25,6 +25,7 @@
 @synthesize solveTime = _solveTime;
 @synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
+@synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;

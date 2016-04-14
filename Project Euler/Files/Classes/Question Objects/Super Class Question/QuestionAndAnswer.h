@@ -24,6 +24,7 @@
   NSString * _keywords;
   NSString * _solveTime;
   NSString * _difficulty;
+  NSString * _completedOnDate;
   NSString * _solutionLineCount;
   NSString * _estimatedComputationTime;
   NSString * _estimatedBruteForceComputationTime;
@@ -43,6 +44,7 @@
 @property (nonatomic, strong) NSString * keywords;
 @property (nonatomic, strong) NSString * solveTime;
 @property (nonatomic, strong) NSString * difficulty;
+@property (nonatomic, strong) NSString * completedOnDate;
 @property (nonatomic, strong) NSString * solutionLineCount;
 @property (nonatomic, strong) NSString * estimatedComputationTime;
 @property (nonatomic, strong) NSString * estimatedBruteForceComputationTime;
