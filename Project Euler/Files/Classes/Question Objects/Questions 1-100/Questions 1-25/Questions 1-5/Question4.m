@@ -29,6 +29,7 @@
   self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two,read,positive,made,from";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"04/01/13";
   self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"7.97e-04";
   self.estimatedBruteForceComputationTime = @"4.8e-02";
