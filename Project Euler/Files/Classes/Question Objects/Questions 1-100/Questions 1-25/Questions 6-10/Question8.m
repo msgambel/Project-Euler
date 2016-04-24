@@ -30,6 +30,7 @@
   self.keywords = @"largest,product,in,a,series,five,5,consecutive,digits,1000,one,thousand,greatest,sub,string,number,search";
   self.solveTime = @"60";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"08/01/13";
   self.solutionLineCount = @"41";
   self.estimatedComputationTime = @"6.34e-04";
   self.estimatedBruteForceComputationTime = @"2.72e-03";
