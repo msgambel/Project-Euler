@@ -23,6 +23,7 @@
   self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array,long,int";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"10/01/13";
   self.solutionLineCount = @"31";
   self.estimatedComputationTime = @"1.4";
   self.estimatedBruteForceComputationTime = @"1.4";
