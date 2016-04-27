@@ -30,6 +30,7 @@
   self.keywords = @"product,direction,largest,grid,up,down,left,right,diagonal,four,4,adjacent,numbers,20,twenty,dimensional,array,greatest,in";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"11/01/13";
   self.solutionLineCount = @"63";
   self.estimatedComputationTime = @"4.85e-04";
   self.estimatedBruteForceComputationTime = @"4.92e-04";
