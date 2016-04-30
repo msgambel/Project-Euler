@@ -23,6 +23,7 @@
   self.keywords = @"chain,collatz,longest,sequence,iterative,positive,integers,one,million,1000000,starting,number,terms,proved,problem,allowed,above";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"14/01/13";
   self.solutionLineCount = @"37";
   self.estimatedComputationTime = @"0.541";
   self.estimatedBruteForceComputationTime = @"1.41";
