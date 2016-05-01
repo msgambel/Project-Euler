@@ -30,6 +30,7 @@
   self.keywords = @"routes,grid,lattice,paths,20,twenty,corner,bottom,right,recursive,method";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"15/01/13";
   self.solutionLineCount = @"21";
   self.estimatedComputationTime = @"5.4e-05";
   self.estimatedBruteForceComputationTime = @"2.65e+04";
