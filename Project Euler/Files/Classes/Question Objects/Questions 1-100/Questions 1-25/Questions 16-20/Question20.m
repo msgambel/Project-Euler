@@ -25,6 +25,7 @@
   self.keywords = @"factorial,digits,sum,number,100,one,hundred,!,total,bigint,radix";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
+  self.completedOnDate = @"20/01/13";
   self.solutionLineCount = @"71";
   self.estimatedComputationTime = @"1.66e-03";
   self.estimatedBruteForceComputationTime = @"1.82e-03";
