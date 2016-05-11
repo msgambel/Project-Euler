@@ -24,6 +24,7 @@
   self.keywords = @"fibonacci,closed,form,recurrance,terms,sequence,digits,contains,1000,one,thousand,first,number,expression,logarithm";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"25/01/13";
   self.solutionLineCount = @"3";
   self.estimatedComputationTime = @"4.6e-05";
   self.estimatedBruteForceComputationTime = @"3.25e-02";
