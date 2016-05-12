@@ -23,6 +23,7 @@
   self.keywords = @"division,fractional,part,unit,decimal,representation,recurring,cycles,longest,reciprocal,denominators,contains,1000";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"26/01/13";
   self.solutionLineCount = @"33";
   self.estimatedComputationTime = @"1.38e-02";
   self.estimatedBruteForceComputationTime = @"4.36e-02";
