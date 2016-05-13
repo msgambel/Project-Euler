@@ -30,6 +30,7 @@
   self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value,produces,number,helper,methods";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"27/01/13";
   self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"0.23";
   self.estimatedBruteForceComputationTime = @"1.44";
