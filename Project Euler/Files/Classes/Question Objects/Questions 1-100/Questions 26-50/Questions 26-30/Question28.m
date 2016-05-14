@@ -23,6 +23,7 @@
   self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum,numbers,formed,same,way";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"28/01/13";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"2.9e-05";
   self.estimatedBruteForceComputationTime = @"3.1e-05";
