@@ -29,6 +29,7 @@
   self.keywords = @"sum,powers,digits,fourth,fifth,written,total,200000,two,hundred,thousand,5,five";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"30/01/13";
   self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"5.17e-02";
   self.estimatedBruteForceComputationTime = @"5.17e-02";
