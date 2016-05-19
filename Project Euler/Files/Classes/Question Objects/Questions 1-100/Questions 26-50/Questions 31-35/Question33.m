@@ -29,6 +29,7 @@
   self.keywords = @"division,fractions,curious,numerator,denominator,digit,cancelling,lowest,common,terms,product";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"02/02/13";
   self.solutionLineCount = @"61";
   self.estimatedComputationTime = @"1.51e-04";
   self.estimatedBruteForceComputationTime = @"2.84e-04";
