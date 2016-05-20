@@ -23,6 +23,7 @@
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"03/02/13";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"7.71e-03";
   self.estimatedBruteForceComputationTime = @"7.71e-03";
