@@ -30,6 +30,7 @@
   self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd,hash,table";
   self.solveTime = @"150";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"04/02/13";
   self.solutionLineCount = @"81";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.42";
