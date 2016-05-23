@@ -32,6 +32,7 @@
   self.keywords = @"primes,left,right,truncatable,continuously,remove,digits,7,seven,sum,only,hash,table";
   self.solveTime = @"180";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"06/02/13";
   self.solutionLineCount = @"81";
   self.estimatedComputationTime = @"0.99";
   self.estimatedBruteForceComputationTime = @"1.14";
