@@ -23,6 +23,7 @@
   self.keywords = @"pandigital,multiples,digit,concatenated,product,integer,formed,largest,multiply,lexographic,number";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"07/02/13";
   self.solutionLineCount = @"27";
   self.estimatedComputationTime = @"1.91e-04";
   self.estimatedBruteForceComputationTime = @"1.76e-03";
