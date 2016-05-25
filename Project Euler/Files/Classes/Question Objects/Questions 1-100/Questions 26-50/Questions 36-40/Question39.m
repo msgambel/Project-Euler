@@ -23,6 +23,7 @@
   self.keywords = @"pythagorean,triple,perimeter,right,angle,length,sides,maximized,integral,1000,one,thousand,solutions,integer,triangles,pair,maximum";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"08/02/13";
   self.solutionLineCount = @"27";
   self.estimatedComputationTime = @"2.43e-03";
   self.estimatedBruteForceComputationTime = @"2.43e-03";
