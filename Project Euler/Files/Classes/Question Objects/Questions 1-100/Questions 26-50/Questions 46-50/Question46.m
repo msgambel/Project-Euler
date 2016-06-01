@@ -23,6 +23,7 @@
   self.keywords = @"christian,goldbach's,other,conjecture,prime,square,sum,twice,odd,composite,number,false,smallest";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"15/02/13";
   self.solutionLineCount = @"71";
   self.estimatedComputationTime = @"2.27e-02";
   self.estimatedBruteForceComputationTime = @"2.27e-02";
