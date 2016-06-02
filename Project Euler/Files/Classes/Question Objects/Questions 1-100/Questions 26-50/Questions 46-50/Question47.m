@@ -23,6 +23,7 @@
   self.keywords = @"consecutive,four,4,distinct,prime,factors,numbers,first,integers,maximum,size";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"16/02/13";
   self.solutionLineCount = @"65";
   self.estimatedComputationTime = @"0.133";
   self.estimatedBruteForceComputationTime = @"0.133";
