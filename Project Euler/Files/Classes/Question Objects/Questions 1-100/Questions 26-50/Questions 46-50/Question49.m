@@ -23,6 +23,7 @@
   self.keywords = @"arithmetic,sequence,prime,permutations,increasing,four,4,twelve,12,digit,number,concatenating,form,unusual,10000";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"18/02/13";
   self.solutionLineCount = @"87";
   self.estimatedComputationTime = @"0.127";
   self.estimatedBruteForceComputationTime = @"0.127";
