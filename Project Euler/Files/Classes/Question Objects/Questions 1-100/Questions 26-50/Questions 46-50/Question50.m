@@ -23,6 +23,7 @@
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"19/02/13";
   self.solutionLineCount = @"71";
   self.estimatedComputationTime = @"1.21";
   self.estimatedBruteForceComputationTime = @"7.2";
