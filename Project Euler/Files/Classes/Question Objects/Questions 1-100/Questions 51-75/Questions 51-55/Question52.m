@@ -24,6 +24,7 @@
   self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.solutionLineCount = @"39";
+  self.completedOnDate = @"21/02/13";
   self.estimatedComputationTime = @"3.11e-02";
   self.estimatedBruteForceComputationTime = @"5.63e-02";
 }
