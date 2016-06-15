@@ -32,6 +32,7 @@
   self.keywords = @"primes,concatenate,set,five,5,lowest,sum,produce,two,2,order,pairs,property,another,result";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"01/03/13";
   self.solutionLineCount = @"125";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"1.09";
