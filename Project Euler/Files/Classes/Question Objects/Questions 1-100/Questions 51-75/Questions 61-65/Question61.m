@@ -30,6 +30,7 @@
   self.keywords = @"triangle,square,pentagonal,hexagonal,heptagonal,octagonal,cyclic,set,numbers,polygonal,different,number,formulae,represented,set,figurate,generated";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"02/03/13";
   self.solutionLineCount = @"87";
   self.estimatedComputationTime = @"0.033";
   self.estimatedBruteForceComputationTime = @"0.033";
