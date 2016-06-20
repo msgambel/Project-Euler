@@ -24,6 +24,7 @@
   self.keywords = @"convergents,e,infinite,continued,fractions,digits,sum,numerator,100,one,hundred,rational,approximations,sequence,partial";
   self.solveTime = @"30";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"06/03/13";
   self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"1.27e-03";
   self.estimatedBruteForceComputationTime = @"1.27e-03";
