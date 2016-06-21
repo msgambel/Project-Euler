@@ -23,6 +23,7 @@
   self.keywords = @"diophantine,equations,continued,fractions,expansions,pells,periods,minimal,solutions,largest,value,quadratic,length";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"07/03/13";
   self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"6.31e-04";
   self.estimatedBruteForceComputationTime = @"6.31e-04";
