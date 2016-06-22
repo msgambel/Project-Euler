@@ -24,6 +24,7 @@
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,100,one,hundred,rows,II,algorithm";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"08/03/13";
   self.solutionLineCount = @"33";
   self.estimatedComputationTime = @"1.23e-02";
   self.estimatedBruteForceComputationTime = @"1.23e-02";
