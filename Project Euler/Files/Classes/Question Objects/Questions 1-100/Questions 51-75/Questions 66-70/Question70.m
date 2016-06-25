@@ -24,6 +24,7 @@
   self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
   self.solveTime = @"90";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"11/03/13";
   self.solutionLineCount = @"91";
   self.estimatedComputationTime = @"1.83e-02";
   self.estimatedBruteForceComputationTime = @"50.3";
