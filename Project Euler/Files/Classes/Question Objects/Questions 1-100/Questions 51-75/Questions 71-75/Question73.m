@@ -24,6 +24,7 @@
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,HCF,sorted,euler,totient";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"14/03/13";
   self.solutionLineCount = @"119";
   self.estimatedComputationTime = @"1.67e-02";
   self.estimatedBruteForceComputationTime = @"1.67e-02";
