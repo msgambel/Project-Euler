@@ -24,6 +24,7 @@
   self.keywords = @"matrix,a*,a,star,minimal,path,sum,import,80,eighty,2,two,ways,files,matrix";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"22/03/13";
   self.solutionLineCount = @"69";
   self.estimatedComputationTime = @"2.73e-02";
   self.estimatedBruteForceComputationTime = @"2.73e-02";
