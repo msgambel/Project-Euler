@@ -24,6 +24,7 @@
   self.keywords = @"monopoly,4,four,dice,roll,ev,2,two,6,six,most,popular,squares,modal,string,standard,board,sided,listed";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"25/03/13";
   self.solutionLineCount = @"55";
   self.estimatedComputationTime = @"0.397";
   self.estimatedBruteForceComputationTime = @"0.397";
