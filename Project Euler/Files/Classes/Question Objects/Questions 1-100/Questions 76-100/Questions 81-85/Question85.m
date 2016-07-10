@@ -24,6 +24,7 @@
   self.keywords = @"rectangles,grid,size,counting,triangle,numbers,2000000,two,million,nearest,solution,area,sub";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"26/03/13";
   self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"2.13e-04";
   self.estimatedBruteForceComputationTime = @"2.13e-04";
