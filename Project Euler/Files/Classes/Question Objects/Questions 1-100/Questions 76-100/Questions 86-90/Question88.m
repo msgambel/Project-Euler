@@ -23,6 +23,7 @@
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"29/03/13";
   self.solutionLineCount = @"73";
   self.estimatedComputationTime = @"0.881";
   self.estimatedBruteForceComputationTime = @"0.881";
