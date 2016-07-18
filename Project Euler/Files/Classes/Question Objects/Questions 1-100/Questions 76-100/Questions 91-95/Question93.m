@@ -31,6 +31,7 @@
   self.keywords = @"arithmetic,expressions,reverse,polish,notation,set,notation,1,2,3,4,one,two,three,four,consecutive,positive,integers,string,distinct,digits";
   self.solveTime = @"600";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"03/04/13";
   self.solutionLineCount = @"117";
   self.estimatedComputationTime = @"7.38";
   self.estimatedBruteForceComputationTime = @"7.38";
