@@ -24,6 +24,7 @@
   self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000,element,exceeding";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"05/04/13";
   self.solutionLineCount = @"127";
   self.estimatedComputationTime = @"10.1";
   self.estimatedBruteForceComputationTime = @"10.1";
