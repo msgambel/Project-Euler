@@ -24,6 +24,7 @@
   self.keywords = @"large,prime,non,mersenne,last,digits,big,int,one,million,1000000,ten,10,mod,radix";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"07/04/13";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"1.45e-03";
   self.estimatedBruteForceComputationTime = @"1.45e-03";
