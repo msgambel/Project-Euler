@@ -30,6 +30,7 @@
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"08/04/13";
   self.solutionLineCount = @"109";
   self.estimatedComputationTime = @"4.87";
   self.estimatedBruteForceComputationTime = @"6.83";
