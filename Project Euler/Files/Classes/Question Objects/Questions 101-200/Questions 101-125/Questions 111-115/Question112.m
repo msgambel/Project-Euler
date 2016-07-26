@@ -31,6 +31,7 @@
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
   self.solveTime = @"600";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"11/04/13";
   self.solutionLineCount = @"37";
   self.estimatedComputationTime = @"0.289";
   self.estimatedBruteForceComputationTime = @"0.289";
