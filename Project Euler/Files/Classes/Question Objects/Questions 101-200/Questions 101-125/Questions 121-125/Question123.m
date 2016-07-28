@@ -23,6 +23,7 @@
   self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"13/04/13";
   self.solutionLineCount = @"45";
   self.estimatedComputationTime = @"1.59e-02";
   self.estimatedBruteForceComputationTime = @"1.59e-02";
