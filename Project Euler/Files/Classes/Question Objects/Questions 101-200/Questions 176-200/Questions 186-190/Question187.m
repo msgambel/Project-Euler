@@ -23,6 +23,7 @@
   self.keywords = @"semiprimes,two,2,prime,factors,composites,distinct";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.completedOnDate = @"15/04/13";
   self.solutionLineCount = @"65";
   self.estimatedComputationTime = @"91.5";
   self.estimatedBruteForceComputationTime = @"91.5";
