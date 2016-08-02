@@ -23,6 +23,7 @@
   self.keywords = @"resilience,totient,function,unique,prime,factors,smallest";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.completedOnDate = @"18/04/13";
   self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"4.5e-05";
   self.estimatedBruteForceComputationTime = @">1000";
