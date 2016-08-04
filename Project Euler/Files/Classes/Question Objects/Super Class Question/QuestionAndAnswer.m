@@ -20,6 +20,7 @@
 @synthesize answer = _answer;
 @synthesize number = _number;
 @synthesize rating = _rating;
+@synthesize category = _category;
 @synthesize delegate = _delegate;
 @synthesize keywords = _keywords;
 @synthesize solveTime = _solveTime;

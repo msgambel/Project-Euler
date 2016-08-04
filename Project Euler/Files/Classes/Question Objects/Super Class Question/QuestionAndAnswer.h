@@ -21,6 +21,7 @@
   NSString * _answer;
   NSString * _number;
   NSString * _rating;
+  NSString * _category;
   NSString * _keywords;
   NSString * _solveTime;
   NSString * _difficulty;
@@ -41,6 +42,7 @@
 @property (nonatomic, strong) NSString * answer;
 @property (nonatomic, strong) NSString * number;
 @property (nonatomic, strong) NSString * rating;
+@property (nonatomic, strong) NSString * category;
 @property (nonatomic, strong) NSString * keywords;
 @property (nonatomic, strong) NSString * solveTime;
 @property (nonatomic, strong) NSString * difficulty;
