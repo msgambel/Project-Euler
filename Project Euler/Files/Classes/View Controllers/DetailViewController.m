@@ -289,6 +289,7 @@
   _completedOnDateLabel.text = _questionAndAnswer.completedOnDate;
   _computationTimeLabel.text = _questionAndAnswer.estimatedComputationTime;
   _questionIsFunImageView.hidden = (_questionAndAnswer.isFun == NO);
+  _questionCategoryLabel.text = _questionAndAnswer.category;
   _questionSolveTimeLabel.text = [NSString stringWithFormat:@"Solve Time (s): %@", _questionAndAnswer.solveTime];
   _solutionLineCountLabel.text = [NSString stringWithFormat:@"Solution Line Count: %@", _questionAndAnswer.solutionLineCount];
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
