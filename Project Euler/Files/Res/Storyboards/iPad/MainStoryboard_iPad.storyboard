@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2qa-jw-fUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2qa-jw-fUF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -39,6 +39,12 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBC-Ft-F1d">
                                 <rect key="frame" x="20" y="733" width="65" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4qW-Fn-TSD">
+                                <rect key="frame" x="20" y="709" width="65" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -191,6 +197,7 @@
                         <outlet property="_computeButton" destination="qCE-TV-kQK" id="qZT-vu-hkg"/>
                         <outlet property="_computeByBruteForceButton" destination="YRu-RR-pII" id="FBe-oU-CgT"/>
                         <outlet property="_questionAnswerLabel" destination="9Yo-5t-FqG" id="rzU-bH-GiA"/>
+                        <outlet property="_questionCategoryLabel" destination="4qW-Fn-TSD" id="Xow-cr-Imi"/>
                         <outlet property="_questionDateLabel" destination="P9i-no-2Og" id="2ER-dJ-Zqz"/>
                         <outlet property="_questionDifficultyLabel" destination="uYd-LI-MSr" id="G5X-zZ-w5n"/>
                         <outlet property="_questionIsFunImageView" destination="PqP-GX-Yob" id="SRM-zG-raI"/>
