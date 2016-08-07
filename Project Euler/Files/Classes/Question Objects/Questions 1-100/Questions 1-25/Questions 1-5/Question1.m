@@ -26,6 +26,7 @@
   self.answer = @"233168";
   self.number = @"1";
   self.rating = @"5";
+  self.category = @"Counting";
   self.keywords = @"sums,triangle,numbers,multiples,3,three,5,five,1000,one,thousand,first,problem,question,list";
   self.solveTime = @"10";
   self.difficulty = @"Meh";
