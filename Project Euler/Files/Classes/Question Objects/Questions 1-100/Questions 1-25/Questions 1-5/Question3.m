@@ -20,6 +20,7 @@
   self.answer = @"6857";
   self.number = @"3";
   self.rating = @"4";
+  self.category = @"Primes";
   self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum,square,root";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
