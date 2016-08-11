@@ -20,6 +20,7 @@
   self.answer = @"232792560";
   self.number = @"5";
   self.rating = @"4";
+  self.category = @"Primes";
   self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
