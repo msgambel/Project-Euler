@@ -20,6 +20,7 @@
   self.answer = @"25164150";
   self.number = @"6";
   self.rating = @"4";
+  self.category = @"Counting";
   self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
