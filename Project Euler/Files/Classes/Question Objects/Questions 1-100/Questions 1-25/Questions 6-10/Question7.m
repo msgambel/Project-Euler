@@ -20,6 +20,7 @@
   self.answer = @"104743";
   self.number = @"7";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"prime,listing,10001st,one,thousand,and,find,number,first,helper,method";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
