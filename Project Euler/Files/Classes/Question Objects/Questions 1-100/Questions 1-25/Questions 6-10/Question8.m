@@ -27,6 +27,7 @@
   self.answer = @"40824";
   self.number = @"8";
   self.rating = @"4";
+  self.category = @"Combinations";
   self.keywords = @"largest,product,in,a,series,five,5,consecutive,digits,1000,one,thousand,greatest,sub,string,number,search";
   self.solveTime = @"60";
   self.difficulty = @"Meh";
