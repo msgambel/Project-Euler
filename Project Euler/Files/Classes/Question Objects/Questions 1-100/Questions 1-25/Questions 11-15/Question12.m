@@ -20,6 +20,7 @@
   self.answer = @"76576500";
   self.number = @"12";
   self.rating = @"4";
+  self.category = @"Patterns";
   self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated,prime,factors";
   self.solveTime = @"60";
   self.difficulty = @"Meh";
