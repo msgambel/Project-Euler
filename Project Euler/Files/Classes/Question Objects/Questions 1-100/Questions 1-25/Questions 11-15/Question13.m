@@ -27,6 +27,7 @@
   self.answer = @"5537376230";
   self.number = @"13";
   self.rating = @"4";
+  self.category = @"Combinations";
   self.keywords = @"sum,big,int,large,first,digits,10,ten,150,one,hundred,and,fifty,numbers,list,work,out";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
