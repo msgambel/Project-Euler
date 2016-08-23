@@ -28,6 +28,7 @@
   self.answer = @"21124";
   self.number = @"17";
   self.rating = @"4";
+  self.category = @"Counting";
   self.keywords = @"letters,sum,words,numbers,counts,british,usage,written,one,thousand,1000,contains,spaces,hyphens,compliance";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
