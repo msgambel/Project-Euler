@@ -22,6 +22,7 @@
   self.answer = @"648";
   self.number = @"20";
   self.rating = @"3";
+  self.category = @"Sums";
   self.keywords = @"factorial,digits,sum,number,100,one,hundred,!,total,bigint,radix";
   self.solveTime = @"90";
   self.difficulty = @"Meh";
