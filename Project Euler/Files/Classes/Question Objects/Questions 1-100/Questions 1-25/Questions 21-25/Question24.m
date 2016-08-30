@@ -20,6 +20,7 @@
   self.answer = @"2783915460";
   self.number = @"24";
   self.rating = @"3";
+  self.category = @"Counting";
   self.keywords = @"lexicographic,permutations,choose,ordered,arrangement,digits,1000000,one,millionth,objects,possible,combinatorics,subtract";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
