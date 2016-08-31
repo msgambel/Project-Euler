@@ -21,6 +21,7 @@
   self.answer = @"4782";
   self.number = @"25";
   self.rating = @"4";
+  self.category = @"Patterns";
   self.keywords = @"fibonacci,closed,form,recurrance,terms,sequence,digits,contains,1000,one,thousand,first,number,expression,logarithm";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
