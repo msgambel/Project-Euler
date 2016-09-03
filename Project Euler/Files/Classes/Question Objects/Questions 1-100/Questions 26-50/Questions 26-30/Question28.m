@@ -20,6 +20,7 @@
   self.answer = @"669171001";
   self.number = @"28";
   self.rating = @"4";
+  self.category = @"Patterns";
   self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum,numbers,formed,same,way";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
