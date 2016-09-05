@@ -26,6 +26,7 @@
   self.answer = @"443839";
   self.number = @"30";
   self.rating = @"3";
+  self.category = @"Sums";
   self.keywords = @"sum,powers,digits,fourth,fifth,written,total,200000,two,hundred,thousand,5,five";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
