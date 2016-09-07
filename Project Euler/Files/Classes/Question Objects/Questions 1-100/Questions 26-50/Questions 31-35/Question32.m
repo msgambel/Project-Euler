@@ -20,6 +20,7 @@
   self.answer = @"45228";
   self.number = @"32";
   self.rating = @"4";
+  self.category = @"Sums";
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
