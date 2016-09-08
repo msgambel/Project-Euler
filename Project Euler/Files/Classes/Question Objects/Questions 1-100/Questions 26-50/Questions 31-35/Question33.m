@@ -26,6 +26,7 @@
   self.answer = @"100";
   self.number = @"33";
   self.rating = @"4";
+  self.category = @"Primes";
   self.keywords = @"division,fractions,curious,numerator,denominator,digit,cancelling,lowest,common,terms,product";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
