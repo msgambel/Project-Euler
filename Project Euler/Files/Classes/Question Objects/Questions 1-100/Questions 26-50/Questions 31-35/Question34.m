@@ -20,6 +20,7 @@
   self.answer = @"40730";
   self.number = @"34";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
