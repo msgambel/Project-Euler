@@ -29,6 +29,7 @@
   self.answer = @"748317";
   self.number = @"37";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"primes,left,right,truncatable,continuously,remove,digits,7,seven,sum,only,hash,table";
   self.solveTime = @"180";
   self.difficulty = @"Medium";
