@@ -21,6 +21,7 @@
   self.answer = @"162";
   self.number = @"42";
   self.rating = @"3";
+  self.category = @"Combinations";
   self.keywords = @"sum,triangle,numbers,english,words,import,coded,sequence,2000,two,thousand,common,alphabetical,maximum,compute,value,many";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
