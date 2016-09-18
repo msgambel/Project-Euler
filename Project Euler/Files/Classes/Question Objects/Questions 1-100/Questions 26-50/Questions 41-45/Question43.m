@@ -26,6 +26,7 @@
   self.answer = @"16695334890";
   self.number = @"43";
   self.rating = @"5";
+  self.category = @"Logic";
   self.keywords = @"string,divisible,pandigital,sub,divisibility,sum,property,digit,numbers,hueristic,order";
   self.solveTime = @"900";
   self.difficulty = @"Medium";
