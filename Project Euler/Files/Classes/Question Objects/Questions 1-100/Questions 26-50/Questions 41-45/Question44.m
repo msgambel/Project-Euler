@@ -20,6 +20,7 @@
   self.answer = @"5482660";
   self.number = @"44";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"pair,pentagonal,numbers,sum,difference,generated,formula,recursion,difference,quadratic,equations,factoring,radicals";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
