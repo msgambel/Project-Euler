@@ -20,6 +20,7 @@
   self.answer = @"296962999629";
   self.number = @"49";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"arithmetic,sequence,prime,permutations,increasing,four,4,twelve,12,digit,number,concatenating,form,unusual,10000";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
