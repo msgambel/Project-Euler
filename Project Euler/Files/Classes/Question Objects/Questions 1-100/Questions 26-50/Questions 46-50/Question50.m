@@ -20,6 +20,7 @@
   self.answer = @"997651";
   self.number = @"50";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
