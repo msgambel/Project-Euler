@@ -21,6 +21,7 @@
   self.answer = @"153";
   self.number = @"57";
   self.rating = @"4";
+  self.category = @"Patterns";
   self.keywords = @"square,root,continued,fractions,infinite,expansions,numerator,denominator,one,thousand,1000,more,digits,how,many";
   self.solveTime = @"60";
   self.difficulty = @"Medium";
