@@ -20,6 +20,7 @@
   self.answer = @"49";
   self.number = @"63";
   self.rating = @"4";
+  self.category = @"Counting";
   self.keywords = @"powers,digits,count,fifth,nine,9,exist,positive,integers,number,nth,bases,exponents";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
