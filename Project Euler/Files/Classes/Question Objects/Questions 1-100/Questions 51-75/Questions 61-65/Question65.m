@@ -21,6 +21,7 @@
   self.answer = @"272";
   self.number = @"65";
   self.rating = @"3";
+  self.category = @"Patterns";
   self.keywords = @"convergents,e,infinite,continued,fractions,digits,sum,numerator,100,one,hundred,rational,approximations,sequence,partial";
   self.solveTime = @"30";
   self.difficulty = @"Medium";
