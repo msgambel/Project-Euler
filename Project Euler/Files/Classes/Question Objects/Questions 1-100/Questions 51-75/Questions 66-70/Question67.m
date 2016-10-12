@@ -21,6 +21,7 @@
   self.answer = @"7273";
   self.number = @"67";
   self.rating = @"4";
+  self.category = @"Sums";
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,100,one,hundred,rows,II,algorithm";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
