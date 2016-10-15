@@ -21,6 +21,7 @@
   self.answer = @"8319823";
   self.number = @"70";
   self.rating = @"2";
+  self.category = @"Primes";
   self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
   self.solveTime = @"90";
   self.difficulty = @"Medium";
