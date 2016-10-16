@@ -20,6 +20,7 @@
   self.answer = @"428570";
   self.number = @"71";
   self.rating = @"4";
+  self.category = @"Counting";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,numerator,left,set,listing";
   self.solveTime = @"90";
   self.difficulty = @"Medium";
