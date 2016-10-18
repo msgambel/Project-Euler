@@ -21,6 +21,7 @@
   self.answer = @"7295372";
   self.number = @"73";
   self.rating = @"3";
+  self.category = @"Counting";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,HCF,sorted,euler,totient";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
