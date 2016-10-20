@@ -20,6 +20,7 @@
   self.answer = @"161667";
   self.number = @"75";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"singular,integer,right,triangles,generation,primitives,pythagorean,triples,cm,smallest,length,sided,angle";
   self.solveTime = @"120";
   self.difficulty = @"Easy";
