@@ -20,6 +20,7 @@
   self.answer = @"71";
   self.number = @"77";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"primes,summations,five,thousand,5000,positive,different,permutations,ways,written,as,sum,possible";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
