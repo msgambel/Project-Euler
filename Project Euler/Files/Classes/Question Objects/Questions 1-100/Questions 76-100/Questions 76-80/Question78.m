@@ -21,6 +21,7 @@
   self.answer = @"55374";
   self.number = @"78";
   self.rating = @"3";
+  self.category = @"Combinations";
   self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million,least,value";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
