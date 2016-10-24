@@ -26,6 +26,7 @@
   self.answer = @"73162890";
   self.number = @"79";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"passcode,derivation,login,secret,shortest,import,security,common,method,analyse,files";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
