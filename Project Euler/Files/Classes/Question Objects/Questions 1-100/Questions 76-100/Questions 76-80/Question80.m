@@ -21,6 +21,7 @@
   self.answer = @"40886";
   self.number = @"80";
   self.rating = @"4";
+  self.category = @"Sums";
   self.keywords = @"irrational,square,root,digital,expansion,sums,natural,number,infinite,total,digits";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
