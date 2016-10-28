@@ -20,6 +20,7 @@
   self.answer = @"260324";
   self.number = @"82";
   self.rating = @"3";
+  self.category = @"Combinations";
   self.keywords = @"matrix,column,minimal,path,sum,import,file,right,left";
   self.solveTime = @"600";
   self.difficulty = @"Medium";
