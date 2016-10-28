@@ -21,6 +21,7 @@
   self.answer = @"425185";
   self.number = @"83";
   self.rating = @"3";
+  self.category = @"Combinations";
   self.keywords = @"matrix,a*,a,star,minimal,path,sum,import,moving,up,down";
   self.solveTime = @"900";
   self.difficulty = @"Medium";
