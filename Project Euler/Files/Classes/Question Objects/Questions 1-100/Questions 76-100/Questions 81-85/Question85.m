@@ -21,6 +21,7 @@
   self.answer = @"2772";
   self.number = @"85";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"rectangles,grid,size,counting,triangle,numbers,2000000,two,million,nearest,solution,area,sub";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
