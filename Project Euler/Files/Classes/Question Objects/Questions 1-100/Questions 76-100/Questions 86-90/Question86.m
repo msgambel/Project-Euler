@@ -21,6 +21,7 @@
   self.answer = @"1818";
   self.number = @"86";
   self.rating = @"4";
+  self.category = @"Optimization";
   self.keywords = @"spider,cuboid,shortest,route,path,pythagoras,side,length,one,million,1000000,surface,area,solutions,exceeds";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
