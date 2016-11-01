@@ -20,6 +20,7 @@
   self.answer = @"1097343";
   self.number = @"87";
   self.rating = @"4";
+  self.category = @"Sums";
   self.keywords = @"prime,square,cube,fourth,power,sum,count,triples,count,50000000,fifty,million,below,expressed,numbers";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
