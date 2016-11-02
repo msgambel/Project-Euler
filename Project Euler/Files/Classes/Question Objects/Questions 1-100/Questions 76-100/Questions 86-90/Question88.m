@@ -20,6 +20,7 @@
   self.answer = @"7587457";
   self.number = @"88";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
