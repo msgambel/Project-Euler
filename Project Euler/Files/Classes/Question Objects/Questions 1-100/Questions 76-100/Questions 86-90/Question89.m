@@ -29,6 +29,7 @@
   self.answer = @"743";
   self.number = @"89";
   self.rating = @"5";
+  self.category = @"Sums";
   self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand,minimal,form,consecutive,identical";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
