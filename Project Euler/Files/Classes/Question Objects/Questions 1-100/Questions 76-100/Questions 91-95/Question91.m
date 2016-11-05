@@ -20,6 +20,7 @@
   self.answer = @"14234";
   self.number = @"91";
   self.rating = @"4";
+  self.category = @"Counting";
   self.keywords = @"right,triangles,with,integer,coordinates,vectors,inner,product,orthogonal,points,formed";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
