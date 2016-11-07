@@ -26,6 +26,7 @@
   self.answer = @"8581146";
   self.number = @"92";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"square,digit,chains,one,1,eighty,nine,89,count,starting,numbers,continuously,sequence";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
