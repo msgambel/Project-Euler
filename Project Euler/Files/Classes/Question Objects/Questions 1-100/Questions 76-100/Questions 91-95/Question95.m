@@ -21,6 +21,7 @@
   self.answer = @"14316";
   self.number = @"95";
   self.rating = @"4";
+  self.category = @"Patterns";
   self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000,element,exceeding";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
