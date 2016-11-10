@@ -28,6 +28,7 @@
   self.answer = @"24702";
   self.number = @"96";
   self.rating = @"5";
+  self.category = @"Combinations";
   self.keywords = @"sudoku,recursive,import,japanese,grid";
   self.solveTime = @"900";
   self.difficulty = @"Medium";
