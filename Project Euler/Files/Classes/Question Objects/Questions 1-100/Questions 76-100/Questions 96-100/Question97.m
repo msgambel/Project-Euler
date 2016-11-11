@@ -21,6 +21,7 @@
   self.answer = @"8739992577";
   self.number = @"97";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"large,prime,non,mersenne,last,digits,big,int,one,million,1000000,ten,10,mod,radix";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
