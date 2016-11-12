@@ -27,6 +27,7 @@
   self.answer = @"18769";
   self.number = @"98";
   self.rating = @"4";
+  self.category = @"Patterns";
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
