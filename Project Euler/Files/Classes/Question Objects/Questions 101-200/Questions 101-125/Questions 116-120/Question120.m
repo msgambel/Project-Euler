@@ -20,6 +20,7 @@
   self.answer = @"333082500";
   self.number = @"120";
   self.rating = @"5";
+  self.category = @"Sums";
   self.keywords = @"square,remainders,modulo,polynomial,expansion,rmax,sum";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
