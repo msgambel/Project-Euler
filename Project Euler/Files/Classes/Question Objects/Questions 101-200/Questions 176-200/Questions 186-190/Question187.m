@@ -20,6 +20,7 @@
   self.answer = @"17427258";
   self.number = @"187";
   self.rating = @"4";
+  self.category = @"Primes";
   self.keywords = @"semiprimes,two,2,prime,factors,composites,distinct";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
