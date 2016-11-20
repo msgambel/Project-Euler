@@ -20,6 +20,7 @@
   self.answer = @"1389019170";
   self.number = @"206";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"concealed,square,perfect,positive,integer";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
