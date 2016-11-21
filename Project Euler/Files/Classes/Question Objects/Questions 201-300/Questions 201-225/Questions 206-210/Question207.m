@@ -20,6 +20,7 @@
   self.answer = @"44043947822";
   self.number = @"207";
   self.rating = @"5";
+  self.category = @"Patterns";
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
