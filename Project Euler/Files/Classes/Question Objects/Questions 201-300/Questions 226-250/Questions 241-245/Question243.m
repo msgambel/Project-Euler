@@ -20,6 +20,7 @@
   self.answer = @"892371480";
   self.number = @"243";
   self.rating = @"5";
+  self.category = @"Primes";
   self.keywords = @"resilience,totient,function,unique,prime,factors,smallest";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
