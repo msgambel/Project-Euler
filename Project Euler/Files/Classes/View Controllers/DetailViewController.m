@@ -281,6 +281,7 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  _questionTextView.text = _questionAndAnswer.text;
   _questionDateLabel.text = _questionAndAnswer.date;
   _questionTitleLabel.text = _questionAndAnswer.title;
   _questionAnswerLabel.text = _questionAndAnswer.answer;
@@ -288,13 +289,13 @@
   _questionRatingLabel.text = [NSString stringWithFormat:@"%@ / 5", _questionAndAnswer.rating];
   _completedOnDateLabel.text = _questionAndAnswer.completedOnDate;
   _computationTimeLabel.text = _questionAndAnswer.estimatedComputationTime;
-  _questionIsFunImageView.hidden = (_questionAndAnswer.isFun == NO);
   _questionCategoryLabel.text = _questionAndAnswer.category;
+  _questionIsFunImageView.hidden = (_questionAndAnswer.isFun == NO);
   _questionSolveTimeLabel.text = [NSString stringWithFormat:@"Solve Time (s): %@", _questionAndAnswer.solveTime];
   _solutionLineCountLabel.text = [NSString stringWithFormat:@"Solution Line Count: %@", _questionAndAnswer.solutionLineCount];
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
-  _questionTextView.text = _questionAndAnswer.text;
+  _questionIsChallengingImageView.hidden = (_questionAndAnswer.isChallenging == NO);
   
   // Update the scrolling of the textView based on its new content.
   [self updateTheTextViewScrolling];

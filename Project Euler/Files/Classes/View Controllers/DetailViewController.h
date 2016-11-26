@@ -30,6 +30,7 @@
   IBOutlet UIButton                * _showQuestionsTableViewButton;
   IBOutlet UITextView              * _questionTextView;
   IBOutlet UIImageView             * _questionIsFunImageView;
+  IBOutlet UIImageView             * _questionIsChallengingImageView;
   IBOutlet UIActivityIndicatorView * _activityIndicatorView;
 }
 
