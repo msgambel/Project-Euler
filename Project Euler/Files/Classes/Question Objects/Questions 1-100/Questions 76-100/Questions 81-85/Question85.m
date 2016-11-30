@@ -103,7 +103,7 @@
       // as the number of sub-rectangles could be less than the target, but
       // still closer to the target then any of the numbers greater than the
       // target.
-      distanceAwayFromTarget = abs(numberOfRectangles - targetNumberOfRectangles);
+      distanceAwayFromTarget = abs((int)numberOfRectangles - (int)targetNumberOfRectangles);
       
       // If the current distance is less than the closest distance to the target
       // found thus far,
@@ -208,7 +208,7 @@
       // as the number of sub-rectangles could be less than the target, but
       // still closer to the target then any of the numbers greater than the
       // target.
-      distanceAwayFromTarget = abs(numberOfRectangles - targetNumberOfRectangles);
+      distanceAwayFromTarget = abs((int)numberOfRectangles - (int)targetNumberOfRectangles);
       
       // If the current distance is less than the closest distance to the target
       // found thus far,

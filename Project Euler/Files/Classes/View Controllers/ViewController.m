@@ -65,7 +65,7 @@
   return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations; {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations; {
   // If the current device is NOT an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
     // Return that we only accept Potrait orientations.
