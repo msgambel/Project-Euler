@@ -30,6 +30,7 @@
   self.keywords = @"sums,triangle,numbers,multiples,3,three,5,five,1000,one,thousand,first,problem,question,list";
   self.solveTime = @"10";
   self.difficulty = @"Meh";
+  self.isChallenging = NO;
   self.completedOnDate = @"01/01/13";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"2.1e-05";
