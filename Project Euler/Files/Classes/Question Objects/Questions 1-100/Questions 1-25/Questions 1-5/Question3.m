@@ -24,6 +24,7 @@
   self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum,square,root";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
+  self.isChallenging = NO;
   self.completedOnDate = @"03/01/13";
   self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"5.34e-04";
