@@ -24,6 +24,7 @@
   self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
+  self.isChallenging = NO;
   self.completedOnDate = @"05/01/13";
   self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"3.9e-05";
