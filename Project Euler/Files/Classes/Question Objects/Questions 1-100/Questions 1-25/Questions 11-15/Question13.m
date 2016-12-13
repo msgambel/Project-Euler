@@ -31,6 +31,7 @@
   self.keywords = @"sum,big,int,large,first,digits,10,ten,150,one,hundred,and,fifty,numbers,list,work,out";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
+  self.isChallenging = NO;
   self.completedOnDate = @"13/01/13";
   self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"2.86e-03";
