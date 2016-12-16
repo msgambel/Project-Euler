@@ -25,6 +25,7 @@
   self.keywords = @"sum,power,digits,big,int,2,two,1000,one,thousand,to,the,of,multiplication,string,helper,method";
   self.solveTime = @"30";
   self.difficulty = @"Meh";
+  self.isChallenging = NO;
   self.completedOnDate = @"16/01/13";
   self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"3.05e-03";
