@@ -25,6 +25,7 @@
   self.keywords = @"divisors,proper,amicable,pair,numbers,sum,10000,ten,thousand,evalute,under,prime,factorization";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"21/01/13";
   self.solutionLineCount = @"57";
   self.estimatedComputationTime = @"1.71e-02";
