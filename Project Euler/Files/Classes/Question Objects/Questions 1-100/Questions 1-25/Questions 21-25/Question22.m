@@ -24,6 +24,7 @@
   self.keywords = @"alphabetical,order,import,names,scores,first,sum,total,5000,five,thousand,sorting,file,position,working";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"22/01/13";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"7.15e-02";
