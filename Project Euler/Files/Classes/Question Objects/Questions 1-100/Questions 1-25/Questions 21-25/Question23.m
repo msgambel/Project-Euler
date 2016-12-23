@@ -25,6 +25,7 @@
   self.keywords = @"factorization,divisors,primes,perfect,number,non,abundant,sums,positive,integers,proper,less,than,limit,non-abundant,written,combinations";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"23/01/13";
   self.solutionLineCount = @"105";
   self.estimatedComputationTime = @"0.138";
