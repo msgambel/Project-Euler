@@ -26,6 +26,7 @@
   self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated,pairs,one,hundred,100";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"29/01/13";
   self.solutionLineCount = @"45";
   self.estimatedComputationTime = @"7.52e-03";
