@@ -25,6 +25,7 @@
   self.keywords = @"sum,triangle,numbers,english,words,import,coded,sequence,2000,two,thousand,common,alphabetical,maximum,compute,value,many";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"11/02/13";
   self.solutionLineCount = @"25";
   self.estimatedComputationTime = @"1.59e-02";
