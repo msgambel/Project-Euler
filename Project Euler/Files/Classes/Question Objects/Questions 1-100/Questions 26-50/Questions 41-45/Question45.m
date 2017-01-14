@@ -24,6 +24,7 @@
   self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number,formed,integer,odd,largest";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"14/02/13";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"8.31e-04";
