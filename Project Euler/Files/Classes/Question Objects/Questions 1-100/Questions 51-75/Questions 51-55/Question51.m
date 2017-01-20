@@ -24,6 +24,7 @@
   self.keywords = @"prime,value,family,digit,replacements,number,eight,8,*,smallest,property";
   self.solveTime = @"600";
   self.difficulty = @"Medium";
+  self.isChallenging = YES;
   self.completedOnDate = @"20/02/13";
   self.solutionLineCount = @"75";
   self.estimatedComputationTime = @"0.794";
