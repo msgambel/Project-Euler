@@ -25,6 +25,7 @@
   self.keywords = @"poker,hands,two,player,import,rank,compare,5,five,clear,winner,specific,order";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
+  self.isChallenging = YES;
   self.completedOnDate = @"23/02/13";
   self.solutionLineCount = @"51";
   self.estimatedComputationTime = @"3.43e-02";
