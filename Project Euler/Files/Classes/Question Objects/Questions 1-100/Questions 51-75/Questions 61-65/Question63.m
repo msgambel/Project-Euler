@@ -24,6 +24,7 @@
   self.keywords = @"powers,digits,count,fifth,nine,9,exist,positive,integers,number,nth,bases,exponents";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"04/03/13";
   self.solutionLineCount = @"17";
   self.estimatedComputationTime = @"2.8e-05";
