@@ -24,6 +24,7 @@
   self.keywords = @"square,roots,continued,fractions,representations,periodic,odd,ten,thousand,10000,count,notation,blocks,repeats,indefinitely";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.isChallenging = YES;
   self.completedOnDate = @"05/03/13";
   self.solutionLineCount = @"43";
   self.estimatedComputationTime = @"1.61e-02";
