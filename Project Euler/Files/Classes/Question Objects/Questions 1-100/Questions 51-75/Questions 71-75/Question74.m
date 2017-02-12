@@ -24,6 +24,7 @@
   self.keywords = @"digit,factorial,chains,length,loop,sixty,60,unique,property,non-repeating,terms,contain,exactly";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"15/03/13";
   self.solutionLineCount = @"37";
   self.estimatedComputationTime = @"4.81";
