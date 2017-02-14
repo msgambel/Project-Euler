@@ -30,6 +30,7 @@
   self.keywords = @"counting,summations,one,hundred,100,two,2,positive,integers,different,ways,at,least,write,exactly";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"17/03/13";
   self.solutionLineCount = @"13";
   self.estimatedComputationTime = @"4.71e-04";
