@@ -24,6 +24,7 @@
   self.keywords = @"primes,summations,five,thousand,5000,positive,different,permutations,ways,written,as,sum,possible";
   self.solveTime = @"90";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"18/03/13";
   self.solutionLineCount = @"51";
   self.estimatedComputationTime = @"4.84e-04";
