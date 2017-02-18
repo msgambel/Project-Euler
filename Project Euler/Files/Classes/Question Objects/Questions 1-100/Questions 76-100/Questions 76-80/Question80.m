@@ -25,6 +25,7 @@
   self.keywords = @"irrational,square,root,digital,expansion,sums,natural,number,infinite,total,digits";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"21/03/13";
   self.solutionLineCount = @"15";
   self.estimatedComputationTime = @"0.5";
