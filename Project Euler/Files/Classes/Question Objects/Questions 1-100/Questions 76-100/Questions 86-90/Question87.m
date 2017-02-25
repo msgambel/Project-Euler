@@ -24,6 +24,7 @@
   self.keywords = @"prime,square,cube,fourth,power,sum,count,triples,count,50000000,fifty,million,below,expressed,numbers";
   self.solveTime = @"300";
   self.difficulty = @"Medium";
+  self.isChallenging = YES;
   self.completedOnDate = @"28/03/13";
   self.solutionLineCount = @"67";
   self.estimatedComputationTime = @"1.49";
