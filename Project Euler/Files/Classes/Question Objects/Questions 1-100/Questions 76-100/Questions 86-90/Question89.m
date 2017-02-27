@@ -33,6 +33,7 @@
   self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand,minimal,form,consecutive,identical";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"30/03/13";
   self.solutionLineCount = @"23";
   self.estimatedComputationTime = @"1.75e-02";
