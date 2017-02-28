@@ -30,6 +30,7 @@
   self.keywords = @"cube,digit,pairs,distinct,formations,arrangements,square,numbers,different,positions,side,6,six,2,two,displayed,forming";
   self.solveTime = @"300";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"31/03/13";
   self.solutionLineCount = @"31";
   self.estimatedComputationTime = @"0.173";
