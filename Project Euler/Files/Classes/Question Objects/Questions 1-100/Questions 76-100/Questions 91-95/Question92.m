@@ -30,6 +30,7 @@
   self.keywords = @"square,digit,chains,one,1,eighty,nine,89,count,starting,numbers,continuously,sequence";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"02/04/13";
   self.solutionLineCount = @"21";
   self.estimatedComputationTime = @"0.99";
