@@ -32,6 +32,7 @@
   self.keywords = @"sudoku,recursive,import,japanese,grid";
   self.solveTime = @"900";
   self.difficulty = @"Medium";
+  self.isChallenging = YES;
   self.completedOnDate = @"06/04/13";
   self.solutionLineCount = @"103";
   self.estimatedComputationTime = @"0.338";
