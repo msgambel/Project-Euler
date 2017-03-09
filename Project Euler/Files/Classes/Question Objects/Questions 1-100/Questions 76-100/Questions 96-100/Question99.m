@@ -24,6 +24,7 @@
   self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum,line,number,file,greatest";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"09/04/13";
   self.solutionLineCount = @"21";
   self.estimatedComputationTime = @"4.44e-03";
