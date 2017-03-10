@@ -24,6 +24,7 @@
   self.keywords = @"arranged,probability,blue,red,disks,50,fifty,random,percent,half,1/2,box,contain";
   self.solveTime = @"60";
   self.difficulty = @"Medium";
+  self.isChallenging = YES;
   self.completedOnDate = @"10/04/13";
   self.solutionLineCount = @"7";
   self.estimatedComputationTime = @"2.4e-05";
