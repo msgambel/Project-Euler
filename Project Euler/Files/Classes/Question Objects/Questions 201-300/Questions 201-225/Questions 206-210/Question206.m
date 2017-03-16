@@ -24,6 +24,7 @@
   self.keywords = @"concealed,square,perfect,positive,integer";
   self.solveTime = @"30";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"16/04/13";
   self.solutionLineCount = @"47";
   self.estimatedComputationTime = @"4.53";
