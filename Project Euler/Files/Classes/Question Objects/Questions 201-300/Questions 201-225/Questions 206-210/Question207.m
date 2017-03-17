@@ -24,6 +24,7 @@
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
   self.solveTime = @"60";
   self.difficulty = @"Easy";
+  self.isChallenging = NO;
   self.completedOnDate = @"17/04/13";
   self.solutionLineCount = @"11";
   self.estimatedComputationTime = @"1.19e-02";
