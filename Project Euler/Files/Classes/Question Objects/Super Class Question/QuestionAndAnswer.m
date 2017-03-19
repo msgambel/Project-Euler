@@ -14,6 +14,7 @@
 
 @synthesize date = _date;
 @synthesize hint = _hint;
+@synthesize link = _link;
 @synthesize text = _text;
 @synthesize isFun = _isFun;
 @synthesize title = _title;
@@ -36,6 +37,9 @@
 
 - (id)init; {
   if((self = [super init])){
+    // The best link to visit for any Project Euler problem!
+    _link = @"https://projecteuler.net/";
+    
     // All Project Euler questions start out fun!
     _isFun = YES;
     

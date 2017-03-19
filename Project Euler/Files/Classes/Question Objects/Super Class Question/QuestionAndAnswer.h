@@ -17,6 +17,7 @@
   BOOL       _isChallenging;
   NSString * _date;
   NSString * _hint;
+  NSString * _link;
   NSString * _text;
   NSString * _title;
   NSString * _answer;
@@ -39,6 +40,7 @@
 @property (nonatomic, assign) BOOL       isChallenging;
 @property (nonatomic, strong) NSString * date;
 @property (nonatomic, strong) NSString * hint;
+@property (nonatomic, strong) NSString * link;
 @property (nonatomic, strong) NSString * text;
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * answer;
