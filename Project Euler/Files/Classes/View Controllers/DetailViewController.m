@@ -146,6 +146,11 @@
   }
 }
 
+- (IBAction)linkButtonPressed:(UIButton *)aButton; {
+  // Open the link in Mobile Safari.
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_questionAndAnswer.link]];
+}
+
 - (IBAction)hintButtonPressed:(UIButton *)aButton; {
   // Grab the hint text.
   NSString * hint = _questionAndAnswer.hint;
@@ -208,9 +213,8 @@
   _operationQueue = [[NSOperationQueue alloc] init];
   
   // Create an NSInvocationOperation to call the computeAnswerByBruteForce method.
-  NSInvocationOperation * operation = [[NSInvocationOperation alloc] initWithTarget:_questionAndAnswer
-                                                                           selector:@selector(computeAnswerByBruteForce)
-                                                                             object:nil];
+  NSInvocationOperation * operation = [[NSInvocationOperation alloc] initWithTarget:_questionAndAnswer selector:@selector(computeAnswerByBruteForce) object:nil];
+  
   // Add the NSInvocationOperation to the NSOperationQueue.
   [_operationQueue addOperation:operation];
 }
