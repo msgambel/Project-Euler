@@ -14,6 +14,7 @@
   
   self.date = @"2 November 2001";
   self.hint = @"The largest prime factor to check when decomposing a number is the square root of the number. Finding the prime numbers up to the square root is easy.";
+  self.link = @"https://en.wikipedia.org/wiki/Prime_factor";
   self.text = @"The prime factors of 13195 are 5, 7, 13 and 29.\n\nWhat is the largest prime factor of the number 600851475143?";
   self.isFun = YES;
   self.title = @"Largest prime factor";
