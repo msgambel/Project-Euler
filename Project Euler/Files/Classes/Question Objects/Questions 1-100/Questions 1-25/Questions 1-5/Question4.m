@@ -20,6 +20,7 @@
   
   self.date = @"16 November 2001";
   self.hint = @"Start from the top and work backwards.";
+  self.link = @"https://en.wikipedia.org/wiki/Palindromic_number";
   self.text = @"A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91x99.\n\nFind the largest palindrome made from the product of two 3-digit numbers.";
   self.isFun = YES;
   self.title = @"Largest palindrome product";
