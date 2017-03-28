@@ -14,6 +14,7 @@
   
   self.date = @"14 December 2001";
   self.hint = @"There's a closed form solution for summing the numbers from 1 to n. There's also a closed form solution for summing their squares.";
+  self.link = @"https://trans4mind.com/personal_development/mathematics/series/sumNaturalSquares.htm";
   self.text = @"The sum of the squares of the first ten natural numbers is,\n\n1² + 2² + ... + 10² = 385\n\nThe square of the sum of the first ten natural numbers is,\n\n(1 + 2 + ... + 10)² = 55² = 3025\n\nHence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.\n\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.";
   self.isFun = YES;
   self.title = @"Sum square difference";
