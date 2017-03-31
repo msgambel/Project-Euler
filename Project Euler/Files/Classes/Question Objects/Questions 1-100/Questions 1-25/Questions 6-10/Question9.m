@@ -14,6 +14,7 @@
   
   self.date = @"25 January 2002";
   self.hint = @"Pythagorean Triplet's have the exact same property if all 3 numbers are multiplied by a common factor.";
+  self.link = @"https://en.wikipedia.org/wiki/Pythagorean_triple";
   self.text = @"A Pythagorean triplet is a set of three natural numbers, a  b  c, for which,\n\n                         a² + b² = c²\n\nFor example, 3² + 4² = 9 + 16 = 25 = 5².\n\nThere exists exactly one Pythagorean triplet for which a + b + c = 1000.\n\nFind the product abc.";
   self.isFun = YES;
   self.title = @"Special Pythagorean triplet";
