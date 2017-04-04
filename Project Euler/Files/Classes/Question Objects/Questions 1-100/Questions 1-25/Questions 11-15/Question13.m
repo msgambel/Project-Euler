@@ -21,6 +21,7 @@
   
   self.date = @"22 March 2002";
   self.hint = @"When adding a bunch of single digit numbers, if you don't care about the units digit in the result, what number could you divide the sum by to eliminate the units digit?";
+  self.link = @"https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql";
   self.text = [NSString stringWithFormat:@"Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.\n\n%@", [self arrayOfNumbers]];
   self.isFun = YES;
   self.title = @"Large sum";
