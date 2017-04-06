@@ -21,6 +21,7 @@
   
   self.date = @"19 April 2002";
   self.hint = @"Store the precomputed path lengths in a 2D array.";
+  self.link = @"https://en.wikipedia.org/wiki/Functional_programming";
   self.text = @"Starting in the top left corner of a 2x2 grid, there are 6 routes (without backtracking) to the bottom right corner.\n\nImages missing!\n\nHow many routes are there through a 20x20 grid?";
   self.isFun = YES;
   self.title = @"Lattice paths";
