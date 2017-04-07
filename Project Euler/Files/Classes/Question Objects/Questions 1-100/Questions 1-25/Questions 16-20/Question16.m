@@ -15,6 +15,7 @@
   
   self.date = @"03 May 2002";
   self.hint = @"Implement a BitInt class to hold the multiplication, then sum the digits.";
+  self.link = @"https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql";
   self.text = @"2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.\n\nWhat is the sum of the digits of the number 2^1000?";
   self.isFun = YES;
   self.title = @"Power digit sum";
