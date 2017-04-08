@@ -22,6 +22,7 @@
   
   self.date = @"17 May 2002";
   self.hint = @"Store how many letters are said in each of the hundreds, teens, tens, and units digits, and sum them all for every number.";
+  self.link = @"http://www.calculator.org/calculate-online/mathematics/text-number.aspx";
   self.text = @"If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.\n\nIf all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?\n\nNOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of \"and\" when writing out numbers is in compliance with British usage.";
   self.isFun = YES;
   self.title = @"Number letter counts";
@@ -109,7 +110,6 @@
   
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
-  
   
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
