@@ -15,6 +15,7 @@
   
   self.date = @"14 June 2002";
   self.hint = @"Store the number of days in each month in an array. When you hit a \"February\", use the rules provided.";
+  self.link = @"https://en.wikipedia.org/wiki/Year";
   self.text = @"You are given the following information, but you may prefer to do some research for yourself.\n\n1 Jan 1900 was a Monday.\nThirty days has September,\nApril, June and November.\nAll the rest have thirty-one,\nSaving February alone,\nWhich has twenty-eight, rain or shine.\nAnd on leap years, twenty-nine.\nA leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.\n\nHow many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?";
   self.isFun = YES;
   self.title = @"Counting Sundays";
