@@ -16,6 +16,7 @@
   
   self.date = @"21 June 2002";
   self.hint = @"Implement a BitInt class to hold the multiplication, then sum the digits. Also, powers of 10 don't matter!";
+  self.link = @"https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql";
   self.text = @"n! means n x (n - 1) x ... x 3 x 2 x 1\n\nFor example, 10! = 10 x 9 x ... x 3 x 2 x 1 = 3628800, and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.\n\nFind the sum of the digits in the number 100!";
   self.isFun = YES;
   self.title = @"Factorial digit sum";
