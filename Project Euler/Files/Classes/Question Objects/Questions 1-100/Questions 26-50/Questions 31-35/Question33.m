@@ -20,6 +20,7 @@
   
   self.date = @"20 December 2002";
   self.hint = @"Remove all the trivial cases. Then, break the fraction into 2 fractions (tens digits in the first, ones digits in the second), and use some algebra to check for equality.";
+  self.link = @"https://en.wikipedia.org/wiki/Fraction_(mathematics)";
   self.text = @"The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is correct, is obtained by cancelling the 9s.\n\nWe shall consider fractions like, 30/50 = 3/5, to be trivial examples.\n\nThere are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.\n\nIf the product of these four fractions is given in its lowest common terms, find the value of the denominator.";
   self.isFun = YES;
   self.title = @"Digit canceling fractions";
