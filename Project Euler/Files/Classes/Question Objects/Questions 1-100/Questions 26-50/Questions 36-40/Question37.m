@@ -23,6 +23,7 @@
   
   self.date = @"14 February 2003";
   self.hint = @"The only digits a truncatable prime could have are 1, 3, 7, and 9.";
+  self.link = @"https://en.wikipedia.org/wiki/List_of_prime_numbers#The_first_1000_prime_numbers";
   self.text = @"The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.\n\nFind the sum of the only eleven primes that are both truncatable from left to right and right to left.\n\nNOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.";
   self.isFun = YES;
   self.title = @"Truncatable primes";
