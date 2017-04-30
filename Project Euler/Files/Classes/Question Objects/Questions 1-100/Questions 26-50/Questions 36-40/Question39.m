@@ -14,6 +14,7 @@
   
   self.date = @"14 March 2003";
   self.hint = @"Without loss of generality, a < b < c.";
+  self.link = @"https://en.wikipedia.org/wiki/Triangle#Right_triangles";
   self.text = @"If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.\n\n{20,48,52}, {24,45,51}, {30,40,50}\n\nFor which value of p <= 1000, is the number of solutions maximised?";
   self.isFun = YES;
   self.title = @"Integer right triangles";
