@@ -14,6 +14,7 @@
   
   self.date = @"20 June 2003";
   self.hint = @"Check if (n - p) / 2 is a square for all primes p < n.";
+  self.link = @"https://en.wikipedia.org/wiki/Goldbach%27s_conjecture";
   self.text = @"It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.\n\n9 = 7 + 2x1²\n15 = 7 + 2x2²\n21 = 3 + 2x3²\n25 = 7 + 2x3²\n27 = 19 + 2x2²\n33 = 31 + 2x1²\n\nIt turns out that the conjecture was false.\n\nWhat is the smallest odd composite that cannot be written as the sum of a prime and twice a square?";
   self.isFun = YES;
   self.title = @"Goldbach's other conjecture";
