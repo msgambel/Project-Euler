@@ -14,6 +14,7 @@
   
   self.date = @"12 September 2003";
   self.hint = @"It's a (low) 6 digit number.";
+  self.link = @"https://en.wikipedia.org/wiki/Arithmetic_progression";
   self.text = @"It can be seen that the number, 125874, and its double, 251748, contain exactly the same digits, but in a different order.\n\nFind the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.";
   self.isFun = YES;
   self.title = @"Permuted multiples";
@@ -25,8 +26,8 @@
   self.solveTime = @"30";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
-  self.solutionLineCount = @"39";
   self.completedOnDate = @"21/02/13";
+  self.solutionLineCount = @"39";
   self.estimatedComputationTime = @"3.11e-02";
   self.estimatedBruteForceComputationTime = @"5.63e-02";
 }
