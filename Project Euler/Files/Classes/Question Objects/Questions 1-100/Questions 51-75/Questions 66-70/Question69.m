@@ -14,6 +14,7 @@
   
   self.date = @"07 May 2004";
   self.hint = @"Minimize the Totient Function.";
+  self.link = @"https://en.wikipedia.org/wiki/Euler%27s_totient_function";
   self.text = @"Euler's Totient function, φ(n) [sometimes called the phi function], is used to determine the number of numbers less than n which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, φ(9)=6.\n\nn	Relatively Prime     φ(n)    n/φ(n)\n2	1	1	2\n3	1,2	2	1.5\n4	1,3	2	2\n5	1,2,3,4	4	1.25\n6	1,5	2	3\n7	1,2,3,4,5,6	6	1.1666...\n8	1,3,5,7	4	2\n9	1,2,4,5,7,8	6	1.5\n10	1,3,7,9	4	2.5\n\nIt can be seen that n=6 produces a maximum n/φ(n) for n <= 10.\n\nFind the value of n <= 1,000,000 for which n/φ(n) is a maximum.";
   self.isFun = YES;
   self.title = @"Totient maximum";
