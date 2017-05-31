@@ -15,6 +15,7 @@
   
   self.date = @"21 May 2004";
   self.hint = @"A prime number can never be a permutation of it's Totient Function.";
+  self.link = @"https://en.wikipedia.org/wiki/Euler%27s_totient_function";
   self.text = @"Euler's Totient function, φ(n) [sometimes called the phi function], is used to determine the number of positive numbers less than or equal to n which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, φ(9)=6.\n\nThe number 1 is considered to be relatively prime to every positive number, so φ(1)=1.\n\nInterestingly, φ(87109)=79180, and it can be seen that 87109 is a permutation of 79180.\n\nFind the value of n, 1 <= n <= 10^7, for which φ(n) is a permutation of n and the ratio n/φ(n) produces a minimum.";
   self.isFun = YES;
   self.title = @"Totient permutation";
