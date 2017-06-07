@@ -14,6 +14,7 @@
   
   self.date = @"27 August 2004";
   self.hint = @"Use a recursive method to figure out the number of combinations of primes for a given value.";
+  self.link = @"https://en.wikipedia.org/wiki/Permutation";
   self.text = @"It is possible to write ten as the sum of primes in exactly five different ways:\n\n7 + 3\n5 + 5\n5 + 3 + 2\n3 + 3 + 2 + 2\n2 + 2 + 2 + 2 + 2\n\nWhat is the first value which can be written as the sum of primes in over five thousand different ways?";
   self.isFun = YES;
   self.title = @"Prime summations";
