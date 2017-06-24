@@ -14,6 +14,7 @@
   
   self.date = @"29 April 2005";
   self.hint = @"Pythagoras to the rescue!";
+  self.link = @"https://en.wikipedia.org/wiki/Equilateral_triangle";
   self.text = @"It is easily proved that no equilateral triangle exists with integral length sides and integral area. However, the almost equilateral triangle 5-5-6 has an area of 12 square units.\n\nWe shall define an almost equilateral triangle to be a triangle for which two sides are equal and the third differs by no more than one unit.\n\nFind the sum of the perimeters of all almost equilateral triangles with integral side lengths and area and whose perimeters do not exceed one billion (1,000,000,000).";
   self.isFun = YES;
   self.title = @"Almost equilateral triangles";
