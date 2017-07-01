@@ -22,6 +22,7 @@
   
   self.date = @"30 December 2005";
   self.hint = @"Iterate through each digit to see if the number is bouncy or not!";
+  self.link = @"https://en.wikipedia.org/wiki/For_loop";
   self.text = @"Working from left-to-right if no digit is exceeded by the digit to its left it is called an increasing number; for example, 134468.\n\nSimilarly if no digit is exceeded by the digit to its right it is called a decreasing number; for example, 66420.\n\nWe shall call a positive integer that is neither increasing nor decreasing a \"bouncy\" number; for example, 155349.\n\nClearly there cannot be any bouncy numbers below one-hundred, but just over half of the numbers below one-thousand (525) are bouncy. In fact, the least number for which the proportion of bouncy numbers first reaches 50% is 538.\n\nSurprisingly, bouncy numbers become more and more common and by the time we reach 21780 the proportion of bouncy numbers is equal to 90%.\n\nFind the least number for which the proportion of bouncy numbers is exactly 99%.";
   self.isFun = YES;
   self.title = @"Bouncy numbers";
