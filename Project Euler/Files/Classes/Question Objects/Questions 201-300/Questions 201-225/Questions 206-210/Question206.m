@@ -14,6 +14,7 @@
   
   self.date = @"06 September 2008";
   self.hint = @"Check all the possible numbers. Also, the last number must be a 0!";
+  self.link = @"https://en.wikipedia.org/wiki/Square_number";
   self.text = @"Find the unique positive integer whose square has the form\n\n1_2_3_4_5_6_7_8_9_0,\n\nwhere each “_” is a single digit.";
   self.isFun = YES;
   self.title = @"Concealed Square";
