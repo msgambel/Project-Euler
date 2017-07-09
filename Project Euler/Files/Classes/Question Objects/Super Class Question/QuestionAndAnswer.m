@@ -25,6 +25,7 @@
 @synthesize delegate = _delegate;
 @synthesize keywords = _keywords;
 @synthesize solveTime = _solveTime;
+@synthesize technique = _technique;
 @synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
 @synthesize isChallenging = _isChallenging;
