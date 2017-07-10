@@ -296,6 +296,7 @@
   _questionCategoryLabel.text = _questionAndAnswer.category;
   _questionIsFunImageView.hidden = (_questionAndAnswer.isFun == NO);
   _questionSolveTimeLabel.text = [NSString stringWithFormat:@"Solve Time (s): %@", _questionAndAnswer.solveTime];
+  _questionTechniqueLabel.text = _questionAndAnswer.technique;
   _solutionLineCountLabel.text = [NSString stringWithFormat:@"Solution Line Count: %@", _questionAndAnswer.solutionLineCount];
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
