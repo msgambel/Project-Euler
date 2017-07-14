@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000,odd,positive,generated,previous";
   self.solveTime = @"60";
+  self.technique = @"Recursion";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"02/01/13";
