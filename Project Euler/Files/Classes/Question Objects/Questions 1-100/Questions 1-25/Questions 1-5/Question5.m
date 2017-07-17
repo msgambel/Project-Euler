@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without";
   self.solveTime = @"30";
+  self.technique = @"Recursion";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"05/01/13";
