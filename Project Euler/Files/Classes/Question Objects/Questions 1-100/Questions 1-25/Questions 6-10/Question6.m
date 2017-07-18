@@ -24,6 +24,7 @@
   self.category = @"Counting";
   self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
   self.solveTime = @"30";
+  self.technique = @"Math";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"06/01/13";
