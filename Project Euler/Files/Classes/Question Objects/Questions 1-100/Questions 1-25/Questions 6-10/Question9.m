@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers,integers,exists,divisible,identity";
   self.solveTime = @"30";
+  self.technique = @"Math";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"09/01/13";
