@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array,long,int";
   self.solveTime = @"90";
+  self.technique = @"Recursion";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"10/01/13";
