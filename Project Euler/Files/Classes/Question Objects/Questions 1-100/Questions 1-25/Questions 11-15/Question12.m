@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated,prime,factors";
   self.solveTime = @"60";
+  self.technique = @"Math";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"12/01/13";
