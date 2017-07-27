@@ -31,6 +31,7 @@
   self.category = @"Combinations";
   self.keywords = @"routes,grid,lattice,paths,20,twenty,corner,bottom,right,recursive,method";
   self.solveTime = @"90";
+  self.technique = @"Recursion";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"15/01/13";
