@@ -25,6 +25,7 @@
   self.category = @"Counting";
   self.keywords = @"week,month,day,counting,leap,year,twentieth,century,sundays,first,sum,total,research,divisible,fell";
   self.solveTime = @"60";
+  self.technique = @"Recursion";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"19/01/13";
