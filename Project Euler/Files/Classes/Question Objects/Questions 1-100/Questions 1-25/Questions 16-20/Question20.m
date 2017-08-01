@@ -26,6 +26,7 @@
   self.category = @"Sums";
   self.keywords = @"factorial,digits,sum,number,100,one,hundred,!,total,bigint,radix";
   self.solveTime = @"90";
+  self.technique = @"Math";
   self.difficulty = @"Meh";
   self.isChallenging = NO;
   self.completedOnDate = @"20/01/13";
