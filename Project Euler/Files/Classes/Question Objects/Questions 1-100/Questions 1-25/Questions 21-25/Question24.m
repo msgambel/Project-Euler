@@ -24,6 +24,7 @@
   self.category = @"Counting";
   self.keywords = @"lexicographic,permutations,choose,ordered,arrangement,digits,1000000,one,millionth,objects,possible,combinatorics,subtract";
   self.solveTime = @"90";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"24/01/13";
