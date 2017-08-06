@@ -25,6 +25,7 @@
   self.category = @"Patterns";
   self.keywords = @"fibonacci,closed,form,recurrance,terms,sequence,digits,contains,1000,one,thousand,first,number,expression,logarithm";
   self.solveTime = @"30";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"25/01/13";
