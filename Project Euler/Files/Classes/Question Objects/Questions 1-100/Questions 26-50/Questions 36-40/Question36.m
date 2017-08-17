@@ -30,6 +30,7 @@
   self.category = @"Patterns";
   self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less,leading,zeros";
   self.solveTime = @"150";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"05/02/13";
