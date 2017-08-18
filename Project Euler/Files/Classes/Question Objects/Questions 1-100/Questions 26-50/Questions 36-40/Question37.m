@@ -33,6 +33,7 @@
   self.category = @"Primes";
   self.keywords = @"primes,left,right,truncatable,continuously,remove,digits,7,seven,sum,only,hash,table";
   self.solveTime = @"180";
+  self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"06/02/13";
