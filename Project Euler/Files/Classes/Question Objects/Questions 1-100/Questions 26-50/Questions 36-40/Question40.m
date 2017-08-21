@@ -24,6 +24,7 @@
   self.category = @"Combinations";
   self.keywords = @"concatenate,digits,constant,champernowne's,positive,integers,expression,fractional,part,number,value";
   self.solveTime = @"300";
+  self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"09/02/13";
