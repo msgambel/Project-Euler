@@ -30,6 +30,7 @@
   self.category = @"Logic";
   self.keywords = @"string,divisible,pandigital,sub,divisibility,sum,property,digit,numbers,hueristic,order";
   self.solveTime = @"900";
+  self.technique = @"Logic";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"12/02/13";
