@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"pair,pentagonal,numbers,sum,difference,generated,formula,recursion,difference,quadratic,equations,factoring,radicals";
   self.solveTime = @"120";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"13/02/13";
