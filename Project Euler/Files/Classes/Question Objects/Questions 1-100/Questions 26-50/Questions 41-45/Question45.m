@@ -24,6 +24,7 @@
   self.category = @"Combinations";
   self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number,formed,integer,odd,largest";
   self.solveTime = @"300";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"14/02/13";
