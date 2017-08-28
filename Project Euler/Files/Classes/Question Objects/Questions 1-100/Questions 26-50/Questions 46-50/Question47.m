@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"consecutive,four,4,distinct,prime,factors,numbers,first,integers,maximum,size";
   self.solveTime = @"120";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"16/02/13";
