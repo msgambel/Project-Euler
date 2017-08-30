@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"arithmetic,sequence,prime,permutations,increasing,four,4,twelve,12,digit,number,concatenating,form,unusual,10000";
   self.solveTime = @"120";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"18/02/13";
