@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
   self.solveTime = @"300";
+  self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"19/02/13";
