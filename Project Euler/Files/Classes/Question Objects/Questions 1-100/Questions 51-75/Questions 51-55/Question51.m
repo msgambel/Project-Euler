@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"prime,value,family,digit,replacements,number,eight,8,*,smallest,property";
   self.solveTime = @"600";
+  self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"20/02/13";
