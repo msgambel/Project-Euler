@@ -25,6 +25,7 @@
   self.category = @"Combinations";
   self.keywords = @"choose,sum,combinatoric,selections,not,greater,distinct,exceeds,one,million,1000000,value,selecting";
   self.solveTime = @"60";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"22/02/13";
