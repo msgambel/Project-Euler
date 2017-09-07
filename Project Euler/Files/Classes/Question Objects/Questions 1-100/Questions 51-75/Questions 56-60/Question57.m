@@ -25,6 +25,7 @@
   self.category = @"Patterns";
   self.keywords = @"square,root,continued,fractions,infinite,expansions,numerator,denominator,one,thousand,1000,more,digits,how,many";
   self.solveTime = @"60";
+  self.technique = @"Math";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"26/02/13";
