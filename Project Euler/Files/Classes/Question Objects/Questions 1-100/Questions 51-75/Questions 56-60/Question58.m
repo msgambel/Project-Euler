@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"spiralling,ratio,primes,both,diagonals,anticlockwise,square,side,length,formed,layer,wrapped,falls,below,10,ten,percent";
   self.solveTime = @"60";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"27/02/13";
