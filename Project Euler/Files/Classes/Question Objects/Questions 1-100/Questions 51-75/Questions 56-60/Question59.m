@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"xor,decryption,god,key,ascii,values,encryption,password,import,unique,code,character,bytes,preferred,message,common,english,words,text,containing,cyclically";
   self.solveTime = @"90";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = YES;
   self.completedOnDate = @"28/02/13";
