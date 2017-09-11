@@ -31,6 +31,7 @@
   self.category = @"Sums";
   self.keywords = @"triangle,square,pentagonal,hexagonal,heptagonal,octagonal,cyclic,set,numbers,polygonal,different,number,formulae,represented,set,figurate,generated";
   self.solveTime = @"90";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"02/03/13";
