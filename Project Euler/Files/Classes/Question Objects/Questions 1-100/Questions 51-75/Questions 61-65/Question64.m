@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"square,roots,continued,fractions,representations,periodic,odd,ten,thousand,10000,count,notation,blocks,repeats,indefinitely";
   self.solveTime = @"90";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = YES;
   self.completedOnDate = @"05/03/13";
