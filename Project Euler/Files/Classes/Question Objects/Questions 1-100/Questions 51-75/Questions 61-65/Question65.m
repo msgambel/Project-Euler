@@ -25,6 +25,7 @@
   self.category = @"Patterns";
   self.keywords = @"convergents,e,infinite,continued,fractions,digits,sum,numerator,100,one,hundred,rational,approximations,sequence,partial";
   self.solveTime = @"30";
+  self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"06/03/13";
