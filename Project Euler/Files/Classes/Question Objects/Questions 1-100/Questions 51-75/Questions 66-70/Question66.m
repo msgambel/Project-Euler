@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"diophantine,equations,continued,fractions,expansions,pells,periods,minimal,solutions,largest,value,quadratic,length";
   self.solveTime = @"300";
+  self.technique = @"Math";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"07/03/13";
