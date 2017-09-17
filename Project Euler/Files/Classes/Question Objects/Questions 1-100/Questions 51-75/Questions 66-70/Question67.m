@@ -25,6 +25,7 @@
   self.category = @"Sums";
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,100,one,hundred,rows,II,algorithm";
   self.solveTime = @"120";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = YES;
   self.completedOnDate = @"08/03/13";
