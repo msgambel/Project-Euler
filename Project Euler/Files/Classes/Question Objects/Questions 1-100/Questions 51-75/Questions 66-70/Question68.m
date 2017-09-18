@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"n-gon,digit,maximum,magic,ring,external,node,adding,line,16,sixteen,5-gon,five-gon,arrangements,strings";
   self.solveTime = @"600";
+  self.technique = @"Logic";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"09/03/13";
