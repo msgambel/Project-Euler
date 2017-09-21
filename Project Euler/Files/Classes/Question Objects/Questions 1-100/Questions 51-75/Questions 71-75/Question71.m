@@ -24,6 +24,7 @@
   self.category = @"Counting";
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,numerator,left,set,listing";
   self.solveTime = @"90";
+  self.technique = @"Math";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"12/03/13";
