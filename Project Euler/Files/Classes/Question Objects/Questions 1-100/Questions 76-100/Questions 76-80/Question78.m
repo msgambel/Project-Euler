@@ -25,6 +25,7 @@
   self.category = @"Combinations";
   self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million,least,value";
   self.solveTime = @"300";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"19/03/13";
