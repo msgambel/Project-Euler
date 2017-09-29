@@ -30,6 +30,7 @@
   self.category = @"Patterns";
   self.keywords = @"passcode,derivation,login,secret,shortest,import,security,common,method,analyse,files";
   self.solveTime = @"300";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"20/03/13";
