@@ -25,6 +25,7 @@
   self.category = @"Probability";
   self.keywords = @"monopoly,4,four,dice,roll,ev,2,two,6,six,most,popular,squares,modal,string,standard,board,sided,listed";
   self.solveTime = @"300";
+  self.technique = @"OOP";
   self.difficulty = @"Easy";
   self.isChallenging = YES;
   self.completedOnDate = @"25/03/13";
