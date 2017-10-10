@@ -30,6 +30,7 @@
   self.category = @"Combinations";
   self.keywords = @"cube,digit,pairs,distinct,formations,arrangements,square,numbers,different,positions,side,6,six,2,two,displayed,forming";
   self.solveTime = @"300";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"31/03/13";
