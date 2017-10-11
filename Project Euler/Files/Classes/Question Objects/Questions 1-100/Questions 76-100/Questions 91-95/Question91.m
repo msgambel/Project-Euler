@@ -24,6 +24,7 @@
   self.category = @"Counting";
   self.keywords = @"right,triangles,with,integer,coordinates,vectors,inner,product,orthogonal,points,formed";
   self.solveTime = @"30";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"01/04/13";
