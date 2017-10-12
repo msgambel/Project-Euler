@@ -30,6 +30,7 @@
   self.category = @"Patterns";
   self.keywords = @"square,digit,chains,one,1,eighty,nine,89,count,starting,numbers,continuously,sequence";
   self.solveTime = @"60";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"02/04/13";
