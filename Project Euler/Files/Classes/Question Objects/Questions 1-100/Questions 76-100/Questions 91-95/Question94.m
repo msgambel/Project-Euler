@@ -24,6 +24,7 @@
   self.category = @"Sums";
   self.keywords = @"almost,equilateral,triangles,alternating,perimeters,sides,square,units,1000000000,one,billion,lengths,exceed,integral,area";
   self.solveTime = @"150";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"04/04/13";
