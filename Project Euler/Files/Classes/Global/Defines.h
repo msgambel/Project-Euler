@@ -24,6 +24,9 @@
 // Define to hold the number of cards in the Chance and Community Chest piles.
 #define NumberOfChanceOrCommunityChestCardsToChooseFrom 16
 
+// Define for the number of row, columns, and groups in a Sudoku Board.
+#define NumberOfRowsColumnsAndGroups 9
+
 // Define for the total number of valid entries in a Sudoku Group (0-9, where
 // 0 represents the unknown square).
 #define PotentialNumbers 10

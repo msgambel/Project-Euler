@@ -7,7 +7,8 @@
 typedef enum {
   SudokuGroupType_Row,
   SudokuGroupType_Column,
-  SudokuGroupType_Square
+  SudokuGroupType_Square,
+  SudokuGroupType_Total
 }SudokuGroupType;
 
 // Enum for the days of the week.

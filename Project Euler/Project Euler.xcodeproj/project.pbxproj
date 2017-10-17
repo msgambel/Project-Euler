@@ -61,6 +61,7 @@
 		4E57E7CF1713CCD60048A293 /* SudokuCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E57E7CC1713CCD60048A293 /* SudokuCoordinate.m */; };
 		4E57E7D01713CCD60048A293 /* SudokuGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E57E7CE1713CCD60048A293 /* SudokuGroup.m */; };
 		4E5C636616DAB0D5001E9456 /* Question56.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C636516DAB0D5001E9456 /* Question56.m */; };
+		4E5DBCDF1F952D1D00976A10 /* SudokuBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBCDE1F952D1D00976A10 /* SudokuBoard.m */; };
 		4E62DC4416ED910C00D60CB6 /* Question70.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62DC4216ED910C00D60CB6 /* Question70.m */; };
 		4E62DCEB16EECA3D00D60CB6 /* Question71.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62DCEA16EECA3D00D60CB6 /* Question71.m */; };
 		4E62DD0716EFB03B00D60CB6 /* Question72.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62DD0416EFB03B00D60CB6 /* Question72.m */; };
@@ -268,6 +269,8 @@
 		4E57E7CE1713CCD60048A293 /* SudokuGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuGroup.m; sourceTree = "<group>"; };
 		4E5C636416DAB0D5001E9456 /* Question56.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question56.h; sourceTree = "<group>"; };
 		4E5C636516DAB0D5001E9456 /* Question56.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Question56.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4E5DBCDD1F952D1D00976A10 /* SudokuBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuBoard.h; sourceTree = "<group>"; };
+		4E5DBCDE1F952D1D00976A10 /* SudokuBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuBoard.m; sourceTree = "<group>"; };
 		4E62DC4116ED910C00D60CB6 /* Question70.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question70.h; sourceTree = "<group>"; };
 		4E62DC4216ED910C00D60CB6 /* Question70.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question70.m; sourceTree = "<group>"; };
 		4E62DCE916EECA3D00D60CB6 /* Question71.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question71.h; sourceTree = "<group>"; };
@@ -666,6 +669,8 @@
 		4E57E7CA1713CCD60048A293 /* Sudoku */ = {
 			isa = PBXGroup;
 			children = (
+				4E5DBCDD1F952D1D00976A10 /* SudokuBoard.h */,
+				4E5DBCDE1F952D1D00976A10 /* SudokuBoard.m */,
 				4E57E7CB1713CCD60048A293 /* SudokuCoordinate.h */,
 				4E57E7CC1713CCD60048A293 /* SudokuCoordinate.m */,
 				4E57E7CD1713CCD60048A293 /* SudokuGroup.h */,
@@ -2119,6 +2124,7 @@
 				4E93B97116A9C9DA00D9EADB /* Question1.m in Sources */,
 				4E93B97216A9C9DA00D9EADB /* Question2.m in Sources */,
 				4E93B97316A9C9DA00D9EADB /* Question3.m in Sources */,
+				4E5DBCDF1F952D1D00976A10 /* SudokuBoard.m in Sources */,
 				4E93B97416A9C9DA00D9EADB /* Question4.m in Sources */,
 				4E93B97516A9C9DA00D9EADB /* Question5.m in Sources */,
 				4E93B97616A9C9DA00D9EADB /* Question11.m in Sources */,
