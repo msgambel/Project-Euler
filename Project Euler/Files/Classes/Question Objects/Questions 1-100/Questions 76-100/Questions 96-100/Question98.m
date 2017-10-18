@@ -31,6 +31,7 @@
   self.category = @"Patterns";
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
   self.solveTime = @"300";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"08/04/13";
