@@ -32,6 +32,7 @@
   self.category = @"Patterns";
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
   self.solveTime = @"600";
+  self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"11/04/13";
