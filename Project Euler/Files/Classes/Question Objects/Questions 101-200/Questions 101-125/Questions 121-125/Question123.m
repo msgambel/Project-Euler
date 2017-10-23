@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
   self.solveTime = @"90";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"13/04/13";
