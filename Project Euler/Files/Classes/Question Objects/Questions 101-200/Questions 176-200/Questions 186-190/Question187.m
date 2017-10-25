@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"semiprimes,two,2,prime,factors,composites,distinct";
   self.solveTime = @"30";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"15/04/13";
