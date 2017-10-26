@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"concealed,square,perfect,positive,integer";
   self.solveTime = @"30";
+  self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"16/04/13";
