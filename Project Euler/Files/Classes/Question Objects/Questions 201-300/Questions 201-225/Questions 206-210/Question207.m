@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
   self.solveTime = @"60";
+  self.technique = @"Math";
   self.difficulty = @"Easy";
   self.isChallenging = NO;
   self.completedOnDate = @"17/04/13";
