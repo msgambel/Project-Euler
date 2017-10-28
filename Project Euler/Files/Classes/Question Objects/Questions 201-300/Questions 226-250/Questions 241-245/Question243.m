@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.keywords = @"resilience,totient,function,unique,prime,factors,smallest";
   self.solveTime = @"300";
+  self.technique = @"Math";
   self.difficulty = @"Medium";
   self.isChallenging = YES;
   self.completedOnDate = @"18/04/13";
