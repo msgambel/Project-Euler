@@ -28,6 +28,7 @@
 @synthesize technique = _technique;
 @synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
+@synthesize commentCount = _commentCount;
 @synthesize isChallenging = _isChallenging;
 @synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;

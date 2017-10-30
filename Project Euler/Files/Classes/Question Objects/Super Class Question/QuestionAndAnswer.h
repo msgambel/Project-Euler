@@ -28,6 +28,7 @@
   NSString * _solveTime;
   NSString * _technique;
   NSString * _difficulty;
+  NSString * _commentCount;
   NSString * _completedOnDate;
   NSString * _solutionLineCount;
   NSString * _estimatedComputationTime;
@@ -52,6 +53,7 @@
 @property (nonatomic, strong) NSString * solveTime;
 @property (nonatomic, strong) NSString * technique;
 @property (nonatomic, strong) NSString * difficulty;
+@property (nonatomic, strong) NSString * commentCount;
 @property (nonatomic, strong) NSString * completedOnDate;
 @property (nonatomic, strong) NSString * solutionLineCount;
 @property (nonatomic, strong) NSString * estimatedComputationTime;
