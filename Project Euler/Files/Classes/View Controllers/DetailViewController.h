@@ -23,6 +23,7 @@
   IBOutlet UILabel                 * _questionTechniqueLabel;
   IBOutlet UILabel                 * _solutionLineCountLabel;
   IBOutlet UILabel                 * _questionDifficultyLabel;
+  IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
   IBOutlet UIButton                * _backButton;
   IBOutlet UIButton                * _cancelButton;
