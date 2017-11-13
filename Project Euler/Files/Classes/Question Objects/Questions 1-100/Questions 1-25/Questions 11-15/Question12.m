@@ -26,6 +26,7 @@
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Meh";
+  self.commentCount = @"41";
   self.isChallenging = NO;
   self.completedOnDate = @"12/01/13";
   self.solutionLineCount = @"73";
@@ -133,11 +134,13 @@
       if(currentPrimeNumber <= sqrtOfTriangleNumber){
         // If the current prime number divides our current number,
         if((lastTriangleNumberIndex % currentPrimeNumber) == 0){
+          // Reset the current number of prime factors to 1.
           currentNumberOfPrimeFactors = 1;
           
           // Loop by continually dividing out by the current prime number. This
           // removes any powers of the current prime factor.
           while((lastTriangleNumberIndex % currentPrimeNumber) == 0){
+            // Increment the number of current prime factors.
             currentNumberOfPrimeFactors++;
             
             // Divide the number to factor by the current prime number.
