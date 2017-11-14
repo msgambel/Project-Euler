@@ -33,6 +33,7 @@
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
+  self.commentCount = @"20";
   self.isChallenging = NO;
   self.completedOnDate = @"13/01/13";
   self.solutionLineCount = @"13";
@@ -79,6 +80,7 @@
     // Divide the sum by 10. This removes the units digit
     sum /= 10;
   }
+  // For all the strings in the parsed strings array.
   for(NSString * stringNumber in parsedArray){
     // Compute the new current range.
     subStringRange = NSMakeRange(0, 8);
