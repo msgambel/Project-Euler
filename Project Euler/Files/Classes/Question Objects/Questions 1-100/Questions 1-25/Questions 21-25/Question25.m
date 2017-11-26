@@ -27,6 +27,7 @@
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
+  self.commentCount = @"11";
   self.isChallenging = NO;
   self.completedOnDate = @"25/01/13";
   self.solutionLineCount = @"3";
