@@ -34,6 +34,7 @@
   self.solveTime = @"150";
   self.technique = @"Functional";
   self.difficulty = @"Medium";
+  self.commentCount = @"12";
   self.isChallenging = YES;
   self.completedOnDate = @"31/01/13";
   self.solutionLineCount = @"25";
