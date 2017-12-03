@@ -26,6 +26,7 @@
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
+  self.commentCount = @"49";
   self.isChallenging = NO;
   self.completedOnDate = @"01/02/13";
   self.solutionLineCount = @"37";
@@ -142,6 +143,7 @@
       // Compute the product.
       product = i * j;
       
+      // If the product is greater than 10,000,
       if(product > 10000){
         // Break out of the loop.
         break;
