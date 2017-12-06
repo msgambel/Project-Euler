@@ -33,6 +33,7 @@
   self.solveTime = @"150";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
+  self.commentCount = @"36";
   self.isChallenging = YES;
   self.completedOnDate = @"04/02/13";
   self.solutionLineCount = @"81";
@@ -136,7 +137,8 @@
       // Break out of the loop.
       break;
     }
-  }// If the user has not cancelled the computation at this point,
+  }
+  // If the user has not cancelled the computation at this point,
   if(_isComputing){
     // Set the answer string to the number of circular primes found.
     self.answer = [NSString stringWithFormat:@"%d", numberOfCircularPrimesFound];
