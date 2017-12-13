@@ -27,6 +27,7 @@
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
+  self.commentCount = @"33";
   self.isChallenging = NO;
   self.completedOnDate = @"11/02/13";
   self.solutionLineCount = @"25";
@@ -97,7 +98,10 @@
   // Variable array to hold all the required triangle numbers.
   uint triangleNumbers[largestRequiredTriangleNumber];
   
+  // Set the first triangle number in the triangle numbers array.
   triangleNumbers[0] = 0;
+  
+  // Set the second triangle number in the triangle numbers array.
   triangleNumbers[1] = 1;
   
   // For all the required triangle numbers,
