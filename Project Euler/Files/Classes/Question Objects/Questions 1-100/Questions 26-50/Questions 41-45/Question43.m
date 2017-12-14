@@ -32,6 +32,7 @@
   self.solveTime = @"900";
   self.technique = @"Logic";
   self.difficulty = @"Medium";
+  self.commentCount = @"86";
   self.isChallenging = YES;
   self.completedOnDate = @"12/02/13";
   self.solutionLineCount = @"93";
@@ -92,7 +93,7 @@
   // with the substring divisibility property.
   long long int sum = 0;
   
-  // Variblae to mark if the current digits are allowed or not.
+  // Variable to mark if the current digits are allowed or not.
   BOOL isAllowed = YES;
   
   // Variable to hold the current index for the multiples we are looking at.
