@@ -27,6 +27,7 @@
   self.solveTime = @"60";
   self.technique = @"OOP";
   self.difficulty = @"Easy";
+  self.commentCount = @"77";
   self.isChallenging = NO;
   self.completedOnDate = @"22/03/13";
   self.solutionLineCount = @"69";
@@ -132,38 +133,61 @@
     // cost.
     matrix[79][row].h = matrix[79][(row + 1)].moveCost + matrix[79][(row + 1)].h;
   }
-  
+  // For all the A* node columns from right to left,
   for(int column = 78; column >= 0; column--){
+    // Set the initial column for iterating diagonally throughout the A* nodes
+    // as the current column.
     newColumn = column;
     
+    // For all the A* node rows from bottom to top,
     for(int row = 78; row >= 0; row--){
+      // If the movement cost of moving right a column is less than the movement
+      // cost of moving down a row,
       if((matrix[(newColumn + 1)][row].h + matrix[(newColumn + 1)][row].moveCost) < (matrix[newColumn][(row + 1)].h + matrix[newColumn][(row + 1)].moveCost)){
+        // Store the movement cost as the cost of moving right a column.
         matrix[newColumn][row].h = (matrix[(newColumn + 1)][row].h + matrix[(newColumn + 1)][row].moveCost);
       }
+      // Otherwise, if the movement cost of moving right a column is greater
+      // than or equal to the movement cost of moving down a row,
       else{
+        // Store the movement cost as the cost of moving down a row.
         matrix[newColumn][row].h = (matrix[newColumn][(row + 1)].h + matrix[newColumn][(row + 1)].moveCost);
       }
+      // If we are in the right most column,
       if(newColumn == 78){
         // Break out of the loop.
         break;
       }
+      // Increment the new column by 1 in order to continue to move diagonally.
       newColumn++;
     }
   }
-  
+  // For all the A* node rows from bottom to top,
   for(int row = 78; row >= 0; row--){
+    // Set the initial row for iterating diagonally throughout the A* nodes as
+    // the current row.
     newRow = row;
     
+    // For all the A* node columns from left to right,
     for(int column = 0; column < 79; column++){
+      // If the movement cost of moving right a column is less than the movement
+      // cost of moving down a row,
       if((matrix[(column + 1)][newRow].h + matrix[(column + 1)][newRow].moveCost) < (matrix[column][(newRow + 1)].h + matrix[column][(newRow + 1)].moveCost)){
+        // Store the movement cost as the cost of moving right a column.
         matrix[column][newRow].h = (matrix[(column + 1)][newRow].h + matrix[(column + 1)][newRow].moveCost);
       }
+      // Otherwise, if the movement cost of moving right a column is greater
+      // than or equal to the movement cost of moving down a row,
       else{
+        // Store the movement cost as the cost of moving down a row.
         matrix[column][newRow].h = (matrix[column][(newRow + 1)].h + matrix[column][(newRow + 1)].moveCost);
       }
+      // If we are in the top most row,
       if(newRow == 0){
+        // Break out of the loop.
         break;
       }
+      // Decrement the new row by 1 in order to continue to move diagonally.
       newRow--;
     }
   }
@@ -223,7 +247,6 @@
             
             // Order the open nodes array.
             openNodes = [NSMutableArray arrayWithArray:[openNodes sortedArrayUsingSelector:@selector(compareNodes:)]];
-            
           }
         }
         // If the adjacent node is NOT in the open list,
@@ -359,38 +382,61 @@
     // cost.
     matrix[79][row].h = matrix[79][(row + 1)].moveCost + matrix[79][(row + 1)].h;
   }
-  
+  // For all the A* node columns from right to left,
   for(int column = 78; column >= 0; column--){
+    // Set the initial column for iterating diagonally throughout the A* nodes
+    // as the current column.
     newColumn = column;
     
+    // For all the A* node rows from bottom to top,
     for(int row = 78; row >= 0; row--){
+      // If the movement cost of moving right a column is less than the movement
+      // cost of moving down a row,
       if((matrix[(newColumn + 1)][row].h + matrix[(newColumn + 1)][row].moveCost) < (matrix[newColumn][(row + 1)].h + matrix[newColumn][(row + 1)].moveCost)){
+        // Store the movement cost as the cost of moving right a column.
         matrix[newColumn][row].h = (matrix[(newColumn + 1)][row].h + matrix[(newColumn + 1)][row].moveCost);
       }
+      // Otherwise, if the movement cost of moving right a column is greater
+      // than or equal to the movement cost of moving down a row,
       else{
+        // Store the movement cost as the cost of moving down a row.
         matrix[newColumn][row].h = (matrix[newColumn][(row + 1)].h + matrix[newColumn][(row + 1)].moveCost);
       }
+      // If we are in the right most column,
       if(newColumn == 78){
         // Break out of the loop.
         break;
       }
+      // Increment the new column by 1 in order to continue to move diagonally.
       newColumn++;
     }
   }
-  
+  // For all the A* node rows from bottom to top,
   for(int row = 78; row >= 0; row--){
+    // Set the initial row for iterating diagonally throughout the A* nodes as
+    // the current row.
     newRow = row;
     
+    // For all the A* node columns from left to right,
     for(int column = 0; column < 79; column++){
+      // If the movement cost of moving right a column is less than the movement
+      // cost of moving down a row,
       if((matrix[(column + 1)][newRow].h + matrix[(column + 1)][newRow].moveCost) < (matrix[column][(newRow + 1)].h + matrix[column][(newRow + 1)].moveCost)){
+        // Store the movement cost as the cost of moving right a column.
         matrix[column][newRow].h = (matrix[(column + 1)][newRow].h + matrix[(column + 1)][newRow].moveCost);
       }
+      // Otherwise, if the movement cost of moving right a column is greater
+      // than or equal to the movement cost of moving down a row,
       else{
+        // Store the movement cost as the cost of moving down a row.
         matrix[column][newRow].h = (matrix[column][(newRow + 1)].h + matrix[column][(newRow + 1)].moveCost);
       }
+      // If we are in the top most row,
       if(newRow == 0){
+        // Break out of the loop.
         break;
       }
+      // Decrement the new row by 1 in order to continue to move diagonally.
       newRow--;
     }
   }
@@ -450,7 +496,6 @@
             
             // Order the open nodes array.
             openNodes = [NSMutableArray arrayWithArray:[openNodes sortedArrayUsingSelector:@selector(compareNodes:)]];
-            
           }
         }
         // If the adjacent node is NOT in the open list,
