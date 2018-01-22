@@ -26,6 +26,7 @@
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
+  self.commentCount = @"31";
   self.isChallenging = YES;
   self.completedOnDate = @"23/03/13";
   self.solutionLineCount = @"23";
@@ -91,16 +92,24 @@
     // Set the cost of moving right to the last column for the current row.
     minimumColumnCost[row] = matrix[79][row];
   }
-  
+  // For each column from right to left,
   for(int column = 78; column >= 0; column--){
+    // Increment the cost of moving right to the last column for the first row.
     minimumColumnCost[0] += matrix[column][0];
     
+    // For each row starting with the second row,
     for(int row = 1; row < 80; row++){
+      // Store the cost of moving right to be the minimum of the previous row
+      // and the current row.
       minimumColumnCost[row] = MIN(minimumColumnCost[row], minimumColumnCost[(row - 1)]);
+      
+      // Increment the cost of moving right by the current positions value.
       minimumColumnCost[row] +=  matrix[column][row];
     }
-    
+    // For each row from the bottom to the top,
     for(int row = 78; row >= 0; row--){
+      // Store the cost of moving right to be the minimum of the next row and
+      // its value, and the current row.
       minimumColumnCost[row] = MIN(minimumColumnCost[row], (minimumColumnCost[(row + 1)] + matrix[column][row]));
     }
   }
@@ -189,16 +198,24 @@
     // Set the cost of moving right to the last column for the current row.
     minimumColumnCost[row] = matrix[79][row];
   }
-  
+  // For each column from right to left,
   for(int column = 78; column >= 0; column--){
+    // Increment the cost of moving right to the last column for the first row.
     minimumColumnCost[0] += matrix[column][0];
     
+    // For each row starting with the second row,
     for(int row = 1; row < 80; row++){
+      // Store the cost of moving right to be the minimum of the previous row
+      // and the current row.
       minimumColumnCost[row] = MIN(minimumColumnCost[row], minimumColumnCost[(row - 1)]);
+      
+      // Increment the cost of moving right by the current positions value.
       minimumColumnCost[row] +=  matrix[column][row];
     }
-    
+    // For each row from the bottom to the top,
     for(int row = 78; row >= 0; row--){
+      // Store the cost of moving right to be the minimum of the next row and
+      // its value, and the current row.
       minimumColumnCost[row] = MIN(minimumColumnCost[row], (minimumColumnCost[(row + 1)] + matrix[column][row]));
     }
   }
