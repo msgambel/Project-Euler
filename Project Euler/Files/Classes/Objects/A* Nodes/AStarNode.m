@@ -25,8 +25,8 @@
 - (id)initWithRow:(uint)aRow column:(uint)aColumn value:(uint)aValue; {
   // Initialize the A* Node.
   if((self = [super init])){
-    // Set the default distance to the next A* Node to 0.
-    _g = 0;
+    // Set the default distance to the next A* Node to the movement cost.
+    _g = aValue;
     
     // Set the default hueristic distance to the next A* Node to 0.
     _h = 0;
@@ -56,14 +56,14 @@
 #pragma mark - Methods
 
 - (NSComparisonResult)compareNodes:(AStarNode *)aAStarNode; {
-  // If this A* Node has a greater distance than the inputted A* Node,
-  if(self.f > aAStarNode.f){
-    // Return that this A* Node has a higher value than the inputted A* Node.
+  // If this A* Node has a shorter distance than the inputted A* Node,
+  if(self.f < aAStarNode.f){
+    // Return that this A* Node has a lower value than the inputted A* Node.
     return NSOrderedAscending;
   }
-  // If this A* Node has a shorter distance than the inputted A* Node,
-  else if(self.f < aAStarNode.f){
-    // Return that this A* Node has a lower value than the inputted A* Node.
+  // If this A* Node has a greater distance than the inputted A* Node,
+  else if(self.f > aAStarNode.f){
+    // Return that this A* Node has a higher value than the inputted A* Node.
     return NSOrderedDescending;
   }
   // If this A* Node has the same distance as the inputted A* Node,
