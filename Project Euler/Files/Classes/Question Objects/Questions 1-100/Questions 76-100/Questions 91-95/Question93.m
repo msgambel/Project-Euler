@@ -34,6 +34,7 @@
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
+  self.commentCount = @"55";
   self.isChallenging = YES;
   self.completedOnDate = @"03/04/13";
   self.solutionLineCount = @"117";
@@ -84,7 +85,7 @@
   // digits.
   NSString * equation = nil;
   
-  // Variable to hold the concatenated four digits
+  // Variable to hold the concatenated four digits.
   NSString * concatenatedDigits = nil;
   
   // Variable to hold the results of all the different permutations of the four
