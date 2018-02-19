@@ -32,6 +32,7 @@
 @synthesize isChallenging = _isChallenging;
 @synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;
+@synthesize usesHelperMethods = _usesHelperMethods;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;
 
