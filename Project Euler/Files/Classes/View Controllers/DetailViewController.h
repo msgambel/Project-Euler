@@ -25,6 +25,7 @@
   IBOutlet UILabel                 * _questionDifficultyLabel;
   IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
+  IBOutlet UILabel                 * _questionUsesHelperMethodsLabel;
   IBOutlet UIButton                * _backButton;
   IBOutlet UIButton                * _cancelButton;
   IBOutlet UIButton                * _computeButton;

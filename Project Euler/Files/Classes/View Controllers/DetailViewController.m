@@ -285,6 +285,12 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  if(_questionAndAnswer.usesHelperMethods){
+    _questionUsesHelperMethodsLabel.text = @"Uses Helpers";
+  }
+  else{
+    _questionUsesHelperMethodsLabel.text = @"No Helpers";
+  }
   _questionTextView.text = _questionAndAnswer.text;
   _questionDateLabel.text = _questionAndAnswer.date;
   _questionTitleLabel.text = _questionAndAnswer.title;
