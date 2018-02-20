@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G18013" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -331,7 +331,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68A-Dj-xoW">
-                                <rect key="frame" x="5" y="195.5" width="310" height="282"/>
+                                <rect key="frame" x="5" y="195.5" width="310" height="267.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -416,9 +416,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atg-Ue-tqo">
-                                <rect key="frame" x="255" y="482.5" width="60" height="30"/>
+                                <rect key="frame" x="255" y="468" width="60" height="44.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ECY-tt-Jaf"/>
                                     <constraint firstAttribute="width" constant="60" id="k7X-YT-lzd"/>
                                 </constraints>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
@@ -448,6 +447,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses Helper Methods" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FfW-Xp-PXv">
+                                <rect key="frame" x="95" y="468" width="131" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qIn-8v-rRf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -455,6 +463,7 @@
                             <constraint firstItem="Roi-o8-Qg7" firstAttribute="trailing" secondItem="966-p5-ABN" secondAttribute="trailing" id="1wO-EW-NPl"/>
                             <constraint firstItem="fB9-G9-pHS" firstAttribute="top" secondItem="5Ag-AW-pPG" secondAttribute="bottom" constant="5" id="464-K8-8lm"/>
                             <constraint firstItem="aU8-ij-SKt" firstAttribute="centerX" secondItem="g8w-Vm-9j5" secondAttribute="centerX" id="4aT-T0-NJc"/>
+                            <constraint firstItem="FfW-Xp-PXv" firstAttribute="top" secondItem="68A-Dj-xoW" secondAttribute="bottom" constant="5" id="4g9-q3-3RF"/>
                             <constraint firstItem="atg-Ue-tqo" firstAttribute="trailing" secondItem="68A-Dj-xoW" secondAttribute="trailing" id="65e-P1-UaX"/>
                             <constraint firstItem="Ewd-cm-Ykd" firstAttribute="leading" secondItem="Qq1-jn-f9C" secondAttribute="leading" id="6uK-B3-jxE"/>
                             <constraint firstItem="5Ag-AW-pPG" firstAttribute="top" secondItem="JDy-qD-FLz" secondAttribute="bottom" constant="5" id="9UW-cP-Xv0"/>
@@ -468,6 +477,7 @@
                             <constraint firstItem="S9G-2W-gdc" firstAttribute="centerX" secondItem="g8w-Vm-9j5" secondAttribute="centerX" id="G5d-NG-N0Y"/>
                             <constraint firstItem="Ypi-qg-ywm" firstAttribute="width" secondItem="Qq1-jn-f9C" secondAttribute="width" id="G96-1R-k48"/>
                             <constraint firstItem="07R-jS-Hnr" firstAttribute="top" secondItem="KYs-Sk-3Gv" secondAttribute="bottom" constant="5" id="Gz0-uu-HVF"/>
+                            <constraint firstItem="FfW-Xp-PXv" firstAttribute="centerX" secondItem="68A-Dj-xoW" secondAttribute="centerX" id="HuF-71-PYZ"/>
                             <constraint firstItem="RrT-Qg-qjT" firstAttribute="leading" secondItem="5Ag-AW-pPG" secondAttribute="trailing" constant="5" id="IJg-ms-kxM"/>
                             <constraint firstItem="zte-W2-whe" firstAttribute="leading" secondItem="lr8-rG-feB" secondAttribute="trailing" id="IjJ-pL-Fz1"/>
                             <constraint firstItem="xYY-sv-Ilg" firstAttribute="top" secondItem="KYs-Sk-3Gv" secondAttribute="bottom" constant="5" id="IvY-Fp-qZr"/>
@@ -486,6 +496,7 @@
                             <constraint firstItem="8AF-sH-MIB" firstAttribute="trailing" secondItem="zte-W2-whe" secondAttribute="trailing" id="QI9-W1-Gyn"/>
                             <constraint firstItem="07R-jS-Hnr" firstAttribute="leading" secondItem="g8w-Vm-9j5" secondAttribute="leading" constant="5" id="R5n-ty-a6Y"/>
                             <constraint firstItem="DHb-ba-bDJ" firstAttribute="centerX" secondItem="g8w-Vm-9j5" secondAttribute="centerX" id="SHH-Ql-e2J"/>
+                            <constraint firstItem="aU8-ij-SKt" firstAttribute="top" secondItem="FfW-Xp-PXv" secondAttribute="bottom" constant="5" id="U9Y-66-smo"/>
                             <constraint firstItem="FE8-Kb-SuB" firstAttribute="top" secondItem="KYs-Sk-3Gv" secondAttribute="bottom" constant="5" id="V2e-pi-4ip"/>
                             <constraint firstItem="aU8-ij-SKt" firstAttribute="centerY" secondItem="dz8-ta-DFM" secondAttribute="centerY" id="VIg-hz-rXg"/>
                             <constraint firstAttribute="trailing" secondItem="xYY-sv-Ilg" secondAttribute="trailing" constant="5" id="XD7-s3-PAG"/>
@@ -545,6 +556,7 @@
                         <outlet property="_questionTechniqueLabel" destination="dz8-ta-DFM" id="Sty-ox-TUk"/>
                         <outlet property="_questionTextView" destination="68A-Dj-xoW" id="A2e-TC-hlY"/>
                         <outlet property="_questionTitleLabel" destination="FE8-Kb-SuB" id="nLp-Zo-BaZ"/>
+                        <outlet property="_questionUsesHelperMethodsLabel" destination="FfW-Xp-PXv" id="m8z-jZ-wGA"/>
                         <outlet property="_solutionLineCountLabel" destination="Ewd-cm-Ykd" id="f8A-K2-E5D"/>
                     </connections>
                 </viewController>
