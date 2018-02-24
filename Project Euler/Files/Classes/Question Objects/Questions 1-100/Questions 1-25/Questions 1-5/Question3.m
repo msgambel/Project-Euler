@@ -26,10 +26,11 @@
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
-  self.commentCount = @"30";
+  self.commentCount = @"31";
   self.isChallenging = NO;
   self.completedOnDate = @"03/01/13";
   self.solutionLineCount = @"25";
+  self.usesHelperMethods = NO;
   self.estimatedComputationTime = @"5.34e-04";
   self.estimatedBruteForceComputationTime = @"1.89e-02";
 }
@@ -95,6 +96,8 @@
         if((currentNumber % currentPrimeNumber) == 0){
           // The current number is not prime, so exit the loop.
           isPrime = NO;
+          
+          // Break out of the loop.
           break;
         }
       }
@@ -183,6 +186,8 @@
       if((currentNumber % [number longLongValue]) == 0){
         // The current number is not prime, so exit the loop.
         isPrime = NO;
+        
+        // Break out of the loop.
         break;
       }
     }
