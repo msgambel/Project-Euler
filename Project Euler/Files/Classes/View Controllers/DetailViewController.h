@@ -13,6 +13,7 @@
   QuestionAndAnswer                * _questionAndAnswer;
   IBOutlet UILabel                 * _questionDateLabel;
   IBOutlet UILabel                 * _questionTitleLabel;
+  IBOutlet UILabel                 * _startedOnDateLabel;
   IBOutlet UILabel                 * _questionAnswerLabel;
   IBOutlet UILabel                 * _questionNumberLabel;
   IBOutlet UILabel                 * _questionRatingLabel;

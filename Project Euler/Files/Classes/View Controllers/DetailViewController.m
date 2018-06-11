@@ -294,6 +294,7 @@
   _questionTextView.text = _questionAndAnswer.text;
   _questionDateLabel.text = _questionAndAnswer.date;
   _questionTitleLabel.text = _questionAndAnswer.title;
+  _startedOnDateLabel.text = _questionAndAnswer.startedOnDate;
   _questionAnswerLabel.text = _questionAndAnswer.answer;
   _questionNumberLabel.text = [NSString stringWithFormat:@"Problem %@", _questionAndAnswer.number];
   _questionRatingLabel.text = [NSString stringWithFormat:@"%@ / 5", _questionAndAnswer.rating];
