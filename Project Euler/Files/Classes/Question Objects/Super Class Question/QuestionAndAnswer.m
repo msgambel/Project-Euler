@@ -30,6 +30,7 @@
 @synthesize isComputing = _isComputing;
 @synthesize commentCount = _commentCount;
 @synthesize isChallenging = _isChallenging;
+@synthesize startedOnDate = _startedOnDate;
 @synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;
 @synthesize usesHelperMethods = _usesHelperMethods;
