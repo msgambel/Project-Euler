@@ -28,6 +28,7 @@
   self.difficulty = @"Meh";
   self.commentCount = @"10";
   self.isChallenging = NO;
+  self.startedOnDate = @"07/01/13";
   self.completedOnDate = @"07/01/13";
   self.solutionLineCount = @"41";
   self.usesHelperMethods = YES;
