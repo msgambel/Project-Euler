@@ -28,6 +28,7 @@
   self.difficulty = @"Medium";
   self.commentCount = @"51";
   self.isChallenging = YES;
+  self.startedOnDate = @"29/03/13";
   self.completedOnDate = @"29/03/13";
   self.solutionLineCount = @"73";
   self.usesHelperMethods = NO;
@@ -44,7 +45,13 @@
   // Grab the time before the computation starts.
   NSDate * startTime = [NSDate date];
   
-  // Here, we simply
+  // Here, we simply iterate through all the numbers up to maximum size, and
+  // compute the factors of each number. Then, we check if the product of the
+  // factors is greater than or equal to the sum of the factors. If it is, we
+  // simply add the number of 1's that make up the difference of the product
+  // minus the sum, as multiplying by 1 does not change the product. Once the
+  // minimal product-sum is found, we ensure that it is unique, and add it to
+  // the sum of the minimal product-sum's.
   
   // Variable to mark the maximum size of the minimal product-sum numbers to
   // examine.
@@ -81,7 +88,7 @@
   // Variable array to hold the factors of the current number.
   NSMutableArray * factorsForNumber = nil;
   
-  // Variable to hold the 
+  // Variable to hold the unique minimal product-sum factors.
   NSMutableArray * currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0], nil];
   
   // Set the minimal product-sum for 2 as 4.
@@ -210,7 +217,13 @@
   // Note: This is the same algorithm as the optimal one. I can't think of a more
   //       brute force way to do this!
   
-  // Here, we simply
+  // Here, we simply iterate through all the numbers up to maximum size, and
+  // compute the factors of each number. Then, we check if the product of the
+  // factors is greater than or equal to the sum of the factors. If it is, we
+  // simply add the number of 1's that make up the difference of the product
+  // minus the sum, as multiplying by 1 does not change the product. Once the
+  // minimal product-sum is found, we ensure that it is unique, and add it to
+  // the sum of the minimal product-sum's.
   
   // Variable to mark the maximum size of the minimal product-sum numbers to
   // examine.
@@ -247,7 +260,7 @@
   // Variable array to hold the factors of the current number.
   NSMutableArray * factorsForNumber = nil;
   
-  // Variable to hold the
+  // Variable to hold the unique minimal product-sum factors.
   NSMutableArray * currentFactorsForNumber = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0], nil];
   
   // Set the minimal product-sum for 2 as 4.
