@@ -270,7 +270,7 @@
     [self updateTheControls];
     
     // Set the NSOperationQueue to nil as we are done with it.
-    _operationQueue = nil;
+    self->_operationQueue = nil;
   });
 }
 
@@ -290,6 +290,12 @@
   }
   else{
     _questionUsesHelperMethodsLabel.text = @"No Helpers";
+  }
+  if(_questionAndAnswer.hasMultipleSolutions){
+    _questionHasMultipleSolutionsLabel.text = @"Has Multiple Solutions";
+  }
+  else{
+    _questionHasMultipleSolutionsLabel.text = @"Has A Single Solution";
   }
   _questionTextView.text = _questionAndAnswer.text;
   _questionDateLabel.text = _questionAndAnswer.date;
