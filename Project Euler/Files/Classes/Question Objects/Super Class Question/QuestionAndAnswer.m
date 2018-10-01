@@ -34,6 +34,7 @@
 @synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;
 @synthesize usesHelperMethods = _usesHelperMethods;
+@synthesize hasMultipleSolutions = _hasMultipleSolutions;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;
 
