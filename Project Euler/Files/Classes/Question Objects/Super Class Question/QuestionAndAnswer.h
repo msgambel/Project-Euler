@@ -16,6 +16,7 @@
   BOOL       _isComputing;
   BOOL       _isChallenging;
   BOOL       _usesHelperMethods;
+  BOOL       _requiresMathematics;
   BOOL       _hasMultipleSolutions;
   NSString * _date;
   NSString * _hint;
@@ -44,6 +45,7 @@
 @property (nonatomic, assign) BOOL       isComputing;
 @property (nonatomic, assign) BOOL       isChallenging;
 @property (nonatomic, assign) BOOL       usesHelperMethods;
+@property (nonatomic, assign) BOOL       requiresMathematics;
 @property (nonatomic, assign) BOOL       hasMultipleSolutions;
 @property (nonatomic, strong) NSString * date;
 @property (nonatomic, strong) NSString * hint;
