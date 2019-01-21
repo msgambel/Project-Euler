@@ -291,6 +291,12 @@
   else{
     _questionUsesHelperMethodsLabel.text = @"No Helpers";
   }
+  if(_questionAndAnswer.requiresMathematics){
+    _questionRequiresMathematics.text = @"Requires Mathematics";
+  }
+  else{
+    _questionRequiresMathematics.text = @"No Mathematics Required";
+  }
   if(_questionAndAnswer.hasMultipleSolutions){
     _questionHasMultipleSolutionsLabel.text = @"Has Multiple Solutions";
   }
