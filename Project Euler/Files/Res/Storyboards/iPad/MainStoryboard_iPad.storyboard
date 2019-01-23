@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2qa-jw-fUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2qa-jw-fUF">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Estimated Computation Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dt-Jw-Yyg">
-                                <rect key="frame" x="238" y="140" width="227" height="20"/>
+                                <rect key="frame" x="238.5" y="140" width="227" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="jjM-rf-mBn"/>
                                 </constraints>
@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Question Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZD-tI-A3W">
-                                <rect key="frame" x="284" y="110" width="135" height="20"/>
+                                <rect key="frame" x="284.5" y="110" width="135" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Cbz-LX-8fS"/>
                                 </constraints>
@@ -346,7 +346,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Started On:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpt-Qw-lSi">
-                                <rect key="frame" x="468.5" y="698" width="70" height="10"/>
+                                <rect key="frame" x="469" y="698" width="70" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="bIg-rz-9c3"/>
                                     <constraint firstAttribute="height" constant="10" id="cPI-pp-aWL"/>
@@ -356,9 +356,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Has Multiple Solutions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-i9-CLu">
-                                <rect key="frame" x="192" y="741" width="135" height="15"/>
+                                <rect key="frame" x="192" y="740.5" width="135" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="EEz-dc-ZsM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Requires Mathematics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMM-xJ-vKr">
+                                <rect key="frame" x="337" y="740.5" width="134.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="26r-OY-geJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -410,6 +419,7 @@
                             <constraint firstItem="UIy-ac-8Jh" firstAttribute="centerY" secondItem="SOl-Gb-lIk" secondAttribute="centerY" id="RcR-6L-CsU"/>
                             <constraint firstItem="4Fa-6r-oZ5" firstAttribute="trailing" secondItem="3BW-Pe-QtT" secondAttribute="trailing" id="Tp1-hn-biD"/>
                             <constraint firstItem="Lpt-Qw-lSi" firstAttribute="width" relation="lessThanOrEqual" secondItem="7ur-5I-P4Z" secondAttribute="width" id="UZZ-TR-IR9"/>
+                            <constraint firstItem="fMM-xJ-vKr" firstAttribute="leading" secondItem="Iga-i9-CLu" secondAttribute="trailing" constant="10" id="Uwr-rE-a5G"/>
                             <constraint firstItem="YRu-RR-pII" firstAttribute="trailing" secondItem="uzZ-f6-6E6" secondAttribute="trailing" id="VIC-bQ-6Dg"/>
                             <constraint firstItem="LBC-Ft-F1d" firstAttribute="leading" secondItem="OHd-Bi-dA8" secondAttribute="leading" constant="10" id="X34-4C-B7z"/>
                             <constraint firstItem="9Yo-5t-FqG" firstAttribute="top" secondItem="7ur-5I-P4Z" secondAttribute="bottom" constant="10" id="Yf5-Wz-FfN"/>
@@ -444,6 +454,7 @@
                             <constraint firstItem="SOl-Gb-lIk" firstAttribute="leading" secondItem="UIy-ac-8Jh" secondAttribute="trailing" constant="10" id="q7z-O2-7vQ"/>
                             <constraint firstItem="5xz-zt-7lV" firstAttribute="width" relation="lessThanOrEqual" secondItem="uVT-MK-gee" secondAttribute="width" id="qaX-aH-34D"/>
                             <constraint firstItem="vEe-Fy-PhA" firstAttribute="leading" secondItem="nD9-xe-4ct" secondAttribute="leading" id="qkh-eS-Rd6"/>
+                            <constraint firstItem="fMM-xJ-vKr" firstAttribute="centerY" secondItem="Iga-i9-CLu" secondAttribute="centerY" id="sOy-Pd-6gn"/>
                             <constraint firstItem="2eY-zR-UNg" firstAttribute="top" secondItem="9Yo-5t-FqG" secondAttribute="bottom" constant="10" id="trO-JH-RGd"/>
                             <constraint firstItem="YRu-RR-pII" firstAttribute="top" secondItem="4bg-39-gjf" secondAttribute="bottom" constant="10" id="ty2-Gk-eBn"/>
                             <constraint firstItem="nD9-xe-4ct" firstAttribute="top" secondItem="XlA-DZ-dl4" secondAttribute="bottom" constant="10" id="v6V-q0-cH2"/>
@@ -474,6 +485,7 @@
                         <outlet property="_questionIsFunImageView" destination="PqP-GX-Yob" id="SRM-zG-raI"/>
                         <outlet property="_questionNumberLabel" destination="1ZD-tI-A3W" id="XG8-kq-dP9"/>
                         <outlet property="_questionRatingLabel" destination="Q98-lK-sSf" id="oaW-zx-sG2"/>
+                        <outlet property="_questionRequiresMathematics" destination="fMM-xJ-vKr" id="4Zv-JZ-9Cu"/>
                         <outlet property="_questionSolveTimeLabel" destination="uzZ-f6-6E6" id="87e-mK-l9R"/>
                         <outlet property="_questionTechniqueLabel" destination="Zd6-rA-63A" id="cgm-Ez-9xA"/>
                         <outlet property="_questionTextView" destination="nD9-xe-4ct" id="ePm-Z2-kKN"/>
@@ -486,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWX-5c-r1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="-692"/>
+            <point key="canvasLocation" x="188.28125" y="-405.46875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WZv-IT-zg7">
@@ -627,7 +639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYD-Y4-0ov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="-1655"/>
+            <point key="canvasLocation" x="193.75" y="-969.72656249999989"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="jzc-j9-bDA">
@@ -641,7 +653,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0D-Ct-egF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="-1155"/>
+            <point key="canvasLocation" x="-699.21875" y="-676.7578125"/>
         </scene>
     </scenes>
     <resources>
