@@ -39,6 +39,7 @@
   self.completedOnDate = @"13/01/13";
   self.solutionLineCount = @"13";
   self.usesHelperMethods = NO;
+  self.requiresMathematics = NO;
   self.hasMultipleSolutions = YES;
   self.estimatedComputationTime = @"2.86e-03";
   self.estimatedBruteForceComputationTime = @"3.28e-02";
