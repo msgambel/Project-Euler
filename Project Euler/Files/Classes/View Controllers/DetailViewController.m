@@ -303,6 +303,12 @@
   else{
     _questionHasMultipleSolutionsLabel.text = @"Has A Single Solution";
   }
+  if(_questionAndAnswer.usesFunctionalProgramming){
+    _questionUsesFunctionalProgramming.text = @"Uses Functional Programming";
+  }
+  else{
+    _questionUsesFunctionalProgramming.text = @"No Functional Programming";
+  }
   _questionTextView.text = _questionAndAnswer.text;
   _questionDateLabel.text = _questionAndAnswer.date;
   _questionTitleLabel.text = _questionAndAnswer.title;
