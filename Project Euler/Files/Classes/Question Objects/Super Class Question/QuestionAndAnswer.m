@@ -37,6 +37,7 @@
 @synthesize requiresMathematics = _requiresMathematics;
 @synthesize hasMultipleSolutions = _hasMultipleSolutions;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
+@synthesize usesFunctionalProgramming = _usesFunctionalProgramming;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;
 
 #pragma mark - Init

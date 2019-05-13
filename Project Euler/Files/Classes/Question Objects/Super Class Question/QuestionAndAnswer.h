@@ -18,6 +18,7 @@
   BOOL       _usesHelperMethods;
   BOOL       _requiresMathematics;
   BOOL       _hasMultipleSolutions;
+  BOOL       _usesFunctionalProgramming;
   NSString * _date;
   NSString * _hint;
   NSString * _link;
@@ -47,6 +48,7 @@
 @property (nonatomic, assign) BOOL       usesHelperMethods;
 @property (nonatomic, assign) BOOL       requiresMathematics;
 @property (nonatomic, assign) BOOL       hasMultipleSolutions;
+@property (nonatomic, assign) BOOL       usesFunctionalProgramming;
 @property (nonatomic, strong) NSString * date;
 @property (nonatomic, strong) NSString * hint;
 @property (nonatomic, strong) NSString * link;
