@@ -42,6 +42,7 @@
   self.requiresMathematics = NO;
   self.hasMultipleSolutions = YES;
   self.estimatedComputationTime = @"4.85e-04";
+  self.usesFunctionalProgramming = NO;
   self.estimatedBruteForceComputationTime = @"4.92e-04";
 }
 
@@ -609,6 +610,7 @@
       for(int i = 0; i < 4; i++){
         // Grab the digit value from the array at the current index.
         digitValue = aArray[index];
+        
         // If the "digit" value is 0,
         if(digitValue == 0){
           // Set the MovingProduct4 to the returned value of this method based on
