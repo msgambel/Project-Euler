@@ -42,6 +42,7 @@
   self.requiresMathematics = YES;
   self.hasMultipleSolutions = YES;
   self.estimatedComputationTime = @"0.23";
+  self.usesFunctionalProgramming = NO;
   self.estimatedBruteForceComputationTime = @"1.44";
 }
 
@@ -269,6 +270,7 @@
       break;
     }
   }
+  // Return the number of primes in consecutive order.
   return numberOfPrimesInConsecutiveOrder;
 }
 
