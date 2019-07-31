@@ -41,6 +41,7 @@
   self.requiresMathematics = YES;
   self.hasMultipleSolutions = NO;
   self.estimatedComputationTime = @"4.71e-04";
+  self.usesFunctionalProgramming = YES;
   self.estimatedBruteForceComputationTime = @"4.71e-04";
 }
 
