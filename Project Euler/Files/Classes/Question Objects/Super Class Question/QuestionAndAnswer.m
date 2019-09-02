@@ -29,6 +29,7 @@
 @synthesize difficulty = _difficulty;
 @synthesize isComputing = _isComputing;
 @synthesize commentCount = _commentCount;
+@synthesize attemptsCount = _attemptsCount;
 @synthesize isChallenging = _isChallenging;
 @synthesize startedOnDate = _startedOnDate;
 @synthesize completedOnDate = _completedOnDate;
