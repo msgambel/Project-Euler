@@ -324,7 +324,8 @@
   _questionTechniqueLabel.text = _questionAndAnswer.technique;
   _solutionLineCountLabel.text = [NSString stringWithFormat:@"Solution Line Count: %@", _questionAndAnswer.solutionLineCount];
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
-  _questionCommentCountLabel.text = [NSString stringWithFormat:@"Comment Count: %@", _questionAndAnswer.commentCount];
+  _questionCommentCountLabel.text = _questionAndAnswer.commentCount;
+  _questionAttemptsCountLabel.text = _questionAndAnswer.attemptsCount;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
   _questionIsChallengingImageView.hidden = (_questionAndAnswer.isChallenging == NO);
   
