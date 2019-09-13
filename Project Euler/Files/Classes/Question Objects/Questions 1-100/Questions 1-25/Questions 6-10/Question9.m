@@ -27,6 +27,7 @@
   self.technique = @"Math";
   self.difficulty = @"Meh";
   self.commentCount = @"14";
+  self.attemptsCount = @"1";
   self.isChallenging = NO;
   self.startedOnDate = @"09/01/13";
   self.completedOnDate = @"09/01/13";
