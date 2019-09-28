@@ -27,6 +27,7 @@
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
   self.commentCount = @"49";
+  self.attemptsCount = @"1";
   self.isChallenging = NO;
   self.startedOnDate = @"24/01/13";
   self.completedOnDate = @"24/01/13";
