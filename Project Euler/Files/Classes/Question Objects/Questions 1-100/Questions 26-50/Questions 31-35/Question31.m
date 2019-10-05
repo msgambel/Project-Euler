@@ -35,6 +35,7 @@
   self.technique = @"Functional";
   self.difficulty = @"Medium";
   self.commentCount = @"12";
+  self.attemptsCount = @"1";
   self.isChallenging = YES;
   self.startedOnDate = @"31/01/13";
   self.completedOnDate = @"31/01/13";
