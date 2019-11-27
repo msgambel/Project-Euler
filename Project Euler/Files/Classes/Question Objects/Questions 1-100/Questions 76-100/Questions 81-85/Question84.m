@@ -28,6 +28,7 @@
   self.technique = @"OOP";
   self.difficulty = @"Easy";
   self.commentCount = @"60";
+  self.attemptsCount = @"1";
   self.isChallenging = YES;
   self.startedOnDate = @"25/03/13";
   self.completedOnDate = @"25/03/13";
