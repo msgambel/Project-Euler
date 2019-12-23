@@ -543,6 +543,7 @@
 		4E04C7A6168985EE00DC881F /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				4EB56F85231D1230004FC4B6 /* Assets.xcassets */,
 				4E93B8D316A90DB900D9EADB /* Files To Load */,
 				4EF748E71780C3AD00E8596D /* Images */,
 				4EB56F80231D1120004FC4B6 /* Nibs */,
@@ -2073,6 +2074,7 @@
 				4E04C7BB168985EE00DC881F /* MainStoryboard_iPhone.storyboard in Resources */,
 				4E04C7BC168985EE00DC881F /* InfoPlist.strings in Resources */,
 				4E93B8D616A90DB900D9EADB /* triangleQuestion18.txt in Resources */,
+				4EB56F86231D1231004FC4B6 /* Assets.xcassets in Resources */,
 				4E93B9E916ADCD0200D9EADB /* namesQuestion22.txt in Resources */,
 				4E72A99E16C8310C006DB097 /* wordsQuestion42.txt in Resources */,
 				4E277EFE16D7C44F0033157C /* pokerQuestion54.txt in Resources */,
