@@ -5,10 +5,10 @@
 
 @class ViewController;
 
-@interface DetailViewController : UIViewController <UIAlertViewDelegate, UISplitViewControllerDelegate, QuestionAndAnswerDelegate> {
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, QuestionAndAnswerDelegate> {
   BOOL                               _isComputing;
   NSOperationQueue                 * _operationQueue;
-  UIPopoverController              * _uiPopoverController;
+  UITapGestureRecognizer           * _tapGestureRecognizer;
   ViewController                   * __weak _viewController;
   QuestionAndAnswer                * _questionAndAnswer;
   IBOutlet UILabel                 * _questionDateLabel;

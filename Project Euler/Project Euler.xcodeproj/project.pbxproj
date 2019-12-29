@@ -71,6 +71,7 @@
 		4E72A84516C6F099006DB097 /* Question41.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72A84416C6F099006DB097 /* Question41.m */; };
 		4E72A99A16C830F3006DB097 /* Question42.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72A99916C830F3006DB097 /* Question42.m */; };
 		4E72A99E16C8310C006DB097 /* wordsQuestion42.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E72A99D16C8310C006DB097 /* wordsQuestion42.txt */; };
+		4E743F1D23B620200046743D /* UISplitViewController+Toggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E743F1C23B620200046743D /* UISplitViewController+Toggle.m */; };
 		4E85E55E16B5F2AA00B5C8EA /* Question28.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E85E55D16B5F2AA00B5C8EA /* Question28.m */; };
 		4E85E56A16B6FA4900B5C8EA /* Question29.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E85E56516B6FA4900B5C8EA /* Question29.m */; };
 		4E85E57016B8591600B5C8EA /* Question30.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E85E56F16B8591600B5C8EA /* Question30.m */; };
@@ -276,6 +277,8 @@
 		4E72A99816C830F3006DB097 /* Question42.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question42.h; sourceTree = "<group>"; };
 		4E72A99916C830F3006DB097 /* Question42.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question42.m; sourceTree = "<group>"; };
 		4E72A99D16C8310C006DB097 /* wordsQuestion42.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsQuestion42.txt; sourceTree = "<group>"; };
+		4E743F1B23B620200046743D /* UISplitViewController+Toggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+Toggle.h"; sourceTree = "<group>"; };
+		4E743F1C23B620200046743D /* UISplitViewController+Toggle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+Toggle.m"; sourceTree = "<group>"; };
 		4E85E55C16B5F2AA00B5C8EA /* Question28.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question28.h; sourceTree = "<group>"; };
 		4E85E55D16B5F2AA00B5C8EA /* Question28.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question28.m; sourceTree = "<group>"; };
 		4E85E56416B6FA4900B5C8EA /* Question29.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question29.h; sourceTree = "<group>"; };
@@ -583,6 +586,8 @@
 			children = (
 				4E04C8361694D8ED00DC881F /* CustomNavigationController.h */,
 				4E04C8371694D8ED00DC881F /* CustomNavigationController.m */,
+				4E743F1B23B620200046743D /* UISplitViewController+Toggle.h */,
+				4E743F1C23B620200046743D /* UISplitViewController+Toggle.m */,
 			);
 			path = "Custom UIKit";
 			sourceTree = "<group>";
@@ -2008,6 +2013,7 @@
 				4E04C7B8168985EE00DC881F /* AppDelegate.m in Sources */,
 				4E04C7B9168985EE00DC881F /* ViewController.m in Sources */,
 				4E04C7BD168985EE00DC881F /* main.m in Sources */,
+				4E743F1D23B620200046743D /* UISplitViewController+Toggle.m in Sources */,
 				4E04C7CD168C33E800DC881F /* DetailViewController.m in Sources */,
 				4E04C7D1168C373A00DC881F /* QuestionCell.m in Sources */,
 				4E04C8381694D8ED00DC881F /* CustomNavigationController.m in Sources */,

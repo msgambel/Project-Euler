@@ -2,7 +2,9 @@
 
 #import "DetailViewController.h"
 #import "Defines.h"
+#import "AppDelegate.h"
 #import "ViewController.h"
+#import "UISplitViewController+Toggle.h"
 
 @interface DetailViewController (Private)
 
@@ -10,6 +12,7 @@
 - (void)updateTheTextViewScrolling;
 - (void)startComputationProgressIndicator;
 - (void)didRotate:(NSNotification *)aNotification;
+- (void)tapGestureRecognizer:(UITapGestureRecognizer *)aTapGestureRecognizer;
 
 @end
 
@@ -38,11 +41,11 @@
   
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-    // If the popover controller is visible,
-    if([_uiPopoverController isPopoverVisible]){
-      // Dismiss it.
-      [_uiPopoverController dismissPopoverAnimated:YES];
-    }
+    // If the Master View Controller is visible, dimiss it.
+    [[AppDelegate appDelegate].splitViewController toggleMasterView];
+    
+    // Disable the Tap Gesture Recognizer.
+    _tapGestureRecognizer.enabled = NO;
   }
 }
 
@@ -69,8 +72,17 @@
     // landscape.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate:) name:UIDeviceOrientationDidChangeNotification object:nil];
     
-    // Set up the popover controller which will show the question numbers.
-    _uiPopoverController = [[UIPopoverController alloc] initWithContentViewController:_viewController];
+    // Create a Tap Gesture Recognizer to handle dismissing the Master View
+    // Controller when in Portrait Orientation.
+    _tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognizer:)];
+    
+    // If the orientation is Landscape,
+    if(UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])){
+      // Enable the Tap Gesture Recognizer.
+      _tapGestureRecognizer.enabled = NO;
+    }
+    // Add the Tap Gesture Recognizer to the Detail View Controllers View.
+    [self.view addGestureRecognizer:_tapGestureRecognizer];
   }
   // Update the labels based on the curent question.
   [self updateTheControls];
@@ -160,12 +172,30 @@
     // Put in filler text saying the hint is coming soon!
     hint = @"Hint soon to come...";
   }
-  // Create an UIAlertView that displays a hint on how the current question was
-  // solved.
-  UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Hint" message:hint delegate:self cancelButtonTitle:@"Got it!" otherButtonTitles:@"Still lost...", nil];
+  // Create an UIAlertController that displays a hint on how the current
+  // question was solved.
+  UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"Hint" message:hint preferredStyle:UIAlertControllerStyleAlert];
   
-  // Show the UIAlertView.
-  [alertView show];
+  // Create a "Got It!" Action as a selectable option for the Alert Controller.
+  UIAlertAction * gotItAction = [UIAlertAction actionWithTitle:@"Got it!" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
+    // Log to the console that the user understood the hint for the current
+    // Question.
+    NSLog(@"Understood the hint for Question %@!", self->_questionAndAnswer.number);
+  }];
+  // Add the "Got It!" Action to the Alert Controller.
+  [alertController addAction:gotItAction];
+  
+  // Create a "Got It!" Action as a selectable option for the Alert Controller.
+  UIAlertAction * stillLostAction = [UIAlertAction actionWithTitle:@"Still lost..." style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+    // Log to the console that the user did NOT understand the hint for the
+    // current Question.
+    NSLog(@"Did not understand the hint for Question %@...", self->_questionAndAnswer.number);
+  }];
+  // Add the "Got It!" Action to the Alert Controller.
+  [alertController addAction:stillLostAction];
+  
+  // Show the UIAlertController.
+  [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (IBAction)cancelButtonPressed:(UIButton *)aButton; {
@@ -222,43 +252,29 @@
 - (IBAction)showQuestionsTableViewButtonPressed:(UIButton *)aButton; {
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-    // Show the view controller that holds the questions tableView inside the
-    // popover controller.
-    [_uiPopoverController presentPopoverFromRect:_showQuestionsTableViewButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
-  }
-}
-
-#pragma mark - UIAlertViewDelegate Methods
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex; {
-  // If the user pressed the "Got it!" button oft he UIAlertView,
-  if(buttonIndex == alertView.cancelButtonIndex){
-    // Log to the console that the user understood the hint for the current
-    // Question.
-    NSLog(@"Understood the hint for Question %@!", _questionAndAnswer.number);
-  }
-  // If the user pressed the "Still lost..." button oft he UIAlertView,
-  else{
-    // Log to the console that the user did NOT understand the hint for the
-    // current Question.
-    NSLog(@"Did not understand the hint for Question %@...", _questionAndAnswer.number);
+    // Show the Master View Controller that holds the questions tableView.
+    [[AppDelegate appDelegate].splitViewController toggleMasterView];
+    
+    // Enable the Tap Gesture Recognizer.
+    _tapGestureRecognizer.enabled = YES;
   }
 }
 
 #pragma mark - UISplitViewControllerDelegate Methods
 
-- (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem; {
-  // If the orientation moves to Lanscape (therefore showing the master view
-  // controller on the left, hide the button that displays the view controller
-  // in the popover controller.
-  _showQuestionsTableViewButton.hidden = YES;
-}
-
-- (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc; {
-  // If the orientation moves to Portrait (therefore hiding the master view
-  // controller on the left, show the button that displays the view controller
-  // in the popover controller.
-  _showQuestionsTableViewButton.hidden = NO;
+- (void)splitViewController:(UISplitViewController *)svc willChangeToDisplayMode:(UISplitViewControllerDisplayMode)displayMode; {
+  if(displayMode == UISplitViewControllerDisplayModeAllVisible){
+    // If the orientation moves to Lanscape (therefore showing the master view
+    // controller on the left, hide the button that displays the view controller
+    // in the popover controller.
+    _showQuestionsTableViewButton.hidden = YES;
+  }
+  else{
+    // If the orientation moves to Portrait (therefore hiding the master view
+    // controller on the left, show the button that displays the view controller
+    // in the popover controller.
+    _showQuestionsTableViewButton.hidden = NO;
+  }
 }
 
 #pragma mark - QuestionAndAnswerDelegate Methods
@@ -381,17 +397,25 @@
   
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-    // If the popover controller is visible,
-    if([_uiPopoverController isPopoverVisible]){
-      // Get the new orientation.
-      UIDeviceOrientation interfaceOrientation = [[UIDevice currentDevice] orientation];
-      
-      // If the orientation is Landscape,
-      if(UIDeviceOrientationIsLandscape(interfaceOrientation)){
-        // Dismiss the popover controller.
-        [_uiPopoverController dismissPopoverAnimated:NO];
-      }
+    // Get the new orientation.
+    UIDeviceOrientation interfaceOrientation = [[UIDevice currentDevice] orientation];
+    
+    // If the orientation is Landscape,
+    if(UIDeviceOrientationIsLandscape(interfaceOrientation)){
+      // Disable the Tap Gesture Recognizer.
+      _tapGestureRecognizer.enabled = NO;
     }
+  }
+}
+
+- (void)tapGestureRecognizer:(UITapGestureRecognizer *)aTapGestureRecognizer; {
+  // If the user is using an iPad,
+  if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
+    // If the Master View Controller is visible, dimiss it.
+    [[AppDelegate appDelegate].splitViewController toggleMasterView];
+    
+    // Disable the Tap Gesture Recognizer.
+    _tapGestureRecognizer.enabled = NO;
   }
 }
 

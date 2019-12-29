@@ -6,12 +6,14 @@
 @class DetailViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-  UIWindow             * _window;
-  ViewController       * _viewController;
-  DetailViewController * _detailViewController;
+  UIWindow              * _window;
+  UISplitViewController * _splitViewController;
+  ViewController        * _viewController;
+  DetailViewController  * _detailViewController;
 }
 
-@property (strong, nonatomic) UIWindow * window;
+@property (nonatomic, strong)   UIWindow              * window;
+@property (nonatomic, readonly) UISplitViewController * splitViewController;
 
 + (AppDelegate *)appDelegate;
 
