@@ -267,7 +267,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="hintButtonPressed:" destination="vZB-Dy-Sig" eventType="touchUpInside" id="e1s-NO-ATE"/>
+                                    <action selector="linkButtonPressed:" destination="vZB-Dy-Sig" eventType="touchUpInside" id="Dhs-YX-sFc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Technique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zd6-rA-63A">
@@ -716,11 +716,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outletCollection property="_buttons" destination="Jwa-Pb-aiz" id="drj-KS-Inh"/>
-                                            <outletCollection property="_buttons" destination="uK3-t7-4px" id="2Hj-tu-eqo"/>
-                                            <outletCollection property="_buttons" destination="L9H-g9-nrf" id="Igc-AK-Wf4"/>
-                                            <outletCollection property="_buttons" destination="Z6e-m0-nuN" id="I9y-3h-LY6"/>
-                                            <outletCollection property="_buttons" destination="G3Q-vw-Usl" id="pxH-i3-kUV"/>
+                                            <outletCollection property="_buttonsArray" destination="Jwa-Pb-aiz" id="mv3-su-PoX"/>
+                                            <outletCollection property="_buttonsArray" destination="uK3-t7-4px" id="hmV-xA-FKJ"/>
+                                            <outletCollection property="_buttonsArray" destination="L9H-g9-nrf" id="z4N-Wg-Nus"/>
+                                            <outletCollection property="_buttonsArray" destination="Z6e-m0-nuN" id="xDl-In-K5l"/>
+                                            <outletCollection property="_buttonsArray" destination="G3Q-vw-Usl" id="KWG-Em-3hl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

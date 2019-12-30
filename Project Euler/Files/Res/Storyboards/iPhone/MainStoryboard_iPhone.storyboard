@@ -109,11 +109,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outletCollection property="_buttons" destination="sIY-1n-w87" id="khE-01-EVQ"/>
-                                            <outletCollection property="_buttons" destination="riG-yB-fzw" id="Hlw-sb-n1R"/>
-                                            <outletCollection property="_buttons" destination="zgi-bH-fZx" id="1Sy-ux-LJc"/>
-                                            <outletCollection property="_buttons" destination="cer-dI-y01" id="lbY-fr-m35"/>
-                                            <outletCollection property="_buttons" destination="AcC-Tq-eBI" id="Yws-Fc-TM6"/>
+                                            <outletCollection property="_buttonsArray" destination="sIY-1n-w87" id="ueQ-am-8qG"/>
+                                            <outletCollection property="_buttonsArray" destination="riG-yB-fzw" id="joZ-ba-tNr"/>
+                                            <outletCollection property="_buttonsArray" destination="zgi-bH-fZx" id="Qzm-cz-RB4"/>
+                                            <outletCollection property="_buttonsArray" destination="cer-dI-y01" id="UUR-64-X6k"/>
+                                            <outletCollection property="_buttonsArray" destination="AcC-Tq-eBI" id="q3F-zP-wxL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

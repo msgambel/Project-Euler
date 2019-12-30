@@ -158,6 +158,11 @@
   return [aString isEqualToString:[self reversedString:aString]];
 }
 
+- (BOOL)isEqualToQuestionAndAnswer:(QuestionAndAnswer *)aQuestionAndAnswer; {
+  // Return if both the Number properties are equal.
+  return [self.number isEqualToString:aQuestionAndAnswer.number];
+}
+
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero; {
   // Variable to hold the number of digits there are for the input number.
   int numberOfDigits = (int)(log10(aNumber));

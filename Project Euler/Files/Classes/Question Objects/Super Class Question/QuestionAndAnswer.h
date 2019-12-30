@@ -87,6 +87,9 @@
 
 // This helper method returns if a string is a palindrome or not.
 - (BOOL)isStringAPalindrome:(NSString *)aString;
+// This helper method returns if the current QuestionAndAnswer object is equal
+// to a given QuestionAndAnswer object.
+- (BOOL)isEqualToQuestionAndAnswer:(QuestionAndAnswer *)aQuestionAndAnswer;
 
 // This helper method returns if a number is 9-lexographic.
 - (BOOL)isNumberLexographic:(long long int)aNumber countZero:(BOOL)doesCountZero;

@@ -10,7 +10,7 @@
   NSMutableArray       * _questionObjectsArray;
   NSMutableArray       * _currentQuestionObjectsArray;
   NSMutableArray       * _searchingQuestionObjectsArray;
-  QuestionAndAnswer    * _selectedQuestion;
+  QuestionAndAnswer    * _selectedQuestionAndAnswer;
   DetailViewController * __weak _detailViewController;
   IBOutlet UITableView * _tableView;
 }

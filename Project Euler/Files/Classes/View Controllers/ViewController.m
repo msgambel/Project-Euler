@@ -24,12 +24,12 @@
   [self setupTheSolvedQuestionsArray];
   
   // Set the selected question to be Question 1.
-  _selectedQuestion = [[_questionObjectsArray objectAtIndex:0] objectAtIndex:0];
+  _selectedQuestionAndAnswer = [[_questionObjectsArray objectAtIndex:0] objectAtIndex:0];
   
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
     // Update the detail view controller to have the same default question number.
-    _detailViewController.questionAndAnswer = _selectedQuestion;
+    _detailViewController.questionAndAnswer = _selectedQuestionAndAnswer;
   }
   // Since we are NOT searching by default, set the current Question Objects
   // array to the array with all the solved Question Objects.
@@ -103,7 +103,7 @@
     DetailViewController * detailViewController = (DetailViewController *)[segue destinationViewController];
     
     // Update the question for the DetailViewController.
-    detailViewController.questionAndAnswer = _selectedQuestion;
+    detailViewController.questionAndAnswer = _selectedQuestionAndAnswer;
   }
 }
 
@@ -129,6 +129,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; {
   // Grab the reuseable cell from the tableView
   QuestionCell * cell = [tableView dequeueReusableCellWithIdentifier:@"QuestionCell"];
+  
+  cell.selectedQuestionAndAnswer = _selectedQuestionAndAnswer;
   
   // Set the cells question objects array to be the current question objects
   // array for the corresponding row.
@@ -248,12 +250,15 @@
 
 - (void)selectedQuestion:(QuestionAndAnswer *)aQuestionAndAnswer; {
   // Set the selected question returned by a cell.
-  _selectedQuestion = aQuestionAndAnswer;
+  _selectedQuestionAndAnswer = aQuestionAndAnswer;
+  
+  // Tell the TableView to reload based on the latest data.
+  [_tableView reloadData];
   
    // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
     // Set the DetailViewControllers question to be the selected question.
-    _detailViewController.questionAndAnswer = _selectedQuestion;
+    _detailViewController.questionAndAnswer = _selectedQuestionAndAnswer;
   }
   // If the user is NOT using an iPad,
   else{

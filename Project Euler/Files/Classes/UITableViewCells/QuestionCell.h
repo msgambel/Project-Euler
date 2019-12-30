@@ -11,14 +11,15 @@
 @end
 
 @interface QuestionCell : UITableViewCell {
-  id <QuestionCellDelegate> __weak _delegate;
-  
+  id <QuestionCellDelegate> __weak       _delegate;
   NSMutableArray                       * _questionObjectsArray;
-  IBOutletCollection(UIButton) NSArray * _buttons;
+  QuestionAndAnswer                    * _selectedQuestionAndAnswer;
+  IBOutletCollection(UIButton) NSArray * _buttonsArray;
 }
 
 @property (nonatomic, weak)   id <QuestionCellDelegate>   delegate;
 @property (nonatomic, strong) NSMutableArray            * questionObjectsArray;
+@property (nonatomic, strong) QuestionAndAnswer         * selectedQuestionAndAnswer;
 
 - (IBAction)questionButtonPressed:(UIButton *)aButton;
 
