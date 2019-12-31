@@ -49,17 +49,6 @@
   }
 }
 
-#pragma mark - Dealloc
-
-- (void)dealloc; {
-  // If the user is using an iPad,
-  if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-    // Remove the observer for the orientation detection.
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
-  }
-  // This application is ARC compliant, so no need to call [super dealloc];
-}
-
 #pragma mark - View LifeStyle
 
 - (void)viewDidLoad; {
@@ -99,18 +88,13 @@
   [self updateTheTextViewScrolling];
 }
 
-#pragma mark - iOS 5.1 and under Rotation Methods
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation; {
-  // If the current device is NOT an iPad,
-  if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-    // Return that we only accept Potrait orientations.
-    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
-  }
-  // If the current device is an iPad,
-  else{
-    // Return that we accept all orientations.
-    return YES;
+- (void)viewDidDisappear:(BOOL)animated; {
+  [super viewDidDisappear:animated];
+  
+  // If the user is using an iPad,
+  if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
+    // Remove the observer for the orientation detection.
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
   }
 }
 
@@ -224,9 +208,8 @@
   _operationQueue = [[NSOperationQueue alloc] init];
   
   // Create an NSInvocationOperation to call the computeAnswer method.
-  NSInvocationOperation * operation = [[NSInvocationOperation alloc] initWithTarget:_questionAndAnswer
-                                                                          selector:@selector(computeAnswer)
-                                                                            object:nil];
+  NSInvocationOperation * operation = [[NSInvocationOperation alloc] initWithTarget:_questionAndAnswer selector:@selector(computeAnswer) object:nil];
+  
   // Add the NSInvocationOperation to the NSOperationQueue.
   [_operationQueue addOperation:operation];
 }

@@ -19,21 +19,6 @@
 //
 //       http://developer.apple.com/library/ios/#featuredarticles/ViewControllerPGforiPhoneOS/RespondingtoDeviceOrientationChanges/RespondingtoDeviceOrientationChanges.html
 
-#pragma mark - iOS 5.1 and under Rotation Methods
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation; {
-  // If the current device is NOT an iPad,
-  if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-    // Return that we only accept Potrait orientations.
-    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
-  }
-  // If the current device is an iPad,
-  else{
-    // Return that we accept all orientations.
-    return YES;
-  }
-}
-
 #pragma mark - iOS 6.0 and up Rotation Methods
 
 - (BOOL)shouldAutorotate; {

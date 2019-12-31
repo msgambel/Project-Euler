@@ -39,22 +39,7 @@
   if(SYSTEM_VERSION_LESS_THAN(@"7.0") == NO){
     // Make sure that the view does not automatically adjust scroll view insets
     // because of the new way the status bar is handled.
-    self.automaticallyAdjustsScrollViewInsets = false;
-  }
-}
-
-#pragma mark - iOS 5.1 and under Rotation Methods
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation; {
-  // If the current device is NOT an iPad,
-  if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-    // Return that we only accept Potrait orientations.
-    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
-  }
-  // If the current device is an iPad,
-  else{
-    // Return that we accept all orientations.
-    return YES;
+    self.automaticallyAdjustsScrollViewInsets = NO;
   }
 }
 

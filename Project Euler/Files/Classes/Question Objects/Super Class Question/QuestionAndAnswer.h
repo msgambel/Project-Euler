@@ -10,66 +10,64 @@
 @end
 
 @interface QuestionAndAnswer : NSObject {
-  id <QuestionAndAnswerDelegate> __weak _delegate;
-  
-  BOOL       _isFun;
-  BOOL       _isComputing;
-  BOOL       _isChallenging;
-  BOOL       _usesHelperMethods;
-  BOOL       _requiresMathematics;
-  BOOL       _hasMultipleSolutions;
-  BOOL       _usesFunctionalProgramming;
-  NSString * _date;
-  NSString * _hint;
-  NSString * _link;
-  NSString * _text;
-  NSString * _title;
-  NSString * _answer;
-  NSString * _number;
-  NSString * _rating;
-  NSString * _category;
-  NSString * _keywords;
-  NSString * _solveTime;
-  NSString * _technique;
-  NSString * _difficulty;
-  NSString * _commentCount;
-  NSString * _attemptsCount;
-  NSString * _startedOnDate;
-  NSString * _completedOnDate;
-  NSString * _solutionLineCount;
-  NSString * _estimatedComputationTime;
-  NSString * _estimatedBruteForceComputationTime;
+  id <QuestionAndAnswerDelegate> __weak   _delegate;
+  BOOL                                    _isFun;
+  BOOL                                    _isComputing;
+  BOOL                                    _isChallenging;
+  BOOL                                    _usesHelperMethods;
+  BOOL                                    _requiresMathematics;
+  BOOL                                    _hasMultipleSolutions;
+  BOOL                                    _usesFunctionalProgramming;
+  NSString                              * _date;
+  NSString                              * _hint;
+  NSString                              * _link;
+  NSString                              * _text;
+  NSString                              * _title;
+  NSString                              * _answer;
+  NSString                              * _number;
+  NSString                              * _rating;
+  NSString                              * _category;
+  NSString                              * _keywords;
+  NSString                              * _solveTime;
+  NSString                              * _technique;
+  NSString                              * _difficulty;
+  NSString                              * _commentCount;
+  NSString                              * _attemptsCount;
+  NSString                              * _startedOnDate;
+  NSString                              * _completedOnDate;
+  NSString                              * _solutionLineCount;
+  NSString                              * _estimatedComputationTime;
+  NSString                              * _estimatedBruteForceComputationTime;
 }
 
-@property (nonatomic, weak)   id <QuestionAndAnswerDelegate> delegate;
-
-@property (nonatomic, assign) BOOL       isFun;
-@property (nonatomic, assign) BOOL       isComputing;
-@property (nonatomic, assign) BOOL       isChallenging;
-@property (nonatomic, assign) BOOL       usesHelperMethods;
-@property (nonatomic, assign) BOOL       requiresMathematics;
-@property (nonatomic, assign) BOOL       hasMultipleSolutions;
-@property (nonatomic, assign) BOOL       usesFunctionalProgramming;
-@property (nonatomic, strong) NSString * date;
-@property (nonatomic, strong) NSString * hint;
-@property (nonatomic, strong) NSString * link;
-@property (nonatomic, strong) NSString * text;
-@property (nonatomic, strong) NSString * title;
-@property (nonatomic, strong) NSString * answer;
-@property (nonatomic, strong) NSString * number;
-@property (nonatomic, strong) NSString * rating;
-@property (nonatomic, strong) NSString * category;
-@property (nonatomic, strong) NSString * keywords;
-@property (nonatomic, strong) NSString * solveTime;
-@property (nonatomic, strong) NSString * technique;
-@property (nonatomic, strong) NSString * difficulty;
-@property (nonatomic, strong) NSString * commentCount;
-@property (nonatomic, strong) NSString * attemptsCount;
-@property (nonatomic, strong) NSString * startedOnDate;
-@property (nonatomic, strong) NSString * completedOnDate;
-@property (nonatomic, strong) NSString * solutionLineCount;
-@property (nonatomic, strong) NSString * estimatedComputationTime;
-@property (nonatomic, strong) NSString * estimatedBruteForceComputationTime;
+@property (nonatomic, weak)   id <QuestionAndAnswerDelegate>   delegate;
+@property (nonatomic, assign) BOOL                             isFun;
+@property (nonatomic, assign) BOOL                             isComputing;
+@property (nonatomic, assign) BOOL                             isChallenging;
+@property (nonatomic, assign) BOOL                             usesHelperMethods;
+@property (nonatomic, assign) BOOL                             requiresMathematics;
+@property (nonatomic, assign) BOOL                             hasMultipleSolutions;
+@property (nonatomic, assign) BOOL                             usesFunctionalProgramming;
+@property (nonatomic, strong) NSString                       * date;
+@property (nonatomic, strong) NSString                       * hint;
+@property (nonatomic, strong) NSString                       * link;
+@property (nonatomic, strong) NSString                       * text;
+@property (nonatomic, strong) NSString                       * title;
+@property (nonatomic, strong) NSString                       * answer;
+@property (nonatomic, strong) NSString                       * number;
+@property (nonatomic, strong) NSString                       * rating;
+@property (nonatomic, strong) NSString                       * category;
+@property (nonatomic, strong) NSString                       * keywords;
+@property (nonatomic, strong) NSString                       * solveTime;
+@property (nonatomic, strong) NSString                       * technique;
+@property (nonatomic, strong) NSString                       * difficulty;
+@property (nonatomic, strong) NSString                       * commentCount;
+@property (nonatomic, strong) NSString                       * attemptsCount;
+@property (nonatomic, strong) NSString                       * startedOnDate;
+@property (nonatomic, strong) NSString                       * completedOnDate;
+@property (nonatomic, strong) NSString                       * solutionLineCount;
+@property (nonatomic, strong) NSString                       * estimatedComputationTime;
+@property (nonatomic, strong) NSString                       * estimatedBruteForceComputationTime;
 
 // Super methods for setup.
 - (void)initialize;
@@ -82,11 +80,12 @@
 // This helper method returns if a number os prime or not.
 - (BOOL)isPrime:(int)aNumber;
 
+// This helper method returns if a string is a palindrome or not.
+- (BOOL)isStringAPalindrome:(NSString *)aString;
+
 // This helper method returns if it is a perfect square or not.
 - (BOOL)isNumberAPerfectSquare:(long long int)aNumber;
 
-// This helper method returns if a string is a palindrome or not.
-- (BOOL)isStringAPalindrome:(NSString *)aString;
 // This helper method returns if the current QuestionAndAnswer object is equal
 // to a given QuestionAndAnswer object.
 - (BOOL)isEqualToQuestionAndAnswer:(QuestionAndAnswer *)aQuestionAndAnswer;

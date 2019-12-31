@@ -3,7 +3,7 @@ Project-Euler
 
 iPhone/iPad app that shows the questions and solutions to the Project Euler questions. All files are well commented, and thoroughly explained.
 
-The iPhone version of the app is a simple push navigation application. The app is iOS 6.0 or later in order to take advantage of Auto Layout in the UIStoryBoard.
+The iPhone version of the app is a simple push navigation application. The app is iOS 8.0 or later in order to take advantage of Auto Layout in the UIStoryBoard.
 
 The iPad version of the app is a simple UISplitView. The code is mostly reused from the iPhone app, with slight changes based on the device.
 
