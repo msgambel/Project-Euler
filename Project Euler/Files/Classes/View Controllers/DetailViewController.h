@@ -28,6 +28,7 @@
   IBOutlet UILabel                 * _questionAttemptsCountLabel;
   IBOutlet UILabel                 * _questionRequiresMathematics;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
+  IBOutlet UILabel                 * _questionUsesCustomObjectsLabel;
   IBOutlet UILabel                 * _questionUsesHelperMethodsLabel;
   IBOutlet UILabel                 * _questionHasMultipleSolutionsLabel;
   IBOutlet UILabel                 * _questionUsesFunctionalProgramming;

@@ -284,6 +284,12 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  if(_questionAndAnswer.usesCustomObjects){
+    _questionUsesCustomObjectsLabel.text = @"Uses Custom Objects";
+  }
+  else{
+    _questionUsesCustomObjectsLabel.text = @"No Custom Objects";
+  }
   if(_questionAndAnswer.usesHelperMethods){
     _questionUsesHelperMethodsLabel.text = @"Uses Helpers";
   }
