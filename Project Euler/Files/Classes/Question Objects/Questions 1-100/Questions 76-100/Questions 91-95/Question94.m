@@ -32,6 +32,7 @@
   self.startedOnDate = @"04/04/13";
   self.completedOnDate = @"04/04/13";
   self.solutionLineCount = @"25";
+  self.usesCustomObjects = NO;
   self.usesHelperMethods = YES;
   self.requiresMathematics = YES;
   self.hasMultipleSolutions = YES;
