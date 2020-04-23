@@ -35,6 +35,7 @@
 @synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;
 @synthesize usesCustomObjects = _usesCustomObjects;
+@synthesize usesCustomStructs = _usesCustomStructs;
 @synthesize usesHelperMethods = _usesHelperMethods;
 @synthesize requiresMathematics = _requiresMathematics;
 @synthesize hasMultipleSolutions = _hasMultipleSolutions;
