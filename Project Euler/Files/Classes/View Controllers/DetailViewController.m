@@ -290,6 +290,12 @@
   else{
     _questionUsesCustomObjectsLabel.text = @"No Custom Objects";
   }
+  if(_questionAndAnswer.usesCustomStructs){
+    _questionUsesCustomStructsLabel.text = @"Uses Custom Structs";
+  }
+  else{
+    _questionUsesCustomStructsLabel.text = @"No Custom Structs";
+  }
   if(_questionAndAnswer.usesHelperMethods){
     _questionUsesHelperMethodsLabel.text = @"Uses Helpers";
   }
