@@ -34,6 +34,7 @@
   self.completedOnDate = @"19/01/13";
   self.solutionLineCount = @"23";
   self.usesCustomObjects = NO;
+  self.usesCustomStructs = YES;
   self.usesHelperMethods = NO;
   self.requiresMathematics = NO;
   self.hasMultipleSolutions = NO;
