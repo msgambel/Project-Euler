@@ -26,13 +26,13 @@
   IBOutlet UILabel                 * _questionDifficultyLabel;
   IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _questionAttemptsCountLabel;
-  IBOutlet UILabel                 * _questionRequiresMathematics;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
   IBOutlet UILabel                 * _questionUsesCustomObjectsLabel;
   IBOutlet UILabel                 * _questionUsesCustomStructsLabel;
   IBOutlet UILabel                 * _questionUsesHelperMethodsLabel;
+  IBOutlet UILabel                 * _questionRequiresMathematicsLabel;
   IBOutlet UILabel                 * _questionHasMultipleSolutionsLabel;
-  IBOutlet UILabel                 * _questionUsesFunctionalProgramming;
+  IBOutlet UILabel                 * _questionUsesFunctionalProgrammingLabel;
   IBOutlet UIButton                * _backButton;
   IBOutlet UIButton                * _cancelButton;
   IBOutlet UIButton                * _computeButton;

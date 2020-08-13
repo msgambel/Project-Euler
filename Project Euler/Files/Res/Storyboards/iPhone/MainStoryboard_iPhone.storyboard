@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -308,7 +308,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Started On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-qD-FLz">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-qD-FLz">
                                 <rect key="frame" x="103.33333333333331" y="728" width="70" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="xJ6-db-oOZ"/>
@@ -317,7 +317,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Started On:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5F-cQ-hry">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5F-cQ-hry">
                                 <rect key="frame" x="103.33333333333331" y="718" width="70" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="bLN-rW-Qxf"/>
@@ -327,7 +327,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBB-k3-NyB">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Started On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBB-k3-NyB">
                                 <rect key="frame" x="201.66666666666666" y="728" width="69.999999999999972" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="OIG-d8-R3z"/>
@@ -336,7 +336,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-35-VQn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Started On:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-35-VQn">
                                 <rect key="frame" x="201.66666666666666" y="718" width="69.999999999999972" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Hy6-gr-x0x"/>
@@ -776,17 +776,17 @@
                         <outlet property="_questionIsFunImageView" destination="caE-Ja-Xzm" id="gn2-9T-XFf"/>
                         <outlet property="_questionNumberLabel" destination="RPU-6n-VPf" id="6Fl-d2-OZH"/>
                         <outlet property="_questionRatingLabel" destination="S9G-2W-gdc" id="FmI-0l-WjL"/>
-                        <outlet property="_questionRequiresMathematics" destination="9AR-JL-Vxn" id="FhH-bW-7Du"/>
+                        <outlet property="_questionRequiresMathematicsLabel" destination="9AR-JL-Vxn" id="4jn-pq-S43"/>
                         <outlet property="_questionSolveTimeLabel" destination="8AF-sH-MIB" id="ro2-UK-kbn"/>
                         <outlet property="_questionTechniqueLabel" destination="dz8-ta-DFM" id="Sty-ox-TUk"/>
                         <outlet property="_questionTextView" destination="68A-Dj-xoW" id="A2e-TC-hlY"/>
                         <outlet property="_questionTitleLabel" destination="FE8-Kb-SuB" id="nLp-Zo-BaZ"/>
                         <outlet property="_questionUsesCustomObjectsLabel" destination="pYX-7g-1mf" id="MPd-zz-Alx"/>
                         <outlet property="_questionUsesCustomStructsLabel" destination="mbe-8e-QRI" id="CED-D6-E2y"/>
-                        <outlet property="_questionUsesFunctionalProgramming" destination="yAJ-Tw-fsw" id="tZP-9a-mUu"/>
+                        <outlet property="_questionUsesFunctionalProgrammingLabel" destination="yAJ-Tw-fsw" id="EpJ-cl-ncc"/>
                         <outlet property="_questionUsesHelperMethodsLabel" destination="FfW-Xp-PXv" id="m8z-jZ-wGA"/>
                         <outlet property="_solutionLineCountLabel" destination="Ewd-cm-Ykd" id="f8A-K2-E5D"/>
-                        <outlet property="_startedOnDateLabel" destination="JDy-qD-FLz" id="VFl-AW-AE0"/>
+                        <outlet property="_startedOnDateLabel" destination="SBB-k3-NyB" id="yEz-gY-5dC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0D-sF-zaK" userLabel="First Responder" sceneMemberID="firstResponder"/>

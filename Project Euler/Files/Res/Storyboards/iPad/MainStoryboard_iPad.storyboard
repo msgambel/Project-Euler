@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2qa-jw-fUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2qa-jw-fUF">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -611,14 +611,14 @@
                         <outlet property="_questionIsFunImageView" destination="PqP-GX-Yob" id="SRM-zG-raI"/>
                         <outlet property="_questionNumberLabel" destination="1ZD-tI-A3W" id="XG8-kq-dP9"/>
                         <outlet property="_questionRatingLabel" destination="Q98-lK-sSf" id="oaW-zx-sG2"/>
-                        <outlet property="_questionRequiresMathematics" destination="fMM-xJ-vKr" id="4Zv-JZ-9Cu"/>
+                        <outlet property="_questionRequiresMathematicsLabel" destination="fMM-xJ-vKr" id="ewo-fe-3gy"/>
                         <outlet property="_questionSolveTimeLabel" destination="uzZ-f6-6E6" id="87e-mK-l9R"/>
                         <outlet property="_questionTechniqueLabel" destination="Zd6-rA-63A" id="cgm-Ez-9xA"/>
                         <outlet property="_questionTextView" destination="nD9-xe-4ct" id="ePm-Z2-kKN"/>
                         <outlet property="_questionTitleLabel" destination="Dte-Rh-iub" id="gcK-3T-P6o"/>
                         <outlet property="_questionUsesCustomObjectsLabel" destination="kR2-5v-xVs" id="m4w-vT-DhG"/>
                         <outlet property="_questionUsesCustomStructsLabel" destination="f52-dd-zbL" id="yUH-Rk-r6y"/>
-                        <outlet property="_questionUsesFunctionalProgramming" destination="0gb-sB-aPk" id="rV9-gl-T83"/>
+                        <outlet property="_questionUsesFunctionalProgrammingLabel" destination="0gb-sB-aPk" id="N89-nk-kwA"/>
                         <outlet property="_questionUsesHelperMethodsLabel" destination="UIy-ac-8Jh" id="X4W-ph-1cm"/>
                         <outlet property="_showQuestionsTableViewButton" destination="ID1-uO-78i" id="38e-hW-LIH"/>
                         <outlet property="_solutionLineCountLabel" destination="vEe-Fy-PhA" id="jp4-2N-sf8"/>

@@ -303,10 +303,10 @@
     _questionUsesHelperMethodsLabel.text = @"No Helpers";
   }
   if(_questionAndAnswer.requiresMathematics){
-    _questionRequiresMathematics.text = @"Requires Mathematics";
+    _questionRequiresMathematicsLabel.text = @"Requires Mathematics";
   }
   else{
-    _questionRequiresMathematics.text = @"No Mathematics Required";
+    _questionRequiresMathematicsLabel.text = @"No Mathematics Required";
   }
   if(_questionAndAnswer.hasMultipleSolutions){
     _questionHasMultipleSolutionsLabel.text = @"Has Multiple Solutions";
@@ -315,10 +315,10 @@
     _questionHasMultipleSolutionsLabel.text = @"Has A Single Solution";
   }
   if(_questionAndAnswer.usesFunctionalProgramming){
-    _questionUsesFunctionalProgramming.text = @"Uses Functional Programming";
+    _questionUsesFunctionalProgrammingLabel.text = @"Uses Functional Programming";
   }
   else{
-    _questionUsesFunctionalProgramming.text = @"No Functional Programming";
+    _questionUsesFunctionalProgrammingLabel.text = @"No Functional Programming";
   }
   _questionTextView.text = _questionAndAnswer.text;
   _questionDateLabel.text = _questionAndAnswer.date;
