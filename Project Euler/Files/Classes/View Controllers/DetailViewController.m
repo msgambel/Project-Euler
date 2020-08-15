@@ -284,6 +284,12 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  if(_questionAndAnswer.solvableByHand){
+    _questionSolvableByHandLabel.text = @"Solvable By Hand";
+  }
+  else{
+    _questionSolvableByHandLabel.text = @"Unsolvable By Hand";
+  }
   if(_questionAndAnswer.usesCustomObjects){
     _questionUsesCustomObjectsLabel.text = @"Uses Custom Objects";
   }

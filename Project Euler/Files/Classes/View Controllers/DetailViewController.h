@@ -26,6 +26,7 @@
   IBOutlet UILabel                 * _questionDifficultyLabel;
   IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _questionAttemptsCountLabel;
+  IBOutlet UILabel                 * _questionSolvableByHandLabel;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
   IBOutlet UILabel                 * _questionUsesCustomObjectsLabel;
   IBOutlet UILabel                 * _questionUsesCustomStructsLabel;
