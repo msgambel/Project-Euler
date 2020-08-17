@@ -420,6 +420,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Solvable By Hand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBI-Wj-F7Y">
+                                <rect key="frame" x="504" y="740" width="110.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -484,6 +490,7 @@
                             <constraint firstItem="3VX-an-HwC" firstAttribute="top" secondItem="ID1-uO-78i" secondAttribute="bottom" constant="60" id="O3M-6Y-Y38"/>
                             <constraint firstItem="my3-Q8-IY3" firstAttribute="height" secondItem="zIb-XZ-cmU" secondAttribute="height" id="OCV-mQ-ZyN"/>
                             <constraint firstItem="2eY-zR-UNg" firstAttribute="top" secondItem="LBC-Ft-F1d" secondAttribute="bottom" constant="10" id="OEc-Rs-h0E"/>
+                            <constraint firstItem="RBI-Wj-F7Y" firstAttribute="centerY" secondItem="f52-dd-zbL" secondAttribute="centerY" id="OF7-32-xZp"/>
                             <constraint firstItem="CcW-Nx-X9V" firstAttribute="width" secondItem="XFI-qK-zkS" secondAttribute="width" id="OQh-ZH-2Np"/>
                             <constraint firstItem="Pea-Zr-PGJ" firstAttribute="width" secondItem="MCQ-kO-pNX" secondAttribute="width" id="OZF-tL-PWy"/>
                             <constraint firstItem="Pea-Zr-PGJ" firstAttribute="centerY" secondItem="fMM-xJ-vKr" secondAttribute="centerY" id="OZd-eg-8qu"/>
@@ -500,6 +507,7 @@
                             <constraint firstItem="Iga-i9-CLu" firstAttribute="leading" secondItem="BmV-B2-8Zi" secondAttribute="trailing" id="ToQ-8G-EKt"/>
                             <constraint firstItem="4Fa-6r-oZ5" firstAttribute="trailing" secondItem="3BW-Pe-QtT" secondAttribute="trailing" id="Tp1-hn-biD"/>
                             <constraint firstItem="Cog-en-1HY" firstAttribute="centerY" secondItem="ahj-MO-job" secondAttribute="centerY" id="Upv-P8-gNW"/>
+                            <constraint firstItem="RBI-Wj-F7Y" firstAttribute="leading" secondItem="0gb-sB-aPk" secondAttribute="leading" id="UyV-RF-b7a"/>
                             <constraint firstItem="Cog-en-1HY" firstAttribute="width" secondItem="04Z-Ut-Rdq" secondAttribute="width" id="V9w-YI-N4T"/>
                             <constraint firstItem="Q54-IX-Tjn" firstAttribute="centerY" secondItem="5zT-ka-pCF" secondAttribute="centerY" id="VAw-bA-ih3"/>
                             <constraint firstItem="YRu-RR-pII" firstAttribute="trailing" secondItem="uzZ-f6-6E6" secondAttribute="trailing" id="VIC-bQ-6Dg"/>
@@ -612,6 +620,7 @@
                         <outlet property="_questionNumberLabel" destination="1ZD-tI-A3W" id="XG8-kq-dP9"/>
                         <outlet property="_questionRatingLabel" destination="Q98-lK-sSf" id="oaW-zx-sG2"/>
                         <outlet property="_questionRequiresMathematicsLabel" destination="fMM-xJ-vKr" id="ewo-fe-3gy"/>
+                        <outlet property="_questionSolvableByHandLabel" destination="RBI-Wj-F7Y" id="06f-VB-ZLR"/>
                         <outlet property="_questionSolveTimeLabel" destination="uzZ-f6-6E6" id="87e-mK-l9R"/>
                         <outlet property="_questionTechniqueLabel" destination="Zd6-rA-63A" id="cgm-Ez-9xA"/>
                         <outlet property="_questionTextView" destination="nD9-xe-4ct" id="ePm-Z2-kKN"/>
