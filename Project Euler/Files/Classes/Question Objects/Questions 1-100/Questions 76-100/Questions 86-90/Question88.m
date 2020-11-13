@@ -30,6 +30,7 @@
   self.attemptsCount = @"3";
   self.isChallenging = YES;
   self.startedOnDate = @"29/03/13";
+  self.solvableByHand = NO;
   self.completedOnDate = @"29/03/13";
   self.solutionLineCount = @"73";
   self.usesCustomObjects = NO;
