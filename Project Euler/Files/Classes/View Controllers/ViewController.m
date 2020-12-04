@@ -28,7 +28,7 @@
   
   // If the user is using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-    // Update the detail view controller to have the same default question number.
+    // Update the Detail View Controller to have the same default question number.
     _detailViewController.questionAndAnswer = _selectedQuestionAndAnswer;
   }
   // Since we are NOT searching by default, set the current Question Objects
@@ -84,7 +84,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender; {
   // If the user is NOT using an iPad,
   if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-    // Grab the destination view controller, which will be a DetailViewController.
+    // Grab the Destination View Controller, which will be a DetailViewController.
     DetailViewController * detailViewController = (DetailViewController *)[segue destinationViewController];
     
     // Update the question for the DetailViewController.
@@ -121,7 +121,7 @@
   // array for the corresponding row.
   cell.questionObjectsArray = [_currentQuestionObjectsArray objectAtIndex:indexPath.row];
   
-  // Set the cells delegate to be this view controller.
+  // Set the cells delegate to be this View Controller.
   cell.delegate = self;
   
   // Return the cell.
