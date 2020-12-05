@@ -18,6 +18,7 @@
   BOOL                                    _usesCustomObjects;
   BOOL                                    _usesCustomStructs;
   BOOL                                    _usesHelperMethods;
+  BOOL                                    _learnedSomethingNew;
   BOOL                                    _requiresMathematics;
   BOOL                                    _hasMultipleSolutions;
   BOOL                                    _usesFunctionalProgramming;
@@ -51,6 +52,7 @@
 @property (nonatomic, assign) BOOL                             usesCustomObjects;
 @property (nonatomic, assign) BOOL                             usesCustomStructs;
 @property (nonatomic, assign) BOOL                             usesHelperMethods;
+@property (nonatomic, assign) BOOL                             learnedSomethingNew;
 @property (nonatomic, assign) BOOL                             requiresMathematics;
 @property (nonatomic, assign) BOOL                             hasMultipleSolutions;
 @property (nonatomic, assign) BOOL                             usesFunctionalProgramming;

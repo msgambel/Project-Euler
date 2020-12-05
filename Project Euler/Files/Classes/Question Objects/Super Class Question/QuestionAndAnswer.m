@@ -38,6 +38,7 @@
 @synthesize usesCustomObjects = _usesCustomObjects;
 @synthesize usesCustomStructs = _usesCustomStructs;
 @synthesize usesHelperMethods = _usesHelperMethods;
+@synthesize learnedSomethingNew = _learnedSomethingNew;
 @synthesize requiresMathematics = _requiresMathematics;
 @synthesize hasMultipleSolutions = _hasMultipleSolutions;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
