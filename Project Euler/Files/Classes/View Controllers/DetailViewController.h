@@ -31,6 +31,7 @@
   IBOutlet UILabel                 * _questionUsesCustomObjectsLabel;
   IBOutlet UILabel                 * _questionUsesCustomStructsLabel;
   IBOutlet UILabel                 * _questionUsesHelperMethodsLabel;
+  IBOutlet UILabel                 * _questionLearnedSomethingNewLabel;
   IBOutlet UILabel                 * _questionRequiresMathematicsLabel;
   IBOutlet UILabel                 * _questionHasMultipleSolutionsLabel;
   IBOutlet UILabel                 * _questionUsesFunctionalProgrammingLabel;

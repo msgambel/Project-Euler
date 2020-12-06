@@ -308,6 +308,12 @@
   else{
     _questionUsesHelperMethodsLabel.text = @"No Helpers";
   }
+  if(_questionAndAnswer.learnedSomethingNew){
+    _questionLearnedSomethingNewLabel.text = @"Learned Something New";
+  }
+  else{
+    _questionLearnedSomethingNewLabel.text = @"No New Learning";
+  }
   if(_questionAndAnswer.requiresMathematics){
     _questionRequiresMathematicsLabel.text = @"Requires Mathematics";
   }
