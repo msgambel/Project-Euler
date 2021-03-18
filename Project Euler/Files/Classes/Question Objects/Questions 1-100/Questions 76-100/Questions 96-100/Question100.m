@@ -36,6 +36,7 @@
   self.usesCustomObjects = NO;
   self.usesCustomStructs = NO;
   self.usesHelperMethods = NO;
+  self.learnedSomethingNew = YES;
   self.requiresMathematics = YES;
   self.hasMultipleSolutions = NO;
   self.estimatedComputationTime = @"2.4e-05";
