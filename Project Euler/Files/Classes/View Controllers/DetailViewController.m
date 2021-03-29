@@ -326,6 +326,12 @@
   else{
     _questionHasMultipleSolutionsLabel.text = @"Has A Single Solution";
   }
+  if(_questionAndAnswer.shouldInvestigateFurther){
+    _questionShouldInvestigateFurtherLabel.text = @"Should Investigate Further";
+  }
+  else{
+    _questionShouldInvestigateFurtherLabel.text = @"Investigate No Further";
+  }
   if(_questionAndAnswer.usesFunctionalProgramming){
     _questionUsesFunctionalProgrammingLabel.text = @"Uses Functional Programming";
   }

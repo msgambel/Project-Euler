@@ -34,6 +34,7 @@
   IBOutlet UILabel                 * _questionLearnedSomethingNewLabel;
   IBOutlet UILabel                 * _questionRequiresMathematicsLabel;
   IBOutlet UILabel                 * _questionHasMultipleSolutionsLabel;
+  IBOutlet UILabel                 * _questionShouldInvestigateFurtherLabel;
   IBOutlet UILabel                 * _questionUsesFunctionalProgrammingLabel;
   IBOutlet UIButton                * _backButton;
   IBOutlet UIButton                * _cancelButton;
