@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -376,7 +376,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68A-Dj-xoW">
-                                <rect key="frame" x="5" y="221" width="365" height="372"/>
+                                <rect key="frame" x="5" y="221" width="365" height="352"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -484,7 +484,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses Helper Methods" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FfW-Xp-PXv">
-                                <rect key="frame" x="252.33333333333334" y="658" width="117.66666666666666" height="15"/>
+                                <rect key="frame" x="252.66666666666666" y="658" width="117.33333333333334" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="qIn-8v-rRf"/>
                                 </constraints>
@@ -637,6 +637,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Should Investigate Further" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFS-o8-Zlc">
+                                <rect key="frame" x="224.66666666666663" y="578" width="145.33333333333337" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="MWw-eF-iMQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -652,6 +661,7 @@
                             <constraint firstItem="hWS-r8-7Ea" firstAttribute="centerY" secondItem="dz8-ta-DFM" secondAttribute="centerY" id="5Sa-G3-Tzx"/>
                             <constraint firstItem="SBB-k3-NyB" firstAttribute="top" secondItem="DJU-35-VQn" secondAttribute="bottom" id="5TC-nG-8TJ"/>
                             <constraint firstItem="atg-Ue-tqo" firstAttribute="trailing" secondItem="68A-Dj-xoW" secondAttribute="trailing" id="65e-P1-UaX"/>
+                            <constraint firstItem="bFS-o8-Zlc" firstAttribute="trailing" secondItem="qIQ-XB-ApZ" secondAttribute="trailing" id="65x-zi-aZd"/>
                             <constraint firstItem="Ewd-cm-Ykd" firstAttribute="leading" secondItem="Qq1-jn-f9C" secondAttribute="leading" id="6uK-B3-jxE"/>
                             <constraint firstItem="24h-L5-Tf0" firstAttribute="width" secondItem="txf-We-Ad8" secondAttribute="width" id="6wO-0I-PS8"/>
                             <constraint firstItem="zxl-ng-3Sy" firstAttribute="width" relation="lessThanOrEqual" secondItem="dz8-ta-DFM" secondAttribute="width" id="8TK-Vd-LYw"/>
@@ -689,7 +699,6 @@
                             <constraint firstItem="68A-Dj-xoW" firstAttribute="trailing" secondItem="8AF-sH-MIB" secondAttribute="trailing" id="L6c-kf-MhZ"/>
                             <constraint firstItem="Tcn-bB-kkU" firstAttribute="top" secondItem="S5r-gN-S6P" secondAttribute="bottom" constant="5" id="LLD-NZ-onO"/>
                             <constraint firstItem="2bm-jV-Hoo" firstAttribute="leading" secondItem="QuP-pa-30Z" secondAttribute="leading" id="Lis-p2-847"/>
-                            <constraint firstItem="qIQ-XB-ApZ" firstAttribute="top" secondItem="68A-Dj-xoW" secondAttribute="bottom" constant="5" id="MJ3-gp-3Vc"/>
                             <constraint firstItem="lr8-rG-feB" firstAttribute="centerX" secondItem="g8w-Vm-9j5" secondAttribute="centerX" id="N4f-4y-sML"/>
                             <constraint firstItem="S5r-gN-S6P" firstAttribute="leading" secondItem="68A-Dj-xoW" secondAttribute="leading" id="Ntp-Tr-un9"/>
                             <constraint firstItem="966-p5-ABN" firstAttribute="top" secondItem="QuP-pa-30Z" secondAttribute="bottom" id="O9L-IB-IBC"/>
@@ -722,6 +731,7 @@
                             <constraint firstItem="7FS-fN-XOd" firstAttribute="leading" secondItem="caE-Ja-Xzm" secondAttribute="trailing" constant="5" id="c1O-fI-Y1t"/>
                             <constraint firstItem="caE-Ja-Xzm" firstAttribute="leading" secondItem="RPU-6n-VPf" secondAttribute="trailing" constant="5" id="cQv-eE-XKw"/>
                             <constraint firstItem="kRA-ns-A5g" firstAttribute="leading" secondItem="txf-We-Ad8" secondAttribute="trailing" id="cRT-kt-iCA"/>
+                            <constraint firstItem="qIQ-XB-ApZ" firstAttribute="top" secondItem="bFS-o8-Zlc" secondAttribute="bottom" constant="5" id="ci5-qM-x17"/>
                             <constraint firstItem="966-p5-ABN" firstAttribute="trailing" secondItem="QuP-pa-30Z" secondAttribute="trailing" id="cn7-i6-J43"/>
                             <constraint firstItem="Qq1-jn-f9C" firstAttribute="leading" secondItem="NMG-Si-HvN" secondAttribute="leading" id="djz-DT-tlv"/>
                             <constraint firstItem="e4I-bk-1gI" firstAttribute="centerY" secondItem="hWS-r8-7Ea" secondAttribute="centerY" id="e9n-S7-e4f"/>
@@ -735,6 +745,7 @@
                             <constraint firstItem="R6J-cm-A6z" firstAttribute="top" secondItem="RrT-Qg-qjT" secondAttribute="bottom" constant="5" id="hGd-Tt-0S5"/>
                             <constraint firstItem="376-iG-ZvM" firstAttribute="top" secondItem="atg-Ue-tqo" secondAttribute="bottom" constant="5" id="hSf-d8-LyL"/>
                             <constraint firstItem="kRA-ns-A5g" firstAttribute="top" secondItem="376-iG-ZvM" secondAttribute="bottom" id="iNM-VZ-dYb"/>
+                            <constraint firstItem="bFS-o8-Zlc" firstAttribute="top" secondItem="68A-Dj-xoW" secondAttribute="bottom" constant="5" id="iTH-pm-rqY"/>
                             <constraint firstItem="DHb-ba-bDJ" firstAttribute="top" secondItem="QuP-pa-30Z" secondAttribute="bottom" id="isN-oS-WBi"/>
                             <constraint firstItem="RrT-Qg-qjT" firstAttribute="top" secondItem="kRA-ns-A5g" secondAttribute="bottom" constant="5" id="jRS-sd-SuN"/>
                             <constraint firstItem="FE8-Kb-SuB" firstAttribute="leading" secondItem="07R-jS-Hnr" secondAttribute="trailing" constant="5" id="jXX-dB-BXI"/>
@@ -800,6 +811,7 @@
                         <outlet property="_questionNumberLabel" destination="RPU-6n-VPf" id="6Fl-d2-OZH"/>
                         <outlet property="_questionRatingLabel" destination="S9G-2W-gdc" id="FmI-0l-WjL"/>
                         <outlet property="_questionRequiresMathematicsLabel" destination="9AR-JL-Vxn" id="4jn-pq-S43"/>
+                        <outlet property="_questionShouldInvestigateFurtherLabel" destination="bFS-o8-Zlc" id="xR8-7z-O6Y"/>
                         <outlet property="_questionSolvableByHandLabel" destination="qIQ-XB-ApZ" id="QoK-pM-Daa"/>
                         <outlet property="_questionSolveTimeLabel" destination="8AF-sH-MIB" id="ro2-UK-kbn"/>
                         <outlet property="_questionTechniqueLabel" destination="dz8-ta-DFM" id="Sty-ox-TUk"/>
