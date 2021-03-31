@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2qa-jw-fUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2qa-jw-fUF">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -435,6 +435,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Should Investigate Further" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24u-Kj-gao">
+                                <rect key="frame" x="526" y="712.5" width="167.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -510,6 +516,7 @@
                             <constraint firstItem="4Dt-Jw-Yyg" firstAttribute="centerX" secondItem="OHd-Bi-dA8" secondAttribute="centerX" id="Pg3-Lg-moT"/>
                             <constraint firstItem="XFI-qK-zkS" firstAttribute="top" secondItem="Czp-Rq-whb" secondAttribute="bottom" id="Q6O-3l-cLQ"/>
                             <constraint firstItem="5zT-ka-pCF" firstAttribute="width" secondItem="ahj-MO-job" secondAttribute="width" id="QSb-wS-DOG"/>
+                            <constraint firstItem="24u-Kj-gao" firstAttribute="trailing" secondItem="0gb-sB-aPk" secondAttribute="trailing" id="Qes-b8-Ola"/>
                             <constraint firstItem="Kai-CL-N5D" firstAttribute="centerX" secondItem="CcW-Nx-X9V" secondAttribute="centerX" id="Qx7-hg-cmt"/>
                             <constraint firstItem="fMM-xJ-vKr" firstAttribute="height" secondItem="MCQ-kO-pNX" secondAttribute="height" id="RhV-Hw-xff"/>
                             <constraint firstItem="LBC-Ft-F1d" firstAttribute="leading" secondItem="OHd-Bi-dA8" secondAttribute="leading" constant="10" id="TXy-Jg-d7j"/>
@@ -524,6 +531,7 @@
                             <constraint firstItem="YRu-RR-pII" firstAttribute="trailing" secondItem="uzZ-f6-6E6" secondAttribute="trailing" id="VIC-bQ-6Dg"/>
                             <constraint firstItem="XFI-qK-zkS" firstAttribute="width" secondItem="5zT-ka-pCF" secondAttribute="width" id="VRP-AG-LJs"/>
                             <constraint firstItem="Kai-CL-N5D" firstAttribute="height" secondItem="Czp-Rq-whb" secondAttribute="height" id="VUN-4Y-m51"/>
+                            <constraint firstItem="24u-Kj-gao" firstAttribute="centerY" secondItem="wIA-dQ-UM9" secondAttribute="centerY" id="VYn-i7-M8y"/>
                             <constraint firstItem="UIy-ac-8Jh" firstAttribute="top" secondItem="4qW-Fn-TSD" secondAttribute="bottom" constant="10" id="WvG-5z-Swo"/>
                             <constraint firstItem="my3-Q8-IY3" firstAttribute="centerX" secondItem="5zT-ka-pCF" secondAttribute="centerX" id="Yfl-G6-YY0"/>
                             <constraint firstItem="txZ-WG-Fep" firstAttribute="width" secondItem="Q54-IX-Tjn" secondAttribute="width" id="Ynr-z0-Wsl"/>
@@ -548,6 +556,7 @@
                             <constraint firstItem="9Yo-5t-FqG" firstAttribute="leading" secondItem="LBC-Ft-F1d" secondAttribute="trailing" constant="10" id="fFg-Ri-Kxq"/>
                             <constraint firstItem="P9i-no-2Og" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ID1-uO-78i" secondAttribute="trailing" constant="10" id="fFz-qY-OGw"/>
                             <constraint firstItem="MCQ-kO-pNX" firstAttribute="height" secondItem="Iga-i9-CLu" secondAttribute="height" id="fY0-GH-c9l"/>
+                            <constraint firstItem="uYd-LI-MSr" firstAttribute="trailing" secondItem="24u-Kj-gao" secondAttribute="trailing" id="fbi-b4-omJ"/>
                             <constraint firstItem="zjA-dd-7Qo" firstAttribute="leading" secondItem="CcW-Nx-X9V" secondAttribute="trailing" id="fkd-i9-A4i"/>
                             <constraint firstItem="xxW-ue-0pw" firstAttribute="centerY" secondItem="4qW-Fn-TSD" secondAttribute="centerY" id="fo7-40-pWv"/>
                             <constraint firstItem="MCQ-kO-pNX" firstAttribute="leading" secondItem="Iga-i9-CLu" secondAttribute="trailing" id="fv9-hA-orF"/>
@@ -606,7 +615,6 @@
                             <constraint firstItem="LBC-Ft-F1d" firstAttribute="top" secondItem="wIA-dQ-UM9" secondAttribute="bottom" constant="10" id="zFG-r7-0OY"/>
                             <constraint firstItem="04Z-Ut-Rdq" firstAttribute="height" secondItem="Zd6-rA-63A" secondAttribute="height" id="zIc-P4-au2"/>
                             <constraint firstItem="Q54-IX-Tjn" firstAttribute="width" secondItem="Cog-en-1HY" secondAttribute="width" id="zqc-wY-Ru4"/>
-                            <constraint firstItem="0gb-sB-aPk" firstAttribute="trailing" secondItem="uYd-LI-MSr" secondAttribute="trailing" id="zwL-2w-Ngr"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -631,6 +639,7 @@
                         <outlet property="_questionNumberLabel" destination="1ZD-tI-A3W" id="XG8-kq-dP9"/>
                         <outlet property="_questionRatingLabel" destination="Q98-lK-sSf" id="oaW-zx-sG2"/>
                         <outlet property="_questionRequiresMathematicsLabel" destination="fMM-xJ-vKr" id="ewo-fe-3gy"/>
+                        <outlet property="_questionShouldInvestigateFurtherLabel" destination="24u-Kj-gao" id="0DA-yu-yno"/>
                         <outlet property="_questionSolvableByHandLabel" destination="RBI-Wj-F7Y" id="06f-VB-ZLR"/>
                         <outlet property="_questionSolveTimeLabel" destination="uzZ-f6-6E6" id="87e-mK-l9R"/>
                         <outlet property="_questionTechniqueLabel" destination="Zd6-rA-63A" id="cgm-Ez-9xA"/>
