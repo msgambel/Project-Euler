@@ -33,6 +33,7 @@
 @synthesize isChallenging = _isChallenging;
 @synthesize startedOnDate = _startedOnDate;
 @synthesize solvableByHand = _solvableByHand;
+@synthesize canBeSimplified = _canBeSimplified;
 @synthesize completedOnDate = _completedOnDate;
 @synthesize solutionLineCount = _solutionLineCount;
 @synthesize usesCustomObjects = _usesCustomObjects;

@@ -15,6 +15,7 @@
   BOOL                                    _isComputing;
   BOOL                                    _isChallenging;
   BOOL                                    _solvableByHand;
+  BOOL                                    _canBeSimplified;
   BOOL                                    _usesCustomObjects;
   BOOL                                    _usesCustomStructs;
   BOOL                                    _usesHelperMethods;
@@ -50,6 +51,7 @@
 @property (nonatomic, assign) BOOL                             isComputing;
 @property (nonatomic, assign) BOOL                             isChallenging;
 @property (nonatomic, assign) BOOL                             solvableByHand;
+@property (nonatomic, assign) BOOL                             canBeSimplified;
 @property (nonatomic, assign) BOOL                             usesCustomObjects;
 @property (nonatomic, assign) BOOL                             usesCustomStructs;
 @property (nonatomic, assign) BOOL                             usesHelperMethods;
