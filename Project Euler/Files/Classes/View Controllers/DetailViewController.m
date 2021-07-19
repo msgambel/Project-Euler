@@ -290,6 +290,12 @@
   else{
     _questionSolvableByHandLabel.text = @"Unsolvable By Hand";
   }
+  if(_questionAndAnswer.canBeSimplified){
+    _questionCanBeSimplifiedLabel.text = @"Can Be Simplified";
+  }
+  else{
+    _questionCanBeSimplifiedLabel.text = @"Cannot Be Simplified";
+  }
   if(_questionAndAnswer.usesCustomObjects){
     _questionUsesCustomObjectsLabel.text = @"Uses Custom Objects";
   }
