@@ -646,6 +646,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Can Be Simplified" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afv-2H-3X5">
+                                <rect key="frame" x="5" y="578" width="96.333333333333329" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="8NY-dB-Snc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -726,6 +735,7 @@
                             <constraint firstItem="Srr-j4-VJp" firstAttribute="leading" secondItem="kEh-1z-WXH" secondAttribute="leading" id="aCJ-3o-3OE"/>
                             <constraint firstItem="zte-W2-whe" firstAttribute="trailing" secondItem="Roi-o8-Qg7" secondAttribute="trailing" id="awB-pw-6SR"/>
                             <constraint firstItem="X1f-wq-kWh" firstAttribute="width" relation="lessThanOrEqual" secondItem="S5r-gN-S6P" secondAttribute="width" id="azz-cS-CRe"/>
+                            <constraint firstItem="afv-2H-3X5" firstAttribute="centerY" secondItem="bFS-o8-Zlc" secondAttribute="centerY" id="bWg-z2-dxu"/>
                             <constraint firstItem="Tcn-bB-kkU" firstAttribute="leading" secondItem="68A-Dj-xoW" secondAttribute="leading" id="bjL-ws-MSO"/>
                             <constraint firstItem="lr8-rG-feB" firstAttribute="leading" secondItem="Qq1-jn-f9C" secondAttribute="trailing" id="bkn-8Z-n4g"/>
                             <constraint firstItem="7FS-fN-XOd" firstAttribute="leading" secondItem="caE-Ja-Xzm" secondAttribute="trailing" constant="5" id="c1O-fI-Y1t"/>
@@ -777,6 +787,7 @@
                             <constraint firstItem="e4I-bk-1gI" firstAttribute="leading" secondItem="hWS-r8-7Ea" secondAttribute="trailing" id="taG-dj-cmA"/>
                             <constraint firstItem="hWS-r8-7Ea" firstAttribute="width" secondItem="tDt-QJ-Esk" secondAttribute="width" id="tr6-zg-gvq"/>
                             <constraint firstItem="hWS-r8-7Ea" firstAttribute="height" secondItem="dz8-ta-DFM" secondAttribute="height" id="tuh-SF-lFk"/>
+                            <constraint firstItem="afv-2H-3X5" firstAttribute="leading" secondItem="XIE-3X-uRY" secondAttribute="leading" id="u5L-9w-a8w"/>
                             <constraint firstItem="caE-Ja-Xzm" firstAttribute="top" secondItem="FE8-Kb-SuB" secondAttribute="bottom" id="uHl-Fv-Su4"/>
                             <constraint firstItem="7FS-fN-XOd" firstAttribute="top" secondItem="xYY-sv-Ilg" secondAttribute="bottom" id="uZu-2r-int"/>
                             <constraint firstItem="HMo-WH-96f" firstAttribute="width" secondItem="e4I-bk-1gI" secondAttribute="width" id="v36-wi-qwr"/>
@@ -800,6 +811,7 @@
                         <outlet property="_computeByBruteForceButton" destination="zte-W2-whe" id="81a-aW-GMw"/>
                         <outlet property="_questionAnswerLabel" destination="5Ag-AW-pPG" id="HFJ-EC-jEk"/>
                         <outlet property="_questionAttemptsCountLabel" destination="kEh-1z-WXH" id="h1k-An-ykP"/>
+                        <outlet property="_questionCanBeSimplifiedLabel" destination="afv-2H-3X5" id="lLK-gL-Bak"/>
                         <outlet property="_questionCategoryLabel" destination="S5r-gN-S6P" id="LPw-bS-OJo"/>
                         <outlet property="_questionCommentCountLabel" destination="e4I-bk-1gI" id="Ail-Ox-rks"/>
                         <outlet property="_questionDateLabel" destination="7FS-fN-XOd" id="V4m-ZK-o1T"/>
