@@ -31,6 +31,7 @@
   self.isChallenging = NO;
   self.startedOnDate = @"16/02/13";
   self.solvableByHand = NO;
+  self.canBeSimplified = YES;
   self.completedOnDate = @"16/02/13";
   self.solutionLineCount = @"65";
   self.usesCustomObjects = NO;
