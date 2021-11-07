@@ -43,6 +43,7 @@
 @synthesize requiresMathematics = _requiresMathematics;
 @synthesize hasMultipleSolutions = _hasMultipleSolutions;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
+@synthesize relatedToAnotherQuestion = _relatedToAnotherQuestion;
 @synthesize shouldInvestigateFurther = _shouldInvestigateFurther;
 @synthesize usesFunctionalProgramming = _usesFunctionalProgramming;
 @synthesize estimatedBruteForceComputationTime = _estimatedBruteForceComputationTime;

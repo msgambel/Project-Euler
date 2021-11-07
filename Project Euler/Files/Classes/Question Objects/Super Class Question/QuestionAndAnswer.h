@@ -22,6 +22,7 @@
   BOOL                                    _learnedSomethingNew;
   BOOL                                    _requiresMathematics;
   BOOL                                    _hasMultipleSolutions;
+  BOOL                                    _relatedToAnotherQuestion;
   BOOL                                    _shouldInvestigateFurther;
   BOOL                                    _usesFunctionalProgramming;
   NSString                              * _date;
@@ -58,6 +59,7 @@
 @property (nonatomic, assign) BOOL                             learnedSomethingNew;
 @property (nonatomic, assign) BOOL                             requiresMathematics;
 @property (nonatomic, assign) BOOL                             hasMultipleSolutions;
+@property (nonatomic, assign) BOOL                             relatedToAnotherQuestion;
 @property (nonatomic, assign) BOOL                             shouldInvestigateFurther;
 @property (nonatomic, assign) BOOL                             usesFunctionalProgramming;
 @property (nonatomic, strong) NSString                       * date;
