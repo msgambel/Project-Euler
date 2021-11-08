@@ -332,6 +332,12 @@
   else{
     _questionHasMultipleSolutionsLabel.text = @"Has A Single Solution";
   }
+  if(_questionAndAnswer.relatedToAnotherQuestion){
+    _questionRelatedToAnotherQuestionLabel.text = @"Related To Another Question";
+  }
+  else{
+    _questionRelatedToAnotherQuestionLabel.text = @"Unrelated To Another Question";
+  }
   if(_questionAndAnswer.shouldInvestigateFurther){
     _questionShouldInvestigateFurtherLabel.text = @"Should Investigate Further";
   }
