@@ -32,6 +32,7 @@
 @synthesize attemptsCount = _attemptsCount;
 @synthesize isChallenging = _isChallenging;
 @synthesize startedOnDate = _startedOnDate;
+@synthesize educationLevel = _educationLevel;
 @synthesize solvableByHand = _solvableByHand;
 @synthesize canBeSimplified = _canBeSimplified;
 @synthesize completedOnDate = _completedOnDate;
