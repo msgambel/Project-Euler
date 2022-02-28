@@ -367,6 +367,7 @@
   _questionDifficultyLabel.text = _questionAndAnswer.difficulty;
   _questionCommentCountLabel.text = _questionAndAnswer.commentCount;
   _questionAttemptsCountLabel.text = _questionAndAnswer.attemptsCount;
+  _questionEducationLevelLabel.text = _questionAndAnswer.educationLevel;
   _bruteForceComputationTimeLabel.text = _questionAndAnswer.estimatedBruteForceComputationTime;
   _questionIsChallengingImageView.hidden = (_questionAndAnswer.isChallenging == NO);
   
