@@ -665,6 +665,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Education Level" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZV-aS-pHY">
+                                <rect key="frame" x="5" y="558" width="86" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="R5b-cu-Z9C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -673,6 +682,7 @@
                             <constraint firstItem="pYX-7g-1mf" firstAttribute="leading" secondItem="9AR-JL-Vxn" secondAttribute="leading" id="0g9-cR-Pby"/>
                             <constraint firstItem="Srr-j4-VJp" firstAttribute="width" secondItem="kEh-1z-WXH" secondAttribute="width" id="0tx-AL-44L"/>
                             <constraint firstItem="caE-Ja-Xzm" firstAttribute="centerX" secondItem="g8w-Vm-9j5" secondAttribute="centerX" id="10h-Pb-Yjx"/>
+                            <constraint firstItem="ZZV-aS-pHY" firstAttribute="centerY" secondItem="arC-iP-2qS" secondAttribute="centerY" id="1pf-4N-YkA"/>
                             <constraint firstItem="Roi-o8-Qg7" firstAttribute="trailing" secondItem="966-p5-ABN" secondAttribute="trailing" id="1wO-EW-NPl"/>
                             <constraint firstItem="R6J-cm-A6z" firstAttribute="top" secondItem="5Ag-AW-pPG" secondAttribute="bottom" constant="5" id="464-K8-8lm"/>
                             <constraint firstItem="FfW-Xp-PXv" firstAttribute="trailing" secondItem="zG2-Hd-Aci" secondAttribute="trailing" id="5Gi-8U-7LL"/>
@@ -808,6 +818,7 @@
                             <constraint firstItem="RPU-6n-VPf" firstAttribute="top" secondItem="07R-jS-Hnr" secondAttribute="bottom" id="xIV-dN-ZYH"/>
                             <constraint firstItem="pYX-7g-1mf" firstAttribute="centerY" secondItem="mbe-8e-QRI" secondAttribute="centerY" id="y75-op-Y6c"/>
                             <constraint firstItem="e4I-bk-1gI" firstAttribute="top" secondItem="HMo-WH-96f" secondAttribute="bottom" id="ySf-cN-U4q"/>
+                            <constraint firstItem="ZZV-aS-pHY" firstAttribute="leading" secondItem="afv-2H-3X5" secondAttribute="leading" id="ydx-hh-qbr"/>
                             <constraint firstItem="xYY-sv-Ilg" firstAttribute="leading" secondItem="FE8-Kb-SuB" secondAttribute="trailing" constant="5" id="yez-xL-iPF"/>
                         </constraints>
                     </view>
@@ -828,6 +839,7 @@
                         <outlet property="_questionCommentCountLabel" destination="e4I-bk-1gI" id="Ail-Ox-rks"/>
                         <outlet property="_questionDateLabel" destination="7FS-fN-XOd" id="V4m-ZK-o1T"/>
                         <outlet property="_questionDifficultyLabel" destination="RrT-Qg-qjT" id="nXW-oN-GgS"/>
+                        <outlet property="_questionEducationLevelLabel" destination="ZZV-aS-pHY" id="DF2-4l-cyz"/>
                         <outlet property="_questionHasMultipleSolutionsLabel" destination="zG2-Hd-Aci" id="g6p-Lo-vbU"/>
                         <outlet property="_questionIsChallengingImageView" destination="lr8-rG-feB" id="Wkd-S5-Iye"/>
                         <outlet property="_questionIsFunImageView" destination="caE-Ja-Xzm" id="gn2-9T-XFf"/>
