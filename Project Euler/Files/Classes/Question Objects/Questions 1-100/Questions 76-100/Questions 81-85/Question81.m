@@ -31,6 +31,7 @@
   self.attemptsCount = @"1";
   self.isChallenging = NO;
   self.startedOnDate = @"22/03/13";
+  self.educationLevel = @"High School";
   self.solvableByHand = YES;
   self.canBeSimplified = YES;
   self.completedOnDate = @"22/03/13";
