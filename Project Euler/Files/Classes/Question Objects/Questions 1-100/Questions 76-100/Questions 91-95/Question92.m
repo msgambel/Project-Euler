@@ -36,6 +36,7 @@
   self.attemptsCount = @"1";
   self.isChallenging = NO;
   self.startedOnDate = @"02/04/13";
+  self.educationLevel = @"Elementary";
   self.solvableByHand = NO;
   self.canBeSimplified = NO;
   self.completedOnDate = @"02/04/13";
@@ -68,7 +69,7 @@
   // matter of looping through every number up to the maximum size.
   //
   // We make 1 observation. The largest digit square sum could be given the
-  // maximum size is  9² * 7 = 567, as 9,999,999 is the number that will
+  // maximum size is 9² * 7 = 567, as 9,999,999 is the number that will
   // generate the largest square sum. Therefore, if we store which value the
   // numbers below 567 in an array, we only need to compute the digit sum once
   // in order to find out where it goes.
