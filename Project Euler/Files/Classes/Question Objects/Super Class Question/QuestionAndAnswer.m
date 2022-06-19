@@ -31,6 +31,7 @@
 @synthesize commentCount = _commentCount;
 @synthesize attemptsCount = _attemptsCount;
 @synthesize isChallenging = _isChallenging;
+@synthesize isContestMath = _isContestMath;
 @synthesize startedOnDate = _startedOnDate;
 @synthesize educationLevel = _educationLevel;
 @synthesize solvableByHand = _solvableByHand;
