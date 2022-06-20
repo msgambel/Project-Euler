@@ -284,6 +284,12 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  if(_questionAndAnswer.isContestMath){
+    _questionIsContestMathLabel.text = @"Contest Math";
+  }
+  else{
+    _questionIsContestMathLabel.text = @"Normal Math";
+  }
   if(_questionAndAnswer.solvableByHand){
     _questionSolvableByHandLabel.text = @"Solvable By Hand";
   }
