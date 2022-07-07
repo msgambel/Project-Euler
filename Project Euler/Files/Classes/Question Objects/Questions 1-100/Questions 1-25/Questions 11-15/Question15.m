@@ -36,6 +36,7 @@
   self.commentCount = @"19";
   self.attemptsCount = @"1";
   self.isChallenging = NO;
+  self.isContestMath = NO;
   self.startedOnDate = @"15/01/13";
   self.educationLevel = @"Elementary";
   self.solvableByHand = YES;
