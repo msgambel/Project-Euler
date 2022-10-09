@@ -33,6 +33,7 @@
 @synthesize isChallenging = _isChallenging;
 @synthesize isContestMath = _isContestMath;
 @synthesize startedOnDate = _startedOnDate;
+@synthesize trickRequired = _trickRequired;
 @synthesize educationLevel = _educationLevel;
 @synthesize solvableByHand = _solvableByHand;
 @synthesize canBeSimplified = _canBeSimplified;

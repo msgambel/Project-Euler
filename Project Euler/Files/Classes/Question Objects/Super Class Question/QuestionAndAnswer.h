@@ -15,6 +15,7 @@
   BOOL                                    _isComputing;
   BOOL                                    _isChallenging;
   BOOL                                    _isContestMath;
+  BOOL                                    _trickRequired;
   BOOL                                    _solvableByHand;
   BOOL                                    _canBeSimplified;
   BOOL                                    _usesCustomObjects;
@@ -54,6 +55,7 @@
 @property (nonatomic, assign) BOOL                             isComputing;
 @property (nonatomic, assign) BOOL                             isChallenging;
 @property (nonatomic, assign) BOOL                             isContestMath;
+@property (nonatomic, assign) BOOL                             trickRequired;
 @property (nonatomic, assign) BOOL                             solvableByHand;
 @property (nonatomic, assign) BOOL                             canBeSimplified;
 @property (nonatomic, assign) BOOL                             usesCustomObjects;
