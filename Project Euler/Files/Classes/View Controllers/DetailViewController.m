@@ -290,6 +290,12 @@
   else{
     _questionIsContestMathLabel.text = @"Normal Math";
   }
+  if(_questionAndAnswer.trickRequired){
+    _questionTrickRequiredLabel.text = @"Trick Required";
+  }
+  else{
+    _questionTrickRequiredLabel.text = @"No Trick Required";
+  }
   if(_questionAndAnswer.solvableByHand){
     _questionSolvableByHandLabel.text = @"Solvable By Hand";
   }
