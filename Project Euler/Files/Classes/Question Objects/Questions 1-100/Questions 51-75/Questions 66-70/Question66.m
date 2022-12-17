@@ -31,6 +31,7 @@
   self.isChallenging = YES;
   self.isContestMath = NO;
   self.startedOnDate = @"07/03/13";
+  self.trickRequired = NO;
   self.educationLevel = @"Undergraduate";
   self.solvableByHand = YES;
   self.canBeSimplified = NO;
