@@ -12,6 +12,7 @@
 @interface QuestionAndAnswer : NSObject {
   id <QuestionAndAnswerDelegate> __weak   _delegate;
   BOOL                                    _isFun;
+  BOOL                                    _usesBigInt;
   BOOL                                    _isComputing;
   BOOL                                    _isChallenging;
   BOOL                                    _isContestMath;
@@ -52,6 +53,7 @@
 
 @property (nonatomic, weak)   id <QuestionAndAnswerDelegate>   delegate;
 @property (nonatomic, assign) BOOL                             isFun;
+@property (nonatomic, assign) BOOL                             usesBigInt;
 @property (nonatomic, assign) BOOL                             isComputing;
 @property (nonatomic, assign) BOOL                             isChallenging;
 @property (nonatomic, assign) BOOL                             isContestMath;

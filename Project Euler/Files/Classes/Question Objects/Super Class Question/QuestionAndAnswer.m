@@ -27,6 +27,7 @@
 @synthesize solveTime = _solveTime;
 @synthesize technique = _technique;
 @synthesize difficulty = _difficulty;
+@synthesize usesBigInt = _usesBigInt;
 @synthesize isComputing = _isComputing;
 @synthesize commentCount = _commentCount;
 @synthesize attemptsCount = _attemptsCount;
