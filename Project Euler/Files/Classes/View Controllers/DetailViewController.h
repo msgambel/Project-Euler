@@ -24,6 +24,7 @@
   IBOutlet UILabel                 * _questionTechniqueLabel;
   IBOutlet UILabel                 * _solutionLineCountLabel;
   IBOutlet UILabel                 * _questionDifficultyLabel;
+  IBOutlet UILabel                 * _questionUsesBigIntLabel;
   IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _questionAttemptsCountLabel;
   IBOutlet UILabel                 * _questionIsContestMathLabel;

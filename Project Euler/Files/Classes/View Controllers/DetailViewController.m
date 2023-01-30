@@ -284,6 +284,12 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  if(_questionAndAnswer.usesBigInt){
+    _questionIsContestMathLabel.text = @"Uses Big Int";
+  }
+  else{
+    _questionIsContestMathLabel.text = @"No Big Int";
+  }
   if(_questionAndAnswer.isContestMath){
     _questionIsContestMathLabel.text = @"Contest Math";
   }
