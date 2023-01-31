@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="amN-FU-ZeV">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -692,6 +692,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses Big Int" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-Za-YRE">
+                                <rect key="frame" x="94" y="538" width="65.333333333333314" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="rqZ-Mi-Nuy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -710,6 +719,7 @@
                             <constraint firstItem="bFS-o8-Zlc" firstAttribute="trailing" secondItem="qIQ-XB-ApZ" secondAttribute="trailing" id="65x-zi-aZd"/>
                             <constraint firstItem="Ewd-cm-Ykd" firstAttribute="leading" secondItem="Qq1-jn-f9C" secondAttribute="leading" id="6uK-B3-jxE"/>
                             <constraint firstItem="24h-L5-Tf0" firstAttribute="width" secondItem="txf-We-Ad8" secondAttribute="width" id="6wO-0I-PS8"/>
+                            <constraint firstItem="ak1-Za-YRE" firstAttribute="leading" secondItem="vKG-Qr-etp" secondAttribute="trailing" constant="10" id="7qt-PM-dKc"/>
                             <constraint firstItem="zxl-ng-3Sy" firstAttribute="width" relation="lessThanOrEqual" secondItem="dz8-ta-DFM" secondAttribute="width" id="8TK-Vd-LYw"/>
                             <constraint firstItem="zxl-ng-3Sy" firstAttribute="centerX" secondItem="dz8-ta-DFM" secondAttribute="centerX" id="9BF-0l-Lko"/>
                             <constraint firstItem="5Ag-AW-pPG" firstAttribute="top" secondItem="JDy-qD-FLz" secondAttribute="bottom" constant="5" id="9UW-cP-Xv0"/>
@@ -790,6 +800,7 @@
                             <constraint firstItem="Qq1-jn-f9C" firstAttribute="leading" secondItem="NMG-Si-HvN" secondAttribute="leading" id="djz-DT-tlv"/>
                             <constraint firstItem="e4I-bk-1gI" firstAttribute="centerY" secondItem="hWS-r8-7Ea" secondAttribute="centerY" id="e9n-S7-e4f"/>
                             <constraint firstItem="24h-L5-Tf0" firstAttribute="leading" secondItem="JDy-qD-FLz" secondAttribute="trailing" id="eJZ-15-KaU"/>
+                            <constraint firstItem="ak1-Za-YRE" firstAttribute="centerY" secondItem="vKG-Qr-etp" secondAttribute="centerY" id="eSO-oX-RBs"/>
                             <constraint firstItem="zG2-Hd-Aci" firstAttribute="top" secondItem="mbe-8e-QRI" secondAttribute="bottom" constant="5" id="ef1-kb-zXa"/>
                             <constraint firstItem="atg-Ue-tqo" firstAttribute="leading" secondItem="wgk-g8-gAD" secondAttribute="trailing" id="ejW-CR-URa"/>
                             <constraint firstItem="wgk-g8-gAD" firstAttribute="centerY" secondItem="kEh-1z-WXH" secondAttribute="centerY" id="fIo-Zq-CsS"/>
@@ -878,6 +889,7 @@
                         <outlet property="_questionTextView" destination="68A-Dj-xoW" id="A2e-TC-hlY"/>
                         <outlet property="_questionTitleLabel" destination="FE8-Kb-SuB" id="nLp-Zo-BaZ"/>
                         <outlet property="_questionTrickRequiredLabel" destination="vKG-Qr-etp" id="xTV-MU-5e6"/>
+                        <outlet property="_questionUsesBigIntLabel" destination="ak1-Za-YRE" id="hLs-iM-IV0"/>
                         <outlet property="_questionUsesCustomObjectsLabel" destination="pYX-7g-1mf" id="MPd-zz-Alx"/>
                         <outlet property="_questionUsesCustomStructsLabel" destination="mbe-8e-QRI" id="CED-D6-E2y"/>
                         <outlet property="_questionUsesFunctionalProgrammingLabel" destination="yAJ-Tw-fsw" id="EpJ-cl-ncc"/>
