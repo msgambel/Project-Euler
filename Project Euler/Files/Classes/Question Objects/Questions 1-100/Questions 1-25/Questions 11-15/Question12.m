@@ -26,6 +26,7 @@
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Meh";
+  self.usesBigInt = NO;
   self.commentCount = @"41";
   self.attemptsCount = @"1";
   self.isChallenging = NO;
