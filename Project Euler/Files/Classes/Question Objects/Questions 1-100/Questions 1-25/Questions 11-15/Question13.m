@@ -33,6 +33,7 @@
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
+  self.usesBigInt = YES;
   self.commentCount = @"20";
   self.attemptsCount = @"1";
   self.isChallenging = NO;
