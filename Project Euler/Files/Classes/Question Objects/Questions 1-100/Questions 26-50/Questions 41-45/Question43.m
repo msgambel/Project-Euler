@@ -32,6 +32,7 @@
   self.solveTime = @"900";
   self.technique = @"Logic";
   self.difficulty = @"Medium";
+  self.usesBigInt = NO;
   self.commentCount = @"86";
   self.attemptsCount = @"1";
   self.isChallenging = YES;
