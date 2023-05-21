@@ -23,6 +23,7 @@
 @synthesize rating = _rating;
 @synthesize category = _category;
 @synthesize delegate = _delegate;
+@synthesize isUseful = _isUseful;
 @synthesize keywords = _keywords;
 @synthesize solveTime = _solveTime;
 @synthesize technique = _technique;
