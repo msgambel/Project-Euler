@@ -22,6 +22,7 @@
   self.number = @"2";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000,odd,positive,generated,previous";
   self.solveTime = @"60";
   self.technique = @"Recursion";
