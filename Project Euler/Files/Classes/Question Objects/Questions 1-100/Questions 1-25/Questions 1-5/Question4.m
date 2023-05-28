@@ -28,6 +28,7 @@
   self.number = @"4";
   self.rating = @"3";
   self.category = @"Combinations";
+  self.isUseful = YES;
   self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two,read,positive,made,from";
   self.solveTime = @"30";
   self.technique = @"Recursion";
