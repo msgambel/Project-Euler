@@ -22,6 +22,7 @@
   self.number = @"6";
   self.rating = @"4";
   self.category = @"Counting";
+  self.isUseful = YES;
   self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
   self.solveTime = @"30";
   self.technique = @"Math";
