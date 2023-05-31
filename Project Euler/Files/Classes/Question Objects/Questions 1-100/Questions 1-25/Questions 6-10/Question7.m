@@ -22,6 +22,7 @@
   self.number = @"7";
   self.rating = @"5";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"prime,listing,10001st,one,thousand,and,find,number,first,helper,method";
   self.solveTime = @"90";
   self.technique = @"Math";
