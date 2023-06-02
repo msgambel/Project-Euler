@@ -22,6 +22,7 @@
   self.number = @"9";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers,integers,exists,divisible,identity";
   self.solveTime = @"30";
   self.technique = @"Math";
