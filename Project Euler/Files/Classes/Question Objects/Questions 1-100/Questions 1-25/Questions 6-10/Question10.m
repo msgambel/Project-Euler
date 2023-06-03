@@ -22,6 +22,7 @@
   self.number = @"10";
   self.rating = @"3";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array,long,int";
   self.solveTime = @"90";
   self.technique = @"Recursion";
