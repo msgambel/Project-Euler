@@ -22,6 +22,7 @@
   self.number = @"12";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated,prime,factors";
   self.solveTime = @"60";
   self.technique = @"Math";
