@@ -22,6 +22,7 @@
   self.number = @"14";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"chain,collatz,longest,sequence,iterative,positive,integers,one,million,1000000,starting,number,terms,proved,problem,allowed,above";
   self.solveTime = @"90";
   self.technique = @"Recursion";
