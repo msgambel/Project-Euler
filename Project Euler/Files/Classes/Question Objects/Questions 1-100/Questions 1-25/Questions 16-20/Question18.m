@@ -23,6 +23,7 @@
   self.number = @"18";
   self.rating = @"5";
   self.category = @"Sums";
+  self.isUseful = YES;
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,15,fifteen,rows,simple,challenge,67,sixty,seven,top,bottom";
   self.solveTime = @"120";
   self.technique = @"Recursion";
