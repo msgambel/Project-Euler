@@ -22,6 +22,7 @@
   self.number = @"22";
   self.rating = @"5";
   self.category = @"Sums";
+  self.isUseful = NO;
   self.keywords = @"alphabetical,order,import,names,scores,first,sum,total,5000,five,thousand,sorting,file,position,working";
   self.solveTime = @"90";
   self.technique = @"Recursion";
