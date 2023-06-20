@@ -29,6 +29,7 @@
   self.number = @"27";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value,produces,number,helper,methods";
   self.solveTime = @"30";
   self.technique = @"Recursion";
