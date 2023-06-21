@@ -22,6 +22,7 @@
   self.number = @"28";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum,numbers,formed,same,way";
   self.solveTime = @"90";
   self.technique = @"Recursion";
