@@ -24,6 +24,7 @@
   self.number = @"29";
   self.rating = @"3";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated,pairs,one,hundred,100";
   self.solveTime = @"60";
   self.technique = @"Math";
