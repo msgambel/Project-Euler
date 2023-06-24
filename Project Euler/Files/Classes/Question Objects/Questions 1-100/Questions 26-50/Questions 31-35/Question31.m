@@ -30,6 +30,7 @@
   self.number = @"31";
   self.rating = @"4";
   self.category = @"Sums";
+  self.isUseful = YES;
   self.keywords = @"pounds,coins,sums,currency,different,unique,ways,two,2,number,combinations,England,pence,general,circulation";
   self.solveTime = @"150";
   self.technique = @"Functional";
