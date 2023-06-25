@@ -22,6 +22,7 @@
   self.number = @"32";
   self.rating = @"4";
   self.category = @"Sums";
+  self.isUseful = NO;
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
   self.solveTime = @"60";
   self.technique = @"Recursion";
