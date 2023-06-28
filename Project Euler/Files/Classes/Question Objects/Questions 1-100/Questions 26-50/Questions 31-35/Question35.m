@@ -29,6 +29,7 @@
   self.number = @"35";
   self.rating = @"5";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd,hash,table";
   self.solveTime = @"150";
   self.technique = @"Recursion";
