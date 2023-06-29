@@ -28,6 +28,7 @@
   self.number = @"36";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less,leading,zeros";
   self.solveTime = @"150";
   self.technique = @"Recursion";
