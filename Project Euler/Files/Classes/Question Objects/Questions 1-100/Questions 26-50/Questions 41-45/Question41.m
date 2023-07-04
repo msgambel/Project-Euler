@@ -23,6 +23,7 @@
   self.number = @"41";
   self.rating = @"4";
   self.category = @"Primes";
+  self.isUseful = NO;
   self.keywords = @"pandigital,prime,largest,digit,number,exists,exactly,primality,test";
   self.solveTime = @"600";
   self.technique = @"Recursion";
