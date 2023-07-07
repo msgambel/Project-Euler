@@ -22,6 +22,7 @@
   self.number = @"44";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"pair,pentagonal,numbers,sum,difference,generated,formula,recursion,difference,quadratic,equations,factoring,radicals";
   self.solveTime = @"120";
   self.technique = @"Math";
