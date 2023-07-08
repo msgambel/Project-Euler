@@ -22,6 +22,7 @@
   self.number = @"45";
   self.rating = @"4";
   self.category = @"Combinations";
+  self.isUseful = NO;
   self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number,formed,integer,odd,largest";
   self.solveTime = @"300";
   self.technique = @"Math";
