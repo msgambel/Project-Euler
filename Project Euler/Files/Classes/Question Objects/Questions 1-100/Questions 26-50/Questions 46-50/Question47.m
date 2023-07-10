@@ -22,6 +22,7 @@
   self.number = @"47";
   self.rating = @"4";
   self.category = @"Primes";
+  self.isUseful = NO;
   self.keywords = @"consecutive,four,4,distinct,prime,factors,numbers,first,integers,maximum,size";
   self.solveTime = @"120";
   self.technique = @"Recursion";
