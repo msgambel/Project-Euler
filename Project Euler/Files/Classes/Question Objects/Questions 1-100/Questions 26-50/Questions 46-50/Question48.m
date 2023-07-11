@@ -23,6 +23,7 @@
   self.number = @"48";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"sum,powers,series,ten,10,last,digits,self,modular,exponentiation,bigint,radix,find,modulo,1000";
   self.solveTime = @"30";
   self.technique = @"Math";
