@@ -23,6 +23,7 @@
   self.number = @"53";
   self.rating = @"5";
   self.category = @"Combinations";
+  self.isUseful = YES;
   self.keywords = @"choose,sum,combinatoric,selections,not,greater,distinct,exceeds,one,million,1000000,value,selecting";
   self.solveTime = @"60";
   self.technique = @"Math";
