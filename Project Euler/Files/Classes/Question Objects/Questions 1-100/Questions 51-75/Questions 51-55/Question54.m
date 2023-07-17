@@ -23,6 +23,7 @@
   self.number = @"54";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"poker,hands,two,player,import,rank,compare,5,five,clear,winner,specific,order";
   self.solveTime = @"300";
   self.technique = @"OOP";
