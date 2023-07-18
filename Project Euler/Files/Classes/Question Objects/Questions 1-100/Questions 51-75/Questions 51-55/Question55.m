@@ -23,6 +23,7 @@
   self.number = @"55";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"lychrel,numbers,palindrome,sum,add,reverse,iterations,below,10000,ten,thousand,50,fifty,palindromic,theoretical,nature,producing";
   self.solveTime = @"300";
   self.technique = @"Recursion";
