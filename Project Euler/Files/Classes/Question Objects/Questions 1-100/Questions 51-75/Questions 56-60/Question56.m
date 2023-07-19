@@ -23,6 +23,7 @@
   self.number = @"56";
   self.rating = @"3";
   self.category = @"Combinations";
+  self.isUseful = YES;
   self.keywords = @"powers,powerful,digital,sum,maximum,massive,natural,numbers,googol,considering,form";
   self.solveTime = @"30";
   self.technique = @"Recursion";
