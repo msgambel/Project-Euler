@@ -22,6 +22,7 @@
   self.number = @"58";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"spiralling,ratio,primes,both,diagonals,anticlockwise,square,side,length,formed,layer,wrapped,falls,below,10,ten,percent";
   self.solveTime = @"60";
   self.technique = @"Recursion";
