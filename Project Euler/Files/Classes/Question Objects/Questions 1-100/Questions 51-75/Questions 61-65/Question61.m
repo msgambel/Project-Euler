@@ -29,6 +29,7 @@
   self.number = @"61";
   self.rating = @"5";
   self.category = @"Sums";
+  self.isUseful = NO;
   self.keywords = @"triangle,square,pentagonal,hexagonal,heptagonal,octagonal,cyclic,set,numbers,polygonal,different,number,formulae,represented,set,figurate,generated";
   self.solveTime = @"90";
   self.technique = @"Recursion";
