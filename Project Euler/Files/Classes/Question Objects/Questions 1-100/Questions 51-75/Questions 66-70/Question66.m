@@ -22,6 +22,7 @@
   self.number = @"66";
   self.rating = @"3";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"diophantine,equations,continued,fractions,expansions,pells,periods,minimal,solutions,largest,value,quadratic,length";
   self.solveTime = @"300";
   self.technique = @"Math";
