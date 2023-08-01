@@ -22,6 +22,7 @@
   self.number = @"69";
   self.rating = @"3";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"totient,maximum,phi,euler,function,relatively,primes,one,million,1000000,less,than,numbers,produces,value,smallest,below";
   self.solveTime = @"30";
   self.technique = @"Math";
