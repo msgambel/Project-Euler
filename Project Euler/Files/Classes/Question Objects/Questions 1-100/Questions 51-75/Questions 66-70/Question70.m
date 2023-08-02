@@ -23,6 +23,7 @@
   self.number = @"70";
   self.rating = @"2";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
   self.solveTime = @"90";
   self.technique = @"Recursion";
