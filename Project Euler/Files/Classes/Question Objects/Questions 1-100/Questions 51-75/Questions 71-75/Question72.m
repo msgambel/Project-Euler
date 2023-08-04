@@ -23,6 +23,7 @@
   self.number = @"72";
   self.rating = @"3";
   self.category = @"Counting";
+  self.isUseful = YES;
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,list,set,elements,contained";
   self.solveTime = @"90";
   self.technique = @"Math";
