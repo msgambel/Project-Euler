@@ -22,6 +22,7 @@
   self.number = @"74";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"digit,factorial,chains,length,loop,sixty,60,unique,property,non-repeating,terms,contain,exactly";
   self.solveTime = @"30";
   self.technique = @"Recursion";
