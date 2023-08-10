@@ -23,6 +23,7 @@
   self.number = @"78";
   self.rating = @"3";
   self.category = @"Combinations";
+  self.isUseful = YES;
   self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million,least,value";
   self.solveTime = @"300";
   self.technique = @"Math";
