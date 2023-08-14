@@ -22,6 +22,7 @@
   self.number = @"82";
   self.rating = @"3";
   self.category = @"Combinations";
+  self.isUseful = YES;
   self.keywords = @"matrix,column,minimal,path,sum,import,file,right,left";
   self.solveTime = @"600";
   self.technique = @"Recursion";
