@@ -22,6 +22,7 @@
   self.number = @"87";
   self.rating = @"4";
   self.category = @"Sums";
+  self.isUseful = NO;
   self.keywords = @"prime,square,cube,fourth,power,sum,count,triples,count,50000000,fifty,million,below,expressed,numbers";
   self.solveTime = @"300";
   self.technique = @"Recursion";
