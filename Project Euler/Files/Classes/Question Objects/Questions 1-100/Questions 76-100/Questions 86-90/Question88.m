@@ -22,6 +22,7 @@
   self.number = @"88";
   self.rating = @"5";
   self.category = @"Primes";
+  self.isUseful = NO;
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
   self.solveTime = @"300";
   self.technique = @"Recursion";
