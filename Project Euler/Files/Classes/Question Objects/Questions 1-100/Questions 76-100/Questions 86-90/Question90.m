@@ -28,6 +28,7 @@
   self.number = @"90";
   self.rating = @"4";
   self.category = @"Combinations";
+  self.isUseful = NO;
   self.keywords = @"cube,digit,pairs,distinct,formations,arrangements,square,numbers,different,positions,side,6,six,2,two,displayed,forming";
   self.solveTime = @"300";
   self.technique = @"Recursion";
