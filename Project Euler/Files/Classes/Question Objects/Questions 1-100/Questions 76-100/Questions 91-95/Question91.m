@@ -22,6 +22,7 @@
   self.number = @"91";
   self.rating = @"4";
   self.category = @"Counting";
+  self.isUseful = NO;
   self.keywords = @"right,triangles,with,integer,coordinates,vectors,inner,product,orthogonal,points,formed";
   self.solveTime = @"30";
   self.technique = @"Recursion";
