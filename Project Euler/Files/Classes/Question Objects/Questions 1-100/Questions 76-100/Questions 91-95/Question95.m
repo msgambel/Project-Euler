@@ -23,6 +23,7 @@
   self.number = @"95";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = YES;
   self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000,element,exceeding";
   self.solveTime = @"300";
   self.technique = @"Recursion";
