@@ -23,6 +23,7 @@
   self.number = @"96";
   self.rating = @"5";
   self.category = @"Combinations";
+  self.isUseful = YES;
   self.keywords = @"sudoku,recursive,import,japanese,grid";
   self.solveTime = @"900";
   self.technique = @"OOP";
