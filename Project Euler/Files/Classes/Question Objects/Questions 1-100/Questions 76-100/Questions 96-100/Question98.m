@@ -29,6 +29,7 @@
   self.number = @"98";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
   self.solveTime = @"300";
   self.technique = @"Recursion";
