@@ -22,6 +22,7 @@
   self.number = @"99";
   self.rating = @"4";
   self.category = @"Powers";
+  self.isUseful = NO;
   self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum,line,number,file,greatest";
   self.solveTime = @"30";
   self.technique = @"Math";
