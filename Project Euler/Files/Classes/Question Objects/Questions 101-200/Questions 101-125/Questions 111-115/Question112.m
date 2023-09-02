@@ -30,6 +30,7 @@
   self.number = @"112";
   self.rating = @"4";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
   self.solveTime = @"600";
   self.technique = @"Recursion";
