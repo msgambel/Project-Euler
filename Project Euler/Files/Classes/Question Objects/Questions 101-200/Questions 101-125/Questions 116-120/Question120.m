@@ -22,6 +22,7 @@
   self.number = @"120";
   self.rating = @"5";
   self.category = @"Sums";
+  self.isUseful = YES;
   self.keywords = @"square,remainders,modulo,polynomial,expansion,rmax,sum";
   self.solveTime = @"60";
   self.technique = @"Math";
