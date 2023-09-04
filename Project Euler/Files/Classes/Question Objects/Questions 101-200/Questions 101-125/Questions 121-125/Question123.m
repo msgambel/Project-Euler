@@ -22,6 +22,7 @@
   self.number = @"123";
   self.rating = @"5";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
   self.solveTime = @"90";
   self.technique = @"Math";
