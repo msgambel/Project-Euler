@@ -22,6 +22,7 @@
   self.number = @"131";
   self.rating = @"5";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"primes,cube,partnership,factoring,positive,integer,property,difference,of,cubes,one,million,1000000,value,unique";
   self.solveTime = @"60";
   self.technique = @"Math";
