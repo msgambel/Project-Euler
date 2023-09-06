@@ -22,6 +22,7 @@
   self.number = @"187";
   self.rating = @"4";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"semiprimes,two,2,prime,factors,composites,distinct";
   self.solveTime = @"30";
   self.technique = @"Recursion";
