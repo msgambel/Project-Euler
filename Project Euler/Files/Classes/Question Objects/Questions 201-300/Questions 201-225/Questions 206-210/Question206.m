@@ -22,6 +22,7 @@
   self.number = @"206";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"concealed,square,perfect,positive,integer";
   self.solveTime = @"30";
   self.technique = @"Recursion";
