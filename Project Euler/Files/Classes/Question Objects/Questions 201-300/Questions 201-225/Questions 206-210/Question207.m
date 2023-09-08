@@ -22,6 +22,7 @@
   self.number = @"207";
   self.rating = @"5";
   self.category = @"Patterns";
+  self.isUseful = NO;
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
   self.solveTime = @"60";
   self.technique = @"Math";
