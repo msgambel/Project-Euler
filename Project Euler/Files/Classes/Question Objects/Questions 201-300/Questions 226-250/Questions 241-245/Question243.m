@@ -22,6 +22,7 @@
   self.number = @"243";
   self.rating = @"5";
   self.category = @"Primes";
+  self.isUseful = YES;
   self.keywords = @"resilience,totient,function,unique,prime,factors,smallest";
   self.solveTime = @"300";
   self.technique = @"Math";
