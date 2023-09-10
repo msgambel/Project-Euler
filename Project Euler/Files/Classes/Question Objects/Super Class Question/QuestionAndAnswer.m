@@ -25,6 +25,7 @@
 @synthesize delegate = _delegate;
 @synthesize isUseful = _isUseful;
 @synthesize keywords = _keywords;
+@synthesize loadsFile = _loadsFile;
 @synthesize solveTime = _solveTime;
 @synthesize technique = _technique;
 @synthesize difficulty = _difficulty;

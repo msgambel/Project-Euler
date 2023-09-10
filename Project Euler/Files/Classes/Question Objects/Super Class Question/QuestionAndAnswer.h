@@ -13,6 +13,7 @@
   id <QuestionAndAnswerDelegate> __weak   _delegate;
   BOOL                                    _isFun;
   BOOL                                    _isUseful;
+  BOOL                                    _loadsFile;
   BOOL                                    _usesBigInt;
   BOOL                                    _isComputing;
   BOOL                                    _isChallenging;
@@ -55,6 +56,7 @@
 @property (nonatomic, weak)   id <QuestionAndAnswerDelegate>   delegate;
 @property (nonatomic, assign) BOOL                             isFun;
 @property (nonatomic, assign) BOOL                             isUseful;
+@property (nonatomic, assign) BOOL                             loadsFile;
 @property (nonatomic, assign) BOOL                             usesBigInt;
 @property (nonatomic, assign) BOOL                             isComputing;
 @property (nonatomic, assign) BOOL                             isChallenging;
