@@ -290,6 +290,12 @@
   else{
     _questionIsUsefulLabel.text = @"Not Useful";
   }
+  if(_questionAndAnswer.loadsFile){
+    _questionLoadsFileLabel.text = @"Loads a File";
+  }
+  else{
+    _questionLoadsFileLabel.text = @"No File";
+  }
   if(_questionAndAnswer.usesBigInt){
     _questionUsesBigIntLabel.text = @"Uses Big Int";
   }
