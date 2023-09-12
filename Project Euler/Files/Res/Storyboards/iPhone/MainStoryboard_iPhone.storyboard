@@ -710,6 +710,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loads a File" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVQ-30-KV2">
+                                <rect key="frame" x="101" y="558" width="64.333333333333314" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="FVR-AA-Gfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -769,6 +778,7 @@
                             <constraint firstItem="S5r-gN-S6P" firstAttribute="leading" secondItem="68A-Dj-xoW" secondAttribute="leading" id="Ntp-Tr-un9"/>
                             <constraint firstItem="966-p5-ABN" firstAttribute="top" secondItem="QuP-pa-30Z" secondAttribute="bottom" id="O9L-IB-IBC"/>
                             <constraint firstItem="dz8-ta-DFM" firstAttribute="leading" secondItem="68A-Dj-xoW" secondAttribute="leading" id="OVb-Lw-XT6"/>
+                            <constraint firstItem="YVQ-30-KV2" firstAttribute="leading" secondItem="ZZV-aS-pHY" secondAttribute="trailing" constant="10" id="OYI-1y-LC0"/>
                             <constraint firstItem="f5F-cQ-hry" firstAttribute="width" secondItem="JDy-qD-FLz" secondAttribute="width" id="PD6-mR-Mfy"/>
                             <constraint firstItem="NMG-Si-HvN" firstAttribute="top" secondItem="2bm-jV-Hoo" secondAttribute="bottom" id="PJr-40-OOo"/>
                             <constraint firstItem="dh1-gQ-jsp" firstAttribute="centerY" secondItem="Dfa-Xv-Ph6" secondAttribute="centerY" id="PUw-Ew-iVr"/>
@@ -792,6 +802,7 @@
                             <constraint firstItem="9AR-JL-Vxn" firstAttribute="centerY" secondItem="zG2-Hd-Aci" secondAttribute="centerY" id="XoN-5V-OZ6"/>
                             <constraint firstItem="wgk-g8-gAD" firstAttribute="leading" secondItem="kEh-1z-WXH" secondAttribute="trailing" id="YSf-ef-mwZ"/>
                             <constraint firstItem="zG2-Hd-Aci" firstAttribute="trailing" secondItem="atg-Ue-tqo" secondAttribute="trailing" id="YfD-jR-a3s"/>
+                            <constraint firstItem="YVQ-30-KV2" firstAttribute="centerY" secondItem="ZZV-aS-pHY" secondAttribute="centerY" id="Z0G-LN-lOt"/>
                             <constraint firstItem="bFS-o8-Zlc" firstAttribute="top" secondItem="arC-iP-2qS" secondAttribute="bottom" constant="5" id="ZOm-Ez-b2W"/>
                             <constraint firstItem="S9G-2W-gdc" firstAttribute="top" secondItem="DHb-ba-bDJ" secondAttribute="bottom" id="a7F-H6-jLS"/>
                             <constraint firstItem="vKG-Qr-etp" firstAttribute="centerY" secondItem="Dfa-Xv-Ph6" secondAttribute="centerY" id="a9b-5d-zuQ"/>
@@ -890,6 +901,7 @@
                         <outlet property="_questionIsFunImageView" destination="caE-Ja-Xzm" id="gn2-9T-XFf"/>
                         <outlet property="_questionIsUsefulLabel" destination="dh1-gQ-jsp" id="6t1-vK-tNl"/>
                         <outlet property="_questionLearnedSomethingNewLabel" destination="XIE-3X-uRY" id="S3S-ea-n1b"/>
+                        <outlet property="_questionLoadsFileLabel" destination="YVQ-30-KV2" id="kV5-kq-qXd"/>
                         <outlet property="_questionNumberLabel" destination="RPU-6n-VPf" id="6Fl-d2-OZH"/>
                         <outlet property="_questionRatingLabel" destination="S9G-2W-gdc" id="FmI-0l-WjL"/>
                         <outlet property="_questionRelatedToAnotherQuestionLabel" destination="arC-iP-2qS" id="Bba-ZN-Zx1"/>
