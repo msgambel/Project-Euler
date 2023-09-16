@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"prime,factors,largest,natural,numbers,sieve,maximum,square,root";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
