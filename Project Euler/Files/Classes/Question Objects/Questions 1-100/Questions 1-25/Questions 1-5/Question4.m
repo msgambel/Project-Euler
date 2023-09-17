@@ -30,6 +30,7 @@
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two,read,positive,made,from";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
