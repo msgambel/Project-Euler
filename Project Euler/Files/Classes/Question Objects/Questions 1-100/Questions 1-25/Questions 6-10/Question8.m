@@ -31,6 +31,7 @@
   self.category = @"Combinations";
   self.isUseful = NO;
   self.keywords = @"largest,product,in,a,series,five,5,consecutive,digits,1000,one,thousand,greatest,sub,string,number,search";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
