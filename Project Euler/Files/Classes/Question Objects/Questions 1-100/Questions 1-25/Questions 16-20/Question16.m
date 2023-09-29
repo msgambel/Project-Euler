@@ -25,6 +25,7 @@
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"sum,power,digits,big,int,2,two,1000,one,thousand,to,the,of,multiplication,string,helper,method";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
