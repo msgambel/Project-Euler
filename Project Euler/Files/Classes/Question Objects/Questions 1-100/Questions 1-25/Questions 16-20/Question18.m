@@ -25,6 +25,7 @@
   self.category = @"Sums";
   self.isUseful = YES;
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,15,fifteen,rows,simple,challenge,67,sixty,seven,top,bottom";
+  self.loadsFile = YES;
   self.solveTime = @"120";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
