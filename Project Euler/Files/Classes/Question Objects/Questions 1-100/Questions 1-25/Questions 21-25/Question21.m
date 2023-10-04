@@ -25,6 +25,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"divisors,proper,amicable,pair,numbers,sum,10000,ten,thousand,evalute,under,prime,factorization";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
