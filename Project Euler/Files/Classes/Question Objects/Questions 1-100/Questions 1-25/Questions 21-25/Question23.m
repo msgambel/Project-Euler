@@ -25,6 +25,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"factorization,divisors,primes,perfect,number,non,abundant,sums,positive,integers,proper,less,than,limit,non-abundant,written,combinations";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
