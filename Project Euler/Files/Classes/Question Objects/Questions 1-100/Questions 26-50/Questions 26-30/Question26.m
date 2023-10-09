@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"division,fractional,part,unit,decimal,representation,recurring,cycles,longest,reciprocal,denominators,contains,1000";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
