@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum,numbers,formed,same,way";
+  self.loadsFile = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
