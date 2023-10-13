@@ -30,6 +30,7 @@
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"sum,powers,digits,fourth,fifth,written,total,200000,two,hundred,thousand,5,five";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
