@@ -24,6 +24,7 @@
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
