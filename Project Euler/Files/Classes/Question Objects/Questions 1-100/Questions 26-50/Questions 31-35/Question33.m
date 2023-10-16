@@ -30,6 +30,7 @@
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"division,fractions,curious,numerator,denominator,digit,cancelling,lowest,common,terms,product";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
