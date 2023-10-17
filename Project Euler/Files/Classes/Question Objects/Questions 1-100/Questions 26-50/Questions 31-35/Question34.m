@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
