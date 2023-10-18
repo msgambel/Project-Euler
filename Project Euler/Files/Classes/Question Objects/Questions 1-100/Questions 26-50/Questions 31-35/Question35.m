@@ -31,6 +31,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd,hash,table";
+  self.loadsFile = NO;
   self.solveTime = @"150";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
