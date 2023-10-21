@@ -24,6 +24,7 @@
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"pandigital,multiples,digit,concatenated,product,integer,formed,largest,multiply,lexographic,number";
+  self.loadsFile = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
