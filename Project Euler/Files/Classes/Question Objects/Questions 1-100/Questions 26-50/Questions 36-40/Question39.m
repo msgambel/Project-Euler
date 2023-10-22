@@ -24,6 +24,7 @@
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"pythagorean,triple,perimeter,right,angle,length,sides,maximized,integral,1000,one,thousand,solutions,integer,triangles,pair,maximum";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
