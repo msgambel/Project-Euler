@@ -25,6 +25,7 @@
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"pandigital,prime,largest,digit,number,exists,exactly,primality,test";
+  self.loadsFile = NO;
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
