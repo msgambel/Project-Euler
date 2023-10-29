@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"christian,goldbach's,other,conjecture,prime,square,sum,twice,odd,composite,number,false,smallest";
+  self.loadsFile = NO;
   self.solveTime = @"300";
   self.technique = @"Math";
   self.difficulty = @"Medium";
