@@ -25,6 +25,7 @@
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"sum,powers,series,ten,10,last,digits,self,modular,exponentiation,bigint,radix,find,modulo,1000";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
