@@ -25,6 +25,7 @@
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"poker,hands,two,player,import,rank,compare,5,five,clear,winner,specific,order";
+  self.loadsFile = YES;
   self.solveTime = @"300";
   self.technique = @"OOP";
   self.difficulty = @"Easy";
