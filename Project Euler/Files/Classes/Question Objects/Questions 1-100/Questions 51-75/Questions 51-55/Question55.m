@@ -25,6 +25,7 @@
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"lychrel,numbers,palindrome,sum,add,reverse,iterations,below,10000,ten,thousand,50,fifty,palindromic,theoretical,nature,producing";
+  self.loadsFile = NO;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
