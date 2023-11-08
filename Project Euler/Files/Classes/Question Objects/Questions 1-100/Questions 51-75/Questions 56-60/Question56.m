@@ -25,6 +25,7 @@
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"powers,powerful,digital,sum,maximum,massive,natural,numbers,googol,considering,form";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
