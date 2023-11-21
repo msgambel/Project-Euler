@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"totient,maximum,phi,euler,function,relatively,primes,one,million,1000000,less,than,numbers,produces,value,smallest,below";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
