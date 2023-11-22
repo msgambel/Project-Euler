@@ -25,6 +25,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
+  self.loadsFile = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
