@@ -25,6 +25,7 @@
   self.category = @"Counting";
   self.isUseful = YES;
   self.keywords = @"counting,fractions,reduced,proper,ascending,order,interval,positive,integers,HCF,sorted,euler,totient";
+  self.loadsFile = NO;
   self.solveTime = @"300";
   self.technique = @"Math";
   self.difficulty = @"Medium";
