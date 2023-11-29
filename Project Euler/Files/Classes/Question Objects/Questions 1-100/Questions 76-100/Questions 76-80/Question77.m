@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"primes,summations,five,thousand,5000,positive,different,permutations,ways,written,as,sum,possible";
+  self.loadsFile = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
