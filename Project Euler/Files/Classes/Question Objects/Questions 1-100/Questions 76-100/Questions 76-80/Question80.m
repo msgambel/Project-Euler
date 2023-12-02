@@ -25,6 +25,7 @@
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"irrational,square,root,digital,expansion,sums,natural,number,infinite,total,digits";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Easy";
