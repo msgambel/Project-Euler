@@ -24,6 +24,7 @@
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"minimal,product,sum,recursive,product,k,complete,set,product-sum";
+  self.loadsFile = NO;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
