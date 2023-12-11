@@ -33,6 +33,7 @@
   self.category = @"Sums";
   self.isUseful = YES;
   self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand,minimal,form,consecutive,identical";
+  self.loadsFile = YES;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
