@@ -25,6 +25,7 @@
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"sudoku,recursive,import,japanese,grid";
+  self.loadsFile = NO;
   self.solveTime = @"900";
   self.technique = @"OOP";
   self.difficulty = @"Medium";
