@@ -25,6 +25,7 @@
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"large,prime,non,mersenne,last,digits,big,int,one,million,1000000,ten,10,mod,radix";
+  self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
