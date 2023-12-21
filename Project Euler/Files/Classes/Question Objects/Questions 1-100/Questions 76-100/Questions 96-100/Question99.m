@@ -24,6 +24,7 @@
   self.category = @"Powers";
   self.isUseful = NO;
   self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum,line,number,file,greatest";
+  self.loadsFile = YES;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
