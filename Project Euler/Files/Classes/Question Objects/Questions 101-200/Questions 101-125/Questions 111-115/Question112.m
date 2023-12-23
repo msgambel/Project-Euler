@@ -32,6 +32,7 @@
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
+  self.loadsFile = NO;
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
