@@ -24,6 +24,7 @@
   self.category = @"Sums";
   self.isUseful = YES;
   self.keywords = @"square,remainders,modulo,polynomial,expansion,rmax,sum";
+  self.loadsFile = NO;
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Easy";
