@@ -16,6 +16,7 @@
   BOOL                                    _loadsFile;
   BOOL                                    _usesBigInt;
   BOOL                                    _isComputing;
+  BOOL                                    _recommended;
   BOOL                                    _isChallenging;
   BOOL                                    _isContestMath;
   BOOL                                    _trickRequired;
@@ -59,6 +60,7 @@
 @property (nonatomic, assign) BOOL                             loadsFile;
 @property (nonatomic, assign) BOOL                             usesBigInt;
 @property (nonatomic, assign) BOOL                             isComputing;
+@property (nonatomic, assign) BOOL                             recommended;
 @property (nonatomic, assign) BOOL                             isChallenging;
 @property (nonatomic, assign) BOOL                             isContestMath;
 @property (nonatomic, assign) BOOL                             trickRequired;

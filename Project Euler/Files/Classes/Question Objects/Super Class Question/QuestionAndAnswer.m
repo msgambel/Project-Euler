@@ -31,6 +31,7 @@
 @synthesize difficulty = _difficulty;
 @synthesize usesBigInt = _usesBigInt;
 @synthesize isComputing = _isComputing;
+@synthesize recommended = _recommended;
 @synthesize commentCount = _commentCount;
 @synthesize attemptsCount = _attemptsCount;
 @synthesize isChallenging = _isChallenging;
