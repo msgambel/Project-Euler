@@ -302,6 +302,12 @@
   else{
     _questionUsesBigIntLabel.text = @"No Big Int";
   }
+  if(_questionAndAnswer.recommended){
+    _questionRecommendedLabel.text = @"Recommended";
+  }
+  else{
+    _questionRecommendedLabel.text = @"Not Recommended";
+  }
   if(_questionAndAnswer.isContestMath){
     _questionIsContestMathLabel.text = @"Contest Math";
   }
