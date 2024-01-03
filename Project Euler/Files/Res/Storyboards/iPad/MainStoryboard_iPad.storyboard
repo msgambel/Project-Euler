@@ -529,6 +529,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recommended" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTD-qs-RrP">
+                                <rect key="frame" x="428" y="665" width="94.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="5X2-8o-y4m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -702,6 +711,7 @@
                             <constraint firstItem="Czp-Rq-whb" firstAttribute="width" secondItem="XFI-qK-zkS" secondAttribute="width" id="pwN-2e-wTy"/>
                             <constraint firstItem="vEe-Fy-PhA" firstAttribute="leading" secondItem="nD9-xe-4ct" secondAttribute="leading" id="qkh-eS-Rd6"/>
                             <constraint firstItem="fMM-xJ-vKr" firstAttribute="centerY" secondItem="Iga-i9-CLu" secondAttribute="centerY" id="sOy-Pd-6gn"/>
+                            <constraint firstItem="LTD-qs-RrP" firstAttribute="centerY" secondItem="oNf-8U-tMN" secondAttribute="centerY" id="tHF-Sr-QDz"/>
                             <constraint firstItem="Iga-i9-CLu" firstAttribute="centerY" secondItem="BmV-B2-8Zi" secondAttribute="centerY" id="tI4-zW-MO0"/>
                             <constraint firstItem="ahj-MO-job" firstAttribute="height" secondItem="Zd6-rA-63A" secondAttribute="height" id="tLO-ea-sZ4"/>
                             <constraint firstItem="woE-7s-PsG" firstAttribute="top" secondItem="nD9-xe-4ct" secondAttribute="bottom" constant="10" id="tNb-wG-AIN"/>
@@ -718,6 +728,7 @@
                             <constraint firstItem="txZ-WG-Fep" firstAttribute="height" secondItem="XFI-qK-zkS" secondAttribute="height" id="wTF-CH-YlX"/>
                             <constraint firstItem="nD9-xe-4ct" firstAttribute="leading" secondItem="4qW-Fn-TSD" secondAttribute="leading" id="wVC-3w-GgV"/>
                             <constraint firstItem="YLQ-vE-41d" firstAttribute="centerY" secondItem="zjA-dd-7Qo" secondAttribute="centerY" id="xQO-wI-DGX"/>
+                            <constraint firstItem="LTD-qs-RrP" firstAttribute="leading" secondItem="oNf-8U-tMN" secondAttribute="trailing" constant="10" id="xkn-k7-Xpb"/>
                             <constraint firstItem="33M-Vd-gdL" firstAttribute="leading" secondItem="i0t-I8-EKv" secondAttribute="trailing" id="xrF-Hk-Yig"/>
                             <constraint firstItem="04Z-Ut-Rdq" firstAttribute="centerY" secondItem="Zd6-rA-63A" secondAttribute="centerY" id="yDH-FV-PAu"/>
                             <constraint firstItem="ZuV-Iy-5nm" firstAttribute="trailing" secondItem="nD9-xe-4ct" secondAttribute="trailing" id="yJM-Mf-iJA"/>
@@ -756,6 +767,7 @@
                         <outlet property="_questionLoadsFileLabel" destination="oNf-8U-tMN" id="4hD-8O-0IU"/>
                         <outlet property="_questionNumberLabel" destination="1ZD-tI-A3W" id="XG8-kq-dP9"/>
                         <outlet property="_questionRatingLabel" destination="Q98-lK-sSf" id="oaW-zx-sG2"/>
+                        <outlet property="_questionRecommendedLabel" destination="LTD-qs-RrP" id="RXo-6Z-sZ2"/>
                         <outlet property="_questionRelatedToAnotherQuestionLabel" destination="25I-PB-2wO" id="uta-Z8-dUf"/>
                         <outlet property="_questionRequiresMathematicsLabel" destination="fMM-xJ-vKr" id="ewo-fe-3gy"/>
                         <outlet property="_questionShouldInvestigateFurtherLabel" destination="24u-Kj-gao" id="0DA-yu-yno"/>
