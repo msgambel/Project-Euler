@@ -29,6 +29,7 @@
   self.technique = @"Math";
   self.difficulty = @"Easy";
   self.usesBigInt = NO;
+  self.recommended = YES;
   self.commentCount = @"45";
   self.attemptsCount = @"1";
   self.isChallenging = YES;
