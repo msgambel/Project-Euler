@@ -30,6 +30,7 @@
   self.technique = @"OOP";
   self.difficulty = @"Medium";
   self.usesBigInt = NO;
+  self.recommended = YES;
   self.commentCount = @"60";
   self.attemptsCount = @"5";
   self.isChallenging = YES;
