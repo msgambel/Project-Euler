@@ -37,6 +37,7 @@
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
   self.usesBigInt = NO;
+  self.recommended = NO;
   self.commentCount = @"55";
   self.attemptsCount = @"2";
   self.isChallenging = YES;
