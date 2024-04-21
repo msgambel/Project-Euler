@@ -38,6 +38,7 @@
 @synthesize isContestMath = _isContestMath;
 @synthesize startedOnDate = _startedOnDate;
 @synthesize trickRequired = _trickRequired;
+@synthesize usesRecursion = _usesRecursion;
 @synthesize educationLevel = _educationLevel;
 @synthesize solvableByHand = _solvableByHand;
 @synthesize canBeSimplified = _canBeSimplified;
