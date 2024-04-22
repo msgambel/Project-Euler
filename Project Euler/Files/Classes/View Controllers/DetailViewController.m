@@ -320,6 +320,12 @@
   else{
     _questionTrickRequiredLabel.text = @"No Trick Required";
   }
+  if(_questionAndAnswer.usesRecursion){
+    _questionUsesRecursionLabel.text = @"Uses Recursion";
+  }
+  else{
+    _questionUsesRecursionLabel.text = @"No Recursion";
+  }
   if(_questionAndAnswer.solvableByHand){
     _questionSolvableByHandLabel.text = @"Solvable By Hand";
   }

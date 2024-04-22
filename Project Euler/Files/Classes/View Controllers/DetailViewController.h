@@ -32,6 +32,7 @@
   IBOutlet UILabel                 * _questionAttemptsCountLabel;
   IBOutlet UILabel                 * _questionIsContestMathLabel;
   IBOutlet UILabel                 * _questionTrickRequiredLabel;
+  IBOutlet UILabel                 * _questionUsesRecursionLabel;
   IBOutlet UILabel                 * _questionEducationLevelLabel;
   IBOutlet UILabel                 * _questionSolvableByHandLabel;
   IBOutlet UILabel                 * _questionCanBeSimplifiedLabel;
