@@ -43,6 +43,7 @@
   self.isContestMath = NO;
   self.startedOnDate = @"13/01/13";
   self.trickRequired = NO;
+  self.usesRecursion = YES;
   self.educationLevel = @"Elementary";
   self.solvableByHand = NO;
   self.canBeSimplified = NO;
