@@ -392,7 +392,7 @@
   else{
     _questionUsesFunctionalProgrammingLabel.text = @"No Functional Programming";
   }
-  _questionTextView.text = _questionAndAnswer.text;
+  _questionTextView.text = [NSString stringWithFormat:@"%@\n\nSummary:\n\n%@",  _questionAndAnswer.text, _questionAndAnswer.summary];
   _questionDateLabel.text = _questionAndAnswer.date;
   _questionTitleLabel.text = _questionAndAnswer.title;
   _startedOnDateLabel.text = _questionAndAnswer.startedOnDate;
