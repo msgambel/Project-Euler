@@ -27,6 +27,7 @@
   self.answer = @"906609";
   self.number = @"4";
   self.rating = @"3";
+  self.summary = @"Loop a pool. Never odd or even. Draw, o coward!";
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"palindrome,largest,product,3,three,digit,numbers,2,two,read,positive,made,from";
