@@ -21,9 +21,10 @@
   self.answer = @"232792560";
   self.number = @"5";
   self.rating = @"4";
+  self.summary = @"Finding the least common multiple of a factorial is suprisingly recursive.";
   self.category = @"Primes";
   self.isUseful = NO;
-  self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without";
+  self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without,least,common,multiple,lcm";
   self.loadsFile = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
