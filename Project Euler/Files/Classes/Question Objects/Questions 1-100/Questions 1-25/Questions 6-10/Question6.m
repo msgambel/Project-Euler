@@ -21,6 +21,7 @@
   self.answer = @"25164150";
   self.number = @"6";
   self.rating = @"4";
+  self.summary = @"A simple, straightforward sum.";
   self.category = @"Counting";
   self.isUseful = YES;
   self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
