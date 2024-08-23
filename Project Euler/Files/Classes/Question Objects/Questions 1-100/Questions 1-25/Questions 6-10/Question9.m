@@ -21,6 +21,7 @@
   self.answer = @"31875000";
   self.number = @"9";
   self.rating = @"4";
+  self.summary = @"Using the Pythagorean Theorem to simplify looping over a large set of possible triplets makes this another great introductory problem!";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers,integers,exists,divisible,identity";
