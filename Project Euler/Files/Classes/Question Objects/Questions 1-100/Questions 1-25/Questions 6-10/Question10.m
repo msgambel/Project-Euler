@@ -21,6 +21,7 @@
   self.answer = @"142913828922";
   self.number = @"10";
   self.rating = @"3";
+  self.summary = @"Find the primes up to 2,000,000, and sum them.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"primes,summation,below,less,than,two,million,2000000,find,of,array,long,int";
