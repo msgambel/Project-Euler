@@ -28,6 +28,7 @@
   self.answer = @"70600674";
   self.number = @"11";
   self.rating = @"3";
+  self.summary = @"Loop through the entries in a given 'direction', and use a floating product to find the maximum.";
   self.category = @"Combinations";
   self.isUseful = NO;
   self.keywords = @"product,direction,largest,grid,up,down,left,right,diagonal,four,4,adjacent,numbers,20,twenty,dimensional,array,greatest,in";
