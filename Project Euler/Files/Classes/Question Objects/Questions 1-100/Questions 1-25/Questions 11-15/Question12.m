@@ -21,6 +21,7 @@
   self.answer = @"76576500";
   self.number = @"12";
   self.rating = @"4";
+  self.summary = @"As a child, Gauss could have done this with ease. Now, with modern computers, you can too!";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"divisors,highly,divisible,triangular,natural,numbers,sequence,adding,500,five,hundred,triangle,generated,prime,factors";
