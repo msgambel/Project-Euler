@@ -28,6 +28,7 @@
   self.answer = @"137846528820";
   self.number = @"15";
   self.rating = @"4";
+  self.summary = @"Another functional problem that reduces nicely.";
   self.category = @"Combinations";
   self.isUseful = NO;
   self.keywords = @"routes,grid,lattice,paths,20,twenty,corner,bottom,right,recursive,method";
