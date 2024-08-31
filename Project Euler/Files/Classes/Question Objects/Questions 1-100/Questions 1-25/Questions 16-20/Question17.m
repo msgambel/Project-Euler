@@ -29,6 +29,7 @@
   self.answer = @"21124";
   self.number = @"17";
   self.rating = @"4";
+  self.summary = @"Count the letters in each English number, and sum them. A dictionary may help.";
   self.category = @"Counting";
   self.isUseful = NO;
   self.keywords = @"letters,sum,words,numbers,counts,british,usage,written,one,thousand,1000,contains,spaces,hyphens,compliance";
