@@ -22,6 +22,7 @@
   self.answer = @"171";
   self.number = @"19";
   self.rating = @"4";
+  self.summary = @"Dates are hard.";
   self.category = @"Counting";
   self.isUseful = YES;
   self.keywords = @"week,month,day,counting,leap,year,twentieth,century,sundays,first,sum,total,research,divisible,fell";
