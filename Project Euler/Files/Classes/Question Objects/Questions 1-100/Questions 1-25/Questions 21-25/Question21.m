@@ -22,6 +22,7 @@
   self.answer = @"31626";
   self.number = @"21";
   self.rating = @"5";
+  self.summary = @"Compute the proper divisors, sum them, and store the result in an array. Then, find the pairs!";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"divisors,proper,amicable,pair,numbers,sum,10000,ten,thousand,evalute,under,prime,factorization";
