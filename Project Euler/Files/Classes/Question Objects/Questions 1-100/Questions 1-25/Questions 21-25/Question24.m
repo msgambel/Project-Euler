@@ -21,6 +21,7 @@
   self.answer = @"2783915460";
   self.number = @"24";
   self.rating = @"3";
+  self.summary = @"Permutations of a string with unique characters is a simple challenge. Doing it quickly is the hard part.";
   self.category = @"Counting";
   self.isUseful = NO;
   self.keywords = @"lexicographic,permutations,choose,ordered,arrangement,digits,1000000,one,millionth,objects,possible,combinatorics,subtract";
