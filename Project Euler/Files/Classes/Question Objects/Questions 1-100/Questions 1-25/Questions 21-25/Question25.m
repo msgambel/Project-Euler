@@ -22,6 +22,7 @@
   self.answer = @"4782";
   self.number = @"25";
   self.rating = @"4";
+  self.summary = @"The Fibonacci sequence can be found everywhere, including in Project Euler!";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"fibonacci,closed,form,recurrance,terms,sequence,digits,contains,1000,one,thousand,first,number,expression,logarithm";
