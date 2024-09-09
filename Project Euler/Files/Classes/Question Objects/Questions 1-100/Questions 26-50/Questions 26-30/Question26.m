@@ -21,6 +21,7 @@
   self.answer = @"983";
   self.number = @"26";
   self.rating = @"4";
+  self.summary = @"All rational numbers have a repeating cycle in their decimal expansion. Find the largest cycle from 1/2 to 1/1000.";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"division,fractional,part,unit,decimal,representation,recurring,cycles,longest,reciprocal,denominators,contains,1000";
