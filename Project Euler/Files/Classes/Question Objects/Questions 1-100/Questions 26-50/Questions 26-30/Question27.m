@@ -28,6 +28,7 @@
   self.answer = @"-59231";
   self.number = @"27";
   self.rating = @"5";
+  self.summary = @"Construct all quadratic equations n² + an + b, with a, b in [0, 1000]. Find the pair that produces the most consective primes for n. Multiply that pair.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value,produces,number,helper,methods";
