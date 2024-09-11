@@ -21,6 +21,7 @@
   self.answer = @"669171001";
   self.number = @"28";
   self.rating = @"4";
+  self.summary = @"Make a number spiral, and sum the numbers in the diagonal. There may be a pattern.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"corner,side,length,spiral,diagonals,clockwise,direction,1001,one,thousand,sum,numbers,formed,same,way";
