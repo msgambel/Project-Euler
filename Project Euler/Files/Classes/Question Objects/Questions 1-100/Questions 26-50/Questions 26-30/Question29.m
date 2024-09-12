@@ -23,6 +23,7 @@
   self.answer = @"9183";
   self.number = @"29";
   self.rating = @"3";
+  self.summary = @"Generate powers of the form a^b for a, b in [2, 100], remove the duplicates, and count the total.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"base,power,unique,integer,combinations,numerical,order,distinct,sequence,repeats,removed,terms,generated,pairs,one,hundred,100";
