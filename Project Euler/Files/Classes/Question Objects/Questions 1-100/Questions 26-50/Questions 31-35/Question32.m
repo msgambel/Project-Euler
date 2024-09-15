@@ -21,6 +21,7 @@
   self.answer = @"45228";
   self.number = @"32";
   self.rating = @"4";
+  self.summary = @"Sum all unique products resulting from a pandigital multiplicative equation.";
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"pandigital,sum,all,digit,multiplicand,multiplier,products,identity,written,containing,obtained";
