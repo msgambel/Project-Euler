@@ -21,6 +21,7 @@
   self.answer = @"40730";
   self.number = @"34";
   self.rating = @"5";
+  self.summary = @"Sum the numbers that equal the sum of the factorial of their digits.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"digit,sum,factorials,equal,curious,numbers,fifty,thousand,50000,two,2";
