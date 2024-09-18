@@ -28,6 +28,7 @@
   self.answer = @"55";
   self.number = @"35";
   self.rating = @"5";
+  self.summary = @"Count the circular primes under 1,000,000.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"primes,rotation,circular,digits,one,million,1000000,permutations,less,even,odd,hash,table";
