@@ -27,6 +27,7 @@
   self.answer = @"872187";
   self.number = @"36";
   self.rating = @"5";
+  self.summary = @"Sum all numbers less than 1,000,000 that are palindromic in base 2 and 10.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less,leading,zeros";
