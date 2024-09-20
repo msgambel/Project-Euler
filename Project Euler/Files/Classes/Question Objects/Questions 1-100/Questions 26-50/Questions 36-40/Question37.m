@@ -30,6 +30,7 @@
   self.answer = @"748317";
   self.number = @"37";
   self.rating = @"5";
+  self.summary = @"Sum all left and right truncatable primes.";
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"primes,left,right,truncatable,continuously,remove,digits,7,seven,sum,only,hash,table";
