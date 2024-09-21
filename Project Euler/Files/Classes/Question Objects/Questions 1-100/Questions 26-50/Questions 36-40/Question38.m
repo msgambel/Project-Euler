@@ -21,6 +21,7 @@
   self.answer = @"932718654";
   self.number = @"38";
   self.rating = @"5";
+  self.summary = @"Find the largest 1-9 pandigital 9-digit number formed by a concatenated product.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"pandigital,multiples,digit,concatenated,product,integer,formed,largest,multiply,lexographic,number";
