@@ -21,6 +21,7 @@
   self.answer = @"840";
   self.number = @"39";
   self.rating = @"4";
+  self.summary = @"Find the right triangle where p <= 1000 with the largest number of solutions.";
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"pythagorean,triple,perimeter,right,angle,length,sides,maximized,integral,1000,one,thousand,solutions,integer,triangles,pair,maximum";
