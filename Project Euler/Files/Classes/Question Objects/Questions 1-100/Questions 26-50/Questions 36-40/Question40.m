@@ -21,6 +21,7 @@
   self.answer = @"210";
   self.number = @"40";
   self.rating = @"4";
+  self.summary = @"Concatenate the integers, find the digit for each power of 10 from 1 to 6, and multiply them.";
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"concatenate,digits,constant,champernowne's,positive,integers,expression,fractional,part,number,value";
