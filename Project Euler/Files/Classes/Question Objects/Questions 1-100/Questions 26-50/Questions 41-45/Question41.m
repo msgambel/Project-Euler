@@ -22,6 +22,7 @@
   self.answer = @"7652413";
   self.number = @"41";
   self.rating = @"4";
+  self.summary = @"Find the largest pandigital prime.";
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"pandigital,prime,largest,digit,number,exists,exactly,primality,test";
