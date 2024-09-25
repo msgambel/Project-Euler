@@ -22,6 +22,7 @@
   self.answer = @"162";
   self.number = @"42";
   self.rating = @"3";
+  self.summary = @"How many triangle words are in the text file?";
   self.category = @"Combinations";
   self.isUseful = NO;
   self.keywords = @"sum,triangle,numbers,english,words,import,coded,sequence,2000,two,thousand,common,alphabetical,maximum,compute,value,many";
