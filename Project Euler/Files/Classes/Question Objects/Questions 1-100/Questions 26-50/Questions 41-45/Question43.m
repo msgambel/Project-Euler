@@ -27,6 +27,7 @@
   self.answer = @"16695334890";
   self.number = @"43";
   self.rating = @"5";
+  self.summary = @"Find all 0 to 9 pandigital numbers with the division property.";
   self.category = @"Logic";
   self.isUseful = YES;
   self.keywords = @"string,divisible,pandigital,sub,divisibility,sum,property,digit,numbers,hueristic,order";
@@ -75,7 +76,7 @@
   //       the way to figure out the answer! Looking ahead, I'm thinking that
   //       this may be the way I solve some of the future questions as well.
   //
-  // Here, we use a hueristic argument to get the all of the 9-digit and 10-digit
+  // Here, we use a heuristic argument to get the all of the 9-digit and 10-digit
   // pandigital numbers with the substring divisibility property. We make note
   // of a few interesting properties:
   //
@@ -94,9 +95,9 @@
   // At this stage, we can use the fact that we know at least one of the digits
   // to improve the allowable numbers for the other digits. We can make a list
   // of all the allowable numbers for each of the substrings, and then remove
-  // possiblities that cannot happen. For example,
+  // possibilities that cannot happen. For example,
   //
-  // 13 | 26, but there are no multiples of 17 that are inbetween 259 and 271.
+  // 13 | 26, but there are no multiples of 17 that are in between 259 and 271.
   //
   // Therefore, we can remove the values that cannot happen, which should
   // hopefully narrow down the options.
@@ -138,12 +139,12 @@
     numberOfMultiples[i] = 0;
   }
   // For all the multiples, counting backwards,
-  for(int mulitpleIndex = 3; mulitpleIndex >= 0; mulitpleIndex--){
+  for(int multipleIndex = 3; multipleIndex >= 0; multipleIndex--){
     // Reset the index to 0.
     index = 0;
     
     // For all the numbers that are a multiple of the current multiple,
-    for(int number = multiples[mulitpleIndex]; number < 1000; number += multiples[mulitpleIndex]){
+    for(int number = multiples[multipleIndex]; number < 1000; number += multiples[multipleIndex]){
       // Grab the units digit of the number.
       unitsDigit = number % 10;
       
@@ -156,11 +157,11 @@
       // If none of the digits are the same,
       if((hundredsDigit != unitsDigit) && (hundredsDigit != tensDigit) && (tensDigit != unitsDigit)){
         // If the multiple index is 3 (i.e.: 17),
-        if(mulitpleIndex == 3){
+        if(multipleIndex == 3){
           // If none of the digits are 5,
           if((hundredsDigit != 5) && (tensDigit != 5) && (unitsDigit != 5)){
             // Add the left-most digits to the allowable digits array.
-            allowableDigits[mulitpleIndex][index] = ((uint)(number / 10));
+            allowableDigits[multipleIndex][index] = ((uint)(number / 10));
             
             // Increment the number of allowable digits by 1.
             index++;
@@ -175,10 +176,10 @@
           lastTwoDigits = number % 100;
           
           // For all the previous allowable multiples,
-          for(int previousMultipleIndex = 0; previousMultipleIndex < numberOfMultiples[(mulitpleIndex + 1)]; previousMultipleIndex++){
+          for(int previousMultipleIndex = 0; previousMultipleIndex < numberOfMultiples[(multipleIndex + 1)]; previousMultipleIndex++){
             // If the first 2 digits of the previous multiple is equal to the
             // last 2 digits of the current multiple,
-            if(allowableDigits[(mulitpleIndex + 1)][previousMultipleIndex] == lastTwoDigits){
+            if(allowableDigits[(multipleIndex + 1)][previousMultipleIndex] == lastTwoDigits){
               // Mark that this number is allowed.
               isAllowed = YES;
               
@@ -189,11 +190,11 @@
           // If the number is allowed,
           if(isAllowed){
             // If the multiple index is 0 (i.e.: 7),
-            if(mulitpleIndex == 0){
+            if(multipleIndex == 0){
               // If the tens digit is equal to 5 (recall, d6 = 5),
               if(tensDigit == 5){
                 // Add the left-most digits to the allowable digits array.
-                allowableDigits[mulitpleIndex][index] = ((uint)(number / 10));
+                allowableDigits[multipleIndex][index] = ((uint)(number / 10));
                 
                 // Increment the number of allowable digits by 1.
                 index++;
@@ -202,7 +203,7 @@
             // If the multiple index is NOT 0 (i.e.: 11, or 13),
             else{
               // Add the left-most digits to the allowable digits array.
-              allowableDigits[mulitpleIndex][index] = ((uint)(number / 10));
+              allowableDigits[multipleIndex][index] = ((uint)(number / 10));
               
               // Increment the number of allowable digits by 1.
               index++;
@@ -212,16 +213,16 @@
       }
     }
     // Print our the allowable multiples.
-    NSLog(@"%d:", multiples[mulitpleIndex]);
+    NSLog(@"%d:", multiples[multipleIndex]);
     NSLog(@"-----");
     
     for(int i = 0; i < index; i++){
-      NSLog(@"allowable: %d", allowableDigits[mulitpleIndex][i]);
+      NSLog(@"allowable: %d", allowableDigits[multipleIndex][i]);
     }
     NSLog(@" ");
     
     // Set the total number of allowable digits for the current multiple.
-    numberOfMultiples[mulitpleIndex] = index;
+    numberOfMultiples[multipleIndex] = index;
   }
   
   // Looking at the above printout, the only allowable digits for d5 are 3 and 9.
