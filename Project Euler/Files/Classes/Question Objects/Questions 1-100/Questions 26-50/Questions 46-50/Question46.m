@@ -21,6 +21,7 @@
   self.answer = @"5777";
   self.number = @"46";
   self.rating = @"5";
+  self.summary = @"Goldbach always had the best conjectures!";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"christian,goldbach's,other,conjecture,prime,square,sum,twice,odd,composite,number,false,smallest";
