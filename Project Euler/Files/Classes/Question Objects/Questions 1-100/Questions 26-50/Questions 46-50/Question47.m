@@ -21,6 +21,7 @@
   self.answer = @"134043";
   self.number = @"47";
   self.rating = @"4";
+  self.summary = @"Find the first integer such that it and the next 3 integers have four distinct primes factors.";
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"consecutive,four,4,distinct,prime,factors,numbers,first,integers,maximum,size";
