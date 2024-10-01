@@ -22,6 +22,7 @@
   self.answer = @"9110846700";
   self.number = @"48";
   self.rating = @"4";
+  self.summary = @"Sum n^n, n in [1, 1000], and modulo by 10^10.";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"sum,powers,series,ten,10,last,digits,self,modular,exponentiation,bigint,radix,find,modulo,1000";
