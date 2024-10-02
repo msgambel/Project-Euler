@@ -21,6 +21,7 @@
   self.answer = @"296962999629";
   self.number = @"49";
   self.rating = @"5";
+  self.summary = @"Find and concatenate 3 4-digit arithmetic sequence primes.";
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"arithmetic,sequence,prime,permutations,increasing,four,4,twelve,12,digit,number,concatenating,form,unusual,10000";
