@@ -21,6 +21,7 @@
   self.answer = @"997651";
   self.number = @"50";
   self.rating = @"5";
+  self.summary = @"Find the largest prime p < 1,000,000 that is the sum of consecutive primes.";
   self.category = @"Primes";
   self.isUseful = NO;
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
