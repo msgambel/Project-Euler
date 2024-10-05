@@ -21,6 +21,7 @@
   self.answer = @"142857";
   self.number = @"52";
   self.rating = @"5";
+  self.summary = @"Find x such that 2x, 3x, 4x, 5x, and 6x have the same digits.";
   self.category = @"Combinations";
   self.isUseful = NO;
   self.keywords = @"multiples,permutation,digits,exactly,same,numbers,order,2,two,3,three,4,four,5,five,6,six,different,smallest";
