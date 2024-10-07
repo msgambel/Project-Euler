@@ -22,6 +22,7 @@
   self.answer = @"376";
   self.number = @"54";
   self.rating = @"5";
+  self.summary = @"Read the file, parse the poker hands, and count how many times Player 1 wins.";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"poker,hands,two,player,import,rank,compare,5,five,clear,winner,specific,order";
