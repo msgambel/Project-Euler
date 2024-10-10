@@ -22,6 +22,7 @@
   self.answer = @"153";
   self.number = @"57";
   self.rating = @"4";
+  self.summary = @"How many fractions in the continued fraction expansion of 2 contain a numerator with more digits than the denominator?";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"square,root,continued,fractions,infinite,expansions,numerator,denominator,one,thousand,1000,more,digits,how,many";
