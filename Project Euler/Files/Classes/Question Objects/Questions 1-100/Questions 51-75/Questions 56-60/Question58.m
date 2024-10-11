@@ -21,6 +21,7 @@
   self.answer = @"26241";
   self.number = @"58";
   self.rating = @"5";
+  self.summary = @"What side length of the anticlockwise spiral contains a ratio of <10% of primes on its diagonal?";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"spiralling,ratio,primes,both,diagonals,anticlockwise,square,side,length,formed,layer,wrapped,falls,below,10,ten,percent";
