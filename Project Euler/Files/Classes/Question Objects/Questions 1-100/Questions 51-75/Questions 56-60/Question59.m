@@ -21,6 +21,7 @@
   self.answer = @"107359";
   self.number = @"59";
   self.rating = @"5";
+  self.summary = @"Read the file, find the cypher, and decrypt the message.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"xor,decryption,god,key,ascii,values,encryption,password,import,unique,code,character,bytes,preferred,message,common,english,words,text,containing,cyclically";
