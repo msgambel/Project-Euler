@@ -30,6 +30,7 @@
   self.answer = @"26033";
   self.number = @"60";
   self.rating = @"5";
+  self.summary = @"Find the lowest sum of a set of 5 primes which any 2 concatenate to another prime.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"primes,concatenate,set,five,5,lowest,sum,produce,two,2,order,pairs,property,another,result";
