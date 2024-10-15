@@ -21,6 +21,7 @@
   self.answer = @"127035954683";
   self.number = @"62";
   self.rating = @"4";
+  self.summary = @"Find the smallest cube where five permutations of its digits are cubes.";
   self.category = @"Permutations";
   self.isUseful = NO;
   self.keywords = @"cube,cubic,permutations,digits,exactly,5,five,smallest,unique,minimum,number";
