@@ -21,6 +21,7 @@
   self.answer = @"1322";
   self.number = @"64";
   self.rating = @"3";
+  self.summary = @"How many continued fractions for N <= 10000 have an odd period?";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"square,roots,continued,fractions,representations,periodic,odd,ten,thousand,10000,count,notation,blocks,repeats,indefinitely";
