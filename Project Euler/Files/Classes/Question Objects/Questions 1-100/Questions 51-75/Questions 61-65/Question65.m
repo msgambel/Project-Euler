@@ -22,6 +22,7 @@
   self.answer = @"272";
   self.number = @"65";
   self.rating = @"3";
+  self.summary = @"Find the sum of digits in the numerator of the 100th convergent of the continued fraction for e.";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"convergents,e,infinite,continued,fractions,digits,sum,numerator,100,one,hundred,rational,approximations,sequence,partial";
