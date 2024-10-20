@@ -22,6 +22,7 @@
   self.answer = @"7273";
   self.number = @"67";
   self.rating = @"4";
+  self.summary = @"Move through the binary tree to find the largest path sum. A little pre-computation goes a long way!";
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,100,one,hundred,rows,II,algorithm";
