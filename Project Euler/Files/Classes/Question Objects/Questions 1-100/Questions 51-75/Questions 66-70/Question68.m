@@ -21,6 +21,7 @@
   self.answer = @"6531031914842725";
   self.number = @"68";
   self.rating = @"5";
+  self.summary = @"Use logic to find the maximum 16-digit string for a \"magic\" 5-gon ring.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"n-gon,digit,maximum,magic,ring,external,node,adding,line,16,sixteen,5-gon,five-gon,arrangements,strings";
