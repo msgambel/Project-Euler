@@ -22,6 +22,7 @@
   self.answer = @"8319823";
   self.number = @"70";
   self.rating = @"2";
+  self.summary = @"Find n such that φ(n) is a permutation of n, and n/φ(n) is minimized.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"totient,function,maximum,phi,euler's,eulers,product,permutation,relatively,prime,positive,numbers,ratio,produces,minimum";
