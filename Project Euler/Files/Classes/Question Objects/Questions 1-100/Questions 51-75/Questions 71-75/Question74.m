@@ -21,6 +21,7 @@
   self.answer = @"402";
   self.number = @"74";
   self.rating = @"4";
+  self.summary = @"How many chains starting below 1,000,000 have exactly 60 non-repeating terms?";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"digit,factorial,chains,length,loop,sixty,60,unique,property,non-repeating,terms,contain,exactly";
