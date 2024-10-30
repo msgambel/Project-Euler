@@ -21,6 +21,7 @@
   self.answer = @"71";
   self.number = @"77";
   self.rating = @"5";
+  self.summary = @"Find the smallest integer that can be written as the sum of primes in over 5,000 unique ways.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"primes,summations,five,thousand,5000,positive,different,permutations,ways,written,as,sum,possible";
