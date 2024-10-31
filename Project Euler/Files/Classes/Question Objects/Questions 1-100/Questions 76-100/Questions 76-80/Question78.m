@@ -22,6 +22,7 @@
   self.answer = @"55374";
   self.number = @"78";
   self.rating = @"3";
+  self.summary = @"Find the smallest n such that 1,000,000 | p(n).";
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million,least,value";
