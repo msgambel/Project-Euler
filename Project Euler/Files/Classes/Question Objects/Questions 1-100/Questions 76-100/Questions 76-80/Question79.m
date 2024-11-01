@@ -27,6 +27,7 @@
   self.answer = @"73162890";
   self.number = @"79";
   self.rating = @"5";
+  self.summary = @"Decode the shortest passcode from 50 login attempts.";
   self.category = @"Patterns";
   self.isUseful = YES;
   self.keywords = @"passcode,derivation,login,secret,shortest,import,security,common,method,analyse,files";
