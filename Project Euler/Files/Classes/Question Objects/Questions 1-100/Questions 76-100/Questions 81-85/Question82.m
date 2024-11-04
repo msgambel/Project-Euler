@@ -21,6 +21,7 @@
   self.answer = @"260324";
   self.number = @"82";
   self.rating = @"3";
+  self.summary = @"Find the minimal path sum moving only up, right, and down for the 80x80 grid.";
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"matrix,column,minimal,path,sum,import,file,right,left";
