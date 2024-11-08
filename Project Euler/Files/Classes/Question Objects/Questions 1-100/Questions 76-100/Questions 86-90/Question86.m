@@ -22,6 +22,7 @@
   self.answer = @"1818";
   self.number = @"86";
   self.rating = @"4";
+  self.summary = @"Find the largest cube with side length M such that the set of cuboids with integer length shortest paths contained exceeds 1,000,000.";
   self.category = @"Optimization";
   self.isUseful = NO;
   self.keywords = @"spider,cuboid,shortest,route,path,pythagoras,side,length,one,million,1000000,surface,area,solutions,exceeds";
