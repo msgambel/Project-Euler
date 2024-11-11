@@ -30,6 +30,7 @@
   self.answer = @"743";
   self.number = @"89";
   self.rating = @"5";
+  self.summary = @"Minimize the Roman numbers in the file, and find the difference in characters.";
   self.category = @"Sums";
   self.isUseful = YES;
   self.keywords = @"roman,numerals,characters,import,least,number,1000,one,thousand,minimal,form,consecutive,identical";
