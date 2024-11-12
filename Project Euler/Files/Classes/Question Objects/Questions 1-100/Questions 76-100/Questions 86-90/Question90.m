@@ -27,6 +27,7 @@
   self.answer = @"1217";
   self.number = @"90";
   self.rating = @"4";
+  self.summary = @"How many distinct pairs of cubes can display n^2 < 100?";
   self.category = @"Combinations";
   self.isUseful = NO;
   self.keywords = @"cube,digit,pairs,distinct,formations,arrangements,square,numbers,different,positions,side,6,six,2,two,displayed,forming";
