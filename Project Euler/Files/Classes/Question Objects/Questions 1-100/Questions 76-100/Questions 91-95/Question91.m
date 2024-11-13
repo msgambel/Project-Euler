@@ -21,6 +21,7 @@
   self.answer = @"14234";
   self.number = @"91";
   self.rating = @"4";
+  self.summary = @"How many right triangles are there with vertices 0 <= x1, y1, x2, y2 <= 50 and the origin?";
   self.category = @"Counting";
   self.isUseful = NO;
   self.keywords = @"right,triangles,with,integer,coordinates,vectors,inner,product,orthogonal,points,formed";
