@@ -27,6 +27,7 @@
   self.answer = @"8581146";
   self.number = @"92";
   self.rating = @"5";
+  self.summary = @"By repeatedly adding the square of the digits, how many numbers < 10,000,000 cycle to 89?";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"square,digit,chains,one,1,eighty,nine,89,count,starting,numbers,continuously,sequence";
