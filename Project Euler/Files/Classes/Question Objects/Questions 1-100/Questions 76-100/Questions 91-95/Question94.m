@@ -21,6 +21,7 @@
   self.answer = @"518408346";
   self.number = @"94";
   self.rating = @"4";
+  self.summary = @"Sum the perimeters of all almost equilateral triangles with integral side lengths and areas, with perimeters < 1,000,000,000.";
   self.category = @"Sums";
   self.isUseful = NO;
   self.keywords = @"almost,equilateral,triangles,alternating,perimeters,sides,square,units,1000000000,one,billion,lengths,exceed,integral,area";
