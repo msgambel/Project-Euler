@@ -22,6 +22,7 @@
   self.answer = @"24702";
   self.number = @"96";
   self.rating = @"5";
+  self.summary = @"Solve all the Sudoku's in the file. Sum all the 3-digit numbers in the top left.";
   self.category = @"Combinations";
   self.isUseful = YES;
   self.keywords = @"sudoku,recursive,import,japanese,grid";
