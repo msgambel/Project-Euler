@@ -28,6 +28,7 @@
   self.answer = @"18769";
   self.number = @"98";
   self.rating = @"4";
+  self.summary = @"For all the words in the file, find the largest member of a square anagram pair.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"anagrams,squares,pairs,words,import,same,number,two,thousand,2000,member,file,anagramic";
