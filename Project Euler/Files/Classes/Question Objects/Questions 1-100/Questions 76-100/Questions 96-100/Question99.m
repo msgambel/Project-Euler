@@ -21,6 +21,7 @@
   self.answer = @"709";
   self.number = @"99";
   self.rating = @"4";
+  self.summary = @"What is the largest exponential in the file?";
   self.category = @"Powers";
   self.isUseful = NO;
   self.keywords = @"largest,exponential,compare,ordering,import,log,pair,base,maximum,line,number,file,greatest";
