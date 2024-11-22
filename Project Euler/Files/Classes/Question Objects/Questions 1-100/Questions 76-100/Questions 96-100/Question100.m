@@ -21,6 +21,7 @@
   self.answer = @"756872327473";
   self.number = @"100";
   self.rating = @"5";
+  self.summary = @"Find the first set with more than 1 billion blue and red discs such that the probability of removing 2 blue disks is exactly 50%.";
   self.category = @"Probability";
   self.isUseful = YES;
   self.keywords = @"arranged,probability,blue,red,disks,50,fifty,random,percent,half,1/2,box,contain";
