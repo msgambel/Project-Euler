@@ -29,6 +29,7 @@
   self.answer = @"1587000";
   self.number = @"112";
   self.rating = @"4";
+  self.summary = @"Find x such that the number of bouncy numbers <= x is exactly 99%";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
