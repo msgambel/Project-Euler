@@ -21,6 +21,7 @@
   self.answer = @"333082500";
   self.number = @"120";
   self.rating = @"5";
+  self.summary = @"Compute sum(rmax) for 3 <= a <= 1000.";
   self.category = @"Sums";
   self.isUseful = YES;
   self.keywords = @"square,remainders,modulo,polynomial,expansion,rmax,sum";
