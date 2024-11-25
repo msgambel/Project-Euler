@@ -21,6 +21,7 @@
   self.answer = @"21035";
   self.number = @"123";
   self.rating = @"5";
+  self.summary = @"Find the first n such that (p_n-1)^n + (p_n+1)^n mod p_n² > 10^10.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
