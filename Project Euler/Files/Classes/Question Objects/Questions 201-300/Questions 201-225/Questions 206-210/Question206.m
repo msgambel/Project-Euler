@@ -21,6 +21,7 @@
   self.answer = @"1389019170";
   self.number = @"206";
   self.rating = @"5";
+  self.summary = @"Fill in the blanks.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"concealed,square,perfect,positive,integer";
