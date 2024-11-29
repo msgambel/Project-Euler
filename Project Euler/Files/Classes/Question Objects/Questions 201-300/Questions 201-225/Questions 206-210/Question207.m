@@ -21,6 +21,7 @@
   self.answer = @"44043947822";
   self.number = @"207";
   self.rating = @"5";
+  self.summary = @"Find the first m such that the partition P(m) < 1/12345.";
   self.category = @"Patterns";
   self.isUseful = NO;
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
