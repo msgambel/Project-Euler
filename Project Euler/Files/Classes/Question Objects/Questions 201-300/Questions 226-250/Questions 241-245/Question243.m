@@ -21,6 +21,7 @@
   self.answer = @"892371480";
   self.number = @"243";
   self.rating = @"5";
+  self.summary = @"Find the first d such that R(d) < 15499/94744.";
   self.category = @"Primes";
   self.isUseful = YES;
   self.keywords = @"resilience,totient,function,unique,prime,factors,smallest";
