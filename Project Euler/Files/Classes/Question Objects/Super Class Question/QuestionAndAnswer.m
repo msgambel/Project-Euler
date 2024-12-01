@@ -27,6 +27,7 @@
 @synthesize isUseful = _isUseful;
 @synthesize keywords = _keywords;
 @synthesize loadsFile = _loadsFile;
+@synthesize memorable = _memorable;
 @synthesize solveTime = _solveTime;
 @synthesize technique = _technique;
 @synthesize difficulty = _difficulty;

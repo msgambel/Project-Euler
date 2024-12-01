@@ -14,6 +14,7 @@
   BOOL                                    _isFun;
   BOOL                                    _isUseful;
   BOOL                                    _loadsFile;
+  BOOL                                    _memorable;
   BOOL                                    _usesBigInt;
   BOOL                                    _isComputing;
   BOOL                                    _recommended;
@@ -60,6 +61,7 @@
 @property (nonatomic, assign) BOOL                             isFun;
 @property (nonatomic, assign) BOOL                             isUseful;
 @property (nonatomic, assign) BOOL                             loadsFile;
+@property (nonatomic, assign) BOOL                             memorable;
 @property (nonatomic, assign) BOOL                             usesBigInt;
 @property (nonatomic, assign) BOOL                             isComputing;
 @property (nonatomic, assign) BOOL                             recommended;
