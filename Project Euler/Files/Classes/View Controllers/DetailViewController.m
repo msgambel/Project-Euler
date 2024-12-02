@@ -296,6 +296,12 @@
   else{
     _questionLoadsFileLabel.text = @"No File";
   }
+  if(_questionAndAnswer.memorable){
+    _questionLoadsFileLabel.text = @"Memorable";
+  }
+  else{
+    _questionLoadsFileLabel.text = @"Forgettable";
+  }
   if(_questionAndAnswer.usesBigInt){
     _questionUsesBigIntLabel.text = @"Uses Big Int";
   }

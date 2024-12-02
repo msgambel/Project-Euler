@@ -22,6 +22,7 @@
   IBOutlet UILabel                 * _questionCategoryLabel;
   IBOutlet UILabel                 * _questionIsUsefulLabel;
   IBOutlet UILabel                 * _questionLoadsFileLabel;
+  IBOutlet UILabel                 * _questionMemorableLabel;
   IBOutlet UILabel                 * _questionSolveTimeLabel;
   IBOutlet UILabel                 * _questionTechniqueLabel;
   IBOutlet UILabel                 * _solutionLineCountLabel;
