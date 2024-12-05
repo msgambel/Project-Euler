@@ -32,6 +32,7 @@
   self.isUseful = YES;
   self.keywords = @"sums,triangle,numbers,multiples,3,three,5,five,1000,one,thousand,first,problem,question,list";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"10";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
