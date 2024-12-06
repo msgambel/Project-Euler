@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"fibonacci,sequence,numbers,sum,even,valued,terms,exceed,four,million,4000000,odd,positive,generated,previous";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
