@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"divisible,factorial,evenly,smallest,positive,numbers,20,twenty,remainder,primes,maximum,divisible,without,least,common,multiple,lcm";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
