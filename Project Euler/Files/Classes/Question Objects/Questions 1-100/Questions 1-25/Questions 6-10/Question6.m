@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"square,sum,difference,100,one,hundred,natural,numbers,positive,of,the,first,closed,form,solution";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Meh";
