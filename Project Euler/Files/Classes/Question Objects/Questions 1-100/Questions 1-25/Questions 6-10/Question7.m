@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"prime,listing,10001st,one,thousand,and,find,number,first,helper,method";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Math";
   self.difficulty = @"Meh";
