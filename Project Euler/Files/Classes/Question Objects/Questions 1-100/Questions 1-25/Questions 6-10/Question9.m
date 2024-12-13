@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"pythagorean,product,special,triplet,1000,one,thousand,natural,numbers,integers,exists,divisible,identity";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Meh";
