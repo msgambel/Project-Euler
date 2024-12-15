@@ -33,6 +33,7 @@
   self.isUseful = NO;
   self.keywords = @"product,direction,largest,grid,up,down,left,right,diagonal,four,4,adjacent,numbers,20,twenty,dimensional,array,greatest,in";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
