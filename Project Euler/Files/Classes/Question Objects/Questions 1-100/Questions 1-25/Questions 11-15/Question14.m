@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"chain,collatz,longest,sequence,iterative,positive,integers,one,million,1000000,starting,number,terms,proved,problem,allowed,above";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
