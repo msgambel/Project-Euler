@@ -33,6 +33,7 @@
   self.isUseful = NO;
   self.keywords = @"routes,grid,lattice,paths,20,twenty,corner,bottom,right,recursive,method";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
