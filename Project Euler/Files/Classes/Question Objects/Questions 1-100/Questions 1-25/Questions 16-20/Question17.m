@@ -34,6 +34,7 @@
   self.isUseful = NO;
   self.keywords = @"letters,sum,words,numbers,counts,british,usage,written,one,thousand,1000,contains,spaces,hyphens,compliance";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
