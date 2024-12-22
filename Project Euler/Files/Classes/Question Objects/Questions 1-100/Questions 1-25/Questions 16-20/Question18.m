@@ -22,11 +22,12 @@
   self.answer = @"1074";
   self.number = @"18";
   self.rating = @"5";
-  self.summary = @"Move through the binary tree to find the largest path sum. A little precomputation goes a long way!";
+  self.summary = @"Move through the binary tree to find the largest path sum. A little pre-computation goes a long way!";
   self.category = @"Sums";
   self.isUseful = YES;
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,15,fifteen,rows,simple,challenge,67,sixty,seven,top,bottom";
   self.loadsFile = YES;
+  self.memorable = YES;
   self.solveTime = @"120";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
