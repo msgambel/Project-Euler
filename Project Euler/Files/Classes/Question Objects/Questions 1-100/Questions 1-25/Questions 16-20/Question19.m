@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"week,month,day,counting,leap,year,twentieth,century,sundays,first,sum,total,research,divisible,fell";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Meh";
