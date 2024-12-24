@@ -28,6 +28,7 @@
   self.isUseful = NO;
   self.keywords = @"factorial,digits,sum,number,100,one,hundred,!,total,bigint,radix";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"90";
   self.technique = @"Math";
   self.difficulty = @"Meh";
