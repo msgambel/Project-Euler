@@ -33,6 +33,7 @@
   self.isUseful = NO;
   self.keywords = @"consecutive,odd,primes,formula,coefficients,quadratic,maximum,expression,production,absolute,value,produces,number,helper,methods";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
