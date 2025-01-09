@@ -32,6 +32,7 @@
   self.isUseful = NO;
   self.keywords = @"Double-base,double,base,palindromes,palindromic,2,two,10,ten,decimal,number,one,million,1000000,less,leading,zeros";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"150";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
