@@ -35,6 +35,7 @@
   self.isUseful = NO;
   self.keywords = @"primes,left,right,truncatable,continuously,remove,digits,7,seven,sum,only,hash,table";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"180";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
