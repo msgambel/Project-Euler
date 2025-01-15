@@ -27,6 +27,7 @@
   self.isUseful = NO;
   self.keywords = @"sum,triangle,numbers,english,words,import,coded,sequence,2000,two,thousand,common,alphabetical,maximum,compute,value,many";
   self.loadsFile = YES;
+  self.memorable = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
