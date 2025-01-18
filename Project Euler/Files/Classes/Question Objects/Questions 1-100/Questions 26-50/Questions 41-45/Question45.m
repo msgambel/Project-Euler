@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"pandigital,multiples,triangle,pentagonal,hexagonal,concatenated,product,9,nine,digit,number,formed,integer,odd,largest";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Math";
   self.difficulty = @"Easy";
