@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"sum,consecutive,primes,one,million,1000000,adds,terms,most,largest,written,below,floating";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
