@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"prime,value,family,digit,replacements,number,eight,8,*,smallest,property";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
