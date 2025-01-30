@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"square,root,continued,fractions,infinite,expansions,numerator,denominator,one,thousand,1000,more,digits,how,many";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Medium";
