@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"spiralling,ratio,primes,both,diagonals,anticlockwise,square,side,length,formed,layer,wrapped,falls,below,10,ten,percent";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"60";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
