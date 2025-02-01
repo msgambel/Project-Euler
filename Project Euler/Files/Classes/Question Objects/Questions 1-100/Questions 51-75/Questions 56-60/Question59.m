@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"xor,decryption,god,key,ascii,values,encryption,password,import,unique,code,character,bytes,preferred,message,common,english,words,text,containing,cyclically";
   self.loadsFile = YES;
+  self.memorable = YES;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
