@@ -35,6 +35,7 @@
   self.isUseful = YES;
   self.keywords = @"primes,concatenate,set,five,5,lowest,sum,produce,two,2,order,pairs,property,another,result";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
