@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"cube,cubic,permutations,digits,exactly,5,five,smallest,unique,minimum,number";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"180";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
