@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"powers,digits,count,fifth,nine,9,exist,positive,integers,number,nth,bases,exponents";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"30";
   self.technique = @"Math";
   self.difficulty = @"Easy";
