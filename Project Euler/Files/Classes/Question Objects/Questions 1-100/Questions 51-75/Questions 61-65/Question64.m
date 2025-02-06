@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"square,roots,continued,fractions,representations,periodic,odd,ten,thousand,10000,count,notation,blocks,repeats,indefinitely";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Math";
   self.difficulty = @"Easy";
