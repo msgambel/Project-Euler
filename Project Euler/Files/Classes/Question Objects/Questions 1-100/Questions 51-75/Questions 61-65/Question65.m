@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"convergents,e,infinite,continued,fractions,digits,sum,numerator,100,one,hundred,rational,approximations,sequence,partial";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
