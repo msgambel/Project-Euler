@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"diophantine,equations,continued,fractions,expansions,pells,periods,minimal,solutions,largest,value,quadratic,length";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Math";
   self.difficulty = @"Medium";
