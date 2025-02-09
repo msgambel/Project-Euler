@@ -27,6 +27,7 @@
   self.isUseful = NO;
   self.keywords = @"path,sum,maximum,route,import,triangle,adjacent,pair,problem,100,one,hundred,rows,II,algorithm";
   self.loadsFile = YES;
+  self.memorable = NO;
   self.solveTime = @"120";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
