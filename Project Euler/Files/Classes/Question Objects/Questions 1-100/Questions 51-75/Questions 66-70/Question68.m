@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"n-gon,digit,maximum,magic,ring,external,node,adding,line,16,sixteen,5-gon,five-gon,arrangements,strings";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"600";
   self.technique = @"Logic";
   self.difficulty = @"Medium";
