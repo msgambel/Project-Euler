@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"singular,integer,right,triangles,generation,primitives,pythagorean,triples,cm,smallest,length,sided,angle";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"120";
   self.technique = @"Math";
   self.difficulty = @"Easy";
