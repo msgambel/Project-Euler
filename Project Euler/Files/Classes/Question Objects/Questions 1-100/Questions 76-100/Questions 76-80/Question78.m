@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"coin,paritions,divisible,unique,piles,separated,1000000,one,million,least,value";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Math";
   self.difficulty = @"Easy";
