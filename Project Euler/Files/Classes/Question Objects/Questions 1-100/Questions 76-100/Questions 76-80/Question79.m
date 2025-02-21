@@ -32,6 +32,7 @@
   self.isUseful = YES;
   self.keywords = @"passcode,derivation,login,secret,shortest,import,security,common,method,analyse,files";
   self.loadsFile = YES;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
