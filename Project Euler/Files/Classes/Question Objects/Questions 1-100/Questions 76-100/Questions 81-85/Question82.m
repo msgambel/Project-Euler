@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"matrix,column,minimal,path,sum,import,file,right,left";
   self.loadsFile = YES;
+  self.memorable = YES;
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
