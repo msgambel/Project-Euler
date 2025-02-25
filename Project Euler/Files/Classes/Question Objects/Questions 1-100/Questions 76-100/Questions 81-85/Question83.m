@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"matrix,a*,a,star,minimal,path,sum,import,moving,up,down";
   self.loadsFile = YES;
+  self.memorable = YES;
   self.solveTime = @"900";
   self.technique = @"OOP";
   self.difficulty = @"Medium";
