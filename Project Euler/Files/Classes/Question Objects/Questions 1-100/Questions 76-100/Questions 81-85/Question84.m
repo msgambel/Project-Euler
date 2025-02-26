@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"monopoly,4,four,dice,roll,ev,2,two,6,six,most,popular,squares,modal,string,standard,board,sided,listed";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"300";
   self.technique = @"OOP";
   self.difficulty = @"Easy";
