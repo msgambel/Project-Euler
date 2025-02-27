@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"rectangles,grid,size,counting,triangle,numbers,2000000,two,million,nearest,solution,area,sub";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Math";
   self.difficulty = @"Medium";
