@@ -27,6 +27,7 @@
   self.isUseful = NO;
   self.keywords = @"spider,cuboid,shortest,route,path,pythagoras,side,length,one,million,1000000,surface,area,solutions,exceeds";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Math";
   self.difficulty = @"Easy";
