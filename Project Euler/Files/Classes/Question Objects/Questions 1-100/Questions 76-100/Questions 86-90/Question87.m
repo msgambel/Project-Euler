@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"prime,square,cube,fourth,power,sum,count,triples,count,50000000,fifty,million,below,expressed,numbers";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
