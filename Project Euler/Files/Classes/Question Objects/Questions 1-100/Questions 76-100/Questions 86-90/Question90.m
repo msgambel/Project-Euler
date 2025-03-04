@@ -32,6 +32,7 @@
   self.isUseful = NO;
   self.keywords = @"cube,digit,pairs,distinct,formations,arrangements,square,numbers,different,positions,side,6,six,2,two,displayed,forming";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
