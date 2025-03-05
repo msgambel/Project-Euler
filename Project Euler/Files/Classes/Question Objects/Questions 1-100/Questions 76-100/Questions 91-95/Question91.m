@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"right,triangles,with,integer,coordinates,vectors,inner,product,orthogonal,points,formed";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
