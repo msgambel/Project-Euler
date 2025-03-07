@@ -34,6 +34,7 @@
   self.isUseful = YES;
   self.keywords = @"arithmetic,expressions,reverse,polish,notation,set,notation,1,2,3,4,one,two,three,four,consecutive,positive,integers,string,distinct,digits";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
