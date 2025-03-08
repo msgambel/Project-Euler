@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"almost,equilateral,triangles,alternating,perimeters,sides,square,units,1000000000,one,billion,lengths,exceed,integral,area";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"150";
   self.technique = @"Math";
   self.difficulty = @"Easy";
