@@ -27,6 +27,7 @@
   self.isUseful = YES;
   self.keywords = @"amicable,chains,proper,divisors,sum,longest,factors,chain,smallest,member,one,million,1000000,element,exceeding";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"300";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
