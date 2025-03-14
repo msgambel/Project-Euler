@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"arranged,probability,blue,red,disks,50,fifty,random,percent,half,1/2,box,contain";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Medium";
