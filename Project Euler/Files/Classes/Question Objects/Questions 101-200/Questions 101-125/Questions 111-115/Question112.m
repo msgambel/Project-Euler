@@ -34,6 +34,7 @@
   self.isUseful = NO;
   self.keywords = @"bouncy,numbers,digits,increasing,decreasing,99,ninety,nine,percent";
   self.loadsFile = NO;
+  self.memorable = YES;
   self.solveTime = @"600";
   self.technique = @"Recursion";
   self.difficulty = @"Medium";
