@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"prime,square,remainders,modulo,polynomial,expansion,least";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"90";
   self.technique = @"Math";
   self.difficulty = @"Easy";
