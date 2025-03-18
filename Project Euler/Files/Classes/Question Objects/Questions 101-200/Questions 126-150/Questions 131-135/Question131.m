@@ -26,6 +26,7 @@
   self.isUseful = YES;
   self.keywords = @"primes,cube,partnership,factoring,positive,integer,property,difference,of,cubes,one,million,1000000,value,unique";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Easy";
