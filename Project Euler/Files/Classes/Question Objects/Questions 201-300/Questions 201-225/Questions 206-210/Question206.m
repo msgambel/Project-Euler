@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"concealed,square,perfect,positive,integer";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"30";
   self.technique = @"Recursion";
   self.difficulty = @"Easy";
