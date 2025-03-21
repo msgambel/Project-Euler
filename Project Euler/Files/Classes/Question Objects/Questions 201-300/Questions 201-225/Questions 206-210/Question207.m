@@ -26,6 +26,7 @@
   self.isUseful = NO;
   self.keywords = @"integer,partition,equations,two,2,power,quadratic,smallest,form";
   self.loadsFile = NO;
+  self.memorable = NO;
   self.solveTime = @"60";
   self.technique = @"Math";
   self.difficulty = @"Easy";
