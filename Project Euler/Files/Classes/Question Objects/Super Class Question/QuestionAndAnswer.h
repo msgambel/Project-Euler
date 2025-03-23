@@ -24,6 +24,7 @@
   BOOL                                    _usesRecursion;
   BOOL                                    _solvableByHand;
   BOOL                                    _canBeSimplified;
+  BOOL                                    _worthRevisiting;
   BOOL                                    _usesCustomObjects;
   BOOL                                    _usesCustomStructs;
   BOOL                                    _usesHelperMethods;
@@ -71,6 +72,7 @@
 @property (nonatomic, assign) BOOL                             usesRecursion;
 @property (nonatomic, assign) BOOL                             solvableByHand;
 @property (nonatomic, assign) BOOL                             canBeSimplified;
+@property (nonatomic, assign) BOOL                             worthRevisiting;
 @property (nonatomic, assign) BOOL                             usesCustomObjects;
 @property (nonatomic, assign) BOOL                             usesCustomStructs;
 @property (nonatomic, assign) BOOL                             usesHelperMethods;

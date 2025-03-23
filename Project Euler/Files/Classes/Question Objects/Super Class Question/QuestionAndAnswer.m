@@ -45,6 +45,7 @@
 @synthesize solvableByHand = _solvableByHand;
 @synthesize canBeSimplified = _canBeSimplified;
 @synthesize completedOnDate = _completedOnDate;
+@synthesize worthRevisiting = _worthRevisiting;
 @synthesize solutionLineCount = _solutionLineCount;
 @synthesize usesCustomObjects = _usesCustomObjects;
 @synthesize usesCustomStructs = _usesCustomStructs;
