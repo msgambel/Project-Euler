@@ -344,6 +344,12 @@
   else{
     _questionCanBeSimplifiedLabel.text = @"Cannot Be Simplified";
   }
+  if(_questionAndAnswer.worthRevisiting){
+    _questionWorthRevisitingLabel.text = @"Revisit";
+  }
+  else{
+    _questionWorthRevisitingLabel.text = @"Once Only";
+  }
   if(_questionAndAnswer.usesCustomObjects){
     _questionUsesCustomObjectsLabel.text = @"Uses Custom Objects";
   }
