@@ -746,6 +746,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Revisit" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pOp-z3-civ">
+                                <rect key="frame" x="241.66666666666663" y="523" width="37" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Is5-rC-h9a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -786,6 +795,7 @@
                             <constraint firstItem="S9G-2W-gdc" firstAttribute="centerX" secondItem="g8w-Vm-9j5" secondAttribute="centerX" id="G5d-NG-N0Y"/>
                             <constraint firstItem="Ypi-qg-ywm" firstAttribute="width" secondItem="Qq1-jn-f9C" secondAttribute="width" id="G96-1R-k48"/>
                             <constraint firstItem="07R-jS-Hnr" firstAttribute="top" secondItem="x8N-IM-4JX" secondAttribute="bottom" constant="5" id="Gz0-uu-HVF"/>
+                            <constraint firstItem="qnp-my-KxK" firstAttribute="leading" secondItem="pOp-z3-civ" secondAttribute="trailing" constant="10" id="HdR-PG-b3T"/>
                             <constraint firstItem="kEh-1z-WXH" firstAttribute="top" secondItem="Srr-j4-VJp" secondAttribute="bottom" id="Hia-dL-bC4"/>
                             <constraint firstItem="DJU-35-VQn" firstAttribute="width" secondItem="SBB-k3-NyB" secondAttribute="width" id="Hr5-Xk-0dR"/>
                             <constraint firstItem="RrT-Qg-qjT" firstAttribute="leading" secondItem="5Ag-AW-pPG" secondAttribute="trailing" constant="5" id="IJg-ms-kxM"/>
@@ -825,6 +835,7 @@
                             <constraint firstItem="y9L-fU-9dD" firstAttribute="centerY" secondItem="qnp-my-KxK" secondAttribute="centerY" id="VfM-XJ-Puk"/>
                             <constraint firstItem="kEh-1z-WXH" firstAttribute="leading" secondItem="tDt-QJ-Esk" secondAttribute="trailing" id="WfG-ke-nWJ"/>
                             <constraint firstItem="rL8-ei-bi7" firstAttribute="width" secondItem="24h-L5-Tf0" secondAttribute="width" id="Won-BE-xec"/>
+                            <constraint firstItem="pOp-z3-civ" firstAttribute="centerY" secondItem="qnp-my-KxK" secondAttribute="centerY" id="X7M-az-Zjm"/>
                             <constraint firstItem="arC-iP-2qS" firstAttribute="trailing" secondItem="bFS-o8-Zlc" secondAttribute="trailing" id="XD6-Pr-rCA"/>
                             <constraint firstAttribute="trailing" secondItem="xYY-sv-Ilg" secondAttribute="trailing" constant="5" id="XD7-s3-PAG"/>
                             <constraint firstItem="Dfa-Xv-Ph6" firstAttribute="leading" secondItem="dh1-gQ-jsp" secondAttribute="trailing" constant="10" id="XJ4-rs-njd"/>
@@ -954,6 +965,7 @@
                         <outlet property="_questionUsesFunctionalProgrammingLabel" destination="yAJ-Tw-fsw" id="EpJ-cl-ncc"/>
                         <outlet property="_questionUsesHelperMethodsLabel" destination="FfW-Xp-PXv" id="m8z-jZ-wGA"/>
                         <outlet property="_questionUsesRecursionLabel" destination="y9L-fU-9dD" id="f6U-5q-Rkk"/>
+                        <outlet property="_questionWorthRevisitingLabel" destination="pOp-z3-civ" id="clR-cs-v9h"/>
                         <outlet property="_solutionLineCountLabel" destination="Ewd-cm-Ykd" id="f8A-K2-E5D"/>
                         <outlet property="_startedOnDateLabel" destination="SBB-k3-NyB" id="yEz-gY-5dC"/>
                     </connections>
