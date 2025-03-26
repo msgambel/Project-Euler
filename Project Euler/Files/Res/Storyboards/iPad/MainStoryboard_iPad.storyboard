@@ -556,6 +556,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Revisit" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-ET-IrI">
+                                <rect key="frame" x="90" y="642" width="42.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="upY-7P-4hQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -579,6 +588,7 @@
                             <constraint firstItem="4bg-39-gjf" firstAttribute="top" secondItem="3BW-Pe-QtT" secondAttribute="bottom" constant="10" id="4bN-Ag-FbU"/>
                             <constraint firstItem="uYd-LI-MSr" firstAttribute="leading" secondItem="RBI-Wj-F7Y" secondAttribute="trailing" constant="9.5" id="4v8-bN-3R1"/>
                             <constraint firstItem="P9i-no-2Og" firstAttribute="top" secondItem="Dte-Rh-iub" secondAttribute="bottom" constant="10" id="50j-rY-P9q"/>
+                            <constraint firstItem="TxH-ET-IrI" firstAttribute="leading" secondItem="kvu-cX-seD" secondAttribute="trailing" constant="9" id="5YM-Wu-b1R"/>
                             <constraint firstItem="XFI-qK-zkS" firstAttribute="centerY" secondItem="Q54-IX-Tjn" secondAttribute="centerY" id="5tV-Bb-CN5"/>
                             <constraint firstItem="2eY-zR-UNg" firstAttribute="top" secondItem="uYd-LI-MSr" secondAttribute="bottom" constant="10" id="6M2-EM-N36"/>
                             <constraint firstItem="ahj-MO-job" firstAttribute="leading" secondItem="04Z-Ut-Rdq" secondAttribute="trailing" id="6lO-Au-DrR"/>
@@ -741,6 +751,7 @@
                             <constraint firstItem="2eY-zR-UNg" firstAttribute="top" secondItem="9Yo-5t-FqG" secondAttribute="bottom" constant="10" id="trO-JH-RGd"/>
                             <constraint firstItem="YRu-RR-pII" firstAttribute="top" secondItem="4bg-39-gjf" secondAttribute="bottom" constant="10" id="ty2-Gk-eBn"/>
                             <constraint firstItem="Cog-en-1HY" firstAttribute="leading" secondItem="ahj-MO-job" secondAttribute="trailing" id="uac-Wi-Q4G"/>
+                            <constraint firstItem="TxH-ET-IrI" firstAttribute="centerY" secondItem="kvu-cX-seD" secondAttribute="centerY" id="uqn-3S-iur"/>
                             <constraint firstItem="Q54-IX-Tjn" firstAttribute="leading" secondItem="5zT-ka-pCF" secondAttribute="trailing" id="v0K-NV-R16"/>
                             <constraint firstItem="nD9-xe-4ct" firstAttribute="top" secondItem="XlA-DZ-dl4" secondAttribute="bottom" constant="10" id="v6V-q0-cH2"/>
                             <constraint firstItem="wIA-dQ-UM9" firstAttribute="leading" secondItem="LBC-Ft-F1d" secondAttribute="leading" id="vSB-gl-jHy"/>
@@ -805,6 +816,7 @@
                         <outlet property="_questionUsesFunctionalProgrammingLabel" destination="0gb-sB-aPk" id="N89-nk-kwA"/>
                         <outlet property="_questionUsesHelperMethodsLabel" destination="UIy-ac-8Jh" id="X4W-ph-1cm"/>
                         <outlet property="_questionUsesRecursionLabel" destination="lsc-hx-lPc" id="Xz5-jQ-8Pq"/>
+                        <outlet property="_questionWorthRevisitingLabel" destination="TxH-ET-IrI" id="xyX-VX-vVY"/>
                         <outlet property="_showQuestionsTableViewButton" destination="ID1-uO-78i" id="38e-hW-LIH"/>
                         <outlet property="_solutionLineCountLabel" destination="vEe-Fy-PhA" id="jp4-2N-sf8"/>
                         <outlet property="_startedOnDateLabel" destination="CcW-Nx-X9V" id="hIb-lK-co3"/>
