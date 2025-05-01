@@ -49,6 +49,7 @@
   self.solvableByHand = NO;
   self.canBeSimplified = YES;
   self.completedOnDate = @"05/02/13";
+  self.worthRevisiting = NO;
   self.solutionLineCount = @"53";
   self.usesCustomObjects = NO;
   self.usesCustomStructs = NO;
