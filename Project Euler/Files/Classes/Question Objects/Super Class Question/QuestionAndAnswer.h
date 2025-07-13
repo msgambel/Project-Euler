@@ -17,6 +17,7 @@
   BOOL                                    _memorable;
   BOOL                                    _usesBigInt;
   BOOL                                    _isComputing;
+  BOOL                                    _isIntuitive;
   BOOL                                    _recommended;
   BOOL                                    _isChallenging;
   BOOL                                    _isContestMath;
@@ -65,6 +66,7 @@
 @property (nonatomic, assign) BOOL                             memorable;
 @property (nonatomic, assign) BOOL                             usesBigInt;
 @property (nonatomic, assign) BOOL                             isComputing;
+@property (nonatomic, assign) BOOL                             isIntuitive;
 @property (nonatomic, assign) BOOL                             recommended;
 @property (nonatomic, assign) BOOL                             isChallenging;
 @property (nonatomic, assign) BOOL                             isContestMath;
