@@ -28,6 +28,7 @@
   IBOutlet UILabel                 * _solutionLineCountLabel;
   IBOutlet UILabel                 * _questionDifficultyLabel;
   IBOutlet UILabel                 * _questionUsesBigIntLabel;
+  IBOutlet UILabel                 * _questionIsIntuitiveLabel;
   IBOutlet UILabel                 * _questionRecommendedLabel;
   IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _questionAttemptsCountLabel;

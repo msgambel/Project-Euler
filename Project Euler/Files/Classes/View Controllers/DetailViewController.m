@@ -308,6 +308,12 @@
   else{
     _questionUsesBigIntLabel.text = @"No Big Int";
   }
+  if(_questionAndAnswer.isIntuitive){
+    _questionIsIntuitiveLabel.text = @"Intuitive";
+  }
+  else{
+    _questionIsIntuitiveLabel.text = @"Unintuitive";
+  }
   if(_questionAndAnswer.recommended){
     _questionRecommendedLabel.text = @"Recommended";
   }
