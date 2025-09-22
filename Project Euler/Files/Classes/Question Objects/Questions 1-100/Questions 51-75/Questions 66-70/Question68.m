@@ -31,6 +31,7 @@
   self.technique = @"Logic";
   self.difficulty = @"Medium";
   self.usesBigInt = NO;
+  self.isIntuitive = YES;
   self.recommended = YES;
   self.commentCount = @"8";
   self.attemptsCount = @"3";
