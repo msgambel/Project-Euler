@@ -54,6 +54,7 @@
 @synthesize learnedSomethingNew = _learnedSomethingNew;
 @synthesize requiresMathematics = _requiresMathematics;
 @synthesize hasMultipleSolutions = _hasMultipleSolutions;
+@synthesize solutionWorksInGeneral = _solutionWorksInGeneral;
 @synthesize estimatedComputationTime = _estimatedComputationTime;
 @synthesize relatedToAnotherQuestion = _relatedToAnotherQuestion;
 @synthesize shouldInvestigateFurther = _shouldInvestigateFurther;

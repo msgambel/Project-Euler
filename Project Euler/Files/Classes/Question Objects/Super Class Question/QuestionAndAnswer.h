@@ -32,6 +32,7 @@
   BOOL                                    _learnedSomethingNew;
   BOOL                                    _requiresMathematics;
   BOOL                                    _hasMultipleSolutions;
+  BOOL                                    _solutionWorksInGeneral;
   BOOL                                    _relatedToAnotherQuestion;
   BOOL                                    _shouldInvestigateFurther;
   BOOL                                    _usesFunctionalProgramming;
@@ -81,6 +82,7 @@
 @property (nonatomic, assign) BOOL                             learnedSomethingNew;
 @property (nonatomic, assign) BOOL                             requiresMathematics;
 @property (nonatomic, assign) BOOL                             hasMultipleSolutions;
+@property (nonatomic, assign) BOOL                             solutionWorksInGeneral;
 @property (nonatomic, assign) BOOL                             relatedToAnotherQuestion;
 @property (nonatomic, assign) BOOL                             shouldInvestigateFurther;
 @property (nonatomic, assign) BOOL                             usesFunctionalProgramming;
