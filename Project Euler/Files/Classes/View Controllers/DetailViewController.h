@@ -40,6 +40,7 @@
   IBOutlet UILabel                 * _questionCanBeSimplifiedLabel;
   IBOutlet UILabel                 * _questionWorthRevisitingLabel;
   IBOutlet UILabel                 * _bruteForceComputationTimeLabel;
+  IBOutlet UILabel                 * _questionSolutionWorksInGeneral;
   IBOutlet UILabel                 * _questionUsesCustomObjectsLabel;
   IBOutlet UILabel                 * _questionUsesCustomStructsLabel;
   IBOutlet UILabel                 * _questionUsesHelperMethodsLabel;

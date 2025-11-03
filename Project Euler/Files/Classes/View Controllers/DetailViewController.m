@@ -392,6 +392,12 @@
   else{
     _questionHasMultipleSolutionsLabel.text = @"Has A Single Solution";
   }
+  if(_questionAndAnswer.solutionWorksInGeneral){
+    _questionSolutionWorksInGeneral.text = @"Solution Works In General";
+  }
+  else{
+    _questionSolutionWorksInGeneral.text = @"Solution Is Specific";
+  }
   if(_questionAndAnswer.relatedToAnotherQuestion){
     _questionRelatedToAnotherQuestionLabel.text = @"Related To Another Question";
   }
