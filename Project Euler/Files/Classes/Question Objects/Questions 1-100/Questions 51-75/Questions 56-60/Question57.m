@@ -53,6 +53,7 @@
   self.learnedSomethingNew = YES;
   self.requiresMathematics = YES;
   self.hasMultipleSolutions = YES;
+  self.solutionWorksInGeneral = YES;
   self.estimatedComputationTime = @"3.14e-04";
   self.relatedToAnotherQuestion = YES;
   self.shouldInvestigateFurther = NO;
