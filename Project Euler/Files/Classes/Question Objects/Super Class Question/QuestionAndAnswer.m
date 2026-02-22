@@ -21,6 +21,7 @@
 @synthesize answer = _answer;
 @synthesize number = _number;
 @synthesize rating = _rating;
+@synthesize isClear = _isClear;
 @synthesize summary = _summary;
 @synthesize category = _category;
 @synthesize delegate = _delegate;

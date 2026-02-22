@@ -12,6 +12,7 @@
 @interface QuestionAndAnswer : NSObject {
   id <QuestionAndAnswerDelegate> __weak   _delegate;
   BOOL                                    _isFun;
+  BOOL                                    _isClear;
   BOOL                                    _isUseful;
   BOOL                                    _loadsFile;
   BOOL                                    _memorable;
@@ -62,6 +63,7 @@
 
 @property (nonatomic, weak)   id <QuestionAndAnswerDelegate>   delegate;
 @property (nonatomic, assign) BOOL                             isFun;
+@property (nonatomic, assign) BOOL                             isClear;
 @property (nonatomic, assign) BOOL                             isUseful;
 @property (nonatomic, assign) BOOL                             loadsFile;
 @property (nonatomic, assign) BOOL                             memorable;
