@@ -284,6 +284,12 @@
   _isComputing = NO;
   
   // Fill in the data of each of the labels.
+  if(_questionAndAnswer.isClear){
+    _questionIsUsefulLabel.text = @"Clear";
+  }
+  else{
+    _questionIsUsefulLabel.text = @"Unclear";
+  }
   if(_questionAndAnswer.isUseful){
     _questionIsUsefulLabel.text = @"Useful";
   }
