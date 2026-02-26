@@ -27,6 +27,7 @@
   self.answer = @"233168";
   self.number = @"1";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Simple use of loops and the default operators, along with a mathematical trick for those in the know, makes this the perfect introduction to Project Euler!";
   self.category = @"Counting";
   self.isUseful = YES;
