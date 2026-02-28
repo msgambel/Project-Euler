@@ -21,6 +21,7 @@
   self.answer = @"6857";
   self.number = @"3";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"The Fundamental Theorem of Arithmetic works particularly well with computers.";
   self.category = @"Primes";
   self.isUseful = YES;
