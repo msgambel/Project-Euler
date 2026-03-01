@@ -27,6 +27,7 @@
   self.answer = @"906609";
   self.number = @"4";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Loop a pool. Never odd or even. Draw, o coward!";
   self.category = @"Combinations";
   self.isUseful = YES;
