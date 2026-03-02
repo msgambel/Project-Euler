@@ -21,6 +21,7 @@
   self.answer = @"232792560";
   self.number = @"5";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Finding the least common multiple of a factorial is suprisingly recursive.";
   self.category = @"Primes";
   self.isUseful = NO;
