@@ -21,6 +21,7 @@
   self.answer = @"25164150";
   self.number = @"6";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"A simple, straightforward sum.";
   self.category = @"Counting";
   self.isUseful = YES;
