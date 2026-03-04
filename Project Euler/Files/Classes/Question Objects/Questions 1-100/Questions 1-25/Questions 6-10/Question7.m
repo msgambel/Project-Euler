@@ -21,6 +21,7 @@
   self.answer = @"104743";
   self.number = @"7";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Simply find primes until you get to 10,001st one.";
   self.category = @"Primes";
   self.isUseful = YES;
