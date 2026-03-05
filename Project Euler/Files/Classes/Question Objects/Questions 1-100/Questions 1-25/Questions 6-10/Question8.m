@@ -28,6 +28,7 @@
   self.answer = @"40824";
   self.number = @"8";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Iterate the string above character by character, and keep a floating product to find the answer. Those zero's may lead to a small optimization.";
   self.category = @"Combinations";
   self.isUseful = NO;
