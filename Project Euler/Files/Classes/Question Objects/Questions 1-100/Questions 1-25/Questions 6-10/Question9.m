@@ -21,6 +21,7 @@
   self.answer = @"31875000";
   self.number = @"9";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Using the Pythagorean Theorem to simplify looping over a large set of possible triplets makes this another great introductory problem!";
   self.category = @"Patterns";
   self.isUseful = YES;
