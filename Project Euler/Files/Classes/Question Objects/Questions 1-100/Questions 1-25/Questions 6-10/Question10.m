@@ -21,6 +21,7 @@
   self.answer = @"142913828922";
   self.number = @"10";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Find the primes up to 2,000,000, and sum them.";
   self.category = @"Primes";
   self.isUseful = YES;
