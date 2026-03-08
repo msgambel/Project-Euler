@@ -28,6 +28,7 @@
   self.answer = @"70600674";
   self.number = @"11";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Loop through the entries in a given 'direction', and use a floating product to find the maximum.";
   self.category = @"Combinations";
   self.isUseful = NO;
