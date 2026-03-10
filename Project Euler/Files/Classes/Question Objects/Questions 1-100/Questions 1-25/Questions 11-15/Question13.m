@@ -28,6 +28,7 @@
   self.answer = @"5537376230";
   self.number = @"13";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Sum some large numbers. That's it.";
   self.category = @"Combinations";
   self.isUseful = NO;
