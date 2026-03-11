@@ -21,6 +21,7 @@
   self.answer = @"837799";
   self.number = @"14";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"A simple, functional problem (as long as you have a limit). It's gotta be true though, right?";
   self.category = @"Patterns";
   self.isUseful = YES;
