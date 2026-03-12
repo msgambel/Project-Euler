@@ -28,6 +28,7 @@
   self.answer = @"137846528820";
   self.number = @"15";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Another functional problem that reduces nicely.";
   self.category = @"Combinations";
   self.isUseful = NO;
