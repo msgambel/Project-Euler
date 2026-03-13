@@ -22,6 +22,7 @@
   self.answer = @"1366";
   self.number = @"16";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Compute a very large number, and then sum the digits.";
   self.category = @"Sums";
   self.isUseful = NO;
