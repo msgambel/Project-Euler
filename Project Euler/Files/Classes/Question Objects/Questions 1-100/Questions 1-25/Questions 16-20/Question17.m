@@ -29,6 +29,7 @@
   self.answer = @"21124";
   self.number = @"17";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Count the letters in each English number, and sum them. A dictionary may help.";
   self.category = @"Counting";
   self.isUseful = NO;
