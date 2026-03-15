@@ -22,6 +22,7 @@
   self.answer = @"1074";
   self.number = @"18";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Move through the binary tree to find the largest path sum. A little pre-computation goes a long way!";
   self.category = @"Sums";
   self.isUseful = YES;
