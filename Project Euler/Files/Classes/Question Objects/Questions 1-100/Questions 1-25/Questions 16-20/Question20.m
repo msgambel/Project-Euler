@@ -23,6 +23,7 @@
   self.answer = @"648";
   self.number = @"20";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Do a Big multiplication, and then a Big sum.";
   self.category = @"Sums";
   self.isUseful = NO;
