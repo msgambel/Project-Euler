@@ -21,6 +21,7 @@
   self.answer = @"871198282";
   self.number = @"22";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"You have to load a file? That's less fun, but the rest is just a simple loop.";
   self.category = @"Sums";
   self.isUseful = NO;
