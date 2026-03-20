@@ -22,6 +22,7 @@
   self.answer = @"4179871";
   self.number = @"23";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"This question may not be Perfect, but it's Abundantly clear it's not Deficient!";
   self.category = @"Primes";
   self.isUseful = YES;
