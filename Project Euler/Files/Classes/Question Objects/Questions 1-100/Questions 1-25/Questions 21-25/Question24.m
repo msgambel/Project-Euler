@@ -21,6 +21,7 @@
   self.answer = @"2783915460";
   self.number = @"24";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Permutations of a string with unique characters is a simple challenge. Doing it quickly is the hard part.";
   self.category = @"Counting";
   self.isUseful = NO;
