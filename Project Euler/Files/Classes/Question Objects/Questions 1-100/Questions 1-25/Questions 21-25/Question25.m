@@ -22,6 +22,7 @@
   self.answer = @"4782";
   self.number = @"25";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"The Fibonacci sequence can be found everywhere, including in Project Euler!";
   self.category = @"Patterns";
   self.isUseful = YES;
