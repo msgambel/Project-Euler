@@ -27,6 +27,7 @@
   self.answer = @"443839";
   self.number = @"30";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Sum all the five digit numbers with the property that the fifth power of their digits add to themselves.";
   self.category = @"Sums";
   self.isUseful = NO;
