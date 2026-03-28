@@ -29,6 +29,7 @@
   self.answer = @"73682";
   self.number = @"31";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Count the unique combinations of English denominations that sum to £2.";
   self.category = @"Sums";
   self.isUseful = YES;
