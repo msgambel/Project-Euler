@@ -27,6 +27,7 @@
   self.answer = @"100";
   self.number = @"33";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Even a broken clock is right twice a day.";
   self.category = @"Primes";
   self.isUseful = NO;
