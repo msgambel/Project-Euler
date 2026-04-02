@@ -27,6 +27,7 @@
   self.answer = @"872187";
   self.number = @"36";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Sum all numbers less than 1,000,000 that are palindromic in base 2 and 10.";
   self.category = @"Patterns";
   self.isUseful = NO;
