@@ -22,6 +22,7 @@
   self.answer = @"162";
   self.number = @"42";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"How many triangle words are in the text file?";
   self.category = @"Combinations";
   self.isUseful = NO;
