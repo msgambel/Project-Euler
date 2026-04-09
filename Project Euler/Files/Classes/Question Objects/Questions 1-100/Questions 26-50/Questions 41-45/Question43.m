@@ -27,6 +27,7 @@
   self.answer = @"16695334890";
   self.number = @"43";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find all 0 to 9 pandigital numbers with the division property.";
   self.category = @"Logic";
   self.isUseful = YES;
