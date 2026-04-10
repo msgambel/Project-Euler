@@ -21,6 +21,7 @@
   self.answer = @"5482660";
   self.number = @"44";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find a pair of pentagonal numbers whose sum and difference are pentagonal numbers, and have the lowest difference.";
   self.category = @"Patterns";
   self.isUseful = NO;
