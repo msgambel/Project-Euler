@@ -21,6 +21,7 @@
   self.answer = @"1533776805";
   self.number = @"45";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Find the largest pandigital 9-digit number formed by a concatenated product.";
   self.category = @"Combinations";
   self.isUseful = NO;
