@@ -21,6 +21,7 @@
   self.answer = @"134043";
   self.number = @"47";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Find the first integer such that it and the next 3 integers have four distinct primes factors.";
   self.category = @"Primes";
   self.isUseful = NO;
