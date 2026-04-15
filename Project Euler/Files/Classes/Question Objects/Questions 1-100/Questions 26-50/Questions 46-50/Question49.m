@@ -21,6 +21,7 @@
   self.answer = @"296962999629";
   self.number = @"49";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find and concatenate 3 4-digit arithmetic sequence primes.";
   self.category = @"Primes";
   self.isUseful = NO;
