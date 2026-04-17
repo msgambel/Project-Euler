@@ -21,6 +21,7 @@
   self.answer = @"121313";
   self.number = @"51";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find an 8 digit prime family related by replacing part of the number with the same digit.";
   self.category = @"Primes";
   self.isUseful = NO;
