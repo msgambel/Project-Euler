@@ -22,6 +22,7 @@
   self.answer = @"4075";
   self.number = @"53";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find n such that nCr > 1,000,000.";
   self.category = @"Combinations";
   self.isUseful = YES;
