@@ -22,6 +22,7 @@
   self.answer = @"249";
   self.number = @"55";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"How many Lychrel numbers are there below 10,000.";
   self.category = @"Patterns";
   self.isUseful = YES;
