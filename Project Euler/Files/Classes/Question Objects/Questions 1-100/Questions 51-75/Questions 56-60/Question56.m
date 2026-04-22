@@ -22,6 +22,7 @@
   self.answer = @"972";
   self.number = @"56";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Which pair a, b <= 100, does a^b produce the maximum digital sum?";
   self.category = @"Combinations";
   self.isUseful = YES;
