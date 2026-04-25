@@ -21,6 +21,7 @@
   self.answer = @"107359";
   self.number = @"59";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Read the file, find the cypher, and decrypt the message.";
   self.category = @"Primes";
   self.isUseful = YES;
