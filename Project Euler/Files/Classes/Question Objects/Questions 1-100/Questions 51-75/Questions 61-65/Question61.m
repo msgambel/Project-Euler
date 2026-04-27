@@ -28,6 +28,7 @@
   self.answer = @"28684";
   self.number = @"61";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find the sum of an ordered set of 6 cyclic 4-digit unique polygonal numbers.";
   self.category = @"Sums";
   self.isUseful = NO;
