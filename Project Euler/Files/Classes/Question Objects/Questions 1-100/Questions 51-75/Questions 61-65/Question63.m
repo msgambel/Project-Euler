@@ -21,6 +21,7 @@
   self.answer = @"49";
   self.number = @"63";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"How many n-digit positive integers are an nth power?";
   self.category = @"Counting";
   self.isUseful = NO;
