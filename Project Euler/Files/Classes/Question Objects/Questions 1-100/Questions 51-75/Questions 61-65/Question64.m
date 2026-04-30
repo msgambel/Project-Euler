@@ -21,6 +21,7 @@
   self.answer = @"1322";
   self.number = @"64";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"How many continued fractions for N <= 10000 have an odd period?";
   self.category = @"Patterns";
   self.isUseful = YES;
