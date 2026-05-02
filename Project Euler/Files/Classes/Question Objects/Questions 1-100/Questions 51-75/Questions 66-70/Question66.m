@@ -21,6 +21,7 @@
   self.answer = @"661";
   self.number = @"66";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Find the value of D <= 1000 in minimal solutions of x yielding the largest value of x.";
   self.category = @"Patterns";
   self.isUseful = YES;
