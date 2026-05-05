@@ -21,6 +21,7 @@
   self.answer = @"510510";
   self.number = @"69";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Which n <= 1,000,000 maximizes n/φ(n)?";
   self.category = @"Primes";
   self.isUseful = YES;
