@@ -22,6 +22,7 @@
   self.answer = @"8319823";
   self.number = @"70";
   self.rating = @"2";
+  self.isClear = YES;
   self.summary = @"Find n such that φ(n) is a permutation of n, and n/φ(n) is minimized.";
   self.category = @"Primes";
   self.isUseful = YES;
