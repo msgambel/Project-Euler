@@ -22,6 +22,7 @@
   self.answer = @"303963552391";
   self.number = @"72";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"What is the size of the set of reduced proper fractions for d <= 1,000,000?";
   self.category = @"Counting";
   self.isUseful = YES;
