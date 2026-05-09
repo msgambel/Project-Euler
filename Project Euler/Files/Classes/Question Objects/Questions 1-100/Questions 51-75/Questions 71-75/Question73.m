@@ -22,6 +22,7 @@
   self.answer = @"7295372";
   self.number = @"73";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"How many reduced proper fractions are between 1/3 and 1/2 for d <= 12,000?";
   self.category = @"Counting";
   self.isUseful = YES;
