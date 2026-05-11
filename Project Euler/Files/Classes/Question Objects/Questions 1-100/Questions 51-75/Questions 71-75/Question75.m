@@ -21,6 +21,7 @@
   self.answer = @"161667";
   self.number = @"75";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"How many L <= 1,500,000 are the perimeter of exactly 1 integer sided right triangle?";
   self.category = @"Primes";
   self.isUseful = YES;
