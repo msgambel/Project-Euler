@@ -27,6 +27,7 @@
   self.answer = @"190569291";
   self.number = @"76";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"How many sets of positive integers with order > 1 sum to 100?";
   self.category = @"Counting";
   self.isUseful = YES;
