@@ -27,6 +27,7 @@
   self.answer = @"73162890";
   self.number = @"79";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Decode the shortest passcode from 50 login attempts.";
   self.category = @"Patterns";
   self.isUseful = YES;
