@@ -22,6 +22,7 @@
   self.answer = @"40886";
   self.number = @"80";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"For n in [1, 100], sum the first 100 digits of the decimal expansion of sqrt(n).";
   self.category = @"Sums";
   self.isUseful = NO;
