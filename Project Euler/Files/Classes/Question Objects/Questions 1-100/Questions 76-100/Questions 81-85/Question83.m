@@ -22,6 +22,7 @@
   self.answer = @"425185";
   self.number = @"83";
   self.rating = @"3";
+  self.isClear = YES;
   self.summary = @"Find the minimal path sum moving only up, right, left, and down for the 80x80 grid.";
   self.category = @"Combinations";
   self.isUseful = YES;
