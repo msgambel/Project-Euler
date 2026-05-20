@@ -22,6 +22,7 @@
   self.answer = @"101524";
   self.number = @"84";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Play Monopoly with two 4-sided dice. Find the 3 most popular squares.";
   self.category = @"Probability";
   self.isUseful = YES;
