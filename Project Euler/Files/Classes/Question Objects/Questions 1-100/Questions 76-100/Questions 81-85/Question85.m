@@ -22,6 +22,7 @@
   self.answer = @"2772";
   self.number = @"85";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find the area of the rectangle that has closest to 2,000,000 sub-rectangles.";
   self.category = @"Patterns";
   self.isUseful = YES;
