@@ -21,6 +21,7 @@
   self.answer = @"1097343";
   self.number = @"87";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"How many numbers < 50,000,000 are the sum of a prime square, cube, and fourth power?";
   self.category = @"Sums";
   self.isUseful = NO;
