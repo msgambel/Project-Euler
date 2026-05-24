@@ -21,6 +21,7 @@
   self.answer = @"7587457";
   self.number = @"88";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Sum all of the minimal product-sum numbers for 2 <= k <= 12000.";
   self.category = @"Primes";
   self.isUseful = NO;
