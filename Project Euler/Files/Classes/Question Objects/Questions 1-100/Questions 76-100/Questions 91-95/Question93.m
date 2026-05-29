@@ -29,6 +29,7 @@
   self.answer = @"1258";
   self.number = @"93";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find a < b < c < d which algebraically generate the longest set of consecutive positive integers, 1 to n.";
   self.category = @"Combinations";
   self.isUseful = YES;
