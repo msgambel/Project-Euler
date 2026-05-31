@@ -22,6 +22,7 @@
   self.answer = @"14316";
   self.number = @"95";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"Find the lowest element in the longest amicable chain not exceeding 1,000,000.";
   self.category = @"Patterns";
   self.isUseful = YES;
