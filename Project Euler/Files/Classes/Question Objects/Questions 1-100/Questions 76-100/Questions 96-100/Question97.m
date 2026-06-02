@@ -22,6 +22,7 @@
   self.answer = @"8739992577";
   self.number = @"97";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"What are the last 10 digits of 28433x2^7830457+1?";
   self.category = @"Primes";
   self.isUseful = YES;
