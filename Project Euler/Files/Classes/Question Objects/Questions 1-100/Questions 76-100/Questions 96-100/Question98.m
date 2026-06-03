@@ -28,6 +28,7 @@
   self.answer = @"18769";
   self.number = @"98";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"For all the words in the file, find the largest member of a square anagram pair.";
   self.category = @"Patterns";
   self.isUseful = NO;
