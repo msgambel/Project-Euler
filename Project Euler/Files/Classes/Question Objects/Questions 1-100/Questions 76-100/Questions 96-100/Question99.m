@@ -21,6 +21,7 @@
   self.answer = @"709";
   self.number = @"99";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"What is the largest exponential in the file?";
   self.category = @"Powers";
   self.isUseful = NO;
