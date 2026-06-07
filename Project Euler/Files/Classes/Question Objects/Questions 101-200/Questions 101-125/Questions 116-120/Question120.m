@@ -21,6 +21,7 @@
   self.answer = @"333082500";
   self.number = @"120";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Compute sum(rmax) for 3 <= a <= 1000.";
   self.category = @"Sums";
   self.isUseful = YES;
