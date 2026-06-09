@@ -21,6 +21,7 @@
   self.answer = @"173";
   self.number = @"131";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"How many primes p < 1,000,000 is n³ + n²p a cube (for some n).";
   self.category = @"Primes";
   self.isUseful = YES;
