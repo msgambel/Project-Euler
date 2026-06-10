@@ -21,6 +21,7 @@
   self.answer = @"17427258";
   self.number = @"187";
   self.rating = @"4";
+  self.isClear = YES;
   self.summary = @"How many n < 10^8 are semiprimes?";
   self.category = @"Primes";
   self.isUseful = YES;
