@@ -21,6 +21,7 @@
   self.answer = @"892371480";
   self.number = @"243";
   self.rating = @"5";
+  self.isClear = YES;
   self.summary = @"Find the first d such that R(d) < 15499/94744.";
   self.category = @"Primes";
   self.isUseful = YES;
