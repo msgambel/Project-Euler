@@ -37,6 +37,7 @@
 @synthesize isIntuitive = _isIntuitive;
 @synthesize recommended = _recommended;
 @synthesize commentCount = _commentCount;
+@synthesize relevantToCS = _relevantToCS;
 @synthesize attemptsCount = _attemptsCount;
 @synthesize isChallenging = _isChallenging;
 @synthesize isContestMath = _isContestMath;

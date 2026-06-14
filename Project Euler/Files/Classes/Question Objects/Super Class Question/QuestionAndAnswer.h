@@ -20,6 +20,7 @@
   BOOL                                    _isComputing;
   BOOL                                    _isIntuitive;
   BOOL                                    _recommended;
+  BOOL                                    _relevantToCS;
   BOOL                                    _isChallenging;
   BOOL                                    _isContestMath;
   BOOL                                    _trickRequired;
@@ -71,6 +72,7 @@
 @property (nonatomic, assign) BOOL                             isComputing;
 @property (nonatomic, assign) BOOL                             isIntuitive;
 @property (nonatomic, assign) BOOL                             recommended;
+@property (nonatomic, assign) BOOL                             relevantToCS;
 @property (nonatomic, assign) BOOL                             isChallenging;
 @property (nonatomic, assign) BOOL                             isContestMath;
 @property (nonatomic, assign) BOOL                             trickRequired;
