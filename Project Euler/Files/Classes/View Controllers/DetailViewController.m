@@ -326,6 +326,12 @@
   else{
     _questionRecommendedLabel.text = @"Not Recommended";
   }
+  if(_questionAndAnswer.relevantToCS){
+    _questionRelevantToCSLabel.text = @"Relevant to CS";
+  }
+  else{
+    _questionRelevantToCSLabel.text = @"Not relevant to CS";
+  }
   if(_questionAndAnswer.isContestMath){
     _questionIsContestMathLabel.text = @"Contest Math";
   }
