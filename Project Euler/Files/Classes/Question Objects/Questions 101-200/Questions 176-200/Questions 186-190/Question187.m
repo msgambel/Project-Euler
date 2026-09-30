@@ -35,6 +35,7 @@
   self.isIntuitive = YES;
   self.recommended = YES;
   self.commentCount = @"33";
+  self.relevantToCS = YES;
   self.attemptsCount = @"1";
   self.isChallenging = NO;
   self.isContestMath = NO;
