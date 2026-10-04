@@ -38,6 +38,7 @@
 @synthesize recommended = _recommended;
 @synthesize commentCount = _commentCount;
 @synthesize relevantToCS = _relevantToCS;
+@synthesize solvableByAI = _solvableByAI;
 @synthesize attemptsCount = _attemptsCount;
 @synthesize isChallenging = _isChallenging;
 @synthesize isContestMath = _isContestMath;
