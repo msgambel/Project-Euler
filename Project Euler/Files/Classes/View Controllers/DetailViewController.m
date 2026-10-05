@@ -332,6 +332,12 @@
   else{
     _questionRelevantToCSLabel.text = @"Not relevant to CS";
   }
+  if(_questionAndAnswer.solvableByAI){
+    _questionSolvableByAILabel.text = @"Solvable By AI";
+  }
+  else{
+    _questionSolvableByAILabel.text = @"Unsolvable By AI";
+  }
   if(_questionAndAnswer.isContestMath){
     _questionIsContestMathLabel.text = @"Contest Math";
   }

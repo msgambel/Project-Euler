@@ -33,6 +33,7 @@
   IBOutlet UILabel                 * _questionRecommendedLabel;
   IBOutlet UILabel                 * _questionCommentCountLabel;
   IBOutlet UILabel                 * _questionRelevantToCSLabel;
+  IBOutlet UILabel                 * _questionSolvableByAILabel;
   IBOutlet UILabel                 * _questionAttemptsCountLabel;
   IBOutlet UILabel                 * _questionIsContestMathLabel;
   IBOutlet UILabel                 * _questionTrickRequiredLabel;
