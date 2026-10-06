@@ -791,6 +791,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Solvable By AI" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qsa-Pg-31P">
+                                <rect key="frame" x="186.66666666666666" y="603" width="77.999999999999972" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="t2x-wW-v0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -891,6 +900,7 @@
                             <constraint firstItem="S9G-2W-gdc" firstAttribute="top" secondItem="DHb-ba-bDJ" secondAttribute="bottom" id="a7F-H6-jLS"/>
                             <constraint firstItem="vKG-Qr-etp" firstAttribute="centerY" secondItem="Dfa-Xv-Ph6" secondAttribute="centerY" id="a9b-5d-zuQ"/>
                             <constraint firstItem="Srr-j4-VJp" firstAttribute="leading" secondItem="kEh-1z-WXH" secondAttribute="leading" id="aCJ-3o-3OE"/>
+                            <constraint firstItem="Qsa-Pg-31P" firstAttribute="centerY" secondItem="qIQ-XB-ApZ" secondAttribute="centerY" id="arv-j3-B5a"/>
                             <constraint firstItem="zte-W2-whe" firstAttribute="trailing" secondItem="Roi-o8-Qg7" secondAttribute="trailing" id="awB-pw-6SR"/>
                             <constraint firstItem="X1f-wq-kWh" firstAttribute="width" relation="lessThanOrEqual" secondItem="S5r-gN-S6P" secondAttribute="width" id="azz-cS-CRe"/>
                             <constraint firstItem="Dfa-Xv-Ph6" firstAttribute="trailing" secondItem="arC-iP-2qS" secondAttribute="trailing" id="bCd-8E-H9d"/>
@@ -917,6 +927,7 @@
                             <constraint firstItem="2bm-jV-Hoo" firstAttribute="top" secondItem="QuP-pa-30Z" secondAttribute="bottom" id="gqJ-OH-f2d"/>
                             <constraint firstItem="R6J-cm-A6z" firstAttribute="top" secondItem="RrT-Qg-qjT" secondAttribute="bottom" constant="5" id="hGd-Tt-0S5"/>
                             <constraint firstItem="376-iG-ZvM" firstAttribute="top" secondItem="atg-Ue-tqo" secondAttribute="bottom" constant="5" id="hSf-d8-LyL"/>
+                            <constraint firstItem="qIQ-XB-ApZ" firstAttribute="leading" secondItem="Qsa-Pg-31P" secondAttribute="trailing" constant="10" id="hX8-kc-NaK"/>
                             <constraint firstItem="kRA-ns-A5g" firstAttribute="top" secondItem="376-iG-ZvM" secondAttribute="bottom" id="iNM-VZ-dYb"/>
                             <constraint firstItem="DHb-ba-bDJ" firstAttribute="top" secondItem="QuP-pa-30Z" secondAttribute="bottom" id="isN-oS-WBi"/>
                             <constraint firstItem="RrT-Qg-qjT" firstAttribute="top" secondItem="kRA-ns-A5g" secondAttribute="bottom" constant="5" id="jRS-sd-SuN"/>
@@ -1001,6 +1012,7 @@
                         <outlet property="_questionRequiresMathematicsLabel" destination="9AR-JL-Vxn" id="4jn-pq-S43"/>
                         <outlet property="_questionShouldInvestigateFurtherLabel" destination="bFS-o8-Zlc" id="xR8-7z-O6Y"/>
                         <outlet property="_questionSolutionWorksInGeneral" destination="H5f-4Q-xlk" id="2yP-od-ZYH"/>
+                        <outlet property="_questionSolvableByAILabel" destination="Qsa-Pg-31P" id="nUr-C6-Id4"/>
                         <outlet property="_questionSolvableByHandLabel" destination="qIQ-XB-ApZ" id="QoK-pM-Daa"/>
                         <outlet property="_questionSolveTimeLabel" destination="8AF-sH-MIB" id="ro2-UK-kbn"/>
                         <outlet property="_questionTechniqueLabel" destination="dz8-ta-DFM" id="Sty-ox-TUk"/>
