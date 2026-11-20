@@ -36,6 +36,7 @@
   self.recommended = YES;
   self.commentCount = @"33";
   self.relevantToCS = YES;
+  self.solvableByAI = YES;
   self.attemptsCount = @"1";
   self.isChallenging = NO;
   self.isContestMath = NO;
